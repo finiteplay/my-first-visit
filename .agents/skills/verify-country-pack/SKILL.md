@@ -1,6 +1,6 @@
 ---
 name: verify-country-pack
-description: Audit a First Day Away country research dossier and reader-facing content for evidence quality, useful anecdotes, audience fit, engagement, optional-practice boundaries and traveler decision support. Use before calling a country or major topic draft complete.
+description: Audit a MyFirstVisit country research dossier and reader-facing content for evidence quality, useful anecdotes, audience fit, engagement, optional-practice boundaries and traveler decision support. Use before calling a country or major topic draft complete.
 ---
 
 # Verifying a country pack

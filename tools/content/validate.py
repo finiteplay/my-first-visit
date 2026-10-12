@@ -187,7 +187,7 @@ def table(headers, rows):
 
 def render(data):
     pack, primer = data["pack"], data["primer"]
-    lines = ["# Iceland — First Day Away", "",
+    lines = ["# Iceland — MyFirstVisit", "",
              "Status: generated preview of the supporting language/media layer.",
              "Generated from the canonical sources by tools/content/validate.py --preview.", "",
              "This preview does not render the research-backed briefing, playbooks or routes; see",

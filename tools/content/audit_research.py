@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit a First Day Away traveler-research dossier.
+"""Audit a MyFirstVisit traveler-research dossier.
 
 This deterministic gate checks evidence shape and minimum support. It cannot judge whether a
 source is truthful, prose is engaging, or the researched corpus represents all travelers.

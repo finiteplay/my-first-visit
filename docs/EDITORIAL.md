@@ -1,10 +1,10 @@
-# First Day Away — Research and Editorial Standard
+# MyFirstVisit — Research and Editorial Standard
 
 Status: **authoritative for destination research and reader-facing country content.** The app
 and production country compiler are not built. Iceland is the first strict-audited editorial
 draft under this standard; its pending human and release gates are recorded in its review report.
 
-First Day Away is an experience-led travel briefing. Its primary job is to help a traveler
+MyFirstVisit is an experience-led travel briefing. Its primary job is to help a traveler
 understand what a destination will feel like and make consequential decisions before those
 decisions become rushed, expensive or confusing. Language reference and optional practice
 support that job.

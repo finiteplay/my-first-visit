@@ -1,4 +1,4 @@
-# First Day Away
+# MyFirstVisit
 
 An offline, experience-led briefing for an American traveler visiting a country, often for
 the first time. It synthesizes recent traveler experiences, official information and an

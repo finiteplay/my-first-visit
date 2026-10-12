@@ -1,4 +1,4 @@
-# First Day Away — UI Specification
+# MyFirstVisit — UI Specification
 
 Status: **draft, app UI not built.** Screens, navigation, components and the visual system. What
 the app does and why is in [DESIGN.md](DESIGN.md); what a pack contains is in

@@ -1,6 +1,6 @@
 ---
 name: author-country-pack
-description: Research and write an experience-led First Day Away country pack from recent traveler accounts, travel media, official sources and an explicit audience lens. Use for new destination briefings, playbooks, routes, or substantial country-content revisions; do not use for a small copyedit or translation-only change.
+description: Research and write an experience-led MyFirstVisit country pack from recent traveler accounts, travel media, official sources and an explicit audience lens. Use for new destination briefings, playbooks, routes, or substantial country-content revisions; do not use for a small copyedit or translation-only change.
 ---
 
 # Authoring a country pack

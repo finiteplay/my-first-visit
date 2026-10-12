@@ -20,7 +20,7 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-UA = "FirstDayAway-shortlist/1.0 (FinitePlay LLC; content research)"
+UA = "MyFirstVisit-shortlist/1.0 (FinitePlay LLC; content research)"
 WIDTH = 1440
 BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
 

@@ -1,4 +1,4 @@
-# Iceland — First Day Away
+# Iceland — MyFirstVisit
 
 Status: generated preview of the supporting language/media layer.
 Generated from the canonical sources by tools/content/validate.py --preview.

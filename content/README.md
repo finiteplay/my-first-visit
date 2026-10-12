@@ -1,6 +1,6 @@
 # Country content authoring
 
-First Day Away country packs are experience-led travel briefings backed by a versioned
+MyFirstVisit country packs are experience-led travel briefings backed by a versioned
 research dossier. Language, sights and optional practice support the briefing; they do not
 define its table of contents.
 

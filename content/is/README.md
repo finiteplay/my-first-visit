@@ -1,6 +1,6 @@
 # Iceland country pack
 
-The first research-backed country example for **First Day Away**.
+The first research-backed country example for **MyFirstVisit**.
 Status: **research-backed editorial draft, not publishable**. The destination briefing,
 playbooks and routes now lead the package; the earlier language toolkit remains supporting
 material. Open [PREVIEW.md](PREVIEW.md) for the legacy language/media review copy and read the

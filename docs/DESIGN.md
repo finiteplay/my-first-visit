@@ -1,11 +1,11 @@
-# First Day Away — Design
+# MyFirstVisit — Design
 
 Status: **draft, app not built.** Iceland has a strict-audited research dossier, primary
 briefing, playbooks and routes plus the earlier language-first source pack at `../content/is/`.
 Independent reviews and release assets remain pending. Product behavior below is planned,
 not shipped.
 
-First Day Away gives an American traveler a researched, engaging briefing for the first trip
+MyFirstVisit gives an American traveler a researched, engaging briefing for the first trip
 to a country: what the experience will feel like, which decisions are easier to make before
 arrival, what recent travelers repeatedly mention, where experiences differ, and how to choose
 an itinerary and travel style. A practical language toolkit remains available, with optional
@@ -66,7 +66,7 @@ good travel programs and trip reports. It does not copy their scripts, signature
 media. Traveler forums supply research questions and contrasting outcomes, not a live review
 feed or incident statistics. Duolingo-like practice is available only when the user chooses it.
 
-| From | Idea | First Day Away version | Left out |
+| From | Idea | MyFirstVisit version | Left out |
 |---|---|---|---|
 | Travel programs and blogs | A destination experienced as a journey | Briefings open with what the trip feels like and progress through realistic choices and scenes | Copied wording, footage, branded formats or undisclosed promotion |
 | Traveler forums | Recent stories, surprises and disagreements | Researched synthesis with contextual anecdotes and evidence labels | Raw review feeds, vote counts as truth, or forum posts as incident rates |
@@ -257,4 +257,4 @@ the editorial verification skill and the eventual execution plan.
 6. **Audio recording**: budget for native speakers per country (about 150 short clips each at
    two speeds), or allow reviewed neural TTS for first drafts. [CONTENT.md](CONTENT.md) requires
    human recordings for release.
-7. **Name**: **First Day Away** is the selected name. Complete trademark clearance and Play Store availability checks before launch.
+7. **Name**: **MyFirstVisit** is the selected name. Complete trademark clearance and Play Store availability checks before launch.

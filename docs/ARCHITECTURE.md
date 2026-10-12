@@ -1,4 +1,4 @@
-# First Day Away — Architecture
+# MyFirstVisit — Architecture
 
 Status: **draft, app and production compiler not built.** Python gates exist for the earlier
 Iceland text shape, traveler-research dossier and research-backed guide sources. Iceland now has
@@ -10,7 +10,7 @@ The architecture below is planned. How the app is put together, what it takes fr
 
 ## Relationship to card_games
 
-First Day Away is a separate Gradle root (`apps/first-day-away/`) and a separate app, built
+MyFirstVisit is a separate Gradle root (`apps/first-day-away/`) and a separate app, built
 the same way as the card games:
 
 - Android only (v1), Kotlin and Jetpack Compose for the application shell and interactive
@@ -25,7 +25,7 @@ the same way as the card games:
   release with R8 and resource shrinking.
 - The same licensing: PolyForm Noncommercial 1.0.0, `COPYRIGHT.txt`, and the rule that a
   shipped dependency may only be Apache 2.0, MIT or BSD.
-- Publisher FinitePlay LLC, app ID `org.finiteplay.firstdayaway`.
+- Publisher FinitePlay LLC, app ID `org.finiteplay.myfirstvisit`.
 
 ### What is taken, and how
 

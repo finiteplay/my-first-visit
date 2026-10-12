@@ -24,7 +24,7 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-UA = "FirstDayAway-shortlist/1.0 (FinitePlay LLC; content research)"
+UA = "MyFirstVisit-shortlist/1.0 (FinitePlay LLC; content research)"
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 MIN_RATIO, MAX_RATIO = 4 / 3, 2.2  # landscape only; reject slivers of panoramas
 MIN_WIDTH = 1600
