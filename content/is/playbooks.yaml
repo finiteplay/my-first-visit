@@ -7,42 +7,59 @@
       "fits": [
         "camper",
         "self-drive",
+        "no-car",
+        "tour",
         "budget",
         "comfort"
       ],
-      "readingMinutes": 7,
+      "readingMinutes": 9,
       "evidenceLabel": "Experiences vary",
-      "hook": "A small van can give you an unusually flexible Iceland trip, but it also makes cooking, drying clothes, finding a bathroom and preparing the bed part of every day.",
+      "hook": "Where you sleep and who drives quietly shape every day: a van gives you the most freedom and the most chores, a car with a room gives you a private bed and your own schedule, and a tour bus gives you someone else's driving and someone else's timetable.",
       "cardImage": {
         "src": "assets/campervan-campsite.webp",
         "alt": "Two travelers prepare breakfast beside a compact campervan at an organized campsite in a mossy volcanic landscape."
       },
       "body": [
+        "There are really three ways to cover Iceland, and each one decides what your days feel like. A campervan folds your bed, kitchen and transport into one vehicle. A rental car with a room each night keeps the bed and bathroom separate from the driving. A guided tour hands the driving, and much of the route, to someone else. Travelers who regretted their choice rarely misjudged the scenery; they misjudged the chores, the fixed schedule or the amount of driving.",
         "The compact campers common in Iceland are usually converted vans rather than the large RV many North American travelers picture. Your seats, luggage, bed and small cooking area share one space. That can feel wonderfully efficient: you can buy groceries once, wake up near the next day's route and change direction when weather changes without negotiating a hotel cancellation.",
         "The freedom still has an address each night. Campervans, caravans and similar vehicles are expected to use organized campsites unless you have the landowner's permission, and protected areas can be stricter. A scenic parking lot is not automatically a legal or appropriate bedroom. Campsites differ in opening season, kitchen or common-room access, showers, laundry, electrical hookups and late-arrival arrangements, so verify the actual night rather than relying on an old map pin.",
         "Think through an ordinary rainy evening. Where will two wet jackets go? Can one person cook while the other changes clothes? Must the bed be rebuilt from the seats? Is the heater independent or does it require an electrical hookup? Does it run through the night, and what happens if the auxiliary battery is low? Travelers who loved camper life still wrote about curtains, batteries, food storage, level parking, toilets and cleanup because those details shape every day.",
         "A larger van or motorhome can solve some space problems. One couple appreciated a four-seat camper because they could leave the bed assembled and still sit at a table inside when wind made outdoor living unpleasant. A true motorhome may add a toilet and more storage. In return, you are driving a longer, taller and often more expensive vehicle on narrow approaches and in strong wind. Do not choose by the word sleeps alone; look at the floor plan and the vehicle dimensions.",
         "A regular car plus guesthouses or hotels is less flexible after reservations are made, but it buys separation: a proper bed, private bathroom, space to dry gear and no need to pack the room before driving. It can be the more relaxing choice for travelers who do not already enjoy camping, for a short winter trip, or when one person would carry all the driving and camp chores.",
-        "Price the complete versions of both trips. For the camper, include campsite fees, fuel, coverage, bedding or equipment, groceries, occasional restaurants and perhaps a hotel night for arrival or before the flight. For the car-and-room trip, include lodging, parking and meals. A camper may save money for one party and cost more for another; its clearest advantage is route flexibility, not guaranteed cheapness."
+        "Guided day tours are the easiest way to see the headline sights without driving. Operators run Golden Circle, South Coast, Snæfellsnes, glacier, whale and northern-lights days from Reykjavík, and most day tours include pickup at your lodging or a central bus stop. One operator guide gives rough lengths of six to nine hours for the Golden Circle, nine to eleven for the South Coast and eleven to twelve for Snæfellsnes. You keep the same room in Reykjavík, so there is no packing and no daily check-in. In return you accept the operator's stops, the time at each stop and the departure time.",
+        "Multi-day guided tours cover the ring or a region in one booking, often with transport, a guide and lodging bundled together. Operators describe small groups of roughly eight to twenty people as more flexible, because a guide can adapt to weather and sometimes add a stop, and large coaches of fifty or more as efficient but with less time at each place. Travelers described the benefit plainly: a solo visitor valued hotel pickups, guides and not having to handle rapidly changing wind, and an Australian on a five-night small-group tour watched the guide move a glacier hike around the rain. The same traveler found the country exceptionally expensive, so price the whole package and what it leaves out.",
+        "A tour also hands you someone else's schedule, and that cuts both ways. Tours cancel for wind, ice, low aurora odds or too few bookings. A couple without a car on a seven-day trip absorbed a canceled whale tour by spending a day on the Reykjavík waterfront, and that open day is what saved it. Reach is the other limit: the north, east and highlands are hard to cover with day tours from Reykjavík. The official guide puts Reykjavík to Akureyri at about seven hours by bus or about 45 minutes by domestic flight, so a northern leg usually means a multi-day tour, a flight or a rental car.",
+        "Public intercity buses are a different thing from tours. The official guide says Strætó connects Reykjavík with nearly every town and village along the Ring Road, but rides longer than about two hours should be booked ahead because departures can be canceled without reservations, and operators note that schedules thin out in winter. Buses are good for getting from one town to another; they are not a way to visit waterfalls, because they do not stop at the attractions themselves.",
+        "Many travelers blend the options. A common pattern in the accounts is to stay in Reykjavík for a few nights with day tours for the Golden Circle and South Coast, then add a rental car or a guided multi-day tour for a longer leg. The operator guide we read advises booking day tours with pickup first and adding multi-day tours for wider reach, which is also the order that protects an open day for a canceled departure.",
+        "Price the complete versions of each trip. For the camper, include campsite fees, fuel, coverage, bedding or equipment, groceries, occasional restaurants and perhaps a hotel night for arrival or before the flight. For the car-and-room trip, include lodging, parking, fuel, coverage and meals. For the tour trip, add the tour fares, the Reykjavík lodging, airport transfers, meals on the road and optional extras, and check exactly what each tour includes. A camper may save money for one party and cost more for another; its clearest advantage is route flexibility. A tour's clearest advantage is not driving, not a lower price."
       ],
       "decision": {
-        "easiestPath": "Choose a regular car with lodging if dependable sleep, a private bathroom and a place to dry gear matter more than moving the route each morning.",
-        "researchPath": "Choose a compact campervan if everyone accepts close quarters and camp chores in exchange for flexibility. Inspect the exact layout, heating and campsite plan before booking.",
-        "acceptMoreRiskPath": "Choose a larger motorhome for space or onboard facilities only after comparing dimensions, wind handling, permitted roads, fuel, insurance and campsite compatibility."
+        "easiestPath": "If you can drive confidently, choose a regular car with a room each night: dependable sleep, a private bathroom and a place to dry gear. If you would rather not drive at all, base yourself in Reykjavík and book guided day tours with pickup.",
+        "researchPath": "Choose a compact campervan if everyone accepts close quarters and camp chores in exchange for flexibility. Inspect the exact layout, heating and campsite plan before booking. Or choose a small-group multi-day tour if you want the whole ring without driving, after reading the itinerary, group size and cancellation terms.",
+        "acceptMoreRiskPath": "Choose a larger motorhome for space or onboard facilities only after comparing dimensions, wind handling, permitted roads, fuel, insurance and campsite compatibility. Or stay in Reykjavík and decide each morning which tour to take, accepting that popular departures sell out or cancel."
       },
       "checklist": [
-        "Check seat belts and legal seats as well as the advertised sleeping capacity.",
-        "Find the bed dimensions and whether it must be converted every night.",
-        "Confirm the heater type, overnight use, power source and included bedding.",
-        "Ask what kitchen, water, refrigerator, curtain and cleaning equipment is actually included.",
-        "Map organized campsites for the intended dates and verify openings and services directly.",
-        "Compare vehicle height, length, transmission, permitted roads and coverage.",
+        "Campervan: check seat belts and legal seats as well as the advertised sleeping capacity.",
+        "Campervan: find the bed dimensions and whether it must be converted every night.",
+        "Campervan: confirm the heater type, overnight use, power source and included bedding.",
+        "Campervan: ask what kitchen, water, refrigerator, curtain and cleaning equipment is actually included.",
+        "Campervan: map organized campsites for the intended dates and verify openings and services directly.",
+        "Any vehicle: compare height, length, transmission, permitted roads and coverage.",
+        "Tour: read the itinerary for the stops, the time at each stop, the group size and what is included.",
+        "Tour: check the cancellation, weather and refund policy, and where and when you are picked up.",
+        "Tour: book the fixed tours first and keep at least one open day for a cancellation or for rest.",
+        "Tour: for the north or east, price a domestic flight or a multi-day tour against a rental car.",
+        "Bus: book public-bus rides longer than about two hours in advance and check winter timetables.",
         "Plan the first and last nights around pickup, groceries, cleaning, return time and the flight."
       ],
       "liveChecks": [
         {
           "label": "Environment Agency camping guidance",
           "url": "https://www.ust.is/english/visiting-iceland/travel-information/where-can-you-camp/"
+        },
+        {
+          "label": "Strætó public bus timetables and booking",
+          "url": "https://www.straeto.is/en"
         },
         {
           "label": "Official road conditions",
@@ -53,12 +70,20 @@
           "url": "https://en.vedur.is/"
         },
         {
-          "label": "Exact rental vehicle and terms",
+          "label": "Safetravel alerts",
+          "url": "https://safetravel.is/travel-conditions/"
+        },
+        {
+          "label": "Exact rental vehicle terms",
+          "url": "provider-specific"
+        },
+        {
+          "label": "Tour operator itinerary, pickup, cancellation and refund terms",
           "url": "provider-specific"
         }
       ],
-      "warning": "Camping and parking rules, campsite openings and vehicle terms can change. Verify the current rule and each overnight stop; do not assume that an empty parking area permits sleeping in the vehicle.",
-      "limits": "Traveler accounts establish recurring trade-offs, not campervan market share or a universal cost advantage. Comfort depends strongly on vehicle layout, party size, season and prior camping experience.",
+      "warning": "Camping and parking rules, campsite openings, vehicle terms, tour itineraries, pickup points, cancellation terms and bus timetables change by season. Verify the current rule and each booking; do not assume that an empty parking area permits sleeping in the vehicle or that a tour will run in poor weather.",
+      "limits": "Traveler accounts establish recurring trade-offs, not campervan market share, tour quality or a universal cost advantage. The tour evidence is a few traveler accounts plus operator guides and an official overview; the operators have a commercial interest, and their trip lengths, group sizes and schedules are estimates that vary by company and season. Comfort depends strongly on vehicle layout, party size, season and prior camping or driving experience.",
       "sourceIds": [
         "r014",
         "r017",
@@ -69,12 +94,43 @@
         "o001",
         "o002",
         "o003",
-        "o008"
+        "o008",
+        "r007",
+        "r016",
+        "t004",
+        "o025",
+        "p021",
+        "p022"
       ],
       "travelerStories": [
         "A Boston couple on a twelve-day campervan circuit loved not committing to lodging, but also had a dead battery, slow gravel access and depended on another motorhome's jumper cables.",
         "A couple in a compact campervan for eight nights in early March relied on an all-night heater, valued changing direction after a wind cancellation, and itemized camping, fuel and van costs instead of treating the van as free lodging.",
-        "A couple in a larger four-seat camper valued enough room to leave the bed assembled and shelter from the wind. They contrasted it with smaller vans that need daily bed and seat conversion, and they advised level parking and parking into the wind."
+        "A couple in a larger four-seat camper valued enough room to leave the bed assembled and shelter from the wind. They contrasted it with smaller vans that need daily bed and seat conversion, and they advised level parking and parking into the wind.",
+        "A solo visitor in summer used four tour operators and valued the hotel-area pickups, the guides and not having to handle fast-changing wind herself. The trade was fixed itineraries and fixed times.",
+        "An Australian on a five-night small-group tour found Iceland exceptionally expensive, but the guide moved a glacier hike around the rain, which a fixed self-drive plan would not have done.",
+        "A couple on a seven-day trip with buses and tours and no rental car lost a whale-watching tour to cancellation and filled the day with a Reykjavík waterfront walk instead, which is why they were glad they had left a day open."
+      ],
+      "options": [
+        {
+          "name": "Campervan",
+          "bestFor": "Couples or friends who like camping, want to change direction with the weather and accept the chores",
+          "tradeoff": "Every day includes cooking, drying clothes, finding a bathroom and rebuilding the bed; campsites and heating need planning."
+        },
+        {
+          "name": "Rental car with a room each night",
+          "bestFor": "Confident drivers who want a private bed and bathroom and their own schedule",
+          "tradeoff": "Less flexible once rooms are booked; you carry all the driving and navigation."
+        },
+        {
+          "name": "Guided day tours from Reykjavík",
+          "bestFor": "A short trip, a winter trip or anyone who does not want to drive; one room for the whole stay",
+          "tradeoff": "Fixed stops and times, long days on a coach, cancellations in bad weather, and limited reach beyond the southwest."
+        },
+        {
+          "name": "Multi-day guided tour",
+          "bestFor": "Seeing much of the country without driving or planning, ideally in a small group",
+          "tradeoff": "Fixed itinerary and pace, a higher total price, and less time at each place than a self-drive trip."
+        }
       ]
     },
     {
