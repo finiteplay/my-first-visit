@@ -246,6 +246,25 @@ is derived from the playbook models rather than from an approved route example:
 Drive times and opening periods are planning estimates; label them and send the reader to a
 live source for the actual day.
 
+### Vocabulary section ("Say it in Icelandic")
+
+Status: **built for the Iceland draft; checked by `audit_guide.py`.**
+
+A browsable word list assembled at build time from the language toolkit, so words are authored
+once. Source: `content/<cc>/vocabulary.yaml` (group order, introductions and extra words) plus
+`phrases.csv`, the primer's signs and the place-audio manifest.
+
+| Group | Contents | Shown |
+|---|---|---|
+| Courtesy | Phrases in the `courtesy` category | Always, with or without audio |
+| Emergency and help | Phrases in the `help` category plus extra words (emergency line, police, ambulance, hospital, doctor, accident) | Always; carries the local emergency number |
+| Getting around, Food and drink, Money and numbers, Signs, Place names | Remaining phrase categories, signs and place names | Only words with approved audio |
+
+Every extra word needs a respelling, a meaning and `sourceIds`. A word appears once, in the
+first group that claims it. Audio comes from `tools/audio/generate_place_audio.py`: a draft
+synthetic voice with the best of several takes, checked with Whisper, and a slow take at about
+half speed. Draft audio and respellings stay labeled until a native reviewer approves them.
+
 ### Basic information ("Iceland at a glance")
 
 Status: **built for the Iceland draft; checked by `audit_guide.py`.**

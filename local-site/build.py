@@ -15,6 +15,48 @@ def read_json(name: str):
     return json.loads((PACK / name).read_text(encoding="utf-8"))
 
 
+def build_vocabulary():
+    """Courtesy and emergency words always; every other word only if it has approved audio."""
+    import csv
+    if not (PACK / "vocabulary.yaml").exists():
+        return {}
+    config = read_json("vocabulary.yaml")
+    audio = {}
+    if (PACK / "place-audio.json").exists():
+        manifest = read_json("place-audio.json")
+        audio = {e["local"]: e for e in manifest["items"].values() if e.get("showInApp")}
+    with (PACK / "phrases.csv").open(encoding="utf-8-sig", newline="") as stream:
+        phrases = list(csv.DictReader(stream))
+    signs = read_json("primer.yaml").get("signs", [])
+    seen, groups = set(), []
+    for group in config["groups"]:
+        source, candidates = group["from"], []
+        if "phraseCategory" in source:
+            candidates += [{"local": r["local"], "respelling": r["respelling"], "meaning": r["meaning"], "when": r["when"]}
+                           for r in phrases if r["category"] == source["phraseCategory"]]
+        if source.get("extraWords"):
+            candidates += [{"local": w["local"], "respelling": w["respelling"], "meaning": w["meaning"], "when": w.get("when", "")}
+                           for w in config.get("extraWords", [])]
+        if source.get("kind") == "sign":
+            candidates += [{"local": x["local"], "respelling": x["respelling"], "meaning": x["meaning"], "when": ""} for x in signs]
+        if source.get("kind") == "place":
+            candidates += [{"local": e["local"], "respelling": e["respelling"], "meaning": e["meaning"], "when": ""}
+                           for e in audio.values() if e.get("kind") == "place"]
+        items = []
+        for item in candidates:
+            if item["local"] in seen:
+                continue
+            clip = audio.get(item["local"])
+            if not clip and not group.get("alwaysShow"):
+                continue
+            seen.add(item["local"])
+            items.append({**item, "hasAudio": bool(clip)})
+        if items:
+            groups.append({"id": group["id"], "title": group["title"], "intro": group["intro"],
+                           "callout": group.get("callout"), "items": items})
+    return {"title": config["title"], "intro": config["intro"], "note": config["note"], "groups": groups}
+
+
 content = {
     "pack": read_json("pack.yaml"),
     "briefings": read_json("briefings.yaml")["briefings"],
@@ -22,6 +64,7 @@ content = {
     "routes": read_json("routes.yaml")["routes"],
     "places": read_json("sights.yaml")["items"],
     "basics": read_json("basics.yaml"),
+    "vocabulary": build_vocabulary(),
     # Author-selected photos only (tools/media/apply_selection.py); others stay pending.
     "photos": read_json("photos.json")["attractions"] if (PACK / "photos.json").exists() else {},
     # Draft synthetic pronunciation (tools/audio/generate_place_audio.py); only clips approved

@@ -124,6 +124,28 @@ def basics_audit(basics, evidence_ids):
     return errors
 
 
+def vocabulary_audit(vocab, evidence_ids):
+    """The 'Say it in Icelandic' section: courtesy and emergency groups plus pronounced extra words."""
+    errors = []
+    groups = {group.get("id"): group for group in vocab.get("groups", [])}
+    for required in ("courtesy", "emergency"):
+        if required not in groups:
+            errors.append(f"vocabulary.yaml: a {required} group is required.")
+        elif not groups[required].get("alwaysShow"):
+            errors.append(f"vocabulary.yaml: the {required} group must always be shown, with or without audio.")
+    for word in vocab.get("extraWords", []):
+        label = word.get("local", "<missing>")
+        for field in ("local", "respelling", "meaning"):
+            if not str(word.get(field, "")).strip():
+                errors.append(f"vocabulary.yaml word {label}: {field} is required.")
+        if not word.get("sourceIds"):
+            errors.append(f"vocabulary.yaml word {label}: sourceIds are required.")
+        unknown = set(word.get("sourceIds", [])) - evidence_ids
+        if unknown:
+            errors.append(f"vocabulary.yaml word {label}: unknown source IDs {sorted(unknown)}.")
+    return errors
+
+
 def audit(root):
     errors = []
     research = root / "research"
@@ -173,6 +195,9 @@ def audit(root):
                 errors += [f"{filename} {item_id}: depth: {e}" for e in playbook_depth(item, roles)]
             if filename == "routes.yaml":
                 errors += [f"{filename} {item_id}: depth: {e}" for e in route_depth(item, roles)]
+    vocabulary_path = root / "vocabulary.yaml"
+    if vocabulary_path.exists():
+        errors += vocabulary_audit(read_json(vocabulary_path), evidence_ids)
     basics_path = root / "basics.yaml"
     if basics_path.exists():
         errors += basics_audit(read_json(basics_path), evidence_ids)

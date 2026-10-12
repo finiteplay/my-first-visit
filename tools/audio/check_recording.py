@@ -37,12 +37,35 @@ def similarity(heard: str, expected: str) -> float:
     return difflib.SequenceMatcher(None, normalize(heard), normalize(expected)).ratio()
 
 
-def load_model(device: str = "cpu"):
-    """CPU int8 by default: short clips are fast enough, and the GPU path needs the CUDA 12
-    cuBLAS/cuDNN DLLs on PATH (`--gpu` once they are installed)."""
+def _add_nvidia_dll_dirs() -> None:
+    """Make the pip-installed CUDA 12 cuBLAS/cuDNN DLLs (nvidia-cublas-cu12, nvidia-cudnn-cu12)
+    visible to CTranslate2 on Windows."""
+    import os
+    import site
+    import sys
+    roots = [Path(p) for p in site.getsitepackages()] + [Path(sys.prefix) / "Lib" / "site-packages"]
+    for root in roots:
+        for sub in ("cublas", "cudnn", "cuda_nvrtc"):
+            bin_dir = root / "nvidia" / sub / "bin"
+            if bin_dir.is_dir():
+                os.add_dll_directory(str(bin_dir))
+                os.environ["PATH"] = str(bin_dir) + os.pathsep + os.environ.get("PATH", "")
+
+
+def load_model(device: str = "auto"):
+    """GPU when it really works (probed with one second of silence), otherwise CPU int8."""
     from faster_whisper import WhisperModel
-    if device == "cuda":
-        return WhisperModel(str(MODEL_DIR), device="cuda", compute_type="float16")
+    import numpy as np
+    if device in ("auto", "cuda"):
+        try:
+            _add_nvidia_dll_dirs()
+            model = WhisperModel(str(MODEL_DIR), device="cuda", compute_type="float16")
+            list(model.transcribe(np.zeros(16000, dtype=np.float32), language="is")[0])
+            return model
+        except Exception as error:
+            if device == "cuda":
+                raise
+            print(f"GPU unavailable ({str(error)[:80]}); using CPU", file=__import__("sys").stderr)
     return WhisperModel(str(MODEL_DIR), device="cpu", compute_type="int8")
 
 

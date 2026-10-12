@@ -96,5 +96,16 @@ class GuideAuditTest(unittest.TestCase):
         self.assertTrue(any("needs 5+ tips" in e for e in errors))
 
 
+    def test_vocabulary_needs_courtesy_and_emergency_groups(self):
+        temp, root = self.make_guide()
+        self.addCleanup(temp.cleanup)
+        vocab = {"groups": [{"id": "courtesy", "alwaysShow": True}],
+                 "extraWords": [{"local": "Slys", "respelling": "", "meaning": "Accident", "sourceIds": ["r1"]}]}
+        (root / "vocabulary.yaml").write_text(json.dumps(vocab), encoding="utf-8")
+        errors = audit(root)
+        self.assertTrue(any("emergency group is required" in e for e in errors))
+        self.assertTrue(any("respelling is required" in e for e in errors))
+
+
 if __name__ == "__main__":
     unittest.main()

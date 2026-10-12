@@ -202,6 +202,25 @@
   document.querySelectorAll("#primary-nav a").forEach(link => link.addEventListener("click", () => document.querySelector("#primary-nav").classList.remove("open")));
   addEventListener("scroll", () => document.querySelector(".site-header").classList.toggle("scrolled", scrollY > 30), { passive: true });
 
+  function renderWords() {
+    const vocab = data.vocabulary;
+    if (!vocab?.groups?.length) return;
+    document.querySelector("#words-intro").textContent = vocab.intro;
+    document.querySelector("#words-note").textContent = vocab.note;
+    document.querySelector("#words-jump").innerHTML = vocab.groups.map(group => `<a href="#words-${escapeHtml(group.id)}">${escapeHtml(group.title)}</a>`).join("");
+    document.querySelector("#words-groups").innerHTML = vocab.groups.map(group => `
+      <section class="word-group" id="words-${escapeHtml(group.id)}" aria-labelledby="words-${escapeHtml(group.id)}-title">
+        <h3 id="words-${escapeHtml(group.id)}-title">${escapeHtml(group.title)}</h3>
+        <p class="word-group-intro">${escapeHtml(group.intro)}</p>
+        ${group.callout ? `<p class="word-callout">${escapeHtml(group.callout)}</p>` : ""}
+        <ul class="word-list">${group.items.map(item => `
+          <li class="word-row">
+            <div class="word-main"><strong class="word-local">${escapeHtml(item.local)}</strong><span class="word-meaning">${escapeHtml(item.meaning)}</span>${item.when ? `<span class="word-when">${escapeHtml(item.when)}</span>` : ""}</div>
+            <div class="word-say"><span class="word-respelling">${escapeHtml(item.respelling)}</span>${audioControls(item.local)}</div>
+          </li>`).join("")}</ul>
+      </section>`).join("");
+  }
+
   function renderBasics() {
     const basics = data.basics;
     if (!basics) return;
@@ -228,6 +247,7 @@
   }
 
   renderBasics();
+  renderWords();
   renderPlaybooks();
   renderRoutes();
   renderPlaces();

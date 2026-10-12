@@ -32,7 +32,7 @@ CREDIT = ("Synthetic voice: Piper Icelandic voice trained on Talrómur 1, "
 SLOW_SCALE = 2.0  # 0.5x speed
 # English-language brand names are not Icelandic names, so no Icelandic voice is offered.
 ENGLISH_BRANDS = {"Aurora Reykjavík", "FlyOver Iceland", "Mink Viking Portrait"}
-ATTEMPTS = 5  # takes tried per clip
+ATTEMPTS = 8  # takes tried per clip (variants alternate)
 GOOD_ENOUGH = 0.95
 SHOW_THRESHOLD = 0.75  # Whisper match on the normal take; below this a native listener must decide
 
@@ -44,21 +44,47 @@ def slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", folded.lower()).strip("-")
 
 
-def collect_names(pack: Path) -> dict[str, str]:
-    """Map local Icelandic name -> respelling (draft) from sights and playbook place entries."""
-    names: dict[str, str] = {}
+def collect_names(pack: Path) -> dict[str, dict]:
+    """Map local Icelandic text -> {respelling, kind, meaning} for everything that gets audio:
+    place names, the country and capital, courtesy/emergency/other phrases, signs and the extra
+    vocabulary words. The first source to mention a text wins."""
+    import csv
+    items: dict[str, dict] = {}
+
+    def add(local, respelling, kind, meaning):
+        if local and local not in items:
+            items[local] = {"respelling": respelling, "kind": kind, "meaning": meaning}
+
     for item in json.loads((pack / "sights.yaml").read_text(encoding="utf-8"))["items"]:
-        names.setdefault(item["local"], item.get("respelling", ""))
+        add(item["local"], item.get("respelling", ""), "place", item["name"])
     basics = pack / "basics.yaml"
     if basics.exists():
         for name in json.loads(basics.read_text(encoding="utf-8")).get("names", []):
-            names.setdefault(name["local"], name.get("respelling", ""))
+            add(name["local"], name.get("respelling", ""), "place", name["english"])
     for playbook in json.loads((pack / "playbooks.yaml").read_text(encoding="utf-8"))["playbooks"]:
         for group in playbook.get("whereToSoak", []):
             for place in group["places"]:
-                if place.get("local"):
-                    names.setdefault(place["local"], place.get("respelling", ""))
-    return names
+                add(place.get("local"), place.get("respelling", ""), "place", place["name"])
+    phrases = pack / "phrases.csv"
+    if phrases.exists():
+        with phrases.open(encoding="utf-8-sig", newline="") as stream:
+            for row in csv.DictReader(stream):
+                add(row["local"], row["respelling"], "phrase", row["meaning"])
+    primer = pack / "primer.yaml"
+    if primer.exists():
+        for sign in json.loads(primer.read_text(encoding="utf-8")).get("signs", []):
+            add(sign["local"], sign["respelling"], "sign", sign["meaning"])
+    vocab = pack / "vocabulary.yaml"
+    if vocab.exists():
+        for word in json.loads(vocab.read_text(encoding="utf-8")).get("extraWords", []):
+            add(word["local"], word["respelling"], "word", word["meaning"])
+    return items
+
+
+def speak_text(local: str) -> str:
+    """What the voice should say: fill-in-the-blank phrases lose their ellipsis."""
+    text = re.sub(r"\s*[…]+\s*", " ", local).replace("...", " ")
+    return re.sub(r"\s+([?!.,])", r"\1", text).strip()
 
 
 def synth(voice, text: str, path: Path, length_scale: float) -> float:
@@ -76,6 +102,7 @@ def main() -> int:
     ap.add_argument("--only", action="append")
     ap.add_argument("--out", default=None)
     ap.add_argument("--no-check", action="store_true")
+    ap.add_argument("--missing-only", action="store_true", help="skip texts that already have audio in the manifest")
     args = ap.parse_args()
 
     from piper import PiperVoice
@@ -101,21 +128,27 @@ def main() -> int:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else {"schemaVersion": 1, "items": {}}
     manifest["credit"] = CREDIT
     manifest["status"] = "draft-synthetic; replace with native-speaker recordings before release"
-    for local, respelling in names.items():
+    for local, info in names.items():
         key = slug(local)
-        entry = {"local": local, "respelling": respelling, "voice": f"piper is_IS-{args.voice}-medium",
+        if args.missing_only and key in manifest["items"] and manifest["items"][key].get("files"):
+            continue
+        said = speak_text(local)
+        entry = {"local": local, "respelling": info["respelling"], "kind": info["kind"], "meaning": info["meaning"],
+                 "voice": f"piper is_IS-{args.voice}-medium",
                  "generated": time.strftime("%Y-%m-%d"), "status": "draft-synthetic", "files": {}}
         for take, scale in (("normal", 1.0), ("slow", SLOW_SCALE)):
             path = out_dir / f"{key}_{take}.wav"
             best = None  # Piper sampling is random: keep the take Whisper hears best
-            for _ in range(ATTEMPTS if checker else 1):
-                seconds = synth(voice, local, path, scale)
+            # Very short words are said more reliably with a closing period: alternate the variants.
+            variants = [said] if said[-1:] in "?!.," else [said, said + "."]
+            for attempt in range(ATTEMPTS if checker else 1):
+                seconds = synth(voice, variants[attempt % len(variants)], path, scale)
                 if not checker:
                     best = (0.0, path.read_bytes(), seconds, "")
                     break
                 cr, model_w = checker
                 heard = cr.transcribe(model_w, path)
-                score = cr.similarity(heard, local)
+                score = cr.similarity(heard, said)
                 if take == "slow":  # a "0.5x" take should be about 1.5-2.6x as long as the normal one
                     ratio = seconds / entry["files"]["normal"]["seconds"]
                     if not 1.5 <= ratio <= 2.6:

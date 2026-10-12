@@ -241,3 +241,28 @@ body.night .reader-bar { background: rgba(21,48,53,.95); }
 .basics .audio-play:hover, .basics .audio-play:focus-visible { background: var(--moss); color: var(--white); }
 .basics .audio-note { color: var(--muted); font-size: .72rem; }
 @media (max-width: 760px) { .basics-names, .basics-tips { grid-template-columns: 1fr; } .basics-numbers { grid-template-columns: 1fr; } }
+
+/* Words (vocabulary) section */
+.words { display: grid; gap: 22px; }
+.words-head h2 { margin: 6px 0 12px; }
+.words-jump { display: flex; flex-wrap: wrap; gap: 8px; }
+.words-jump a { padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .85rem; font-weight: 700; text-decoration: none; background: var(--paper); }
+.words-jump a:hover, .words-jump a:focus-visible { border-color: var(--moss); color: var(--moss); }
+.word-group { padding-top: 20px; border-top: 1px solid var(--line); scroll-margin-top: 90px; }
+.word-group h3 { margin: 0 0 6px; font: 500 1.6rem Georgia, serif; }
+.word-group-intro { margin: 0 0 12px; color: var(--muted); max-width: 720px; }
+.word-callout { display: inline-block; margin: 0 0 14px; padding: 8px 16px; border-radius: 999px; background: var(--ink); color: var(--white); font-weight: 800; letter-spacing: .04em; }
+.word-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.word-row { display: grid; grid-template-columns: 1.2fr 1fr; gap: 10px 24px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.word-main { display: grid; gap: 2px; }
+.word-local { font: 500 1.25rem Georgia, serif; color: var(--ink); }
+.word-meaning { color: var(--ink); font-weight: 600; }
+.word-when { color: var(--muted); font-size: .85rem; }
+.word-say { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; }
+.word-respelling { color: var(--moss); font-weight: 800; letter-spacing: .02em; }
+.words .audio-controls { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
+.words .audio-play { padding: 4px 12px; border: 1px solid var(--moss); border-radius: 999px; color: var(--moss); background: var(--white); font: inherit; font-size: .8rem; font-weight: 700; cursor: pointer; }
+.words .audio-play:hover, .words .audio-play:focus-visible { background: var(--moss); color: var(--white); }
+.words .audio-note { display: none; }
+.words .audio-placeholder { padding: 4px 12px; border: 1px dashed var(--line); border-radius: 999px; color: var(--muted); background: transparent; font-size: .75rem; }
+@media (max-width: 760px) { .word-row { grid-template-columns: 1fr; } }

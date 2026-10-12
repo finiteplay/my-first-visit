@@ -4,326 +4,392 @@
     "laugardalslaug": {
       "local": "Laugardalslaug",
       "respelling": "LUR-gar-dahls-lurg",
+      "kind": "place",
+      "meaning": "Laugardalslaug public pool",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/laugardalslaug_normal.wav",
-          "seconds": 1.23
+          "seconds": 1.25
         },
         "slow": {
           "file": "assets/audio/laugardalslaug_slow.wav",
-          "seconds": 2.18
+          "seconds": 1.9
         }
       },
-      "whisperHeard": "ugardalslaug",
-      "whisperMatch": 0.92,
+      "whisperHeard": "laugardalslaug",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "laufardalslaug",
+      "whisperMatchSlow": 0.93,
       "showInApp": true
     },
     "thingvellir": {
       "local": "Þingvellir",
       "respelling": "THIHNK-veht-lihr",
+      "kind": "place",
+      "meaning": "Þingvellir National Park",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/thingvellir_normal.wav",
-          "seconds": 1.06
+          "seconds": 0.98
         },
         "slow": {
           "file": "assets/audio/thingvellir_slow.wav",
-          "seconds": 1.9
+          "seconds": 2.17
         }
       },
       "whisperHeard": "þingvellir",
       "whisperMatch": 1.0,
+      "whisperHeardSlow": "þingvellir",
+      "whisperMatchSlow": 1.0,
       "showInApp": true
     },
     "gullfoss": {
       "local": "Gullfoss",
       "respelling": "GUUTL-faws",
+      "kind": "place",
+      "meaning": "Gullfoss waterfall",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/gullfoss_normal.wav",
-          "seconds": 0.86
+          "seconds": 0.87
         },
         "slow": {
           "file": "assets/audio/gullfoss_slow.wav",
-          "seconds": 1.6
+          "seconds": 1.57
         }
       },
       "whisperHeard": "gullfoss",
       "whisperMatch": 1.0,
+      "whisperHeardSlow": "gullfoss",
+      "whisperMatchSlow": 1.0,
       "showInApp": true
     },
     "geysir-og-strokkur": {
       "local": "Geysir og Strokkur",
       "respelling": "GAY-sihr awg STROH-kuur",
+      "kind": "place",
+      "meaning": "Geysir and Strokkur",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/geysir-og-strokkur_normal.wav",
-          "seconds": 1.44
+          "seconds": 1.59
         },
         "slow": {
           "file": "assets/audio/geysir-og-strokkur_slow.wav",
-          "seconds": 2.55
+          "seconds": 2.6
         }
       },
-      "whisperHeard": "ir og strokkur",
-      "whisperMatch": 0.88,
+      "whisperHeard": "geysir og strokkur",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "geysir og strokkur",
+      "whisperMatchSlow": 1.0,
       "showInApp": true
     },
     "hallgrimskirkja": {
       "local": "Hallgrímskirkja",
       "respelling": "HAHTL-greem-skihr-kya",
+      "kind": "place",
+      "meaning": "Hallgrímskirkja",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/hallgrimskirkja_normal.wav",
-          "seconds": 1.17
+          "seconds": 1.13
         },
         "slow": {
           "file": "assets/audio/hallgrimskirkja_slow.wav",
-          "seconds": 2.09
+          "seconds": 1.97
         }
       },
       "whisperHeard": "hallgrímskirkja",
       "whisperMatch": 1.0,
+      "whisperHeardSlow": "hallgrímskirkja",
+      "whisperMatchSlow": 1.0,
       "showInApp": true
     },
     "harpa": {
       "local": "Harpa",
       "respelling": "HAHR-pa",
+      "kind": "place",
+      "meaning": "Harpa concert hall",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/harpa_normal.wav",
-          "seconds": 0.64
+          "seconds": 0.63
         },
         "slow": {
           "file": "assets/audio/harpa_slow.wav",
-          "seconds": 1.28
+          "seconds": 1.25
         }
       },
       "whisperHeard": "harpa",
       "whisperMatch": 1.0,
+      "whisperHeardSlow": "harpa",
+      "whisperMatchSlow": 1.0,
       "showInApp": true
     },
     "thjodminjasafn-islands": {
       "local": "Þjóðminjasafn Íslands",
       "respelling": "THYOHDH-mihn-ya-sahvn EES-lahnds",
+      "kind": "place",
+      "meaning": "National Museum of Iceland",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/thjodminjasafn-islands_normal.wav",
-          "seconds": 1.57
+          "seconds": 1.59
         },
         "slow": {
           "file": "assets/audio/thjodminjasafn-islands_slow.wav",
-          "seconds": 2.91
+          "seconds": 2.84
         }
       },
       "whisperHeard": "fminjasafn íslands",
       "whisperMatch": 0.87,
+      "whisperHeardSlow": "þjóðminjasafn íslands",
+      "whisperMatchSlow": 1.0,
       "showInApp": true
     },
     "seljalandsfoss": {
       "local": "Seljalandsfoss",
       "respelling": "SEHL-ya-lahnds-faws",
+      "kind": "place",
+      "meaning": "Seljalandsfoss waterfall",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/seljalandsfoss_normal.wav",
-          "seconds": 1.28
+          "seconds": 1.34
         },
         "slow": {
           "file": "assets/audio/seljalandsfoss_slow.wav",
-          "seconds": 2.16
+          "seconds": 2.57
         }
       },
-      "whisperHeard": "lljalandsfoss",
-      "whisperMatch": 0.89,
+      "whisperHeard": "seljalandsfoss",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "seljalandsfoss",
+      "whisperMatchSlow": 1.0,
       "showInApp": true
     },
     "skogafoss": {
       "local": "Skógafoss",
       "respelling": "SKOH-ga-faws",
+      "kind": "place",
+      "meaning": "Skógafoss waterfall",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/skogafoss_normal.wav",
-          "seconds": 0.99
+          "seconds": 1.17
         },
         "slow": {
           "file": "assets/audio/skogafoss_slow.wav",
-          "seconds": 1.97
+          "seconds": 1.95
         }
       },
-      "whisperHeard": "skógafoss",
-      "whisperMatch": 1.0,
+      "whisperHeard": "skógafossu",
+      "whisperMatch": 0.95,
+      "whisperHeardSlow": "skógafossu",
+      "whisperMatchSlow": 0.95,
       "showInApp": true
     },
     "reynisfjara": {
       "local": "Reynisfjara",
       "respelling": "RAY-nihs-fya-ra",
+      "kind": "place",
+      "meaning": "Reynisfjara black-sand coast",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/reynisfjara_normal.wav",
-          "seconds": 1.89
+          "seconds": 1.11
         },
         "slow": {
           "file": "assets/audio/reynisfjara_slow.wav",
-          "seconds": 1.87
+          "seconds": 1.72
         }
       },
       "whisperHeard": "reynisfjara",
       "whisperMatch": 1.0,
+      "whisperHeardSlow": "reynisfjara",
+      "whisperMatchSlow": 1.0,
       "showInApp": true
     },
     "jokulsarlon": {
       "local": "Jökulsárlón",
       "respelling": "YUR-kuuls-owr-lohn",
+      "kind": "place",
+      "meaning": "Jökulsárlón glacier lagoon",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/jokulsarlon_normal.wav",
-          "seconds": 1.07
+          "seconds": 1.11
         },
         "slow": {
           "file": "assets/audio/jokulsarlon_slow.wav",
-          "seconds": 1.73
+          "seconds": 2.03
         }
       },
       "whisperHeard": "jökulsálón",
       "whisperMatch": 0.95,
+      "whisperHeardSlow": "jökulsárlón",
+      "whisperMatchSlow": 1.0,
       "showInApp": true
     },
     "godafoss": {
       "local": "Goðafoss",
       "respelling": "GOH-dha-faws",
+      "kind": "place",
+      "meaning": "Goðafoss waterfall",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/godafoss_normal.wav",
-          "seconds": 0.94
+          "seconds": 0.98
         },
         "slow": {
           "file": "assets/audio/godafoss_slow.wav",
-          "seconds": 1.71
+          "seconds": 1.87
         }
       },
-      "whisperHeard": "goðavos",
-      "whisperMatch": 0.8,
+      "whisperHeard": "goðafoss",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "goðavoss",
+      "whisperMatchSlow": 0.88,
       "showInApp": true
     },
     "myvatn": {
       "local": "Mývatn",
       "respelling": "MEE-vaht-n",
+      "kind": "place",
+      "meaning": "Lake Mývatn area",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/myvatn_normal.wav",
-          "seconds": 0.88
+          "seconds": 0.81
         },
         "slow": {
           "file": "assets/audio/myvatn_slow.wav",
-          "seconds": 1.42
+          "seconds": 1.43
         }
       },
-      "whisperHeard": "vatn",
-      "whisperMatch": 0.8,
+      "whisperHeard": "nývatn",
+      "whisperMatch": 0.83,
+      "whisperHeardSlow": "mývatn",
+      "whisperMatchSlow": 1.0,
       "showInApp": true
     },
     "perlan": {
       "local": "Perlan",
       "respelling": "PEHR-lan",
+      "kind": "place",
+      "meaning": "Perlan – Wonders of Iceland",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/perlan_normal.wav",
-          "seconds": 0.68
+          "seconds": 0.89
         },
         "slow": {
           "file": "assets/audio/perlan_slow.wav",
-          "seconds": 1.24
+          "seconds": 1.45
         }
       },
-      "whisperHeard": "lan",
-      "whisperMatch": 0.67,
+      "whisperHeard": "heftlan",
+      "whisperMatch": 0.62,
+      "whisperHeardSlow": "hartlan",
+      "whisperMatchSlow": 0.62,
       "showInApp": false
     },
     "hvalasyningin-a-islandi": {
       "local": "Hvalasýningin á Íslandi",
       "respelling": "HVAH-la-sigh-ning-in ow EES-land-i",
+      "kind": "place",
+      "meaning": "Whales of Iceland",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/hvalasyningin-a-islandi_normal.wav",
-          "seconds": 1.5
+          "seconds": 1.45
         },
         "slow": {
           "file": "assets/audio/hvalasyningin-a-islandi_slow.wav",
-          "seconds": 2.64
+          "seconds": 2.29
         }
       },
-      "whisperHeard": "sýningin á íslandi",
-      "whisperMatch": 0.88,
+      "whisperHeard": "falasýningin á íslandi",
+      "whisperMatch": 0.93,
+      "whisperHeardSlow": "hvalasýningin á íslandi",
+      "whisperMatchSlow": 1.0,
       "showInApp": true
     },
     "aurora-reykjavik": {
       "local": "Aurora Reykjavík",
       "respelling": "ow-ROH-ra RAY-kya-veek",
+      "kind": "place",
+      "meaning": "Aurora Reykjavík",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/aurora-reykjavik_normal.wav",
-          "seconds": 1.31
+          "seconds": 1.42
         },
         "slow": {
           "file": "assets/audio/aurora-reykjavik_slow.wav",
-          "seconds": 2.1
+          "seconds": 2.22
         }
       },
       "whisperHeard": "aurora reykjavík",
       "whisperMatch": 1.0,
+      "whisperHeardSlow": "aurora reykjavík",
+      "whisperMatchSlow": 1.0,
       "showInApp": false
     },
     "flyover-iceland": {
       "local": "FlyOver Iceland",
       "respelling": "fly OH-ver EES-land",
+      "kind": "place",
+      "meaning": "FlyOver Iceland",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
@@ -334,136 +400,164 @@
         },
         "slow": {
           "file": "assets/audio/flyover-iceland_slow.wav",
-          "seconds": 2.36
+          "seconds": 2.51
         }
       },
       "whisperHeard": "flý yfir ísland",
       "whisperMatch": 0.6,
+      "whisperHeardSlow": "flý yfir ísland",
+      "whisperMatchSlow": 0.6,
       "showInApp": false
     },
     "mink-viking-portrait": {
       "local": "Mink Viking Portrait",
       "respelling": "MINK VIE-king POR-trit",
+      "kind": "place",
+      "meaning": "Mink Viking Portrait Studio",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/mink-viking-portrait_normal.wav",
-          "seconds": 1.75
+          "seconds": 1.59
         },
         "slow": {
           "file": "assets/audio/mink-viking-portrait_slow.wav",
-          "seconds": 2.89
+          "seconds": 3.19
         }
       },
-      "whisperHeard": "k víking portræt",
-      "whisperMatch": 0.78,
+      "whisperHeard": "mink víking portraít",
+      "whisperMatch": 0.9,
+      "whisperHeardSlow": "mink víking portraidd",
+      "whisperMatchSlow": 0.88,
       "showInApp": false
     },
     "vesturbaejarlaug": {
       "local": "Vesturbæjarlaug",
       "respelling": "VEHS-tur-bai-yar-lurg",
+      "kind": "place",
+      "meaning": "Vesturbæjarlaug",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/vesturbaejarlaug_normal.wav",
-          "seconds": 1.16
+          "seconds": 1.21
         },
         "slow": {
           "file": "assets/audio/vesturbaejarlaug_slow.wav",
-          "seconds": 1.96
+          "seconds": 2.14
         }
       },
       "whisperHeard": "vesturbæjarlaug",
       "whisperMatch": 1.0,
+      "whisperHeardSlow": "vestur bæjarlaug",
+      "whisperMatchSlow": 0.97,
       "showInApp": true
     },
     "sundhollin": {
       "local": "Sundhöllin",
       "respelling": "SUHND-hurt-lihn",
+      "kind": "place",
+      "meaning": "Sundhöllin",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/sundhollin_normal.wav",
-          "seconds": 1.06
+          "seconds": 0.93
         },
         "slow": {
           "file": "assets/audio/sundhollin_slow.wav",
-          "seconds": 1.61
+          "seconds": 1.8
         }
       },
-      "whisperHeard": "llinn",
-      "whisperMatch": 0.53,
-      "showInApp": false
+      "whisperHeard": "sundhöllin",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "sundhöllin",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
     },
     "arbaejarlaug": {
       "local": "Árbæjarlaug",
       "respelling": "OWR-bai-yar-lurg",
+      "kind": "place",
+      "meaning": "Árbæjarlaug",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/arbaejarlaug_normal.wav",
-          "seconds": 2.02
+          "seconds": 1.1
         },
         "slow": {
           "file": "assets/audio/arbaejarlaug_slow.wav",
-          "seconds": 1.85
+          "seconds": 1.74
         }
       },
-      "whisperHeard": "bæjarlaug",
-      "whisperMatch": 0.9,
+      "whisperHeard": "árbæjarlaug",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "ár bæjarlaug",
+      "whisperMatchSlow": 0.96,
       "showInApp": true
     },
     "nautholsvik": {
       "local": "Nauthólsvík",
       "respelling": "NURT-hohls-veek",
+      "kind": "place",
+      "meaning": "Nauthólsvík geothermal beach",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/nautholsvik_normal.wav",
-          "seconds": 1.03
+          "seconds": 1.06
         },
         "slow": {
           "file": "assets/audio/nautholsvik_slow.wav",
-          "seconds": 2.24
+          "seconds": 2.26
         }
       },
       "whisperHeard": "hólsvík",
       "whisperMatch": 0.78,
+      "whisperHeardSlow": "hólsvík",
+      "whisperMatchSlow": 0.78,
       "showInApp": true
     },
     "blaa-lonid": {
       "local": "Bláa lónið",
       "respelling": "BLOW-ah LOH-nidh",
+      "kind": "place",
+      "meaning": "Blue Lagoon",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/blaa-lonid_normal.wav",
-          "seconds": 1.15
+          "seconds": 1.08
         },
         "slow": {
           "file": "assets/audio/blaa-lonid_slow.wav",
-          "seconds": 2.07
+          "seconds": 2.02
         }
       },
       "whisperHeard": "bláa lónið",
       "whisperMatch": 1.0,
+      "whisperHeardSlow": "bláa lónið",
+      "whisperMatchSlow": 1.0,
       "showInApp": true
     },
     "hvammsvik": {
       "local": "Hvammsvík",
       "respelling": "KVAHMS-veek",
+      "kind": "place",
+      "meaning": "Hvammsvík Hot Springs",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
@@ -474,47 +568,55 @@
         },
         "slow": {
           "file": "assets/audio/hvammsvik_slow.wav",
-          "seconds": 1.5
+          "seconds": 1.4
         }
       },
-      "whisperHeard": "vík",
-      "whisperMatch": 0.5,
-      "showInApp": false
+      "whisperHeard": "famsvík",
+      "whisperMatch": 0.75,
+      "whisperHeardSlow": "fammsvík",
+      "whisperMatchSlow": 0.82,
+      "showInApp": true
     },
     "reykjadalur": {
       "local": "Reykjadalur",
       "respelling": "RAYK-ya-dah-lur",
+      "kind": "place",
+      "meaning": "Reykjadalur hot spring river",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/reykjadalur_normal.wav",
-          "seconds": 1.14
+          "seconds": 1.18
         },
         "slow": {
           "file": "assets/audio/reykjadalur_slow.wav",
-          "seconds": 2.48
+          "seconds": 2.35
         }
       },
-      "whisperHeard": "reykjatalur",
-      "whisperMatch": 0.91,
+      "whisperHeard": "reykjadalur",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "reykjatalur",
+      "whisperMatchSlow": 0.91,
       "showInApp": true
     },
     "island": {
       "local": "Ísland",
       "respelling": "EES-lahnd",
+      "kind": "place",
+      "meaning": "Iceland",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/island_normal.wav",
-          "seconds": 1.53
+          "seconds": 0.8
         },
         "slow": {
           "file": "assets/audio/island_slow.wav",
-          "seconds": 2.84
+          "seconds": 1.51
         }
       },
       "whisperHeard": "ísland",
@@ -526,22 +628,1632 @@
     "reykjavik": {
       "local": "Reykjavík",
       "respelling": "RAYK-yah-veek",
+      "kind": "place",
+      "meaning": "Reykjavík",
       "voice": "piper is_IS-ugla-medium",
       "generated": "2026-10-11",
       "status": "draft-synthetic",
       "files": {
         "normal": {
           "file": "assets/audio/reykjavik_normal.wav",
-          "seconds": 0.92
+          "seconds": 0.89
         },
         "slow": {
           "file": "assets/audio/reykjavik_slow.wav",
-          "seconds": 1.81
+          "seconds": 1.5
         }
       },
       "whisperHeard": "reykjavík",
       "whisperMatch": 1.0,
       "whisperHeardSlow": "reykjavík",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "hae": {
+      "local": "Hæ",
+      "respelling": "HEYE",
+      "kind": "phrase",
+      "meaning": "Hello",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hae_normal.wav",
+          "seconds": 0.52
+        },
+        "slow": {
+          "file": "assets/audio/hae_slow.wav",
+          "seconds": 0.85
+        }
+      },
+      "whisperHeard": "hæ",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "hæ",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "godan-daginn": {
+      "local": "Góðan daginn",
+      "respelling": "GOH-dhan DAH-gihn",
+      "kind": "phrase",
+      "meaning": "Good day",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/godan-daginn_normal.wav",
+          "seconds": 0.91
+        },
+        "slow": {
+          "file": "assets/audio/godan-daginn_slow.wav",
+          "seconds": 1.65
+        }
+      },
+      "whisperHeard": "góðan daginn",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "góðan daginn",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "bless": {
+      "local": "Bless",
+      "respelling": "BLEHS",
+      "kind": "phrase",
+      "meaning": "Goodbye",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/bless_normal.wav",
+          "seconds": 0.53
+        },
+        "slow": {
+          "file": "assets/audio/bless_slow.wav",
+          "seconds": 1.09
+        }
+      },
+      "whisperHeard": "bess",
+      "whisperMatch": 0.89,
+      "whisperHeardSlow": "bless",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "takk": {
+      "local": "Takk",
+      "respelling": "TAHK",
+      "kind": "phrase",
+      "meaning": "Please (in a request)",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/takk_normal.wav",
+          "seconds": 0.5
+        },
+        "slow": {
+          "file": "assets/audio/takk_slow.wav",
+          "seconds": 1.25
+        }
+      },
+      "whisperHeard": "ha",
+      "whisperMatch": 0.33,
+      "whisperHeardSlow": "takk",
+      "whisperMatchSlow": 1.0,
+      "showInApp": false
+    },
+    "takk-fyrir": {
+      "local": "Takk fyrir",
+      "respelling": "TAHK FIH-rihr",
+      "kind": "phrase",
+      "meaning": "Thank you",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/takk-fyrir_normal.wav",
+          "seconds": 0.92
+        },
+        "slow": {
+          "file": "assets/audio/takk-fyrir_slow.wav",
+          "seconds": 1.6
+        }
+      },
+      "whisperHeard": "takk fyrir",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "hakk fyrir",
+      "whisperMatchSlow": 0.9,
+      "showInApp": true
+    },
+    "takk-kaerlega": {
+      "local": "Takk kærlega",
+      "respelling": "TAHK KEYER-leh-ga",
+      "kind": "phrase",
+      "meaning": "Thank you very much",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/takk-kaerlega_normal.wav",
+          "seconds": 1.08
+        },
+        "slow": {
+          "file": "assets/audio/takk-kaerlega_slow.wav",
+          "seconds": 1.87
+        }
+      },
+      "whisperHeard": "hakk kærlega",
+      "whisperMatch": 0.92,
+      "whisperHeardSlow": "ha kærlega",
+      "whisperMatchSlow": 0.82,
+      "showInApp": true
+    },
+    "ekkert-ad-thakka": {
+      "local": "Ekkert að þakka",
+      "respelling": "EH-kehrt adh THAH-ka",
+      "kind": "phrase",
+      "meaning": "You're welcome",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/ekkert-ad-thakka_normal.wav",
+          "seconds": 1.14
+        },
+        "slow": {
+          "file": "assets/audio/ekkert-ad-thakka_slow.wav",
+          "seconds": 1.73
+        }
+      },
+      "whisperHeard": "ekkert að þakka",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "ekkert að þakka",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "afsakid": {
+      "local": "Afsakið",
+      "respelling": "AHF-sa-kihdh",
+      "kind": "phrase",
+      "meaning": "Excuse me",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/afsakid_normal.wav",
+          "seconds": 0.92
+        },
+        "slow": {
+          "file": "assets/audio/afsakid_slow.wav",
+          "seconds": 1.8
+        }
+      },
+      "whisperHeard": "afsakið",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "afsakið",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "fyrirgefdu": {
+      "local": "Fyrirgefðu",
+      "respelling": "FIH-rihr-gehv-dhuu",
+      "kind": "phrase",
+      "meaning": "Sorry",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/fyrirgefdu_normal.wav",
+          "seconds": 0.89
+        },
+        "slow": {
+          "file": "assets/audio/fyrirgefdu_slow.wav",
+          "seconds": 1.36
+        }
+      },
+      "whisperHeard": "fyrirgefðu",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "fyrirgefðu",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "ja": {
+      "local": "Já",
+      "respelling": "YOW",
+      "kind": "phrase",
+      "meaning": "Yes",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/ja_normal.wav",
+          "seconds": 0.56
+        },
+        "slow": {
+          "file": "assets/audio/ja_slow.wav",
+          "seconds": 0.85
+        }
+      },
+      "whisperHeard": "já",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "já",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "nei": {
+      "local": "Nei",
+      "respelling": "NAY",
+      "kind": "phrase",
+      "meaning": "No",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/nei_normal.wav",
+          "seconds": 0.49
+        },
+        "slow": {
+          "file": "assets/audio/nei_slow.wav",
+          "seconds": 1.01
+        }
+      },
+      "whisperHeard": "nei",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "nei",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "eg-skil-ekki": {
+      "local": "Ég skil ekki",
+      "respelling": "YEHG skihl EH-kih",
+      "kind": "phrase",
+      "meaning": "I don't understand",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/eg-skil-ekki_normal.wav",
+          "seconds": 1.14
+        },
+        "slow": {
+          "file": "assets/audio/eg-skil-ekki_slow.wav",
+          "seconds": 2.01
+        }
+      },
+      "whisperHeard": "ég skil ekki",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "ég skil ekki",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "talardu-ensku": {
+      "local": "Talarðu ensku?",
+      "respelling": "TAH-lar-dhuu EHN-skuu",
+      "kind": "phrase",
+      "meaning": "Do you speak English?",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/talardu-ensku_normal.wav",
+          "seconds": 1.28
+        },
+        "slow": {
+          "file": "assets/audio/talardu-ensku_slow.wav",
+          "seconds": 3.11
+        }
+      },
+      "whisperHeard": "halarðu ensku",
+      "whisperMatch": 0.92,
+      "whisperHeardSlow": "talarðu ensku",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "eg-heiti": {
+      "local": "Ég heiti …",
+      "respelling": "YEHG HAY-tih …",
+      "kind": "phrase",
+      "meaning": "My name is …",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/eg-heiti_normal.wav",
+          "seconds": 0.75
+        },
+        "slow": {
+          "file": "assets/audio/eg-heiti_slow.wav",
+          "seconds": 1.47
+        }
+      },
+      "whisperHeard": "ég heiti",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "ég heiti",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "hvar-er": {
+      "local": "Hvar er …?",
+      "respelling": "KVAHR ehr …",
+      "kind": "phrase",
+      "meaning": "Where is …?",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hvar-er_normal.wav",
+          "seconds": 0.66
+        },
+        "slow": {
+          "file": "assets/audio/hvar-er_slow.wav",
+          "seconds": 1.28
+        }
+      },
+      "whisperHeard": "hvar er",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "hvar er",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "klosett": {
+      "local": "Klósett",
+      "respelling": "KLOH-seht",
+      "kind": "phrase",
+      "meaning": "Toilet / restroom",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/klosett_normal.wav",
+          "seconds": 0.89
+        },
+        "slow": {
+          "file": "assets/audio/klosett_slow.wav",
+          "seconds": 1.46
+        }
+      },
+      "whisperHeard": "klósett",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "klósett",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "straeto": {
+      "local": "Strætó",
+      "respelling": "STREYE-toh",
+      "kind": "phrase",
+      "meaning": "Bus",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/straeto_normal.wav",
+          "seconds": 0.75
+        },
+        "slow": {
+          "file": "assets/audio/straeto_slow.wav",
+          "seconds": 1.51
+        }
+      },
+      "whisperHeard": "strætó",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "strætó",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "flugvollur": {
+      "local": "Flugvöllur",
+      "respelling": "FLUUG-vurt-luur",
+      "kind": "phrase",
+      "meaning": "Airport",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/flugvollur_normal.wav",
+          "seconds": 0.87
+        },
+        "slow": {
+          "file": "assets/audio/flugvollur_slow.wav",
+          "seconds": 1.64
+        }
+      },
+      "whisperHeard": "flugvöllur",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "flugvöllur",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "hotel": {
+      "local": "Hótel",
+      "respelling": "HOH-tehl",
+      "kind": "phrase",
+      "meaning": "Hotel",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hotel_normal.wav",
+          "seconds": 0.81
+        },
+        "slow": {
+          "file": "assets/audio/hotel_slow.wav",
+          "seconds": 1.46
+        }
+      },
+      "whisperHeard": "hótel",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "hótel",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "til-vinstri": {
+      "local": "Til vinstri",
+      "respelling": "tihl VIHN-strih",
+      "kind": "phrase",
+      "meaning": "To the left",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/til-vinstri_normal.wav",
+          "seconds": 0.91
+        },
+        "slow": {
+          "file": "assets/audio/til-vinstri_slow.wav",
+          "seconds": 1.43
+        }
+      },
+      "whisperHeard": "til vinstri",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "til vinstri",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "til-haegri": {
+      "local": "Til hægri",
+      "respelling": "tihl HEYE-grih",
+      "kind": "phrase",
+      "meaning": "To the right",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/til-haegri_normal.wav",
+          "seconds": 0.89
+        },
+        "slow": {
+          "file": "assets/audio/til-haegri_slow.wav",
+          "seconds": 1.67
+        }
+      },
+      "whisperHeard": "til hægri",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "til hægri",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "beint-afram": {
+      "local": "Beint áfram",
+      "respelling": "BAYNT OW-frahm",
+      "kind": "phrase",
+      "meaning": "Straight ahead",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/beint-afram_normal.wav",
+          "seconds": 0.95
+        },
+        "slow": {
+          "file": "assets/audio/beint-afram_slow.wav",
+          "seconds": 1.54
+        }
+      },
+      "whisperHeard": "áfram",
+      "whisperMatch": 0.62,
+      "whisperHeardSlow": "beint áfram",
+      "whisperMatchSlow": 1.0,
+      "showInApp": false
+    },
+    "a-thetta-heimilisfang-takk": {
+      "local": "Á þetta heimilisfang, takk",
+      "respelling": "OW THEH-ta HAY-mih-lihs-fahng TAHK",
+      "kind": "phrase",
+      "meaning": "This address, please",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/a-thetta-heimilisfang-takk_normal.wav",
+          "seconds": 1.86
+        },
+        "slow": {
+          "file": "assets/audio/a-thetta-heimilisfang-takk_slow.wav",
+          "seconds": 2.9
+        }
+      },
+      "whisperHeard": "á þetta heimilisfang takk",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "þetta heimilisfang takk",
+      "whisperMatchSlow": 0.96,
+      "showInApp": true
+    },
+    "bord-fyrir-tvo-takk": {
+      "local": "Borð fyrir tvo, takk",
+      "respelling": "BURDH FIH-rihr tvoh TAHK",
+      "kind": "phrase",
+      "meaning": "A table for two, please",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/bord-fyrir-tvo-takk_normal.wav",
+          "seconds": 1.39
+        },
+        "slow": {
+          "file": "assets/audio/bord-fyrir-tvo-takk_slow.wav",
+          "seconds": 2.45
+        }
+      },
+      "whisperHeard": "fyrir tvo takk",
+      "whisperMatch": 0.85,
+      "whisperHeardSlow": "fyrir tvo takk",
+      "whisperMatchSlow": 0.85,
+      "showInApp": true
+    },
+    "matsedilinn-takk": {
+      "local": "Matseðilinn, takk",
+      "respelling": "MAHT-seh-dhih-lihn TAHK",
+      "kind": "phrase",
+      "meaning": "The menu, please",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/matsedilinn-takk_normal.wav",
+          "seconds": 1.49
+        },
+        "slow": {
+          "file": "assets/audio/matsedilinn-takk_slow.wav",
+          "seconds": 2.54
+        }
+      },
+      "whisperHeard": "ðilinn takk",
+      "whisperMatch": 0.81,
+      "whisperHeardSlow": "mat seðlin takk",
+      "whisperMatchSlow": 0.9,
+      "showInApp": true
+    },
+    "vatn": {
+      "local": "Vatn",
+      "respelling": "VAHTN",
+      "kind": "phrase",
+      "meaning": "Water",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/vatn_normal.wav",
+          "seconds": 0.64
+        },
+        "slow": {
+          "file": "assets/audio/vatn_slow.wav",
+          "seconds": 1.03
+        }
+      },
+      "whisperHeard": "vatn",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "vatn",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "kaffi": {
+      "local": "Kaffi",
+      "respelling": "KAH-fih",
+      "kind": "phrase",
+      "meaning": "Coffee",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/kaffi_normal.wav",
+          "seconds": 0.62
+        },
+        "slow": {
+          "file": "assets/audio/kaffi_slow.wav",
+          "seconds": 1.08
+        }
+      },
+      "whisperHeard": "kaffi",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "kaffi",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "bjor": {
+      "local": "Bjór",
+      "respelling": "BYOHR",
+      "kind": "phrase",
+      "meaning": "Beer",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/bjor_normal.wav",
+          "seconds": 0.64
+        },
+        "slow": {
+          "file": "assets/audio/bjor_slow.wav",
+          "seconds": 1.1
+        }
+      },
+      "whisperHeard": "bjór",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "bjór",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "eg-aetla-ad-fa": {
+      "local": "Ég ætla að fá …",
+      "respelling": "YEHG EYE-tla adh fow …",
+      "kind": "phrase",
+      "meaning": "I'd like …",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/eg-aetla-ad-fa_normal.wav",
+          "seconds": 0.98
+        },
+        "slow": {
+          "file": "assets/audio/eg-aetla-ad-fa_slow.wav",
+          "seconds": 1.61
+        }
+      },
+      "whisperHeard": "ég ætla að fá",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "ég ætla að fá",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "eg-er-med-ofnaemi-fyrir": {
+      "local": "Ég er með ofnæmi fyrir …",
+      "respelling": "YEHG ehr mehdh AWV-neye-mih FIH-rihr …",
+      "kind": "phrase",
+      "meaning": "I'm allergic to …",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/eg-er-med-ofnaemi-fyrir_normal.wav",
+          "seconds": 1.74
+        },
+        "slow": {
+          "file": "assets/audio/eg-er-med-ofnaemi-fyrir_slow.wav",
+          "seconds": 2.8
+        }
+      },
+      "whisperHeard": "ég er með opnæmi fyrir",
+      "whisperMatch": 0.95,
+      "whisperHeardSlow": "ég er með opnæmi fyrir",
+      "whisperMatchSlow": 0.95,
+      "showInApp": true
+    },
+    "mjog-gott": {
+      "local": "Mjög gott",
+      "respelling": "MYUR-g goht",
+      "kind": "phrase",
+      "meaning": "Delicious / very good",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/mjog-gott_normal.wav",
+          "seconds": 0.94
+        },
+        "slow": {
+          "file": "assets/audio/mjog-gott_slow.wav",
+          "seconds": 1.74
+        }
+      },
+      "whisperHeard": "mjög gott",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "mjög gott",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "skal": {
+      "local": "Skál",
+      "respelling": "SKOWL",
+      "kind": "phrase",
+      "meaning": "Cheers",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/skal_normal.wav",
+          "seconds": 0.65
+        },
+        "slow": {
+          "file": "assets/audio/skal_slow.wav",
+          "seconds": 1.17
+        }
+      },
+      "whisperHeard": "skál",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "skál",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "reikninginn-takk": {
+      "local": "Reikninginn, takk",
+      "respelling": "RAY-knihng-ihn TAHK",
+      "kind": "phrase",
+      "meaning": "The check, please",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/reikninginn-takk_normal.wav",
+          "seconds": 1.16
+        },
+        "slow": {
+          "file": "assets/audio/reikninginn-takk_slow.wav",
+          "seconds": 2.12
+        }
+      },
+      "whisperHeard": "reikningin takk",
+      "whisperMatch": 0.97,
+      "whisperHeardSlow": "reikningin takk",
+      "whisperMatchSlow": 0.97,
+      "showInApp": true
+    },
+    "hvad-kostar-thetta": {
+      "local": "Hvað kostar þetta?",
+      "respelling": "KVAHDH KOH-star THEH-ta",
+      "kind": "phrase",
+      "meaning": "How much is it?",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hvad-kostar-thetta_normal.wav",
+          "seconds": 1.18
+        },
+        "slow": {
+          "file": "assets/audio/hvad-kostar-thetta_slow.wav",
+          "seconds": 2.03
+        }
+      },
+      "whisperHeard": "hvað kostar þetta",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "hvað kostar þetta",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "get-eg-borgad-med-korti": {
+      "local": "Get ég borgað með korti?",
+      "respelling": "GEHT YEHG BAWR-gadh mehdh KAWR-tih",
+      "kind": "phrase",
+      "meaning": "Can I pay by card?",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/get-eg-borgad-med-korti_normal.wav",
+          "seconds": 1.5
+        },
+        "slow": {
+          "file": "assets/audio/get-eg-borgad-med-korti_slow.wav",
+          "seconds": 2.38
+        }
+      },
+      "whisperHeard": "get ég borgað með korti",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "get ég borgað með korti",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "reidufe": {
+      "local": "Reiðufé",
+      "respelling": "RAY-dhuu-fyeh",
+      "kind": "phrase",
+      "meaning": "Cash",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/reidufe_normal.wav",
+          "seconds": 0.95
+        },
+        "slow": {
+          "file": "assets/audio/reidufe_slow.wav",
+          "seconds": 1.8
+        }
+      },
+      "whisperHeard": "reifufé",
+      "whisperMatch": 0.86,
+      "whisperHeardSlow": "hreiðufé",
+      "whisperMatchSlow": 0.93,
+      "showInApp": true
+    },
+    "thetta-takk": {
+      "local": "Þetta, takk",
+      "respelling": "THEH-ta TAHK",
+      "kind": "phrase",
+      "meaning": "This one, please",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/thetta-takk_normal.wav",
+          "seconds": 0.98
+        },
+        "slow": {
+          "file": "assets/audio/thetta-takk_slow.wav",
+          "seconds": 1.65
+        }
+      },
+      "whisperHeard": "þetta takk",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "þetta takk",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "opid": {
+      "local": "Opið",
+      "respelling": "OH-pihdh",
+      "kind": "phrase",
+      "meaning": "Open",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/opid_normal.wav",
+          "seconds": 0.65
+        },
+        "slow": {
+          "file": "assets/audio/opid_slow.wav",
+          "seconds": 1.16
+        }
+      },
+      "whisperHeard": "opið",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "opi",
+      "whisperMatchSlow": 0.86,
+      "showInApp": true
+    },
+    "lokad": {
+      "local": "Lokað",
+      "respelling": "LOH-kadh",
+      "kind": "phrase",
+      "meaning": "Closed",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/lokad_normal.wav",
+          "seconds": 0.87
+        },
+        "slow": {
+          "file": "assets/audio/lokad_slow.wav",
+          "seconds": 1.66
+        }
+      },
+      "whisperHeard": "lokað",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "lokað",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "einn": {
+      "local": "Einn",
+      "respelling": "AY-tn",
+      "kind": "phrase",
+      "meaning": "One",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/einn_normal.wav",
+          "seconds": 0.59
+        },
+        "slow": {
+          "file": "assets/audio/einn_slow.wav",
+          "seconds": 1.39
+        }
+      },
+      "whisperHeard": "einn",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "einn",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "tveir": {
+      "local": "Tveir",
+      "respelling": "TVAY-r",
+      "kind": "phrase",
+      "meaning": "Two",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/tveir_normal.wav",
+          "seconds": 0.55
+        },
+        "slow": {
+          "file": "assets/audio/tveir_slow.wav",
+          "seconds": 0.86
+        }
+      },
+      "whisperHeard": "tveir",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "tveir",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "thrir": {
+      "local": "Þrír",
+      "respelling": "THREE-r",
+      "kind": "phrase",
+      "meaning": "Three",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/thrir_normal.wav",
+          "seconds": 0.66
+        },
+        "slow": {
+          "file": "assets/audio/thrir_slow.wav",
+          "seconds": 1.21
+        }
+      },
+      "whisperHeard": "þrír",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "þrír",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "fjorir": {
+      "local": "Fjórir",
+      "respelling": "FYOH-rihr",
+      "kind": "phrase",
+      "meaning": "Four",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/fjorir_normal.wav",
+          "seconds": 0.74
+        },
+        "slow": {
+          "file": "assets/audio/fjorir_slow.wav",
+          "seconds": 1.17
+        }
+      },
+      "whisperHeard": "fjórir",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "fjórir",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "fimm": {
+      "local": "Fimm",
+      "respelling": "FIHM",
+      "kind": "phrase",
+      "meaning": "Five",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/fimm_normal.wav",
+          "seconds": 0.45
+        },
+        "slow": {
+          "file": "assets/audio/fimm_slow.wav",
+          "seconds": 0.82
+        }
+      },
+      "whisperHeard": "fimm",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "fimm",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "tiu": {
+      "local": "Tíu",
+      "respelling": "TEE-uu",
+      "kind": "phrase",
+      "meaning": "Ten",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/tiu_normal.wav",
+          "seconds": 0.64
+        },
+        "slow": {
+          "file": "assets/audio/tiu_slow.wav",
+          "seconds": 1.0
+        }
+      },
+      "whisperHeard": "tíu",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "tíu",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "hjalp": {
+      "local": "Hjálp",
+      "respelling": "HYOWLP",
+      "kind": "phrase",
+      "meaning": "Help!",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hjalp_normal.wav",
+          "seconds": 0.57
+        },
+        "slow": {
+          "file": "assets/audio/hjalp_slow.wav",
+          "seconds": 1.01
+        }
+      },
+      "whisperHeard": "hjálp",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "hjálp",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "hringdu-i-logregluna": {
+      "local": "Hringdu í lögregluna",
+      "respelling": "HRIHNG-duu ee LUR-g-rehg-luu-na",
+      "kind": "phrase",
+      "meaning": "Call the police",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hringdu-i-logregluna_normal.wav",
+          "seconds": 1.21
+        },
+        "slow": {
+          "file": "assets/audio/hringdu-i-logregluna_slow.wav",
+          "seconds": 2.22
+        }
+      },
+      "whisperHeard": "hringdu í lögregluna",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "hringdu í lögregluna",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "eg-tharf-laekni": {
+      "local": "Ég þarf lækni",
+      "respelling": "YEHG thahrv LEYE-knih",
+      "kind": "phrase",
+      "meaning": "I need a doctor",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/eg-tharf-laekni_normal.wav",
+          "seconds": 1.09
+        },
+        "slow": {
+          "file": "assets/audio/eg-tharf-laekni_slow.wav",
+          "seconds": 1.76
+        }
+      },
+      "whisperHeard": "ég þarf lækni",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "ég þarf lækni",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "eg-rata-ekki": {
+      "local": "Ég rata ekki",
+      "respelling": "YEHG RAH-ta EH-kih",
+      "kind": "phrase",
+      "meaning": "I'm lost / I can't find my way",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/eg-rata-ekki_normal.wav",
+          "seconds": 1.96
+        },
+        "slow": {
+          "file": "assets/audio/eg-rata-ekki_slow.wav",
+          "seconds": 3.83
+        }
+      },
+      "whisperHeard": "ég rata ekki",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "ég rata ekki",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "apotek": {
+      "local": "Apótek",
+      "respelling": "AH-poh-tehk",
+      "kind": "phrase",
+      "meaning": "Pharmacy",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/apotek_normal.wav",
+          "seconds": 0.99
+        },
+        "slow": {
+          "file": "assets/audio/apotek_slow.wav",
+          "seconds": 1.6
+        }
+      },
+      "whisperHeard": "apótek",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "apótek",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "utgangur": {
+      "local": "Útgangur",
+      "respelling": "OOT-gahng-uur",
+      "kind": "sign",
+      "meaning": "Exit",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/utgangur_normal.wav",
+          "seconds": 0.88
+        },
+        "slow": {
+          "file": "assets/audio/utgangur_slow.wav",
+          "seconds": 1.74
+        }
+      },
+      "whisperHeard": "útgangur",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "útgangur",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "inngangur": {
+      "local": "Inngangur",
+      "respelling": "IHN-gahng-uur",
+      "kind": "sign",
+      "meaning": "Entrance",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/inngangur_normal.wav",
+          "seconds": 0.99
+        },
+        "slow": {
+          "file": "assets/audio/inngangur_slow.wav",
+          "seconds": 1.88
+        }
+      },
+      "whisperHeard": "inngangur",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "inngangur",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "salerni": {
+      "local": "Salerni",
+      "respelling": "SAH-lehr-nih",
+      "kind": "sign",
+      "meaning": "Restroom",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/salerni_normal.wav",
+          "seconds": 0.84
+        },
+        "slow": {
+          "file": "assets/audio/salerni_slow.wav",
+          "seconds": 1.72
+        }
+      },
+      "whisperHeard": "salerni",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "salerni",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "karlar": {
+      "local": "Karlar",
+      "respelling": "KAHR-lar",
+      "kind": "sign",
+      "meaning": "Men",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/karlar_normal.wav",
+          "seconds": 0.79
+        },
+        "slow": {
+          "file": "assets/audio/karlar_slow.wav",
+          "seconds": 1.34
+        }
+      },
+      "whisperHeard": "karlar",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "karlar",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "konur": {
+      "local": "Konur",
+      "respelling": "KOH-nuur",
+      "kind": "sign",
+      "meaning": "Women",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/konur_normal.wav",
+          "seconds": 0.63
+        },
+        "slow": {
+          "file": "assets/audio/konur_slow.wav",
+          "seconds": 1.21
+        }
+      },
+      "whisperHeard": "konur",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "konur",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "reykingar-bannadar": {
+      "local": "Reykingar bannaðar",
+      "respelling": "RAY-kihng-ar BAH-na-dhar",
+      "kind": "sign",
+      "meaning": "No smoking",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/reykingar-bannadar_normal.wav",
+          "seconds": 1.25
+        },
+        "slow": {
+          "file": "assets/audio/reykingar-bannadar_slow.wav",
+          "seconds": 2.45
+        }
+      },
+      "whisperHeard": "reykingar bannaðar",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "reykingar bannaðar",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "yta": {
+      "local": "Ýta",
+      "respelling": "EE-ta",
+      "kind": "sign",
+      "meaning": "Push",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/yta_normal.wav",
+          "seconds": 0.53
+        },
+        "slow": {
+          "file": "assets/audio/yta_slow.wav",
+          "seconds": 0.95
+        }
+      },
+      "whisperHeard": "íta",
+      "whisperMatch": 0.67,
+      "whisperHeardSlow": "íta",
+      "whisperMatchSlow": 0.67,
+      "showInApp": false
+    },
+    "toga": {
+      "local": "Toga",
+      "respelling": "TOH-ga",
+      "kind": "sign",
+      "meaning": "Pull",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/toga_normal.wav",
+          "seconds": 0.63
+        },
+        "slow": {
+          "file": "assets/audio/toga_slow.wav",
+          "seconds": 1.1
+        }
+      },
+      "whisperHeard": "koga",
+      "whisperMatch": 0.75,
+      "whisperHeardSlow": "koga",
+      "whisperMatchSlow": 0.75,
+      "showInApp": true
+    },
+    "haetta": {
+      "local": "Hætta",
+      "respelling": "HEYE-ta",
+      "kind": "sign",
+      "meaning": "Danger",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/haetta_normal.wav",
+          "seconds": 0.7
+        },
+        "slow": {
+          "file": "assets/audio/haetta_slow.wav",
+          "seconds": 1.17
+        }
+      },
+      "whisperHeard": "hætta",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "hætta",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "sundlaug": {
+      "local": "Sundlaug",
+      "respelling": "SUUND-lur-g",
+      "kind": "sign",
+      "meaning": "Swimming pool",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/sundlaug_normal.wav",
+          "seconds": 0.79
+        },
+        "slow": {
+          "file": "assets/audio/sundlaug_slow.wav",
+          "seconds": 1.85
+        }
+      },
+      "whisperHeard": "sunnlaug",
+      "whisperMatch": 0.88,
+      "whisperHeardSlow": "sunnlaug",
+      "whisperMatchSlow": 0.88,
+      "showInApp": true
+    },
+    "neydarlinan": {
+      "local": "Neyðarlínan",
+      "respelling": "NAY-dhar-lee-nan",
+      "kind": "word",
+      "meaning": "The emergency line (112)",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/neydarlinan_normal.wav",
+          "seconds": 0.94
+        },
+        "slow": {
+          "file": "assets/audio/neydarlinan_slow.wav",
+          "seconds": 1.61
+        }
+      },
+      "whisperHeard": "neyðalínan",
+      "whisperMatch": 0.95,
+      "whisperHeardSlow": "iðalínan",
+      "whisperMatchSlow": 0.74,
+      "showInApp": false
+    },
+    "hundrad-og-tolf": {
+      "local": "Hundrað og tólf",
+      "respelling": "HUUN-dhradh awg TOHLV",
+      "kind": "word",
+      "meaning": "One hundred twelve (112)",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hundrad-og-tolf_normal.wav",
+          "seconds": 1.21
+        },
+        "slow": {
+          "file": "assets/audio/hundrad-og-tolf_slow.wav",
+          "seconds": 2.11
+        }
+      },
+      "whisperHeard": "hundrað og tólf",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "hundrað og tólf",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "logregla": {
+      "local": "Lögregla",
+      "respelling": "LUR-g-rehg-la",
+      "kind": "word",
+      "meaning": "Police",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/logregla_normal.wav",
+          "seconds": 0.92
+        },
+        "slow": {
+          "file": "assets/audio/logregla_slow.wav",
+          "seconds": 1.6
+        }
+      },
+      "whisperHeard": "lögregla",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "lögregla",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "sjukrabill": {
+      "local": "Sjúkrabíll",
+      "respelling": "SYOO-kra-bee-tl",
+      "kind": "word",
+      "meaning": "Ambulance",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/sjukrabill_normal.wav",
+          "seconds": 0.89
+        },
+        "slow": {
+          "file": "assets/audio/sjukrabill_slow.wav",
+          "seconds": 1.82
+        }
+      },
+      "whisperHeard": "sjúkrabíll",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "sjúkrabíll",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "sjukrahus": {
+      "local": "Sjúkrahús",
+      "respelling": "SYOO-kra-hoos",
+      "kind": "word",
+      "meaning": "Hospital",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/sjukrahus_normal.wav",
+          "seconds": 1.03
+        },
+        "slow": {
+          "file": "assets/audio/sjukrahus_slow.wav",
+          "seconds": 1.81
+        }
+      },
+      "whisperHeard": "sjúkrahús",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "sjúkrahús",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "laeknir": {
+      "local": "Læknir",
+      "respelling": "LEYE-knihr",
+      "kind": "word",
+      "meaning": "Doctor",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/laeknir_normal.wav",
+          "seconds": 0.92
+        },
+        "slow": {
+          "file": "assets/audio/laeknir_slow.wav",
+          "seconds": 1.68
+        }
+      },
+      "whisperHeard": "læknir",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "læknir",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "slys": {
+      "local": "Slys",
+      "respelling": "SLIHS",
+      "kind": "word",
+      "meaning": "Accident",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/slys_normal.wav",
+          "seconds": 0.67
+        },
+        "slow": {
+          "file": "assets/audio/slys_slow.wav",
+          "seconds": 1.17
+        }
+      },
+      "whisperHeard": "slís",
+      "whisperMatch": 0.75,
+      "whisperHeardSlow": "slys",
       "whisperMatchSlow": 1.0,
       "showInApp": true
     }
