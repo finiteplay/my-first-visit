@@ -83,11 +83,13 @@
   const taBadge = item => {
     const ta = item.tripadvisor;
     if (!ta) return "";
+    const top = ta.icelandRank ? `<span class="ta-top" title="Position in TripAdvisor's list of top things to do in Iceland">#${ta.icelandRank} in Iceland</span>` : "";
     if (ta.rating == null) return `<span class="ta ta-none">TripAdvisor: no rating for the place itself</span>`;
     const count = ta.reviews == null ? "" : ` · ${Number(ta.reviews).toLocaleString("en-US")} reviews`;
-    return `<span class="ta" aria-label="TripAdvisor rating ${ta.rating} out of 5${ta.reviews == null ? "" : `, ${Number(ta.reviews).toLocaleString("en-US")} reviews`}"><span class="ta-score" aria-hidden="true">${ta.rating.toFixed(1)}</span><span class="ta-text" aria-hidden="true">TripAdvisor${count}</span></span>`;
+    return `<span class="ta" aria-label="TripAdvisor rating ${ta.rating} out of 5${ta.reviews == null ? "" : `, ${Number(ta.reviews).toLocaleString("en-US")} reviews`}"><span class="ta-score" aria-hidden="true">${ta.rating.toFixed(1)}</span><span class="ta-text" aria-hidden="true">TripAdvisor${count}</span>${top}</span>`;
   };
-  let placeSort = "rating";
+  let placeSort = "top";
+  const byTop = (a, b) => (a.tripadvisor?.icelandRank ?? 99) - (b.tripadvisor?.icelandRank ?? 99);
   const byTripadvisor = (a, b) => (b.tripadvisor?.rating ?? -1) - (a.tripadvisor?.rating ?? -1) || (b.tripadvisor?.reviews ?? 0) - (a.tripadvisor?.reviews ?? 0);
 
   // Priority for a first visit comes from each place's `tier`. Words, not stars: every label is a positive
@@ -129,7 +131,7 @@
       .filter(item => placeCategory === "all" || item.category === placeCategory)
       .filter(item => placeArea === "all" || areaOf(item)?.id === placeArea)
       .filter(item => !term || [item.name, item.region, item.category, item.whyGo].join(" ").toLocaleLowerCase().includes(term))
-      .sort((a, b) => (placeSort === "rating" ? byTripadvisor(a, b) : 0)
+      .sort((a, b) => (placeSort === "top" ? byTop(a, b) || byTripadvisor(a, b) : placeSort === "rating" ? byTripadvisor(a, b) : 0)
         || (tierOrder[a.tier] ?? 3) - (tierOrder[b.tier] ?? 3) || (placeRank[a.id] || 999) - (placeRank[b.id] || 999) || a.name.localeCompare(b.name));
     placeGrid.innerHTML = items.map(item => `
       <article class="place-card" data-open="place:${escapeHtml(item.id)}" tabindex="0" role="button" aria-label="Open place card for ${escapeHtml(item.name)}">
@@ -365,7 +367,7 @@
         <figcaption>${escapeHtml(areaName)}. Approximate position, not for navigation. ${escapeHtml(credit)}</figcaption>
       </figure>
       <p class="place-links"><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a>${item.website ? `<a class="maps-link" href="${escapeHtml(item.website.url)}" target="_blank" rel="noopener">${escapeHtml(item.website.label)} <span aria-hidden="true">↗</span></a>` : ""}${item.tripadvisor ? `<a class="maps-link" href="${escapeHtml(item.tripadvisor.url)}" target="_blank" rel="noopener">TripAdvisor reviews <span aria-hidden="true">↗</span></a>` : ""}</p>
-      ${item.tripadvisor ? `<p class="ta-note">${taBadge(item)} Rating read on ${escapeHtml(item.tripadvisor.checkedAt)} from a search-result summary; ratings change, so confirm on TripAdvisor.${item.tripadvisor.note ? ` Note: ${escapeHtml(item.tripadvisor.note)}.` : ""}</p>` : ""}
+      ${item.tripadvisor ? `<p class="ta-note">${taBadge(item)} ${item.tripadvisor.icelandRank ? `TripAdvisor puts it at #${item.tripadvisor.icelandRank} of its top things to do in Iceland. ` : ""}${item.tripadvisor.localRank ? `On its own page it is ranked ${escapeHtml(item.tripadvisor.localRank)}. ` : ""}Read on ${escapeHtml(item.tripadvisor.checkedAt)} from a search-result summary; ratings change, so confirm on TripAdvisor.${item.tripadvisor.note ? ` Note: ${escapeHtml(item.tripadvisor.note)}.` : ""}</p>` : ""}
     </div>`;
   }
 
