@@ -285,6 +285,10 @@ when there is one, otherwise the managing authority (national park, Environment 
 regional tourism board, with the label saying which. Do not link a booking marketplace or a review site, and
 re-check each URL (HTTP 200, right page) before release.
 
+The same two links (`location` pin and `website`) go on every entry of a `whereToSoak` list in a playbook (pools,
+lagoons, hot springs). If the pin is a trailhead or car park instead of the place itself, say so in
+`location.mapNote`; leave `website` out when no official or authority page exists.
+
 ### Word page ("Say it in Icelandic")
 
 Status: **built for the Iceland draft as its own page, `local-site/words.html`; checked by

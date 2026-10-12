@@ -357,3 +357,8 @@ body.night .minimap-label { fill: #e8f1f2; stroke: #26363a; }
 @media (max-width: 760px) { .orientation { padding-bottom: 24px; } .basics { padding-top: 24px; } }
 
 .place-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; }
+
+/* Compact link buttons inside option cards */
+.place-entry .place-links { margin-top: 10px; }
+.place-entry .maps-link { padding: 5px 12px; font-size: .82rem; }
+.map-note { margin: 6px 0 0; color: var(--muted); font-size: .78rem; }

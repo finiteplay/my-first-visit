@@ -332,7 +332,19 @@
               "bestFor": "A first pool visit: the most facilities and the easiest to find",
               "headsUp": "Busiest on sunny weekends and evenings.",
               "local": "Laugardalslaug",
-              "respelling": "LUR-gar-dahls-lurg"
+              "respelling": "LUR-gar-dahls-lurg",
+              "location": {
+                "latitude": 64.14665,
+                "longitude": -21.87968,
+                "label": "Laugardalslaug",
+                "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+              },
+              "website": {
+                "url": "https://reykjavik.is/en/laugardalslaug-pool",
+                "label": "City of Reykjavík page",
+                "kind": "operator",
+                "checkedAt": "2026-10-11"
+              }
             },
             {
               "name": "Vesturbæjarlaug",
@@ -341,7 +353,19 @@
               "bestFor": "A local feel and chatting hot pots",
               "headsUp": "Small; hot pots can fill up at peak times.",
               "local": "Vesturbæjarlaug",
-              "respelling": "VEHS-tur-bai-yar-lurg"
+              "respelling": "VEHS-tur-bai-yar-lurg",
+              "location": {
+                "latitude": 64.14454,
+                "longitude": -21.9626,
+                "label": "Vesturbæjarlaug",
+                "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+              },
+              "website": {
+                "url": "https://reykjavik.is/en/vesturbaejarlaug-pool",
+                "label": "City of Reykjavík page",
+                "kind": "operator",
+                "checkedAt": "2026-10-11"
+              }
             },
             {
               "name": "Sundhöllin",
@@ -350,7 +374,19 @@
               "bestFor": "A central stop between sights, and a historic building",
               "headsUp": "Check which areas are open on the day.",
               "local": "Sundhöllin",
-              "respelling": "SUHND-hurt-lihn"
+              "respelling": "SUHND-hurt-lihn",
+              "location": {
+                "latitude": 64.14167,
+                "longitude": -21.92017,
+                "label": "Sundhöllin",
+                "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+              },
+              "website": {
+                "url": "https://reykjavik.is/en/sundholl-reykjavik-pool",
+                "label": "City of Reykjavík page",
+                "kind": "operator",
+                "checkedAt": "2026-10-11"
+              }
             },
             {
               "name": "Árbæjarlaug",
@@ -359,7 +395,19 @@
               "bestFor": "Families with younger children",
               "headsUp": "Farther from the center than the others.",
               "local": "Árbæjarlaug",
-              "respelling": "OWR-bai-yar-lurg"
+              "respelling": "OWR-bai-yar-lurg",
+              "location": {
+                "latitude": 64.11216,
+                "longitude": -21.79465,
+                "label": "Árbæjarlaug",
+                "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+              },
+              "website": {
+                "url": "https://reykjavik.is/en/arbaejarlaug-pool",
+                "label": "City of Reykjavík page",
+                "kind": "operator",
+                "checkedAt": "2026-10-11"
+              }
             },
             {
               "name": "Nauthólsvík geothermal beach",
@@ -368,7 +416,19 @@
               "bestFor": "A sea-and-sand soak, especially in summer",
               "headsUp": "Seasonal; the sea itself is cold, so check which hot tubs and steam baths are open.",
               "local": "Nauthólsvík",
-              "respelling": "NURT-hohls-veek"
+              "respelling": "NURT-hohls-veek",
+              "location": {
+                "latitude": 64.12126,
+                "longitude": -21.92778,
+                "label": "Nauthólsvík geothermal beach",
+                "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+              },
+              "website": {
+                "url": "https://reykjavik.is/en/nautholsvik-geothermal-beach",
+                "label": "City of Reykjavík page",
+                "kind": "operator",
+                "checkedAt": "2026-10-11"
+              }
             }
           ]
         },
@@ -381,7 +441,19 @@
               "where": "Kársnes in Kópavogur, a 13-minute drive from central Reykjavík and about 45 minutes from Keflavík airport (operator figures); a bus from Hlemmur plus a short walk also works, and parking is free",
               "character": "A spa-style lagoon with a 70-meter ocean-facing infinity edge. Every ticket includes the Skjól ritual of seven steps: warm lagoon, cold plunge, sauna, cold mist, sea-salt scrub, steam and a crowberry elixir. The Saman pass uses public changing rooms and the Sér pass private ones; the operator lists accessible and gender-neutral changing rooms and invites guests to leave phones behind. Travelers report that it is smaller than the Blue Lagoon but calmer.",
               "bestFor": "A staged spa evening close to the city",
-              "headsUp": "The operator shows a youth price but its pages I read give no minimum age, so confirm the age rule. Prices change and appear in dollars on the English site; confirm the date and package before booking."
+              "headsUp": "The operator shows a youth price but its pages I read give no minimum age, so confirm the age rule. Prices change and appear in dollars on the English site; confirm the date and package before booking.",
+              "location": {
+                "latitude": 64.11647,
+                "longitude": -21.94644,
+                "label": "Sky Lagoon",
+                "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+              },
+              "website": {
+                "url": "https://www.skylagoon.com/",
+                "label": "Official website",
+                "kind": "official",
+                "checkedAt": "2026-10-11"
+              }
             },
             {
               "name": "Blue Lagoon",
@@ -390,7 +462,19 @@
               "bestFor": "A big, iconic splurge, often on an arrival or departure day",
               "headsUp": "Tickets are widely reported as required in advance. The operator's site blocked our automated check, so confirm ticket tiers, age rules, luggage storage and transfers directly.",
               "local": "Bláa lónið",
-              "respelling": "BLOW-ah LOH-nidh"
+              "respelling": "BLOW-ah LOH-nidh",
+              "location": {
+                "latitude": 63.88005,
+                "longitude": -22.44935,
+                "label": "Blue Lagoon",
+                "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+              },
+              "website": {
+                "url": "https://www.bluelagoon.com/",
+                "label": "Official website",
+                "kind": "official",
+                "checkedAt": "2026-10-11"
+              }
             },
             {
               "name": "Hvammsvík Hot Springs",
@@ -399,7 +483,19 @@
               "bestFor": "A natural-feeling setting that is still close to the city",
               "headsUp": "Booking link on the operator page; confirm price, age rules and tide-related changes.",
               "local": "Hvammsvík",
-              "respelling": "KVAHMS-veek"
+              "respelling": "KVAHMS-veek",
+              "location": {
+                "latitude": 64.37362,
+                "longitude": -21.56465,
+                "label": "Hvammsvík Hot Springs",
+                "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+              },
+              "website": {
+                "url": "https://hvammsvik.com/",
+                "label": "Official website",
+                "kind": "official",
+                "checkedAt": "2026-10-11"
+              }
             },
             {
               "name": "Reykjadalur hot spring river",
@@ -408,7 +504,14 @@
               "bestFor": "Travelers who want a soak that comes with a hike and free entry",
               "headsUp": "Shallow in dry spells and busier on weekends; the path can be muddy or icy.",
               "local": "Reykjadalur",
-              "respelling": "RAYK-ya-dah-lur"
+              "respelling": "RAYK-ya-dah-lur",
+              "location": {
+                "latitude": 64.0229,
+                "longitude": -21.2116,
+                "label": "trailhead car park",
+                "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release",
+                "mapNote": "The pin is the trailhead car park, not the hot springs, which are about a 3 km walk up the valley."
+              }
             }
           ]
         }

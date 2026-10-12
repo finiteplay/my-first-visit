@@ -112,7 +112,7 @@
       ${paragraphs(item.body)}
       ${item.travelerStories?.length ? `<h2>What travelers experienced</h2>${item.travelerStories.map(story => `<blockquote class="story">${escapeHtml(story)}</blockquote>`).join("")}` : ""}
       ${decisions || options ? `<h2>Your options</h2><div class="option-grid">${decisions}${options}</div>` : ""}
-      ${item.whereToSoak?.map(group => `<h2>${escapeHtml(group.group)}</h2><p>${escapeHtml(group.intro)}</p><div class="option-grid">${group.places.map(place => `<div class="option place-entry"><strong>${escapeHtml(place.name)}</strong>${place.local ? `<div class="say-it">${place.local !== place.name ? `<span class="local-name">${escapeHtml(place.local)}</span>` : ""}<span class="respelling" title="Draft respelling; native review pending">${escapeHtml(place.respelling)}</span>${audioControls(place.local)}</div>` : ""}<p class="where">${escapeHtml(place.where)}</p><p>${escapeHtml(place.character)}</p><p><em>Best for:</em> ${escapeHtml(place.bestFor)}</p><p><em>Heads-up:</em> ${escapeHtml(place.headsUp)}</p></div>`).join("")}</div>`).join("") || ""}
+      ${item.whereToSoak?.map(group => `<h2>${escapeHtml(group.group)}</h2><p>${escapeHtml(group.intro)}</p><div class="option-grid">${group.places.map(place => `<div class="option place-entry"><strong>${escapeHtml(place.name)}</strong>${place.local ? `<div class="say-it">${place.local !== place.name ? `<span class="local-name">${escapeHtml(place.local)}</span>` : ""}<span class="respelling" title="Draft respelling; native review pending">${escapeHtml(place.respelling)}</span>${audioControls(place.local)}</div>` : ""}<p class="where">${escapeHtml(place.where)}</p><p>${escapeHtml(place.character)}</p><p><em>Best for:</em> ${escapeHtml(place.bestFor)}</p><p><em>Heads-up:</em> ${escapeHtml(place.headsUp)}</p>${placeLinks(place)}</div>`).join("")}</div>`).join("") || ""}
       ${item.whatToExpect ? `<h2>What to expect</h2><p>${escapeHtml(item.whatToExpect)}</p>` : ""}
       ${item.checklist ? `<h2>Before you go</h2>${list(item.checklist)}` : ""}
       ${item.avoid ? `<h2>Avoid</h2>${list(item.avoid)}` : ""}
@@ -193,6 +193,14 @@
       <p class="place-links"><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a>${item.website ? `<a class="maps-link" href="${escapeHtml(item.website.url)}" target="_blank" rel="noopener">${escapeHtml(item.website.label)} <span aria-hidden="true">↗</span></a>` : ""}</p>
     </div>`;
   }
+
+  // Maps and website links for a soak/lagoon entry (pins come from the entry's own `location`).
+  const placeLinks = place => {
+    const links = [];
+    if (place.location) links.push(`<a class="maps-link" href="${escapeHtml(mapsUrl({ location: place.location }))}" target="_blank" rel="noopener">${place.location.mapNote ? "Google Maps: trailhead" : "Google Maps"} <span aria-hidden="true">↗</span></a>`);
+    if (place.website) links.push(`<a class="maps-link" href="${escapeHtml(place.website.url)}" target="_blank" rel="noopener">${escapeHtml(place.website.label)} <span aria-hidden="true">↗</span></a>`);
+    return links.length ? `<p class="place-links">${links.join("")}</p>${place.location?.mapNote ? `<p class="map-note">${escapeHtml(place.location.mapNote)}</p>` : ""}` : "";
+  };
 
   function placeHtml(item) {
     const gallery = selectedPhotos[item.id] || [];
