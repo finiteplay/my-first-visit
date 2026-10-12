@@ -1,0 +1,580 @@
+{
+  "schemaVersion": 1,
+  "country": "IS",
+  "name": "Iceland",
+  "packVersion": "0.2.0",
+  "status": "draft",
+  "sourceLanguage": "en-US",
+  "language": {
+    "tag": "is-IS",
+    "name": "Icelandic",
+    "script": "Latin",
+    "stress": "usually-first-syllable"
+  },
+  "languageNote": "English is widely used in visitor-facing settings. Start with a little Icelandic, then switch when helpful. Courtesy and clear communication matter more than a perfect accent.",
+  "welcome": "Iceland rewards the plan you can abandon. Decide the expensive and awkward choices before arrival, then leave room for weather, hot water and the stop you did not know you wanted.",
+  "completionMessage": "Guide saved for the trip. Current conditions still win over any offline plan.",
+  "replacements": [
+    {
+      "slot": 4,
+      "meaning": "Please (in a request)",
+      "reason": "Keep the courtesy purpose, but teach takk in a complete request rather than a misleading universal please-word."
+    },
+    {
+      "slot": 17,
+      "meaning": "Bus",
+      "reason": "Iceland has no passenger railway; strætó is a useful city-transport word."
+    }
+  ],
+  "editorial": {
+    "sourceChecked": "2026-10-10",
+    "nativeReviewedBy": null,
+    "safetyReviewedBy": null,
+    "allergyReviewedBy": null,
+    "respellingsStatus": "approximate; pending native-speaker listening review",
+    "mapPinsStatus": "draft; entrance and accessibility verification pending",
+    "mediaStatus": "not-recorded; photos-not-acquired"
+  },
+  "guide": {
+    "status": "research-backed-draft",
+    "audience": "en-US:first-time",
+    "researchedAsOf": "2026-10-10",
+    "briefings": "briefings.yaml",
+    "playbooks": "playbooks.yaml",
+    "routes": "routes.yaml",
+    "researchDossier": "research/dossier.yaml",
+    "reviewReport": "research/REVIEW.md"
+  },
+  "plan": {
+    "status": "legacy-optional-practice-plan; generator-not-implemented",
+    "timingStatus": "legacy design targets, not measured practice-session durations",
+    "legs": [
+      {
+        "id": "L0",
+        "title": "Before take-off",
+        "targetMinutes": 5,
+        "lessonGroups": [
+          {
+            "id": "L0-hello",
+            "title": "Three phrases before departure",
+            "items": [
+              "p01",
+              "p05",
+              "p08"
+            ]
+          },
+          {
+            "id": "L0-ready",
+            "title": "Your first-day essentials",
+            "items": [
+              "tip-fatigue",
+              "tip-conditions",
+              "tip-112"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L1",
+        "title": "Hello and thank you",
+        "targetMinutes": 25,
+        "lessonGroups": [
+          {
+            "id": "L1-greetings",
+            "title": "Hello, thanks, goodbye",
+            "items": [
+              "p01",
+              "p02",
+              "p03",
+              "p04",
+              "p05",
+              "p06",
+              "p07"
+            ]
+          },
+          {
+            "id": "L1-repair",
+            "title": "Keep a conversation going",
+            "items": [
+              "p08",
+              "p09",
+              "p10",
+              "p11",
+              "p12",
+              "p13",
+              "p14"
+            ]
+          },
+          {
+            "id": "L1-context",
+            "title": "A natural exchange",
+            "items": [
+              "tip-hello",
+              "tip-please",
+              "tip-english",
+              "scenario-greeting",
+              "scenario-here-you-go",
+              "scenario-welcome",
+              "scenario-repeat"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L2",
+        "title": "Reading the signs",
+        "targetMinutes": 20,
+        "lessonGroups": [
+          {
+            "id": "L2-letters",
+            "title": "New letters",
+            "items": [
+              "primer-stress",
+              "primer-th",
+              "primer-dh",
+              "primer-ae",
+              "primer-o-umlaut",
+              "primer-a-accent"
+            ]
+          },
+          {
+            "id": "L2-sounds",
+            "title": "More useful sounds",
+            "items": [
+              "primer-o-accent",
+              "primer-i-u-accent",
+              "primer-j",
+              "primer-hv",
+              "primer-ll",
+              "primer-ei-ey"
+            ]
+          },
+          {
+            "id": "L2-signs-1",
+            "title": "Doorways and restrooms",
+            "items": [
+              "sign-exit",
+              "sign-entrance",
+              "sign-toilet",
+              "sign-men",
+              "sign-women",
+              "sign-open"
+            ]
+          },
+          {
+            "id": "L2-signs-2",
+            "title": "Access and warnings",
+            "items": [
+              "sign-closed",
+              "sign-no-smoking",
+              "sign-push",
+              "sign-pull",
+              "sign-danger",
+              "sign-pool"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L3",
+        "title": "Getting around",
+        "targetMinutes": 20,
+        "lessonGroups": [
+          {
+            "id": "L3-places",
+            "title": "Find a place",
+            "items": [
+              "p15",
+              "p16",
+              "p17",
+              "p18",
+              "p19",
+              "c15-toilet",
+              "c15-pharmacy"
+            ]
+          },
+          {
+            "id": "L3-directions",
+            "title": "Follow a short reply",
+            "items": [
+              "p20",
+              "p21",
+              "p22",
+              "p23",
+              "scenario-toilet-direction",
+              "scenario-right-direction",
+              "scenario-straight-direction"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L4",
+        "title": "Know before you go",
+        "targetMinutes": 20,
+        "lessonGroups": [
+          {
+            "id": "L4-pool",
+            "title": "A comfortable pool visit",
+            "items": [
+              "tip-pool-shower",
+              "tip-pool-shoes",
+              "tip-pool-privacy",
+              "tip-water",
+              "sign-pool"
+            ]
+          },
+          {
+            "id": "L4-outdoors",
+            "title": "Respect the landscape",
+            "items": [
+              "tip-moss",
+              "tip-off-road",
+              "tip-conditions",
+              "tip-beach",
+              "tip-hot-ground",
+              "tip-glacier"
+            ]
+          },
+          {
+            "id": "L4-arrival",
+            "title": "An easier first day",
+            "items": [
+              "tip-fatigue",
+              "tip-tip",
+              "tip-allergy",
+              "tip-112",
+              "scenario-closed"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L5",
+        "title": "Eating and drinking",
+        "targetMinutes": 25,
+        "lessonGroups": [
+          {
+            "id": "L5-orders",
+            "title": "Order something simple",
+            "items": [
+              "p24",
+              "p25",
+              "p26",
+              "p27",
+              "p28",
+              "p29",
+              "c29-water",
+              "c29-coffee"
+            ]
+          },
+          {
+            "id": "L5-allergies",
+            "title": "Show what you must avoid",
+            "items": [
+              "p30",
+              "allergy-peanuts",
+              "allergy-tree-nuts",
+              "allergy-shellfish",
+              "allergy-gluten",
+              "allergy-milk",
+              "allergy-eggs",
+              "scenario-allergy-question"
+            ]
+          },
+          {
+            "id": "L5-finish",
+            "title": "Enjoy and finish the meal",
+            "items": [
+              "p31",
+              "p32",
+              "p33",
+              "scenario-table",
+              "scenario-offered-coffee"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L6",
+        "title": "Money and numbers",
+        "targetMinutes": 20,
+        "lessonGroups": [
+          {
+            "id": "L6-pay",
+            "title": "Pay and recognize signs",
+            "items": [
+              "p34",
+              "p35",
+              "p36",
+              "p37",
+              "p38",
+              "p39",
+              "scenario-payment"
+            ]
+          },
+          {
+            "id": "L6-numbers",
+            "title": "Small numbers",
+            "items": [
+              "p40",
+              "p41",
+              "p42",
+              "p43",
+              "p44",
+              "p45"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L7",
+        "title": "If something goes wrong",
+        "targetMinutes": 10,
+        "lessonGroups": [
+          {
+            "id": "L7-help",
+            "title": "Get help promptly",
+            "items": [
+              "p46",
+              "p47",
+              "p48",
+              "p49",
+              "p50"
+            ]
+          },
+          {
+            "id": "L7-practice",
+            "title": "Show and clarify",
+            "items": [
+              "p12",
+              "p13",
+              "tip-112",
+              "tip-allergy",
+              "scenario-allergy-question"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L8",
+        "title": "Things to see",
+        "targetMinutes": 15,
+        "lessonGroups": [
+          {
+            "id": "L8-capital",
+            "title": "A gentle capital start",
+            "items": [
+              "sight-hallgrimskirkja",
+              "sight-harpa",
+              "sight-national-museum",
+              "sight-laugardalslaug",
+              "p08",
+              "p05"
+            ]
+          },
+          {
+            "id": "L8-golden",
+            "title": "Golden Circle",
+            "items": [
+              "sight-thingvellir",
+              "sight-gullfoss",
+              "sight-geysir",
+              "tip-hot-ground",
+              "tip-conditions"
+            ]
+          },
+          {
+            "id": "L8-south",
+            "title": "South and Southeast",
+            "items": [
+              "sight-seljalandsfoss",
+              "sight-skogafoss",
+              "sight-reynisfjara",
+              "sight-jokulsarlon",
+              "tip-beach"
+            ]
+          },
+          {
+            "id": "L8-north",
+            "title": "North Iceland",
+            "items": [
+              "sight-godafoss",
+              "sight-myvatn",
+              "tip-moss",
+              "tip-conditions",
+              "p19"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L9",
+        "title": "Arrival recap",
+        "targetMinutes": 15,
+        "lessonGroups": [
+          {
+            "id": "L9-tasks",
+            "title": "Five useful arrival tasks",
+            "items": [
+              "p01",
+              "p05",
+              "c29-coffee",
+              "c15-toilet",
+              "p23"
+            ]
+          },
+          {
+            "id": "L9-fallbacks",
+            "title": "Clarify and respect closures",
+            "items": [
+              "p12",
+              "p13",
+              "tip-allergy",
+              "tip-112",
+              "scenario-closed"
+            ]
+          }
+        ]
+      }
+    ],
+    "plans": {
+      "essentials": [
+        "L0",
+        "L1",
+        "L3",
+        "L5",
+        "L9"
+      ],
+      "full": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9"
+      ],
+      "extended": "Full path, then optional practice; no extra content required."
+    }
+  },
+  "exampleLesson": {
+    "id": "L0-first-hello-example",
+    "title": "A hello and a thank-you",
+    "quietModeCompatible": true,
+    "cards": [
+      {
+        "id": "hello-learn",
+        "type": "learn",
+        "item": "p01"
+      },
+      {
+        "id": "thanks-learn",
+        "type": "learn",
+        "item": "p05"
+      },
+      {
+        "id": "excuse-learn",
+        "type": "learn",
+        "item": "p08"
+      },
+      {
+        "id": "hello-recognize",
+        "type": "pick-the-phrase",
+        "item": "p01",
+        "prompt": "Choose Hello.",
+        "options": [
+          {
+            "id": "a",
+            "item": "p05"
+          },
+          {
+            "id": "b",
+            "item": "p01"
+          },
+          {
+            "id": "c",
+            "item": "p08"
+          }
+        ],
+        "answerId": "b",
+        "feedback": "Hæ starts the exchange."
+      },
+      {
+        "id": "thanks-recognize",
+        "type": "pick-the-phrase",
+        "item": "p05",
+        "prompt": "Someone has helped you. Choose Thank you.",
+        "options": [
+          {
+            "id": "a",
+            "item": "p05"
+          },
+          {
+            "id": "b",
+            "item": "p08"
+          },
+          {
+            "id": "c",
+            "item": "p01"
+          }
+        ],
+        "answerId": "a",
+        "feedback": "Takk fyrir thanks the person who helped."
+      },
+      {
+        "id": "excuse-use",
+        "type": "scenario",
+        "item": "p08",
+        "prompt": "You need to get a receptionist's attention. Choose the phrase.",
+        "options": [
+          {
+            "id": "a",
+            "item": "p01"
+          },
+          {
+            "id": "b",
+            "item": "p05"
+          },
+          {
+            "id": "c",
+            "item": "p08"
+          }
+        ],
+        "answerId": "c",
+        "feedback": "Afsakið gets attention before a question."
+      },
+      {
+        "id": "hello-apply",
+        "type": "scenario",
+        "item": "p01",
+        "prompt": "You enter a shop and the cashier looks up. Choose your greeting.",
+        "options": [
+          {
+            "id": "a",
+            "item": "p08"
+          },
+          {
+            "id": "b",
+            "item": "p01"
+          },
+          {
+            "id": "c",
+            "item": "p05"
+          }
+        ],
+        "answerId": "b",
+        "feedback": "A short hello is enough; then ask what you need."
+      }
+    ],
+    "recap": [
+      "p01",
+      "p05",
+      "p08"
+    ],
+    "note": "Seven authored example cards, not a claim of fluency or trip readiness; the generator must add another exercise type as needed."
+  }
+}

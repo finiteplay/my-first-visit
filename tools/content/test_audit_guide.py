@@ -1,0 +1,87 @@
+import csv
+import json
+import tempfile
+import unittest
+from pathlib import Path
+
+from audit_guide import audit
+from audit_research import CORPUS_FIELDS
+
+
+class GuideAuditTest(unittest.TestCase):
+    def make_guide(self):
+        temp = tempfile.TemporaryDirectory()
+        root = Path(temp.name)
+        (root / "research").mkdir()
+        with (root / "research" / "corpus.csv").open("w", encoding="utf-8", newline="") as stream:
+            writer = csv.DictWriter(stream, fieldnames=CORPUS_FIELDS)
+            writer.writeheader()
+            for index in range(1, 9):
+                row = dict.fromkeys(CORPUS_FIELDS, "x")
+                row.update({"id": f"r{index}", "url": "https://example.com", "firsthand": "true",
+                            "source_role": "official" if index == 8 else "traveler"})
+                writer.writerow(row)
+        sources = [f"r{index}" for index in range(1, 9)]
+        playbook = {
+            "title": "Playbook", "hook": "A concrete stake.", "sourceIds": sources,
+            "cardImage": {"src": "a.webp", "alt": "A described scene."},
+            "body": [" ".join(["word"] * 80)] * 4,
+            "decision": {"easiestPath": "a", "researchPath": "b", "acceptMoreRiskPath": "c"},
+            "checklist": ["1", "2", "3", "4", "5"],
+            "liveChecks": [{"label": "x", "url": "https://example.com"}] * 3,
+        }
+        route = {
+            "title": "Route", "whoFor": "First-time drivers.", "duration": "4 nights",
+            "days": [{"base": "B", "travel": "1 h", "highlights": ["h"]}] * 3
+                    + [{"base": "B", "travel": "none", "highlights": ["h"], "flexible": True}],
+            "seasonNotes": "Shorter in winter.", "tradeoff": "Long days.",
+            "liveChecks": ["roads", "weather"], "sourceIds": sources,
+        }
+        briefing = {"schemaVersion": 1, "briefings": [{"id": "b", "title": "Brief",
+            "hook": "Hook", "sections": [{"sourceIds": ["r1"]}] * 3}]}
+        playbooks = {"schemaVersion": 1, "playbooks": [
+            {"id": f"p{i}", **playbook} for i in range(5)]}
+        routes = {"schemaVersion": 1, "routes": [
+            {"id": f"route{i}", **route} for i in range(3)]}
+        for name, data in [("briefings.yaml", briefing), ("playbooks.yaml", playbooks),
+                           ("routes.yaml", routes)]:
+            (root / name).write_text(json.dumps(data), encoding="utf-8")
+        return temp, root
+
+    def test_valid_guide_passes(self):
+        temp, root = self.make_guide()
+        self.addCleanup(temp.cleanup)
+        self.assertEqual([], audit(root))
+
+    def test_unknown_source_fails(self):
+        temp, root = self.make_guide()
+        self.addCleanup(temp.cleanup)
+        data = json.loads((root / "routes.yaml").read_text(encoding="utf-8"))
+        data["routes"][0]["sourceIds"] = ["missing"]
+        (root / "routes.yaml").write_text(json.dumps(data), encoding="utf-8")
+        self.assertTrue(any("unknown source" in error for error in audit(root)))
+
+
+    def test_thin_playbook_fails_depth(self):
+        temp, root = self.make_guide()
+        self.addCleanup(temp.cleanup)
+        data = json.loads((root / "playbooks.yaml").read_text(encoding="utf-8"))
+        data["playbooks"][0]["body"] = ["Too short."]
+        data["playbooks"][0]["evidenceLabel"] = "Experiences vary"
+        (root / "playbooks.yaml").write_text(json.dumps(data), encoding="utf-8")
+        errors = audit(root)
+        self.assertTrue(any("p0: depth: body" in error for error in errors))
+        self.assertTrue(any("travelerStories" in error for error in errors))
+        self.assertTrue(any("limits" in error for error in errors))
+
+    def test_route_without_days_fails_depth(self):
+        temp, root = self.make_guide()
+        self.addCleanup(temp.cleanup)
+        data = json.loads((root / "routes.yaml").read_text(encoding="utf-8"))
+        del data["routes"][0]["days"]
+        (root / "routes.yaml").write_text(json.dumps(data), encoding="utf-8")
+        self.assertTrue(any("route0: depth: days" in error for error in audit(root)))
+
+
+if __name__ == "__main__":
+    unittest.main()

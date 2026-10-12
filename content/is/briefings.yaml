@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "briefings": [
+    {
+      "id": "is-first-day",
+      "title": "Why Iceland is worth the trip",
+      "audience": ["en-US:first-time"],
+      "readingMinutes": 15,
+      "researchedAsOf": "2026-10-11",
+      "hook": "Travelers remember Iceland as a place where the landscape keeps changing before they have finished talking about the last view.",
+      "lede": "Iceland is worth visiting because so many extraordinary landscapes are close enough to experience on one trip. You can walk beside waterfalls, cross dark lava fields, watch waves on a black-sand coast, soak in geothermally heated water and finish the day in a small city with excellent food and design. The country often feels open and uncrowded even when the famous stops are busy. Many travelers say the drive itself becomes part of the experience: mountains, glaciers, farms, ocean and sudden weather keep replacing one another through the windshield. What makes Iceland special can also make it demanding. The distances are deceptive, the wind can change an ordinary stop, and it is tempting to schedule every waterfall you see on a map. The most enjoyable first trips usually combine a few experiences the traveler genuinely cares about with enough spare time to respond to weather, fatigue and the places that turn out to deserve a longer stay.",
+      "sections": [
+        {
+          "id": "choose-trip",
+          "title": "Start by deciding how you want to travel",
+          "evidenceLabel": "Experiences vary",
+          "body": [
+            "Iceland offers more than a choice between a rental car and a tour. A regular car with guesthouses or hotels gives you independent stops and a warm room at night. A compact campervan—the small converted minibus you will see all over the Ring Road—keeps your bed, simple kitchen and luggage with the route. A larger motorhome can add indoor space and sometimes a toilet, but it is also a bigger vehicle to park and handle in wind. These are different trips, not interchangeable versions of self-drive.",
+            "A car with fixed lodging suits travelers who want a private bathroom, room to dry wet clothes and a real bed after a long day. The trade-off is that each reservation pulls the route toward a particular town. You can still stop at a safe pullout when the light changes, but the driver cannot admire every view and the group remains responsible for fatigue, warnings and vehicle problems.",
+            "A compact campervan suits travelers who enjoy simple camping and value changing the plan without changing a hotel. One March couple rearranged their route after wind canceled a whale trip; the bed moved with them, but an all-night heater and open campsites made that freedom possible. Other camper travelers loved cooking and sleeping close to the route while also describing battery trouble, wet gear, missing curtains, finding a level pitch and turning seats into a bed. Iceland does not generally allow a campervan to become a free hotel in any scenic parking place: plan around organized campsites and verify which ones are open for your dates.",
+            "Vehicle size matters. A small two-person conversion is easier to drive and can be enough when both travelers accept close quarters and daily setup. A couple in a larger four-seat camper valued leaving the bed made and having room to sit inside during strong wind. A true motorhome may add facilities, but the extra length, height, fuel use and wind exposure deserve as much attention as the floor plan. Compare sleeping dimensions, heating, power, toilet and shower arrangements, permitted roads, coverage and campsite services—not just the number of people the listing says it sleeps.",
+            "You can also choose one or two bases and make day trips instead of changing beds every night. Reykjavík works well for city time, the Golden Circle and guided departures. A second base on or near the South Coast can shorten the days that reach waterfalls, Vík and glacier country. This approach means less packing, easier recovery after bad weather and more freedom to leave the car parked. The cost is backtracking: a place that looks close on the map can become a tiring out-and-back drive, and Reykjavík is not a comfortable base for every distant sight. Choose bases around the two regions you most want to experience, not around the hope of reaching the whole country from one room.",
+            "A guided trip is not a lesser version of Iceland. You give up control over timing, but everyone gets to look out the window and someone else watches the road and interprets conditions. This can be especially comfortable for a solo visitor, a winter trip or a short stay. One solo summer traveler used four different operators and came home thinking tours were underrated. Other travelers strongly prefer a rental because being able to change direction is exactly why they came.",
+            "For a first trip shorter than five nights, Reykjavík with one or two guided regions can be satisfying and much less tiring than collecting distant stops. With two confident drivers, a week or more and a forgiving season, a rental starts to earn its freedom. Most first-time travelers should allow roughly ten to twelve days for a relaxed Ring Road. With less time, choosing the South Coast, West Iceland or another smaller region usually creates a better trip than spending every day in transit."
+          ],
+          "doBeforeDeparture": [
+            "Count capable drivers, not licensed passengers.",
+            "Decide whether you want the night's lodging to move with you—and whether you actually enjoy the chores that makes possible.",
+            "If you prefer bases, draw honest round trips from each one and include the return drive rather than counting only the outward distance.",
+            "For a camper or motorhome, verify sleeping dimensions, heater, power, permitted roads and open campsites before paying.",
+            "Choose the two experiences that justify the geography.",
+            "Give every three or four active days one slower or movable block.",
+            "Save tour cancellation terms or the rental provider's assistance number offline."
+          ],
+          "sourceIds": ["r007", "r010", "r014", "r017", "r024", "r025", "t006", "t011", "t012", "o001", "o002", "o008"]
+        },
+        {
+          "id": "choose-season",
+          "title": "Choose the month for the trip you actually want",
+          "evidenceLabel": "Our take, based on official seasonal guidance and traveler reports",
+          "body": [
+            "There is no month when Iceland becomes a bad destination for everyone, but there are bad matches between a month and a plan. For a first visit built around a broad self-drive, long outdoor days and the fewest seasonal complications, June through August are the easiest months. They bring very long daylight and the widest access, but also the highest demand: lodging, cars, campervans and tours can cost more or sell out, famous stops are busier, and the bright nights are poor for aurora hunting.",
+            "For that broad first-time road trip, November is usually the weakest compromise. Daylight has become short, autumn rain and wind can turn wintry, and many summer-only routes or services are no longer part of the plan. Yet it does not consistently deliver the settled snow-covered winter people imagine. Recent travelers describe both storm disruption and wonderful November trips, so this is a fit warning, not a promise of bad weather.",
+            "December through February are the most demanding months overall. Short daylight, ice, snow, wind and temporary closures can shrink a self-drive itinerary quickly. Choose them because you want a winter trip: Reykjavík, pools, guided outings, ice or snow experiences and a chance—not a guarantee—of aurora. They are a poor fit if your non-negotiables are a fast Ring Road, Highlands access, long hikes or seeing everything in one visit.",
+            "May and September are often appealing compromises: useful daylight, somewhat lower demand and a mixture of seasons. The bargain is uncertainty. Early May can retain winter conditions in the north or at elevation; September can turn wintry earlier than expected. October and March or April can be rewarding for a smaller flexible route, but they deserve winter-capable plans rather than a summer itinerary with a warmer coat.",
+            "The simplest recommendation for a first-time US traveler is June or early September if access and manageable planning matter most. Choose late autumn or winter deliberately for winter atmosphere and dark skies, preferably with a smaller map and guided alternatives. Avoid selecting November merely because it looks like a cheaper version of summer."
+          ],
+          "doBeforeDeparture": [
+            "Write down the two experiences that make the trip worthwhile, then reject months when those experiences are normally unavailable.",
+            "If choosing November through March, build the itinerary with a shorter winter geography and at least one movable day.",
+            "If choosing June through August, reserve scarce lodging, vehicles and tours earlier and bring an eye mask.",
+            "Treat aurora, puffins, Highlands access and a full Ring Road as different seasonal goals; no month optimizes all four."
+          ],
+          "liveChecks": [
+            {"label": "Official weather and warnings", "url": "https://en.vedur.is/"},
+            {"label": "Official road conditions", "url": "https://umferdin.is/en"},
+            {"label": "SafeTravel conditions", "url": "https://safetravel.is/travel-conditions/"}
+          ],
+          "sourceIds": ["r001", "r005", "r009", "r011", "r014", "t008", "k004", "o002", "o003", "o005", "o009", "o010"]
+        },
+        {
+          "id": "weather",
+          "title": "Icelandic weather changes the way a day feels",
+          "evidenceLabel": "Travelers repeatedly mention",
+          "body": [
+            "Iceland may not look extremely cold on a weather app, but the temperature number leaves out the part travelers notice most: strong wind, cold rain and repeated changes during the same day. A calm morning in Reykjavík can become a wet and exposed afternoon on the coast. Waterfall spray adds another source of water even when the sky is clear.",
+            "Travelers from snowy US states, tropical climates and northern Europe describe the same adjustment. A Hawaii-based traveler who spent a month circling the country sometimes met fog and rain that reduced visibility to a few meters, yet also enjoyed many pleasantly chilly periods. Another first-timer discovered that water-resistant pants soaked through while a companion's truly waterproof pair held. Bad weather is not constant; the practical problem is that the useful outfit can change within an hour.",
+            "The all-season foundation is a windproof waterproof jacket, waterproof pants, waterproof footwear, a non-cotton base layer and a fleece or wool mid-layer. Then adjust the amount of insulation: summer needs lighter layers and an eye mask; spring and autumn need thermal layers ready for sudden cold, mud or sleet; winter needs warm base layers top and bottom, heavier insulation, a warm waterproof outer layer, and warmer gloves, hat and neck protection. In every season, one dry layer should stay easy to reach rather than buried under luggage.",
+            "Check the Icelandic Met Office and road conditions every morning and again before a meaningful route change. Dress for the exposed stop or hike, not only for the walk from a Reykjavík restaurant to the hotel. If an official warning says to delay the drive, a saved itinerary is not a reason to continue."
+          ],
+          "liveChecks": [
+            {"label": "Icelandic Met Office", "url": "https://en.vedur.is/"},
+            {"label": "SafeTravel conditions", "url": "https://safetravel.is/travel-conditions/"}
+          ],
+          "sourceIds": ["t001", "r011", "r001", "o003", "o005", "o009", "o010", "o011", "o012"]
+        },
+        {
+          "id": "cost",
+          "title": "Plan the expensive parts and enjoy the rest",
+          "evidenceLabel": "Our take",
+          "body": [
+            "Iceland is expensive, but the cost is easier to accept when you decide what the trip is for. Recent travelers repeatedly spend the largest amounts on lodging, transport, rental coverage, booked activities and restaurant meals. Parking and convenience purchases then add a steady stream of smaller charges.",
+            "The useful approach is not to make every day cheap. One solo traveler deliberately visited several premium lagoons and felt the five-day trip was worth the money. A Nashville couple packed simple lunches so they could keep the geology, art and meals they cared about. Camper travelers combined transport, lodging and a kitchen in one expensive item, then saved elsewhere.",
+            "Before booking, estimate the whole trip: vehicle or tours, coverage, lodging, fuel, parking, activities and a believable mixture of groceries and restaurants. Choose two or three experiences you want to enjoy without doing currency conversion at the door. Grocery breakfasts, road lunches, tap water and neighborhood pools can protect those choices without turning the vacation into a deprivation contest."
+          ],
+          "sourceIds": ["r006", "k002", "r017", "b003"]
+        },
+        {
+          "id": "language",
+          "title": "English will carry the trip; Icelandic changes the tone",
+          "evidenceLabel": "Our take",
+          "body": [
+            "Visitor-facing Iceland works readily in English. You do not need to turn the flight into language school. Learn a greeting, thanks, excuse me, the shapes of a few signs and the emergency number. Use Icelandic once, accept an English reply without making a busy person teach, and keep the complete phrase cards for the situations where showing the screen is easier than improvising.",
+            "The language toolkit is always available. If you would enjoy a few minutes of practice, start with greetings; the lesson stays separate from the guide and never blocks the travel advice."
+          ],
+          "practiceLink": {
+            "lessonId": "L1-greetings",
+            "label": "Try the greetings lesson",
+            "status": "Optional practice · app lesson placeholder"
+          },
+          "relatedLanguageIds": ["p01", "p05", "p08", "p13", "p16", "p46", "p50"],
+          "sourceIds": ["language-course", "dictionary", "o006"]
+        }
+      ],
+      "closing": "The best first trip is not the one that proves you covered Iceland. It is the one that gives you time to stop safely, change direction, warm up and remember where you were."
+    }
+  ]
+}

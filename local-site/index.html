@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b31">
+  <meta name="description" content="Browse the First Day Away Iceland editorial draft offline.">
+  <title>Iceland · First Day Away</title>
+  <link rel="stylesheet" href="styles.css?v=perlan-framing-3">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#start" aria-label="First Day Away, Iceland home">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span><strong>First Day Away</strong><small>Iceland field guide</small></span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <a href="#start">Start here</a>
+      <a href="#decisions">Decisions</a>
+      <a href="#routes">Routes</a>
+      <a href="#places">Places</a>
+    </nav>
+    <button class="theme-button" type="button" aria-label="Switch color theme" title="Switch color theme">◐</button>
+  </header>
+
+  <main id="content">
+    <section class="hero" id="start" aria-labelledby="hero-title">
+      <img src="assets/iceland-road-weather.webp" alt="An empty coastal road crosses moss-covered volcanic land beneath rain clouds and a break of sunlight." width="1920" height="960">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Iceland · researched October 2026</p>
+        <h1 id="hero-title">A practical handbook for your first trip to Iceland.</h1>
+        <p>Iceland brings waterfalls, lava fields, glaciers, black-sand coast and hot water into one remarkable trip. This guide shares what recent travelers loved, what surprised them and what is easier to decide before you arrive.</p>
+        <div class="hero-actions">
+          <button class="primary" type="button" data-open="briefing:is-first-day">Start with why Iceland is worth visiting</button>
+          <a class="secondary" href="#decisions">Browse practical advice</a>
+        </div>
+      </div>
+      <p class="photo-credit">AI-generated editorial illustration · First Day Away draft</p>
+    </section>
+
+    <section class="orientation section-shell" aria-labelledby="orientation-title">
+      <div>
+        <p class="eyebrow dark">Why travelers love it</p>
+        <h2 id="orientation-title">The landscape keeps changing before you finish talking about the last view.</h2>
+      </div>
+      <div class="intro-copy">
+        <p>Within a few days you can walk beside waterfalls, cross mossy lava fields, look over a glacier lagoon, stand above a black-sand coast and finish in naturally heated water. Many visitors find that the drives between famous places become part of the experience rather than empty travel time.</p>
+        <p>The same openness asks for a little preparation. Weather changes quickly, distances take longer than expected and rental-car decisions can be unfamiliar. A good plan handles those questions before the trip, then leaves enough room to enjoy what Iceland puts in front of you.</p>
+      </div>
+      <div class="quick-facts" aria-label="Guide summary">
+        <span><strong>8</strong> decision guides</span>
+        <span><strong>4</strong> practical routes</span>
+        <span><strong>Offline</strong> after download</span>
+      </div>
+    </section>
+
+    <section class="feature section-shell" aria-labelledby="weather-title">
+      <div class="feature-image">
+        <img src="assets/wind-car-door.webp" alt="A traveler holds a partly opened car door securely with both hands at a designated gravel pullout in strong wind." width="1920" height="1024" loading="lazy">
+        <p class="photo-credit">AI-generated editorial illustration · behavior shown is illustrative</p>
+      </div>
+      <div class="feature-copy">
+        <p class="eyebrow dark">Weather and clothing</p>
+        <h2 id="weather-title">What Icelandic weather feels like</h2>
+        <p>The temperature can look mild while strong wind and cold rain make a stop feel much colder. Conditions may change several times in one day, and waterfall spray adds water even when the sky is clear.</p>
+        <ul class="tick-list">
+          <li>Pack a genuinely windproof, waterproof outer layer.</li>
+          <li>Keep one dry layer reachable without unpacking the car.</li>
+          <li>Check official weather and road conditions when the route changes.</li>
+        </ul>
+        <button class="text-button" type="button" data-open="playbook:pack-for-exposure">Read the packing advice <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <section class="cards-section section-shell" id="decisions" aria-labelledby="decisions-title">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">Friendly, practical advice</p><h2 id="decisions-title">Things that are easier to understand before you arrive</h2></div>
+        <div class="filter-row" role="group" aria-label="Filter decision guides">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="self-drive">Driving</button>
+          <button class="filter" type="button" data-filter="camper">Campervan</button>
+          <button class="filter" type="button" data-filter="reykjavik">Reykjavík</button>
+          <button class="filter" type="button" data-filter="budget">Budget</button>
+        </div>
+      </div>
+      <div class="card-grid" id="playbook-grid"></div>
+    </section>
+
+    <section class="pool-break" aria-labelledby="pool-title">
+      <img src="assets/reykjavik-pool.webp" alt="Steam rises from an ordinary Reykjavík outdoor public pool and hot tubs at blue hour." width="1920" height="1024" loading="lazy">
+      <div class="pool-copy">
+        <p class="eyebrow">An everyday ritual</p>
+        <h2 id="pool-title">Public pools and destination lagoons offer different kinds of Icelandic experience.</h2>
+        <button class="secondary light" type="button" data-open="playbook:pool-or-lagoon">Compare pool and lagoon</button>
+      </div>
+      <p class="photo-credit">AI-generated editorial illustration · not a specific facility</p>
+    </section>
+
+    <section class="routes section-shell" id="routes" aria-labelledby="routes-title">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">Choose a smaller map</p><h2 id="routes-title">Routes with room to notice where you are</h2></div>
+        <p>These are planning shapes, not promises about current access or conditions.</p>
+      </div>
+      <div class="route-list" id="route-list"></div>
+    </section>
+
+    <figure class="landscape-break">
+      <img src="assets/south-coast-waterfall.webp" alt="Waterfalls descend beside a marked South Coast path where four travelers wear rain gear." width="1920" height="960" loading="lazy">
+      <figcaption><strong>South Coast:</strong> let the route hold waterfalls, black-sand coast and glacier landscapes without pretending it holds the whole country. <span>AI-generated editorial illustration.</span></figcaption>
+    </figure>
+
+    <section class="places section-shell" id="places" aria-labelledby="places-title">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">Worth it for whom?</p><h2 id="places-title">Places with a reason, not a ranking</h2></div>
+        <label class="search-label">Search places <input id="place-search" type="search" placeholder="Try pool, waterfall, museum…"></label>
+      </div>
+      <div class="place-grid" id="place-grid"></div>
+    </section>
+
+    <section class="draft-note section-shell" aria-labelledby="draft-title">
+      <p class="eyebrow dark">Honest draft status</p>
+      <h2 id="draft-title">Useful now. Not pretending to be finished.</h2>
+      <p>This prototype presents the research-backed Iceland draft. Native-language, destination, safety, media-rights, entrance-pin and accessibility reviews remain release gates. Current official conditions override every offline suggestion.</p>
+    </section>
+  </main>
+
+  <dialog id="reader" aria-labelledby="reader-title">
+    <div class="reader-bar">
+      <span class="reader-brand">First Day Away · Iceland</span>
+      <button class="reader-close" type="button" aria-label="Close article">Close</button>
+    </div>
+    <article id="reader-article"></article>
+  </dialog>
+
+  <footer>
+    <span>First Day Away · Iceland editorial prototype</span>
+    <span>Works locally · no tracking · no remote assets</span>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="app.js?v=perlan-framing-3"></script>
+</body>
+</html>

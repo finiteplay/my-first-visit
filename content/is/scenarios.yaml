@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "scenario-greeting",
+      "setting": "A receptionist greets you.",
+      "local": "Góðan daginn",
+      "respelling": "GOH-dhan DAH-gihn",
+      "meaning": "Good day",
+      "linkedItem": "p02",
+      "options": [
+        {
+          "id": "choice-1",
+          "text": "Greet them back with góðan daginn."
+        },
+        {
+          "id": "choice-2",
+          "text": "Treat it as a goodbye and leave."
+        },
+        {
+          "id": "choice-3",
+          "text": "Reply with a direction instead of a greeting."
+        }
+      ],
+      "answerId": "choice-1",
+      "feedback": "Return the greeting, then ask your question.",
+      "sourceIds": [
+        "language-course"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "scenario-offered-coffee",
+      "setting": "A host offers a drink.",
+      "local": "Viltu kaffi?",
+      "respelling": "VIHL-tuu KAH-fih",
+      "meaning": "Would you like coffee?",
+      "linkedItem": "p10",
+      "options": [
+        {
+          "id": "choice-1",
+          "text": "Show your hotel address."
+        },
+        {
+          "id": "choice-2",
+          "text": "Say já, takk if you want coffee."
+        },
+        {
+          "id": "choice-3",
+          "text": "Point toward the restroom."
+        }
+      ],
+      "answerId": "choice-2",
+      "feedback": "Já, takk accepts; nei, takk politely declines.",
+      "sourceIds": [
+        "language-course"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "scenario-toilet-direction",
+      "setting": "You asked where the restroom is.",
+      "local": "Til vinstri",
+      "respelling": "tihl VIHN-strih",
+      "meaning": "To the left",
+      "linkedItem": "p20",
+      "options": [
+        {
+          "id": "choice-1",
+          "text": "Turn right."
+        },
+        {
+          "id": "choice-2",
+          "text": "Go straight ahead."
+        },
+        {
+          "id": "choice-3",
+          "text": "Look to the left."
+        }
+      ],
+      "answerId": "choice-3",
+      "feedback": "Vinstri is left; hægri is right.",
+      "sourceIds": [
+        "language-course"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "scenario-right-direction",
+      "setting": "You asked which way to go.",
+      "local": "Til hægri",
+    "respelling": "tihl HEYE-grih",
+      "meaning": "To the right",
+      "linkedItem": "p21",
+      "options": [
+        {
+          "id": "choice-1",
+          "text": "Look to the right."
+        },
+        {
+          "id": "choice-2",
+          "text": "Look to the left."
+        },
+        {
+          "id": "choice-3",
+          "text": "Assume they said open."
+        }
+      ],
+      "answerId": "choice-1",
+      "feedback": "Hægri is right.",
+      "sourceIds": [
+        "language-course"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "scenario-straight-direction",
+      "setting": "Someone points along the street.",
+      "local": "Beint áfram",
+    "respelling": "BAYNT OW-frahm",
+      "meaning": "Straight ahead",
+      "linkedItem": "p22",
+      "options": [
+        {
+          "id": "choice-1",
+          "text": "Turn left immediately."
+        },
+        {
+          "id": "choice-2",
+          "text": "Continue straight ahead."
+        },
+        {
+          "id": "choice-3",
+          "text": "Take it as a goodbye."
+        }
+      ],
+      "answerId": "choice-2",
+      "feedback": "The reply says straight ahead.",
+      "sourceIds": [
+        "language-course"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "scenario-table",
+      "setting": "A restaurant host asks your party size.",
+      "local": "Fyrir tvo?",
+      "respelling": "FIH-rihr tvoh",
+      "meaning": "For two?",
+      "linkedItem": "p24",
+      "options": [
+        {
+          "id": "choice-1",
+          "text": "Answer with the number of drinks you want."
+        },
+        {
+          "id": "choice-2",
+          "text": "Give your hotel room number."
+        },
+        {
+          "id": "choice-3",
+          "text": "Say já if there are two of you."
+        }
+      ],
+      "answerId": "choice-3",
+      "feedback": "Confirm the number of people; tvo belongs to this request.",
+      "sourceIds": [
+        "language-course"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "scenario-payment",
+      "setting": "A cashier asks how you will pay.",
+      "local": "Kort eða reiðufé?",
+    "respelling": "KAWR-t EH-dha RAY-dhuu-fyeh",
+      "meaning": "Card or cash?",
+      "linkedItem": "p36",
+      "options": [
+        {
+          "id": "choice-1",
+          "text": "Indicate your payment method."
+        },
+        {
+          "id": "choice-2",
+          "text": "State the number of people at your table."
+        },
+        {
+          "id": "choice-3",
+          "text": "Give an address instead of a payment method."
+        }
+      ],
+      "answerId": "choice-1",
+      "feedback": "Kort is card; reiðufé is cash.",
+      "sourceIds": [
+        "language-course"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "scenario-here-you-go",
+      "setting": "A server hands you your coffee.",
+      "local": "Gjörðu svo vel",
+    "respelling": "GYUR-r-dhuu svoh vehl",
+      "meaning": "Here you go",
+      "linkedItem": "p05",
+      "options": [
+        {
+          "id": "choice-1",
+          "text": "Repeat it as a request for more coffee."
+        },
+        {
+          "id": "choice-2",
+          "text": "Say takk fyrir."
+        },
+        {
+          "id": "choice-3",
+          "text": "Say you are lost."
+        }
+      ],
+      "answerId": "choice-2",
+      "feedback": "Here it accompanies handing something over; thank the server.",
+      "sourceIds": [
+        "language-course"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "scenario-welcome",
+      "setting": "Someone responds to your thanks.",
+      "local": "Ekkert að þakka",
+      "respelling": "EH-kehrt adh THAH-ka",
+      "meaning": "You're welcome",
+      "linkedItem": "p07",
+      "options": [
+        {
+          "id": "choice-1",
+          "text": "Assume you owe another payment."
+        },
+        {
+          "id": "choice-2",
+          "text": "Ask them to repeat every word."
+        },
+        {
+          "id": "choice-3",
+          "text": "Smile and continue; no special reply is required."
+        }
+      ],
+      "answerId": "choice-3",
+      "feedback": "The exchange can end after their reply.",
+      "sourceIds": [
+        "language-course"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "scenario-closed",
+      "setting": "A staff member explains why you cannot enter.",
+      "local": "Það er lokað",
+      "respelling": "THADH ehr LOH-kadh",
+      "meaning": "It is closed",
+      "linkedItem": "p39",
+      "options": [
+        {
+          "id": "choice-1",
+          "text": "Respect the closure and choose another plan."
+        },
+        {
+          "id": "choice-2",
+          "text": "Walk around the barrier."
+        },
+        {
+          "id": "choice-3",
+          "text": "Assume it means open."
+        }
+      ],
+      "answerId": "choice-1",
+      "feedback": "Lokað means closed; it is not permission to find another entrance.",
+      "sourceIds": [
+        "language-course"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "scenario-repeat",
+      "setting": "The receptionist did not catch your question.",
+      "local": "Afsakið?",
+      "respelling": "AHF-sa-kihdh",
+      "meaning": "Pardon?",
+      "linkedItem": "p08",
+      "options": [
+        {
+          "id": "choice-1",
+          "text": "Reply já without repeating the question."
+        },
+        {
+          "id": "choice-2",
+          "text": "Repeat slowly or switch to English."
+        },
+        {
+          "id": "choice-3",
+          "text": "Assume the place is closed."
+        }
+      ],
+      "answerId": "choice-2",
+      "feedback": "Here afsakið asks for a repeat; context changes its role.",
+      "sourceIds": [
+        "language-course"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "scenario-allergy-question",
+      "setting": "A server wants to know your allergy.",
+      "local": "Fyrir hverju?",
+      "respelling": "FIH-rihr KVEHR-yuu",
+      "meaning": "To what?",
+      "linkedItem": "p30",
+      "options": [
+        {
+          "id": "choice-1",
+          "text": "Repeat only the generic allergy statement."
+        },
+        {
+          "id": "choice-2",
+          "text": "Say já without identifying the allergen."
+        },
+        {
+          "id": "choice-3",
+          "text": "Show the specific allergy card and confirm understanding."
+        }
+      ],
+      "answerId": "choice-3",
+      "feedback": "They need the allergen, not another generic allergy statement.",
+      "sourceIds": [
+        "language-course"
+      ],
+      "review": "pending-native"
+    }
+  ]
+}

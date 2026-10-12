@@ -1,0 +1,268 @@
+{
+ "schemaVersion": 1,
+ "selectedAt": "2026-10-11",
+ "selections": {
+  "sight-laugardalslaug": [
+   {
+    "id": "sight-laugardalslaug-c01",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-laugardalslaug-c05",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-thingvellir": [
+   {
+    "id": "sight-thingvellir-c01",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-thingvellir-c04",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-thingvellir-c09",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-thingvellir-c14",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-thingvellir-c13",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-gullfoss": [
+   {
+    "id": "sight-gullfoss-c03",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-gullfoss-c06",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-gullfoss-c09",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-gullfoss-c10",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-geysir": [
+   {
+    "id": "sight-geysir-c03",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-geysir-c08",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-geysir-c15",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-hallgrimskirkja": [
+   {
+    "id": "sight-hallgrimskirkja-c02",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-hallgrimskirkja-c03",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-hallgrimskirkja-c11",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-harpa": [
+   {
+    "id": "sight-harpa-c09",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-harpa-c11",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-harpa-c18",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-national-museum": [
+   {
+    "id": "sight-national-museum-c04",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-national-museum-c05",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-national-museum-c06",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-seljalandsfoss": [
+   {
+    "id": "sight-seljalandsfoss-c01",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-seljalandsfoss-c04",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-seljalandsfoss-c09",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-seljalandsfoss-c18",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-skogafoss": [
+   {
+    "id": "sight-skogafoss-c03",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-skogafoss-c04",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-skogafoss-c07",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-skogafoss-c11",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-skogafoss-c10",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-reynisfjara": [
+   {
+    "id": "sight-reynisfjara-c02",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-reynisfjara-c04",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-reynisfjara-c07",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-reynisfjara-c13",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-jokulsarlon": [
+   {
+    "id": "sight-jokulsarlon-c03",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-jokulsarlon-c09",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-jokulsarlon-c08",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-jokulsarlon-c14",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-jokulsarlon-c19",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-godafoss": [
+   {
+    "id": "sight-godafoss-c03",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-godafoss-c06",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-godafoss-c10",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-myvatn": [
+   {
+    "id": "sight-myvatn-c03",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-myvatn-c06",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-myvatn-c11",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-myvatn-c12",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-perlan": [
+   {
+    "id": "sight-perlan-c05",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-perlan-m01",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-perlan-m02",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-perlan-m03",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-perlan-m04",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-whales": [
+   {
+    "id": "sight-whales-c01",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-whales-c04",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-whales-c07",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-whales-c08",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-whales-c09",
+    "objectPosition": "center"
+   }
+  ]
+ }
+}

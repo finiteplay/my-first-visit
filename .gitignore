@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.local-backups/
+# Regenerable photo-research working files (rebuild with tools/media/shortlist_photos.py)
+content/is/media-candidates/thumbs/
+content/is/media-candidates/pd/
+# Never commit credentials or downloaded models
+*.key
+*.onnx
+*.bin

@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "sight-laugardalslaug",
+      "name": "Laugardalslaug public pool",
+      "local": "Laugardalslaug",
+      "respelling": "LUR-gar-dahls-lurg",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Experience",
+      "tier": "worth-it",
+      "whyGo": "Join an everyday Reykjavík ritual at a neighborhood swimming pool.",
+      "timeNeeded": "1–2 hours",
+      "bestTime": "After a restful arrival; check current facilities and visitor access.",
+      "tip": "Bring swimwear and follow the shower rules. Ask staff about changing-room options and closed areas; pool facilities can change.",
+      "linkedItem": "tip-pool-shower",
+      "location": {
+        "latitude": 64.1468,
+        "longitude": -21.8792,
+        "label": "Sundlaugavegur 30 entrance area",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "city-pool"
+      ],
+      "photo": {
+        "id": "photo-laugardalslaug",
+        "status": "missing",
+        "brief": "Pool exterior or specifically authorized pool-area photo. No changing-room photos; avoid identifiable bathers without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-thingvellir",
+      "name": "Þingvellir National Park",
+      "local": "Þingvellir",
+    "respelling": "THIHNK-veht-lihr",
+      "region": "Golden Circle",
+      "nearestCity": "Selfoss",
+      "category": "Nature",
+      "tier": "must-see",
+      "whyGo": "Walk a rift valley where Iceland's early assembly met.",
+      "timeNeeded": "1–2 hours",
+      "bestTime": "Daylight, with paths open and conditions suitable.",
+      "tip": "Wear shoes with grip. Use marked paths and respect ice-related closures.",
+      "linkedItem": "c15-toilet",
+      "location": {
+        "latitude": 64.2559,
+        "longitude": -21.1304,
+        "label": "Hakið visitor area",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "thingvellir"
+      ],
+      "photo": {
+        "id": "photo-thingvellir",
+        "status": "missing",
+        "brief": "Wide rift-valley view with the marked path; show the human scale without people posing on edges.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-gullfoss",
+      "name": "Gullfoss waterfall",
+      "local": "Gullfoss",
+      "respelling": "GUUTL-faws",
+      "region": "Golden Circle",
+      "nearestCity": "Selfoss",
+      "category": "Nature",
+      "tier": "must-see",
+      "whyGo": "See a powerful river drop in two stages into a narrow canyon.",
+      "timeNeeded": "45–75 minutes",
+      "bestTime": "Daylight; viewpoints depend on weather and trail access.",
+      "tip": "Expect wind and spray. Stay behind barriers; a closed lower path is not a shortcut.",
+      "linkedItem": "p05",
+      "location": {
+        "latitude": 64.32728,
+        "longitude": -20.11893,
+        "label": "Attraction area; confirm accessible entrance",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "gullfoss"
+      ],
+      "photo": {
+        "id": "photo-gullfoss",
+        "status": "missing",
+        "brief": "Both drops from an authorized viewpoint; no drone or cliff-edge pose.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-geysir",
+      "name": "Geysir and Strokkur",
+      "local": "Geysir og Strokkur",
+      "respelling": "GAY-sihr awg STROH-kuur",
+      "region": "Golden Circle",
+      "nearestCity": "Selfoss",
+      "category": "Nature",
+      "tier": "must-see",
+      "whyGo": "Watch Strokkur erupt in a landscape of steaming pools.",
+      "timeNeeded": "45–75 minutes",
+      "bestTime": "Daylight, when the site is accessible.",
+      "tip": "Strokkur is the active attraction, not a promise that Great Geysir will erupt. Stay on paths and behind ropes.",
+      "linkedItem": "p39",
+      "location": {
+        "latitude": 64.3103,
+        "longitude": -20.3024,
+        "label": "Strokkur viewing area",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "geysir"
+      ],
+      "photo": {
+        "id": "photo-geysir",
+        "status": "missing",
+        "brief": "Strokkur eruption with safe viewing boundary visible; do not label it as Great Geysir.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-hallgrimskirkja",
+      "name": "Hallgrímskirkja",
+      "local": "Hallgrímskirkja",
+      "respelling": "HAHTL-greem-skihr-kya",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Sacred place",
+      "tier": "worth-it",
+      "whyGo": "See Reykjavík's soaring church and its striking architectural silhouette.",
+      "timeNeeded": "30–60 minutes",
+      "bestTime": "Daylight; plan around worship and check visitor access.",
+      "tip": "This is an active church. Keep voices low and respect services; tower access is a separate visit to check.",
+      "linkedItem": "p08",
+      "location": {
+        "latitude": 64.1417,
+        "longitude": -21.9266,
+        "label": "Church forecourt",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "capital"
+      ],
+      "photo": {
+        "id": "photo-hallgrimskirkja",
+        "status": "missing",
+        "brief": "Exterior showing the stepped facade from a public viewpoint; no recognizable worshippers.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-harpa",
+      "name": "Harpa concert hall",
+      "local": "Harpa",
+      "respelling": "HAHR-pa",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Landmark",
+      "tier": "worth-it",
+      "whyGo": "Watch harbor light change through a geometric glass concert-hall facade.",
+      "timeNeeded": "30–60 minutes",
+      "bestTime": "Daylight for the facade; check visitor access.",
+      "tip": "A building visit and a performance are different plans. Check access before going; do not enter closed event areas.",
+      "linkedItem": "p39",
+      "location": {
+        "latitude": 64.1505,
+        "longitude": -21.9328,
+        "label": "Main building entrance area",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "harpa"
+      ],
+      "photo": {
+        "id": "photo-harpa",
+        "status": "missing",
+        "brief": "Glass facade and harbor context; choose a photo with redistribution rights, not a press image.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-national-museum",
+      "name": "National Museum of Iceland",
+      "local": "Þjóðminjasafn Íslands",
+      "respelling": "THYOHDH-mihn-ya-sahvn EES-lahnds",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Museum",
+      "tier": "worth-it",
+      "whyGo": "Connect the landscape to the people and objects of Iceland's history.",
+      "timeNeeded": "1–2 hours",
+      "bestTime": "A useful indoor choice; check current visitor access.",
+      "tip": "Choose a few objects to explore slowly rather than rushing every room. Check exhibit-photo rules.",
+      "linkedItem": "p05",
+      "location": {
+        "latitude": 64.1384,
+        "longitude": -21.9473,
+        "label": "Suðurgata museum entrance area",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "museum"
+      ],
+      "photo": {
+        "id": "photo-national-museum",
+        "status": "missing",
+        "brief": "Museum exterior or specifically licensed exhibit image; admission does not grant reproduction rights.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-seljalandsfoss",
+      "name": "Seljalandsfoss waterfall",
+      "local": "Seljalandsfoss",
+      "respelling": "SEHL-ya-lahnds-faws",
+      "region": "South Coast",
+      "nearestCity": "Hvolsvöllur",
+      "category": "Nature",
+      "tier": "worth-it",
+      "whyGo": "Watch a narrow waterfall fall from a green coastal escarpment.",
+      "timeNeeded": "45–75 minutes",
+      "bestTime": "Daylight; the behind-the-falls path is conditional.",
+      "tip": "Wear a waterproof layer. Skip the rear path if closed or icy; falling ice makes the cliff area dangerous.",
+      "linkedItem": "p39",
+      "location": {
+        "latitude": 63.6156,
+        "longitude": -19.9886,
+        "label": "Designated visitor area",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "seljalandsfoss"
+      ],
+      "photo": {
+        "id": "photo-seljalandsfoss",
+        "status": "missing",
+        "brief": "Front-facing waterfall view; do not imply the rear path is always open.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-skogafoss",
+      "name": "Skógafoss waterfall",
+      "local": "Skógafoss",
+      "respelling": "SKOH-ga-faws",
+      "region": "South Coast",
+      "nearestCity": "Vík",
+      "category": "Nature",
+      "tier": "must-see",
+      "whyGo": "Feel the scale of a broad waterfall, with rainbows when sunlight catches the spray.",
+      "timeNeeded": "45–90 minutes",
+      "bestTime": "Daylight; bright sun may reveal a rainbow.",
+      "tip": "The base view and upper stair route need different effort. Use marked viewpoints and expect slippery surfaces.",
+      "linkedItem": "p22",
+      "location": {
+        "latitude": 63.53181,
+        "longitude": -19.511996,
+        "label": "Attraction area; confirm entrance pin",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "skogafoss"
+      ],
+      "photo": {
+        "id": "photo-skogafoss",
+        "status": "missing",
+        "brief": "Full waterfall from the designated base area; keep the water's force visible.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-reynisfjara",
+      "name": "Reynisfjara black-sand coast",
+      "local": "Reynisfjara",
+      "respelling": "RAY-nihs-fya-ra",
+      "region": "South Coast",
+      "nearestCity": "Vík",
+      "category": "Nature",
+      "tier": "worth-it",
+      "whyGo": "See dark sand, offshore rock stacks and basalt cliffs from permitted viewing areas.",
+      "timeNeeded": "30–60 minutes, if access is permitted",
+      "bestTime": "Daylight; current warnings determine where you may go.",
+      "tip": "Stay far from the surf and cliff bases. Obey warning lights and closures; a viewing-area visit may be the only option.",
+      "linkedItem": "p39",
+      "location": {
+        "latitude": 63.4043,
+        "longitude": -19.0449,
+        "label": "Visitor/viewing area; not the waterline",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "beach"
+      ],
+      "photo": {
+        "id": "photo-reynisfjara",
+        "status": "missing",
+        "brief": "Coastline from a safe permitted viewpoint; no people at the waterline or under unstable cliffs.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-jokulsarlon",
+      "name": "Jökulsárlón glacier lagoon",
+      "local": "Jökulsárlón",
+      "respelling": "YUR-kuuls-owr-lohn",
+      "region": "Southeast",
+      "nearestCity": "Höfn",
+      "category": "Nature",
+      "tier": "must-see",
+      "whyGo": "Watch drifting ice in a glacier-fed lagoon beside the coast.",
+      "timeNeeded": "1–2 hours ashore",
+      "bestTime": "Daylight; make this part of a Southeast stay.",
+      "tip": "This is far from Reykjavík. Plan an overnight route or a realistic tour; never climb on floating ice or enter the water.",
+      "linkedItem": "p19",
+      "location": {
+        "latitude": 64.0484,
+        "longitude": -16.1794,
+        "label": "Lagoon visitor area; verify current access",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "lagoon"
+      ],
+      "photo": {
+        "id": "photo-jokulsarlon",
+        "status": "missing",
+        "brief": "Icebergs from shore; no staged climbing on ice. Photograph lagoon and label accurately.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-godafoss",
+      "name": "Goðafoss waterfall",
+      "local": "Goðafoss",
+      "respelling": "GOH-dha-faws",
+      "region": "North",
+      "nearestCity": "Akureyri",
+      "category": "Nature",
+      "tier": "worth-it",
+      "whyGo": "See a curved waterfall pour over a broad ledge in North Iceland.",
+      "timeNeeded": "45–75 minutes",
+      "bestTime": "Daylight; use viewpoints suited to the day's conditions.",
+      "tip": "Use designated paths. Wet or icy edges can be slippery; seeing the falls does not require approaching the brink.",
+      "linkedItem": "p22",
+      "location": {
+        "latitude": 65.68282,
+        "longitude": -17.54958,
+        "label": "Attraction area; confirm accessible approach",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "godafoss"
+      ],
+      "photo": {
+        "id": "photo-godafoss",
+        "status": "missing",
+        "brief": "Broad curved falls from a designated viewpoint; do not advertise an informal river-edge route.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-myvatn",
+      "name": "Lake Mývatn area",
+      "local": "Mývatn",
+      "respelling": "MEE-vaht-n",
+      "region": "North",
+      "nearestCity": "Reykjahlíð",
+      "category": "Nature",
+      "tier": "if-you-have-time",
+      "whyGo": "Explore a lake landscape shaped by lava, with rich birdlife and unusual formations.",
+      "timeNeeded": "Half a day to a full day",
+      "bestTime": "Summer for long daylight and birds; other seasons need more planning.",
+      "tip": "Pick a few stops around the lake. Stay on paths, give birds space and be prepared for midges in summer.",
+      "linkedItem": "p39",
+      "location": {
+        "latitude": 65.6421,
+        "longitude": -16.9146,
+        "label": "Reykjahlíð village area; lake is not a single stop",
+        "status": "draft-pin; verify entrance and accessibility before release"
+      },
+      "sourceIds": [
+        "myvatn"
+      ],
+      "photo": {
+        "id": "photo-myvatn",
+        "status": "missing",
+        "brief": "Lake, lava and bird habitat; avoid substituting a nearby commercial bathing lagoon.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-perlan",
+      "name": "Perlan – Wonders of Iceland",
+      "local": "Perlan",
+      "respelling": "PEHR-lan",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Museum",
+      "tier": "must-see",
+      "whyGo": "A warm, visual introduction to Iceland’s glaciers, volcanoes, caves and northern lights, with a broad city view.",
+      "timeNeeded": "2–3 hours",
+      "bestTime": "A strong rainy-day or arrival-day choice; check current opening times.",
+      "tip": "Treat it as context for the real landscape, not a replacement for getting outside.",
+      "linkedItem": "museum",
+      "location": {"latitude": 64.1296, "longitude": -21.9195, "label": "Öskjuhlíð entrance area", "status": "draft-pin; verify entrance before release"},
+      "sourceIds": ["tripadvisor-perlan"],
+      "photo": {"id": "photo-perlan", "status": "missing", "brief": "Authorized exterior or observation-deck image.", "credit": null, "license": null},
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-whales",
+      "name": "Whales of Iceland",
+      "local": "Hvalasýningin á Íslandi",
+      "respelling": "HVAH-la-sigh-ning-in ow EES-land-i",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Museum",
+      "tier": "if-you-have-time",
+      "whyGo": "See life-size models of whale species found in Icelandic waters in an indoor harbor museum.",
+      "timeNeeded": "1–2 hours",
+      "bestTime": "A useful wet-weather stop; check current hours and admission.",
+      "tip": "Combine with Harpa, Aurora Reykjavík and FlyOver Iceland if their schedules line up.",
+      "linkedItem": "museum",
+      "location": {"latitude": 64.1519, "longitude": -21.9488, "label": "Fiskislóð harbor area", "status": "draft-pin; verify entrance before release"},
+      "sourceIds": ["tripadvisor-whales"],
+      "photo": {"id": "photo-whales", "status": "missing", "brief": "Licensed exterior or model display image; avoid reproducing museum materials without permission.", "credit": null, "license": null},
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-aurora-reykjavik",
+      "name": "Aurora Reykjavík",
+      "local": "Aurora Reykjavík",
+      "respelling": "ow-ROH-ra RAY-kya-veek",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Experience",
+      "tier": "if-you-have-time",
+      "whyGo": "A compact indoor introduction to northern-lights science, photographs and expectations.",
+      "timeNeeded": "45–90 minutes",
+      "bestTime": "Before an aurora tour or on a cloudy evening; check current hours.",
+      "tip": "It explains the lights but cannot guarantee that you will see them outdoors.",
+      "linkedItem": "aurora",
+      "location": {"latitude": 64.1521, "longitude": -21.9476, "label": "Harbor district entrance area", "status": "draft-pin; verify entrance before release"},
+      "sourceIds": ["tripadvisor-aurora"],
+      "photo": {"id": "photo-aurora-reykjavik", "status": "missing", "brief": "Authorized exterior or exhibition image.", "credit": null, "license": null},
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-flyover",
+      "name": "FlyOver Iceland",
+      "local": "FlyOver Iceland",
+      "respelling": "fly OH-ver EES-land",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Experience",
+      "tier": "if-you-have-time",
+      "whyGo": "An immersive flying-ride preview of Iceland with screen, motion, wind and mist.",
+      "timeNeeded": "1–2 hours",
+      "bestTime": "A convenient harbor stop when outdoor weather is poor; reserve a time.",
+      "tip": "Choose it for theatrical immersion, not as a substitute for an actual viewpoint.",
+      "linkedItem": "harpa",
+      "location": {"latitude": 64.1538, "longitude": -21.9553, "label": "Grandi harbor district", "status": "draft-pin; verify entrance before release"},
+      "sourceIds": ["tripadvisor-flyover"],
+      "photo": {"id": "photo-flyover", "status": "missing", "brief": "Authorized exterior only; ride imagery may be restricted.", "credit": null, "license": null},
+      "reviewedBy": null
+    },
+    {
+      "id": "sight-mink",
+      "name": "Mink Viking Portrait Studio",
+      "local": "Mink Viking Portrait",
+      "respelling": "MINK VIE-king POR-trit",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Experience",
+      "tier": "if-you-have-time",
+      "whyGo": "A playful, guided Viking-style portrait session on Reykjavík’s main shopping street.",
+      "timeNeeded": "1–2 hours",
+      "bestTime": "Book ahead; this is a timed small-group experience.",
+      "tip": "Confirm what the session includes, including image delivery and total price, before booking.",
+      "linkedItem": "capital",
+      "location": {"latitude": 64.1466, "longitude": -21.9272, "label": "Laugavegur studio area", "status": "draft-pin; verify entrance before release"},
+      "sourceIds": ["tripadvisor-mink"],
+      "photo": {"id": "photo-mink", "status": "missing", "brief": "Only use authorized studio imagery with participant permission.", "credit": null, "license": null},
+      "reviewedBy": null
+    }
+  ]
+}

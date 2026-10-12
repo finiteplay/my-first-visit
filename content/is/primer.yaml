@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "intro": "Icelandic uses familiar letters plus þ, ð, æ and ö. Accent marks change sounds. These English spellings are starting points; the native recording is your model. You only need to recognize useful signs, not decode every place name.",
+  "rules": [
+    {
+      "id": "primer-stress",
+      "pattern": "Word stress",
+      "soundsLike": "Usually emphasize the first syllable; keep later syllables light.",
+      "example": {
+        "local": "Strætó",
+        "respelling": "STREYE-toh",
+        "meaning": "Bus"
+      },
+      "trap": "An accent changes a vowel, not the stress.",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "primer-th",
+      "pattern": "Þ þ",
+      "soundsLike": "th, as in thin.",
+      "example": {
+        "local": "Þrír",
+        "respelling": "THREE-r",
+        "meaning": "Three"
+      },
+      "trap": "Þ is a letter, not a p.",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "primer-dh",
+      "pattern": "Ð ð",
+      "soundsLike": "dh, as in this; it may soften in natural speech.",
+      "example": {
+        "local": "Góðan",
+        "respelling": "GOH-dhan",
+        "meaning": "Good (in the greeting)"
+      },
+      "trap": "Avoid a hard English d.",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "primer-ae",
+      "pattern": "Æ æ",
+      "soundsLike": "eye, as in eye.",
+      "example": {
+        "local": "Strætó",
+        "respelling": "STREYE-toh",
+        "meaning": "Bus"
+      },
+      "trap": "Æ is one vowel sound.",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "primer-o-umlaut",
+      "pattern": "Ö ö",
+      "soundsLike": "ur without the American r: round your lips and keep your tongue forward.",
+      "example": {
+        "local": "Mjög",
+        "respelling": "MYUR-g",
+        "meaning": "Very"
+      },
+      "trap": "An approximation: listen and imitate rather than adding an r.",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "primer-a-accent",
+      "pattern": "Á á",
+      "soundsLike": "ow, as in cow.",
+      "example": {
+        "local": "Já",
+        "respelling": "YOW",
+        "meaning": "Yes"
+      },
+      "trap": "An accent is not just a stress mark.",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "primer-o-accent",
+      "pattern": "Ó ó",
+      "soundsLike": "oh, as in go.",
+      "example": {
+        "local": "Hótel",
+        "respelling": "HOH-tehl",
+        "meaning": "Hotel"
+      },
+      "trap": "Plain o is closer to aw.",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "primer-i-u-accent",
+      "pattern": "Í í / Ú ú",
+      "soundsLike": "ee and oo, as in see and food.",
+      "example": {
+        "local": "Tíu",
+        "respelling": "TEE-uu",
+        "meaning": "Ten"
+      },
+      "trap": "Plain u is approximated by uu; it is not exactly English oo.",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "primer-j",
+      "pattern": "J j",
+      "soundsLike": "y, as in yes.",
+      "example": {
+        "local": "Bjór",
+        "respelling": "BYOHR",
+        "meaning": "Beer"
+      },
+      "trap": "Avoid the English j in jam.",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "primer-hv",
+      "pattern": "hv",
+      "soundsLike": "kv in these everyday examples.",
+      "example": {
+        "local": "Hvar",
+        "respelling": "KVAHR",
+        "meaning": "Where"
+      },
+      "trap": "Start with k and v together.",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "primer-ll",
+      "pattern": "ll",
+      "soundsLike": "Often a quick t-l cluster in these examples.",
+      "example": {
+        "local": "Gullfoss",
+        "respelling": "GUUTL-faws",
+        "meaning": "Gullfoss waterfall"
+      },
+      "trap": "Not a rule for every ll; listen to each recording.",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "primer-ei-ey",
+      "pattern": "ei / ey",
+      "soundsLike": "ay, as in day.",
+      "example": {
+        "local": "Beint",
+        "respelling": "BAYNT",
+        "meaning": "Straight"
+      },
+      "trap": "Reykjavík begins with this vowel.",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    }
+  ],
+  "signs": [
+    {
+      "id": "sign-exit",
+      "local": "Útgangur",
+      "respelling": "OOT-gahng-uur",
+      "meaning": "Exit",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "sign-entrance",
+      "local": "Inngangur",
+      "respelling": "IHN-gahng-uur",
+      "meaning": "Entrance",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "sign-toilet",
+      "local": "Salerni",
+      "respelling": "SAH-lehr-nih",
+      "meaning": "Restroom",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "sign-men",
+      "local": "Karlar",
+      "respelling": "KAHR-lar",
+      "meaning": "Men",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "sign-women",
+      "local": "Konur",
+      "respelling": "KOH-nuur",
+      "meaning": "Women",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "sign-open",
+      "local": "Opið",
+      "respelling": "OH-pihdh",
+      "meaning": "Open",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "sign-closed",
+      "local": "Lokað",
+      "respelling": "LOH-kadh",
+      "meaning": "Closed",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "sign-no-smoking",
+      "local": "Reykingar bannaðar",
+      "respelling": "RAY-kihng-ar BAH-na-dhar",
+      "meaning": "No smoking",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "sign-push",
+      "local": "Ýta",
+      "respelling": "EE-ta",
+      "meaning": "Push",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "sign-pull",
+      "local": "Toga",
+      "respelling": "TOH-ga",
+      "meaning": "Pull",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "sign-danger",
+      "local": "Hætta",
+      "respelling": "HEYE-ta",
+      "meaning": "Danger",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "sign-pool",
+      "local": "Sundlaug",
+      "respelling": "SUUND-lur-g",
+      "meaning": "Swimming pool",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    }
+  ]
+}

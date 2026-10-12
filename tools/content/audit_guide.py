@@ -1,0 +1,170 @@
+#!/usr/bin/env python3
+"""Validate research-backed reader content independently of the legacy language schema."""
+import argparse
+import csv
+import json
+import sys
+from pathlib import Path
+
+
+def read_json(path):
+    return json.loads(path.read_text(encoding="utf-8-sig"))
+
+
+# Completeness standard, docs/CONTENT.md "Completeness standard". The bar is the
+# pack-for-exposure and rental-counter-before-counter Iceland playbooks.
+MIN_PARAGRAPHS, MIN_WORDS, MIN_SOURCES = 4, 300, 8
+
+
+def _paragraphs(value):
+    return [value] if isinstance(value, str) else list(value or [])
+
+
+def _role_gaps(source_ids, roles):
+    have = {roles.get(sid, "") for sid in source_ids}
+    gaps = []
+    if "traveler" not in have:
+        gaps.append("needs at least one traveler source")
+    if not have & {"official", "provider"}:
+        gaps.append("needs at least one official or provider source")
+    return gaps
+
+
+def playbook_depth(item, roles):
+    gaps = []
+    if not (item.get("cardImage") or {}).get("alt"):
+        gaps.append("cardImage with alt text is required")
+    if not str(item.get("hook", "")).strip():
+        gaps.append("hook is required")
+    body = _paragraphs(item.get("body"))
+    words = sum(len(p.split()) for p in body)
+    if len(body) < MIN_PARAGRAPHS or words < MIN_WORDS:
+        gaps.append(f"body needs {MIN_PARAGRAPHS}+ paragraphs and {MIN_WORDS}+ words "
+                    f"(has {len(body)}, {words})")
+    decision = item.get("decision") or {}
+    options = [o for o in item.get("options", []) if o.get("bestFor") and o.get("tradeoff")]
+    if len([v for v in decision.values() if str(v).strip()]) < 3 and len(options) < 3:
+        gaps.append("needs a three-path decision or 3+ options with bestFor and tradeoff")
+    if len(item.get("checklist", [])) < 5 and len(item.get("avoid", [])) < 3:
+        gaps.append("needs a checklist of 5+ steps or 3+ avoid items")
+    if len(item.get("liveChecks", [])) < 3:
+        gaps.append("needs 3+ liveChecks")
+    source_ids = item.get("sourceIds", [])
+    if len(source_ids) < MIN_SOURCES:
+        gaps.append(f"needs {MIN_SOURCES}+ source IDs (has {len(source_ids)})")
+    gaps += _role_gaps(source_ids, roles)
+    if str(item.get("evidenceLabel", "")).lower() == "experiences vary":
+        if len(item.get("travelerStories", [])) < 2:
+            gaps.append("'Experiences vary' needs 2+ contrasting travelerStories")
+        if not str(item.get("limits", "")).strip():
+            gaps.append("'Experiences vary' needs a limits statement")
+    return gaps
+
+
+def _nights(duration):
+    import re
+    numbers = [int(n) for n in re.findall(r"\d+", str(duration))]
+    return max(numbers) if numbers else 0
+
+
+def route_depth(item, roles):
+    gaps = []
+    if not str(item.get("whoFor", "")).strip():
+        gaps.append("whoFor is required")
+    days = item.get("days", [])
+    nights = _nights(item.get("duration"))
+    if len(days) < max(1, nights):
+        gaps.append(f"days needs one entry per day (has {len(days)}, duration suggests {nights} nights)")
+    for index, day in enumerate(days, 1):
+        missing = [k for k in ("base", "travel", "highlights") if not day.get(k)]
+        if missing:
+            gaps.append(f"day {index} missing {', '.join(missing)}")
+    if nights >= 4 and not any(d.get("flexible") or d.get("weatherSwap") for d in days):
+        gaps.append("routes of 4+ nights need a flexible or weatherSwap day")
+    if not str(item.get("seasonNotes", "")).strip():
+        gaps.append("seasonNotes is required")
+    if not (item.get("tradeoff") or item.get("skipIf")):
+        gaps.append("tradeoff or skipIf is required")
+    if len(item.get("liveChecks", [])) < 2:
+        gaps.append("needs 2+ liveChecks")
+    source_ids = item.get("sourceIds", [])
+    if len(source_ids) < 5:
+        gaps.append(f"needs 5+ source IDs (has {len(source_ids)})")
+    gaps += _role_gaps(source_ids, roles)
+    return gaps
+
+
+def audit(root):
+    errors = []
+    research = root / "research"
+    with (research / "corpus.csv").open(encoding="utf-8-sig", newline="") as stream:
+        roles = {row["id"]: row.get("source_role", "") for row in csv.DictReader(stream)}
+    evidence_ids = set(roles)
+    sources_path = root / "sources.yaml"
+    if sources_path.exists():
+        evidence_ids |= {item["id"] for item in read_json(sources_path).get("sources", [])}
+
+    specs = [
+        ("briefings.yaml", "briefings", 1),
+        ("playbooks.yaml", "playbooks", 5),
+        ("routes.yaml", "routes", 3),
+    ]
+    all_ids = []
+    for filename, collection, minimum in specs:
+        path = root / filename
+        if not path.exists():
+            errors.append(f"Missing {filename}.")
+            continue
+        data = read_json(path)
+        items = data.get(collection)
+        if data.get("schemaVersion") != 1:
+            errors.append(f"{filename}: schemaVersion must be 1.")
+        if not isinstance(items, list) or len(items) < minimum:
+            errors.append(f"{filename}: {collection} needs at least {minimum} item(s).")
+            continue
+        for item in items:
+            item_id = item.get("id", "<missing-id>")
+            all_ids.append(item_id)
+            for field in ("id", "title"):
+                if not str(item.get(field, "")).strip():
+                    errors.append(f"{filename} {item_id}: {field} is required.")
+            source_ids = item.get("sourceIds", [])
+            if filename == "briefings.yaml":
+                sections = item.get("sections", [])
+                if not item.get("hook") or len(sections) < 3:
+                    errors.append(f"{filename} {item_id}: hook and at least 3 sections required.")
+                source_ids = source_ids + [sid for section in sections for sid in section.get("sourceIds", [])]
+            if not source_ids:
+                errors.append(f"{filename} {item_id}: sourceIds are required.")
+            unknown = set(source_ids) - evidence_ids
+            if unknown:
+                errors.append(f"{filename} {item_id}: unknown source IDs {sorted(unknown)}.")
+            if filename == "playbooks.yaml":
+                errors += [f"{filename} {item_id}: depth: {e}" for e in playbook_depth(item, roles)]
+            if filename == "routes.yaml":
+                errors += [f"{filename} {item_id}: depth: {e}" for e in route_depth(item, roles)]
+    if len(all_ids) != len(set(all_ids)):
+        errors.append("Reader-content IDs must be unique across briefing, playbook and route files.")
+    return errors
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("country_dir", type=Path)
+    args = parser.parse_args()
+    try:
+        errors = audit(args.country_dir)
+    except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as exc:
+        print("FAIL: malformed or missing guide source:", exc, file=sys.stderr)
+        return 1
+    for error in errors:
+        print("FAIL:", error, file=sys.stderr)
+    if errors:
+        return 1
+    print("PASS: research-backed guide structure and evidence references.")
+    print("Structural gate only; editorial, traveler, destination and release reviews remain required.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

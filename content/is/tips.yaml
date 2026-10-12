@@ -1,0 +1,549 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "tip-hello",
+      "title": "A hello is enough",
+      "severity": "locals-love-it",
+      "category": "Greetings",
+      "body": "Start with hæ or góðan daginn, then ask your question. You do not need a long introduction at a shop counter.",
+      "why": "Keep the exchange friendly and brief.",
+      "linkedItem": "p01",
+      "sourceIds": [
+        "language-course"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "You approach hotel reception. How do you start?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Say hæ, then ask your question."
+          },
+          {
+            "id": "choice-2",
+            "text": "Give a speech about your trip."
+          },
+          {
+            "id": "choice-3",
+            "text": "Wait for someone to guess your needs."
+          }
+        ],
+        "answerId": "choice-1",
+        "feedback": "A short greeting is an easy start."
+      }
+    },
+    {
+      "id": "tip-please",
+      "title": "Please depends on the request",
+      "severity": "good-to-know",
+      "category": "Phrases in context",
+      "body": "For a short order, takk can do the job of English please: vatn, takk. It also means thanks. Learn the complete request rather than adding a formal please-word to everything.",
+      "why": "Politeness comes from the whole request and your tone.",
+      "linkedItem": "p04",
+      "sourceIds": [
+        "language-course"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "You want water at a café. What fits?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Repeat please in English louder."
+          },
+          {
+            "id": "choice-2",
+            "text": "Use the complete water request with takk."
+          },
+          {
+            "id": "choice-3",
+            "text": "Use you're welcome as a request."
+          }
+        ],
+        "answerId": "choice-2",
+        "feedback": "Takk fits this request; it is not a universal translation of please."
+      }
+    },
+    {
+      "id": "tip-english",
+      "title": "Switching to English is fine",
+      "severity": "good-to-know",
+      "category": "Phrases in context",
+      "body": "Try a greeting, then ask talarðu ensku? If the person switches to English, continue in English. Getting understood matters more than finishing a memorized script.",
+      "why": "Do not make a busy person a language tutor.",
+      "linkedItem": "p13",
+      "sourceIds": [
+        "language-course"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "The server replies in English. What next?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Insist on an Icelandic lesson."
+          },
+          {
+            "id": "choice-2",
+            "text": "Pretend you understood everything."
+          },
+          {
+            "id": "choice-3",
+            "text": "Continue in English and thank them."
+          }
+        ],
+        "answerId": "choice-3",
+        "feedback": "A language switch can make the interaction easier for both of you."
+      }
+    },
+    {
+      "id": "tip-pool-shower",
+      "title": "Shower before your swimsuit",
+      "severity": "avoid",
+      "category": "Dress and sacred places",
+      "body": "At a public pool, shower without your swimsuit and wash with soap before entering the water. Follow the changing-room signs; put your swimsuit on afterward.",
+      "why": "Clean bodies help keep shared water clean.",
+      "linkedItem": "sign-pool",
+      "sourceIds": [
+        "pool"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "What comes before entering a public pool?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Wash without your swimsuit, then put it on."
+          },
+          {
+            "id": "choice-2",
+            "text": "Rinse while wearing your swimsuit."
+          },
+          {
+            "id": "choice-3",
+            "text": "Go straight into the hot tub."
+          }
+        ],
+        "answerId": "choice-1",
+        "feedback": "The wash comes before the swimsuit."
+      }
+    },
+    {
+      "id": "tip-pool-shoes",
+      "title": "Shoes off in the changing area",
+      "severity": "good-to-know",
+      "category": "Dress and sacred places",
+      "body": "Use the shoe racks and follow the signs before entering the pool changing area. Dry off after your swim before going back to your locker.",
+      "why": "Keep outdoor dirt and pool water out of the changing area.",
+      "linkedItem": "sign-pool",
+      "sourceIds": [
+        "pool"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "A shoe rack is outside the changing room. What do you do?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Walk through in outdoor shoes."
+          },
+          {
+            "id": "choice-2",
+            "text": "Remove shoes where the signs ask."
+          },
+          {
+            "id": "choice-3",
+            "text": "Leave your shoes beside the pool."
+          }
+        ],
+        "answerId": "choice-2",
+        "feedback": "Follow the marked clean-area boundary."
+      }
+    },
+    {
+      "id": "tip-pool-privacy",
+      "title": "Keep cameras out of changing rooms",
+      "severity": "avoid",
+      "category": "Taboos",
+      "body": "Keep your phone and camera put away in pool showers and changing rooms. Ask staff about photo rules elsewhere in the pool.",
+      "why": "People changing and showering deserve privacy.",
+      "linkedItem": "sign-pool",
+      "sourceIds": [
+        "pool"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "You want a photo in the changing room. What is the right choice?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Photograph only your friends."
+          },
+          {
+            "id": "choice-2",
+            "text": "Take a quick mirror selfie."
+          },
+          {
+            "id": "choice-3",
+            "text": "Put the camera away."
+          }
+        ],
+        "answerId": "choice-3",
+        "feedback": "Respect privacy in the changing room."
+      }
+    },
+    {
+      "id": "tip-tip",
+      "title": "No automatic tipping percentage",
+      "severity": "good-to-know",
+      "category": "Dining and tipping",
+      "body": "Tipping is generally not expected. Pay the bill and say thank you. If you choose to leave something for exceptional service, it is voluntary.",
+      "why": "You do not need to import a US tipping rule.",
+      "linkedItem": "p33",
+      "sourceIds": [
+        "tipping"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "Must you add a US-style percentage to the restaurant bill?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "No; pay the bill and thank the staff."
+          },
+          {
+            "id": "choice-2",
+            "text": "Yes; always add a fixed percentage."
+          },
+          {
+            "id": "choice-3",
+            "text": "Refuse the bill until a tip is added."
+          }
+        ],
+        "answerId": "choice-1",
+        "feedback": "A tip is a choice, not a standard obligation."
+      }
+    },
+    {
+      "id": "tip-water",
+      "title": "Refill with cold tap water",
+      "severity": "good-to-know",
+      "category": "Dining and tipping",
+      "body": "Bring a refillable bottle and ask for cold tap water. Follow any notice at the tap. A stream or hot spring is not the same as a drinking-water supply.",
+      "why": "Refilling reduces single-use bottles.",
+      "linkedItem": "c29-water",
+      "sourceIds": [
+        "water"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "Which is the sensible drinking-water default?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Any hot spring you pass."
+          },
+          {
+            "id": "choice-2",
+            "text": "Cold tap water from a drinking-water supply."
+          },
+          {
+            "id": "choice-3",
+            "text": "Water from a roadside puddle."
+          }
+        ],
+        "answerId": "choice-2",
+        "feedback": "Use a drinking-water supply, not an untreated natural source."
+      }
+    },
+    {
+      "id": "tip-moss",
+      "title": "Stay on the path",
+      "severity": "avoid",
+      "category": "Getting around",
+      "body": "Stay on marked paths and do not walk across moss for a photo. Leave stones, plants and other natural features where they are; carry your trash out.",
+      "why": "Footprints can damage fragile vegetation.",
+      "linkedItem": "sign-danger",
+      "sourceIds": [
+        "water"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "A moss-covered shortcut would improve your photo. What do you do?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Take it if nobody is watching."
+          },
+          {
+            "id": "choice-2",
+            "text": "Move rocks to make stepping stones."
+          },
+          {
+            "id": "choice-3",
+            "text": "Stay on the designated path."
+          }
+        ],
+        "answerId": "choice-3",
+        "feedback": "The landscape matters more than a different camera angle."
+      }
+    },
+    {
+      "id": "tip-off-road",
+      "title": "Keep the car on designated roads",
+      "severity": "avoid",
+      "category": "Getting around",
+      "body": "Drive on marked roads and park in designated areas. Do not make your own track across sand, lava or vegetation. Another car's tracks do not make a route permitted.",
+      "why": "Off-road driving damages the landscape.",
+      "linkedItem": "p22",
+      "sourceIds": [
+        "driving"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "There are tire tracks across a field. May you follow them?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "No; use designated roads and parking."
+          },
+          {
+            "id": "choice-2",
+            "text": "Yes; tracks prove permission."
+          },
+          {
+            "id": "choice-3",
+            "text": "Yes; if your rental car is a 4×4."
+          }
+        ],
+        "answerId": "choice-1",
+        "feedback": "Existing tracks do not authorize a route."
+      }
+    },
+    {
+      "id": "tip-fatigue",
+      "title": "Rest before the first drive",
+      "severity": "safety",
+      "category": "Safety",
+      "body": "After an overnight flight, rest before a long drive. If you become drowsy, stop in a safe parking place and rest. An ambitious first-day itinerary is not a reason to keep driving.",
+      "why": "Jet lag and sleep loss can affect you after arrival.",
+      "linkedItem": "p19",
+      "sourceIds": [
+        "fatigue"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "You are fighting sleep behind the wheel. What do you do?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Turn up the music and continue."
+          },
+          {
+            "id": "choice-2",
+            "text": "Stop safely and rest."
+          },
+          {
+            "id": "choice-3",
+            "text": "Drive faster to reach the hotel sooner."
+          }
+        ],
+        "answerId": "choice-2",
+        "feedback": "Drowsiness needs a safe stop and rest."
+      }
+    },
+    {
+      "id": "tip-conditions",
+      "title": "Check conditions before setting out",
+      "severity": "safety",
+      "category": "Safety",
+      "body": "Check official weather and road conditions before each drive or hike. Obey closures and change your plan if needed. This downloaded pack cannot tell you what is safe today.",
+      "why": "Conditions can change faster than a pack can be updated.",
+      "linkedItem": "sign-closed",
+      "sourceIds": [
+        "conditions"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "Your saved plan conflicts with a current closure. What wins?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "The downloaded itinerary."
+          },
+          {
+            "id": "choice-2",
+            "text": "Another visitor's old photo."
+          },
+          {
+            "id": "choice-3",
+            "text": "The current closure."
+          }
+        ],
+        "answerId": "choice-3",
+        "feedback": "Current instructions override an offline suggestion."
+      }
+    },
+    {
+      "id": "tip-beach",
+      "title": "Stay far back from the surf",
+      "severity": "safety",
+      "category": "Safety",
+      "body": "At black-sand beaches, stay well away from the water and keep watching the sea. Sneaker waves can sweep people away. Read warning signs, obey closures and avoid cliff bases where rocks can fall.",
+      "why": "A calm-looking interval does not make the shore safe.",
+      "linkedItem": "sign-danger",
+      "sourceIds": [
+        "beach"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "The sea looks calm after big waves. Can you move closer for a photo?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "No; stay back and obey the signs."
+          },
+          {
+            "id": "choice-2",
+            "text": "Yes; calm water means it is safe."
+          },
+          {
+            "id": "choice-3",
+            "text": "Yes; if someone holds your hand."
+          }
+        ],
+        "answerId": "choice-1",
+        "feedback": "A dangerous wave can arrive after a quiet spell."
+      }
+    },
+    {
+      "id": "tip-hot-ground",
+      "title": "Geothermal ground is not a shortcut",
+      "severity": "safety",
+      "category": "Safety",
+      "body": "At geothermal sites, stay on marked paths and behind barriers. Do not touch pools or test their temperature. Thin ground can hide boiling water.",
+      "why": "A small steam vent is not an invitation to get closer.",
+      "linkedItem": "sign-danger",
+      "sourceIds": [
+        "geysir"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "A steaming pool is just beyond a rope. What do you do?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Dip a finger in to check it."
+          },
+          {
+            "id": "choice-2",
+            "text": "View it from the designated path."
+          },
+          {
+            "id": "choice-3",
+            "text": "Step over for a closer photo."
+          }
+        ],
+        "answerId": "choice-2",
+        "feedback": "Treat the path and barriers as the safe viewing boundary."
+      }
+    },
+    {
+      "id": "tip-glacier",
+      "title": "A glacier needs a qualified guide",
+      "severity": "safety",
+      "category": "Safety",
+      "body": "Do not step onto a glacier on your own. For a glacier walk, use a qualified guide and proper equipment. Hidden crevasses and changing weather make a casual walk dangerous.",
+      "why": "The ice surface can conceal deep gaps.",
+      "linkedItem": "p46",
+      "sourceIds": [
+        "glaciers"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "A glacier looks flat near the parking area. What do you do?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Walk out in ordinary shoes."
+          },
+          {
+            "id": "choice-2",
+            "text": "Follow another tourist's footprints."
+          },
+          {
+            "id": "choice-3",
+            "text": "Book a properly guided glacier activity."
+          }
+        ],
+        "answerId": "choice-3",
+        "feedback": "A flat-looking surface does not reveal the hazards below."
+      }
+    },
+    {
+      "id": "tip-112",
+      "title": "Know 112 and your location",
+      "severity": "safety",
+      "category": "Safety",
+      "body": "For an emergency, call 112. Give your location and describe what happened; stay on the line and follow the operator's instructions. Do not delay help while practicing Icelandic.",
+      "why": "Your location helps responders find you.",
+      "linkedItem": "p47",
+      "sourceIds": [
+        "emergency"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "Someone is badly hurt. What comes first?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Contact 112 and give the location."
+          },
+          {
+            "id": "choice-2",
+            "text": "Finish a language exercise."
+          },
+          {
+            "id": "choice-3",
+            "text": "Search for a perfect translation before calling."
+          }
+        ],
+        "answerId": "choice-1",
+        "feedback": "Getting help promptly matters more than pronunciation."
+      }
+    },
+    {
+      "id": "tip-allergy",
+      "title": "Confirm the allergy, not just the word",
+      "severity": "safety",
+      "category": "Dining and tipping",
+      "body": "Show your complete allergy card before ordering and confirm ingredients and preparation with staff. If the answer is unclear, ask again or choose another option.",
+      "why": "A translated phrase does not establish that a meal is safe.",
+      "linkedItem": "p30",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "reviewedBy": null,
+      "question": {
+        "prompt": "The server does not understand your allergy card. What next?",
+        "options": [
+          {
+            "id": "choice-1",
+            "text": "Assume a smile means the food is safe."
+          },
+          {
+            "id": "choice-2",
+            "text": "Clarify before ordering."
+          },
+          {
+            "id": "choice-3",
+            "text": "Hide the card to avoid being awkward."
+          }
+        ],
+        "answerId": "choice-2",
+        "feedback": "Make sure the allergy and preparation requirements are understood."
+      }
+    }
+  ]
+}

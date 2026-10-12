@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "c14-name",
+      "phraseId": "p14",
+      "local": "Ég heiti Alex",
+    "respelling": "YEHG HAY-tih Alex",
+      "meaning": "My name is Alex",
+      "note": "Example only: substitute your name; preserve its own pronunciation.",
+      "review": "pending-native",
+      "personalName": "Alex"
+    },
+    {
+      "id": "c15-toilet",
+      "phraseId": "p15",
+      "local": "Hvar er klósettið?",
+      "respelling": "KVAHR ehr KLOH-seh-tihdh",
+      "meaning": "Where is the toilet?",
+      "note": "The ending differs from the standalone word klósett.",
+      "review": "pending-native",
+      "personalName": null
+    },
+    {
+      "id": "c15-hotel",
+      "phraseId": "p15",
+      "local": "Hvar er hótelið?",
+      "respelling": "KVAHR ehr HOH-teh-lihdh",
+      "meaning": "Where is the hotel?",
+      "note": "For your particular hotel, show its name and address.",
+      "review": "pending-native",
+      "personalName": null
+    },
+    {
+      "id": "c15-pharmacy",
+      "phraseId": "p15",
+      "local": "Hvar er apótekið?",
+      "respelling": "KVAHR ehr AH-poh-teh-kihdh",
+      "meaning": "Where is the pharmacy?",
+      "note": "Use with a map or ask staff to point.",
+      "review": "pending-native",
+      "personalName": null
+    },
+    {
+      "id": "c29-water",
+      "phraseId": "p29",
+      "local": "Ég ætla að fá vatn, takk",
+    "respelling": "YEHG EYE-tla adh fow VAHTN TAHK",
+      "meaning": "I'd like water, please",
+      "note": "A complete order; cold tap water is the usual practical choice.",
+      "review": "pending-native",
+      "personalName": null
+    },
+    {
+      "id": "c29-coffee",
+      "phraseId": "p29",
+      "local": "Ég ætla að fá kaffi, takk",
+    "respelling": "YEHG EYE-tla adh fow KAH-fih TAHK",
+      "meaning": "I'd like coffee, please",
+      "note": "A complete order; say any special requirements separately.",
+      "review": "pending-native",
+      "personalName": null
+    },
+    {
+      "id": "c29-beer",
+      "phraseId": "p29",
+      "local": "Ég ætla að fá bjór, takk",
+    "respelling": "YEHG EYE-tla adh fow BYOHR TAHK",
+      "meaning": "I'd like beer, please",
+      "note": "Optional; use the water example instead if you prefer.",
+      "review": "pending-native",
+      "personalName": null
+    },
+    {
+      "id": "allergy-peanuts",
+      "phraseId": "p30",
+      "local": "Ég er með ofnæmi fyrir jarðhnetum",
+    "respelling": "YEHG ehr mehdh AWV-neye-mih FIH-rihr YAHRDH-hneh-tuum",
+      "meaning": "I'm allergic to peanuts",
+      "note": "Review the complete card with staff, including cross-contact.",
+      "review": "pending-native",
+      "personalName": null
+    },
+    {
+      "id": "allergy-tree-nuts",
+      "phraseId": "p30",
+      "local": "Ég er með ofnæmi fyrir trjáhnetum",
+    "respelling": "YEHG ehr mehdh AWV-neye-mih FIH-rihr TRYOW-hneh-tuum",
+      "meaning": "I'm allergic to tree nuts",
+      "note": "Specify the nuts you must avoid; distinct from peanuts.",
+      "review": "pending-native",
+      "personalName": null
+    },
+    {
+      "id": "allergy-shellfish",
+      "phraseId": "p30",
+      "local": "Ég er með ofnæmi fyrir skelfiski",
+    "respelling": "YEHG ehr mehdh AWV-neye-mih FIH-rihr SKEHL-fih-skih",
+      "meaning": "I'm allergic to shellfish",
+      "note": "Confirm both crustaceans and mollusks if either is relevant.",
+      "review": "pending-native",
+      "personalName": null
+    },
+    {
+      "id": "allergy-gluten",
+      "phraseId": "p30",
+      "local": "Ég er með ofnæmi fyrir glúteni",
+    "respelling": "YEHG ehr mehdh AWV-neye-mih FIH-rihr GLOO-teh-nih",
+      "meaning": "I'm allergic to gluten",
+      "note": "This is an allergy statement; it does not express celiac disease.",
+      "review": "pending-native",
+      "personalName": null
+    },
+    {
+      "id": "allergy-milk",
+      "phraseId": "p30",
+      "local": "Ég er með ofnæmi fyrir mjólk",
+    "respelling": "YEHG ehr mehdh AWV-neye-mih FIH-rihr MYOHL-k",
+      "meaning": "I'm allergic to milk",
+      "note": "Milk-protein allergy is different from lactose intolerance.",
+      "review": "pending-native",
+      "personalName": null
+    },
+    {
+      "id": "allergy-eggs",
+      "phraseId": "p30",
+      "local": "Ég er með ofnæmi fyrir eggjum",
+    "respelling": "YEHG ehr mehdh AWV-neye-mih FIH-rihr EH-gyuum",
+      "meaning": "I'm allergic to eggs",
+      "note": "Confirm ingredients and preparation with staff.",
+      "review": "pending-native",
+      "personalName": null
+    }
+  ]
+}

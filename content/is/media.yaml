@@ -1,0 +1,1789 @@
+{
+  "schemaVersion": 1,
+  "audio": [
+    {
+      "id": "sight-laugardalslaug",
+      "local": "Laugardalslaug",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-laugardalslaug_normal.ogg",
+        "slow": "audio/sight-laugardalslaug_slow.ogg"
+      }
+    },
+    {
+      "id": "p01",
+      "local": "Hæ",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p01_normal.ogg",
+        "slow": "audio/p01_slow.ogg"
+      }
+    },
+    {
+      "id": "p02",
+      "local": "Góðan daginn",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p02_normal.ogg",
+        "slow": "audio/p02_slow.ogg"
+      }
+    },
+    {
+      "id": "p03",
+      "local": "Bless",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p03_normal.ogg",
+        "slow": "audio/p03_slow.ogg"
+      }
+    },
+    {
+      "id": "p04",
+      "local": "Takk",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p04_normal.ogg",
+        "slow": "audio/p04_slow.ogg"
+      }
+    },
+    {
+      "id": "p05",
+      "local": "Takk fyrir",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p05_normal.ogg",
+        "slow": "audio/p05_slow.ogg"
+      }
+    },
+    {
+      "id": "p06",
+      "local": "Takk kærlega",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p06_normal.ogg",
+        "slow": "audio/p06_slow.ogg"
+      }
+    },
+    {
+      "id": "p07",
+      "local": "Ekkert að þakka",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p07_normal.ogg",
+        "slow": "audio/p07_slow.ogg"
+      }
+    },
+    {
+      "id": "p08",
+      "local": "Afsakið",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p08_normal.ogg",
+        "slow": "audio/p08_slow.ogg"
+      }
+    },
+    {
+      "id": "p09",
+      "local": "Fyrirgefðu",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p09_normal.ogg",
+        "slow": "audio/p09_slow.ogg"
+      }
+    },
+    {
+      "id": "p10",
+      "local": "Já",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p10_normal.ogg",
+        "slow": "audio/p10_slow.ogg"
+      }
+    },
+    {
+      "id": "p11",
+      "local": "Nei",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p11_normal.ogg",
+        "slow": "audio/p11_slow.ogg"
+      }
+    },
+    {
+      "id": "p12",
+      "local": "Ég skil ekki",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p12_normal.ogg",
+        "slow": "audio/p12_slow.ogg"
+      }
+    },
+    {
+      "id": "p13",
+      "local": "Talarðu ensku?",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p13_normal.ogg",
+        "slow": "audio/p13_slow.ogg"
+      }
+    },
+    {
+      "id": "p14",
+      "local": "Ég heiti …",
+      "voice": "main",
+      "note": "Record the stem naturally; do not speak an ellipsis.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p14_normal.ogg",
+        "slow": "audio/p14_slow.ogg"
+      }
+    },
+    {
+      "id": "p15",
+      "local": "Hvar er …?",
+      "voice": "main",
+      "note": "Record the stem naturally; do not speak an ellipsis.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p15_normal.ogg",
+        "slow": "audio/p15_slow.ogg"
+      }
+    },
+    {
+      "id": "p16",
+      "local": "Klósett",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p16_normal.ogg",
+        "slow": "audio/p16_slow.ogg"
+      }
+    },
+    {
+      "id": "p17",
+      "local": "Strætó",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p17_normal.ogg",
+        "slow": "audio/p17_slow.ogg"
+      }
+    },
+    {
+      "id": "p18",
+      "local": "Flugvöllur",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p18_normal.ogg",
+        "slow": "audio/p18_slow.ogg"
+      }
+    },
+    {
+      "id": "p19",
+      "local": "Hótel",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p19_normal.ogg",
+        "slow": "audio/p19_slow.ogg"
+      }
+    },
+    {
+      "id": "p20",
+      "local": "Til vinstri",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p20_normal.ogg",
+        "slow": "audio/p20_slow.ogg"
+      }
+    },
+    {
+      "id": "p21",
+      "local": "Til hægri",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p21_normal.ogg",
+        "slow": "audio/p21_slow.ogg"
+      }
+    },
+    {
+      "id": "p22",
+      "local": "Beint áfram",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p22_normal.ogg",
+        "slow": "audio/p22_slow.ogg"
+      }
+    },
+    {
+      "id": "p23",
+      "local": "Á þetta heimilisfang, takk",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p23_normal.ogg",
+        "slow": "audio/p23_slow.ogg"
+      }
+    },
+    {
+      "id": "p24",
+      "local": "Borð fyrir tvo, takk",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p24_normal.ogg",
+        "slow": "audio/p24_slow.ogg"
+      }
+    },
+    {
+      "id": "p25",
+      "local": "Matseðilinn, takk",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p25_normal.ogg",
+        "slow": "audio/p25_slow.ogg"
+      }
+    },
+    {
+      "id": "p26",
+      "local": "Vatn",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p26_normal.ogg",
+        "slow": "audio/p26_slow.ogg"
+      }
+    },
+    {
+      "id": "p27",
+      "local": "Kaffi",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p27_normal.ogg",
+        "slow": "audio/p27_slow.ogg"
+      }
+    },
+    {
+      "id": "p28",
+      "local": "Bjór",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p28_normal.ogg",
+        "slow": "audio/p28_slow.ogg"
+      }
+    },
+    {
+      "id": "p29",
+      "local": "Ég ætla að fá …",
+      "voice": "main",
+      "note": "Record the stem naturally; do not speak an ellipsis.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p29_normal.ogg",
+        "slow": "audio/p29_slow.ogg"
+      }
+    },
+    {
+      "id": "p30",
+      "local": "Ég er með ofnæmi fyrir …",
+      "voice": "main",
+      "note": "Record the stem naturally; do not speak an ellipsis.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p30_normal.ogg",
+        "slow": "audio/p30_slow.ogg"
+      }
+    },
+    {
+      "id": "p31",
+      "local": "Mjög gott",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p31_normal.ogg",
+        "slow": "audio/p31_slow.ogg"
+      }
+    },
+    {
+      "id": "p32",
+      "local": "Skál",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p32_normal.ogg",
+        "slow": "audio/p32_slow.ogg"
+      }
+    },
+    {
+      "id": "p33",
+      "local": "Reikninginn, takk",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p33_normal.ogg",
+        "slow": "audio/p33_slow.ogg"
+      }
+    },
+    {
+      "id": "p34",
+      "local": "Hvað kostar þetta?",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p34_normal.ogg",
+        "slow": "audio/p34_slow.ogg"
+      }
+    },
+    {
+      "id": "p35",
+      "local": "Get ég borgað með korti?",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p35_normal.ogg",
+        "slow": "audio/p35_slow.ogg"
+      }
+    },
+    {
+      "id": "p36",
+      "local": "Reiðufé",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p36_normal.ogg",
+        "slow": "audio/p36_slow.ogg"
+      }
+    },
+    {
+      "id": "p37",
+      "local": "Þetta, takk",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p37_normal.ogg",
+        "slow": "audio/p37_slow.ogg"
+      }
+    },
+    {
+      "id": "p38",
+      "local": "Opið",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p38_normal.ogg",
+        "slow": "audio/p38_slow.ogg"
+      }
+    },
+    {
+      "id": "p39",
+      "local": "Lokað",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p39_normal.ogg",
+        "slow": "audio/p39_slow.ogg"
+      }
+    },
+    {
+      "id": "p40",
+      "local": "Einn",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p40_normal.ogg",
+        "slow": "audio/p40_slow.ogg"
+      }
+    },
+    {
+      "id": "p41",
+      "local": "Tveir",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p41_normal.ogg",
+        "slow": "audio/p41_slow.ogg"
+      }
+    },
+    {
+      "id": "p42",
+      "local": "Þrír",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p42_normal.ogg",
+        "slow": "audio/p42_slow.ogg"
+      }
+    },
+    {
+      "id": "p43",
+      "local": "Fjórir",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p43_normal.ogg",
+        "slow": "audio/p43_slow.ogg"
+      }
+    },
+    {
+      "id": "p44",
+      "local": "Fimm",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p44_normal.ogg",
+        "slow": "audio/p44_slow.ogg"
+      }
+    },
+    {
+      "id": "p45",
+      "local": "Tíu",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p45_normal.ogg",
+        "slow": "audio/p45_slow.ogg"
+      }
+    },
+    {
+      "id": "p46",
+      "local": "Hjálp",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p46_normal.ogg",
+        "slow": "audio/p46_slow.ogg"
+      }
+    },
+    {
+      "id": "p47",
+      "local": "Hringdu í lögregluna",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p47_normal.ogg",
+        "slow": "audio/p47_slow.ogg"
+      }
+    },
+    {
+      "id": "p48",
+      "local": "Ég þarf lækni",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p48_normal.ogg",
+        "slow": "audio/p48_slow.ogg"
+      }
+    },
+    {
+      "id": "p49",
+      "local": "Ég rata ekki",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p49_normal.ogg",
+        "slow": "audio/p49_slow.ogg"
+      }
+    },
+    {
+      "id": "p50",
+      "local": "Apótek",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/p50_normal.ogg",
+        "slow": "audio/p50_slow.ogg"
+      }
+    },
+    {
+      "id": "c15-toilet",
+      "local": "Hvar er klósettið?",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/c15-toilet_normal.ogg",
+        "slow": "audio/c15-toilet_slow.ogg"
+      }
+    },
+    {
+      "id": "c15-hotel",
+      "local": "Hvar er hótelið?",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/c15-hotel_normal.ogg",
+        "slow": "audio/c15-hotel_slow.ogg"
+      }
+    },
+    {
+      "id": "c15-pharmacy",
+      "local": "Hvar er apótekið?",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/c15-pharmacy_normal.ogg",
+        "slow": "audio/c15-pharmacy_slow.ogg"
+      }
+    },
+    {
+      "id": "c29-water",
+      "local": "Ég ætla að fá vatn, takk",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/c29-water_normal.ogg",
+        "slow": "audio/c29-water_slow.ogg"
+      }
+    },
+    {
+      "id": "c29-coffee",
+      "local": "Ég ætla að fá kaffi, takk",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/c29-coffee_normal.ogg",
+        "slow": "audio/c29-coffee_slow.ogg"
+      }
+    },
+    {
+      "id": "c29-beer",
+      "local": "Ég ætla að fá bjór, takk",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/c29-beer_normal.ogg",
+        "slow": "audio/c29-beer_slow.ogg"
+      }
+    },
+    {
+      "id": "allergy-peanuts",
+      "local": "Ég er með ofnæmi fyrir jarðhnetum",
+      "voice": "main",
+      "note": "Requires separate allergy translation approval.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/allergy-peanuts_normal.ogg",
+        "slow": "audio/allergy-peanuts_slow.ogg"
+      }
+    },
+    {
+      "id": "allergy-tree-nuts",
+      "local": "Ég er með ofnæmi fyrir trjáhnetum",
+      "voice": "main",
+      "note": "Requires separate allergy translation approval.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/allergy-tree-nuts_normal.ogg",
+        "slow": "audio/allergy-tree-nuts_slow.ogg"
+      }
+    },
+    {
+      "id": "allergy-shellfish",
+      "local": "Ég er með ofnæmi fyrir skelfiski",
+      "voice": "main",
+      "note": "Requires separate allergy translation approval.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/allergy-shellfish_normal.ogg",
+        "slow": "audio/allergy-shellfish_slow.ogg"
+      }
+    },
+    {
+      "id": "allergy-gluten",
+      "local": "Ég er með ofnæmi fyrir glúteni",
+      "voice": "main",
+      "note": "Requires separate allergy translation approval.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/allergy-gluten_normal.ogg",
+        "slow": "audio/allergy-gluten_slow.ogg"
+      }
+    },
+    {
+      "id": "allergy-milk",
+      "local": "Ég er með ofnæmi fyrir mjólk",
+      "voice": "main",
+      "note": "Requires separate allergy translation approval.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/allergy-milk_normal.ogg",
+        "slow": "audio/allergy-milk_slow.ogg"
+      }
+    },
+    {
+      "id": "allergy-eggs",
+      "local": "Ég er með ofnæmi fyrir eggjum",
+      "voice": "main",
+      "note": "Requires separate allergy translation approval.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/allergy-eggs_normal.ogg",
+        "slow": "audio/allergy-eggs_slow.ogg"
+      }
+    },
+    {
+      "id": "primer-stress",
+      "local": "Strætó",
+      "voice": "main",
+      "note": "Record only the example word.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/primer-stress_normal.ogg",
+        "slow": "audio/primer-stress_slow.ogg"
+      }
+    },
+    {
+      "id": "primer-th",
+      "local": "Þrír",
+      "voice": "main",
+      "note": "Record only the example word.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/primer-th_normal.ogg",
+        "slow": "audio/primer-th_slow.ogg"
+      }
+    },
+    {
+      "id": "primer-dh",
+      "local": "Góðan",
+      "voice": "main",
+      "note": "Record only the example word.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/primer-dh_normal.ogg",
+        "slow": "audio/primer-dh_slow.ogg"
+      }
+    },
+    {
+      "id": "primer-ae",
+      "local": "Strætó",
+      "voice": "main",
+      "note": "Record only the example word.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/primer-ae_normal.ogg",
+        "slow": "audio/primer-ae_slow.ogg"
+      }
+    },
+    {
+      "id": "primer-o-umlaut",
+      "local": "Mjög",
+      "voice": "main",
+      "note": "Record only the example word.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/primer-o-umlaut_normal.ogg",
+        "slow": "audio/primer-o-umlaut_slow.ogg"
+      }
+    },
+    {
+      "id": "primer-a-accent",
+      "local": "Já",
+      "voice": "main",
+      "note": "Record only the example word.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/primer-a-accent_normal.ogg",
+        "slow": "audio/primer-a-accent_slow.ogg"
+      }
+    },
+    {
+      "id": "primer-o-accent",
+      "local": "Hótel",
+      "voice": "main",
+      "note": "Record only the example word.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/primer-o-accent_normal.ogg",
+        "slow": "audio/primer-o-accent_slow.ogg"
+      }
+    },
+    {
+      "id": "primer-i-u-accent",
+      "local": "Tíu",
+      "voice": "main",
+      "note": "Record only the example word.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/primer-i-u-accent_normal.ogg",
+        "slow": "audio/primer-i-u-accent_slow.ogg"
+      }
+    },
+    {
+      "id": "primer-j",
+      "local": "Bjór",
+      "voice": "main",
+      "note": "Record only the example word.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/primer-j_normal.ogg",
+        "slow": "audio/primer-j_slow.ogg"
+      }
+    },
+    {
+      "id": "primer-hv",
+      "local": "Hvar",
+      "voice": "main",
+      "note": "Record only the example word.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/primer-hv_normal.ogg",
+        "slow": "audio/primer-hv_slow.ogg"
+      }
+    },
+    {
+      "id": "primer-ll",
+      "local": "Gullfoss",
+      "voice": "main",
+      "note": "Record only the example word.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/primer-ll_normal.ogg",
+        "slow": "audio/primer-ll_slow.ogg"
+      }
+    },
+    {
+      "id": "primer-ei-ey",
+      "local": "Beint",
+      "voice": "main",
+      "note": "Record only the example word.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/primer-ei-ey_normal.ogg",
+        "slow": "audio/primer-ei-ey_slow.ogg"
+      }
+    },
+    {
+      "id": "sign-exit",
+      "local": "Útgangur",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sign-exit_normal.ogg",
+        "slow": "audio/sign-exit_slow.ogg"
+      }
+    },
+    {
+      "id": "sign-entrance",
+      "local": "Inngangur",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sign-entrance_normal.ogg",
+        "slow": "audio/sign-entrance_slow.ogg"
+      }
+    },
+    {
+      "id": "sign-toilet",
+      "local": "Salerni",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sign-toilet_normal.ogg",
+        "slow": "audio/sign-toilet_slow.ogg"
+      }
+    },
+    {
+      "id": "sign-men",
+      "local": "Karlar",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sign-men_normal.ogg",
+        "slow": "audio/sign-men_slow.ogg"
+      }
+    },
+    {
+      "id": "sign-women",
+      "local": "Konur",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sign-women_normal.ogg",
+        "slow": "audio/sign-women_slow.ogg"
+      }
+    },
+    {
+      "id": "sign-open",
+      "local": "Opið",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sign-open_normal.ogg",
+        "slow": "audio/sign-open_slow.ogg"
+      }
+    },
+    {
+      "id": "sign-closed",
+      "local": "Lokað",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sign-closed_normal.ogg",
+        "slow": "audio/sign-closed_slow.ogg"
+      }
+    },
+    {
+      "id": "sign-no-smoking",
+      "local": "Reykingar bannaðar",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sign-no-smoking_normal.ogg",
+        "slow": "audio/sign-no-smoking_slow.ogg"
+      }
+    },
+    {
+      "id": "sign-push",
+      "local": "Ýta",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sign-push_normal.ogg",
+        "slow": "audio/sign-push_slow.ogg"
+      }
+    },
+    {
+      "id": "sign-pull",
+      "local": "Toga",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sign-pull_normal.ogg",
+        "slow": "audio/sign-pull_slow.ogg"
+      }
+    },
+    {
+      "id": "sign-danger",
+      "local": "Hætta",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sign-danger_normal.ogg",
+        "slow": "audio/sign-danger_slow.ogg"
+      }
+    },
+    {
+      "id": "sign-pool",
+      "local": "Sundlaug",
+      "voice": "main",
+      "note": "",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sign-pool_normal.ogg",
+        "slow": "audio/sign-pool_slow.ogg"
+      }
+    },
+    {
+      "id": "sight-thingvellir",
+      "local": "Þingvellir",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-thingvellir_normal.ogg",
+        "slow": "audio/sight-thingvellir_slow.ogg"
+      }
+    },
+    {
+      "id": "sight-gullfoss",
+      "local": "Gullfoss",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-gullfoss_normal.ogg",
+        "slow": "audio/sight-gullfoss_slow.ogg"
+      }
+    },
+    {
+      "id": "sight-geysir",
+      "local": "Geysir og Strokkur",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-geysir_normal.ogg",
+        "slow": "audio/sight-geysir_slow.ogg"
+      }
+    },
+    {
+      "id": "sight-hallgrimskirkja",
+      "local": "Hallgrímskirkja",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-hallgrimskirkja_normal.ogg",
+        "slow": "audio/sight-hallgrimskirkja_slow.ogg"
+      }
+    },
+    {
+      "id": "sight-harpa",
+      "local": "Harpa",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-harpa_normal.ogg",
+        "slow": "audio/sight-harpa_slow.ogg"
+      }
+    },
+    {
+      "id": "sight-national-museum",
+      "local": "Þjóðminjasafn Íslands",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-national-museum_normal.ogg",
+        "slow": "audio/sight-national-museum_slow.ogg"
+      }
+    },
+    {
+      "id": "sight-seljalandsfoss",
+      "local": "Seljalandsfoss",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-seljalandsfoss_normal.ogg",
+        "slow": "audio/sight-seljalandsfoss_slow.ogg"
+      }
+    },
+    {
+      "id": "sight-skogafoss",
+      "local": "Skógafoss",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-skogafoss_normal.ogg",
+        "slow": "audio/sight-skogafoss_slow.ogg"
+      }
+    },
+    {
+      "id": "sight-reynisfjara",
+      "local": "Reynisfjara",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-reynisfjara_normal.ogg",
+        "slow": "audio/sight-reynisfjara_slow.ogg"
+      }
+    },
+    {
+      "id": "sight-jokulsarlon",
+      "local": "Jökulsárlón",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-jokulsarlon_normal.ogg",
+        "slow": "audio/sight-jokulsarlon_slow.ogg"
+      }
+    },
+    {
+      "id": "sight-godafoss",
+      "local": "Goðafoss",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-godafoss_normal.ogg",
+        "slow": "audio/sight-godafoss_slow.ogg"
+      }
+    },
+    {
+      "id": "sight-myvatn",
+      "local": "Mývatn",
+      "voice": "main",
+      "note": "Record the local sight name, not the English title.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/sight-myvatn_normal.ogg",
+        "slow": "audio/sight-myvatn_slow.ogg"
+      }
+    },
+    {
+      "id": "scenario-greeting",
+      "local": "Góðan daginn",
+      "voice": "scenario",
+      "note": "Say it as a local in the stated situation.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/scenario-greeting_normal.ogg",
+        "slow": "audio/scenario-greeting_slow.ogg"
+      }
+    },
+    {
+      "id": "scenario-offered-coffee",
+      "local": "Viltu kaffi?",
+      "voice": "scenario",
+      "note": "Say it as a local in the stated situation.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/scenario-offered-coffee_normal.ogg",
+        "slow": "audio/scenario-offered-coffee_slow.ogg"
+      }
+    },
+    {
+      "id": "scenario-toilet-direction",
+      "local": "Til vinstri",
+      "voice": "scenario",
+      "note": "Say it as a local in the stated situation.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/scenario-toilet-direction_normal.ogg",
+        "slow": "audio/scenario-toilet-direction_slow.ogg"
+      }
+    },
+    {
+      "id": "scenario-right-direction",
+      "local": "Til hægri",
+      "voice": "scenario",
+      "note": "Say it as a local in the stated situation.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/scenario-right-direction_normal.ogg",
+        "slow": "audio/scenario-right-direction_slow.ogg"
+      }
+    },
+    {
+      "id": "scenario-straight-direction",
+      "local": "Beint áfram",
+      "voice": "scenario",
+      "note": "Say it as a local in the stated situation.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/scenario-straight-direction_normal.ogg",
+        "slow": "audio/scenario-straight-direction_slow.ogg"
+      }
+    },
+    {
+      "id": "scenario-table",
+      "local": "Fyrir tvo?",
+      "voice": "scenario",
+      "note": "Say it as a local in the stated situation.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/scenario-table_normal.ogg",
+        "slow": "audio/scenario-table_slow.ogg"
+      }
+    },
+    {
+      "id": "scenario-payment",
+      "local": "Kort eða reiðufé?",
+      "voice": "scenario",
+      "note": "Say it as a local in the stated situation.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/scenario-payment_normal.ogg",
+        "slow": "audio/scenario-payment_slow.ogg"
+      }
+    },
+    {
+      "id": "scenario-here-you-go",
+      "local": "Gjörðu svo vel",
+      "voice": "scenario",
+      "note": "Say it as a local in the stated situation.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/scenario-here-you-go_normal.ogg",
+        "slow": "audio/scenario-here-you-go_slow.ogg"
+      }
+    },
+    {
+      "id": "scenario-welcome",
+      "local": "Ekkert að þakka",
+      "voice": "scenario",
+      "note": "Say it as a local in the stated situation.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/scenario-welcome_normal.ogg",
+        "slow": "audio/scenario-welcome_slow.ogg"
+      }
+    },
+    {
+      "id": "scenario-closed",
+      "local": "Það er lokað",
+      "voice": "scenario",
+      "note": "Say it as a local in the stated situation.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/scenario-closed_normal.ogg",
+        "slow": "audio/scenario-closed_slow.ogg"
+      }
+    },
+    {
+      "id": "scenario-repeat",
+      "local": "Afsakið?",
+      "voice": "scenario",
+      "note": "Say it as a local in the stated situation.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/scenario-repeat_normal.ogg",
+        "slow": "audio/scenario-repeat_slow.ogg"
+      }
+    },
+    {
+      "id": "scenario-allergy-question",
+      "local": "Fyrir hverju?",
+      "voice": "scenario",
+      "note": "Say it as a local in the stated situation.",
+      "status": "missing",
+      "takes": [
+        "normal",
+        "slow"
+      ],
+      "files": {
+        "normal": "audio/scenario-allergy-question_normal.ogg",
+        "slow": "audio/scenario-allergy-question_slow.ogg"
+      }
+    }
+  ],
+  "photos": [
+    {
+      "id": "photo-laugardalslaug",
+      "sightId": "sight-laugardalslaug",
+      "status": "missing",
+      "sourceFile": "photos/sight-laugardalslaug.jpg",
+      "outputFile": "img/sight-laugardalslaug.webp",
+      "thumbnail": "img/sight-laugardalslaug_thumb.webp",
+      "brief": "Pool exterior or specifically authorized pool-area photo. No changing-room photos; avoid identifiable bathers without permission."
+    },
+    {
+      "id": "photo-thingvellir",
+      "sightId": "sight-thingvellir",
+      "status": "missing",
+      "sourceFile": "photos/sight-thingvellir.jpg",
+      "outputFile": "img/sight-thingvellir.webp",
+      "thumbnail": "img/sight-thingvellir_thumb.webp",
+      "brief": "Wide rift-valley view with the marked path; show the human scale without people posing on edges."
+    },
+    {
+      "id": "photo-gullfoss",
+      "sightId": "sight-gullfoss",
+      "status": "missing",
+      "sourceFile": "photos/sight-gullfoss.jpg",
+      "outputFile": "img/sight-gullfoss.webp",
+      "thumbnail": "img/sight-gullfoss_thumb.webp",
+      "brief": "Both drops from an authorized viewpoint; no drone or cliff-edge pose."
+    },
+    {
+      "id": "photo-geysir",
+      "sightId": "sight-geysir",
+      "status": "missing",
+      "sourceFile": "photos/sight-geysir.jpg",
+      "outputFile": "img/sight-geysir.webp",
+      "thumbnail": "img/sight-geysir_thumb.webp",
+      "brief": "Strokkur eruption with safe viewing boundary visible; do not label it as Great Geysir."
+    },
+    {
+      "id": "photo-hallgrimskirkja",
+      "sightId": "sight-hallgrimskirkja",
+      "status": "missing",
+      "sourceFile": "photos/sight-hallgrimskirkja.jpg",
+      "outputFile": "img/sight-hallgrimskirkja.webp",
+      "thumbnail": "img/sight-hallgrimskirkja_thumb.webp",
+      "brief": "Exterior showing the stepped facade from a public viewpoint; no recognizable worshippers."
+    },
+    {
+      "id": "photo-harpa",
+      "sightId": "sight-harpa",
+      "status": "missing",
+      "sourceFile": "photos/sight-harpa.jpg",
+      "outputFile": "img/sight-harpa.webp",
+      "thumbnail": "img/sight-harpa_thumb.webp",
+      "brief": "Glass facade and harbor context; choose a photo with redistribution rights, not a press image."
+    },
+    {
+      "id": "photo-national-museum",
+      "sightId": "sight-national-museum",
+      "status": "missing",
+      "sourceFile": "photos/sight-national-museum.jpg",
+      "outputFile": "img/sight-national-museum.webp",
+      "thumbnail": "img/sight-national-museum_thumb.webp",
+      "brief": "Museum exterior or specifically licensed exhibit image; admission does not grant reproduction rights."
+    },
+    {
+      "id": "photo-seljalandsfoss",
+      "sightId": "sight-seljalandsfoss",
+      "status": "missing",
+      "sourceFile": "photos/sight-seljalandsfoss.jpg",
+      "outputFile": "img/sight-seljalandsfoss.webp",
+      "thumbnail": "img/sight-seljalandsfoss_thumb.webp",
+      "brief": "Front-facing waterfall view; do not imply the rear path is always open."
+    },
+    {
+      "id": "photo-skogafoss",
+      "sightId": "sight-skogafoss",
+      "status": "missing",
+      "sourceFile": "photos/sight-skogafoss.jpg",
+      "outputFile": "img/sight-skogafoss.webp",
+      "thumbnail": "img/sight-skogafoss_thumb.webp",
+      "brief": "Full waterfall from the designated base area; keep the water's force visible."
+    },
+    {
+      "id": "photo-reynisfjara",
+      "sightId": "sight-reynisfjara",
+      "status": "missing",
+      "sourceFile": "photos/sight-reynisfjara.jpg",
+      "outputFile": "img/sight-reynisfjara.webp",
+      "thumbnail": "img/sight-reynisfjara_thumb.webp",
+      "brief": "Coastline from a safe permitted viewpoint; no people at the waterline or under unstable cliffs."
+    },
+    {
+      "id": "photo-jokulsarlon",
+      "sightId": "sight-jokulsarlon",
+      "status": "missing",
+      "sourceFile": "photos/sight-jokulsarlon.jpg",
+      "outputFile": "img/sight-jokulsarlon.webp",
+      "thumbnail": "img/sight-jokulsarlon_thumb.webp",
+      "brief": "Icebergs from shore; no staged climbing on ice. Photograph lagoon and label accurately."
+    },
+    {
+      "id": "photo-godafoss",
+      "sightId": "sight-godafoss",
+      "status": "missing",
+      "sourceFile": "photos/sight-godafoss.jpg",
+      "outputFile": "img/sight-godafoss.webp",
+      "thumbnail": "img/sight-godafoss_thumb.webp",
+      "brief": "Broad curved falls from a designated viewpoint; do not advertise an informal river-edge route."
+    },
+    {
+      "id": "photo-myvatn",
+      "sightId": "sight-myvatn",
+      "status": "missing",
+      "sourceFile": "photos/sight-myvatn.jpg",
+      "outputFile": "img/sight-myvatn.webp",
+      "thumbnail": "img/sight-myvatn_thumb.webp",
+      "brief": "Lake, lava and bird habitat; avoid substituting a nearby commercial bathing lagoon."
+    }
+  ]
+}

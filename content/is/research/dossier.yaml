@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "country": "IS",
+  "audience": "en-US:first-time",
+  "asOf": "2026-10-11",
+  "status": "review-ready",
+  "researchWindowMonths": 24,
+  "scope": "First-time US travelers; short Reykjavik stays, guided trips, car-plus-lodging routes, compact campervans and ordinary larger-motorhome considerations in all seasons. Highland expeditions are out of scope.",
+  "travelModes": [
+    {
+      "id": "car-plus-lodging",
+      "status": "primary",
+      "travelerFit": "Travelers who want independent stops and a separate warm room each night.",
+      "advantages": ["Flexible stops", "More comfortable sleep and wet-weather recovery"],
+      "frictions": ["Driver workload", "Accommodation constrains the route", "Separate lodging and food costs"],
+      "seasonality": "Viable year-round only within current road, weather and vehicle limits.",
+      "sourceIds": ["r002", "r010", "t006", "o001", "o002"],
+      "coverage": ["briefing:is-first-day#choose-trip", "playbook:rental-counter-before-counter", "routes:self-drive"]
+    },
+    {
+      "id": "compact-campervan",
+      "status": "primary",
+      "travelerFit": "Travelers comfortable sleeping and cooking in a small converted van in exchange for route flexibility.",
+      "advantages": ["Transport, bed and simple kitchen stay together", "Route can change without changing hotel reservations"],
+      "frictions": ["Organized-campsite dependence", "Small wet-weather living space", "Daily setup, cooking and cleanup"],
+      "seasonality": "Heating, darkness, wind and the opening dates of usable campsites matter outside summer.",
+      "sourceIds": ["r014", "r017", "r024", "r025", "t011", "t012", "o008"],
+      "coverage": ["briefing:is-first-day#choose-trip", "playbook:campervan-or-room"]
+    },
+    {
+      "id": "guided-no-car",
+      "status": "primary",
+      "travelerFit": "Solo, short-stay or weather-wary travelers who prefer someone else to drive and interpret conditions.",
+      "advantages": ["Everyone can watch the landscape", "No rental or parking decisions"],
+      "frictions": ["Fixed timing", "Less control over stops", "Repeated long returns from one base"],
+      "seasonality": "Schedules and cancellations vary; winter can make professional driving especially attractive.",
+      "sourceIds": ["r007", "t004", "t006"],
+      "coverage": ["briefing:is-first-day#choose-trip", "routes:guided"]
+    },
+    {
+      "id": "one-or-two-bases",
+      "status": "supporting",
+      "travelerFit": "Travelers who prefer fewer lodging changes and accept some repeated road time; usable with a rental car, tours or both.",
+      "advantages": ["Less packing and unpacking", "Familiar lodging and easier recovery days", "Can combine city time with regional day trips"],
+      "frictions": ["Backtracking", "Long out-and-back days can exhaust the driver or tour traveler", "One Reykjavík base does not fit every distant region"],
+      "seasonality": "Short daylight and volatile weather make honest return times and a movable day especially important.",
+      "sourceIds": ["r002", "r011", "t004", "t005", "k001", "k006"],
+      "coverage": ["briefing:is-first-day#choose-trip", "routes:short-trip-no-car", "routes:south-coast"]
+    },
+    {
+      "id": "larger-motorhome",
+      "status": "supporting",
+      "travelerFit": "Families or travelers who value interior space and possibly onboard facilities more than a compact vehicle.",
+      "advantages": ["More indoor living and storage space", "Some models add toilet or other facilities"],
+      "frictions": ["Larger vehicle to park and handle in wind", "Higher rental and fuel exposure", "Campsite and road suitability still matter"],
+      "seasonality": "Vehicle dimensions, heating, campsite services and current road conditions require provider-specific checks.",
+      "sourceIds": ["t012", "o001", "o008"],
+      "coverage": ["briefing:is-first-day#choose-trip", "playbook:campervan-or-room"]
+    }
+  ],
+  "batches": [
+    {
+      "id": "b01",
+      "scope": "Recent Reddit trip reports across seasons and trip styles",
+      "sourceIds": ["r001", "r002", "r003", "r004", "r005", "r006", "r007", "r008", "r009", "r010", "r011", "r012", "r013", "r014", "r015", "r016", "r017", "r018"],
+      "newHighImpactTopics": ["trip-shape", "weather-clothing", "rental-risk", "pool-choice", "aurora-expectations", "budget-and-booking", "reykjavik-fit"],
+      "newDecisionFactors": ["driver fatigue", "tour control trade-off", "wind-door damage", "waterproof pants", "local pool versus destination spa"]
+    },
+    {
+      "id": "b02",
+      "scope": "Tripadvisor and Rick Steves reports for counterexamples and older traveler profiles",
+      "sourceIds": ["t001", "t002", "t003", "t004", "t005", "t006", "t007", "t008", "t009", "t010", "k001", "k002", "k003", "k004", "k005", "k006"],
+      "newHighImpactTopics": [],
+      "newDecisionFactors": ["neighborhood pool as cultural experience", "base-and-day-trip strategy", "turn-around rule for driving"]
+    },
+    {
+      "id": "b03",
+      "scope": "Independent long-form road-trip reports and budget diaries",
+      "sourceIds": ["b001", "b002", "b003", "b004"],
+      "newHighImpactTopics": [],
+      "newDecisionFactors": []
+    },
+    {
+      "id": "b04",
+      "scope": "Official safety, road, weather, emergency, city-pool and provider verification",
+      "sourceIds": ["o001", "o002", "o003", "o004", "o005", "o006", "o007", "p001", "p002", "p003"],
+      "newHighImpactTopics": [],
+      "newDecisionFactors": []
+    },
+    {
+      "id": "b05",
+      "scope": "Recent winter and shoulder-season compact-campervan trip reports",
+      "sourceIds": ["r024", "r025", "r014", "r017"],
+      "newHighImpactTopics": ["campervan-travel"],
+      "newDecisionFactors": ["combined lodging and transport", "campsite dependence", "heating and confined wet-weather space"]
+    },
+    {
+      "id": "b06",
+      "scope": "Tripadvisor campervan reports for vehicle-size trade-offs and counterexamples",
+      "sourceIds": ["t011", "t012"],
+      "newHighImpactTopics": [],
+      "newDecisionFactors": []
+    },
+    {
+      "id": "b07",
+      "scope": "Official camping-rule verification and saturation check against earlier camper accounts",
+      "sourceIds": ["o008", "r014", "r017"],
+      "newHighImpactTopics": [],
+      "newDecisionFactors": []
+    },
+    {
+      "id": "b08",
+      "scope": "Season-fit synthesis across winter, shoulder-season and summer traveler reports plus official seasonal guidance",
+      "sourceIds": ["r001", "r005", "r009", "r011", "r014", "t008", "k004", "o009", "o010", "o011", "o012"],
+      "newHighImpactTopics": ["season-fit"],
+      "newDecisionFactors": ["worst month depends on trip goal", "November as weak broad-road-trip compromise", "season-specific insulation"]
+    },
+    {
+      "id": "b09",
+      "scope": "Official clothing and safety verification against traveler packing outcomes",
+      "sourceIds": ["o011", "o012", "p006", "o013", "r001", "r011", "t001"],
+      "newHighImpactTopics": [],
+      "newDecisionFactors": []
+    },
+    {
+      "id": "b10",
+      "scope": "Seasonal counterexample and saturation review",
+      "sourceIds": ["r005", "r009", "r014", "t008", "k004", "o009", "o010"],
+      "newHighImpactTopics": [],
+      "newDecisionFactors": []
+    }
+  ],
+  "topics": [
+    {
+      "id": "season-fit",
+      "title": "Choose a month by what the trip must deliver",
+      "importance": "supporting",
+      "risk": ["safety"],
+      "signal": "split",
+      "sourceIds": ["r001", "r005", "r009", "r011", "r014", "t001", "t008", "k002", "k004", "o002", "o003", "o005", "o009", "o010", "o011", "o012", "p006", "o013"],
+      "anecdotes": [
+        {
+          "sourceId": "r011",
+          "stance": "wet-autumn-still-worked",
+          "context": "First Reykjavík-based trip in late September",
+          "event": "Rain affected most days and an aurora tour was canceled.",
+          "action": "The travelers used waterproof clothing, retained flexibility and watched for a clearer interval.",
+          "outcome": "The trip still produced an aurora sighting, but the season rewarded adaptable plans rather than a fixed checklist."
+        },
+        {
+          "sourceId": "r014",
+          "stance": "summer-not-warm",
+          "context": "Seven-day June Ring Road camper trip",
+          "event": "Cloud, rain, heavy wind and near-freezing wind chill appeared during visitor summer.",
+          "action": "The traveler used layered rain and cold protection despite the month.",
+          "outcome": "Long daylight helped the circuit, but the calendar did not remove the need for waterproof insulation."
+        },
+        {
+          "sourceId": "t008",
+          "stance": "winter-purpose-worked",
+          "context": "US couple on a guided January anniversary trip",
+          "event": "Rapidly changing winter weather accompanied ice-cave and waterfall outings.",
+          "action": "They used guides and planned the trip around winter experiences rather than broad independent access.",
+          "outcome": "They reported a successful winter trip, showing that demanding months can fit a deliberately winter-shaped itinerary."
+        }
+      ],
+      "synthesis": {
+        "travelerPattern": "Long summer daylight and broader access make June through August the easiest fit for a broad first road trip, while late autumn and winter demand a smaller flexible plan and substantially warmer clothing.",
+        "counterPattern": "Summer can still be cold, wet and windy, and winter travelers report excellent trips when they deliberately choose guided or compact winter experiences. Busy summer is a poor fit for dark skies, lower demand or spontaneous booking.",
+        "decisionHelp": "Name the trip's non-negotiables before choosing a month. Treat November as a weak compromise for a broad first road trip; treat December through February as demanding winter-purpose months; choose summer for access while accepting demand and bright nights; use May or September as flexible compromises rather than guaranteed mild seasons. For clothing, compare bringing or buying core layers before departure, renting rarely used gear, and deliberately buying Icelandic technical or wool clothing.",
+        "verify": "Check current road, weather and SafeTravel conditions plus the seasonal availability of each non-negotiable experience. Clothing should retain waterproof and windproof layers year-round and add insulation by season and activity. Verify rental sizing and logistics and confirm origin labels when authenticity matters.",
+        "limits": "Monthly labels describe planning fit, not a forecast. Iceland can produce calm winter intervals and cold wet summer days, and different regions or elevations diverge."
+      }
+    },
+    {
+      "id": "campervan-travel",
+      "title": "Choose the freedom and the chores of a home on wheels",
+      "importance": "core",
+      "risk": ["safety", "legal"],
+      "signal": "split",
+      "sourceIds": ["r014", "r017", "r024", "r025", "t011", "t012", "o001", "o002", "o003", "o008"],
+      "anecdotes": [
+        {
+          "sourceId": "r024",
+          "stance": "flexibility-worked",
+          "context": "European couple using a compact campervan for eight nights in early March",
+          "event": "A wind forecast canceled a planned whale trip and changed the route.",
+          "action": "They rearranged the circuit, used open organized campsites and relied on the van's heater overnight.",
+          "outcome": "The mobile bed made the change easy, but heat and campsite availability were essential rather than optional comforts."
+        },
+        {
+          "sourceId": "t012",
+          "stance": "space-was-worth-it",
+          "context": "US couple spending ten summer days in a larger four-seat camper",
+          "event": "Strong wind made outdoor sitting unpleasant.",
+          "action": "They left the bed assembled and used the extra interior floor space for a table.",
+          "outcome": "The larger layout provided a workable indoor evening that a smaller conversion would not have offered."
+        },
+        {
+          "sourceId": "r025",
+          "stance": "small-van-had-chores",
+          "context": "Ottawa couple on a ten-day May circuit in a two-person camper",
+          "event": "The trip required equipment checks, cooking routines, campsite selection and handling a battery problem.",
+          "action": "They checked facilities, adapted the small space and accepted help when the vehicle would not start.",
+          "outcome": "They rated the trip highly while describing practical work that a hotel-and-car itinerary would outsource."
+        }
+      ],
+      "synthesis": {
+        "travelerPattern": "Camper travelers value keeping the bed, simple kitchen and route together. Recent reports show that this can make weather-driven itinerary changes much easier.",
+        "counterPattern": "The flexibility is not freedom from planning: organized campsites, heating, toilets or showers, food storage, wet gear, battery or equipment checks and daily setup become part of the trip. Larger motorhomes buy space but add vehicle size and handling trade-offs.",
+        "decisionHelp": "Choose a compact camper for mobility and lower-complexity van travel if every traveler accepts the sleeping space and chores. Choose a larger motorhome for indoor space or facilities only after checking dimensions, road suitability and cost. Choose car plus lodging when reliable sleep, private bathrooms and wet-weather recovery matter more than moving the bed with the route.",
+        "verify": "Check the exact vehicle's seats, sleeping dimensions, heating, power, cooking kit, permitted roads and insurance; verify campsite opening and services for each travel date and use live official road and weather sources.",
+        "limits": "The corpus shows recurring use and trade-offs, not market share or proof that a campervan is cheaper. Costs and comfort depend on season, vehicle, party size, campsite fees and food choices."
+      }
+    },
+    {
+      "id": "trip-shape",
+      "title": "Choose freedom, relief, or a smaller map",
+      "importance": "core",
+      "risk": [],
+      "signal": "split",
+      "sourceIds": ["r002", "r003", "r004", "r007", "r008", "r010", "r013", "r014", "r016", "r017", "r018", "t001", "t002", "t004", "t005", "t006", "t007", "t010", "k001", "k003", "k004", "k006", "b001", "b002", "b003", "b004", "o001", "o002"],
+      "anecdotes": [
+        {
+          "sourceId": "r007",
+          "stance": "guided-relief",
+          "context": "Solo five-day summer visit without a rental car",
+          "event": "Four operators handled hotel-area pickups and changing weather.",
+          "action": "The traveler accepted fixed departure times in exchange for not driving.",
+          "outcome": "They considered tours underrated and economical for a solo traveler."
+        },
+        {
+          "sourceId": "t006",
+          "stance": "self-drive-freedom",
+          "context": "Ten-night autumn trip",
+          "event": "The travelers wanted freedom to stop and change pace.",
+          "action": "They selected self-drive over a guided tour.",
+          "outcome": "Spontaneity became one of the trip's strengths, helped by favorable weather."
+        },
+        {
+          "sourceId": "r010",
+          "stance": "schedule-fragility",
+          "context": "First summer visit by a self-driving group",
+          "event": "A car problem and an unwell companion consumed planned South Coast time.",
+          "action": "They dropped a trail and continued with fewer stops.",
+          "outcome": "The day remained worthwhile because the route had choices rather than one required checklist."
+        }
+      ],
+      "synthesis": {
+        "travelerPattern": "Self-drivers value freedom and the road itself; guided travelers value relief from weather, navigation and solo cost.",
+        "counterPattern": "Tours remove control over stop length, while self-drive converts scenery time into driver workload and makes disruptions the traveler's problem.",
+        "decisionHelp": "Choose by season, number of capable drivers, tolerance for fixed schedules and the experiences that actually require a car; reduce geography before compressing sleep or recovery.",
+        "verify": "Check current road conditions and tour pickup/cancellation terms before each day.",
+        "limits": "The corpus does not establish that one mode is safer or cheaper for every party."
+      }
+    },
+    {
+      "id": "weather-clothing",
+      "title": "Dress for wind and water, then keep changing",
+      "importance": "core",
+      "risk": ["safety"],
+      "signal": "repeated",
+      "sourceIds": ["r001", "r005", "r007", "r009", "r011", "r014", "r015", "r016", "t001", "t008", "t010", "k002", "k003", "k004", "b001", "b004", "o003", "o005"],
+      "anecdotes": [
+        {
+          "sourceId": "t001",
+          "stance": "wind-dominates",
+          "context": "Month-long June and July circuit by a traveler from Hawaii",
+          "event": "Fog and rain occasionally cut visibility to a few meters, while many other periods were pleasantly chilly.",
+          "action": "The traveler repeatedly added and removed high-quality waterproof layers.",
+          "outcome": "Wind and moisture management mattered more than packing one very heavy coat."
+        },
+        {
+          "sourceId": "r011",
+          "stance": "waterproof-matters",
+          "context": "First Reykjavík-based trip in late September",
+          "event": "Rain fell on most days and water-resistant pants soaked through.",
+          "action": "The party compared them with a companion's waterproof pants.",
+          "outcome": "The traveler recommended true waterproof outer pants when budget allows."
+        }
+      ],
+      "synthesis": {
+        "travelerPattern": "Across winter and summer reports, wind and wet exposure repeatedly shaped comfort, driving and canceled plans.",
+        "counterPattern": "Some trips enjoyed long calm or sunny spells, so a single forecast or dramatic story does not define a whole visit.",
+        "decisionHelp": "Pack a windproof waterproof shell, waterproof footwear and flexible layers; keep a dry layer accessible and plan a weather-swappable day.",
+        "verify": "Use the Icelandic Met Office forecast and warnings plus SafeTravel before setting out.",
+        "limits": "Clothing comfort is personal and old trip reports cannot predict conditions for a future date."
+      }
+    },
+    {
+      "id": "rental-risk",
+      "title": "Resolve the rental-car argument before the counter",
+      "importance": "core",
+      "risk": ["safety", "insurance"],
+      "signal": "split",
+      "sourceIds": ["r001", "r002", "r012", "r013", "r019", "r020", "r023", "t009", "t010", "k003", "o001", "o002", "o003", "o005", "o006", "p001", "p002", "p003", "p004", "p005"],
+      "anecdotes": [
+        {
+          "sourceId": "r012",
+          "stance": "damage-covered",
+          "context": "Autumn Golden Circle and South Coast self-drive",
+          "event": "A large stone struck the driver's side of the windshield on a paved road.",
+          "action": "The traveler had selected the rental company's broad waiver before pickup.",
+          "outcome": "They reported relief that the visible damage would not become an end-of-trip dispute."
+        },
+        {
+          "sourceId": "r013",
+          "stance": "no-claim",
+          "context": "Ten-day summer rental with gravel roads and strong wind",
+          "event": "Stones audibly hit the vehicle but the windshield did not crack.",
+          "action": "The traveler had bought broad coverage and drove the planned route.",
+          "outcome": "The car was returned without a claim; the value they reported was peace of mind, not reimbursement."
+        },
+        {
+          "sourceId": "t009",
+          "stance": "risk-tolerance",
+          "context": "Short autumn rental considered by a Florida traveler",
+          "event": "The add-on cost felt small relative to the trip but no damage outcome was yet known.",
+          "action": "They bought wind and gravel protection.",
+          "outcome": "They framed the choice as paying for peace of mind rather than proving the product was necessary."
+        },
+        {
+          "sourceId": "r019",
+          "stance": "card-confirmed-before-trip",
+          "context": "US traveler preparing to use Chase Sapphire Reserve benefits",
+          "event": "The traveler asked specifically about ash, sand and wind damage before departure.",
+          "action": "They called the benefit administrator, arranged to decline the rental waiver and obtained a coverage letter.",
+          "outcome": "They reported receiving confirmation, but did not report a completed damage claim."
+        },
+        {
+          "sourceId": "r020",
+          "stance": "card-claim-paid-after-appeal",
+          "context": "Iceland rental with a small rock-related dent",
+          "event": "The rental damage charge was about USD 900.",
+          "action": "The traveler pursued a Chase claim through repeated calls and appeals.",
+          "outcome": "They reported eventual payment after months of work and said they would buy rental-company coverage next time."
+        },
+        {
+          "sourceId": "r023",
+          "stance": "older-wind-claim-paid",
+          "context": "Older Iceland rental using Chase Sapphire Reserve",
+          "event": "Wind pulled a passenger door forward and produced a USD 3,300 charge.",
+          "action": "The traveler paid the rental company with the card and filed a benefit claim.",
+          "outcome": "They reported reimbursement after carrying the charge for six to eight weeks; current terms may differ."
+        }
+      ],
+      "synthesis": {
+        "travelerPattern": "Travelers repeatedly discuss glass, gravel, wind-door, sand/ash, tire, underbody and water damage. Icelandic rental providers treat several as distinct coverage categories, but policies and outcomes differ.",
+        "counterPattern": "Some buy the rental company's broadest waiver for a simpler return. Some receive written card confirmation and report paid claims, sometimes only after paying first and pursuing paperwork for weeks or months. Others complete comparable trips without damage, and some claims remain disputed or unresolved.",
+        "decisionHelp": "Present the simplest low-hassle path first: buy the rental provider's broad coverage after reading its exclusions. The research path is to compare the exact rental agreement with written card benefits for each damage type, deductible, prohibited road and pay-first reimbursement requirement. If accepting more risk, explain both the financial exposure and practical precautions without implying they prevent every loss.",
+        "verify": "Obtain current written terms from both the rental provider and the benefit administrator; recheck vehicle authorization for any F-road. Use live official road and weather sources daily.",
+        "limits": "Forum frequency is not an incident rate. An older paid wind-door claim and current phone confirmations do not guarantee that today's terms cover another traveler, vehicle, rental agreement or incident."
+      }
+    },
+    {
+      "id": "pool-choice",
+      "title": "Pick the soak you actually want",
+      "importance": "core",
+      "risk": [],
+      "signal": "split",
+      "sourceIds": ["r006", "r008", "t003", "t007", "k001", "k006", "o007"],
+      "anecdotes": [
+        {
+          "sourceId": "t003",
+          "stance": "local-pool",
+          "context": "Winter anniversary trip based in Reykjavík",
+          "event": "The couple visited a neighborhood pool where local families followed their ordinary routines.",
+          "action": "They chose it alongside—not as a failed substitute for—tourist attractions.",
+          "outcome": "They found it social, memorable and dramatically cheaper than destination lagoons."
+        },
+        {
+          "sourceId": "r006",
+          "stance": "premium-lagoon",
+          "context": "Solo five-day winter trip deliberately centered on geothermal bathing",
+          "event": "The traveler visited multiple destination lagoons and spent several hours at each.",
+          "action": "They budgeted for the splurge and timed one visit with the aurora forecast.",
+          "outcome": "The high cost still felt worthwhile for the experience they wanted."
+        }
+      ],
+      "synthesis": {
+        "travelerPattern": "Both neighborhood pools and destination lagoons are repeatedly loved, but for different reasons.",
+        "counterPattern": "Some travelers find premium ritual, design and views worth the price; others prefer inexpensive local hot pots and ordinary city life.",
+        "decisionHelp": "Choose local pool for routine and value, premium lagoon for staged atmosphere and a longer occasion, or one of each; reserve only experiences whose timing matters.",
+        "verify": "Check current opening, booking, age, accessibility, transport and shower arrangements with the facility.",
+        "limits": "Personal atmosphere preferences and changing prices cannot be settled by the corpus."
+      }
+    },
+    {
+      "id": "aurora-expectations",
+      "title": "Plan a good night even if the sky stays dark",
+      "importance": "core",
+      "risk": [],
+      "signal": "split",
+      "sourceIds": ["r001", "r006", "r009", "r011", "r015", "t006", "t008", "t010", "b002", "o003", "o004"],
+      "anecdotes": [
+        {
+          "sourceId": "r011",
+          "stance": "tour-canceled-self-found",
+          "context": "Rainy late-September Reykjavík-based trip",
+          "event": "An operator canceled an aurora tour for low odds.",
+          "action": "The travelers kept watching cloud breaks and current forecasts.",
+          "outcome": "They still found a display during a clearer interval."
+        },
+        {
+          "sourceId": "r015",
+          "stance": "mixed-long-trip",
+          "context": "March photography-oriented self-drive",
+          "event": "Some nights produced strong aurora while haze, fog or low activity defeated others.",
+          "action": "The traveler repeatedly adjusted locations and expectations.",
+          "outcome": "The trip yielded memorable sightings but not on the planned schedule."
+        }
+      ],
+      "synthesis": {
+        "travelerPattern": "Successful sightings combine darkness, clear sky, activity and willingness to wait or move; multiple-night flexibility improves opportunity.",
+        "counterPattern": "Travelers also report canceled tours, clouded-out nights and weak displays despite careful planning.",
+        "decisionHelp": "Treat aurora as a bonus: keep more than one evening flexible, choose lodging or activities you would enjoy anyway, and use the official cloud/activity view close to the time.",
+        "verify": "Check the Icelandic Met Office aurora and cloud forecast; confirm the operator's retry or cancellation policy.",
+        "limits": "No forecast, app, season label or tour can promise a visible display."
+      }
+    },
+    {
+      "id": "budget-and-booking",
+      "title": "Spend deliberately, not accidentally",
+      "importance": "core",
+      "risk": [],
+      "signal": "repeated",
+      "sourceIds": ["r004", "r005", "r006", "r010", "r014", "r016", "r017", "r018", "t001", "t002", "t003", "t004", "k002", "k005", "k006", "b003", "b004"],
+      "anecdotes": [
+        {
+          "sourceId": "r006",
+          "stance": "intentional-splurge",
+          "context": "Solo five-day winter trip with itemized expenses",
+          "event": "Premium lagoons, food, parking and activities exceeded lodging cost.",
+          "action": "The traveler chose several high-cost soaks as the purpose of the trip.",
+          "outcome": "They called the trip expensive and still worth it, because the spending matched their priority."
+        },
+        {
+          "sourceId": "k002",
+          "stance": "selective-saving",
+          "context": "US couple on a five-day Iceland stopover",
+          "event": "Restaurant prices made ordinary lunches feel consequential.",
+          "action": "They packed bread and peanut butter for several midday meals while preserving selected splurges.",
+          "outcome": "They kept the trip aligned with their geology and art interests without turning every meal into an event."
+        }
+      ],
+      "synthesis": {
+        "travelerPattern": "Accommodation, transport, activities and restaurant meals repeatedly drive surprise; small parking and convenience costs accumulate too.",
+        "counterPattern": "Travelers who self-cater, use simple lunches or choose local pools lower some costs, while others deliberately buy comfort and signature experiences and remain satisfied.",
+        "decisionHelp": "Price the whole trip before booking: vehicle or tours, coverage, lodging, fuel, parking, booked activities and a realistic food mix; choose two or three splurges and protect them with simpler meals or lodging where desired.",
+        "verify": "Use current provider prices and cancellation terms; do not rely on historical dollar totals.",
+        "limits": "Trip reports use different currencies, party sizes and comfort standards, so they are examples rather than a current budget quote."
+      }
+    },
+    {
+      "id": "reykjavik-fit",
+      "title": "Let Reykjavík be a city, not a waiting room",
+      "importance": "core",
+      "risk": [],
+      "signal": "split",
+      "sourceIds": ["r003", "r005", "r008", "t003", "t004", "t005", "k001", "k002", "k005"],
+      "anecdotes": [
+        {
+          "sourceId": "t004",
+          "stance": "useful-base",
+          "context": "Seven-day September trip by a couple without a car",
+          "event": "A whale-watching cancellation opened an unplanned city day.",
+          "action": "They walked the waterfront, Hallgrímskirkja and Harpa instead.",
+          "outcome": "Reykjavík absorbed the disruption without pretending to replace the countryside."
+        },
+        {
+          "sourceId": "r008",
+          "stance": "slow-city-rhythm",
+          "context": "Relaxed spring trip criticized in advance as unusually slow",
+          "event": "The travelers gave ordinary pools and city time more space than a checklist itinerary would.",
+          "action": "They kept the pace and compared several bathing experiences.",
+          "outcome": "Swimming culture became a highlight rather than filler between drives."
+        }
+      ],
+      "synthesis": {
+        "travelerPattern": "Travelers use Reykjavík well for arrival recovery, weather fallbacks, food, design, museums, pools and tour departures.",
+        "counterPattern": "Those whose main goal is remote landscape can feel overbased in the capital or exhausted by repeated long day tours.",
+        "decisionHelp": "Give the city a purposeful half-day or day, then decide whether it is a base or a bookend based on season, transport mode and tolerance for long return journeys.",
+        "verify": "Check current hours, reservations and tour pickup points before shaping the day.",
+        "limits": "The right amount of city time depends on interests; the evidence supports distinct styles rather than one required duration."
+      }
+    }
+  ]
+}

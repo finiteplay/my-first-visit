@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "items": {
+    "laugardalslaug": {
+      "local": "Laugardalslaug",
+      "respelling": "LUR-gar-dahls-lurg",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/laugardalslaug_normal.wav",
+          "seconds": 1.23
+        },
+        "slow": {
+          "file": "assets/audio/laugardalslaug_slow.wav",
+          "seconds": 2.18
+        }
+      },
+      "whisperHeard": "ugardalslaug",
+      "whisperMatch": 0.92,
+      "showInApp": true
+    },
+    "thingvellir": {
+      "local": "Þingvellir",
+      "respelling": "THIHNK-veht-lihr",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/thingvellir_normal.wav",
+          "seconds": 1.06
+        },
+        "slow": {
+          "file": "assets/audio/thingvellir_slow.wav",
+          "seconds": 1.9
+        }
+      },
+      "whisperHeard": "þingvellir",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "gullfoss": {
+      "local": "Gullfoss",
+      "respelling": "GUUTL-faws",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/gullfoss_normal.wav",
+          "seconds": 0.86
+        },
+        "slow": {
+          "file": "assets/audio/gullfoss_slow.wav",
+          "seconds": 1.6
+        }
+      },
+      "whisperHeard": "gullfoss",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "geysir-og-strokkur": {
+      "local": "Geysir og Strokkur",
+      "respelling": "GAY-sihr awg STROH-kuur",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/geysir-og-strokkur_normal.wav",
+          "seconds": 1.44
+        },
+        "slow": {
+          "file": "assets/audio/geysir-og-strokkur_slow.wav",
+          "seconds": 2.55
+        }
+      },
+      "whisperHeard": "ir og strokkur",
+      "whisperMatch": 0.88,
+      "showInApp": true
+    },
+    "hallgrimskirkja": {
+      "local": "Hallgrímskirkja",
+      "respelling": "HAHTL-greem-skihr-kya",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hallgrimskirkja_normal.wav",
+          "seconds": 1.17
+        },
+        "slow": {
+          "file": "assets/audio/hallgrimskirkja_slow.wav",
+          "seconds": 2.09
+        }
+      },
+      "whisperHeard": "hallgrímskirkja",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "harpa": {
+      "local": "Harpa",
+      "respelling": "HAHR-pa",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/harpa_normal.wav",
+          "seconds": 0.64
+        },
+        "slow": {
+          "file": "assets/audio/harpa_slow.wav",
+          "seconds": 1.28
+        }
+      },
+      "whisperHeard": "harpa",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "thjodminjasafn-islands": {
+      "local": "Þjóðminjasafn Íslands",
+      "respelling": "THYOHDH-mihn-ya-sahvn EES-lahnds",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/thjodminjasafn-islands_normal.wav",
+          "seconds": 1.57
+        },
+        "slow": {
+          "file": "assets/audio/thjodminjasafn-islands_slow.wav",
+          "seconds": 2.91
+        }
+      },
+      "whisperHeard": "fminjasafn íslands",
+      "whisperMatch": 0.87,
+      "showInApp": true
+    },
+    "seljalandsfoss": {
+      "local": "Seljalandsfoss",
+      "respelling": "SEHL-ya-lahnds-faws",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/seljalandsfoss_normal.wav",
+          "seconds": 1.28
+        },
+        "slow": {
+          "file": "assets/audio/seljalandsfoss_slow.wav",
+          "seconds": 2.16
+        }
+      },
+      "whisperHeard": "lljalandsfoss",
+      "whisperMatch": 0.89,
+      "showInApp": true
+    },
+    "skogafoss": {
+      "local": "Skógafoss",
+      "respelling": "SKOH-ga-faws",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/skogafoss_normal.wav",
+          "seconds": 0.99
+        },
+        "slow": {
+          "file": "assets/audio/skogafoss_slow.wav",
+          "seconds": 1.97
+        }
+      },
+      "whisperHeard": "skógafoss",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "reynisfjara": {
+      "local": "Reynisfjara",
+      "respelling": "RAY-nihs-fya-ra",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/reynisfjara_normal.wav",
+          "seconds": 1.89
+        },
+        "slow": {
+          "file": "assets/audio/reynisfjara_slow.wav",
+          "seconds": 1.87
+        }
+      },
+      "whisperHeard": "reynisfjara",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "jokulsarlon": {
+      "local": "Jökulsárlón",
+      "respelling": "YUR-kuuls-owr-lohn",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/jokulsarlon_normal.wav",
+          "seconds": 1.07
+        },
+        "slow": {
+          "file": "assets/audio/jokulsarlon_slow.wav",
+          "seconds": 1.73
+        }
+      },
+      "whisperHeard": "jökulsálón",
+      "whisperMatch": 0.95,
+      "showInApp": true
+    },
+    "godafoss": {
+      "local": "Goðafoss",
+      "respelling": "GOH-dha-faws",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/godafoss_normal.wav",
+          "seconds": 0.94
+        },
+        "slow": {
+          "file": "assets/audio/godafoss_slow.wav",
+          "seconds": 1.71
+        }
+      },
+      "whisperHeard": "goðavos",
+      "whisperMatch": 0.8,
+      "showInApp": true
+    },
+    "myvatn": {
+      "local": "Mývatn",
+      "respelling": "MEE-vaht-n",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/myvatn_normal.wav",
+          "seconds": 0.88
+        },
+        "slow": {
+          "file": "assets/audio/myvatn_slow.wav",
+          "seconds": 1.42
+        }
+      },
+      "whisperHeard": "vatn",
+      "whisperMatch": 0.8,
+      "showInApp": true
+    },
+    "perlan": {
+      "local": "Perlan",
+      "respelling": "PEHR-lan",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/perlan_normal.wav",
+          "seconds": 0.68
+        },
+        "slow": {
+          "file": "assets/audio/perlan_slow.wav",
+          "seconds": 1.24
+        }
+      },
+      "whisperHeard": "lan",
+      "whisperMatch": 0.67,
+      "showInApp": false
+    },
+    "hvalasyningin-a-islandi": {
+      "local": "Hvalasýningin á Íslandi",
+      "respelling": "HVAH-la-sigh-ning-in ow EES-land-i",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hvalasyningin-a-islandi_normal.wav",
+          "seconds": 1.5
+        },
+        "slow": {
+          "file": "assets/audio/hvalasyningin-a-islandi_slow.wav",
+          "seconds": 2.64
+        }
+      },
+      "whisperHeard": "sýningin á íslandi",
+      "whisperMatch": 0.88,
+      "showInApp": true
+    },
+    "aurora-reykjavik": {
+      "local": "Aurora Reykjavík",
+      "respelling": "ow-ROH-ra RAY-kya-veek",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/aurora-reykjavik_normal.wav",
+          "seconds": 1.31
+        },
+        "slow": {
+          "file": "assets/audio/aurora-reykjavik_slow.wav",
+          "seconds": 2.1
+        }
+      },
+      "whisperHeard": "aurora reykjavík",
+      "whisperMatch": 1.0,
+      "showInApp": false
+    },
+    "flyover-iceland": {
+      "local": "FlyOver Iceland",
+      "respelling": "fly OH-ver EES-land",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/flyover-iceland_normal.wav",
+          "seconds": 1.38
+        },
+        "slow": {
+          "file": "assets/audio/flyover-iceland_slow.wav",
+          "seconds": 2.36
+        }
+      },
+      "whisperHeard": "flý yfir ísland",
+      "whisperMatch": 0.6,
+      "showInApp": false
+    },
+    "mink-viking-portrait": {
+      "local": "Mink Viking Portrait",
+      "respelling": "MINK VIE-king POR-trit",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/mink-viking-portrait_normal.wav",
+          "seconds": 1.75
+        },
+        "slow": {
+          "file": "assets/audio/mink-viking-portrait_slow.wav",
+          "seconds": 2.89
+        }
+      },
+      "whisperHeard": "k víking portræt",
+      "whisperMatch": 0.78,
+      "showInApp": false
+    },
+    "vesturbaejarlaug": {
+      "local": "Vesturbæjarlaug",
+      "respelling": "VEHS-tur-bai-yar-lurg",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/vesturbaejarlaug_normal.wav",
+          "seconds": 1.16
+        },
+        "slow": {
+          "file": "assets/audio/vesturbaejarlaug_slow.wav",
+          "seconds": 1.96
+        }
+      },
+      "whisperHeard": "vesturbæjarlaug",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "sundhollin": {
+      "local": "Sundhöllin",
+      "respelling": "SUHND-hurt-lihn",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/sundhollin_normal.wav",
+          "seconds": 1.06
+        },
+        "slow": {
+          "file": "assets/audio/sundhollin_slow.wav",
+          "seconds": 1.61
+        }
+      },
+      "whisperHeard": "llinn",
+      "whisperMatch": 0.53,
+      "showInApp": false
+    },
+    "arbaejarlaug": {
+      "local": "Árbæjarlaug",
+      "respelling": "OWR-bai-yar-lurg",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/arbaejarlaug_normal.wav",
+          "seconds": 2.02
+        },
+        "slow": {
+          "file": "assets/audio/arbaejarlaug_slow.wav",
+          "seconds": 1.85
+        }
+      },
+      "whisperHeard": "bæjarlaug",
+      "whisperMatch": 0.9,
+      "showInApp": true
+    },
+    "nautholsvik": {
+      "local": "Nauthólsvík",
+      "respelling": "NURT-hohls-veek",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/nautholsvik_normal.wav",
+          "seconds": 1.03
+        },
+        "slow": {
+          "file": "assets/audio/nautholsvik_slow.wav",
+          "seconds": 2.24
+        }
+      },
+      "whisperHeard": "hólsvík",
+      "whisperMatch": 0.78,
+      "showInApp": true
+    },
+    "blaa-lonid": {
+      "local": "Bláa lónið",
+      "respelling": "BLOW-ah LOH-nidh",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/blaa-lonid_normal.wav",
+          "seconds": 1.15
+        },
+        "slow": {
+          "file": "assets/audio/blaa-lonid_slow.wav",
+          "seconds": 2.07
+        }
+      },
+      "whisperHeard": "bláa lónið",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "hvammsvik": {
+      "local": "Hvammsvík",
+      "respelling": "KVAHMS-veek",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hvammsvik_normal.wav",
+          "seconds": 0.81
+        },
+        "slow": {
+          "file": "assets/audio/hvammsvik_slow.wav",
+          "seconds": 1.5
+        }
+      },
+      "whisperHeard": "vík",
+      "whisperMatch": 0.5,
+      "showInApp": false
+    },
+    "reykjadalur": {
+      "local": "Reykjadalur",
+      "respelling": "RAYK-ya-dah-lur",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/reykjadalur_normal.wav",
+          "seconds": 1.14
+        },
+        "slow": {
+          "file": "assets/audio/reykjadalur_slow.wav",
+          "seconds": 2.48
+        }
+      },
+      "whisperHeard": "reykjatalur",
+      "whisperMatch": 0.91,
+      "showInApp": true
+    }
+  },
+  "credit": "Synthetic voice: Piper Icelandic voice trained on Talrómur 1, Reykjavík University and SÍM, CC BY 4.0",
+  "status": "draft-synthetic; replace with native-speaker recordings before release"
+}

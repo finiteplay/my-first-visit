@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "city-pool",
+      "title": "Reykjavík City: Laugardalslaug",
+      "url": "https://reykjavik.is/en/laugardalslaug-pool",
+      "scope": "City-operated pool, address and changing/accessibility options; no promised facilities or hours.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "language-course",
+      "title": "Icelandic Online, University of Iceland",
+      "url": "https://www.icelandiconline.com/course/Icelandic%20Online%201",
+      "scope": "Basic greeting and introduction examples; not approval of our whole phrase list.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "dictionary",
+      "title": "Árni Magnússon Institute Icelandic–English dictionary",
+      "url": "https://enska.arnastofnun.is/en/",
+      "scope": "Reference for the native reviewer; individual entries and audio still need checking.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "pool",
+      "title": "Visit Iceland: swimming pool culture",
+      "url": "https://www.visiticeland.com/article/swimming-pool-culture-in-iceland/",
+      "scope": "Wash without swimwear; shoes off; no cameras in changing rooms; pools as community spaces.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "water",
+      "title": "Visit Iceland: climate-friendly travel",
+      "url": "https://www.visiticeland.com/article/climate-friendly-travel/",
+      "scope": "Refill bottles with tap water; stay on paths and protect moss.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "tipping",
+      "title": "Government of Iceland: practical advice",
+      "url": "https://www.government.is/library/09-Embassies/Practical_Advise_Iceland2.pdf",
+      "scope": "Tipping is not expected.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "driving",
+      "title": "Visit Iceland: driving",
+      "url": "https://www.visiticeland.com/article/driving-in-iceland/",
+      "scope": "Marked roads, designated parking, changing surfaces and highland preparations.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "fatigue",
+      "title": "ICE-SAR Safetravel: fatigue and drowsiness",
+      "url": "https://safetravel.is/driving/fatigue-and-drowsiness/",
+      "scope": "Rest after arrival; stop safely when drowsy.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "conditions",
+      "title": "ICE-SAR Safetravel",
+      "url": "https://safetravel.is/",
+      "scope": "Changing weather and roads; current conditions belong outside an offline pack.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "beach",
+      "title": "ICE-SAR Safetravel: black beach safety",
+      "url": "https://safetravel.is/travel-conditions/blackbeach-safety/",
+      "scope": "Sneaker waves, falling rocks, signs and closures; no promise of beach access.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "glaciers",
+      "title": "ICE-SAR Safetravel: glacier safety",
+      "url": "https://safetravel.is/outdoors/crevasse-maps/",
+      "scope": "Crevasses and need for experience, equipment and a qualified guide.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "emergency",
+      "title": "Neyðarlínan: contacting 112",
+      "url": "https://www.112.is/en/samtal-vid-1-1-2",
+      "scope": "112; location and incident details; stay on the call.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "thingvellir",
+      "title": "Þingvellir National Park: main attractions",
+      "url": "https://www.thingvellir.is/media/4zuggtgv/kort_gunnar_thinghelgi_enska_minnst.pdf",
+      "scope": "Assembly history, rift valley and 1–2 hour main walk.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "gullfoss",
+      "title": "Visit South Iceland: Gullfoss",
+      "url": "https://www.south.is/en/place/gullfoss-waterfall",
+      "scope": "Two waterfall drops and trail closures; source coordinates.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "geysir",
+      "title": "Visit South Iceland: nature sites",
+      "url": "https://www.south.is/is/afangastadir/nattura/natturustadir",
+      "scope": "Strokkur is the regularly erupting geyser; geothermal area is protected.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "seljalandsfoss",
+      "title": "Visit South Iceland: Seljalandsfoss",
+      "url": "https://www.south.is/en/destinations/nature/waterfalls/seljalandsfoss-waterfall",
+      "scope": "Waterfall and winter ice/falling-ice hazards behind the falls.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "skogafoss",
+      "title": "Visit South Iceland: Skógafoss",
+      "url": "https://www.south.is/en/destinations/nature/nature/skogafoss-waterfall",
+      "scope": "Waterfall, rainbow and upper walking route; source coordinates.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "south-coast",
+      "title": "Visit South Iceland: South Coast",
+      "url": "https://www.south.is/en/destinations/travel-routes/the-south-coast",
+      "scope": "South Coast geography and separation of attractions.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "museum",
+      "title": "National Museum of Iceland",
+      "url": "https://www.thjodminjasafn.is/en",
+      "scope": "Museum visit and Reykjavík address.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "harpa",
+      "title": "Harpa",
+      "url": "https://www.harpa.is/en",
+      "scope": "Concert venue and harbor address.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "capital",
+      "title": "Visit Reykjavík: city visitor brochure",
+      "url": "https://visitreykjavik.is/sites/default/files/2023-06/Brochure.pdf",
+      "scope": "Capital landmarks including Hallgrímskirkja and Harpa.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "lagoon",
+      "title": "Vatnajökull National Park: Jökulsárlón",
+      "url": "https://www.vatnajokulsthjodgardur.is/frettir/jokulsarlon-i-vatnajokuls%C3%BEjo%C3%B0gar%C3%B0i",
+      "scope": "Lagoon belongs to the national park; permanent content excludes transient parking alerts.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "godafoss",
+      "title": "Visit North Iceland: Goðafoss",
+      "url": "https://www.northiceland.is/is/afangastadir/nattura/fossar/godafoss",
+      "scope": "Waterfall and source coordinates; history legend is not taught as fact.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "myvatn",
+      "title": "Visit North Iceland: Mývatn",
+      "url": "https://www.northiceland.is/en/destinations/towns/myvatn",
+      "scope": "Volcanic landscape, lake, birds, midges and seasonal character.",
+      "accessed": "2026-10-09",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    }
+  ]
+}
