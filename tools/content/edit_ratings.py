@@ -7,7 +7,7 @@ prints its path. In the page:
   * one list for all places; drag a row by its handle (or type a new number in the # box, or use the arrows) to change its
     place. The numbers are always 1..N and only mean something for this website.
   * "Aggregate stars" is our own rating out of 5. It starts as a placeholder copied from a source site (marked "placeholder");
-    editing it makes it yours. The grey "suggest" value is computed from the sources the same way build_score.py does.
+    editing it makes it yours. The grey "average" value is the plain average of the sources' ratings, as build_score.py computes it.
   * "Save to is.json" overwrites the same file every time (Chrome and Edge keep the file handle).
 Then run `python tools/content/build_score.py is` and `python local-site/build.py`.
 """
@@ -64,7 +64,7 @@ tr.ph td:first-child{box-shadow:inset 3px 0 var(--warn)}
 <button class="alt" id="useall" type="button" title="Replace every placeholder with its suggested value">Use suggestions for placeholders</button>
 <span id="count" class="sub" style="margin-left:auto"></span></div>
 <div class="hint" id="hint">Drag the ⠿ handle to move a place, type a new number in the # box, or use ▲ ▼. Dragging works in the full list (filters off).</div>
-<main><table><thead><tr><th></th><th>#</th><th>Place</th><th>Aggregate stars</th><th>Suggest (from sources)</th><th>Note</th><th>Move</th></tr></thead><tbody id="rows"></tbody></table></main>
+<main><table><thead><tr><th></th><th>#</th><th>Place</th><th>Aggregate stars</th><th>Average of sources</th><th>Note</th><th>Move</th></tr></thead><tbody id="rows"></tbody></table></main>
 <script>
 const DATA = __DATA__;
 let inputs = DATA.inputs, filter = "all", dragId = null;
@@ -75,21 +75,15 @@ const q = () => document.getElementById("q").value.trim().toLowerCase();
 const canDrag = () => filter === "all" && !q();
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 
-function suggestions() {   // same formula as build_score.suggest()
-  const SH = 50, src = {}, places = inputs.places;
-  for (const p of Object.values(places)) for (const [s, v] of Object.entries(p.sources || {})) if (v.rating != null) (src[s] = src[s] || []).push(v.rating);
-  const mean = Object.fromEntries(Object.entries(src).map(([s, r]) => [s, r.reduce((a, b) => a + b, 0) / r.length]));
+function suggestions() {   // same as build_score.suggest(): plain average of the sources' ratings
   const out = {};
-  for (const [id, p] of Object.entries(places)) {
-    let t = 0, w = 0;
-    for (const [s, v] of Object.entries(p.sources || {})) {
-      if (v.rating == null || !v.reviews) continue;
-      const wt = Math.log10(1 + v.reviews); t += wt * (v.reviews * v.rating + SH * mean[s]) / (v.reviews + SH); w += wt;
-    }
-    if (w) out[id] = Math.round(t / w * 100) / 100;
+  for (const [id, p] of Object.entries(inputs.places)) {
+    const r = Object.values(p.sources || {}).map(v => v.rating).filter(v => v != null);
+    if (r.length) out[id] = Math.round(r.reduce((a, b) => a + b, 0) / r.length * 100) / 100;
   }
   return out;
 }
+const round1 = x => Math.floor(x * 10 + 0.5 + 1e-9) / 10;
 
 function render() {
   const sug = suggestions(), term = q();
@@ -142,7 +136,7 @@ rows.addEventListener("click", ev => {
   const b = ev.target.closest("button"); if (!b) return;
   if (b.dataset.up) move(b.dataset.up, inputs.order.indexOf(b.dataset.up) - 1);
   if (b.dataset.down) move(b.dataset.down, inputs.order.indexOf(b.dataset.down) + 1);
-  if (b.dataset.use) { const p = inputs.places[b.dataset.use], s = suggestions()[b.dataset.use]; if (s != null) { p.stars = Math.round(s * 10) / 10; delete p.placeholder; dirty(); render(); } }
+  if (b.dataset.use) { const p = inputs.places[b.dataset.use], s = suggestions()[b.dataset.use]; if (s != null) { p.stars = round1(s); delete p.placeholder; dirty(); render(); } }
 });
 
 // ---- drag and drop: grab the handle cell, drop on any row (upper half = before, lower half = after) ----
@@ -176,7 +170,7 @@ document.getElementById("bystars").onclick = () => {
 };
 document.getElementById("useall").onclick = () => {
   const sg = suggestions(); let n = 0;
-  for (const [id, p] of Object.entries(inputs.places)) if (p.placeholder && sg[id] != null) { p.stars = Math.round(sg[id] * 10) / 10; delete p.placeholder; n++; }
+  for (const [id, p] of Object.entries(inputs.places)) if (p.placeholder && sg[id] != null) { p.stars = round1(sg[id]); delete p.placeholder; n++; }
   render(); state(`${n} placeholders replaced by suggestions. Unsaved changes`);
 };
 

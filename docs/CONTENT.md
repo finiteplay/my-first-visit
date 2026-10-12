@@ -311,16 +311,17 @@ suggestions. Stars start as a `placeholder` copied from a source (TripAdvisor to
 Workflow:
 
 1. `python tools/content/edit_ratings.py is --open` writes and opens an HTML editor. One list: drag a row by its handle (or
-   type a new number, or use the arrows) to set its place; edit "Aggregate stars"; a grey "suggest" value shows what the
-   sources blend to, with "use" buttons; "Sort list by stars" re-orders everything; "Save to is.json" overwrites the same file.
+   type a new number, or use the arrows) to set its place; edit "Aggregate stars"; a grey "average" value shows the plain average
+   of the sources, with "use" buttons; "Sort list by stars" re-orders everything; "Save to is.json" overwrites the same file.
 2. `python tools/content/build_score.py is` writes `score` into `sights.yaml`; then `python local-site/build.py`.
 3. Optional: `python tools/content/fetch_google_ratings.py is` (needs `GOOGLE_PLACES_API_KEY`) adds Google numbers to the
    sources so the suggestions use them.
 
-Suggestion formula: each source's rating is shrunk toward that source's mean by how few reviews it has,
-`(n*rating + 50*mean) / (n + 50)`, and the sources are blended weighted by `log10(1 + n)`. Review counts stay in the private
-inputs only. Read each source's terms before collecting data from it; collecting by script from sites that ban it is a
-risk the team accepts or avoids.
+Suggestion: the plain average of the place's ratings across the sources (TripAdvisor and Google today; one source alone is
+used as it is), rounded half up to one decimal. `python tools/content/build_score.py is --use-suggestions` applies it to
+every placeholder and re-sorts the single list by stars; the editor's "use" buttons do the same one place at a time. Review
+counts stay in the private inputs only. Read each source's terms before collecting data from it; collecting by script from
+sites that ban it is a risk the team accepts or avoids.
 
 ### Placeholder feature images
 

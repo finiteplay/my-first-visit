@@ -17,8 +17,10 @@ Inputs file (schemaVersion 2):
                                         "google": {"rating": 4.7, "reviews": 9021}}}}}
 `placeholder: true` means the stars are still a copy of a source number that has not been reviewed; editing clears it.
 
-Suggestion (shown in the editor, never applied silently): each source's rating is shrunk toward that source's mean by how
-few reviews it has, (n*rating + 50*mean)/(n + 50), and the sources are blended weighted by log10(1 + n).
+Suggestion (shown in the editor, applied with --use-suggestions): the plain average of the place's ratings across the
+sources (TripAdvisor and Google today); one source alone is used as it is. Review counts are not used.
+
+    python tools/content/build_score.py is --use-suggestions   # replace every placeholder with the average, re-sort the list
 """
 from __future__ import annotations
 
@@ -30,8 +32,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-SHRINK = 50
-METHOD = "aggregate-v2"
+METHOD = "aggregate-v3"
 
 
 def inputs_path(cc: str) -> Path:
@@ -48,25 +49,18 @@ def write_sights(path: Path, data: dict) -> None:
 
 
 def suggest(places: dict[str, dict]) -> dict[str, float]:
-    """Blend each place's per-source ratings into one suggested star value (see module docstring)."""
-    sources = sorted({s for p in places.values() for s in p.get("sources", {})})
-    mean = {}
-    for s in sources:
-        ratings = [p["sources"][s]["rating"] for p in places.values() if p.get("sources", {}).get(s, {}).get("rating") is not None]
-        mean[s] = sum(ratings) / len(ratings)
+    """Plain average of each place's per-source ratings (the stars to propose)."""
     out = {}
     for pid, p in places.items():
-        total = weight = 0.0
-        for s in sources:
-            entry = p.get("sources", {}).get(s) or {}
-            r, n = entry.get("rating"), entry.get("reviews")
-            if r is None or not n:
-                continue
-            total += math.log10(1 + n) * (n * r + SHRINK * mean[s]) / (n + SHRINK)
-            weight += math.log10(1 + n)
-        if weight:
-            out[pid] = round(total / weight, 2)
+        ratings = [v["rating"] for v in p.get("sources", {}).values() if v.get("rating") is not None]
+        if ratings:
+            out[pid] = round(sum(ratings) / len(ratings), 2)
     return out
+
+
+def round1(x: float) -> float:
+    """Round half up to one decimal (Python's round() would turn 4.85 into 4.8)."""
+    return math.floor(x * 10 + 0.5 + 1e-9) / 10
 
 
 def load_inputs(path: Path, item_ids: list[str]) -> dict:
@@ -97,12 +91,25 @@ def load_inputs(path: Path, item_ids: list[str]) -> dict:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("country")
+    ap.add_argument("--use-suggestions", action="store_true",
+                    help="replace every placeholder with the average of its sources and re-sort the whole list by stars")
     args = ap.parse_args()
     sights_path = ROOT / "content" / args.country / "sights.yaml"
     sights = read(sights_path)
     ids = [item["id"] for item in sights["items"]]
     path = inputs_path(args.country)
     inputs = load_inputs(path, ids)
+    if args.use_suggestions:
+        guess = suggest(inputs["places"])
+        replaced = 0
+        for pid, p in inputs["places"].items():
+            if p.get("placeholder") and pid in guess:
+                p["stars"] = round1(guess[pid])
+                del p["placeholder"]
+                replaced += 1
+        position = {pid: i for i, pid in enumerate(inputs["order"])}
+        inputs["order"].sort(key=lambda pid: (-(inputs["places"][pid].get("stars") or 0), -guess.get(pid, 0), position[pid]))
+        print(f"replaced {replaced} placeholders with the average of their sources and re-sorted the list by stars")
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(inputs, indent=1, ensure_ascii=False), encoding="utf-8")
 
@@ -114,7 +121,7 @@ def main() -> int:
             item.pop("score", None)
             missing.append(item["id"])
             continue
-        item["score"] = {"stars": round(float(stars), 1), "rank": rank[item["id"]], "method": METHOD, "asOf": inputs["asOf"]}
+        item["score"] = {"stars": round1(float(stars)), "rank": rank[item["id"]], "method": METHOD, "asOf": inputs["asOf"]}
         scored += 1
     write_sights(sights_path, sights)
     placeholders = sum(1 for p in inputs["places"].values() if p.get("placeholder"))

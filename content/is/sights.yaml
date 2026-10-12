@@ -40,8 +40,8 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 19,
-        "method": "aggregate-v2",
+        "rank": 25,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -84,8 +84,8 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 20,
-        "method": "aggregate-v2",
+        "rank": 26,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -127,9 +127,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.7,
-        "rank": 10,
-        "method": "aggregate-v2",
+        "stars": 4.8,
+        "rank": 8,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -171,9 +171,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.5,
+        "stars": 4.6,
         "rank": 29,
-        "method": "aggregate-v2",
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -215,9 +215,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.4,
+        "stars": 4.5,
         "rank": 42,
-        "method": "aggregate-v2",
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -259,9 +259,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.5,
-        "rank": 30,
-        "method": "aggregate-v2",
+        "stars": 4.6,
+        "rank": 36,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -303,9 +303,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.4,
-        "rank": 43,
-        "method": "aggregate-v2",
+        "stars": 4.5,
+        "rank": 45,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -347,9 +347,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.7,
+        "stars": 4.8,
         "rank": 11,
-        "method": "aggregate-v2",
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -391,9 +391,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.7,
-        "rank": 12,
-        "method": "aggregate-v2",
+        "stars": 4.8,
+        "rank": 9,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -436,8 +436,8 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 13,
-        "method": "aggregate-v2",
+        "rank": 17,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -480,8 +480,8 @@
       },
       "score": {
         "stars": 4.9,
-        "rank": 1,
-        "method": "aggregate-v2",
+        "rank": 4,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -523,9 +523,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.7,
-        "rank": 14,
-        "method": "aggregate-v2",
+        "stars": 4.8,
+        "rank": 12,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -568,8 +568,8 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 31,
-        "method": "aggregate-v2",
+        "rank": 40,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -612,8 +612,8 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 32,
-        "method": "aggregate-v2",
+        "rank": 41,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -655,9 +655,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 3.8,
-        "rank": 59,
-        "method": "aggregate-v2",
+        "stars": 4.1,
+        "rank": 58,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -709,9 +709,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.3,
-        "rank": 50,
-        "method": "aggregate-v2",
+        "stars": 4.4,
+        "rank": 51,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -762,9 +762,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.6,
+        "stars": 4.7,
         "rank": 21,
-        "method": "aggregate-v2",
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -815,9 +815,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.9,
-        "rank": 3,
-        "method": "aggregate-v2",
+        "stars": 5.0,
+        "rank": 1,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -859,9 +859,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.2,
-        "rank": 52,
-        "method": "aggregate-v2",
+        "stars": 4.3,
+        "rank": 55,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -912,9 +912,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.4,
-        "rank": 41,
-        "method": "aggregate-v2",
+        "stars": 4.6,
+        "rank": 39,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -961,8 +961,8 @@
       },
       "score": {
         "stars": 4.0,
-        "rank": 54,
-        "method": "aggregate-v2",
+        "rank": 59,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1002,9 +1002,9 @@
         "Treat it as filler that you can drop in anywhere: a first evening after the harbor, a flexible hour before a booking, or a way to return to Hallgrímskirkja. It is the easiest place in the city to buy souvenirs, so decide what you want before you arrive and avoid impulse spending."
       ],
       "score": {
-        "stars": 4.3,
-        "rank": 51,
-        "method": "aggregate-v2",
+        "stars": 4.5,
+        "rank": 48,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1059,9 +1059,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 3.6,
-        "rank": 61,
-        "method": "aggregate-v2",
+        "stars": 3.9,
+        "rank": 60,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1107,9 +1107,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.3,
-        "rank": 47,
-        "method": "aggregate-v2",
+        "stars": 4.4,
+        "rank": 49,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1164,9 +1164,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.3,
-        "rank": 48,
-        "method": "aggregate-v2",
+        "stars": 4.4,
+        "rank": 50,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1222,8 +1222,8 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 27,
-        "method": "aggregate-v2",
+        "rank": 10,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1269,9 +1269,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.5,
-        "rank": 33,
-        "method": "aggregate-v2",
+        "stars": 4.6,
+        "rank": 30,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1317,9 +1317,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.5,
-        "rank": 34,
-        "method": "aggregate-v2",
+        "stars": 4.6,
+        "rank": 31,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1374,9 +1374,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.3,
-        "rank": 49,
-        "method": "aggregate-v2",
+        "stars": 4.5,
+        "rank": 47,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1431,9 +1431,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.2,
+        "stars": 4.3,
         "rank": 53,
-        "method": "aggregate-v2",
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1488,9 +1488,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.8,
-        "rank": 4,
-        "method": "aggregate-v2",
+        "stars": 4.7,
+        "rank": 19,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1536,9 +1536,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.4,
-        "rank": 44,
-        "method": "aggregate-v2",
+        "stars": 4.5,
+        "rank": 43,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1584,9 +1584,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.5,
-        "rank": 35,
-        "method": "aggregate-v2",
+        "stars": 4.6,
+        "rank": 37,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1642,9 +1642,9 @@
         "note": "Mývatn page image showing the pseudocraters at Skútustaðir"
       },
       "score": {
-        "stars": 3.8,
-        "rank": 58,
-        "method": "aggregate-v2",
+        "stars": 4.1,
+        "rank": 57,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1699,9 +1699,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.7,
-        "rank": 15,
-        "method": "aggregate-v2",
+        "stars": 4.8,
+        "rank": 13,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1756,9 +1756,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.5,
-        "rank": 36,
-        "method": "aggregate-v2",
+        "stars": 4.6,
+        "rank": 32,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1804,9 +1804,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 3.6,
-        "rank": 60,
-        "method": "aggregate-v2",
+        "stars": 3.7,
+        "rank": 61,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1854,7 +1854,7 @@
       "score": {
         "stars": 4.8,
         "rank": 6,
-        "method": "aggregate-v2",
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1909,9 +1909,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.7,
-        "rank": 16,
-        "method": "aggregate-v2",
+        "stars": 4.8,
+        "rank": 14,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -1957,9 +1957,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.6,
-        "rank": 28,
-        "method": "aggregate-v2",
+        "stars": 4.7,
+        "rank": 18,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2014,9 +2014,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.5,
-        "rank": 37,
-        "method": "aggregate-v2",
+        "stars": 4.6,
+        "rank": 33,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2062,9 +2062,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.0,
-        "rank": 55,
-        "method": "aggregate-v2",
+        "stars": 4.2,
+        "rank": 56,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2110,9 +2110,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 3.9,
-        "rank": 56,
-        "method": "aggregate-v2",
+        "stars": 4.4,
+        "rank": 52,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2169,7 +2169,7 @@
       "score": {
         "stars": 4.9,
         "rank": 2,
-        "method": "aggregate-v2",
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2216,8 +2216,8 @@
       },
       "score": {
         "stars": 4.9,
-        "rank": 7,
-        "method": "aggregate-v2",
+        "rank": 3,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2272,9 +2272,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.8,
-        "rank": 9,
-        "method": "aggregate-v2",
+        "stars": 4.9,
+        "rank": 5,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2320,9 +2320,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.6,
-        "rank": 25,
-        "method": "aggregate-v2",
+        "stars": 4.7,
+        "rank": 23,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2368,9 +2368,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.5,
-        "rank": 38,
-        "method": "aggregate-v2",
+        "stars": 4.6,
+        "rank": 34,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2426,8 +2426,8 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 8,
-        "method": "aggregate-v2",
+        "rank": 7,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2482,9 +2482,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.1,
-        "rank": 57,
-        "method": "aggregate-v2",
+        "stars": 4.3,
+        "rank": 54,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2539,9 +2539,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.8,
-        "rank": 5,
-        "method": "aggregate-v2",
+        "stars": 4.7,
+        "rank": 16,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2596,9 +2596,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.5,
-        "rank": 39,
-        "method": "aggregate-v2",
+        "stars": 4.6,
+        "rank": 35,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2653,9 +2653,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.4,
-        "rank": 45,
-        "method": "aggregate-v2",
+        "stars": 4.5,
+        "rank": 44,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2710,9 +2710,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.7,
-        "rank": 17,
-        "method": "aggregate-v2",
+        "stars": 4.8,
+        "rank": 15,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2752,9 +2752,9 @@
         "It is not a commercial spa. Bathing and the hike are free, but there are no shops, no changing rooms and little privacy, and it can be crowded. Wooden boards mark the usual spots. It suits people who want a soak that is also a hike."
       ],
       "score": {
-        "stars": 4.6,
-        "rank": 24,
-        "method": "aggregate-v2",
+        "stars": 4.7,
+        "rank": 22,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2809,9 +2809,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.4,
+        "stars": 4.5,
         "rank": 46,
-        "method": "aggregate-v2",
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2867,8 +2867,8 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 22,
-        "method": "aggregate-v2",
+        "rank": 27,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2923,9 +2923,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.4,
-        "rank": 40,
-        "method": "aggregate-v2",
+        "stars": 4.6,
+        "rank": 38,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -2981,8 +2981,8 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 23,
-        "method": "aggregate-v2",
+        "rank": 28,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -3037,9 +3037,9 @@
         "checkedAt": "2026-10-11"
       },
       "score": {
-        "stars": 4.6,
-        "rank": 26,
-        "method": "aggregate-v2",
+        "stars": 4.7,
+        "rank": 24,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     },
@@ -3095,8 +3095,8 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 18,
-        "method": "aggregate-v2",
+        "rank": 20,
+        "method": "aggregate-v3",
         "asOf": "2026-10"
       }
     }
