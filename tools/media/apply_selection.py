@@ -7,6 +7,9 @@ downloads 1440px copies into `local-site/assets/places/`, and writes the selecte
 manifest `content/<cc>/photos.json` with full attribution and per-image framing.
 
     python tools/media/apply_selection.py is [path/to/selection.json]
+
+The copies are working files (git-ignored). Afterwards run `python tools/media/media_store.py ingest is` to move them
+into the media store and refresh `media-manifest.json`, then `sync-local is` for the preview.
 """
 from __future__ import annotations
 
@@ -125,6 +128,7 @@ def main() -> int:
                                "partial": sorted(k for k, v in manifest.items() if len(v) < 3)},
                               ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Wrote {out}")
+    print("Next: python tools/media/media_store.py ingest is")
     for e in errors:
         print("WARN", e)
     return 0

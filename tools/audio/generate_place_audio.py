@@ -163,7 +163,7 @@ def main() -> int:
             and local not in ENGLISH_BRANDS
         manifest["items"][key] = entry
         extra = f" heard {entry.get('whisperHeard')!r} ({entry.get('whisperMatch')})" if checker else ""
-        print(f"{local}: {entry['files']['normal']['seconds']}s{extra}")
+        print(f"{local}: {entry['files']['normal']['seconds']}s{extra}  (then: python tools/media/media_store.py ingest is)")
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     return 0
 

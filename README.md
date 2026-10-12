@@ -34,6 +34,14 @@ The specifications are the contract, and the code will follow them.
 - [ARCHITECTURE.md](docs/ARCHITECTURE.md): native Compose shell, restricted offline WebView,
   modules, pack delivery and storage, and departures from the card games' platform rules
 
+## Media
+
+Photos, pronunciation audio and the volcano image are not kept in git. Git holds `content/<cc>/media-manifest.json`
+(logical path -> content-hashed key); the bytes live in a media store (`~/.finiteplay/media-store`, or `MFV_MEDIA_STORE`)
+that mirrors the public bucket. Use `tools/media/media_store.py`: `ingest` after adding or changing media, `sync-local`
+to fill the git-ignored `local-site/media/` for the preview, `upload --apply` to publish to the bucket. The site reads
+media from `MFV_MEDIA_BASE` (default `media/`) when it is built.
+
 ## Publisher
 
 [FinitePlay](https://finiteplay.org)
