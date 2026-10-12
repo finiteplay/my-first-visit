@@ -766,7 +766,8 @@
         "rank": 27,
         "method": "aggregate-v3",
         "asOf": "2026-10"
-      }
+      },
+      "pronounce": false
     },
     {
       "id": "sight-mink",
@@ -819,7 +820,8 @@
         "rank": 3,
         "method": "aggregate-v3",
         "asOf": "2026-10"
-      }
+      },
+      "pronounce": false
     },
     {
       "id": "sight-petras-stone-collection",
@@ -1063,7 +1065,8 @@
         "rank": 23,
         "method": "aggregate-v3",
         "asOf": "2026-10"
-      }
+      },
+      "pronounce": false
     },
     {
       "id": "sight-ytri-tunga",
@@ -2171,7 +2174,8 @@
         "rank": 4,
         "method": "aggregate-v3",
         "asOf": "2026-10"
-      }
+      },
+      "pronounce": false
     },
     {
       "id": "sight-kvernufoss",
@@ -2600,7 +2604,8 @@
         "rank": 10,
         "method": "aggregate-v3",
         "asOf": "2026-10"
-      }
+      },
+      "pronounce": false
     },
     {
       "id": "sight-blue-lagoon",

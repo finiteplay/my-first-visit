@@ -448,18 +448,18 @@
       ${photo ? `<figure class="place-photo"><div class="photo-carousel" data-carousel><button type="button" class="carousel-arrow prev" aria-label="Previous photo">‹</button><div class="carousel-track">${gallery.map((image, index) => `<img class="carousel-image${index === 0 ? " active" : ""}" src="${escapeHtml(image.file)}" alt="${escapeHtml(photoAlt(item, index))}" style="${escapeHtml(photoStyle(image))}" width="1440" height="960" ${index ? "loading=\"lazy\"" : ""}>`).join("")}</div><button type="button" class="carousel-arrow next" aria-label="Next photo">›</button></div><figcaption>${gallery.map((image, index) => `<a href="${escapeHtml(image.sourceUrl)}" rel="noopener">Photo ${index + 1}</a>: ${escapeHtml(photoCredit(image))}`).join(" · ")}</figcaption></figure>` : item.featureImage ? "" : `<div class="place-photo-placeholder" role="img" aria-label="Photo placeholder for ${escapeHtml(item.name)}"><span>Photo placeholder</span><small>Rights-cleared destination photo to be added</small></div>`}
       ${!photo && item.featureImage ? `<figure class="place-photo feature-photo"><img src="${escapeHtml(item.featureImage.url)}" alt="${escapeHtml(item.name)}" referrerpolicy="no-referrer" width="${item.featureImage.width}" height="${item.featureImage.height}"><figcaption>Image from <a href="${escapeHtml(item.featureImage.pageUrl)}" target="_blank" rel="noopener">${escapeHtml(item.featureImage.source)}</a>, shown as a placeholder: not licensed for reuse.${item.featureImage.note ? ` ${escapeHtml(item.featureImage.note)}.` : ""}</figcaption></figure>` : ""}
       <h1 id="reader-title">${escapeHtml(item.name)}</h1>
-      <div class="name-toolkit">
+      ${item.pronounce === false ? "" : `<div class="name-toolkit">
         <div><span class="name-label">Local name</span><strong>${escapeHtml(item.local)}</strong></div>
         <div><span class="name-label">Say it like this for now</span><strong>${escapeHtml(item.respelling)}</strong></div>
         ${audioControls(item.local)}
-      </div>
+      </div>`}
       <p class="place-rating"><strong>Priority for a first visit:</strong> ${priorityHtml(item)}</p>
       ${placeRank[item.id] ? `<p class="place-rank"><strong>Suggested order:</strong> #${placeRank[item.id]} in this starter list</p>` : ""}
       ${detailParagraphs}
       <p class="place-time"><strong>Time to allow:</strong> ${escapeHtml(item.timeNeeded)}</p>
       ${placeMinimap(item)}
       ${liveStrip(["weather"].concat(item.region === "Capital area" ? [] : ["roads"], item.category === "Nature" ? ["safetravel"] : []))}
-      <div class="callout"><strong>Photo and audio status</strong><p>${photo ? "This destination-specific photo is a licensing candidate and still needs final rights, accuracy and accessibility review." : (item.featureImage ? "No cleared photo is bundled yet. The picture shown is the website's own feature image, hotlinked as a temporary placeholder; it is not licensed for reuse and must be replaced or cleared before release." : "No destination-specific photo is bundled yet. This card intentionally remains an explicit pending state rather than showing an unrelated image.")}${placeAudio[item.local] ? ` Pronunciation audio is a draft synthetic voice, not a native-speaker recording, and has not had native review. ${escapeHtml(data.placeAudio.credit)}.` : " Pronunciation audio is not available yet; the control is a placeholder until a native recording or approved voice is added."}</p></div>`;
+    `;
   }
 
   function openReader(type, id) {
