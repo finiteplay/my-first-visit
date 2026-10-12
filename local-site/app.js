@@ -671,7 +671,12 @@
     const button = event.target.closest("[data-audio]");
     if (!button) return;
     if (currentAudio) currentAudio.pause();
-    currentAudio = new Audio(button.dataset.audio);
-    currentAudio.play().catch(() => {});
+    const src = button.dataset.audio;
+    const audio = currentAudio = new Audio(src);
+    audio.addEventListener("error", () => {
+      const retry = window.mfvFallbackUrl && window.mfvFallbackUrl(src); // local file missing: use the public copy
+      if (retry && audio === currentAudio) { currentAudio = new Audio(retry); currentAudio.play().catch(() => {}); }
+    }, { once: true });
+    audio.play().catch(() => {});
   });
 })();

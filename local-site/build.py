@@ -142,10 +142,25 @@ content = {
     "placeAudio": media_audio(read_json("place-audio.json")) if (PACK / "place-audio.json").exists() else {},
 }
 
+# Local preview safety net: when media comes from a local folder (the default) and a file is missing there (for example
+# before `media_store.py sync-local`), the page retries it from the public bucket instead of showing a broken image.
+PUBLIC_MEDIA = os.environ.get("MFV_MEDIA_FALLBACK", "https://media.finiteplay.org/myfirstvisit/")
+FALLBACK_JS = ""
+if not MEDIA_BASE.startswith("http") and PUBLIC_MEDIA:
+    if not PUBLIC_MEDIA.endswith("/"):
+        PUBLIC_MEDIA += "/"
+    FALLBACK_JS = (
+        "(function(base,fallback){var swap=function(u){return u&&u.indexOf(base)===0?fallback+u.slice(base.length):null};"
+        "window.mfvFallbackUrl=swap;document.addEventListener('error',function(e){var t=e.target;"
+        "if(t&&t.tagName==='IMG'&&!t.dataset.fb){var u=swap(t.getAttribute('src'));if(u){t.dataset.fb='1';t.src=u}}},true)})("
+        + json.dumps(MEDIA_BASE) + "," + json.dumps(PUBLIC_MEDIA) + ");\n"
+    )
+
 OUTPUT.write_text(
     "window.ICELAND_CONTENT = "
     + json.dumps(content, ensure_ascii=False, separators=(",", ":"))
-    + ";\n",
+    + ";\n"
+    + FALLBACK_JS,
     encoding="utf-8",
 )
 print(f"Built {OUTPUT}")
