@@ -265,13 +265,6 @@
       </article>`).join("");
     document.querySelector("#basics-numbers").innerHTML = basics.numbers.map(item => `
       <div class="number-tile"><span class="number-icon" aria-hidden="true">${item.icon || ""}</span><span class="name-label">${escapeHtml(item.label)}</span><strong>${escapeHtml(item.value)}</strong><p>${escapeHtml(item.detail)}</p></div>`).join("");
-    document.querySelector("#basics-tips").innerHTML = basics.tips.map(tip => `
-      <article class="tip-card">
-        <p class="tip-label">${escapeHtml(tip.label)}</p>
-        <h4>${escapeHtml(tip.title)}</h4>
-        <p>${escapeHtml(tip.text)}</p>
-        ${tip.links.length ? `<p class="tip-links">${tip.links.map(link => `<button class="text-button" type="button" data-open="${escapeHtml(link.open)}">${escapeHtml(link.label)} <span aria-hidden="true">→</span></button>`).join("")}</p>` : ""}
-      </article>`).join("");
   }
 
   renderBasics();

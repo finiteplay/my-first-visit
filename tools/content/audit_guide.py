@@ -95,7 +95,7 @@ def route_depth(item, roles):
 
 
 def basics_audit(basics, evidence_ids):
-    """The 'Iceland at a glance' section: pronounced names, sourced numbers, labelled tips."""
+    """The 'Iceland at a glance' section: pronounced names, sourced and iconned numbers."""
     errors = []
     names = basics.get("names", [])
     if len(names) < 2:
@@ -110,9 +110,7 @@ def basics_audit(basics, evidence_ids):
     for number in basics.get("numbers", []):
         if not str(number.get("icon", "")).strip():
             errors.append(f"basics.yaml number {number.get('label')}: an icon is required.")
-    if len(basics.get("tips", [])) < 5:
-        errors.append("basics.yaml: needs 5+ tips.")
-    groups = [("name", names), ("number", basics.get("numbers", [])), ("tip", basics.get("tips", []))]
+    groups = [("name", names), ("number", basics.get("numbers", []))]
     for kind, items in groups:
         for item in items:
             title = item.get("title") or item.get("label") or item.get("local") or "<item>"
@@ -121,9 +119,6 @@ def basics_audit(basics, evidence_ids):
             unknown = set(item.get("sourceIds", [])) - evidence_ids
             if unknown:
                 errors.append(f"basics.yaml {kind} {title}: unknown source IDs {sorted(unknown)}.")
-    for tip in basics.get("tips", []):
-        if not str(tip.get("label", "")).strip():
-            errors.append(f"basics.yaml tip {tip.get('title')}: an evidence label is required.")
     return errors
 
 

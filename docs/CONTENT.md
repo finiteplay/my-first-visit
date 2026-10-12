@@ -300,10 +300,10 @@ playbooks instead of repeating them. Source: `content/<cc>/basics.yaml`.
 |---|---|
 | Names | The country and capital: English name, local name, American respelling (see "American respelling"), meaning, a short story, and audio. Respelling and audio are drafts until a native reviewer approves them |
 | Numbers | 4+ facts (people, size, capital, wildlife counts, emergency number). Each has `sourceIds`. Where sources disagree, give a range and say so; never pick the figure that looks neatest |
-| Tips | 5+ short tips, each with an evidence label (`Official guidance`, `Traveler pattern`, `Our take`), `sourceIds`, and links to the playbook that covers it in depth |
 
 Counts and populations change; state the date or year they were measured. Keep the section short:
-anything that needs more than a paragraph belongs in a playbook.
+anything that needs more than a paragraph belongs in a playbook. Do not repeat decision-guide advice here; if a
+useful fact is not in a guide, add it to the guide that fits.
 
 ## Short practical cards
 

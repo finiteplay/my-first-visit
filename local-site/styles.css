@@ -230,17 +230,11 @@ body.night .reader-bar { background: rgba(21,48,53,.95); }
 .number-tile { display: grid; gap: 4px; align-content: start; padding: 22px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .number-tile strong { font: 500 1.6rem/1.2 Georgia, serif; }
 .number-tile p { margin: 0; color: var(--muted); font-size: .92rem; }
-.basics-tips { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-.tip-card { padding: 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); }
-.tip-card h4 { margin: 4px 0 8px; font: 500 1.25rem/1.25 Georgia, serif; }
-.tip-card p { margin: 0 0 10px; color: var(--muted); }
-.tip-label { color: var(--moss) !important; font-size: .68rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
-.tip-links { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
 .basics .audio-controls { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
 .basics .audio-play { padding: 5px 14px; border: 1px solid var(--moss); border-radius: 999px; color: var(--moss); background: var(--white); font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; }
 .basics .audio-play:hover, .basics .audio-play:focus-visible { background: var(--moss); color: var(--white); }
 .basics .audio-note { color: var(--muted); font-size: .72rem; }
-@media (max-width: 760px) { .basics-names, .basics-tips { grid-template-columns: 1fr; } .basics-numbers { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .basics-names { grid-template-columns: 1fr; } .basics-numbers { grid-template-columns: 1fr; } }
 
 /* Words (vocabulary) section */
 .words { display: grid; gap: 22px; }

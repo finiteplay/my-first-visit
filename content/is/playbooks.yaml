@@ -172,6 +172,7 @@
         "You will see places that make everyone in the car reach for a camera. The safe response is not always to stop immediately. On many rural roads there is little or no shoulder, and a stopped vehicle near a curve or a rise can leave the next driver without enough time to react. The national safety service's guidance is blunt: park only at designated places, and do not stand in or step onto the road to take a picture.",
         "The tempting moment is also the dangerous one. A traveler describes the Reykjavík-to-Jökulsárlón drive as a highlight, yet found that being the driver limited the view and that one-lane bridges demanded attention. A Colorado winter driver who based in Reykjavík and chose day trips by weather found the roads manageable but the roundabout priority unfamiliar. In both cases the concern is the same: attention that goes to scenery is attention not on the road.",
         "Keep driving until you reach a designated pullout, car park or another place where the whole vehicle can leave the travel lane and remain visible. If you miss the photograph, let it go. The landscape continues, and no image is worth a collision. Dividing the work helps: the passenger handles photos and navigation while the driver drives, and you switch at the next safe stop.",
+        "Animals are part of the road. Sheep are common beside Icelandic roads, and Icelandic horses graze in pastures along many of them. The horse is a point of national pride, and Icelanders generally prefer \"horse\" to \"pony\" even though the breed is small. Slow down near animals and enjoy them from the car or from a designated pullout, never from a stopped car on the road.",
         "Conditions matter as much as geometry. A winter driver set a pre-trip rule to turn around if conditions exceeded their comfort, and a repeat renter sometimes left the car parked in bad weather and once ended a camper trip early when wind made continued driving unsafe. Route 1 is paved, but surfaces can change quickly. The official overview separates paved roads, gravel roads and F-roads, directs travelers to current road and weather checks, and warns against off-road driving. F-roads are a separate highland decision that needs an authorized vehicle and a current conditions check; a first trip can be excellent without them.",
         "At night the stakes rise, because a parked car is nearly invisible. The same safety guidance for aurora watchers applies to any evening stop: use a designated lot, carry a headlamp, dress in layers and check the weather and road conditions before leaving. For any emergency, call 112, and save current alternative contact guidance before you set out."
       ],
@@ -193,7 +194,9 @@
         "o002",
         "o005",
         "o006",
-        "o014"
+        "o014",
+        "p012",
+        "e004"
       ],
       "decision": {
         "easiestPath": "Assign roles before you start: one person drives, the other navigates and photographs. Stop only at designated pullouts and car parks, and accept the shots you miss.",
@@ -681,7 +684,7 @@
         "arrival",
         "weather-fallback"
       ],
-      "readingMinutes": 6,
+      "readingMinutes": 7,
       "evidenceLabel": "Our take, with traveler examples",
       "cardImage": {
         "src": "assets/reykjavik-street.webp",
@@ -692,6 +695,7 @@
         "Travelers use the capital in four different ways. Some treat it as a bookend: a night or two before and after a road trip. Some give it a purposeful half-day or day for the center, harbor, one museum or food stop and a neighborhood pool. Some use it as a weather fallback, as when a whale-watching cancellation turned a couple's day into a waterfront walk past Hallgrímskirkja and Harpa. And some make it a base, like a Chicago traveler who stayed six nights and wrote that the city-based trip was substantial enough to report separately.",
         "How long you stay should follow your transport and your tolerance for long return drives. With a car, a night or two at each end is common, and the center is easy to cover in a day. Without a car, a base can work well because tour pickups are usually from hotel areas, and a solo visitor who used four operators valued not having to handle changing wind. The cost is that each day trip is a long out-and-back day, and travelers who want mostly remote landscape can feel overbased in the capital or tired of repeated long tours.",
         "Many first-time visitors do well with a purposeful half to full day. A reasonable shape is Hallgrímskirkja and the center, a food stop, a walk down to Harpa and the waterfront, one museum, and a neighborhood pool at the end. A family with two children mixed a South Coast drive with a rainy Reykjavík day. A nine-day self-drive traveler rested on arrival, then grouped the countryside into a coherent drive. Add more city time because the activities interest you, not simply because changing hotels feels inconvenient.",
+        "If you have a car, learn the parking before you need it. Downtown Reykjavík has four paid zones, P1 to P4, and the closer to the center, the higher the fee. You can pay at a meter or in the Parka or EasyPark apps, so set up payment first and read the sign for hours, because some zones also charge on Sundays. Prices change, so check the current charges instead of trusting an old figure.",
         "The Reykjavík City Card, per the city, covers 17 museums and attractions, 8 municipal pools and unlimited Strætó buses in the capital area, counted from the moment you first use it. It can pay off if you plan several museums and pool visits in a short window, and it does less if you mostly want to walk. Check the current price, what is included and which duration fits your plan before you buy."
       ],
       "sourceIds": [
@@ -702,7 +706,8 @@
         "t004",
         "t005",
         "k001",
-        "o016"
+        "o016",
+        "o020"
       ],
       "hook": "Reykjavík can be a recovery day, a rain plan, a base for tours or a destination in its own right, and the right amount of time depends on which of those you need.",
       "travelerStories": [
@@ -739,7 +744,8 @@
         "Pick one museum or food experience instead of trying to see them all.",
         "Add a neighborhood pool to the end of a day, and learn the shower routine first.",
         "If you want museums and pools, check the Reykjavík City Card for your dates.",
-        "If you base here, check tour pickup points and return times, and keep one day open for weather."
+        "If you base here, check tour pickup points and return times, and keep one day open for weather.",
+        "If you drive in the center, set up Parka or EasyPark and read the zone sign (P1 to P4) before you leave the car."
       ],
       "ourTake": "Reykjavík is worth a purposeful half-day or day for most first-time visitors, and more when you choose it for the food, museums, pools or a car-free trip. Do not treat it as a waiting room between flights and tours, and do not stay longer only to avoid changing hotels.",
       "liveChecks": [
@@ -758,6 +764,10 @@
         {
           "label": "Official weather",
           "url": "https://en.vedur.is/"
+        },
+        {
+          "label": "Reykjavík parking zones, hours and payment",
+          "url": "https://reykjavik.is/en/parking"
         }
       ],
       "warning": "Opening hours, prices, tour schedules and the City Card terms change. Confirm them before you shape the day.",

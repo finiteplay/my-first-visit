@@ -83,17 +83,16 @@ class GuideAuditTest(unittest.TestCase):
         self.assertTrue(any("route0: depth: days" in error for error in audit(root)))
 
 
-    def test_basics_needs_sourced_tips_and_pronounced_names(self):
+    def test_basics_needs_pronounced_names_and_iconned_numbers(self):
         temp, root = self.make_guide()
         self.addCleanup(temp.cleanup)
         basics = {"names": [{"english": "A", "local": "A", "respelling": "ah", "meaning": "x", "sourceIds": ["r1"]},
                             {"english": "B", "local": "B", "respelling": "", "meaning": "x", "sourceIds": ["r1"]}],
-                  "numbers": [{"label": str(i), "sourceIds": ["r1"]} for i in range(4)],
-                  "tips": [{"title": str(i), "label": "Our take", "sourceIds": ["r1"]} for i in range(4)]}
+                  "numbers": [{"label": str(i), "sourceIds": ["r1"]} for i in range(4)]}
         (root / "basics.yaml").write_text(json.dumps(basics), encoding="utf-8")
         errors = audit(root)
         self.assertTrue(any("respelling is required" in e for e in errors))
-        self.assertTrue(any("needs 5+ tips" in e for e in errors))
+        self.assertTrue(any("an icon is required" in e for e in errors))
 
 
     def test_vocabulary_needs_courtesy_and_emergency_groups(self):
