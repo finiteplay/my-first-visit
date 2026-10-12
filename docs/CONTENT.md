@@ -338,7 +338,8 @@ Status: **built for the Iceland draft.**
 Every place card ends with "Where it is": a small SVG map with one highlighted dot and an "Open in
 Google Maps" link built from the place's `location` pin (`sights.yaml`). No network is needed for the
 map. Places within `radiusKm` of a region centre in `map.yaml` `regions` (Iceland: the Reykjavik area,
-15 km) get that local outline, with the other places in the area as grey dots; every other place gets
+15 km) get that local outline; a region can instead be tied to a place `region` with `forRegions` (the Golden Circle uses an
+inland map of lakes and main roads built with `tools/maps/build_region_inland.py`), with the other places in the area as grey dots; every other place gets
 the country outline and the main road. Pins are still "draft-pin" until someone verifies the entrance
 and accessibility. A new country needs its own `regions` entry only if it has a main city with sights
 close by; build it with `tools/maps/build_region_outline.py` from OSM coastline ways (ODbL, credit

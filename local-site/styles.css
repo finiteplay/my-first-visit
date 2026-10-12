@@ -453,3 +453,9 @@ body.night .rm-day { fill: #e8f1f2; stroke: #26363a; }
 
 .ta-top { margin-left: 4px; padding: 1px 8px; border: 1px solid #34e0a1; border-radius: 999px; color: var(--ink); font-weight: 700; font-size: .7rem; }
 .place-card .ta { flex-wrap: wrap; }
+
+/* Inland region maps (Golden Circle): lakes and main roads */
+.minimap-water { fill: #dbe8ea; stroke: #8fa3a1; stroke-width: 1; stroke-linejoin: round; }
+.minimap-roads { fill: none; stroke: #cdc5ab; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+body.night .minimap-water { fill: #14262a; stroke: #5d777a; }
+body.night .minimap-roads { stroke: #4b5c60; }

@@ -290,6 +290,8 @@
         <svg viewBox="${view.x.toFixed(1)} ${view.y.toFixed(1)} ${view.w.toFixed(1)} ${view.h.toFixed(1)}" role="img" aria-label="${escapeHtml(label)}">
           <rect class="minimap-sea" x="${(view.x - 5).toFixed(1)}" y="${(view.y - 5).toFixed(1)}" width="${(view.w + 10).toFixed(1)}" height="${(view.h + 10).toFixed(1)}"/>
           <path class="minimap-land" d="${rings.map(ring => path(ring) + "Z").join(" ")}" style="stroke-width:${(unit * 0.25).toFixed(2)}px"/>
+          ${region?.water?.length ? `<path class="minimap-water" d="${region.water.map(ring => path(ring) + "Z").join(" ")}"/>` : ""}
+          ${region?.roads?.length ? `<path class="minimap-roads" d="${region.roads.map(path).join(" ")}" style="stroke-width:${(unit * 0.3).toFixed(2)}px"/>` : ""}
           ${segments}${dots}
         </svg>
         <ul class="route-map-legend" aria-label="Days">${legend}</ul>
@@ -326,7 +328,9 @@
   function placeMinimap(item) {
     const map = data.map, loc = item.location;
     if (!map?.outline || !loc) return "";
-    const region = (map.regions || []).find(r => kmBetween(loc.longitude, loc.latitude, r.center[0], r.center[1]) <= r.radiusKm);
+    // A region map is chosen by the place's own region first (the Golden Circle), then by distance from a city centre.
+    const region = (map.regions || []).find(r => r.forRegions?.includes(item.region))
+      || (map.regions || []).find(r => !r.forRegions && kmBetween(loc.longitude, loc.latitude, r.center[0], r.center[1]) <= r.radiusKm);
     const W = region ? 520 : 400, PAD = region ? 0 : 20;
     let west, south, east, north, rings, K, context = "", areaName;
     if (region) {
@@ -362,6 +366,8 @@
         <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${escapeHtml(item.name)} on a small map of ${escapeHtml(areaName)}">
           <rect class="minimap-sea" width="${W}" height="${H}"/>
           <path class="minimap-land" d="${rings.map(r => path(r) + "Z").join(" ")}"/>
+          ${region?.water?.length ? `<path class="minimap-water" d="${region.water.map(r => path(r) + "Z").join(" ")}"/>` : ""}
+          ${region?.roads?.length ? `<path class="minimap-roads" d="${region.roads.map(path).join(" ")}"/>` : ""}
           ${context}
           <circle class="minimap-halo" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="15"/>
           <circle class="minimap-dot" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="7.5"/>
