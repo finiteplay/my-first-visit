@@ -271,7 +271,9 @@
         "r006",
         "r008",
         "t003",
-        "t007"
+        "t007",
+        "o023",
+        "p016"
       ],
       "body": [
         "Icelanders use geothermal water in two quite different ways. The neighborhood pool is ordinary infrastructure: a place to swim laps, sit in a hot pot and talk to neighbors, often with children in the water and a locker room full of strangers. Reykjavík's own visitor guide describes the pools as a fixed point in a local's day, where everyone meets as equals. The destination lagoon is an excursion. It is designed, timed, staged and priced as an occasion, with a ritual, a bar, a view or a landscape that you travel to see.",
@@ -514,6 +516,33 @@
               }
             }
           ]
+        },
+        {
+          "group": "On the Ring Road, outside the capital area",
+          "intro": "Not a Reykjavík day trip: worth knowing if your route passes it. Check the operator for hours and how to book.",
+          "places": [
+            {
+              "name": "Vök Baths",
+              "where": "On the shore of Lake Urriðavatn, a few minutes from Egilsstaðir in East Iceland",
+              "character": "A geothermal spa with floating pools that have an infinity view over the lake, two hot pools on the shore, a sauna, a cold-water spray tunnel, a cold plunge, an in-water pool bar and a tea bar, plus an on-site bistro. The operator says the water is natural geothermal water with no chemicals. The name is the Icelandic word for a hole in lake ice.",
+              "bestFor": "A soak on the East Iceland leg of a Ring Road trip, with a lake view instead of a crowd",
+              "headsUp": "The operator lists 12:00 to 22:00 daily, but when we checked its booking engine was down and it asked for reservations by email, so confirm how to book. It suits the end of a long driving day, so do not rush to it.",
+              "local": "Vök",
+              "respelling": "VURK",
+              "location": {
+                "latitude": 65.3031,
+                "longitude": -14.4475,
+                "label": "Vök Baths",
+                "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+              },
+              "website": {
+                "url": "https://vokbaths.is/",
+                "label": "Official website",
+                "kind": "official",
+                "checkedAt": "2026-10-11"
+              }
+            }
+          ]
         }
       ]
     },
@@ -523,7 +552,7 @@
       "fits": [
         "dark-season"
       ],
-      "readingMinutes": 6,
+      "readingMinutes": 7,
       "evidenceLabel": "Experiences vary",
       "hook": "The aurora is the one thing on your list that no one can schedule, so the trip that works is the one that is still good on the nights the sky stays dark.",
       "cardImage": {
@@ -535,6 +564,7 @@
         "Iceland sits under the auroral zone, so travelers and operators say a modest activity number can already produce lights overhead, while a high number does little under thick cloud. That is why experienced hunters read the cloud map before the activity number. The Icelandic Met Office publishes an activity scale from 0 to 9 and a cloud-cover map on which white areas are clear and green areas are cloudy, and says the lights need a dark and partly clear sky. A common habit is to step through the evening on the map and look for a gap in the cloud, then decide whether it is within a reasonable, safe drive.",
         "Travelers describe a wide range of outcomes. One group had four clear aurora nights and kept two backup transport plans. A first-time group in September treated the lights as a probability and was glad it had. A winter driver who set a rule to turn around if conditions passed their comfort found an aurora close to Reykjavík, while some other visitors lost booked tours. A long, aurora-focused March trip produced excellent displays, weak nights and fog losses, and the photographer kept changing plans to match the sky. The pattern across these accounts is flexibility, not a perfect spot.",
         "A guided tour and a do-it-yourself hunt solve different problems. Tours remove night driving and let a guide chase gaps in the cloud, and the operator guide we read argues that a driver willing to go far beats a fixed spot. But tours cancel when the odds are low, and one Reykjavík-based traveler's tour was canceled in rain while a self-directed search still found a clearing. Doing it yourself costs nothing extra and fits a ten-night trip, but you need a car, several free nights and confidence driving on winter roads in the dark. Neither path can promise a display, and the operators' own guidance on retries and cancellations varies.",
+        "A dark night is not the only way to spend an aurora evening. Aurora Reykjavík is an indoor museum in the Grandi harbor area at Fiskislóð 53, about a ten-minute walk from downtown, with an interactive exhibition on mythology, science, solar cycles, photography and aurora-hunting tips, a 360-degree VR aurora experience and a 30-minute film. The operator says a typical visit lasts 45 to 60 minutes, that it is open daily all year (about 10:00 to 19:00, with seasonal changes) and that it is fully accessible with free on-site parking. It also sells small-group aurora tours from late August to mid-April, so read its tour pitch as an operator's. A good use is the first day, to learn what the forecast numbers mean, or a cloudy or rainy evening when no clear gap is in reach. It does not replace seeing the real thing.",
         "Safety matters more at night than the photograph does. The national safety service says to park only in designated lots, never to stop in or step onto the road for a picture, to dress in layers, to carry a headlamp, food, warm drinks and a charged phone, and to check the weather and road conditions before leaving. Parked cars are hard to see in the dark, and winter roads can change within an hour. If the only clear sky is a long drive away, the sensible choice is often to stay in town, soak in a pool or lagoon, and try again the next night."
       ],
       "checklist": [
@@ -544,7 +574,8 @@
         "If you drive, park only in designated lots, never stop on the road, and turn back if conditions pass your comfort.",
         "Carry layers, a headlamp, food, a warm drink and a charged phone.",
         "Pick lodging or evening plans you would enjoy if the sky stays dark, such as a pool or a good dinner.",
-        "Stay off roads in warnings and check road conditions before leaving town."
+        "Stay off roads in warnings and check road conditions before leaving town.",
+        "Keep one indoor option for a cloudy evening, such as the Aurora Reykjavík museum, instead of driving far for a gap that may not hold."
       ],
       "ourTake": "Plan Iceland, then let the aurora improve it. If seeing the lights is the only acceptable outcome, the trip is carrying a promise no operator can make.",
       "liveChecks": [
@@ -582,7 +613,10 @@
         "o003",
         "o004",
         "o014",
-        "p009"
+        "p009",
+        "o024",
+        "e010",
+        "p017"
       ],
       "travelerStories": [
         "A Reykjavík-based group in late September had rain on most days. An aurora tour was canceled for low odds, but they kept watching cloud breaks and the current forecast and still found a display during a clearer interval.",
@@ -609,10 +643,48 @@
           "name": "Town-based, let it happen",
           "bestFor": "Travelers who care more about the trip than the lights",
           "tradeoff": "Light pollution and cloud can hide the display; you may see nothing."
+        },
+        {
+          "name": "Aurora Reykjavík museum (indoors)",
+          "bestFor": "A cloudy or rainy evening, a jet-lagged first day, or learning how to read the forecast",
+          "tradeoff": "A museum and a film, not the real sky; about 45 to 60 minutes; the operator also sells tours."
         }
       ],
       "warning": "Night driving in winter is a real risk. Park in designated places, never stop or stand on the road, and check weather and road conditions before you leave. Tour policies and prices change; confirm them with the operator.",
-      "limits": "Accounts show recurring outcomes and contrasting luck, not how often the lights appear on a given night. The Met Office page does not state a season, a moonlight effect or forecast accuracy, so those details come from operators and travelers. No forecast, app or tour can promise a visible display."
+      "limits": "Accounts show recurring outcomes and contrasting luck, not how often the lights appear on a given night. The Met Office page does not state a season, a moonlight effect or forecast accuracy, so those details come from operators and travelers. No forecast, app or tour can promise a visible display.",
+      "trackersIntro": "Space-weather sites tell you how active the aurora is; only a cloud map tells you whether you can see it. Check the cloud first and the activity number second, and check which scale a number comes from before comparing two sites.",
+      "trackers": [
+        {
+          "name": "Icelandic Met Office aurora forecast",
+          "url": "https://en.vedur.is/weather/forecasts/aurora/",
+          "shows": "An activity scale from 0 to 9 and a cloud-cover map (green is cloudy, white is clear) in a six-day outlook, with times valid for Reykjavík and sun and moon timing.",
+          "useItFor": "The main decision tool. Look for a clear gap in the cloud first, then the activity number. The page itself says the lights need a dark and partly clear sky."
+        },
+        {
+          "name": "NOAA aurora 30-minute forecast",
+          "url": "https://www.spaceweather.gov/products/aurora-30-minute-forecast",
+          "shows": "A map of the auroral oval for each hemisphere from the OVATION Prime model. Green ovals turn red when the aurora is forecast to be more intense. The lead time is about 30 to 90 minutes, set by how long the solar wind takes to arrive.",
+          "useItFor": "A short-term check once the sky is clear. It says nothing about clouds, and when solar-wind data is missing it falls back to the Kp index with no lead time."
+        },
+        {
+          "name": "NOAA planetary K-index",
+          "url": "https://www.spaceweather.gov/products/planetary-k-index",
+          "shows": "The Kp index of geomagnetic activity, on a scale of 0 to 9.",
+          "useItFor": "Background on how disturbed the magnetic field is. It is not a cloud or visibility forecast."
+        },
+        {
+          "name": "SpaceWeatherLive auroral oval",
+          "url": "https://www.spaceweatherlive.com/en/auroral-activity/auroral-oval.html",
+          "shows": "A near-live oval map built from solar-wind and magnetic-field measurements, hemispheric power in gigawatts with a 30-minute forecast, and visibility odds for named places. Run by a Belgian non-profit.",
+          "useItFor": "Watching activity build while you wait. Like the NOAA map, it does not show clouds."
+        },
+        {
+          "name": "Road conditions and closures",
+          "url": "https://umferdin.is/en",
+          "shows": "The Icelandic road administration's traffic map with current conditions.",
+          "useItFor": "Before any drive out of town, however good the sky looks."
+        }
+      ]
     },
     {
       "id": "pack-for-exposure",
@@ -695,13 +767,14 @@
         "budget",
         "comfort"
       ],
-      "readingMinutes": 6,
+      "readingMinutes": 7,
       "evidenceLabel": "Our take, with traveler examples",
       "body": [
         "Travelers describe the same surprise from different angles. A four-day visitor from the Washington, D.C. area found food noticeably costlier than at home. An Australian on a small-group tour called the country exceptionally expensive. A couple on a Reykjavík waterfront day found harbor dining pricey. None of them claim the trip was a bad value. The complaint is about surprise, not about whether the country is worth it.",
         "A useful way to plan is to start with the two or three experiences you actually came for and pay for them on purpose. One solo winter traveler itemized a five-day trip and found that premium lagoons, food, parking and activities together cost more than lodging, and still called it worth it, because the spending matched the reason for going. A couple who published an itemized road-trip budget concluded that accommodation and comfort choices moved the total far more than small grocery savings did. Decide the splurges first, then protect them.",
         "Next price the full trip, not the headline. Add transport (a rental car or tours, plus coverage and fuel), lodging, parking, booked activities, and a realistic mix of restaurant and self-catered food. A Canadian couple whose camper combined vehicle, bed and kitchen kept costs down further by bringing groceries from home. A US couple's short late-October trip with guesthouses came to a total near $3,600, which is an example of how party size and comfort set the figure, not a target. Another traveler's report noted that parking is paid in different ways in different places, so a small cost can also be a small hassle.",
         "The cheap wins are simple and do not make the trip feel cheap. Tap water is free and good. Grocery stores let you build breakfast and road lunches; operator guides say Bónus is the cheapest chain, Krónan offers more variety and later hours, and Nettó sits between them, with some branches open around the clock. A Nashville couple packed lunches on a stopover to save for the meals they wanted, and one traveler found connectivity inexpensive. A neighborhood pool costs a fraction of a lagoon. Tipping is not expected because service is included, and Iceland is largely cashless, so you rarely need to carry cash.",
+        "Costco is the one big exception to the discount-chain rule, but only for some travelers. Iceland has a single Costco, in Garðabær just outside Reykjavík, and you need a membership to shop or to buy fuel there; the Visit Reykjavík guide says a valid Costco membership from abroad works in Iceland. It sells bulk groceries, snacks, drinks, breakfast food and cold cuts, which suits a camper, a group or a longer self-catered stay. Its gas station is widely reported as the cheapest in the country: a car-rental company's blog put it near 311 krónur per liter against a national average near 380, but treat that as an old example and read the price board on the day. Pumps in Iceland generally need a card with a PIN. Our take: if you already hold a membership, one stop before a road trip can pay for itself; if you do not, the bulk sizes and the detour make it a poor deal for two people on a short trip.",
         "Be wary of two traps. The first is copying someone else's total, because currency, party size, season, vehicle and cancellation flexibility all differ. The second is cutting so hard that you lose the experiences that justify the flight, such as a guided glacier activity, a lagoon evening or one memorable meal. Plan the number you can afford, include a cushion for the small stuff, and spend freely where it matters to you."
       ],
       "warning": "Prices, exchange rates and fees change quickly. Do not copy another traveler's total; party size, season, vehicle and comfort make it incomparable, and the examples here are illustrations, not quotes.",
@@ -716,12 +789,15 @@
         "b003",
         "t004",
         "o015",
-        "p010"
+        "p010",
+        "o022",
+        "p014",
+        "p015"
       ],
       "hook": "Iceland rarely breaks a budget on one big item; it wears it down with a hundred small decisions, so the trick is to choose the few you care about early.",
       "cardImage": {
-        "src": "assets/reykjavik-street.webp",
-        "alt": "Travelers walk down a colorful Reykjavík street toward the harbor after rain."
+        "src": "assets/south-coast-waterfall.webp",
+        "alt": "Waterfalls descend beside a marked South Coast path where four travelers wear rain gear."
       },
       "travelerStories": [
         "A solo traveler on a five-day winter trip itemized every cost. Premium lagoons, food, parking and activities exceeded lodging, and the traveler called the trip expensive and still worth it, because the spending matched the reason for going.",
@@ -757,7 +833,8 @@
         "Plan grocery stops for breakfast and road lunches, and carry a refillable bottle for tap water.",
         "Check each parking location's payment method and keep a card that works for contactless payments.",
         "Skip the tip unless service was exceptional; service is included in prices.",
-        "Keep a cushion for small items, and check cancellation terms before paying for fixed bookings."
+        "Keep a cushion for small items, and check cancellation terms before paying for fixed bookings.",
+        "If you already hold a Costco membership, consider one stop at the Garðabær store for groceries and fuel before a road trip; bring the card and a chip-and-PIN payment card."
       ],
       "liveChecks": [
         {
@@ -775,6 +852,10 @@
         {
           "label": "Fuel and exchange rate on the day",
           "url": "provider-specific"
+        },
+        {
+          "label": "Costco Iceland: location, hours and membership",
+          "url": "https://www.costco.is/"
         }
       ],
       "limits": "Trip reports use different currencies, party sizes and comfort standards, so they show levers, not a typical budget. Operator and tour-company guides have a commercial interest, and their cost estimates are dated."

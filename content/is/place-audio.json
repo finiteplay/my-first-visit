@@ -1674,6 +1674,42 @@
       "whisperHeard": "eyjafjallajökull",
       "whisperMatch": 1.0,
       "showInApp": true
+    },
+    "steinasafn-petru": {
+      "local": "Steinasafn Petru",
+      "respelling": "STAY-na-sahpn PEH-trew",
+      "kind": "place",
+      "meaning": "Petra's Stone Collection",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/steinasafn-petru_normal.wav",
+          "seconds": 1.25
+        }
+      },
+      "whisperHeard": "steinasafn petru",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "vok": {
+      "local": "Vök",
+      "respelling": "VURK",
+      "kind": "place",
+      "meaning": "Vök Baths",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/vok_normal.wav",
+          "seconds": 0.66
+        }
+      },
+      "whisperHeard": "vök",
+      "whisperMatch": 1.0,
+      "showInApp": true
     }
   },
   "credit": "Synthetic voice: Piper Icelandic voice trained on Talrómur 1, Reykjavík University and SÍM, CC BY 4.0",

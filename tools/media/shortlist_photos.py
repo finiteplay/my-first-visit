@@ -51,6 +51,8 @@ KEYWORDS = {
     "sight-aurora-reykjavik": ["Aurora Reykjavík", "Aurora Reykjavik"],
     "sight-flyover": ["FlyOver Iceland", "Flyover Iceland"],
     "sight-mink": ["Mink Viking"],
+    "sight-petras-stone-collection": ["Petra", "Steinasafn", "Stöðvarfjörður"],
+    "sight-vok-baths": ["Vök"],
 }
 
 # Search terms per attraction. Extra terms help find exact-place files.
@@ -73,6 +75,8 @@ QUERIES = {
     "sight-aurora-reykjavik": ["Aurora Reykjavík northern lights center"],
     "sight-flyover": ["FlyOver Iceland"],
     "sight-mink": ["Mink Viking Portrait"],
+    "sight-petras-stone-collection": ["Steinasafn Petru", "Petra's Stone Collection", "Stöðvarfjörður"],
+    "sight-vok-baths": ["Vök Baths", "Urriðavatn Egilsstaðir"],
 }
 
 

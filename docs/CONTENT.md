@@ -289,6 +289,11 @@ The same two links (`location` pin and `website`) go on every entry of a `whereT
 lagoons, hot springs). If the pin is a trailhead or car park instead of the place itself, say so in
 `location.mapNote`; leave `website` out when no official or authority page exists.
 
+A playbook can also carry `trackers` ({name, url, shows, useItFor}), a short list of live-data websites with what each
+shows and its limits (the aurora guide uses it for forecast and cloud sites). `liveChecks` entries with a real URL are
+shown as links; `provider-specific` ones are shown as plain text. Each card in the advice list needs its own card
+image: do not reuse one image across two guides.
+
 ### Word page ("Say it in Icelandic")
 
 Status: **built for the Iceland draft as its own page, `local-site/words.html`; checked by

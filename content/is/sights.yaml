@@ -592,7 +592,8 @@
         "status": "draft-pin; verify entrance before release"
       },
       "sourceIds": [
-        "tripadvisor-aurora"
+        "tripadvisor-aurora",
+        "aurora-reykjavik"
       ],
       "photo": {
         "id": "photo-aurora-reykjavik",
@@ -680,6 +681,82 @@
       "reviewedBy": null,
       "website": {
         "url": "https://mink.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-petras-stone-collection",
+      "name": "Petra's Stone Collection",
+      "local": "Steinasafn Petru",
+      "respelling": "STAY-na-sahpn PEH-trew",
+      "region": "East",
+      "nearestCity": "Stöðvarfjörður",
+      "category": "Museum",
+      "tier": "if-you-have-time",
+      "whyGo": "Stop at a woman's lifetime stone collection, shown in her own home and garden in a tiny Eastfjords village.",
+      "timeNeeded": "1–2 hours",
+      "bestTime": "Daytime in the summer season; it is a seasonal museum, so check the opening dates.",
+      "tip": "Check the season and hours before you plan the stop, because it closes for the winter and sources disagree on the date. Allow time for the garden.",
+      "linkedItem": "p38",
+      "location": {
+        "latitude": 64.8357,
+        "longitude": -13.8805,
+        "label": "Fjarðarbraut 21, in the village",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "petras"
+      ],
+      "photo": {
+        "id": "photo-petras-stone-collection",
+        "status": "missing",
+        "brief": "Exterior of the house and garden, or the stone displays; no identifiable visitors without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "website": {
+        "url": "https://steinapetra.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-vok-baths",
+      "name": "Vök Baths",
+      "local": "Vök",
+      "respelling": "VURK",
+      "region": "East",
+      "nearestCity": "Egilsstaðir",
+      "category": "Experience",
+      "tier": "if-you-have-time",
+      "whyGo": "Soak in floating geothermal pools on the shore of a lake, a few minutes from Egilsstaðir.",
+      "timeNeeded": "1.5–3 hours",
+      "bestTime": "Afternoon or evening after a driving day; check opening hours and how to book.",
+      "tip": "Confirm how to book before you go: when we checked, the operator's booking engine was down and it asked for reservations by email. Follow the pool shower rules and bring swimwear and a towel unless you confirm what is provided.",
+      "linkedItem": "p34",
+      "location": {
+        "latitude": 65.3031,
+        "longitude": -14.4475,
+        "label": "Vök Baths, on the shore of Urriðavatn",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "vok"
+      ],
+      "photo": {
+        "id": "photo-vok-baths",
+        "status": "missing",
+        "brief": "The floating pools on the lake from a public or licensed viewpoint; no identifiable bathers without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "website": {
+        "url": "https://vokbaths.is/",
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"

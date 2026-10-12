@@ -216,6 +216,33 @@
       "accessed": "2026-10-09",
       "kind": "primary",
       "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "petras",
+      "title": "Visit Austurland: Steinasafn Petru (Petra's Stone Collection)",
+      "url": "https://www.east.is/en/service/petras-stone-collection",
+      "scope": "Location, seasonal opening and what the collection is; prices and exact dates are not taught as fixed (sources disagree on the closing date).",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "vok",
+      "title": "Visit Austurland: Vök Baths",
+      "url": "https://www.east.is/en/service/vok-baths",
+      "scope": "Location and what the facility is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "aurora-reykjavik",
+      "title": "Aurora Reykjavík (operator site)",
+      "url": "https://aurorareykjavik.is/",
+      "scope": "Location, what the exhibition covers, visit length and accessibility as the operator describes them; prices and tour claims not used.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "operator claims; source-screened; native editorial review pending"
     }
   ]
 }

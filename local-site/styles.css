@@ -362,3 +362,8 @@ body.night .minimap-label { fill: #e8f1f2; stroke: #26363a; }
 .place-entry .place-links { margin-top: 10px; }
 .place-entry .maps-link { padding: 5px 12px; font-size: .82rem; }
 .map-note { margin: 6px 0 0; color: var(--muted); font-size: .78rem; }
+
+/* Aurora trackers and live-check links */
+.tracker strong a { color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--gold); }
+.tracker strong a:hover, .tracker strong a:focus-visible { color: var(--moss); border-bottom-color: var(--moss); }
+#reader-article .muted { color: var(--muted); font-size: .85em; }
