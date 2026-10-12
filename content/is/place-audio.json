@@ -552,12 +552,13 @@
       "files": {
         "normal": {
           "file": "assets/audio/takk_normal.wav",
-          "seconds": 0.5
+          "seconds": 0.52
         }
       },
-      "whisperHeard": "ha",
-      "whisperMatch": 0.33,
-      "showInApp": false
+      "whisperHeard": "takk",
+      "whisperMatch": 1.0,
+      "showInApp": true,
+      "note": "Single short word: best take of several voices and variants (\"Takk.\" at length scale 0.9) chosen by the Whisper check; still a draft pending native review."
     },
     "takk-fyrir": {
       "local": "Takk fyrir",
@@ -1708,6 +1709,600 @@
         }
       },
       "whisperHeard": "vök",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "gamla-hofnin": {
+      "local": "Gamla höfnin",
+      "respelling": "GAHM-la HURP-nin",
+      "kind": "place",
+      "meaning": "Old Harbour",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/gamla-hofnin_normal.wav",
+          "seconds": 1.01
+        }
+      },
+      "whisperHeard": "gamla höfnin",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "skolavordustigur": {
+      "local": "Skólavörðustígur",
+      "respelling": "SKOH-la-vur-dhu-steeg-ur",
+      "kind": "place",
+      "meaning": "Laugavegur and Skólavörðustígur",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/skolavordustigur_normal.wav",
+          "seconds": 1.34
+        }
+      },
+      "whisperHeard": "vörðustígur",
+      "whisperMatch": 0.81,
+      "showInApp": true
+    },
+    "magic-ice-reykjavik": {
+      "local": "Magic Ice Reykjavík",
+      "respelling": "MAJ-ik ICE RAYK-yah-veek",
+      "kind": "place",
+      "meaning": "Magic Ice Reykjavík",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/magic-ice-reykjavik_normal.wav",
+          "seconds": 1.64
+        }
+      },
+      "whisperHeard": "magík í reykjavík",
+      "whisperMatch": 0.78,
+      "showInApp": false
+    },
+    "ytri-tunga": {
+      "local": "Ytri Tunga",
+      "respelling": "IH-tri TUHN-ga",
+      "kind": "place",
+      "meaning": "Ytri Tunga seal beach",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/ytri-tunga_normal.wav",
+          "seconds": 1.1
+        }
+      },
+      "whisperHeard": "ytri tunga",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "budakirkja": {
+      "local": "Búðakirkja",
+      "respelling": "BOO-dha-kirk-ya",
+      "kind": "place",
+      "meaning": "Búðakirkja",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/budakirkja_normal.wav",
+          "seconds": 0.96
+        }
+      },
+      "whisperHeard": "búðakirkja",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "arnarstapi": {
+      "local": "Arnarstapi",
+      "respelling": "AR-nar-sta-pi",
+      "kind": "place",
+      "meaning": "Arnarstapi and Hellnar coastal path",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/arnarstapi_normal.wav",
+          "seconds": 1.04
+        }
+      },
+      "whisperHeard": "arnarstapi",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "londrangar": {
+      "local": "Lóndrangar",
+      "respelling": "LOHN-drown-gar",
+      "kind": "place",
+      "meaning": "Lóndrangar",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/londrangar_normal.wav",
+          "seconds": 1.08
+        }
+      },
+      "whisperHeard": "lóndrangar",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "djupalonssandur": {
+      "local": "Djúpalónssandur",
+      "respelling": "DYOO-pa-lohns-sahn-dur",
+      "kind": "place",
+      "meaning": "Djúpalónssandur",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/djupalonssandur_normal.wav",
+          "seconds": 1.17
+        }
+      },
+      "whisperHeard": "djúpa lónsandur",
+      "whisperMatch": 0.93,
+      "showInApp": true
+    },
+    "kirkjufellsfoss": {
+      "local": "Kirkjufellsfoss",
+      "respelling": "KIRK-yu-fehls-faws",
+      "kind": "place",
+      "meaning": "Kirkjufellsfoss",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/kirkjufellsfoss_normal.wav",
+          "seconds": 1.34
+        }
+      },
+      "whisperHeard": "kirkju fellsfoss",
+      "whisperMatch": 0.97,
+      "showInApp": true
+    },
+    "bjarnarhofn": {
+      "local": "Bjarnarhöfn",
+      "respelling": "BYAR-nar-hurpn",
+      "kind": "place",
+      "meaning": "Bjarnarhöfn Shark Museum",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/bjarnarhofn_normal.wav",
+          "seconds": 0.86
+        }
+      },
+      "whisperHeard": "bjarnarhöfn",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "glaumbaer": {
+      "local": "Glaumbær",
+      "respelling": "GLOYM-bye-r",
+      "kind": "place",
+      "meaning": "Glaumbær turf farm",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/glaumbaer_normal.wav",
+          "seconds": 0.91
+        }
+      },
+      "whisperHeard": "hlaumbær",
+      "whisperMatch": 0.88,
+      "showInApp": true
+    },
+    "lystigardur-akureyrar": {
+      "local": "Lystigarður Akureyrar",
+      "respelling": "LIHS-tih-gar-dhur AH-kur-ay-rih",
+      "kind": "place",
+      "meaning": "Akureyri Botanical Garden",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/lystigardur-akureyrar_normal.wav",
+          "seconds": 1.61
+        }
+      },
+      "whisperHeard": "listigarður akureyrar",
+      "whisperMatch": 0.95,
+      "showInApp": true
+    },
+    "hverir": {
+      "local": "Hverir",
+      "respelling": "KVEH-rihr",
+      "kind": "place",
+      "meaning": "Hverir geothermal field",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hverir_normal.wav",
+          "seconds": 0.7
+        }
+      },
+      "whisperHeard": "hverir",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "skutustadagigar": {
+      "local": "Skútustaðagígar",
+      "respelling": "SKOO-tus-ta-dha-gee-gar",
+      "kind": "place",
+      "meaning": "Skútustaðagígar pseudocraters",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/skutustadagigar_normal.wav",
+          "seconds": 1.29
+        }
+      },
+      "whisperHeard": "skútustaðgígar",
+      "whisperMatch": 0.97,
+      "showInApp": true
+    },
+    "dettifoss": {
+      "local": "Dettifoss",
+      "respelling": "DEH-tih-faws",
+      "kind": "place",
+      "meaning": "Dettifoss (west side)",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/dettifoss_normal.wav",
+          "seconds": 0.96
+        }
+      },
+      "whisperHeard": "detti oss",
+      "whisperMatch": 0.89,
+      "showInApp": true
+    },
+    "hengifoss": {
+      "local": "Hengifoss",
+      "respelling": "HAYN-gih-faws",
+      "kind": "place",
+      "meaning": "Hengifoss and Litlanesfoss",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hengifoss_normal.wav",
+          "seconds": 0.98
+        }
+      },
+      "whisperHeard": "hengivossu",
+      "whisperMatch": 0.84,
+      "showInApp": true
+    },
+    "faskrudsfjordur": {
+      "local": "Fáskrúðsfjörður",
+      "respelling": "FOWS-kroodhs-fyur-dhur",
+      "kind": "place",
+      "meaning": "Fáskrúðsfjörður",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/faskrudsfjordur_normal.wav",
+          "seconds": 1.24
+        }
+      },
+      "whisperHeard": "fáskrússfjörður",
+      "whisperMatch": 0.93,
+      "showInApp": true
+    },
+    "djupivogur": {
+      "local": "Djúpivogur",
+      "respelling": "DYOO-pih-voh-gur",
+      "kind": "place",
+      "meaning": "Djúpivogur and the Eggs of Merry Bay",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/djupivogur_normal.wav",
+          "seconds": 0.94
+        }
+      },
+      "whisperHeard": "djúpivogur",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "breidamerkursandur": {
+      "local": "Breiðamerkursandur",
+      "respelling": "BRAY-dha-mehr-kur-sahn-dur",
+      "kind": "place",
+      "meaning": "Diamond Beach",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/breidamerkursandur_normal.wav",
+          "seconds": 1.34
+        }
+      },
+      "whisperHeard": "breiðamerkusandur",
+      "whisperMatch": 0.97,
+      "showInApp": true
+    },
+    "fjallsarlon": {
+      "local": "Fjallsárlón",
+      "respelling": "FYAHTLS-owr-lohn",
+      "kind": "place",
+      "meaning": "Fjallsárlón",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/fjallsarlon_normal.wav",
+          "seconds": 1.01
+        }
+      },
+      "whisperHeard": "fjallsárlón",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "skaftafell": {
+      "local": "Skaftafell",
+      "respelling": "SKAHF-ta-fehtl",
+      "kind": "place",
+      "meaning": "Skaftafell and Skaftafellsjökull trail",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/skaftafell_normal.wav",
+          "seconds": 1.14
+        }
+      },
+      "whisperHeard": "skaftarell",
+      "whisperMatch": 0.9,
+      "showInApp": true
+    },
+    "svartifoss": {
+      "local": "Svartifoss",
+      "respelling": "SVAR-tih-faws",
+      "kind": "place",
+      "meaning": "Svartifoss",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/svartifoss_normal.wav",
+          "seconds": 1.1
+        }
+      },
+      "whisperHeard": "svarti fossu",
+      "whisperMatch": 0.91,
+      "showInApp": true
+    },
+    "dverghamrar": {
+      "local": "Dverghamrar",
+      "respelling": "DVEHRK-ham-rar",
+      "kind": "place",
+      "meaning": "Dverghamrar basalt columns",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/dverghamrar_normal.wav",
+          "seconds": 1.0
+        }
+      },
+      "whisperHeard": "dverghambar",
+      "whisperMatch": 0.91,
+      "showInApp": true
+    },
+    "eldhraun": {
+      "local": "Eldhraun",
+      "respelling": "EHLD-hroyn",
+      "kind": "place",
+      "meaning": "Foss á Síðu and Eldhraun",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/eldhraun_normal.wav",
+          "seconds": 0.78
+        }
+      },
+      "whisperHeard": "eldhraun",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "vik": {
+      "local": "Vík",
+      "respelling": "VEEK",
+      "kind": "place",
+      "meaning": "Vík",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/vik_normal.wav",
+          "seconds": 0.36
+        }
+      },
+      "whisperHeard": "vík",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "lava-show": {
+      "local": "Lava Show",
+      "respelling": "LAH-va SHOH",
+      "kind": "place",
+      "meaning": "Lava Show Vík",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/lava-show_normal.wav",
+          "seconds": 1.01
+        }
+      },
+      "whisperHeard": "laða of",
+      "whisperMatch": 0.62,
+      "showInApp": false
+    },
+    "kvernufoss": {
+      "local": "Kvernufoss",
+      "respelling": "KVEHR-nu-faws",
+      "kind": "place",
+      "meaning": "Kvernufoss",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/kvernufoss_normal.wav",
+          "seconds": 0.89
+        }
+      },
+      "whisperHeard": "farnufoss",
+      "whisperMatch": 0.74,
+      "showInApp": false
+    },
+    "gljufrabui": {
+      "local": "Gljúfrabúi",
+      "respelling": "GLYOO-fra-BOO-ih",
+      "kind": "place",
+      "meaning": "Gljúfrabúi",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/gljufrabui_normal.wav",
+          "seconds": 1.04
+        }
+      },
+      "whisperHeard": "kljúfrabúi",
+      "whisperMatch": 0.9,
+      "showInApp": true
+    },
+    "hella": {
+      "local": "Hella",
+      "respelling": "HET-la",
+      "kind": "place",
+      "meaning": "Caves of Hella",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/hella_normal.wav",
+          "seconds": 0.72
+        }
+      },
+      "whisperHeard": "hella",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "urridafoss": {
+      "local": "Urriðafoss",
+      "respelling": "UHR-rih-dha-faws",
+      "kind": "place",
+      "meaning": "Urriðafoss",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/urridafoss_normal.wav",
+          "seconds": 1.09
+        }
+      },
+      "whisperHeard": "urriðafossi",
+      "whisperMatch": 0.95,
+      "showInApp": true
+    },
+    "bruarfoss": {
+      "local": "Brúarfoss",
+      "respelling": "BROO-ar-faws",
+      "kind": "place",
+      "meaning": "Brúarfoss",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/bruarfoss_normal.wav",
+          "seconds": 0.95
+        }
+      },
+      "whisperHeard": "brúarfoss",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "kerid": {
+      "local": "Kerið",
+      "respelling": "KEH-rihdh",
+      "kind": "place",
+      "meaning": "Kerið crater",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/kerid_normal.wav",
+          "seconds": 0.75
+        }
+      },
+      "whisperHeard": "herið",
+      "whisperMatch": 0.8,
+      "showInApp": true
+    },
+    "raufarholshellir": {
+      "local": "Raufarhólshellir",
+      "respelling": "ROY-var-hohls-HEHT-lihr",
+      "kind": "place",
+      "meaning": "Raufarhólshellir lava tunnel",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/raufarholshellir_normal.wav",
+          "seconds": 1.38
+        }
+      },
+      "whisperHeard": "raufarhólshellir",
       "whisperMatch": 1.0,
       "showInApp": true
     }

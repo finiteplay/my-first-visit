@@ -386,6 +386,252 @@
           "url": "provider-specific"
         }
       ]
+    },
+    {
+      "id": "ring-road-clockwise-10-nights",
+      "title": "Clockwise Ring Road in ten nights, paved roads only",
+      "fits": [
+        "self-drive",
+        "late-summer",
+        "two-drivers"
+      ],
+      "duration": "10 nights",
+      "pace": "Reykjavík → Snæfellsnes → Akureyri → Mývatn and the east → Höfn → Skaftafell → Vík → Hveragerði → Golden Circle → Reykjavík → Blue Lagoon",
+      "whoFor": "Two drivers with ten nights in late summer who want the whole ring plus Snæfellsnes, are comfortable with long driving days, and want to stay on ordinary paved roads.",
+      "whyItWorks": "Every day has a fixed anchor (a timed booking or a main sight) and a list of optional stops you can drop. The long transfer days sit beside slower ones, and a flexible block in Reykjavík absorbs a skipped sight.",
+      "tradeoff": "You see a great deal and move almost every day. The price is little time at any one place, long days in the car and no room for a rest day except the two flexible ones.",
+      "skipIf": "You have fewer than about nine nights, only one comfortable driver, or want to be in a place for more than a night. Choose the South Coast route or a shorter circuit instead.",
+      "days": [
+        {
+          "base": "Reykjavík",
+          "travel": "Collect the car, then keep the day within walking distance of where you sleep.",
+          "highlights": [
+            "Whales of Iceland and Aurora Reykjavík (indoors, one combined ticket)",
+            "The Old Harbour and Harpa waterfront walk",
+            "Magic Ice (timed booking)",
+            "An evening stroll on Laugavegur and Skólavörðustígur"
+          ],
+          "ifTired": "Skip the evening walk and keep one indoor museum.",
+          "placeIds": [
+            "sight-whales",
+            "sight-aurora-reykjavik",
+            "sight-old-harbour",
+            "sight-harpa",
+            "sight-magic-ice",
+            "sight-laugavegur"
+          ]
+        },
+        {
+          "base": "Stykkishólmur, Snæfellsnes",
+          "travel": "A full day on ordinary signed roads. The stops are close together once you are on the peninsula.",
+          "highlights": [
+            "Ytri Tunga seal beach",
+            "Búðakirkja",
+            "The Arnarstapi coastal path",
+            "Lóndrangar and Djúpalónssandur",
+            "Kirkjufellsfoss",
+            "Bjarnarhöfn Shark Museum"
+          ],
+          "ifTired": "Drop Ytri Tunga and the long coastal walk; keep Djúpalónssandur and Kirkjufellsfoss.",
+          "placeIds": [
+            "sight-ytri-tunga",
+            "sight-budakirkja",
+            "sight-arnarstapi-hellnar",
+            "sight-londrangar",
+            "sight-djupalonssandur",
+            "sight-kirkjufellsfoss",
+            "sight-bjarnarhofn"
+          ]
+        },
+        {
+          "base": "Akureyri",
+          "travel": "A long transfer day. Break it with one real stop, use signed pullouts only, and plan fuel and a rest before the mountain road.",
+          "highlights": [
+            "Glaumbær turf farm",
+            "Skagafjörður and Öxnadalur scenery from signed pullouts",
+            "An easy evening in Akureyri"
+          ],
+          "ifTired": "Shorten Glaumbær to a walk around the turf houses.",
+          "placeIds": [
+            "sight-glaumbaer"
+          ]
+        },
+        {
+          "base": "Egilsstaðir area",
+          "travel": "The longest and most compressed day: start early and treat every stop after Goðafoss as optional. Check wind and road status first.",
+          "highlights": [
+            "Akureyri Botanical Garden",
+            "Goðafoss (west bank)",
+            "Skútustaðagígar",
+            "Hverir",
+            "Dettifoss west side, only via paved Road 862 when it is open",
+            "Vök Baths at the end, only if time and energy allow"
+          ],
+          "ifTired": "Drop the garden and Dettifoss. Goðafoss, Skútustaðagígar and Hverir are the core.",
+          "weatherSwap": "If wind or a road closure rules out Dettifoss, go straight from Hverir toward Egilsstaðir and keep the evening for Vök.",
+          "placeIds": [
+            "sight-akureyri-botanical-garden",
+            "sight-godafoss",
+            "sight-skutustadagigar",
+            "sight-hverir",
+            "sight-dettifoss",
+            "sight-vok-baths"
+          ]
+        },
+        {
+          "base": "Höfn area",
+          "travel": "Stay on Route 1 through the Eastfjords. Do not take Road 939 (Öxi), even if navigation suggests it.",
+          "highlights": [
+            "Hengifoss and Litlanesfoss hike",
+            "Petra's Stone Collection in Stöðvarfjörður, if you want a longer stop",
+            "Fáskrúðsfjörður harbor",
+            "Djúpivogur and the Eggs of Merry Bay"
+          ],
+          "ifTired": "Do the waterfall hike in the morning, then keep the rest to short photo stops.",
+          "placeIds": [
+            "sight-hengifoss",
+            "sight-petras-stone-collection",
+            "sight-faskrudsfjordur",
+            "sight-djupivogur"
+          ]
+        },
+        {
+          "base": "Skaftafell",
+          "flexible": true,
+          "travel": "A deliberately slower day with a short drive. Use it to recover, or swap in extra time at the lagoons.",
+          "highlights": [
+            "Jökulsárlón from the shore (no boat tour)",
+            "Diamond Beach",
+            "Fjallsárlón, only if the access surface is fine",
+            "The Skaftafellsjökull viewpoint trail, or a shorter walk from the visitor center"
+          ],
+          "ifTired": "Skip Fjallsárlón and take the shorter walk.",
+          "placeIds": [
+            "sight-jokulsarlon",
+            "sight-diamond-beach",
+            "sight-fjallsarlon",
+            "sight-skaftafell"
+          ]
+        },
+        {
+          "base": "Vík area",
+          "travel": "Paved Route 1 only. Skip Fjaðrárgljúfur (its approach is signed F206) and the rough upper Dyrhólaey road.",
+          "highlights": [
+            "Svartifoss hike (start early)",
+            "Dverghamrar",
+            "Foss á Síðu and the Eldhraun moss",
+            "Reynisfjara, well back from the surf",
+            "A break in Vík",
+            "Lava Show (timed booking)"
+          ],
+          "ifTired": "Shorten the Svartifoss loop or skip Dverghamrar.",
+          "placeIds": [
+            "sight-svartifoss",
+            "sight-dverghamrar",
+            "sight-foss-a-sidu",
+            "sight-reynisfjara",
+            "sight-vik",
+            "sight-lava-show"
+          ]
+        },
+        {
+          "base": "Hveragerði area",
+          "travel": "Waterfalls first, with a booked cave tour as the anchor in the middle of the day.",
+          "highlights": [
+            "Skógafoss",
+            "Kvernufoss",
+            "Seljalandsfoss and Gljúfrabúi",
+            "Caves of Hella (guided tour)",
+            "Urriðafoss"
+          ],
+          "ifTired": "Skip Kvernufoss and Urriðafoss.",
+          "placeIds": [
+            "sight-skogafoss",
+            "sight-kvernufoss",
+            "sight-seljalandsfoss",
+            "sight-gljufrabui",
+            "sight-caves-of-hella",
+            "sight-urridafoss"
+          ]
+        },
+        {
+          "base": "Reykjavík area",
+          "travel": "A Golden Circle day that ends with a booked lava-tunnel tour, so build in a weather and traffic buffer.",
+          "highlights": [
+            "Þingvellir",
+            "Brúarfoss",
+            "Geysir and Strokkur",
+            "Gullfoss",
+            "Kerið",
+            "Raufarhólshellir lava tunnel (timed tour)"
+          ],
+          "ifTired": "Drop Brúarfoss or Kerið; keep the tour.",
+          "placeIds": [
+            "sight-thingvellir",
+            "sight-bruarfoss",
+            "sight-geysir",
+            "sight-gullfoss",
+            "sight-kerid",
+            "sight-raufarholshellir"
+          ]
+        },
+        {
+          "base": "Reykjavík",
+          "flexible": true,
+          "travel": "A city day with a built-in flexible block: use it for a sight you missed, or for rest.",
+          "highlights": [
+            "Perlan",
+            "A flexible central Reykjavík block (Hallgrímskirkja, Laugavegur, a missed first-day sight)",
+            "Mink Viking portrait",
+            "Sky Lagoon and the seven-step ritual"
+          ],
+          "ifTired": "Skip the flexible block and arrive early at the lagoon.",
+          "placeIds": [
+            "sight-perlan",
+            "sight-hallgrimskirkja",
+            "sight-mink",
+            "sight-laugavegur"
+          ]
+        },
+        {
+          "base": "Keflavík airport (departure)",
+          "travel": "Leave a generous buffer for the rental return and the airport.",
+          "highlights": [
+            "Blue Lagoon on the way to the airport (pre-booked)",
+            "A last slow morning in Reykjavík"
+          ],
+          "ifTired": "Skip the last morning walk and go straight to the lagoon."
+        }
+      ],
+      "seasonNotes": "Planned for early September. Daylight is shorter than in midsummer, some small museums, cafés and campsites keep seasonal hours, and highland roads begin to close (this route avoids them anyway). Autumn storms can arrive from early September, so keep the weather swap days in mind. In winter this route would be a different trip, with short days and mountain-pass closures.",
+      "safety": "Check road conditions, weather and Safetravel every morning. Stay off F-roads, Road 939 (Öxi), the east-side Dettifoss gravel road and the rough upper Dyrhólaey road. Never stop on the carriageway for a photo, and stay back from surf and ice.",
+      "limits": "This route is built from one traveler's plan, not a trip report, so it shows a workable order and sensible optional stops, not proof that the days fit the time. Add 15 to 30 minutes to any stop for weather, parking and photos.",
+      "liveChecks": [
+        {
+          "label": "Official road conditions and pass closures",
+          "url": "https://umferdin.is/en"
+        },
+        {
+          "label": "Official weather and warnings",
+          "url": "https://en.vedur.is/"
+        },
+        {
+          "label": "Safetravel alerts",
+          "url": "https://safetravel.is/travel-conditions/"
+        },
+        {
+          "label": "Opening hours and booking rules for timed attractions",
+          "url": "provider-specific"
+        }
+      ],
+      "sourceIds": [
+        "i001",
+        "t006",
+        "b002",
+        "o017",
+        "o001",
+        "o003"
+      ]
     }
   ]
 }

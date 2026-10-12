@@ -96,6 +96,17 @@
   const paragraphs = items => (Array.isArray(items) ? items : items ? [items] : []).map(value => `<p>${escapeHtml(value)}</p>`).join("");
   const practiceLink = item => item ? `<div class="practice-link" data-lesson-id="${escapeHtml(item.lessonId)}"><strong>${escapeHtml(item.label)} <span aria-hidden="true">→</span></strong><span>${escapeHtml(item.status)}</span></div>` : "";
 
+  // Live-condition links: the same three official services everywhere they matter.
+  const LIVE = {
+    weather: { label: "Weather and warnings", url: "https://en.vedur.is/" },
+    roads: { label: "Road conditions", url: "https://umferdin.is/en" },
+    safetravel: { label: "Safetravel alerts", url: "https://safetravel.is/travel-conditions/" }
+  };
+  const liveStrip = keys => `<p class="live-strip"><strong>Check today:</strong> ${keys.map(key => `<a href="${escapeHtml(LIVE[key].url)}" target="_blank" rel="noopener">${escapeHtml(LIVE[key].label)}</a>`).join(" · ")}</p>`;
+  const liveCheckList = checks => checks?.length ? `<h2>Check live</h2><ul>${checks.map(check => /^https?:/.test(check.url || "")
+    ? `<li><a href="${escapeHtml(check.url)}" target="_blank" rel="noopener">${escapeHtml(check.label)} <span aria-hidden="true">↗</span></a></li>`
+    : `<li>${escapeHtml(check.label)} <span class="muted">(ask the provider)</span></li>`).join("")}</ul>` : "";
+
   function briefingHtml(item) {
     return `<p class="article-meta">Destination briefing · ${item.readingMinutes} minutes · ${escapeHtml(item.researchedAsOf)}</p>
       <h1 id="reader-title">${escapeHtml(item.title)}</h1>
@@ -119,7 +130,7 @@
       ${item.whatToExpect ? `<h2>What to expect</h2><p>${escapeHtml(item.whatToExpect)}</p>` : ""}
       ${item.checklist ? `<h2>Before you go</h2>${list(item.checklist)}` : ""}
       ${item.avoid ? `<h2>Avoid</h2>${list(item.avoid)}` : ""}
-      ${item.liveChecks?.length ? `<h2>Check live</h2><ul>${item.liveChecks.map(check => /^https?:/.test(check.url || "") ? `<li><a href="${escapeHtml(check.url)}" target="_blank" rel="noopener">${escapeHtml(check.label)} <span aria-hidden="true">↗</span></a></li>` : `<li>${escapeHtml(check.label)} <span class="muted">(ask the provider)</span></li>`).join("")}</ul>` : ""}
+      ${liveCheckList(item.liveChecks)}
       ${item.ourTake ? `<div class="callout"><strong>Our take</strong><p>${escapeHtml(item.ourTake)}</p></div>` : ""}
       ${item.warning ? `<div class="callout"><strong>Keep in mind</strong><p>${escapeHtml(item.warning)}</p></div>` : ""}
       ${item.limits ? `<h2>What this evidence cannot tell you</h2><p>${escapeHtml(item.limits)}</p>` : ""}`;
@@ -129,14 +140,16 @@
     return `<p class="article-meta">Practical route · ${escapeHtml(item.duration)}</p>
       <h1 id="reader-title">${escapeHtml(item.title)}</h1>
       <p class="hook">${escapeHtml(item.pace)}</p>
+      ${liveStrip(["weather", "roads", "safetravel"])}
       ${item.whoFor ? `<p><strong>Who it suits:</strong> ${escapeHtml(item.whoFor)}</p>` : ""}
       ${item.whyItWorks ? `<h2>Why it works</h2><p>${escapeHtml(item.whyItWorks)}</p>` : ""}
-      ${item.days?.length ? `<h2>Day by day</h2><div class="option-grid">${item.days.map((day, index) => `<div class="option route-day"><strong>Day ${index + 1}${day.flexible ? " · flexible" : ""}</strong><p class="where">Sleep: ${escapeHtml(day.base)}</p><p><em>Getting around:</em> ${escapeHtml(day.travel)}</p>${list(day.highlights)}${day.weatherSwap ? `<p><em>If the weather turns:</em> ${escapeHtml(day.weatherSwap)}</p>` : ""}${day.ifTired ? `<p><em>If you are tired:</em> ${escapeHtml(day.ifTired)}</p>` : ""}</div>`).join("")}</div><p class="article-meta">Drive times are planning estimates unless marked official; confirm them on a live map.</p>` : ""}
+      ${item.days?.length ? `<h2>Day by day</h2><div class="option-grid">${item.days.map((day, index) => `<div class="option route-day"><strong>Day ${index + 1}${day.flexible ? " · flexible" : ""}</strong><p class="where">Sleep: ${escapeHtml(day.base)}</p><p><em>Getting around:</em> ${escapeHtml(day.travel)}</p>${list(day.highlights)}${day.placeIds?.length ? `<p class="route-places">${day.placeIds.map(id => { const place = data.places.find(p => p.id === id); return place ? `<button type="button" class="place-chip" data-open="place:${escapeHtml(id)}">${escapeHtml(place.name)}</button>` : ""; }).join("")}</p>` : ""}${day.weatherSwap ? `<p><em>If the weather turns:</em> ${escapeHtml(day.weatherSwap)}</p>` : ""}${day.ifTired ? `<p><em>If you are tired:</em> ${escapeHtml(day.ifTired)}</p>` : ""}</div>`).join("")}</div><p class="article-meta">Drive times are planning estimates unless marked official; confirm them on a live map.</p>` : ""}
       ${item.seasonNotes ? `<h2>How the season changes it</h2><p>${escapeHtml(item.seasonNotes)}</p>` : ""}
       ${item.tradeoff ? `<h2>The trade-off</h2><p>${escapeHtml(item.tradeoff)}</p>` : ""}
       ${item.skipIf ? `<div class="callout"><strong>Skip it if</strong><p>${escapeHtml(item.skipIf)}</p></div>` : ""}
+      ${item.limits ? `<h2>What this route cannot tell you</h2><p>${escapeHtml(item.limits)}</p>` : ""}
       ${item.safety ? `<div class="callout"><strong>Safety boundary</strong><p>${escapeHtml(item.safety)}</p></div>` : ""}
-      ${item.liveChecks ? `<h2>Check live</h2>${list(item.liveChecks)}` : ""}`;
+      ${liveCheckList(item.liveChecks)}`;
   }
 
   // Where a place is: a Google Maps link plus a small map with one dot. Places near the capital use
@@ -209,7 +222,7 @@
   function placeHtml(item) {
     const gallery = selectedPhotos[item.id] || [];
     const photo = gallery[0];
-    const detail = placeDetails[item.id] || item.whyGo;
+    const detail = Array.isArray(item.description) ? item.description.join("\n\n") : (item.description || placeDetails[item.id] || item.whyGo);
     const detailParagraphs = detail.split(/\n\n/).map(value => `<p class="place-description">${escapeHtml(value)}</p>`).join("");
     return `<p class="article-meta">Place card · ${escapeHtml(item.region)} · ${escapeHtml(item.category)}</p>
       ${photo ? `<figure class="place-photo"><div class="photo-carousel" data-carousel><button type="button" class="carousel-arrow prev" aria-label="Previous photo">‹</button><div class="carousel-track">${gallery.map((image, index) => `<img class="carousel-image${index === 0 ? " active" : ""}" src="${escapeHtml(image.file)}" alt="${escapeHtml(photoAlt(item, index))}" style="${escapeHtml(photoStyle(image))}" width="1440" height="960" ${index ? "loading=\"lazy\"" : ""}>`).join("")}</div><button type="button" class="carousel-arrow next" aria-label="Next photo">›</button></div><figcaption>${gallery.map((image, index) => `<a href="${escapeHtml(image.sourceUrl)}" rel="noopener">Photo ${index + 1}</a>: ${escapeHtml(photoCredit(image))}`).join(" · ")}</figcaption></figure>` : `<div class="place-photo-placeholder" role="img" aria-label="Photo placeholder for ${escapeHtml(item.name)}"><span>Photo placeholder</span><small>Rights-cleared destination photo to be added</small></div>`}
@@ -223,6 +236,7 @@
       ${detailParagraphs}
       <p class="place-time"><strong>Time to allow:</strong> ${escapeHtml(item.timeNeeded)}</p>
       ${placeMinimap(item)}
+      ${liveStrip(["weather"].concat(item.region === "Capital area" ? [] : ["roads"], item.category === "Nature" ? ["safetravel"] : []))}
       <div class="callout"><strong>Photo and audio status</strong><p>${photo ? "This destination-specific photo is a licensing candidate and still needs final rights, accuracy and accessibility review." : "No destination-specific photo is bundled yet. This card intentionally remains an explicit pending state rather than showing an unrelated image."}${placeAudio[item.local] ? ` Pronunciation audio is a draft synthetic voice, not a native-speaker recording, and has not had native review. ${escapeHtml(data.placeAudio.credit)}.` : " Pronunciation audio is not available yet; the control is a placeholder until a native recording or approved voice is added."}</p></div>`;
   }
 
@@ -344,6 +358,32 @@
       </div>`;
   }
 
+  function renderBestTime() {
+    const info = data.basics?.bestTime;
+    const host = document.querySelector("#basics-besttime");
+    if (!info || !host) return;
+    const bullets = items => `<ul>${items.map(value => `<li>${escapeHtml(value)}</li>`).join("")}</ul>`;
+    host.innerHTML = `
+      <p class="besttime-intro">${escapeHtml(info.intro)}</p>
+      <div class="season-grid">${info.seasons.map(season => `
+        <article class="season-card season-${escapeHtml(season.id)}">
+          <header><span class="season-icon" aria-hidden="true">${season.icon || ""}</span><div><h4>${escapeHtml(season.name)}</h4><p class="season-months">${escapeHtml(season.months)}</p></div></header>
+          <p class="season-daylight">${escapeHtml(season.daylight)}</p>
+          <p class="name-label">Good for</p>${bullets(season.goodFor)}
+          <p class="name-label">Watch for</p>${bullets(season.watchFor)}
+        </article>`).join("")}</div>
+      <p class="besttime-takeaway">${escapeHtml(info.takeaway)}</p>
+      <p class="basics-note">${escapeHtml(info.limits)}</p>`;
+  }
+
+  function renderDailyChecks() {
+    const info = data.basics?.dailyChecks;
+    const host = document.querySelector("#basics-checks");
+    if (!info || !host) return;
+    host.innerHTML = `<p class="besttime-intro">${escapeHtml(info.intro)}</p>
+      <div class="check-grid">${info.links.map(link => `<a class="check-card" href="${escapeHtml(link.url)}" target="_blank" rel="noopener"><strong>${escapeHtml(link.label)} <span aria-hidden="true">↗</span></strong><span>${escapeHtml(link.why)}</span></a>`).join("")}</div>`;
+  }
+
   function renderBasics() {
     const basics = data.basics;
     if (!basics) return;
@@ -364,6 +404,8 @@
 
   renderBasics();
   renderMap();
+  renderBestTime();
+  renderDailyChecks();
   renderVolcano();
   renderPlaybooks();
   renderRoutes();

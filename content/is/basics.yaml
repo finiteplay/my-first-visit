@@ -87,9 +87,17 @@
     "e005",
     "e006",
     "e007",
+    "o001",
+    "o003",
+    "o004",
     "o006",
+    "o010",
+    "o017",
     "o019",
-    "p012"
+    "p012",
+    "p018",
+    "p019",
+    "p020"
   ],
   "volcano": {
     "title": "The volcano everyone has heard of",
@@ -122,6 +130,132 @@
     "sourceIds": [
       "e006",
       "e007"
+    ]
+  },
+  "bestTime": {
+    "title": "Best time to visit",
+    "intro": "There is no single best month. Each season gives you something and takes something away, so start with what you came for.",
+    "seasons": [
+      {
+        "id": "summer",
+        "name": "Summer",
+        "months": "June to August",
+        "icon": "☀️",
+        "daylight": "Very long days, with no real darkness around midsummer (operator guides).",
+        "goodFor": [
+          "Every region is reachable; highland roads usually open from mid- or late June until mid-September (official)",
+          "Long days for long drives and late sightseeing",
+          "Whale watching and hiking"
+        ],
+        "watchFor": [
+          "The busiest and most expensive season: book lodging and tours early",
+          "No northern lights: the sky is too bright, and operators put the aurora season at roughly late August to April",
+          "Weather is still cool and changeable"
+        ],
+        "sourceIds": [
+          "o010",
+          "p018",
+          "p020"
+        ]
+      },
+      {
+        "id": "autumn",
+        "name": "Early autumn",
+        "months": "September to early October",
+        "icon": "🍂",
+        "daylight": "About 15 hours by late August, shrinking quickly (official).",
+        "goodFor": [
+          "Northern lights chances are already high, and the autumn colors arrive",
+          "Fewer people than in July, though September and October are still described as the busiest time after summer (official)",
+          "Berry picking and sheep round-ups in September"
+        ],
+        "watchFor": [
+          "Autumn storms can arrive from early September (official)",
+          "Campsites are open only from May to September and highland roads close from mid-September (official)",
+          "Small museums and cafés may keep seasonal hours"
+        ],
+        "sourceIds": [
+          "o010",
+          "p018"
+        ]
+      },
+      {
+        "id": "winter",
+        "name": "Winter",
+        "months": "November to March",
+        "icon": "❄️",
+        "daylight": "Only a few hours around December (operator guides).",
+        "goodFor": [
+          "The best odds for northern lights, with long dark evenings",
+          "Ice cave tours, which operators say are generally possible only in winter",
+          "Snowy landscapes and quieter sights"
+        ],
+        "watchFor": [
+          "Cold, wind, ice and very short days",
+          "Mountain-pass closures and unfamiliar winter driving",
+          "Cloud can hide the lights, and tours can be canceled"
+        ],
+        "sourceIds": [
+          "p018",
+          "p019",
+          "o004"
+        ]
+      },
+      {
+        "id": "spring",
+        "name": "Spring",
+        "months": "April to May",
+        "icon": "🌱",
+        "daylight": "About 13 hours in early April, up to 16 by the end of the month (official).",
+        "goodFor": [
+          "Daylight returns quickly and crowds are smaller than in summer",
+          "Ice caves and skiing are still possible in early spring, and puffins arrive (official)",
+          "Lambing season and newborn foals in early May"
+        ],
+        "watchFor": [
+          "Northern lights get harder to spot as April goes on (official)",
+          "Weather stays changeable, and campsites open only from May (official)"
+        ],
+        "sourceIds": [
+          "o010",
+          "p018"
+        ]
+      }
+    ],
+    "takeaway": "Our take: for a first trip, June to August is the easiest, September to early October is the best balance if you want a chance at the northern lights without winter driving, and November to March only makes sense if the lights or ice caves are the point and you are ready for winter roads. Whenever you go, leave room in the plan for weather.",
+    "limits": "Season dates shift from year to year, and operator guides have a commercial interest. Use them as a guide, not a guarantee.",
+    "sourceIds": [
+      "o010",
+      "o017",
+      "p018",
+      "p019",
+      "p020",
+      "o004"
+    ]
+  },
+  "dailyChecks": {
+    "title": "Check every morning",
+    "intro": "Weather and roads decide the day in Iceland more than the plan does. These three official services take a minute and are worth checking again when your route changes.",
+    "links": [
+      {
+        "label": "Weather and warnings",
+        "url": "https://en.vedur.is/",
+        "why": "The Icelandic Met Office: forecasts, wind and weather warnings."
+      },
+      {
+        "label": "Road conditions",
+        "url": "https://umferdin.is/en",
+        "why": "Current road status, closures and conditions on the traffic map."
+      },
+      {
+        "label": "Safetravel alerts",
+        "url": "https://safetravel.is/travel-conditions/",
+        "why": "Travel conditions and safety alerts from Iceland's search-and-rescue association."
+      }
+    ],
+    "sourceIds": [
+      "o003",
+      "o001"
     ]
   }
 }

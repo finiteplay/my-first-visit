@@ -27,7 +27,7 @@ MODELS = Path.home() / ".finiteplay" / "models" / "piper-is"
 CREDIT = ("Synthetic voice: Piper Icelandic voice trained on Talrómur 1, "
           "Reykjavík University and SÍM, CC BY 4.0")
 # English-language brand names are not Icelandic names, so no Icelandic voice is offered.
-ENGLISH_BRANDS = {"Aurora Reykjavík", "FlyOver Iceland", "Mink Viking Portrait"}
+ENGLISH_BRANDS = {"Aurora Reykjavík", "FlyOver Iceland", "Mink Viking Portrait", "Magic Ice Reykjavík", "Lava Show"}
 ATTEMPTS = 8  # takes tried per clip (variants alternate)
 GOOD_ENOUGH = 0.95
 SHOW_THRESHOLD = 0.75  # Whisper match on the normal take; below this a native listener must decide
@@ -138,9 +138,12 @@ def main() -> int:
         path = out_dir / f"{key}_normal.wav"
         best = None  # Piper sampling is random: keep the take Whisper hears best
         # Very short words are said more reliably with a closing period: alternate the variants.
-        variants = [said] if said[-1:] in "?!.," else [said, said + "."]
+        variants = [(said, 1.0)] if said[-1:] in "?!.," else [(said, 1.0), (said + ".", 1.0)]
+        if len(said) <= 6 and said[-1:] not in "?!.,":
+            variants += [(said + ".", 0.9), (said + "!", 1.0)]  # a lone short word is the hardest to get right
         for attempt in range(ATTEMPTS if checker else 1):
-            seconds = synth(voice, variants[attempt % len(variants)], path, 1.0)
+            text, scale = variants[attempt % len(variants)]
+            seconds = synth(voice, text, path, scale)
             if not checker:
                 best = (0.0, path.read_bytes(), seconds, "")
                 break

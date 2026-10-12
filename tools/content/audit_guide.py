@@ -116,6 +116,29 @@ def basics_audit(basics, evidence_ids, root_dir=Path('.')):
             errors.append("basics.yaml volcano image: NC/ND licenses are not allowed.")
         if not (root_dir / str(image.get("file", ""))).exists():
             errors.append("basics.yaml volcano image: file is missing on disk.")
+    checks = basics.get("dailyChecks")
+    if checks:
+        if len(checks.get("links", [])) < 2:
+            errors.append("basics.yaml dailyChecks: needs 2+ links (weather and roads).")
+        for link in checks.get("links", []):
+            if not str(link.get("url", "")).startswith("https://"):
+                errors.append(f"basics.yaml dailyChecks {link.get('label')}: url must use https.")
+        if set(checks.get("sourceIds", [])) - evidence_ids:
+            errors.append("basics.yaml dailyChecks: unknown source IDs.")
+    best = basics.get("bestTime")
+    if best:
+        seasons = best.get("seasons", [])
+        if len(seasons) < 4:
+            errors.append("basics.yaml bestTime: needs all four seasons.")
+        for season in seasons:
+            for field in ("months", "daylight", "goodFor", "watchFor"):
+                if not season.get(field):
+                    errors.append(f"basics.yaml bestTime {season.get('id')}: {field} is required.")
+            unknown = set(season.get("sourceIds", [])) - evidence_ids
+            if unknown or not season.get("sourceIds"):
+                errors.append(f"basics.yaml bestTime {season.get('id')}: needs sources that exist in the corpus {sorted(unknown)}.")
+        if not str(best.get("takeaway", "")).strip():
+            errors.append("basics.yaml bestTime: a takeaway is required.")
     if len(basics.get("numbers", [])) < 4:
         errors.append("basics.yaml: needs 4+ numbers.")
     for number in basics.get("numbers", []):

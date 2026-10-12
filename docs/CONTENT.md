@@ -246,6 +246,24 @@ is derived from the playbook models rather than from an approved route example:
 Drive times and opening periods are planning estimates; label them and send the reader to a
 live source for the actual day.
 
+### Best time to visit
+
+Status: **built for the Iceland draft; checked by `audit_guide.py`.**
+
+The basics section has a "Best time to visit" block in `basics.yaml` under `bestTime`: four season cards
+(months, daylight, good for, watch for, sources) and a short takeaway that says which season suits which
+traveler. Facts about roads, campsites, daylight and the aurora should come from an official source when one
+exists and say so in the card; operator and rental-company claims are labeled as such. Keep it to what the
+season changes for a traveler; leave price and weather figures to the live checks.
+
+### Weather and road-status links
+
+The same three official services (national weather service, road administration, the safety association's
+travel conditions) are linked wherever a traveler decides to go somewhere: the basics section ("Check every
+morning", `dailyChecks`), the weather section, the top of every route, and every place card ("Check today",
+with roads only for places outside the capital area and the safety link only for nature stops). A playbook or
+route `liveChecks` entry with a real URL is shown as a link. A new country needs the equivalent three services.
+
 ### Country map and number tiles
 
 Status: **built for the Iceland draft; the map is checked by `audit_guide.py`.**

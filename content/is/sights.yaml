@@ -761,6 +761,1386 @@
         "kind": "official",
         "checkedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "sight-old-harbour",
+      "name": "Old Harbour",
+      "local": "Gamla höfnin",
+      "respelling": "GAHM-la HURP-nin",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Landmark",
+      "tier": "worth-it",
+      "whyGo": "Walk the working harbor between Harpa and the Grandi area, where boats, museums and the sea meet.",
+      "timeNeeded": "45–75 minutes",
+      "bestTime": "Daytime on a dry, calm hour; it is also a good low-effort first-day walk.",
+      "tip": "It is flat and easy, but wind off the sea can be strong, so bring a windproof layer.",
+      "linkedItem": "p15",
+      "location": {
+        "latitude": 64.15167,
+        "longitude": -21.9421,
+        "label": "Old Harbour",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-old-harbour"
+      ],
+      "photo": {
+        "id": "photo-old-harbour",
+        "status": "missing",
+        "brief": "Boats and the harbor with the city or Harpa behind; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "The Old Harbour is the part of Reykjavík where the city still looks at the sea. A short, flat walk from Harpa along the waterfront takes you past fishing and tour boats, harbor-side museums and views across the bay, about 1.5 to 2 miles if you go to the Grandi area and back.",
+        "It works well on a first day: nothing is booked, you can stop wherever you like, and the museums on the way (Whales of Iceland and Aurora Reykjavík are both in the Grandi area) give you a dry fallback if the weather turns. Wind and spray can be sharp, so dress for the wind and not just the temperature."
+      ],
+      "website": {
+        "url": "https://visitreykjavik.is/old-harbour",
+        "label": "Visit Reykjavík page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-laugavegur",
+      "name": "Laugavegur and Skólavörðustígur",
+      "local": "Skólavörðustígur",
+      "respelling": "SKOH-la-vur-dhu-steeg-ur",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Landmark",
+      "tier": "if-you-have-time",
+      "whyGo": "Stroll Reykjavík's main shopping street and the rainbow-painted street that climbs to Hallgrímskirkja.",
+      "timeNeeded": "30–60 minutes",
+      "bestTime": "Early evening for a short, light walk, or any dry daytime hour.",
+      "tip": "Keep it short and flexible; it is a street walk, not a sight with a fixed visit.",
+      "linkedItem": "p35",
+      "location": {
+        "latitude": 64.14554,
+        "longitude": -21.92834,
+        "label": "Laugavegur and Skólavörðustígur",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "itinerary-10-day"
+      ],
+      "photo": {
+        "id": "photo-laugavegur",
+        "status": "missing",
+        "brief": "The rainbow street with the church at the top, from the street; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Laugavegur is Reykjavík's main shopping street, and Skólavörðustígur runs uphill from it toward Hallgrímskirkja with a rainbow painted on the road in summer. Together they make an easy evening walk of shops, galleries and window browsing.",
+        "Treat it as filler that you can drop in anywhere: a first evening after the harbor, a flexible hour before a booking, or a way to return to Hallgrímskirkja. It is the easiest place in the city to buy souvenirs, so decide what you want before you arrive and avoid impulse spending."
+      ]
+    },
+    {
+      "id": "sight-magic-ice",
+      "name": "Magic Ice Reykjavík",
+      "local": "Magic Ice Reykjavík",
+      "respelling": "MAJ-ik ICE RAYK-yah-veek",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Experience",
+      "tier": "if-you-have-time",
+      "whyGo": "Step into a bar carved from ice, with sculptures of Viking-age scenes, on Laugavegur.",
+      "timeNeeded": "45–60 minutes",
+      "bestTime": "Evening or any rainy hour; timed tickets are usual, so check availability.",
+      "tip": "It is cold by design, so use the supplied gloves and poncho, and check the booking terms before you pay.",
+      "linkedItem": "p34",
+      "location": {
+        "latitude": 64.14631,
+        "longitude": -21.93248,
+        "label": "Magic Ice Reykjavík",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-magic-ice"
+      ],
+      "photo": {
+        "id": "photo-magic-ice",
+        "status": "missing",
+        "brief": "The ice bar interior from a licensed or operator-supplied image; no identifiable guests.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Magic Ice Reykjavík is a bar and gallery at Laugavegur 4 where the walls, bar, tables, chairs and even the glasses are carved from ice, with sculptures depicting scenes from Viking history. Booking pages describe a welcome drink in an ice glass and a winter poncho and gloves included.",
+        "It is a themed novelty rather than a cultural sight, so judge it as a one-hour indoor activity that fits an evening or a rainy hour, and compare it with the free options nearby before you book. Operator details and prices change; confirm them on the day."
+      ],
+      "website": {
+        "url": "https://visitreykjavik.is/news/magic-ice-reykjavik",
+        "label": "Visit Reykjavík page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-ytri-tunga",
+      "name": "Ytri Tunga seal beach",
+      "local": "Ytri Tunga",
+      "respelling": "IH-tri TUHN-ga",
+      "region": "Snæfellsnes",
+      "nearestCity": "Búðir",
+      "category": "Nature",
+      "tier": "if-you-have-time",
+      "whyGo": "Look for seals resting on the rocks of a golden-sand beach on the south Snæfellsnes coast.",
+      "timeNeeded": "30–45 minutes",
+      "bestTime": "Calm weather and daylight; seals are more often seen at some tides.",
+      "tip": "Wildlife is not guaranteed. Keep well back and never approach a seal.",
+      "linkedItem": "p16",
+      "location": {
+        "latitude": 64.80276,
+        "longitude": -23.08004,
+        "label": "Ytri Tunga seal beach",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-ytri-tunga"
+      ],
+      "photo": {
+        "id": "photo-ytri-tunga",
+        "status": "missing",
+        "brief": "The beach and rocks from the parking area or path; seals only if they are not disturbed.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Ytri Tunga is a beach on the south side of the Snæfellsnes peninsula, signposted for seal watching. Seals often rest on the rocks and in the shallows, and the beach itself is a pleasant short stop.",
+        "Seals are wild animals and sightings are never guaranteed, so treat the stop as a bonus. Stay well back, keep voices low and do not try for a closer photo."
+      ],
+      "website": {
+        "url": "https://snaefellsnes.is/",
+        "label": "Snæfellsnes tourism site",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-budakirkja",
+      "name": "Búðakirkja",
+      "local": "Búðakirkja",
+      "respelling": "BOO-dha-kirk-ya",
+      "region": "Snæfellsnes",
+      "nearestCity": "Búðir",
+      "category": "Landmark",
+      "tier": "worth-it",
+      "whyGo": "See a small black wooden church standing alone on the edge of a lava field.",
+      "timeNeeded": "20–30 minutes",
+      "bestTime": "Daylight; the setting is the point, so clear or dramatic skies help.",
+      "tip": "It is a short, flat walk. Respect it as a working church and do not enter if it is closed.",
+      "linkedItem": "p38",
+      "location": {
+        "latitude": 64.82166,
+        "longitude": -23.38402,
+        "label": "Búðakirkja",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-budakirkja"
+      ],
+      "photo": {
+        "id": "photo-budakirkja",
+        "status": "missing",
+        "brief": "The church with the lava field and mountains behind, from the path; no identifiable visitors.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Búðakirkja is a small black wooden church at Búðir on the south coast of Snæfellsnes, set against a lava field and the mountains behind it. It is one of the most photographed churches in the country, mostly because there is nothing else around it.",
+        "The visit is a short, flat walk from the parking area. It is a good palate cleanser between longer stops on a Snæfellsnes day; treat it as a place of worship and check whether it is open before you plan to go inside."
+      ],
+      "website": {
+        "url": "https://www.west.is/en/place/budir",
+        "label": "Visit West Iceland page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-arnarstapi-hellnar",
+      "name": "Arnarstapi and Hellnar coastal path",
+      "local": "Arnarstapi",
+      "respelling": "AR-nar-sta-pi",
+      "region": "Snæfellsnes",
+      "nearestCity": "Arnarstapi",
+      "category": "Nature",
+      "tier": "worth-it",
+      "whyGo": "Walk a cliff-top path between two small fishing villages beneath Snæfellsjökull.",
+      "timeNeeded": "1–1.5 hours",
+      "bestTime": "Dry, low-wind weather; the path is exposed.",
+      "tip": "Turn around early in high wind and keep away from cliff edges. You can do it as an out-and-back walk from Arnarstapi.",
+      "linkedItem": "p26",
+      "location": {
+        "latitude": 64.76673,
+        "longitude": -23.62808,
+        "label": "Arnarstapi and Hellnar coastal path",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-arnarstapi-hellnar"
+      ],
+      "photo": {
+        "id": "photo-arnarstapi-hellnar",
+        "status": "missing",
+        "brief": "Basalt cliffs and the coastal path from the trail; no identifiable walkers.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "The coastal path between Arnarstapi and Hellnar follows sea cliffs, basalt formations and bird colonies on the southwest edge of Snæfellsjökull National Park. A common plan is to walk from Arnarstapi toward Hellnar and back, about 2.5 miles in all, with the sea on one side and the glacier-topped mountain on the other.",
+        "The path is exposed, so wind decides the walk: turn around early if gusts make the cliff edge uncomfortable, and keep to the marked path. Stop at the viewpoints rather than at the edge."
+      ],
+      "website": {
+        "url": "https://www.west.is/en/place/arnarstapi",
+        "label": "Visit West Iceland page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-londrangar",
+      "name": "Lóndrangar",
+      "local": "Lóndrangar",
+      "respelling": "LOHN-drown-gar",
+      "region": "Snæfellsnes",
+      "nearestCity": "Arnarstapi",
+      "category": "Nature",
+      "tier": "if-you-have-time",
+      "whyGo": "View two tall basalt pillars, the remains of an ancient volcano, rising from the shore.",
+      "timeNeeded": "20–30 minutes",
+      "bestTime": "Daylight and calm weather; the pillars show best from the viewing area.",
+      "tip": "Stay on the path and well back from the cliff edges.",
+      "linkedItem": "p16",
+      "location": {
+        "latitude": 64.73241,
+        "longitude": -23.7839,
+        "label": "Lóndrangar",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-londrangar"
+      ],
+      "photo": {
+        "id": "photo-londrangar",
+        "status": "missing",
+        "brief": "The pillars from the signed viewpoint; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Lóndrangar are two tall basalt pillars standing near the shore on the southwest of the Snæfellsnes peninsula, the eroded core of an old volcanic crater. They are in Snæfellsjökull National Park and are seen from a signed viewpoint with a short walk.",
+        "It is a quick photo-and-look stop that fits between Arnarstapi and Djúpalónssandur. Cliffs here are high and unfenced in places, so stay on the path and away from the edges."
+      ],
+      "website": {
+        "url": "https://www.ust.is/english/visiting-iceland/snaefellsjokull-national-park/",
+        "label": "Snæfellsjökull National Park page (Environment Agency)",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-djupalonssandur",
+      "name": "Djúpalónssandur",
+      "local": "Djúpalónssandur",
+      "respelling": "DYOO-pa-lohns-sahn-dur",
+      "region": "Snæfellsnes",
+      "nearestCity": "Arnarstapi",
+      "category": "Nature",
+      "tier": "worth-it",
+      "whyGo": "Walk a black pebble beach where fishermen once tested their strength on heavy lifting stones.",
+      "timeNeeded": "40–60 minutes",
+      "bestTime": "Daylight and moderate swell; the beach is at the bottom of a short path.",
+      "tip": "Never approach the surf; the waves here are strong and unpredictable.",
+      "linkedItem": "p26",
+      "location": {
+        "latitude": 64.7521,
+        "longitude": -23.90322,
+        "label": "Djúpalónssandur",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-djupalonssandur"
+      ],
+      "photo": {
+        "id": "photo-djupalonssandur",
+        "status": "missing",
+        "brief": "The black pebble beach and rock arches from the path; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Djúpalónssandur is a black pebble beach on the Snæfellsnes coast reached by a short path through a lava gap. Four named lifting stones lie near the path, traditionally used to test the strength of men who wanted a place on a fishing boat, and you will see rusty fragments of a shipwreck on the beach.",
+        "It is a place for walking and looking, not for the water. Waves can surge much farther up the beach than they appear to, so keep well back from the surf and do not turn your back on the sea."
+      ],
+      "website": {
+        "url": "https://www.ust.is/english/visiting-iceland/snaefellsjokull-national-park/",
+        "label": "Snæfellsjökull National Park page (Environment Agency)",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-kirkjufellsfoss",
+      "name": "Kirkjufellsfoss",
+      "local": "Kirkjufellsfoss",
+      "respelling": "KIRK-yu-fehls-faws",
+      "region": "Snæfellsnes",
+      "nearestCity": "Grundarfjörður",
+      "category": "Nature",
+      "tier": "worth-it",
+      "whyGo": "See a small waterfall in front of Kirkjufell, a mountain shaped like a church steeple.",
+      "timeNeeded": "25–40 minutes",
+      "bestTime": "Daylight with good visibility; it is a classic view, so it can be busy.",
+      "tip": "Do not climb Kirkjufell. Stay on the paths and keep to the parking areas.",
+      "linkedItem": "p15",
+      "location": {
+        "latitude": 64.92616,
+        "longitude": -23.31236,
+        "label": "Kirkjufellsfoss",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-kirkjufellsfoss"
+      ],
+      "photo": {
+        "id": "photo-kirkjufellsfoss",
+        "status": "missing",
+        "brief": "The falls with Kirkjufell behind, from the viewpoint; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Kirkjufellsfoss is a small, stepped waterfall below the road near Grundarfjörður, and the reason people stop is the mountain behind it: Kirkjufell, whose name means church mountain, stands alone by the coast and is one of the most photographed views in Iceland.",
+        "The stop is short and close to the parking area. Do not climb the mountain, and keep to the marked paths, which have been worn out by visitors; give other people room at the viewpoint."
+      ],
+      "website": {
+        "url": "https://www.west.is/en/place/kirkjufellsfoss",
+        "label": "Visit West Iceland page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-bjarnarhofn",
+      "name": "Bjarnarhöfn Shark Museum",
+      "local": "Bjarnarhöfn",
+      "respelling": "BYAR-nar-hurpn",
+      "region": "Snæfellsnes",
+      "nearestCity": "Stykkishólmur",
+      "category": "Museum",
+      "tier": "if-you-have-time",
+      "whyGo": "Learn how Icelanders make fermented shark and taste it on a working farm.",
+      "timeNeeded": "40–60 minutes",
+      "bestTime": "Daytime in the open season; confirm the closing time.",
+      "tip": "Tasting is optional. Check opening hours first, because small museums close early.",
+      "linkedItem": "p38",
+      "location": {
+        "latitude": 64.99785,
+        "longitude": -22.96354,
+        "label": "Bjarnarhöfn Shark Museum",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-bjarnarhofn"
+      ],
+      "photo": {
+        "id": "photo-bjarnarhofn",
+        "status": "missing",
+        "brief": "The farm and museum exterior; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Bjarnarhöfn is a farm and small museum on the Snæfellsnes peninsula devoted to hákarl, the fermented Greenland shark that is Iceland's best-known unusual food. The exhibition covers how the shark was caught and cured, and visitors can taste it.",
+        "Many visitors go for the story and the tasting dare. Take a bite only if you want to, and check opening hours before you plan the stop, since a small family museum does not keep late hours."
+      ],
+      "website": {
+        "url": "https://bjarnarhofn.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-glaumbaer",
+      "name": "Glaumbær turf farm",
+      "local": "Glaumbær",
+      "respelling": "GLOYM-bye-r",
+      "region": "North",
+      "nearestCity": "Varmahlíð",
+      "category": "Museum",
+      "tier": "worth-it",
+      "whyGo": "Walk through a cluster of turf-roofed houses that show how Icelanders lived for centuries.",
+      "timeNeeded": "1–1.5 hours",
+      "bestTime": "Daytime in the open season; the museum and café keep seasonal hours.",
+      "tip": "Check seasonal opening hours before you plan it as the break in a long driving day.",
+      "linkedItem": "p38",
+      "location": {
+        "latitude": 65.61103,
+        "longitude": -19.5047,
+        "label": "Glaumbær turf farm",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-glaumbaer"
+      ],
+      "photo": {
+        "id": "photo-glaumbaer",
+        "status": "missing",
+        "brief": "The turf houses from the path or yard; no identifiable visitors.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Glaumbær is a preserved turf farm in Skagafjörður, part of the Skagafjörður Heritage Museum, with low connected houses roofed in grass. It shows how Icelanders built with turf, stone and driftwood for centuries, and you can walk through the rooms.",
+        "On a long driving day it is a worthwhile break: a place to get out, learn something and stretch. Opening hours and facilities are seasonal, so confirm before you plan around it."
+      ],
+      "website": {
+        "url": "https://www.glaumbaer.is/",
+        "label": "Official website (Skagafjörður Heritage Museum)",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-akureyri-botanical-garden",
+      "name": "Akureyri Botanical Garden",
+      "local": "Lystigarður Akureyrar",
+      "respelling": "LIHS-tih-gar-dhur AH-kur-ay-rih",
+      "region": "North",
+      "nearestCity": "Akureyri",
+      "category": "Nature",
+      "tier": "if-you-have-time",
+      "whyGo": "Wander one of the world's northernmost botanical gardens, free to enter and close to the town center.",
+      "timeNeeded": "30–60 minutes",
+      "bestTime": "Daytime in summer and early autumn; check the hours on the day.",
+      "tip": "It is a flat walk of under a mile, so it fits an easy morning in Akureyri before the drive east.",
+      "linkedItem": "p38",
+      "location": {
+        "latitude": 65.67511,
+        "longitude": -18.09367,
+        "label": "Akureyri Botanical Garden",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-akureyri-botanical-garden"
+      ],
+      "photo": {
+        "id": "photo-akureyri-botanical-garden",
+        "status": "missing",
+        "brief": "Garden paths and plantings; no identifiable visitors.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "The garden in Akureyri opened as a public park in 1912 and gained its botanical section in 1957. It is one of the northernmost botanical gardens in the world and holds thousands of plant species from arctic, temperate and mountain regions. Entry is free, and a café opens in summer.",
+        "It is an easy, flat walk and a gentle way to start a day in Akureyri. If a morning rain shower arrives, the garden still works; check the posted hours before you set out."
+      ],
+      "website": {
+        "url": "https://www.lystigardur.akureyri.is/is/english/practical-information",
+        "label": "Official garden information",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-hverir",
+      "name": "Hverir geothermal field",
+      "local": "Hverir",
+      "respelling": "KVEH-rihr",
+      "region": "North",
+      "nearestCity": "Reykjahlíð",
+      "category": "Nature",
+      "tier": "worth-it",
+      "whyGo": "See steaming vents and bubbling mud pots in a barren, sulphur-yellow field beside the Ring Road.",
+      "timeNeeded": "30–45 minutes",
+      "bestTime": "Daylight in dry weather; the smell is strong.",
+      "tip": "Stay strictly on the marked paths: the ground is hot and fragile, and the gas can cause headaches.",
+      "linkedItem": "p16",
+      "location": {
+        "latitude": 65.64734,
+        "longitude": -16.82507,
+        "label": "Hverir geothermal field",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-hverir"
+      ],
+      "photo": {
+        "id": "photo-hverir",
+        "status": "missing",
+        "brief": "Fumaroles and mud pots from the marked path; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Hverir, also called Námaskarð, is a high-temperature geothermal field east of Lake Mývatn, right beside Route 1. Fumaroles hiss, mud pots bubble and sulphur crystals colour the ground yellow and orange, with a strong rotten-egg smell.",
+        "The marked paths are short, under a mile. The ground can be hot and the crust thin, so stay on the paths and do not touch the mud. The fumes can cause headaches for some people; if you feel unwell, move to fresh air."
+      ],
+      "website": {
+        "url": "https://www.northiceland.is/en/destinations/towns/myvatn",
+        "label": "Visit North Iceland: Mývatn page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-skutustadagigar",
+      "name": "Skútustaðagígar pseudocraters",
+      "local": "Skútustaðagígar",
+      "respelling": "SKOO-tus-ta-dha-gee-gar",
+      "region": "North",
+      "nearestCity": "Reykjahlíð",
+      "category": "Nature",
+      "tier": "worth-it",
+      "whyGo": "Walk among grassy crater rims beside Lake Mývatn, formed when lava met wet ground.",
+      "timeNeeded": "45–60 minutes",
+      "bestTime": "Daylight and calm weather; midges can be a nuisance in summer.",
+      "tip": "Use the shorter loop in strong wind, and stay on the marked paths.",
+      "linkedItem": "p26",
+      "location": {
+        "latitude": 65.56659,
+        "longitude": -17.0369,
+        "label": "Skútustaðagígar pseudocraters",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-skutustadagigar"
+      ],
+      "photo": {
+        "id": "photo-skutustadagigar",
+        "status": "missing",
+        "brief": "The crater rims and lake from the path; no identifiable walkers.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Skútustaðagígar are a group of pseudocraters on the south shore of Lake Mývatn, created by steam explosions when lava flowed over wet ground. They are protected, and a path loops around and between them with views over the lake.",
+        "Walks range from about 1 to 2.5 miles depending on the loop you choose. In summer, midges are a feature of Mývatn, so a head net is worth carrying, and strong wind makes the shorter loop the better choice."
+      ],
+      "website": {
+        "url": "https://www.umhverfisstofnun.is/english/visiting-iceland/protected-areas/north-east/skutustadagigar",
+        "label": "Environment Agency of Iceland page",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-dettifoss",
+      "name": "Dettifoss (west side)",
+      "local": "Dettifoss",
+      "respelling": "DEH-tih-faws",
+      "region": "North",
+      "nearestCity": "Mývatn",
+      "category": "Nature",
+      "tier": "if-you-have-time",
+      "whyGo": "Stand beside one of the most powerful waterfalls in Europe in the Jökulsárgljúfur canyon.",
+      "timeNeeded": "1 hour",
+      "bestTime": "Daylight, only when the road is open and conditions are safe.",
+      "tip": "Use only the west side via paved Road 862, and only if it is open; do not take the east-side gravel access. Check road and weather the same morning.",
+      "linkedItem": "p38",
+      "location": {
+        "latitude": 65.81435,
+        "longitude": -16.38449,
+        "label": "Dettifoss (west side)",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-dettifoss"
+      ],
+      "photo": {
+        "id": "photo-dettifoss",
+        "status": "missing",
+        "brief": "The falls from a marked viewpoint; no identifiable visitors.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Dettifoss is a huge waterfall on the Jökulsá á Fjöllum river, in the Jökulsárgljúfur part of Vatnajökull National Park. Its power comes from the volume of glacial water pouring into the canyon rather than its height, and the spray is felt well back from the edge.",
+        "Access is the decision. On a paved-roads-only trip, use only the west side via paved Road 862 when it is open, and never the rough east-side gravel road. Walk the marked viewpoints, expect about 1 to 2 miles, stay behind the barriers, and drop the stop on a compressed day."
+      ],
+      "website": {
+        "url": "https://www.vatnajokulsthjodgardur.is/en/areas/jokulsargljufur/dettifoss",
+        "label": "Vatnajökull National Park page",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-hengifoss",
+      "name": "Hengifoss and Litlanesfoss",
+      "local": "Hengifoss",
+      "respelling": "HAYN-gih-faws",
+      "region": "East",
+      "nearestCity": "Egilsstaðir",
+      "category": "Nature",
+      "tier": "worth-it",
+      "whyGo": "Hike to a tall waterfall striped with red layers of ancient clay, passing basalt columns on the way.",
+      "timeNeeded": "2–2.5 hours",
+      "bestTime": "A dry day with enough daylight; the trail is rough and wet.",
+      "tip": "Allow for a steady climb and slippery rock. Check the weather first and turn back if the path is icy or flooded.",
+      "linkedItem": "p26",
+      "location": {
+        "latitude": 65.09518,
+        "longitude": -14.88955,
+        "label": "Hengifoss and Litlanesfoss",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-hengifoss"
+      ],
+      "photo": {
+        "id": "photo-hengifoss",
+        "status": "missing",
+        "brief": "Hengifoss and the red strata from the trail; no identifiable hikers.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Hengifoss is one of Iceland's tallest waterfalls, a thin white fall pouring over a cliff striped with red layers of clay between darker volcanic strata. The trail from the parking area passes Litlanesfoss, a smaller waterfall framed by tall hexagonal basalt columns, on the way up.",
+        "The full walk is about 3 miles round trip with a steady climb and rough, wet ground, so allow two hours or more. Good boots help, and the weather should decide whether you go."
+      ],
+      "website": {
+        "url": "https://www.east.is/en/communities/visit-fljotsdalur/top-destinations",
+        "label": "Visit Austurland page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-faskrudsfjordur",
+      "name": "Fáskrúðsfjörður",
+      "local": "Fáskrúðsfjörður",
+      "respelling": "FOWS-kroodhs-fyur-dhur",
+      "region": "East",
+      "nearestCity": "Fáskrúðsfjörður",
+      "category": "Landmark",
+      "tier": "if-you-have-time",
+      "whyGo": "Stop in a small Eastfjords village with a French fishing history and a harbor to stroll.",
+      "timeNeeded": "20–30 minutes",
+      "bestTime": "Daylight; it is an easy stop on the Ring Road.",
+      "tip": "It is a short town walk, so use it as a break rather than a destination.",
+      "linkedItem": "p15",
+      "location": {
+        "latitude": 64.92997,
+        "longitude": -14.00845,
+        "label": "Fáskrúðsfjörður",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-faskrudsfjordur"
+      ],
+      "photo": {
+        "id": "photo-faskrudsfjordur",
+        "status": "missing",
+        "brief": "The harbor and fjord from the waterfront; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Fáskrúðsfjörður is a small fishing village on the Eastfjords stretch of the Ring Road, known for the French fishermen who worked these waters in the past. The harbor is a short, flat walk and a good place to stretch your legs.",
+        "It is an easy photo stop, not a day plan. Pair it with Djúpivogur further south, and keep your attention on the fjord road rather than the clock."
+      ],
+      "website": {
+        "url": "https://www.east.is/en/communities/visit-fjardabyggd/visit-faskrudsfjordur",
+        "label": "Visit Austurland page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-djupivogur",
+      "name": "Djúpivogur and the Eggs of Merry Bay",
+      "local": "Djúpivogur",
+      "respelling": "DYOO-pih-voh-gur",
+      "region": "East",
+      "nearestCity": "Djúpivogur",
+      "category": "Landmark",
+      "tier": "if-you-have-time",
+      "whyGo": "Walk the harbor of a small fjord town and see 34 granite eggs set along the shore.",
+      "timeNeeded": "25–40 minutes",
+      "bestTime": "Daylight and calm weather; the walk is flat.",
+      "tip": "Look at the plaques under each egg for the bird's Icelandic and Latin names.",
+      "linkedItem": "p15",
+      "location": {
+        "latitude": 64.66238,
+        "longitude": -14.29424,
+        "label": "Djúpivogur and the Eggs of Merry Bay",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-djupivogur"
+      ],
+      "photo": {
+        "id": "photo-djupivogur",
+        "status": "missing",
+        "brief": "The egg sculptures along the shore with the fjord behind; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Djúpivogur is a small fishing town on the fjord Berufjörður in East Iceland. A short walk west of the harbor you find Eggin í Gleðivík, a sculpture by Sigurður Guðmundsson installed in 2009: granite replicas of the eggs of 34 local nesting bird species, each on a concrete base from an old fish-factory pipeline.",
+        "Plaques under each egg give the bird's Icelandic and Latin names, which turns a quick photo stop into a small bird lesson. The walk is flat and short."
+      ],
+      "website": {
+        "url": "https://www.east.is/en/blog/things-to-do-in-djupivogur-a-complete-guide-to-east-icelands-hidden-gem",
+        "label": "Visit Austurland guide",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-diamond-beach",
+      "name": "Diamond Beach",
+      "local": "Breiðamerkursandur",
+      "respelling": "BRAY-dha-mehr-kur-sahn-dur",
+      "region": "Southeast",
+      "nearestCity": "Jökulsárlón",
+      "category": "Nature",
+      "tier": "must-see",
+      "whyGo": "See blocks of glacier ice washed up on a black-sand beach, glittering in the light.",
+      "timeNeeded": "30–60 minutes",
+      "bestTime": "Daylight; the ice changes with each tide, so no two visits match.",
+      "tip": "Stay far from the waves and never climb on or stand next to unstable ice.",
+      "linkedItem": "p05",
+      "location": {
+        "latitude": 64.04314,
+        "longitude": -16.17825,
+        "label": "Diamond Beach",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-diamond-beach"
+      ],
+      "photo": {
+        "id": "photo-diamond-beach",
+        "status": "missing",
+        "brief": "Ice on the black sand with the sea behind; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Diamond Beach is the black-sand shore across the road from Jökulsárlón, where icebergs from the lagoon drift out to sea and wash back up as clear and bluish chunks on the sand. The ice changes with each tide.",
+        "It is a place to walk and look, not to touch. Waves can reach farther than you expect, and ice blocks can roll, so stay well back from the water and do not stand on or beside large pieces."
+      ],
+      "website": {
+        "url": "https://www.vatnajokulsthjodgardur.is/en/areas/jokulsarlon",
+        "label": "Vatnajökull National Park: Jökulsárlón area",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-fjallsarlon",
+      "name": "Fjallsárlón",
+      "local": "Fjallsárlón",
+      "respelling": "FYAHTLS-owr-lohn",
+      "region": "Southeast",
+      "nearestCity": "Skaftafell",
+      "category": "Nature",
+      "tier": "if-you-have-time",
+      "whyGo": "See a quieter glacier lagoon with icebergs, in front of the Fjallsjökull glacier.",
+      "timeNeeded": "30–45 minutes",
+      "bestTime": "Daylight; combine it with Jökulsárlón and keep it optional.",
+      "tip": "Skip it if the access road surface becomes rough, and keep to the viewpoint rather than the water's edge.",
+      "linkedItem": "p38",
+      "location": {
+        "latitude": 64.0229,
+        "longitude": -16.39779,
+        "label": "Fjallsárlón",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-fjallsarlon"
+      ],
+      "photo": {
+        "id": "photo-fjallsarlon",
+        "status": "missing",
+        "brief": "The lagoon and glacier from the viewpoint; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Fjallsárlón is a glacier lagoon at the foot of the Fjallsjökull outlet glacier, west of Jökulsárlón and generally quieter. A short walk from the parking area gives views over the water, the icebergs and the glacier wall behind.",
+        "On a trip that already includes Jökulsárlón, treat it as an optional second lagoon. A shore visit is enough; the operator on site offers boat tours, which are separate from this stop."
+      ],
+      "website": {
+        "url": "https://fjallsarlon.is/",
+        "label": "Operator's website",
+        "kind": "operator",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-skaftafell",
+      "name": "Skaftafell and Skaftafellsjökull trail",
+      "local": "Skaftafell",
+      "respelling": "SKAHF-ta-fehtl",
+      "region": "Southeast",
+      "nearestCity": "Skaftafell",
+      "category": "Nature",
+      "tier": "must-see",
+      "whyGo": "Walk from the visitor center toward the tongue of a glacier in Vatnajökull National Park.",
+      "timeNeeded": "2–3 hours",
+      "bestTime": "Daylight on a day with a decent forecast; the walk is about 2.3 miles.",
+      "tip": "Do not step onto the glacier. Parking may carry a fee, and the shorter walk from the visitor center is a good alternative.",
+      "linkedItem": "p35",
+      "location": {
+        "latitude": 64.01667,
+        "longitude": -16.96633,
+        "label": "Skaftafell and Skaftafellsjökull trail",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-skaftafell"
+      ],
+      "photo": {
+        "id": "photo-skaftafell",
+        "status": "missing",
+        "brief": "The glacier tongue from the marked viewpoint; no identifiable hikers.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Skaftafell is the southern gateway to Vatnajökull National Park, with a visitor center, marked trails and the glacier tongue Skaftafellsjökull. The viewpoint trail covers about 2.3 miles, and a shorter walk from the visitor center is an easy alternative.",
+        "Enjoy the glacier from the trail. Stepping on it is unsafe without a guide and equipment, and bad weather can change conditions quickly. Parking may charge a fee, so check at the visitor center."
+      ],
+      "website": {
+        "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell",
+        "label": "Vatnajökull National Park page",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-svartifoss",
+      "name": "Svartifoss",
+      "local": "Svartifoss",
+      "respelling": "SVAR-tih-faws",
+      "region": "Southeast",
+      "nearestCity": "Skaftafell",
+      "category": "Nature",
+      "tier": "must-see",
+      "whyGo": "Hike to a waterfall framed by dark hexagonal basalt columns in Skaftafell.",
+      "timeNeeded": "2–2.5 hours",
+      "bestTime": "An early start on a dry day; the loop is about 3.6 miles.",
+      "tip": "Take the loop via Sjónarsker and Sel for views, and start early to avoid crowds.",
+      "linkedItem": "p26",
+      "location": {
+        "latitude": 64.02772,
+        "longitude": -16.97529,
+        "label": "Svartifoss",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-svartifoss"
+      ],
+      "photo": {
+        "id": "photo-svartifoss",
+        "status": "missing",
+        "brief": "The falls and basalt columns from the viewing area; no identifiable hikers.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Svartifoss, the Black Falls, drops over a cliff of dark hexagonal basalt columns in Skaftafell, in Vatnajökull National Park. The columns inspired the design of Hallgrímskirkja in Reykjavík. A common route is a loop of about 3.6 miles from the visitor center, past the Sjónarsker viewpoint and the Sel turf houses, and takes roughly two hours.",
+        "The climb is steady but not technical. Good footwear and an early start help, because paths and the viewing area get crowded later in the day."
+      ],
+      "website": {
+        "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell/destination-svartifoss",
+        "label": "Vatnajökull National Park page",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-dverghamrar",
+      "name": "Dverghamrar basalt columns",
+      "local": "Dverghamrar",
+      "respelling": "DVEHRK-ham-rar",
+      "region": "Southeast",
+      "nearestCity": "Kirkjubæjarklaustur",
+      "category": "Nature",
+      "tier": "if-you-have-time",
+      "whyGo": "Stop beside the Ring Road to see a cliff of basalt columns that looks like a stack of stone pencils.",
+      "timeNeeded": "20–30 minutes",
+      "bestTime": "Any daylight hour; it is directly off Route 1.",
+      "tip": "Follow the short signed walk and do not climb on the formation.",
+      "linkedItem": "p05",
+      "location": {
+        "latitude": 63.84939,
+        "longitude": -17.86025,
+        "label": "Dverghamrar basalt columns",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-dverghamrar"
+      ],
+      "photo": {
+        "id": "photo-dverghamrar",
+        "status": "missing",
+        "brief": "The basalt columns from the path; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Dverghamrar, the Dwarf Cliffs, is a protected formation of basalt columns beside the Ring Road near Kirkjubæjarklaustur. The columns are set in an overhanging cliff that curves like a small amphitheater, and a short signed walk gets you close.",
+        "It is a quick stop that is easy to combine with Foss á Síðu and the Eldhraun lava field. Stay on the path and do not climb on the columns."
+      ],
+      "website": {
+        "url": "https://www.umhverfisstofnun.is/english/visiting-iceland/protected-areas/south/dverghamrar",
+        "label": "Environment Agency of Iceland page",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-foss-a-sidu",
+      "name": "Foss á Síðu and Eldhraun",
+      "local": "Eldhraun",
+      "respelling": "EHLD-hroyn",
+      "region": "Southeast",
+      "nearestCity": "Kirkjubæjarklaustur",
+      "category": "Nature",
+      "tier": "if-you-have-time",
+      "whyGo": "See a waterfall beside the Ring Road and a vast lava field covered in thick green moss.",
+      "timeNeeded": "30 minutes",
+      "bestTime": "Daylight; use the signed pullouts only.",
+      "tip": "Do not walk on the moss; it is fragile and takes about a century to recover. Never stop on the carriageway.",
+      "linkedItem": "p05",
+      "location": {
+        "latitude": 63.85608,
+        "longitude": -17.86945,
+        "label": "Foss á Síðu and Eldhraun",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-foss-a-sidu"
+      ],
+      "photo": {
+        "id": "photo-foss-a-sidu",
+        "status": "missing",
+        "brief": "The mossy lava field from a signed pullout; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Eldhraun is a lava field of about 565 square kilometers from the Laki eruption of 1783 to 1784, now almost completely covered in soft woolly fringe moss. Foss á Síðu is a waterfall right beside the Ring Road nearby, easy to see from a signed pullout.",
+        "The moss is the delicate part. Walking on it compresses and kills it, and recovery takes around a century, so look from the roadside pullouts and do not step onto the lava. Never stop in the lane to take a photo."
+      ],
+      "website": {
+        "url": "https://www.vatnajokulsthjodgardur.is/en/areas/lakagigar",
+        "label": "Vatnajökull National Park: Lakagígar (the eruption behind Eldhraun)",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-vik",
+      "name": "Vík",
+      "local": "Vík",
+      "respelling": "VEEK",
+      "region": "South Coast",
+      "nearestCity": "Vík",
+      "category": "Landmark",
+      "tier": "worth-it",
+      "whyGo": "Take a short break in the southernmost village in Iceland's mainland, beside Reynisfjara.",
+      "timeNeeded": "30–60 minutes",
+      "bestTime": "Daytime; it is a good base for the south coast.",
+      "tip": "Use Vík as a base or break, not a sight in itself.",
+      "linkedItem": "p15",
+      "location": {
+        "latitude": 63.41882,
+        "longitude": -19.00547,
+        "label": "Vík",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-vik"
+      ],
+      "photo": {
+        "id": "photo-vik",
+        "status": "missing",
+        "brief": "The village and church from a viewpoint; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Vík í Mýrdal is a small village on the south coast, close to Reynisfjara and the Reynisdrangar sea stacks. It has a gas station, shops, a church on the hill and indoor attractions such as the Lava Show.",
+        "It is more useful than it is spectacular: a place to stop, restock and check the weather before the next stretch of the Ring Road."
+      ],
+      "website": {
+        "url": "https://www.south.is/en/destinations/towns/vik",
+        "label": "Visit South Iceland page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-lava-show",
+      "name": "Lava Show Vík",
+      "local": "Lava Show",
+      "respelling": "LAH-va SHOH",
+      "region": "South Coast",
+      "nearestCity": "Vík",
+      "category": "Experience",
+      "tier": "if-you-have-time",
+      "whyGo": "Watch real molten lava poured in front of you in a small indoor theater.",
+      "timeNeeded": "1 hour",
+      "bestTime": "Any time of day; timed bookings are usual, so check availability.",
+      "tip": "Arrive early, and confirm the booking, age rules and what is on the day.",
+      "linkedItem": "p34",
+      "location": {
+        "latitude": 63.41841,
+        "longitude": -19.01024,
+        "label": "Lava Show Vík",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-lava-show"
+      ],
+      "photo": {
+        "id": "photo-lava-show",
+        "status": "missing",
+        "brief": "The show hall from an operator-supplied or licensed image; no identifiable guests.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "The Lava Show is an indoor demonstration in which real lava, heated to a very high temperature, is poured into the room while a guide explains how eruptions work. There is one in Vík and one in Reykjavík.",
+        "It is a good wet-weather hour and a way to understand Iceland's volcanoes before or after seeing a lava field. It is a timed, bookable activity, so check availability and arrival time in advance."
+      ],
+      "website": {
+        "url": "https://www.lavashow.com/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-kvernufoss",
+      "name": "Kvernufoss",
+      "local": "Kvernufoss",
+      "respelling": "KVEHR-nu-faws",
+      "region": "South Coast",
+      "nearestCity": "Skógar",
+      "category": "Nature",
+      "tier": "if-you-have-time",
+      "whyGo": "Walk through a gorge to a hidden waterfall you can stand behind, a quiet neighbor of Skógafoss.",
+      "timeNeeded": "1–1.25 hours",
+      "bestTime": "Daylight in the warmer months; the path is short but slippery.",
+      "tip": "The path is about 1.8 miles round trip from the Skógar museum parking. In winter ice and falling icicles make the walk behind the falls unsafe.",
+      "linkedItem": "p05",
+      "location": {
+        "latitude": 63.52869,
+        "longitude": -19.48051,
+        "label": "Kvernufoss",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-kvernufoss"
+      ],
+      "photo": {
+        "id": "photo-kvernufoss",
+        "status": "missing",
+        "brief": "The falls in the gorge from the path; no identifiable visitors.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Kvernufoss is a waterfall of about 30 meters tucked into a gorge a short walk east of Skógafoss. A path starts behind the Skógar museum and follows the stream into the gorge, and in warm months you can walk behind the falls.",
+        "It is much quieter than Skógafoss, so it makes a good second stop if you have the time. The ground is slick near the falls, so wear shoes with grip and do not go behind it in winter."
+      ],
+      "website": {
+        "url": "https://www.skogasafn.is/",
+        "label": "Skógar Museum website (the path starts there)",
+        "kind": "operator",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-gljufrabui",
+      "name": "Gljúfrabúi",
+      "local": "Gljúfrabúi",
+      "respelling": "GLYOO-fra-BOO-ih",
+      "region": "South Coast",
+      "nearestCity": "Seljalandsfoss",
+      "category": "Nature",
+      "tier": "worth-it",
+      "whyGo": "See a waterfall hidden behind a rock face, just a short walk from Seljalandsfoss.",
+      "timeNeeded": "20–30 minutes",
+      "bestTime": "Daylight in dry weather; expect spray and slippery paths.",
+      "tip": "Bring rain gear; you get wet. Wet rocks are slippery.",
+      "linkedItem": "p05",
+      "location": {
+        "latitude": 63.62076,
+        "longitude": -19.98634,
+        "label": "Gljúfrabúi",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-gljufrabui"
+      ],
+      "photo": {
+        "id": "photo-gljufrabui",
+        "status": "missing",
+        "brief": "The falls inside the cleft or from its entrance; no identifiable visitors.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Gljúfrabúi is a waterfall that falls into a cleft behind a rock wall a few minutes' walk from Seljalandsfoss. You reach it along a short path and a stream, and the hidden fall is seen from the entrance of the narrow gorge.",
+        "Spray and slippery rocks are part of the experience, so rain gear and sure footing help. It is a quick add-on to Seljalandsfoss and one of the easier ways to see something less crowded on the south coast."
+      ],
+      "website": {
+        "url": "https://www.south.is/en/place/gljufrabui",
+        "label": "Visit South Iceland page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-caves-of-hella",
+      "name": "Caves of Hella",
+      "local": "Hella",
+      "respelling": "HET-la",
+      "region": "South Coast",
+      "nearestCity": "Hella",
+      "category": "Experience",
+      "tier": "if-you-have-time",
+      "whyGo": "Take a guided tour of man-made caves carved into the hillside at Ægissíða.",
+      "timeNeeded": "1–1.25 hours",
+      "bestTime": "Any time of day; tours are timed and booked.",
+      "tip": "Arrive before the tour, and note that the origin of the caves is debated, not settled fact.",
+      "linkedItem": "p38",
+      "location": {
+        "latitude": 63.83834,
+        "longitude": -20.40731,
+        "label": "Caves of Hella",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-caves-of-hella"
+      ],
+      "photo": {
+        "id": "photo-caves-of-hella",
+        "status": "missing",
+        "brief": "The cave entrance or interior from an operator-supplied or licensed image; no identifiable guests.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "The Caves of Hella are man-made caves dug into the hillside at Ægissíða, near the town of Hella, and visited on guided tours. Their origin is debated: one theory is that they predate the Viking settlement, but this is a theory, not settled fact.",
+        "Because the tour is a timed booking, plan to arrive a little early. Treat the history as an open question and ask the guide what is known and what is only suspected."
+      ],
+      "website": {
+        "url": "https://www.cavesofhella.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-urridafoss",
+      "name": "Urriðafoss",
+      "local": "Urriðafoss",
+      "respelling": "UHR-rih-dha-faws",
+      "region": "South Coast",
+      "nearestCity": "Selfoss",
+      "category": "Nature",
+      "tier": "if-you-have-time",
+      "whyGo": "Watch the most voluminous waterfall in Iceland, on the longest river, a short detour from the Ring Road.",
+      "timeNeeded": "20–30 minutes",
+      "bestTime": "Daylight; the viewing area is a short, easy walk.",
+      "tip": "Stay behind barriers: the river is powerful and the edge is unforgiving.",
+      "linkedItem": "p05",
+      "location": {
+        "latitude": 63.9249,
+        "longitude": -20.67194,
+        "label": "Urriðafoss",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-urridafoss"
+      ],
+      "photo": {
+        "id": "photo-urridafoss",
+        "status": "missing",
+        "brief": "The falls from the viewing area; no identifiable visitors.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Urriðafoss is a waterfall in the Þjórsá river, Iceland's longest, and by flow it is among the most voluminous in the country, a broad sweep of water with islands scattered through it. It lies between Selfoss and Hella, a short detour from Route 1.",
+        "It is not tall, but it is immensely powerful. The viewing area is easy and quick, and the barriers are there for a reason."
+      ],
+      "website": {
+        "url": "https://www.south.is/en/destinations/nature/waterfalls",
+        "label": "Visit South Iceland: waterfalls",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-bruarfoss",
+      "name": "Brúarfoss",
+      "local": "Brúarfoss",
+      "respelling": "BROO-ar-faws",
+      "region": "Golden Circle",
+      "nearestCity": "Laugarvatn",
+      "category": "Nature",
+      "tier": "worth-it",
+      "whyGo": "See a river squeeze through a rock channel in an intense turquoise blue, near the Golden Circle.",
+      "timeNeeded": "40–60 minutes",
+      "bestTime": "Daylight; the viewpoint is a short walk from the paid lot.",
+      "tip": "Use the designated paid lot reached from Road 37, and stay on the paths. Fees apply, so check them first.",
+      "linkedItem": "p35",
+      "location": {
+        "latitude": 64.26424,
+        "longitude": -20.51587,
+        "label": "Brúarfoss",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-bruarfoss"
+      ],
+      "photo": {
+        "id": "photo-bruarfoss",
+        "status": "missing",
+        "brief": "The turquoise falls from the viewpoint; no identifiable visitors.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Brúarfoss is a small but striking waterfall where the Brúará river is squeezed through a narrow rock channel, its water a vivid blue. It lies just off the Golden Circle route.",
+        "A designated parking area is reached by an access road from Road 37, with a short, maintained walk to the viewpoint; a longer trail along the river is the older route. Parking is paid, and you should check the current arrangement before you go."
+      ],
+      "website": {
+        "url": "https://bruarfoss.is/",
+        "label": "Brúarfoss access and parking site",
+        "kind": "operator",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-kerid",
+      "name": "Kerið crater",
+      "local": "Kerið",
+      "respelling": "KEH-rihdh",
+      "region": "Golden Circle",
+      "nearestCity": "Selfoss",
+      "category": "Nature",
+      "tier": "worth-it",
+      "whyGo": "Look into a volcanic crater with red walls and a small turquoise lake.",
+      "timeNeeded": "30–40 minutes",
+      "bestTime": "Daylight; the full loop is about 0.9 miles.",
+      "tip": "Turn back early if the weather turns, and check whether an entry fee applies.",
+      "linkedItem": "p35",
+      "location": {
+        "latitude": 64.04179,
+        "longitude": -20.88648,
+        "label": "Kerið crater",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-kerid"
+      ],
+      "photo": {
+        "id": "photo-kerid",
+        "status": "missing",
+        "brief": "The crater from the rim; no identifiable people.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Kerið is a volcanic crater on the Golden Circle route with steep red walls and a small lake at the bottom. A path follows the rim, and another goes down to the water, so you can see it from above or from the shore.",
+        "The full loop is under a mile and quick. It fits easily between Gullfoss and the road back to Reykjavík. A small entry fee may apply, so check at the entrance."
+      ],
+      "website": {
+        "url": "https://www.south.is/en/place/kerid-crater",
+        "label": "Visit South Iceland page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-raufarholshellir",
+      "name": "Raufarhólshellir lava tunnel",
+      "local": "Raufarhólshellir",
+      "respelling": "ROY-var-hohls-HEHT-lihr",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Experience",
+      "tier": "worth-it",
+      "whyGo": "Walk into one of Iceland's long lava tubes on a guided tour, near Reykjavík.",
+      "timeNeeded": "1 hour",
+      "bestTime": "Any time of day; tours are timed and booked.",
+      "tip": "Wear warm waterproof layers and sturdy shoes; a helmet and light are provided. Book ahead and arrive early.",
+      "linkedItem": "p38",
+      "location": {
+        "latitude": 63.94024,
+        "longitude": -21.39718,
+        "label": "Raufarhólshellir lava tunnel",
+        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-raufarholshellir"
+      ],
+      "photo": {
+        "id": "photo-raufarholshellir",
+        "status": "missing",
+        "brief": "The cave interior from an operator-supplied or licensed image; no identifiable guests.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Raufarhólshellir is a lava tube, a tunnel left behind when a river of lava drained out under a hardened crust, off Route 39 southeast of Reykjavík. It is entered on a guided tour, and the operator describes it as one of the longest lava tubes in Iceland.",
+        "The tour is a timed booking, so build the rest of the day around it. The cave is cold and uneven; warm waterproof layers and sturdy shoes matter more than a camera."
+      ],
+      "website": {
+        "url": "https://thelavatunnel.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     }
   ]
 }

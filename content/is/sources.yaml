@@ -243,6 +243,303 @@
       "accessed": "2026-10-11",
       "kind": "primary",
       "review": "operator claims; source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-old-harbour",
+      "title": "Visit Reykjavík page: Old Harbour",
+      "url": "https://visitreykjavik.is/old-harbour",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-magic-ice",
+      "title": "Visit Reykjavík page: Magic Ice Reykjavík",
+      "url": "https://visitreykjavik.is/news/magic-ice-reykjavik",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-ytri-tunga",
+      "title": "Snæfellsnes tourism site: Ytri Tunga seal beach",
+      "url": "https://snaefellsnes.is/",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-budakirkja",
+      "title": "Visit West Iceland page: Búðakirkja",
+      "url": "https://www.west.is/en/place/budir",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-arnarstapi-hellnar",
+      "title": "Visit West Iceland page: Arnarstapi and Hellnar coastal path",
+      "url": "https://www.west.is/en/place/arnarstapi",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-londrangar",
+      "title": "Snæfellsjökull National Park page (Environment Agency): Lóndrangar",
+      "url": "https://www.ust.is/english/visiting-iceland/snaefellsjokull-national-park/",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-djupalonssandur",
+      "title": "Snæfellsjökull National Park page (Environment Agency): Djúpalónssandur",
+      "url": "https://www.ust.is/english/visiting-iceland/snaefellsjokull-national-park/",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-kirkjufellsfoss",
+      "title": "Visit West Iceland page: Kirkjufellsfoss",
+      "url": "https://www.west.is/en/place/kirkjufellsfoss",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-bjarnarhofn",
+      "title": "Official website: Bjarnarhöfn Shark Museum",
+      "url": "https://bjarnarhofn.is/",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-glaumbaer",
+      "title": "Official website (Skagafjörður Heritage Museum): Glaumbær turf farm",
+      "url": "https://www.glaumbaer.is/",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-akureyri-botanical-garden",
+      "title": "Official garden information: Akureyri Botanical Garden",
+      "url": "https://www.lystigardur.akureyri.is/is/english/practical-information",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-hverir",
+      "title": "Visit North Iceland: Mývatn page: Hverir geothermal field",
+      "url": "https://www.northiceland.is/en/destinations/towns/myvatn",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-skutustadagigar",
+      "title": "Environment Agency of Iceland page: Skútustaðagígar pseudocraters",
+      "url": "https://www.umhverfisstofnun.is/english/visiting-iceland/protected-areas/north-east/skutustadagigar",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-dettifoss",
+      "title": "Vatnajökull National Park page: Dettifoss (west side)",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/jokulsargljufur/dettifoss",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-hengifoss",
+      "title": "Visit Austurland page: Hengifoss and Litlanesfoss",
+      "url": "https://www.east.is/en/communities/visit-fljotsdalur/top-destinations",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-faskrudsfjordur",
+      "title": "Visit Austurland page: Fáskrúðsfjörður",
+      "url": "https://www.east.is/en/communities/visit-fjardabyggd/visit-faskrudsfjordur",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-djupivogur",
+      "title": "Visit Austurland guide: Djúpivogur and the Eggs of Merry Bay",
+      "url": "https://www.east.is/en/blog/things-to-do-in-djupivogur-a-complete-guide-to-east-icelands-hidden-gem",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-diamond-beach",
+      "title": "Vatnajökull National Park: Jökulsárlón area: Diamond Beach",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/jokulsarlon",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-fjallsarlon",
+      "title": "Operator's website: Fjallsárlón",
+      "url": "https://fjallsarlon.is/",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "operator",
+      "review": "source-screened; native editorial review pending; operator claims"
+    },
+    {
+      "id": "s-skaftafell",
+      "title": "Vatnajökull National Park page: Skaftafell and Skaftafellsjökull trail",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-svartifoss",
+      "title": "Vatnajökull National Park page: Svartifoss",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell/destination-svartifoss",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-dverghamrar",
+      "title": "Environment Agency of Iceland page: Dverghamrar basalt columns",
+      "url": "https://www.umhverfisstofnun.is/english/visiting-iceland/protected-areas/south/dverghamrar",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-foss-a-sidu",
+      "title": "Vatnajökull National Park: Lakagígar (the eruption behind Eldhraun): Foss á Síðu and Eldhraun",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/lakagigar",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-vik",
+      "title": "Visit South Iceland page: Vík",
+      "url": "https://www.south.is/en/destinations/towns/vik",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-lava-show",
+      "title": "Official website: Lava Show Vík",
+      "url": "https://www.lavashow.com/",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-kvernufoss",
+      "title": "Skógar Museum website (the path starts there): Kvernufoss",
+      "url": "https://www.skogasafn.is/",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "operator",
+      "review": "source-screened; native editorial review pending; operator claims"
+    },
+    {
+      "id": "s-gljufrabui",
+      "title": "Visit South Iceland page: Gljúfrabúi",
+      "url": "https://www.south.is/en/place/gljufrabui",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-caves-of-hella",
+      "title": "Official website: Caves of Hella",
+      "url": "https://www.cavesofhella.is/",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-urridafoss",
+      "title": "Visit South Iceland: waterfalls: Urriðafoss",
+      "url": "https://www.south.is/en/destinations/nature/waterfalls",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-bruarfoss",
+      "title": "Brúarfoss access and parking site: Brúarfoss",
+      "url": "https://bruarfoss.is/",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "operator",
+      "review": "source-screened; native editorial review pending; operator claims"
+    },
+    {
+      "id": "s-kerid",
+      "title": "Visit South Iceland page: Kerið crater",
+      "url": "https://www.south.is/en/place/kerid-crater",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-raufarholshellir",
+      "title": "Official website: Raufarhólshellir lava tunnel",
+      "url": "https://thelavatunnel.is/",
+      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
+    },
+    {
+      "id": "itinerary-10-day",
+      "title": "Author-supplied 10-day itinerary (research file, no booking data)",
+      "url": "content/is/research/itineraries/clockwise-ring-road-10-days.yaml",
+      "scope": "Which places a traveler planned and in what order; a plan, not a trip report.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "author-supplied; native editorial review pending"
     }
   ]
 }
