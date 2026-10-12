@@ -229,6 +229,20 @@ def audit(root):
     if sources_path.exists():
         evidence_ids |= {item["id"] for item in read_json(sources_path).get("sources", [])}
 
+    sights_path = root / "sights.yaml"
+    if sights_path.exists():
+        sights = read_json(sights_path)
+        areas = sights.get("areas")
+        if areas:
+            owner = {}
+            for area in areas:
+                for region in area.get("regions", []):
+                    owner.setdefault(region, []).append(area.get("id"))
+            for item in sights.get("items", []):
+                found = owner.get(item.get("region"), [])
+                if len(found) != 1:
+                    errors.append(f"sights.yaml {item.get('id')}: region {item.get('region')!r} must belong to exactly one area (has {found}).")
+
     specs = [
         ("briefings.yaml", "briefings", 1),
         ("playbooks.yaml", "playbooks", 5),

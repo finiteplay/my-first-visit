@@ -2142,5 +2142,50 @@
         "checkedAt": "2026-10-11"
       }
     }
+  ],
+  "areas": [
+    {
+      "id": "reykjavik",
+      "label": "Reykjavík area",
+      "regions": [
+        "Capital area"
+      ]
+    },
+    {
+      "id": "golden-circle",
+      "label": "Golden Circle",
+      "regions": [
+        "Golden Circle"
+      ]
+    },
+    {
+      "id": "south",
+      "label": "South",
+      "regions": [
+        "South Coast",
+        "Southeast"
+      ]
+    },
+    {
+      "id": "north",
+      "label": "North",
+      "regions": [
+        "North"
+      ]
+    },
+    {
+      "id": "east",
+      "label": "East",
+      "regions": [
+        "East"
+      ]
+    },
+    {
+      "id": "west",
+      "label": "Snæfellsnes",
+      "regions": [
+        "Snæfellsnes"
+      ]
+    }
   ]
 }

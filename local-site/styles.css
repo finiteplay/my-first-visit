@@ -424,3 +424,7 @@ body.night .priority-3 { background: #3a4a4d; color: #dce6e6; }
 .link-button:hover, .link-button:focus-visible { color: var(--moss); border-bottom-color: var(--moss); }
 .place-time-inline { margin-left: 6px; color: var(--muted); font-size: .85rem; }
 #reader-article h3 { margin: 28px 0 6px; font-size: 1.1rem; }
+
+/* Area and type filter rows */
+.filter-label { align-self: center; margin-right: 4px; color: var(--muted); font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+#place-areas { margin: 0 0 8px; flex-wrap: wrap; }

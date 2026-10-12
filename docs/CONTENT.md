@@ -271,7 +271,10 @@ Every place shows a priority label for a first visit, derived from its `tier` in
 stars or scores: every label is a positive recommendation, so a lower priority never reads as a bad review. It is our
 judgment, not a traveler or review-site score, and needs the reviewer's sign-off. The place grid is ordered by
 priority, then by the original starter-list rank, then by name. The category buttons are built from the places'
-`category` values with counts; no hand-maintained list is needed for a new category.
+`category` values with counts; no hand-maintained list is needed for a new category. The area buttons come from
+`areas` in `sights.yaml` ({id, label, regions}): group fine regions into the few areas travelers think in
+(Reykjavík area, Golden Circle, South, North, East, Snæfellsnes). Every place's `region` must belong to exactly
+one area, which `audit_guide.py` checks. Area and type filters combine with the search box.
 
 ### Place lists inside a guide
 

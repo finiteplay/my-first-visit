@@ -80,6 +80,7 @@ content = {
     "playbooks": read_json("playbooks.yaml")["playbooks"],
     "routes": read_json("routes.yaml")["routes"],
     "places": read_json("sights.yaml")["items"],
+    "placeAreas": read_json("sights.yaml").get("areas", []),
     "basics": read_json("basics.yaml"),
     "vocabulary": build_vocabulary(),
     "map": read_json("map.yaml") if (PACK / "map.yaml").exists() else {},

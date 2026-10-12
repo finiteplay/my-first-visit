@@ -92,14 +92,23 @@
     return `<span class="priority priority-${priority.level}" aria-label="Priority for a first visit: ${priority.label}"><span class="priority-icon" aria-hidden="true">${priority.icon}</span>${priority.label}</span>`;
   };
   let placeCategory = "all";
+  let placeArea = "all";
+  const areaOf = item => (data.placeAreas || []).find(area => area.regions.includes(item.region));
 
   function renderPlaceFilters() {
+    const button = (attr, value, label, count, active) =>
+      `<button class="filter${active ? " active" : ""}" type="button" data-${attr}="${escapeHtml(value)}" aria-pressed="${active}">${escapeHtml(label)} <span class="filter-count">${count}</span></button>`;
+    const areaHost = document.querySelector("#place-areas");
+    if (areaHost) {
+      areaHost.innerHTML = `<span class="filter-label">Area</span>` + [button("area", "all", "All", data.places.length, placeArea === "all"),
+        ...(data.placeAreas || []).map(area => button("area", area.id, area.label, data.places.filter(item => area.regions.includes(item.region)).length, placeArea === area.id))].join("");
+    }
     const host = document.querySelector("#place-filters");
     if (!host) return;
     const counts = data.places.reduce((map, item) => map.set(item.category, (map.get(item.category) || 0) + 1), new Map());
     const categories = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
-    host.innerHTML = [["all", "All", data.places.length], ...categories.map(([name, count]) => [name, name, count])].map(([value, label, count]) =>
-      `<button class="filter${value === placeCategory ? " active" : ""}" type="button" data-category="${escapeHtml(value)}" aria-pressed="${value === placeCategory}">${escapeHtml(label)} <span class="filter-count">${count}</span></button>`).join("");
+    host.innerHTML = `<span class="filter-label">Type</span>` + [button("category", "all", "All", data.places.length, placeCategory === "all"),
+      ...categories.map(([name, count]) => button("category", name, name, count, placeCategory === name))].join("");
   }
 
   function renderPlaces(query = "") {
@@ -107,6 +116,7 @@
     const tierOrder = { "must-see": 0, "worth-it": 1, "if-you-have-time": 2 };
     const items = data.places
       .filter(item => placeCategory === "all" || item.category === placeCategory)
+      .filter(item => placeArea === "all" || areaOf(item)?.id === placeArea)
       .filter(item => !term || [item.name, item.region, item.category, item.whyGo].join(" ").toLocaleLowerCase().includes(term))
       .sort((a, b) => (tierOrder[a.tier] ?? 3) - (tierOrder[b.tier] ?? 3) || (placeRank[a.id] || 999) - (placeRank[b.id] || 999) || a.name.localeCompare(b.name));
     placeGrid.innerHTML = items.map(item => `
@@ -323,13 +333,17 @@
     renderPlaybooks(button.dataset.filter);
   }));
   document.querySelector("#place-search").addEventListener("input", event => renderPlaces(event.target.value));
-  document.querySelector("#place-filters")?.addEventListener("click", event => {
-    const button = event.target.closest("[data-category]");
-    if (!button) return;
-    placeCategory = button.dataset.category;
+  const onPlaceFilter = event => {
+    const category = event.target.closest("[data-category]");
+    const area = event.target.closest("[data-area]");
+    if (!category && !area) return;
+    if (category) placeCategory = category.dataset.category;
+    if (area) placeArea = area.dataset.area;
     renderPlaceFilters();
     renderPlaces(document.querySelector("#place-search").value);
-  });
+  };
+  document.querySelector("#place-filters")?.addEventListener("click", onPlaceFilter);
+  document.querySelector("#place-areas")?.addEventListener("click", onPlaceFilter);
   document.querySelector(".theme-button").addEventListener("click", () => document.body.classList.toggle("night"));
   document.querySelector(".menu-button").addEventListener("click", event => {
     const nav = document.querySelector("#primary-nav");
