@@ -1,0 +1,569 @@
+{
+ "schemaVersion": 1,
+ "id": "clockwise-ring-road-10-days",
+ "title": "Clockwise Ring Road, 10 nights, paved roads only",
+ "provenance": {
+  "type": "author-supplied planning document (the author's own trip plan)",
+  "evidenceLabel": "A planned itinerary, not a trip report: it records what a US couple booked and ordered, and does not say how the days went.",
+  "season": "early September 2026",
+  "party": "two adults, rental car, self-drive",
+  "extractedOn": "2026-10-11",
+  "kept": [
+   "places and activities in day order",
+   "time spent at each stop",
+   "walk lengths",
+   "road and safety notes tied to a place"
+  ],
+  "leftOut": [
+   "restaurants and cafés",
+   "hotels and where to sleep (only the overnight area is kept)",
+   "driving times and distances",
+   "fuel, grocery and check-in stops",
+   "flight, car-rental, ticket and booking references",
+   "personal names"
+  ],
+  "privacy": "The source document is not stored in this repository because it contains booking confirmations."
+ },
+ "principles": [
+  "Ordinary paved, signed roads only: no F-roads, no Road 939 (Öxi), no rough upper Dyrhólaey road, no east-side Dettifoss gravel.",
+  "Treat clock times as planning anchors; add 15-30 minutes for weather, parking, photos and tiredness.",
+  "Check road conditions, weather and Safetravel every morning.",
+  "Timed bookings are the day's hard anchors: build the rest of the day around them, with a buffer.",
+  "Each day has optional stops that can be dropped without losing the day (marked optional).",
+  "Slower days are deliberate: the long transfer days sit next to a relaxed one."
+ ],
+ "days": [
+  {
+   "day": 1,
+   "title": "Arrival and Reykjavík",
+   "area": "Reykjavík",
+   "stops": [
+    {
+     "name": "Whales of Iceland",
+     "kind": "museum",
+     "minutes": 75,
+     "note": "Indoor; combined ticket with Aurora Reykjavík, no fixed admission time.",
+     "card": "has-card"
+    },
+    {
+     "name": "Aurora Reykjavík",
+     "kind": "museum",
+     "minutes": 70,
+     "note": "Science, folklore, forecasting and photography; a good indoor hour.",
+     "card": "has-card"
+    },
+    {
+     "name": "Old Harbour and Harpa waterfront walk",
+     "kind": "walk",
+     "minutes": 60,
+     "walk": "about 1.5-2 miles, easy and urban",
+     "card": "partly (Harpa has a card)"
+    },
+    {
+     "name": "Sundhöll pool",
+     "local": "Sundhöllin",
+     "kind": "pool",
+     "minutes": 60,
+     "note": "Alternative to hotel rest; bring a swimsuit and follow the shower rules.",
+     "optional": true,
+     "card": "in-pool-guide"
+    },
+    {
+     "name": "Magic Ice Reykjavík",
+     "kind": "indoor-attraction",
+     "minutes": 60,
+     "note": "Ice-sculpture bar; evening, timed booking.",
+     "timedBooking": true,
+     "card": "new"
+    },
+    {
+     "name": "Laugavegur and Rainbow Street (Skólavörðustígur) evening walk",
+     "local": "Skólavörðustígur",
+     "kind": "walk",
+     "minutes": 45,
+     "note": "Short; then check the aurora and cloud forecast.",
+     "card": "new"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "title": "Snæfellsnes",
+   "area": "Stykkishólmur",
+   "stops": [
+    {
+     "name": "Ytri Tunga beach seal lookout",
+     "local": "Ytri Tunga",
+     "kind": "beach",
+     "minutes": 35,
+     "note": "Wildlife not guaranteed; keep well back.",
+     "card": "new"
+    },
+    {
+     "name": "Búðakirkja",
+     "local": "Búðakirkja",
+     "kind": "church",
+     "minutes": 25,
+     "walk": "short, flat, with a lava-field viewpoint",
+     "card": "new"
+    },
+    {
+     "name": "Arnarstapi coastal path (towards Hellnar)",
+     "local": "Arnarstapi",
+     "kind": "coastal-walk",
+     "minutes": 75,
+     "walk": "about 2.5 miles out and back",
+     "note": "Turn around early in high wind.",
+     "card": "new"
+    },
+    {
+     "name": "Lóndrangar viewpoint",
+     "local": "Lóndrangar",
+     "kind": "viewpoint",
+     "minutes": 25,
+     "note": "Stay away from cliff edges.",
+     "card": "new"
+    },
+    {
+     "name": "Djúpalónssandur and the lifting stones",
+     "local": "Djúpalónssandur",
+     "kind": "beach",
+     "minutes": 40,
+     "note": "Never approach the surf.",
+     "card": "new"
+    },
+    {
+     "name": "Kirkjufellsfoss",
+     "local": "Kirkjufellsfoss",
+     "kind": "waterfall",
+     "minutes": 30,
+     "note": "Photo stop with Kirkjufell behind it; do not climb Kirkjufell.",
+     "card": "new"
+    },
+    {
+     "name": "Bjarnarhöfn Shark Museum",
+     "local": "Bjarnarhöfn",
+     "kind": "museum",
+     "minutes": 45,
+     "note": "Includes tasting fermented shark; confirm closing time.",
+     "card": "new"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "title": "Snæfellsnes to Akureyri (a long transfer day)",
+   "area": "Akureyri",
+   "stops": [
+    {
+     "name": "Glaumbær turf-farm museum",
+     "local": "Glaumbær",
+     "kind": "museum",
+     "minutes": 75,
+     "note": "Seasonal hours; in Skagafjörður.",
+     "card": "new"
+    },
+    {
+     "name": "Skagafjörður and Öxnadalur scenic drive",
+     "kind": "scenic-drive",
+     "note": "Use signed pullouts only.",
+     "card": "new"
+    },
+    {
+     "name": "Öxnadalur valley photo stop",
+     "local": "Öxnadalur",
+     "kind": "viewpoint",
+     "minutes": 20,
+     "note": "Skip in fog or high wind.",
+     "optional": true,
+     "card": "new"
+    },
+    {
+     "name": "Akureyri church steps and waterfront",
+     "local": "Akureyri",
+     "kind": "walk",
+     "minutes": 30,
+     "note": "Only if energy allows.",
+     "optional": true,
+     "card": "new"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "title": "Akureyri to the East: waterfalls and geothermal fields (a very long, compressed day)",
+   "area": "Egilsstaðir area",
+   "stops": [
+    {
+     "name": "Akureyri Botanical Garden",
+     "local": "Lystigarðurinn",
+     "kind": "garden",
+     "minutes": 40,
+     "walk": "under 1 mile",
+     "note": "Opens 08:00 on September weekdays.",
+     "card": "new"
+    },
+    {
+     "name": "Goðafoss (west bank)",
+     "local": "Goðafoss",
+     "kind": "waterfall",
+     "minutes": 45,
+     "walk": "about 1 mile",
+     "note": "Wet surfaces possible.",
+     "card": "has-card"
+    },
+    {
+     "name": "Skútustaðagígar pseudocraters",
+     "local": "Skútustaðagígar",
+     "kind": "geology",
+     "minutes": 55,
+     "walk": "1-2.5 miles depending on the loop",
+     "note": "Use the shorter loop in strong wind. Near Mývatn.",
+     "card": "partly (Mývatn has a card)"
+    },
+    {
+     "name": "Hverir geothermal field",
+     "local": "Hverir",
+     "kind": "geothermal",
+     "minutes": 35,
+     "walk": "under 1 mile",
+     "note": "Directly off Route 1; stay strictly on marked paths.",
+     "card": "new"
+    },
+    {
+     "name": "Dettifoss (west side only)",
+     "local": "Dettifoss",
+     "kind": "waterfall",
+     "minutes": 60,
+     "walk": "about 1-2 miles of viewpoints",
+     "note": "Only via paved Road 862 and only if open and safe; never use the east-side gravel access. Skip Selfoss on a compressed day.",
+     "optional": true,
+     "card": "new"
+    },
+    {
+     "name": "Vök Baths",
+     "local": "Vök",
+     "kind": "lagoon",
+     "minutes": 90,
+     "note": "Floating geothermal pools on Lake Urriðavatn near Egilsstaðir; skip if the long day runs late.",
+     "optional": true,
+     "card": "new"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "title": "Eastfjords to Höfn",
+   "area": "Höfn area",
+   "stops": [
+    {
+     "name": "Hengifoss and Litlanesfoss hike",
+     "local": "Hengifoss",
+     "kind": "waterfall-hike",
+     "minutes": 140,
+     "walk": "about 3.1 miles, rough and wet with a steady climb",
+     "note": "Check the weather first.",
+     "card": "new"
+    },
+    {
+     "name": "Fáskrúðsfjörður harbour",
+     "local": "Fáskrúðsfjörður",
+     "kind": "town",
+     "minutes": 20,
+     "walk": "short town walk",
+     "note": "Photo stop.",
+     "card": "new"
+    },
+    {
+     "name": "Djúpivogur harbour and Eggin í Gleðivík",
+     "local": "Djúpivogur",
+     "kind": "town",
+     "minutes": 25,
+     "walk": "flat waterfront walk",
+     "note": "Egg sculptures on the waterfront.",
+     "card": "new"
+    },
+    {
+     "name": "Eastfjords signed viewpoints",
+     "kind": "scenic-drive",
+     "note": "Stay on Route 1. Do not take Road 939 (Öxi) even if navigation suggests it.",
+     "card": "new"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "title": "Jökulsárlón and Skaftafell (a deliberately slower day)",
+   "area": "Skaftafell",
+   "stops": [
+    {
+     "name": "Jökulsárlón (shore viewpoints)",
+     "local": "Jökulsárlón",
+     "kind": "glacier-lagoon",
+     "minutes": 90,
+     "walk": "about 1-1.5 miles with Diamond Beach",
+     "note": "Shore visit only; no boat tour planned.",
+     "card": "has-card"
+    },
+    {
+     "name": "Diamond Beach",
+     "kind": "beach",
+     "minutes": 45,
+     "note": "Stay far from waves and unstable ice.",
+     "card": "new"
+    },
+    {
+     "name": "Fjallsárlón viewpoint",
+     "local": "Fjallsárlón",
+     "kind": "glacier-lagoon",
+     "minutes": 45,
+     "note": "Skip if the access surface becomes rough.",
+     "optional": true,
+     "card": "new"
+    },
+    {
+     "name": "Skaftafell Visitor Centre",
+     "local": "Skaftafell",
+     "kind": "visitor-centre",
+     "note": "Parking fee may apply.",
+     "card": "new"
+    },
+    {
+     "name": "Skaftafellsjökull viewpoint trail",
+     "local": "Skaftafellsjökull",
+     "kind": "glacier-hike",
+     "minutes": 120,
+     "walk": "about 2.3 miles (or a shorter walk)",
+     "note": "Do not step onto the glacier.",
+     "card": "new"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "title": "Skaftafell to Vík",
+   "area": "Vík area",
+   "stops": [
+    {
+     "name": "Svartifoss (Skaftafell-Sjónarsker-Sel loop)",
+     "local": "Svartifoss",
+     "kind": "waterfall-hike",
+     "minutes": 135,
+     "walk": "about 3.6 miles, about 2 hours",
+     "note": "Start early.",
+     "card": "new"
+    },
+    {
+     "name": "Dverghamrar basalt columns",
+     "local": "Dverghamrar",
+     "kind": "geology",
+     "minutes": 25,
+     "walk": "short signed walk",
+     "note": "Directly off Route 1.",
+     "card": "new"
+    },
+    {
+     "name": "Foss á Síðu and the Eldhraun lava field",
+     "local": "Foss á Síðu",
+     "kind": "viewpoint",
+     "minutes": 30,
+     "note": "Use signed pullouts; never stop on the carriageway.",
+     "card": "new"
+    },
+    {
+     "name": "Reynisfjara black-sand beach",
+     "local": "Reynisfjara",
+     "kind": "beach",
+     "minutes": 50,
+     "note": "Follow the warning lights; never turn your back on the sea.",
+     "card": "has-card"
+    },
+    {
+     "name": "Vík",
+     "local": "Vík",
+     "kind": "town",
+     "note": "Short break in town.",
+     "card": "new"
+    },
+    {
+     "name": "Lava Show Vík",
+     "kind": "indoor-attraction",
+     "minutes": 60,
+     "note": "Live demonstration of molten lava; timed booking.",
+     "timedBooking": true,
+     "card": "new"
+    }
+   ],
+   "excluded": [
+    "Fjaðrárgljúfur canyon: the published approach is signed F206.",
+    "The rough upper Dyrhólaey road."
+   ]
+  },
+  {
+   "day": 8,
+   "title": "Waterfalls, a lava cave and Urriðafoss",
+   "area": "Hveragerði area",
+   "stops": [
+    {
+     "name": "Skógafoss",
+     "local": "Skógafoss",
+     "kind": "waterfall",
+     "minutes": 45,
+     "note": "Turn back on the stairs if wind or wet steps make it uncomfortable.",
+     "card": "has-card"
+    },
+    {
+     "name": "Kvernufoss",
+     "kind": "waterfall",
+     "minutes": 70,
+     "walk": "about 1.8 miles from the Skógar Museum parking",
+     "note": "Slick near the falls.",
+     "card": "new"
+    },
+    {
+     "name": "Seljalandsfoss and Gljúfrabúi",
+     "local": "Gljúfrabúi",
+     "kind": "waterfall",
+     "minutes": 55,
+     "note": "Spray and slippery paths; Gljúfrabúi is the hidden waterfall next to Seljalandsfoss.",
+     "card": "partly (Seljalandsfoss has a card)"
+    },
+    {
+     "name": "Caves of Hella",
+     "local": "Hellahellar",
+     "kind": "cave-tour",
+     "minutes": 75,
+     "note": "Guided tour. Pre-Viking origin is a theory, not settled fact.",
+     "timedBooking": true,
+     "card": "new"
+    },
+    {
+     "name": "Urriðafoss",
+     "kind": "waterfall",
+     "minutes": 25,
+     "walk": "easy and short",
+     "note": "Stay behind barriers; powerful river close to Route 1.",
+     "card": "new"
+    }
+   ]
+  },
+  {
+   "day": 9,
+   "title": "Golden Circle plus a lava tunnel",
+   "area": "Reykjavík (Kópavogur)",
+   "stops": [
+    {
+     "name": "Þingvellir (Almannagjá, Lögberg, Öxarárfoss)",
+     "local": "Þingvellir",
+     "kind": "national-park",
+     "minutes": 105,
+     "walk": "about 2 miles, paths can be slick",
+     "card": "has-card"
+    },
+    {
+     "name": "Brúarfoss",
+     "kind": "waterfall",
+     "minutes": 40,
+     "walk": "about five minutes each way from the close paid lot",
+     "note": "Use the designated paid lot off Road 37.",
+     "card": "new"
+    },
+    {
+     "name": "Geysir and Strokkur",
+     "local": "Geysir",
+     "kind": "geothermal",
+     "minutes": 50,
+     "note": "Stay behind barriers; allow several eruptions.",
+     "card": "has-card"
+    },
+    {
+     "name": "Gullfoss",
+     "local": "Gullfoss",
+     "kind": "waterfall",
+     "minutes": 40,
+     "note": "Wind and spray can be intense.",
+     "card": "has-card"
+    },
+    {
+     "name": "Kerið crater",
+     "local": "Kerið",
+     "kind": "geology",
+     "minutes": 35,
+     "walk": "about 0.9 mile for the full loop",
+     "note": "Turn back early if needed.",
+     "card": "new"
+    },
+    {
+     "name": "Raufarhólshellir lava tunnel",
+     "kind": "cave-tour",
+     "minutes": 60,
+     "note": "Timed tour is the day's hard anchor; helmet and light provided; wear warm waterproof layers and sturdy shoes.",
+     "timedBooking": true,
+     "card": "new"
+    }
+   ]
+  },
+  {
+   "day": 10,
+   "title": "Reykjavík culture, a Viking portrait and Sky Lagoon",
+   "area": "Reykjavík",
+   "stops": [
+    {
+     "name": "Perlan",
+     "kind": "museum",
+     "minutes": 150,
+     "note": "Prioritize the ice cave, volcano and glacier exhibits and the observation deck.",
+     "timedBooking": true,
+     "card": "has-card"
+    },
+    {
+     "name": "Flexible central Reykjavík block",
+     "kind": "flex",
+     "minutes": 80,
+     "note": "Hallgrímskirkja, Rainbow Street, Laugavegur, shopping, or a missed Day 1 sight.",
+     "card": "has-card (Hallgrímskirkja)"
+    },
+    {
+     "name": "Mink Viking portrait studio",
+     "kind": "experience",
+     "minutes": 60,
+     "timedBooking": true,
+     "card": "has-card"
+    },
+    {
+     "name": "Sky Lagoon and the seven-step Skjól ritual",
+     "local": "Sky Lagoon",
+     "kind": "lagoon",
+     "minutes": 120,
+     "note": "Finish the ritual before closing; guests leave the lagoon 30 minutes before closing. Pack swimwear and dry layers.",
+     "timedBooking": true,
+     "card": "in-pool-guide"
+    }
+   ]
+  },
+  {
+   "day": 11,
+   "title": "Blue Lagoon and departure",
+   "area": "Reykjanes / Keflavík airport",
+   "stops": [
+    {
+     "name": "Reykjavík final walk or shopping",
+     "kind": "flex",
+     "minutes": 75,
+     "note": "Keep plans flexible and near where you sleep.",
+     "optional": true,
+     "card": "new"
+    },
+    {
+     "name": "Blue Lagoon (Premium admission)",
+     "local": "Bláa lónið",
+     "kind": "lagoon",
+     "minutes": 195,
+     "note": "Pre-booked entry; be in the car by the hard cutoff for the airport.",
+     "timedBooking": true,
+     "card": "in-pool-guide"
+    }
+   ]
+  }
+ ]
+}
