@@ -1,6 +1,9 @@
 """Fetch Google Maps rating aggregates for the place list, as inputs for tools/content/build_score.py.
 
-    GOOGLE_PLACES_API_KEY=... python tools/content/fetch_google_ratings.py is [--only sight-perlan] [--dry-run]
+    python tools/content/fetch_google_ratings.py is [--only sight-perlan] [--dry-run]
+
+The key comes from GOOGLE_PLACES_API_KEY or, if that is not set, from the one-line file ~/.finiteplay/secrets/google-places.key
+(outside the repository; never commit a key).
 
 Uses the official Places API (New) Text Search with the place's coordinates as a location bias, so it needs a key from a
 Google Cloud project with billing and the "Places API (New)" enabled (about 60 requests per country; one-off).
@@ -54,8 +57,11 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     key = os.environ.get("GOOGLE_PLACES_API_KEY")
+    key_file = Path.home() / ".finiteplay" / "secrets" / "google-places.key"
+    if not key and key_file.exists():
+        key = key_file.read_text(encoding="utf-8").strip()
     if not key and not args.dry_run:
-        print("Set GOOGLE_PLACES_API_KEY (Places API (New) enabled).", file=sys.stderr)
+        print(f"Set GOOGLE_PLACES_API_KEY or put the key alone in {key_file} (Places API (New) enabled).", file=sys.stderr)
         return 2
     all_items = read(ROOT / "content" / args.country / "sights.yaml")["items"]
     items = [i for i in all_items if i.get("location") and (not args.only or i["id"] in args.only)]
