@@ -24,12 +24,12 @@
     "sight-godafoss": 15, "sight-myvatn": 16, "sight-aurora-reykjavik": 17, "sight-flyover": 18
   };
   const placeDetails = {
-    "sight-perlan": "Perlan is the easy Reykjavík answer when the weather is doing something difficult. The museum brings glaciers, volcanoes, caves and northern lights into one building, then sends you upstairs for a wide view over the city and bay. Tripadvisor currently places it among Reykjavík’s highest-ranked attractions, but the real reason to go is that it gives a first-time visitor a useful mental map of Iceland before heading out.\n\nAllow a few hours if you want the exhibitions and observation deck rather than a quick photograph. It is not a substitute for seeing the landscape itself, but it is a warm, well-organized introduction and a good rainy-day plan.",
+    "sight-perlan": "Perlan is the easy Reykjavík answer when the weather is doing something difficult. The museum brings glaciers, volcanoes, caves and northern lights into one building, then sends you upstairs for a wide view over the city and bay. Travelers rank it among Reykjavík’s favorite attractions, but the real reason to go is that it gives a first-time visitor a useful mental map of Iceland before heading out.\n\nAllow a few hours if you want the exhibitions and observation deck rather than a quick photograph. It is not a substitute for seeing the landscape itself, but it is a warm, well-organized introduction and a good rainy-day plan.",
     "sight-harpa": "Harpa is worth seeing even if you are not going to a concert. Walk around the glass façade, look back toward the water, and take a few minutes inside to notice how the light changes through the geometric panels. It feels grand without requiring a whole afternoon.\n\nThis is also a useful place to build a small harbor afternoon. Whales of Iceland, the Aurora Reykjavík experience and FlyOver Iceland are nearby and can be combined on foot in a couple of hours, depending on opening times and how long you linger. Check the walking route and book timed attractions ahead when possible.",
-    "sight-whales": "Whales of Iceland is an indoor museum with life-size models of whales found in Icelandic waters. It is more about scale and curiosity than a live-animal encounter, which makes it a thoughtful companion to a whale-watching boat trip or a rainy afternoon. Travelers often like the way the models make field-guide names suddenly memorable.\n\nPair it with Harpa and the other harbor attractions rather than treating it as a cross-country detour. Tripadvisor reviews are mixed on value, so decide whether the subject interests you; people who love whales tend to find the 1–2 hour visit worthwhile.",
+    "sight-whales": "Whales of Iceland is an indoor museum with life-size models of whales found in Icelandic waters. It is more about scale and curiosity than a live-animal encounter, which makes it a thoughtful companion to a whale-watching boat trip or a rainy afternoon. Travelers often like the way the models make field-guide names suddenly memorable.\n\nPair it with Harpa and the other harbor attractions rather than treating it as a cross-country detour. Traveler opinions are mixed on value, so decide whether the subject interests you; people who love whales tend to find the 1–2 hour visit worthwhile.",
     "sight-aurora-reykjavik": "Aurora Reykjavík is a compact, indoors introduction to the northern lights: photographs, explanations and practical context for why forecasts can promise conditions without promising a show. It helps set expectations before you join a night tour.\n\nTreat it as a short experience, not proof that you have ‘seen the aurora’. The harbor location makes it easy to combine with Harpa and Whales of Iceland, and it is especially convenient when clouds or wind make an outdoor evening unpleasant.\n\nWhat the operator describes: the museum is at Fiskislóð 53 in the Grandi harbor area, about a ten-minute walk from downtown. The exhibition covers mythology, science, solar cycles, photography and aurora-hunting tips, with a 360-degree VR aurora experience and a 30-minute film. A visit typically takes 45 to 60 minutes, it is open daily all year (check the seasonal hours) and it is described as fully accessible with free parking. The same company sells aurora tours in season, so treat its tour pitch as an operator's.",
     "sight-flyover": "FlyOver Iceland is a theatrical flying-ride experience rather than a real sightseeing flight. You are suspended in front of a large screen with wind, mist and movement, so it can be a fun way to preview the country’s scale when you have limited time or poor weather.\n\nSome travelers love the immersive sensation; others prefer spending the ticket on an actual viewpoint. Decide based on whether you want a polished attraction or a quieter museum, and reserve a time if it is part of your harbor walk.",
-    "sight-mink": "Mink Viking Portrait Studio is one of Reykjavík’s more memorable small-group experiences. You are dressed and photographed in a deliberately theatrical Viking style, with staff guiding the pose and story rather than asking you to perform alone. It is playful, personal and very different from a standard museum visit.\n\nBook ahead and check exactly what the session includes, especially image delivery and timing. Tripadvisor currently shows it as one of the city’s highest-rated fun-and-games experiences, but the appeal depends on enjoying a staged portrait and committing to the joke.",
+    "sight-mink": "Mink Viking Portrait Studio is one of Reykjavík’s more memorable small-group experiences. You are dressed and photographed in a deliberately theatrical Viking style, with staff guiding the pose and story rather than asking you to perform alone. It is playful, personal and very different from a standard museum visit.\n\nBook ahead and check exactly what the session includes, especially image delivery and timing. Travelers rate it among the city’s best small-group experiences, but the appeal depends on enjoying a staged portrait and committing to the joke.",
     "sight-laugardalslaug": "Laugardalslaug is a lovely way to begin understanding Reykjavík as a place where people live, not only a launchpad for excursions. The pool, hot tubs and changing-room routine are part of an ordinary local rhythm, and a slow soak can reset you after a flight or a long drive.\n\nRead the shower instructions and bring a towel plan. It is not a sightseeing checklist item; it is better when you give yourself enough time to relax, notice the etiquette and let the weather be part of the experience.",
     "sight-thingvellir": "Þingvellir combines a dramatic rift landscape with the story of Iceland’s early assembly. The paths make the geology legible: you can see where the land is pulling apart while walking through a place that carries unusual historical weight.\n\nIt is often the first substantial stop on a Golden Circle day, so arrive with enough time to walk rather than only photograph the parking area. Weather can change quickly, and the marked paths are part of the visit, not an inconvenience.",
     "sight-gullfoss": "Gullfoss is powerful in a way photographs rarely capture: the river seems to disappear into the canyon and the spray reaches you before you understand the scale. The two-stage drop makes the viewpoint feel active and changeable rather than like a single static waterfall.\n\nGive yourself time to watch the water and keep behind barriers. Wind, spray and winter ice can make the lower approaches uncomfortable or unavailable, so the safest viewpoint is still a worthwhile visit.",
@@ -79,21 +79,15 @@
       </button>`).join("");
   }
 
-  // TripAdvisor rating, shown with its review count. The score is theirs, read on the date recorded in the data.
-  const taBadge = item => {
-    const ta = item.tripadvisor;
-    if (!ta) return "";
-    const local = ta.localRank;
-    const top = ta.icelandRank
-      ? `<span class="ta-top" title="Position in TripAdvisor's list of top things to do in Iceland">#${ta.icelandRank} in Iceland</span>`
-      : local ? `<span class="ta-top" title="TripAdvisor ranks it ${escapeHtml(local.text)}">#${local.rank} ${local.category ? `${escapeHtml(local.category)} in ` : "in "}${escapeHtml(local.destination)}</span>` : "";
-    if (ta.rating == null) return `<span class="ta ta-none">TripAdvisor: no rating for the place itself</span>`;
-    const count = ta.reviews == null ? "" : ` · ${Number(ta.reviews).toLocaleString("en-US")} reviews`;
-    return `<span class="ta" aria-label="TripAdvisor rating ${ta.rating} out of 5${ta.reviews == null ? "" : `, ${Number(ta.reviews).toLocaleString("en-US")} reviews`}"><span class="ta-score" aria-hidden="true">${ta.rating.toFixed(1)}</span><span class="ta-text" aria-hidden="true">TripAdvisor${count}</span>${top}</span>`;
+  // Our own traveler score (tools/content/build_score.py): a blend of public ratings from several large sites. Only the
+  // blended number is shown; no site's own rating, review count, rank or link is published.
+  const scoreBadge = item => {
+    const score = item.score;
+    if (!score) return "";
+    return `<span class="score" aria-label="Traveler score ${score.value.toFixed(1)} out of 10"><span class="score-num" aria-hidden="true">${score.value.toFixed(1)}</span><span class="score-text" aria-hidden="true">traveler score</span></span>`;
   };
   let placeSort = "top";
-  const byTop = (a, b) => (a.tripadvisor?.icelandRank ?? 99) - (b.tripadvisor?.icelandRank ?? 99);
-  const byTripadvisor = (a, b) => (b.tripadvisor?.rating ?? -1) - (a.tripadvisor?.rating ?? -1) || (b.tripadvisor?.reviews ?? 0) - (a.tripadvisor?.reviews ?? 0);
+  const byScore = (a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1);
 
   // Priority for a first visit comes from each place's `tier`. Words, not stars: every label is a positive
   // recommendation, and the lowest one means "good when you have spare time", not "poor".
@@ -134,14 +128,14 @@
       .filter(item => placeCategory === "all" || item.category === placeCategory)
       .filter(item => placeArea === "all" || areaOf(item)?.id === placeArea)
       .filter(item => !term || [item.name, item.region, item.category, item.whyGo].join(" ").toLocaleLowerCase().includes(term))
-      .sort((a, b) => (placeSort === "top" ? byTop(a, b) || byTripadvisor(a, b) : placeSort === "rating" ? byTripadvisor(a, b) : 0)
+      .sort((a, b) => (placeSort === "top" ? byScore(a, b) : 0)
         || (tierOrder[a.tier] ?? 3) - (tierOrder[b.tier] ?? 3) || (placeRank[a.id] || 999) - (placeRank[b.id] || 999) || a.name.localeCompare(b.name));
     placeGrid.innerHTML = items.map(item => `
       <article class="place-card" data-open="place:${escapeHtml(item.id)}" tabindex="0" role="button" aria-label="Open place card for ${escapeHtml(item.name)}">
         ${selectedPhotos[item.id]?.length ? `<img class="place-card-image" src="${escapeHtml(selectedPhotos[item.id][0].card || selectedPhotos[item.id][0].file)}" alt="${escapeHtml(photoAlt(item, 0))}" style="${escapeHtml(photoStyle(selectedPhotos[item.id][0]))}" width="480" height="320" loading="lazy">` : ""}
         ${!selectedPhotos[item.id]?.length && item.featureImage ? `<img class="place-card-image placeholder-image" src="${escapeHtml(item.featureImage.url)}" alt="${escapeHtml(item.name)}" referrerpolicy="no-referrer" width="480" height="320" loading="lazy">` : ""}
         <span class="region">${escapeHtml(item.region)} · ${escapeHtml(item.category)}</span>
-        ${priorityHtml(item)}${taBadge(item)}
+        ${priorityHtml(item)}${scoreBadge(item)}
         <h3>${escapeHtml(item.name)}</h3>
         <p>${escapeHtml(item.whyGo)}</p>
         <span class="time">${escapeHtml(item.timeNeeded)}</span>
@@ -227,7 +221,7 @@
     if (!item.placeGroups?.length) return "";
     const card = place => `<div class="option place-entry">
         <strong><button type="button" class="link-button" data-open="place:${escapeHtml(place.id)}">${escapeHtml(place.name)}</button></strong>
-        <p>${priorityHtml(place)}${taBadge(place)} <span class="place-time-inline">${escapeHtml(place.timeNeeded)}</span></p>
+        <p>${priorityHtml(place)}${scoreBadge(place)} <span class="place-time-inline">${escapeHtml(place.timeNeeded)}</span></p>
         <p>${escapeHtml(place.whyGo)}</p>
         <p class="place-links">${place.website ? `<a class="maps-link" href="${escapeHtml(place.website.url)}" target="_blank" rel="noopener">${escapeHtml(place.website.label)} <span aria-hidden="true">↗</span></a>` : ""}${place.location ? `<a class="maps-link" href="${escapeHtml(mapsUrl(place))}" target="_blank" rel="noopener">Google Maps <span aria-hidden="true">↗</span></a>` : ""}</p>
       </div>`;
@@ -431,8 +425,8 @@
         </svg>
         <figcaption>${escapeHtml(areaName)}. Approximate position, not for navigation. ${escapeHtml(credit)}</figcaption>
       </figure>
-      <p class="place-links"><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a>${item.website ? `<a class="maps-link" href="${escapeHtml(item.website.url)}" target="_blank" rel="noopener">${escapeHtml(item.website.label)} <span aria-hidden="true">↗</span></a>` : ""}${item.tripadvisor ? `<a class="maps-link" href="${escapeHtml(item.tripadvisor.url)}" target="_blank" rel="noopener">TripAdvisor reviews <span aria-hidden="true">↗</span></a>` : ""}</p>
-      ${item.tripadvisor ? `<p class="ta-note">${taBadge(item)} ${item.tripadvisor.icelandRank ? `TripAdvisor puts it at #${item.tripadvisor.icelandRank} of its top things to do in Iceland. ` : ""}${item.tripadvisor.localRank ? `On its own page it is ranked ${escapeHtml(item.tripadvisor.localRank.text)}. ` : ""}Read on ${escapeHtml(item.tripadvisor.checkedAt)} from a search-result summary; ratings change, so confirm on TripAdvisor.${item.tripadvisor.note ? ` Note: ${escapeHtml(item.tripadvisor.note)}.` : ""}</p>` : ""}
+      <p class="place-links"><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a>${item.website ? `<a class="maps-link" href="${escapeHtml(item.website.url)}" target="_blank" rel="noopener">${escapeHtml(item.website.label)} <span aria-hidden="true">↗</span></a>` : ""}</p>
+      ${item.score ? `<p class="score-note">${scoreBadge(item)} Our own score, blended from what travelers rate this place on several large travel and map sites. The sites' own numbers are not republished here. Checked ${escapeHtml(item.score.asOf)}; scores change.</p>` : ""}
     </div>`;
   }
 

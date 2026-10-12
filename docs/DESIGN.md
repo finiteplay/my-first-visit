@@ -71,7 +71,7 @@ feed or incident statistics. Duolingo-like practice is available only when the u
 | Travel programs and blogs | A destination experienced as a journey | Briefings open with what the trip feels like and progress through realistic choices and scenes | Copied wording, footage, branded formats or undisclosed promotion |
 | Traveler forums | Recent stories, surprises and disagreements | Researched synthesis with contextual anecdotes and evidence labels | Raw review feeds, vote counts as truth, or forum posts as incident rates |
 | Guidebooks | Editorial judgment and useful routes | Labeled *Our take*, audience-specific playbooks and realistic itineraries | False neutrality or a universal route |
-| TripAdvisor | Place cards and trip reports | Place cards connected to traveler fit, route context and recent experiences | Star ratings, endless ranked lists and ads |
+| TripAdvisor | Place cards and trip reports | Place cards connected to traveler fit, route context and recent experiences | Star ratings, endless ranked lists and ads; we do not republish its ratings or links |
 | Duolingo | Bite-size listening and recall | A separate **Practice** mode for selected words, signs and replies | Mandatory quizzes, streaks, hearts, leagues and content gates |
 | Any source | Save for later | **Save** a briefing, checklist, phrase, route or place | Accounts and shared online trips |
 

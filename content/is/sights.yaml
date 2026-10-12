@@ -37,6 +37,12 @@
         "label": "City of Reykjavík page",
         "kind": "operator",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.19,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -75,6 +81,12 @@
         "label": "Official park website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.2,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -113,6 +125,12 @@
         "label": "Environment Agency of Iceland page",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.4,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -151,6 +169,12 @@
         "label": "Environment Agency of Iceland page",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.0,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -189,6 +213,12 @@
         "label": "Official church website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.8,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -227,6 +257,12 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.0,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -265,6 +301,12 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.8,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -303,6 +345,12 @@
         "label": "Visit South Iceland page",
         "kind": "regional",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.39,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -341,6 +389,12 @@
         "label": "Visit South Iceland page",
         "kind": "regional",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.39,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -379,6 +433,12 @@
         "label": "Safetravel: black beach safety",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.39,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -417,6 +477,12 @@
         "label": "Vatnajökull National Park website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.79,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -455,6 +521,12 @@
         "label": "Environment Agency of Iceland page",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.39,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -493,6 +565,12 @@
         "label": "Visit North Iceland page",
         "kind": "regional",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.0,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -617,6 +695,12 @@
         "source": "aurorareykjavik.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.61,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -664,6 +748,12 @@
         "source": "flyovericeland.com",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.19,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -711,6 +801,12 @@
         "source": "mink.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.73,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -749,6 +845,12 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.52,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -796,6 +898,12 @@
         "source": "vokbaths.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.83,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -838,6 +946,12 @@
         "label": "Visit Reykjavík page",
         "kind": "regional",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.38,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -874,7 +988,13 @@
       "description": [
         "Laugavegur is Reykjavík's main shopping street, and Skólavörðustígur runs uphill from it toward Hallgrímskirkja with a rainbow painted on the road in summer. Together they make an easy evening walk of shops, galleries and window browsing.",
         "Treat it as filler that you can drop in anywhere: a first evening after the harbor, a flexible hour before a booking, or a way to return to Hallgrímskirkja. It is the easiest place in the city to buy souvenirs, so decide what you want before you arrive and avoid impulse spending."
-      ]
+      ],
+      "score": {
+        "value": 8.61,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
+      }
     },
     {
       "id": "sight-magic-ice",
@@ -925,6 +1045,12 @@
         "source": "visitreykjavik.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 7.46,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -967,6 +1093,12 @@
         "label": "Snæfellsnes tourism site",
         "kind": "regional",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.69,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1018,6 +1150,12 @@
         "source": "west.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.65,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1069,6 +1207,12 @@
         "source": "west.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.11,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1111,6 +1255,12 @@
         "label": "Snæfellsjökull National Park page (Environment Agency)",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.99,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1153,6 +1303,12 @@
         "label": "Snæfellsjökull National Park page (Environment Agency)",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.99,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1204,6 +1360,12 @@
         "source": "west.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.64,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1255,6 +1417,12 @@
         "source": "bjarnarhofn.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.48,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1348,6 +1516,12 @@
         "label": "Official garden information",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.81,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1390,6 +1564,12 @@
         "label": "Visit North Iceland: Mývatn page",
         "kind": "regional",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.0,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1442,6 +1622,12 @@
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11",
         "note": "Mývatn page image showing the pseudocraters at Skútustaðir"
+      },
+      "score": {
+        "value": 7.85,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1493,6 +1679,12 @@
         "source": "vatnajokulsthjodgardur.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.39,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1544,6 +1736,12 @@
         "source": "east.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.99,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1586,6 +1784,12 @@
         "label": "Visit Austurland guide",
         "kind": "regional",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 7.56,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1628,6 +1832,12 @@
         "label": "Vatnajökull National Park: Jökulsárlón area",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.56,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1679,6 +1889,12 @@
         "source": "fjallsarlon.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.35,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1721,6 +1937,12 @@
         "label": "Vatnajökull National Park page",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.1,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1772,6 +1994,12 @@
         "source": "vatnajokulsthjodgardur.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.0,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1814,6 +2042,12 @@
         "label": "Environment Agency of Iceland page",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.29,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1856,6 +2090,12 @@
         "label": "Vatnajökull National Park: Lakagígar (the eruption behind Eldhraun)",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.27,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1907,6 +2147,12 @@
         "source": "lavashow.com",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.78,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -1949,6 +2195,12 @@
         "label": "Skógar Museum website (the path starts there)",
         "kind": "operator",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.56,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2000,6 +2252,12 @@
         "source": "south.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.52,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2042,6 +2300,12 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.16,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2084,6 +2348,12 @@
         "label": "Visit South Iceland: waterfalls",
         "kind": "regional",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.99,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2135,6 +2405,12 @@
         "source": "bruarfoss.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.54,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2186,6 +2462,12 @@
         "source": "south.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.21,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2237,6 +2519,12 @@
         "source": "thelavatunnel.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.59,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2288,6 +2576,12 @@
         "source": "skylagoon.com",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.0,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2339,6 +2633,12 @@
         "source": "bluelagoon.com",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.8,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2390,6 +2690,12 @@
         "source": "hvammsvik.com",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.34,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2426,7 +2732,13 @@
       "description": [
         "Reykjadalur is a geothermal valley above Hveragerði where steam vents and boiling springs feed a naturally warm river. The walk is about 3 km each way with roughly 300 m of climb, passing steaming ground and bubbling mud, and the warmest water is higher up the valley.",
         "It is not a commercial spa. Bathing and the hike are free, but there are no shops, no changing rooms and little privacy, and it can be crowded. Wooden boards mark the usual spots. It suits people who want a soak that is also a hike."
-      ]
+      ],
+      "score": {
+        "value": 9.19,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
+      }
     },
     {
       "id": "sight-earth-lagoon-myvatn",
@@ -2477,6 +2789,12 @@
         "source": "earthlagoon.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.8,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2528,6 +2846,12 @@
         "source": "secretlagoon.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.2,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2579,6 +2903,12 @@
         "source": "forestlagoon.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 8.83,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2630,6 +2960,12 @@
         "source": "fontana.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.2,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2681,6 +3017,12 @@
         "source": "geosea.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.16,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     },
     {
@@ -2732,6 +3074,12 @@
         "source": "krauma.is",
         "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
+      },
+      "score": {
+        "value": 9.33,
+        "sources": 1,
+        "method": "v1",
+        "asOf": "2026-10"
       }
     }
   ],

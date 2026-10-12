@@ -296,19 +296,26 @@ card and into a schematic map of the trip: one dot per stop, colored by day, joi
 between days with a dashed line), cropped to the stops
 (a trip entirely inside the capital area uses the local outline). `audit_guide.py` fails on an id that does not exist.
 
-### TripAdvisor link and rating
+### Traveler score (our own)
 
-Each place can carry `tripadvisor` ({url, rating, reviews, checkedAt, note}): a link to the place's TripAdvisor page, the
-overall rating out of 5 and the review count, shown on the card and the place page. The grid sorts by TripAdvisor's own
-ordering first: `icelandRank`, a place's position in TripAdvisor's list of top things to do in the country (only the
-places on that list have one), then everything else by rating and review count. Two other sorts are offered: stars alone
-and our own priority. `localRank` ({rank, of, destination, category, text}) records the place's rank inside its own TripAdvisor
-destination (for example "#1 of 22 things to do in Selfoss"). A place without an Iceland position shows it on the card
-instead ("#5 in Reykjavík"; a category rank reads "#1 Fun & Games in Reykjavík") and the full wording on the place page. Ratings change constantly and are TripAdvisor's
-numbers, so `checkedAt` is required and the page tells the reader the date. TripAdvisor blocks automated page reads,
-so the Iceland values came from search-result summaries: confirm each on the page before release. Places that are
-villages or areas have no rating of their own (`rating: null`) and sort last. Before a public release, check
-TripAdvisor's terms for showing ratings, or switch to link-only or their official content API.
+Each place can carry `score` ({value, sources, method, asOf}): our own score out of 10, blended from what travelers rate
+the place on several large travel and map sites. The site shows only this number. It must not publish any other site's
+rating, review count, rank, logo or link: those sites' terms forbid copying and deep-linking, and `audit_guide.py` fails if
+`tripadvisor`, `google`, `reviews` or `rating` appears on a place. The grid sorts by score first (places without one go last),
+then by our own priority; "Our priority" is the other sort.
+
+The raw per-site inputs (stars, number of reviews, place in the site's ranking) live OUTSIDE the repository, in
+`~/.finiteplay/score-inputs/<cc>.json` (or `MFV_SCORE_INPUTS`), never in git. Workflow:
+
+1. `python tools/content/fetch_google_ratings.py is` (needs `GOOGLE_PLACES_API_KEY`) fills the Google inputs, or type them in step 2.
+2. `python tools/content/edit_ratings.py is --open` writes an HTML editor (like the photo review page): edit stars, review
+   counts and place in the ranking per place and source, watch the score preview, "Save to is.json".
+3. `python tools/content/build_score.py is` writes `score` into `sights.yaml`; then `python local-site/build.py`.
+
+Method v1: each source's rating is shrunk toward that source's mean by how few reviews it has
+(`(n*rating + 50*mean) / (n + 50)`), the sources are blended weighted by `log10(1 + n)`, and the result is multiplied by 2.
+A place with no usable input is unscored. Ranks are kept for reference only. Read the sources' terms before collecting
+data from them; collecting by script from sites that ban it is a risk the team accepts or avoids.
 
 ### Placeholder feature images
 

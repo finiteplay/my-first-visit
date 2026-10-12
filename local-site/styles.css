@@ -435,17 +435,13 @@ body.night .rm-day { fill: #e8f1f2; stroke: #26363a; }
 .lg-dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
 .route-map figcaption { margin-top: 6px; color: var(--muted); font-size: .75rem; }
 
-/* TripAdvisor rating and sort row */
-.ta { display: inline-flex; align-items: center; gap: 6px; margin: 6px 0 0 6px; font-size: .74rem; color: var(--muted); vertical-align: middle; }
-.ta-score { display: inline-grid; place-items: center; min-width: 30px; padding: 2px 8px; border-radius: 999px; background: #34e0a1; color: #0b2b1f; font-weight: 800; font-size: .76rem; }
-.ta-none { margin-left: 0; font-style: italic; }
-.place-card .ta { display: flex; margin: 6px 0 0; }
-.place-card .priority + .ta { margin-top: 8px; }
-.ta-note { margin: 4px 0 0; color: var(--muted); font-size: .78rem; }
+/* Traveler score and sort row */
+.score { display: inline-flex; align-items: center; gap: 7px; margin: 6px 0 0 6px; font-size: .74rem; color: var(--muted); vertical-align: middle; }
+.score-num { display: inline-grid; place-items: center; min-width: 34px; padding: 2px 9px; border-radius: 999px; background: var(--deep); color: var(--gold); font-weight: 800; font-size: .78rem; }
+.place-card .score { display: flex; margin: 6px 0 0; }
+.place-card .priority + .score { margin-top: 8px; }
+.score-note { margin: 4px 0 0; color: var(--muted); font-size: .78rem; }
 #place-sort { margin: 0 0 8px; flex-wrap: wrap; }
-
-.ta-top { margin-left: 4px; padding: 1px 8px; border: 1px solid #34e0a1; border-radius: 999px; color: var(--ink); font-weight: 700; font-size: .7rem; }
-.place-card .ta { flex-wrap: wrap; }
 
 /* Inland region maps (Golden Circle): lakes and main roads */
 .minimap-water { fill: #dbe8ea; stroke: #8fa3a1; stroke-width: 1; stroke-linejoin: round; }

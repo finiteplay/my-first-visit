@@ -94,6 +94,23 @@ def route_depth(item, roles):
     return gaps
 
 
+def score_errors(item):
+    """Third-party ratings, review counts, ranks and links must not be published (their terms forbid it); only our own
+    blended `score` (tools/content/build_score.py) is allowed on a place."""
+    errors = []
+    for banned in ("tripadvisor", "google", "yelp", "reviews", "rating"):
+        if banned in item:
+            errors.append(f"sights.yaml {item.get('id')}: `{banned}` must not be in the content; publish only the blended `score`.")
+    score = item.get("score")
+    if score is not None:
+        value = score.get("value")
+        if not isinstance(value, (int, float)) or isinstance(value, bool) or not (0 <= value <= 10):
+            errors.append(f"sights.yaml {item.get('id')}: score.value must be a number from 0 to 10.")
+        if not score.get("sources") or not score.get("method") or not score.get("asOf"):
+            errors.append(f"sights.yaml {item.get('id')}: score needs sources, method and asOf.")
+    return errors
+
+
 def basics_audit(basics, evidence_ids, root_dir=Path('.'), media_items=None):
     """The 'Iceland at a glance' section: pronounced names, sourced and iconned numbers."""
     errors = []
@@ -285,15 +302,7 @@ def audit(root):
                     errors.append(f"sights.yaml {item.get('id')}: featureImage.url must use https.")
                 if not (1.33 <= float(fi.get("width", 1)) / float(fi.get("height", 1)) <= 2.2):
                     errors.append(f"sights.yaml {item.get('id')}: featureImage must be landscape between 4:3 and 2.2:1.")
-            ta = item.get("tripadvisor")
-            if ta is None:
-                continue
-            if not str(ta.get("url", "")).startswith("https://www.tripadvisor.com/"):
-                errors.append(f"sights.yaml {item.get('id')}: tripadvisor.url must be an https://www.tripadvisor.com/ link.")
-            if ta.get("rating") is not None and not (1.0 <= float(ta["rating"]) <= 5.0):
-                errors.append(f"sights.yaml {item.get('id')}: tripadvisor.rating must be between 1 and 5.")
-            if not ta.get("checkedAt"):
-                errors.append(f"sights.yaml {item.get('id')}: tripadvisor.checkedAt is required (ratings change).")
+            errors += score_errors(item)
         areas = sights.get("areas")
         if areas:
             owner = {}
