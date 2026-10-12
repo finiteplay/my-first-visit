@@ -273,6 +273,13 @@ judgment, not a traveler or review-site score, and needs the reviewer's sign-off
 priority, then by the original starter-list rank, then by name. The category buttons are built from the places'
 `category` values with counts; no hand-maintained list is needed for a new category.
 
+### Place lists inside a guide
+
+A guide can list places with `placeGroups` ({group, intro, placeIds}) plus an optional `placeGroupsNote`. The app
+builds each entry from the place data (name opening the place card, priority label, time, one line, website and
+Google Maps links), so there is nothing to keep in sync by hand. The Reykjavík time guide uses it for the city's
+sights; list only places that already have a card.
+
 ### Country map and number tiles
 
 Status: **built for the Iceland draft; the map is checked by `audit_guide.py`.**

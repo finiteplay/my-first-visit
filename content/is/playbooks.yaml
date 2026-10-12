@@ -955,7 +955,40 @@
         }
       ],
       "warning": "Opening hours, prices, tour schedules and the City Card terms change. Confirm them before you shape the day.",
-      "limits": "The evidence shows distinct travel styles, not one right number of days. Reports come from independent, mostly English-speaking travelers and the city's own promotional pages, so they favor the capital's strengths."
+      "limits": "The evidence shows distinct travel styles, not one right number of days. Reports come from independent, mostly English-speaking travelers and the city's own promotional pages, so they favor the capital's strengths.",
+      "placeGroups": [
+        {
+          "group": "In and around the center (on foot)",
+          "intro": "These sit within a short walk of each other, so you can string them into a half-day without a car.",
+          "placeIds": [
+            "sight-hallgrimskirkja",
+            "sight-laugavegur",
+            "sight-harpa",
+            "sight-old-harbour",
+            "sight-national-museum",
+            "sight-magic-ice",
+            "sight-mink"
+          ]
+        },
+        {
+          "group": "The harbor district (Grandi), good for a wet hour",
+          "intro": "Three indoor attractions close together on the harbor, a short walk from the Old Harbour. Most are timed or ticketed, so check hours and booking first.",
+          "placeIds": [
+            "sight-whales",
+            "sight-aurora-reykjavik",
+            "sight-flyover"
+          ]
+        },
+        {
+          "group": "A short bus or taxi ride out",
+          "intro": "Worth the extra step when you have the time and the weather asks for an indoor stop or a soak.",
+          "placeIds": [
+            "sight-perlan",
+            "sight-laugardalslaug"
+          ]
+        }
+      ],
+      "placeGroupsNote": "Looking for more soaks? The pool and lagoon guide lists the city's public pools and the lagoons within about an hour."
     }
   ]
 }

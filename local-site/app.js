@@ -146,6 +146,18 @@
       <p class="callout"><strong>Keep this:</strong> ${escapeHtml(item.closing)}</p>`;
   }
 
+  // A list of places for a guide: the priority label, time, one line, and website and map links, all from the place data.
+  function placeGroupsHtml(item) {
+    if (!item.placeGroups?.length) return "";
+    const card = place => `<div class="option place-entry">
+        <strong><button type="button" class="link-button" data-open="place:${escapeHtml(place.id)}">${escapeHtml(place.name)}</button></strong>
+        <p>${priorityHtml(place)} <span class="place-time-inline">${escapeHtml(place.timeNeeded)}</span></p>
+        <p>${escapeHtml(place.whyGo)}</p>
+        <p class="place-links">${place.website ? `<a class="maps-link" href="${escapeHtml(place.website.url)}" target="_blank" rel="noopener">${escapeHtml(place.website.label)} <span aria-hidden="true">↗</span></a>` : ""}${place.location ? `<a class="maps-link" href="${escapeHtml(mapsUrl(place))}" target="_blank" rel="noopener">Google Maps <span aria-hidden="true">↗</span></a>` : ""}</p>
+      </div>`;
+    return `<h2>Places to see in Reykjavík</h2>${item.placeGroups.map(group => `<h3>${escapeHtml(group.group)}</h3>${group.intro ? `<p>${escapeHtml(group.intro)}</p>` : ""}<div class="option-grid">${group.placeIds.map(id => data.places.find(place => place.id === id)).filter(Boolean).map(card).join("")}</div>`).join("")}${item.placeGroupsNote ? `<p>${escapeHtml(item.placeGroupsNote)} <button type="button" class="link-button" data-open="playbook:pool-or-lagoon">Open the pool and lagoon guide</button></p>` : ""}`;
+  }
+
   function playbookHtml(item) {
     const decisions = item.decision ? Object.entries(item.decision).map(([key, value]) => `<div class="option"><strong>${escapeHtml(key.replace(/([A-Z])/g, " $1"))}</strong><p>${escapeHtml(value)}</p></div>`).join("") : "";
     const options = item.options ? item.options.map(value => `<div class="option"><strong>${escapeHtml(value.name)}</strong><p>${escapeHtml(value.bestFor)}</p><p><em>Trade-off:</em> ${escapeHtml(value.tradeoff)}</p></div>`).join("") : "";
@@ -156,6 +168,7 @@
       ${item.travelerStories?.length ? `<h2>What travelers experienced</h2>${item.travelerStories.map(story => `<blockquote class="story">${escapeHtml(story)}</blockquote>`).join("")}` : ""}
       ${decisions || options ? `<h2>Your options</h2><div class="option-grid">${decisions}${options}</div>` : ""}
       ${item.trackers?.length ? `<h2>Websites that track conditions</h2>${item.trackersIntro ? `<p>${escapeHtml(item.trackersIntro)}</p>` : ""}<div class="option-grid">${item.trackers.map(site => `<div class="option tracker"><strong><a href="${escapeHtml(site.url)}" target="_blank" rel="noopener">${escapeHtml(site.name)} <span aria-hidden="true">↗</span></a></strong><p><em>Shows:</em> ${escapeHtml(site.shows)}</p><p><em>Use it for:</em> ${escapeHtml(site.useItFor)}</p></div>`).join("")}</div>` : ""}
+      ${placeGroupsHtml(item)}
       ${item.whereToSoak?.map(group => `<h2>${escapeHtml(group.group)}</h2><p>${escapeHtml(group.intro)}</p><div class="option-grid">${group.places.map(place => `<div class="option place-entry"><strong>${escapeHtml(place.name)}</strong>${place.local ? `<div class="say-it">${place.local !== place.name ? `<span class="local-name">${escapeHtml(place.local)}</span>` : ""}<span class="respelling" title="Draft respelling; native review pending">${escapeHtml(place.respelling)}</span>${audioControls(place.local)}</div>` : ""}<p class="where">${escapeHtml(place.where)}</p><p>${escapeHtml(place.character)}</p><p><em>Best for:</em> ${escapeHtml(place.bestFor)}</p><p><em>Heads-up:</em> ${escapeHtml(place.headsUp)}</p>${placeLinks(place)}</div>`).join("")}</div>`).join("") || ""}
       ${item.whatToExpect ? `<h2>What to expect</h2><p>${escapeHtml(item.whatToExpect)}</p>` : ""}
       ${item.checklist ? `<h2>Before you go</h2>${list(item.checklist)}` : ""}
