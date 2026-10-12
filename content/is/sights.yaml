@@ -87,6 +87,13 @@
         "rank": 12,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 64.255402,
+        "longitude": -21.132196,
+        "label": "P1 Hakið",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 103
       }
     },
     {
@@ -175,6 +182,13 @@
         "rank": 20,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 64.30895,
+        "longitude": -20.303529,
+        "label": "Parking for Geysir and Strokkur",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 160
       }
     },
     {
@@ -351,6 +365,13 @@
         "rank": 16,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 63.615254,
+        "longitude": -19.993897,
+        "label": "Seljalandsfoss",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 265
       }
     },
     {
@@ -395,6 +416,13 @@
         "rank": 9,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 63.525858,
+        "longitude": -19.511204,
+        "label": "Parking for Skógafoss waterfall",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 663
       }
     },
     {
@@ -527,6 +555,13 @@
         "rank": 7,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 65.685552,
+        "longitude": -17.545531,
+        "label": "Parking for Goðafoss waterfall",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 356
       }
     },
     {
@@ -1276,6 +1311,13 @@
         "rank": 21,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 64.737547,
+        "longitude": -23.775994,
+        "label": "Londrangar - Parking",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 683
       }
     },
     {
@@ -1324,6 +1366,13 @@
         "rank": 41,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 64.753566,
+        "longitude": -23.895213,
+        "label": "Parking for Djúpalónssandur",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 413
       }
     },
     {
@@ -1381,6 +1430,13 @@
         "rank": 17,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 64.92787,
+        "longitude": -23.313138,
+        "label": "Parking for Kirkjufellsfoss",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 194
       }
     },
     {
@@ -1591,6 +1647,13 @@
         "rank": 30,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 65.642292,
+        "longitude": -16.832744,
+        "label": "Parking for Hverir geothermal field",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 662
       }
     },
     {
@@ -1649,6 +1712,13 @@
         "rank": 54,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 65.567605,
+        "longitude": -17.035848,
+        "label": "Skútustaðir",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 123
       }
     },
     {
@@ -1763,6 +1833,13 @@
         "rank": 29,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 65.073326,
+        "longitude": -14.880688,
+        "label": "Parking for Hengifoss and Litlanesfoss",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 2465
       }
     },
     {
@@ -1859,6 +1936,13 @@
         "rank": 40,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 64.045254,
+        "longitude": -16.177826,
+        "label": "Parking for Diamond Beach",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 236
       }
     },
     {
@@ -1964,6 +2048,13 @@
         "rank": 32,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 64.014312,
+        "longitude": -16.968886,
+        "label": "Skaftafell Parking",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 290
       }
     },
     {
@@ -2021,6 +2112,13 @@
         "rank": 28,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 64.016075,
+        "longitude": -16.970119,
+        "label": "Parking for Svartifoss",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 1319
       }
     },
     {
@@ -2069,6 +2167,13 @@
         "rank": 51,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 63.850428,
+        "longitude": -17.860285,
+        "label": "Parking for Dverghamrar basalt columns",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 115
       }
     },
     {
@@ -2117,6 +2222,13 @@
         "rank": 56,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 63.853942,
+        "longitude": -17.871133,
+        "label": "Parking for Foss á Síðu and Eldhraun",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 252
       }
     },
     {
@@ -2223,6 +2335,13 @@
         "rank": 18,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 63.525513,
+        "longitude": -19.491825,
+        "label": "Parking for Kvernufoss",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 663
       }
     },
     {
@@ -2280,6 +2399,13 @@
         "rank": 19,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 63.615254,
+        "longitude": -19.993897,
+        "label": "Seljalandsfoss",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 717
       }
     },
     {
@@ -2376,6 +2502,13 @@
         "rank": 33,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 63.924725,
+        "longitude": -20.67537,
+        "label": "Urriðafoss",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 169
       }
     },
     {
@@ -2433,6 +2566,13 @@
         "rank": 2,
         "method": "aggregate-v3",
         "asOf": "2026-10"
+      },
+      "parking": {
+        "latitude": 64.262094,
+        "longitude": -20.52091,
+        "label": "Bruarfoss Parking",
+        "source": "OpenStreetMap contributors (ODbL)",
+        "distanceMeters": 341
       }
     },
     {

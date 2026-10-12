@@ -151,11 +151,13 @@
 
   // Live-condition links: the same three official services everywhere they matter.
   const LIVE = {
-    weather: { label: "Weather and warnings", url: "https://en.vedur.is/" },
+    weather: { label: "Official weather warnings", url: "https://en.vedur.is/" },
     roads: { label: "Road conditions", url: "https://umferdin.is/en" },
     safetravel: { label: "Safetravel alerts", url: "https://safetravel.is/travel-conditions/" }
   };
   const liveStrip = keys => `<p class="live-strip"><strong>Check today:</strong> ${keys.map(key => `<a href="${escapeHtml(LIVE[key].url)}" target="_blank" rel="noopener">${escapeHtml(LIVE[key].label)}</a>`).join(" · ")}</p>`;
+  // Forecast for the place itself (yr.no and Windy, by coordinates); the official warnings stay in the strip below.
+  const placeWeather = item => item.location ? `<p class="live-strip"><strong>Weather here:</strong> <a href="https://www.yr.no/en/forecast/daily-table/${item.location.latitude.toFixed(4)},${item.location.longitude.toFixed(4)}" target="_blank" rel="noopener">Forecast for ${escapeHtml(item.local)}</a> · <a href="https://www.windy.com/${item.location.latitude.toFixed(3)}/${item.location.longitude.toFixed(3)}" target="_blank" rel="noopener">Wind and rain map</a></p>` : "";
   const liveCheckBody = checks => checks?.length ? `<ul>${checks.map(check => /^https?:/.test(check.url || "")
     ? `<li><a href="${escapeHtml(check.url)}" target="_blank" rel="noopener">${escapeHtml(check.label)} <span aria-hidden="true">↗</span></a></li>`
     : `<li>${escapeHtml(check.label)} <span class="muted">(ask the provider)</span></li>`).join("")}</ul>` : "";
@@ -369,7 +371,8 @@
 
   // Where a place is: a Google Maps link plus a small map with one dot. Places near the capital use
   // the local outline from map.yaml `regions`; everything else uses the country outline.
-  const mapsUrl = item => `https://www.google.com/maps/search/?api=1&query=${item.location.latitude},${item.location.longitude}`;
+  // Places reached on foot link to their parking lot (OpenStreetMap), so the map opens where a car can stop.
+  const mapsUrl = item => { const at = item.parking || item.location; return `https://www.google.com/maps/search/?api=1&query=${at.latitude},${at.longitude}`; };
   const kmBetween = (lon1, lat1, lon2, lat2) => {
     const rad = Math.PI / 180, dLat = (lat2 - lat1) * rad, dLon = (lon2 - lon1) * rad;
     const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat1 * rad) * Math.cos(lat2 * rad) * Math.sin(dLon / 2) ** 2;
@@ -426,7 +429,7 @@
         </svg>
         <figcaption>${escapeHtml(areaName)}. Approximate position, not for navigation. ${escapeHtml(credit)}</figcaption>
       </figure>
-      <p class="place-links"><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a>${item.website ? `<a class="maps-link" href="${escapeHtml(item.website.url)}" target="_blank" rel="noopener">${escapeHtml(item.website.label)} <span aria-hidden="true">↗</span></a>` : ""}</p>
+      <p class="place-links"><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">${item.parking ? `Parking for ${escapeHtml(item.local)} in Google Maps` : `Open ${escapeHtml(item.local)} in Google Maps`} <span aria-hidden="true">↗</span></a>${item.website ? `<a class="maps-link" href="${escapeHtml(item.website.url)}" target="_blank" rel="noopener">${escapeHtml(item.website.label)} <span aria-hidden="true">↗</span></a>` : ""}</p>
       ${item.score ? `<p class="score-note">${scoreBadge(item)} Ranked number ${item.score.rank} of ${data.places.length} places in our own ranking. The stars are the average of what travelers say about this place on several large travel and map sites; the sites' own numbers are not republished here. Checked ${escapeHtml(item.score.asOf)}; ratings change.</p>` : ""}
     </div>`;
   }
@@ -458,7 +461,7 @@
       ${detailParagraphs}
       <p class="place-time"><strong>Time to allow:</strong> ${escapeHtml(item.timeNeeded)}</p>
       ${placeMinimap(item)}
-      ${liveStrip(["weather"].concat(item.region === "Capital area" ? [] : ["roads"], item.category === "Nature" ? ["safetravel"] : []))}
+      ${placeWeather(item)}${liveStrip(["weather"].concat(item.region === "Capital area" ? [] : ["roads"], item.category === "Nature" ? ["safetravel"] : []))}
     `;
   }
 
