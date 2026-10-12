@@ -251,6 +251,15 @@ def audit(root):
     if sights_path.exists():
         sights = read_json(sights_path)
         for item in sights.get("items", []):
+            fi = item.get("featureImage")
+            if fi is not None:
+                for field in ("url", "pageUrl", "status", "checkedAt"):
+                    if not str(fi.get(field, "")).strip():
+                        errors.append(f"sights.yaml {item.get('id')}: featureImage.{field} is required.")
+                if not str(fi.get("url", "")).startswith("https://"):
+                    errors.append(f"sights.yaml {item.get('id')}: featureImage.url must use https.")
+                if not (1.33 <= float(fi.get("width", 1)) / float(fi.get("height", 1)) <= 2.2):
+                    errors.append(f"sights.yaml {item.get('id')}: featureImage must be landscape between 4:3 and 2.2:1.")
             ta = item.get("tripadvisor")
             if ta is None:
                 continue

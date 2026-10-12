@@ -87,6 +87,11 @@ decision-useful. `--release` must continue to fail while reviews or media are mi
   presented as an exact landmark photo without destination verification. Check people, logos,
   artwork, property and venue restrictions separately from copyright. Use generated images
   only as clearly labeled prototypes when a cleared real image is unavailable.
+- Exception chosen by the content author: where a place has no author-selected photo, the app may show the
+  place's own website feature image (`og:image`) as a hotlinked placeholder in `featureImage`. It is never copied
+  into the repo or the app, is labeled "not licensed for reuse", must be landscape (4:3 to 2.2:1), must show the
+  place itself (check each by eye), and is replaced by an author-selected cleared photo as soon as one exists.
+  Get the owner's permission or replace it before any public release.
 - Never use a generic landscape, city street, stock mood image or generated illustration as a
   substitute for a named destination. If an exact destination image is not available and
   verified, leave the image area in an explicit pending state; an honest empty state is better

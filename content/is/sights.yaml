@@ -608,6 +608,15 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://aurorareykjavik.is/wp-content/uploads/2024/12/Aurora-Reykjavik-Icelands-1st-and-only-Northern-Lights-Center.jpg",
+        "width": 1920,
+        "height": 1080,
+        "pageUrl": "https://aurorareykjavik.is/",
+        "source": "aurorareykjavik.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -646,6 +655,15 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://www.flyovericeland.com/getmedia/071504c4-e0c3-4ab1-a761-ab6e1ae34d38/BN-FlyOver-Iceland-Glacier.jpg?width=1400&height=800&ext=.jpg",
+        "width": 1400,
+        "height": 800,
+        "pageUrl": "https://www.flyovericeland.com/",
+        "source": "flyovericeland.com",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -683,6 +701,15 @@
         "url": "https://mink.is/",
         "label": "Official website",
         "kind": "official",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://mink.is/wp-content/uploads/2022/12/HI-RES-3809-1536x1024.jpg",
+        "width": 1536,
+        "height": 1024,
+        "pageUrl": "https://mink.is/",
+        "source": "mink.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     },
@@ -759,6 +786,15 @@
         "url": "https://vokbaths.is/",
         "label": "Official website",
         "kind": "official",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://irp.cdn-website.com/0334652e/dms3rep/multi/opt/556854365_1576811043622621_7768024849139425683_n-a36b8ad9-c8f20a67-1920w.webp",
+        "width": 1920,
+        "height": 1123,
+        "pageUrl": "https://www.vokbaths.is/",
+        "source": "vokbaths.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     },
@@ -880,6 +916,15 @@
         "label": "Visit Reykjavík page",
         "kind": "regional",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://visitreykjavik.is/sites/default/files/reykjavik-4z4a3569-760x500.jpg",
+        "width": 760,
+        "height": 500,
+        "pageUrl": "https://visitreykjavik.is/news/magic-ice-reykjavik",
+        "source": "visitreykjavik.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -964,6 +1009,15 @@
         "label": "Visit West Iceland page",
         "kind": "regional",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://res.cloudinary.com/itb-database/image/upload/s--c7RRObTx--/c_fill,dpr_auto,f_auto,q_auto:eco,w_1280/v1/Places/cktycy2hy7l4le7qorvs?v=1791780380",
+        "width": 1280,
+        "height": 853,
+        "pageUrl": "https://www.west.is/en/place/budir",
+        "source": "west.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -1005,6 +1059,15 @@
         "url": "https://www.west.is/en/place/arnarstapi",
         "label": "Visit West Iceland page",
         "kind": "regional",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://res.cloudinary.com/itb-database/image/upload/s--kFtoZYF8--/c_fill,dpr_auto,f_auto,q_auto:eco,w_1280/v1/Places/lqbgkerzaqa9ec3uldmt?v=1791780380",
+        "width": 1280,
+        "height": 719,
+        "pageUrl": "https://www.west.is/en/place/arnarstapi",
+        "source": "west.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     },
@@ -1132,6 +1195,15 @@
         "label": "Visit West Iceland page",
         "kind": "regional",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://res.cloudinary.com/itb-database/image/upload/s--NTHNEqiM--/c_fill,dpr_auto,f_auto,q_auto:eco,w_1280/v1/Places/qdk5vcgz2lwapneeqkpf?v=1791780380",
+        "width": 1280,
+        "height": 853,
+        "pageUrl": "https://www.west.is/en/place/kirkjufellsfoss",
+        "source": "west.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -1174,6 +1246,15 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://bjarnarhofn.is/wp-content/uploads/2025/10/56734792_287391815510066_7859963097128108032_n-scaled.jpg",
+        "width": 2560,
+        "height": 1706,
+        "pageUrl": "https://bjarnarhofn.is/",
+        "source": "bjarnarhofn.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -1215,6 +1296,15 @@
         "url": "https://www.glaumbaer.is/",
         "label": "Official website (Skagafjörður Heritage Museum)",
         "kind": "official",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://www.glaumbaer.is/static/sitemap/lg/8f6e26f2cdefac56bedc7f11327cad75-og.png?v=1791782233",
+        "width": 1200,
+        "height": 630,
+        "pageUrl": "https://www.glaumbaer.is/",
+        "source": "glaumbaer.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     },
@@ -1342,6 +1432,16 @@
         "label": "Environment Agency of Iceland page",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://res.cloudinary.com/itb-database/image/upload/s--bqLXM8tR--/c_fill,dpr_auto,f_auto,q_auto:eco,w_1280/v1/Municipalities/xwrhmfc4yqccvpomhkp8?v=1791780642",
+        "width": 1280,
+        "height": 853,
+        "pageUrl": "https://www.northiceland.is/en/destinations/towns/myvatn",
+        "source": "northiceland.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11",
+        "note": "Mývatn page image showing the pseudocraters at Skútustaðir"
       }
     },
     {
@@ -1384,6 +1484,15 @@
         "label": "Vatnajökull National Park page",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://images.prismic.io/vatnajokulsthjodgardur/11530a5b-539e-4d36-9cac-68a91edb2b99_Jg_Dettifoss_vestan_vor_2021_HA.jpg?auto=format&crop=focalpoint&fit=crop&fp-x=0.69&fp-y=0.50&w=1200&h=630",
+        "width": 1200,
+        "height": 630,
+        "pageUrl": "https://www.vatnajokulsthjodgardur.is/en/areas/jokulsargljufur/dettifoss",
+        "source": "vatnajokulsthjodgardur.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -1425,6 +1534,15 @@
         "url": "https://www.east.is/en/communities/visit-fljotsdalur/top-destinations",
         "label": "Visit Austurland page",
         "kind": "regional",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://www.east.is/static/sitemap/lg/067d7b2efa1bfd8a19b377b07fec2c90-thrainnkolbeinsson_hengifoss_tokurtt2022_20220816_hengifoss_thrainn_362285-pano-1-2.jpg?v=1791782373",
+        "width": 1200,
+        "height": 801,
+        "pageUrl": "https://www.east.is/en/communities/visit-fljotsdalur/top-destinations",
+        "source": "east.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     },
@@ -1552,6 +1670,15 @@
         "label": "Operator's website",
         "kind": "operator",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://fjallsarlon.is/_next/image?url=https%3A%2F%2Fwp.fjallsarlon.is%2Fwp-content%2Fuploads%2F2026%2F01%2FGlacier-lagoon-iceberg-boat-tour-1.png&w=3840&q=85",
+        "width": 1000,
+        "height": 680,
+        "pageUrl": "https://fjallsarlon.is/",
+        "source": "fjallsarlon.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -1635,6 +1762,15 @@
         "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell/destination-svartifoss",
         "label": "Vatnajökull National Park page",
         "kind": "official",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://images.prismic.io/vatnajokulsthjodgardur/f1b6c4f9-4005-4045-8c80-a9c8e54c70f5_Svartifoss_%C3%BAts%C3%BDnissta%C3%B0ur_2021_SRR-2.jpg?auto=format&crop=focalpoint&fit=crop&fp-x=0.53&fp-y=0.50&w=1200&h=630",
+        "width": 1200,
+        "height": 630,
+        "pageUrl": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell/destination-svartifoss",
+        "source": "vatnajokulsthjodgardur.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     },
@@ -1762,6 +1898,15 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://framerusercontent.com/assets/7IpybgLBaWTLtjNABxK0khTW4.png",
+        "width": 1200,
+        "height": 630,
+        "pageUrl": "https://www.lavashow.com/",
+        "source": "lavashow.com",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -1845,6 +1990,15 @@
         "url": "https://www.south.is/en/place/gljufrabui",
         "label": "Visit South Iceland page",
         "kind": "regional",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://res.cloudinary.com/itb-database/image/upload/s--qNCRNQs8--/c_fill,dpr_auto,f_auto,q_auto:eco,w_1280/v1/Places/p7qrqorqnlebenr6hkia?v=1791782306",
+        "width": 1280,
+        "height": 854,
+        "pageUrl": "https://www.south.is/en/place/gljufrabui",
+        "source": "south.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     },
@@ -1972,6 +2126,15 @@
         "label": "Brúarfoss access and parking site",
         "kind": "operator",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://bruarfoss.is/wp-content/uploads/2023/04/cropped-Bruarfoss_2000x1200-scaled-1.jpg",
+        "width": 2000,
+        "height": 1200,
+        "pageUrl": "https://bruarfoss.is/",
+        "source": "bruarfoss.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -2013,6 +2176,15 @@
         "url": "https://www.south.is/en/place/kerid-crater",
         "label": "Visit South Iceland page",
         "kind": "regional",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://res.cloudinary.com/itb-database/image/upload/s--tTHVoAGm--/c_fill,dpr_auto,f_auto,q_auto:eco,w_1280/v1/Places/pvik0gjvd6zz9xouhxwx?v=1791782306",
+        "width": 1280,
+        "height": 854,
+        "pageUrl": "https://www.south.is/en/place/kerid-crater",
+        "source": "south.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     },
@@ -2056,6 +2228,15 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://thelavatunnel.is/wp-content/uploads/2016/08/thelavatunnel-hero-image-platform.jpg                                        ",
+        "width": 1920,
+        "height": 1039,
+        "pageUrl": "https://thelavatunnel.is/",
+        "source": "thelavatunnel.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -2097,6 +2278,15 @@
         "url": "https://www.skylagoon.com/",
         "label": "Official website",
         "kind": "official",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://www.skylagoon.com/getContentAsset/e1d36e14-3acb-4735-9b2a-f23153b19030/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/OG-Together-in-Sauna-Big-Window.jpg%3Flanguage=en-CA",
+        "width": 1200,
+        "height": 627,
+        "pageUrl": "https://www.skylagoon.com/",
+        "source": "skylagoon.com",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     },
@@ -2140,6 +2330,15 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://images.ctfassets.net/w65k7w0nsb8q/4egTHqIvc6A9cNgAILlcyK/ef94101278f85c96a659e6bd7899729e/Bluelagoon-meta.jpg?fit=fill&h=630&q=90&w=1200",
+        "width": 1200,
+        "height": 630,
+        "pageUrl": "https://www.bluelagoon.com/",
+        "source": "bluelagoon.com",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -2181,6 +2380,15 @@
         "url": "https://hvammsvik.com/",
         "label": "Official website",
         "kind": "official",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://hvammsvik.com/wp-content/uploads/2026/04/hvammsvik_181-1-scaled.jpg",
+        "width": 2560,
+        "height": 1708,
+        "pageUrl": "https://hvammsvik.com/",
+        "source": "hvammsvik.com",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     },
@@ -2260,6 +2468,15 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://irp.cdn-website.com/3b0d6c0c/dms3rep/multi/opt/BST_EartBath_BirdsView_Copyrights+www.pneuma_edit-1920w.jpg",
+        "width": 1920,
+        "height": 1280,
+        "pageUrl": "https://www.earthlagoon.is/",
+        "source": "earthlagoon.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -2301,6 +2518,15 @@
         "url": "https://secretlagoon.is/",
         "label": "Official website",
         "kind": "official",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://secretlagoon.is/wp-content/uploads/2021/01/v0a0746.jpg",
+        "width": 2000,
+        "height": 1333,
+        "pageUrl": "https://secretlagoon.is/",
+        "source": "secretlagoon.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     },
@@ -2344,6 +2570,15 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://images.prismic.io/forestlagoon/Z9AVnRsAHJWomUfj_Entrance.jpg?auto=format,compress",
+        "width": 7415,
+        "height": 4946,
+        "pageUrl": "https://www.forestlagoon.is/",
+        "source": "forestlagoon.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -2385,6 +2620,15 @@
         "url": "https://fontana.is/",
         "label": "Official website",
         "kind": "official",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://cdn.prod.website-files.com/6932ba01bcb050f8373e007b/6aa5c1809d6eda94f197c6ab_Fontana_2026_8_18_Sylvia%20(5).jpeg",
+        "width": 2048,
+        "height": 1366,
+        "pageUrl": "https://fontana.is/",
+        "source": "fontana.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     },
@@ -2428,6 +2672,15 @@
         "label": "Official website",
         "kind": "official",
         "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://irp.cdn-website.com//16726317/dms3rep/multi/opt/GeoSea_socialsharingimage-1920w.png",
+        "width": 1152,
+        "height": 768,
+        "pageUrl": "https://www.geosea.is/",
+        "source": "geosea.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -2469,6 +2722,15 @@
         "url": "https://www.krauma.is/",
         "label": "Official website",
         "kind": "official",
+        "checkedAt": "2026-10-11"
+      },
+      "featureImage": {
+        "url": "https://irp.cdn-website.com/33e1f341/dms3rep/multi/opt/_PIV5320-1920w.jpg",
+        "width": 1920,
+        "height": 1281,
+        "pageUrl": "https://www.krauma.is/",
+        "source": "krauma.is",
+        "status": "hotlinked placeholder: the website's own feature image, not licensed for reuse; get permission or replace with a cleared photo before release",
         "checkedAt": "2026-10-11"
       }
     }

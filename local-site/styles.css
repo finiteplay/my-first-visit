@@ -459,3 +459,8 @@ body.night .rm-day { fill: #e8f1f2; stroke: #26363a; }
 .minimap-roads { fill: none; stroke: #cdc5ab; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 body.night .minimap-water { fill: #14262a; stroke: #5d777a; }
 body.night .minimap-roads { stroke: #4b5c60; }
+
+/* Website feature images used as temporary placeholders */
+.feature-photo { margin: 0 0 28px; }
+.feature-photo img { display: block; width: 100%; height: auto; border-radius: 12px; background: #e9e7df; }
+.feature-photo figcaption { margin-top: 6px; color: var(--muted); font-size: .76rem; }

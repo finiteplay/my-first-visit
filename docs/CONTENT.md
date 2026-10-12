@@ -310,6 +310,14 @@ so the Iceland values came from search-result summaries: confirm each on the pag
 villages or areas have no rating of their own (`rating: null`) and sort last. Before a public release, check
 TripAdvisor's terms for showing ratings, or switch to link-only or their official content API.
 
+### Placeholder feature images
+
+A place without an author-selected photo can show `featureImage`: the image from the place's own website (its `og:image` or a
+large hero picture), hotlinked and labeled as a placeholder. Rules: landscape between 4:3 and 2.2:1; it must show the
+place (not a logo, a café, another site or a letterboxed graphic); never download it into the pack; show the source site and
+that it is not licensed for reuse; remove it when a cleared photo is selected or if the owner objects. It is a development
+convenience, not a release asset: get permission or replace it before publishing.
+
 ### Country map and number tiles
 
 Status: **built for the Iceland draft; the map is checked by `audit_guide.py`.**
