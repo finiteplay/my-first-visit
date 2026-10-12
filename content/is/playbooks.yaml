@@ -255,19 +255,20 @@
       ],
       "ourTake": "If your itinerary already has a premium lagoon, add a neighborhood pool only if you want the social ritual, not to collect another attraction. If the premium price hurts, choose the local pool without apology and spend the difference on the experience you came for.",
       "sourceIds": [
-        "r006",
-        "r008",
-        "t003",
-        "t007",
-        "k001",
-        "k006",
-        "o007",
+        "city-pool",
         "e001",
         "e002",
         "e003",
+        "k001",
+        "k006",
+        "o007",
         "p007",
         "p008",
-        "city-pool"
+        "p011",
+        "r006",
+        "r008",
+        "t003",
+        "t007"
       ],
       "body": [
         "Icelanders use geothermal water in two quite different ways. The neighborhood pool is ordinary infrastructure: a place to swim laps, sit in a hot pot and talk to neighbors, often with children in the water and a locker room full of strangers. Reykjavík's own visitor guide describes the pools as a fixed point in a local's day, where everyone meets as equals. The destination lagoon is an excursion. It is designed, timed, staged and priced as an occasion, with a ritual, a bar, a view or a landscape that you travel to see.",
@@ -374,17 +375,17 @@
           "places": [
             {
               "name": "Sky Lagoon",
-              "where": "Kársnes harbor in Kópavogur, about 7 km and 10 minutes from central Reykjavík",
-              "character": "A spa-style lagoon with an ocean-facing infinity edge. A ticket includes a seven-step ritual of warm soak, cold plunge, sauna, cold mist, salt scrub, steam and a final rest. Travelers report that it is smaller than the Blue Lagoon but calmer.",
+              "where": "Kársnes in Kópavogur, a 13-minute drive from central Reykjavík and about 45 minutes from Keflavík airport (operator figures); a bus from Hlemmur plus a short walk also works, and parking is free",
+              "character": "A spa-style lagoon with a 70-meter ocean-facing infinity edge. Every ticket includes the Skjól ritual of seven steps: warm lagoon, cold plunge, sauna, cold mist, sea-salt scrub, steam and a crowberry elixir. The Saman pass uses public changing rooms and the Sér pass private ones; the operator lists accessible and gender-neutral changing rooms and invites guests to leave phones behind. Travelers report that it is smaller than the Blue Lagoon but calmer.",
               "bestFor": "A staged spa evening close to the city",
-              "headsUp": "Minimum age is reported as 12; confirm. Booking ahead is recommended in summer and holiday weeks."
+              "headsUp": "The operator shows a youth price but its pages I read give no minimum age, so confirm the age rule. Prices change and appear in dollars on the English site; confirm the date and package before booking."
             },
             {
               "name": "Blue Lagoon",
               "where": "Reykjanes peninsula, about 50 minutes from Reykjavík and 25 minutes from Keflavík airport",
               "character": "Iceland's best-known geothermal spa, with milky blue water, silica masks and a large facility. Reports describe the best amenities and the most crowding, and the lowest average sentiment of the large lagoons.",
               "bestFor": "A big, iconic splurge, often on an arrival or departure day",
-              "headsUp": "Tickets are widely reported as required in advance; compare ticket tiers and confirm luggage storage if you come from the airport.",
+              "headsUp": "Tickets are widely reported as required in advance. The operator's site blocked our automated check, so confirm ticket tiers, age rules, luggage storage and transfers directly.",
               "local": "Bláa lónið",
               "respelling": "BLOW-ah LOH-nidh"
             },
