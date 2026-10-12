@@ -9,7 +9,7 @@
       "region": "Capital area",
       "nearestCity": "Reykjavík",
       "category": "Experience",
-      "tier": "worth-it",
+      "tier": "if-you-have-time",
       "whyGo": "Join an everyday Reykjavík ritual at a neighborhood swimming pool.",
       "timeNeeded": "1–2 hours",
       "bestTime": "After a restful arrival; check current facilities and visitor access.",
@@ -40,7 +40,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 25,
+        "rank": 31,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -84,7 +84,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 26,
+        "rank": 20,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -141,7 +141,7 @@
       "region": "Golden Circle",
       "nearestCity": "Selfoss",
       "category": "Nature",
-      "tier": "must-see",
+      "tier": "worth-it",
       "whyGo": "Watch Strokkur erupt in a landscape of steaming pools.",
       "timeNeeded": "45–75 minutes",
       "bestTime": "Daylight, when the site is accessible.",
@@ -172,7 +172,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 29,
+        "rank": 21,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -216,7 +216,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 42,
+        "rank": 43,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -229,7 +229,7 @@
       "region": "Capital area",
       "nearestCity": "Reykjavík",
       "category": "Landmark",
-      "tier": "worth-it",
+      "tier": "if-you-have-time",
       "whyGo": "Watch harbor light change through a geometric glass concert-hall facade.",
       "timeNeeded": "30–60 minutes",
       "bestTime": "Daylight for the facade; check visitor access.",
@@ -260,7 +260,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 36,
+        "rank": 39,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -273,7 +273,7 @@
       "region": "Capital area",
       "nearestCity": "Reykjavík",
       "category": "Museum",
-      "tier": "worth-it",
+      "tier": "if-you-have-time",
       "whyGo": "Connect the landscape to the people and objects of Iceland's history.",
       "timeNeeded": "1–2 hours",
       "bestTime": "A useful indoor choice; check current visitor access.",
@@ -304,7 +304,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 45,
+        "rank": 46,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -348,7 +348,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 11,
+        "rank": 17,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -392,7 +392,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 9,
+        "rank": 13,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -405,7 +405,7 @@
       "region": "South Coast",
       "nearestCity": "Vík",
       "category": "Nature",
-      "tier": "worth-it",
+      "tier": "if-you-have-time",
       "whyGo": "See dark sand, offshore rock stacks and basalt cliffs from permitted viewing areas.",
       "timeNeeded": "30–60 minutes, if access is permitted",
       "bestTime": "Daylight; current warnings determine where you may go.",
@@ -436,7 +436,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 17,
+        "rank": 23,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -480,7 +480,7 @@
       },
       "score": {
         "stars": 4.9,
-        "rank": 4,
+        "rank": 1,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -524,7 +524,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 12,
+        "rank": 7,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -568,7 +568,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 40,
+        "rank": 42,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -612,7 +612,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 41,
+        "rank": 5,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -625,7 +625,7 @@
       "region": "Capital area",
       "nearestCity": "Reykjavík",
       "category": "Museum",
-      "tier": "if-you-have-time",
+      "tier": "worth-it",
       "whyGo": "See life-size models of whale species found in Icelandic waters in an indoor harbor museum.",
       "timeNeeded": "1–2 hours",
       "bestTime": "A useful wet-weather stop; check current hours and admission.",
@@ -656,7 +656,7 @@
       },
       "score": {
         "stars": 4.1,
-        "rank": 58,
+        "rank": 22,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -710,7 +710,7 @@
       },
       "score": {
         "stars": 4.4,
-        "rank": 51,
+        "rank": 52,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -723,7 +723,7 @@
       "region": "Capital area",
       "nearestCity": "Reykjavík",
       "category": "Experience",
-      "tier": "if-you-have-time",
+      "tier": "worth-it",
       "whyGo": "An immersive flying-ride preview of Iceland with screen, motion, wind and mist.",
       "timeNeeded": "1–2 hours",
       "bestTime": "A convenient harbor stop when outdoor weather is poor; reserve a time.",
@@ -763,7 +763,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 21,
+        "rank": 28,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -776,7 +776,7 @@
       "region": "Capital area",
       "nearestCity": "Reykjavík",
       "category": "Experience",
-      "tier": "if-you-have-time",
+      "tier": "worth-it",
       "whyGo": "A playful, guided Viking-style portrait session on Reykjavík’s main shopping street.",
       "timeNeeded": "1–2 hours",
       "bestTime": "Book ahead; this is a timed small-group experience.",
@@ -816,7 +816,7 @@
       },
       "score": {
         "stars": 5.0,
-        "rank": 1,
+        "rank": 3,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -860,7 +860,7 @@
       },
       "score": {
         "stars": 4.3,
-        "rank": 55,
+        "rank": 56,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -873,7 +873,7 @@
       "region": "East",
       "nearestCity": "Egilsstaðir",
       "category": "Experience",
-      "tier": "if-you-have-time",
+      "tier": "worth-it",
       "whyGo": "Soak in floating geothermal pools on the shore of a lake, a few minutes from Egilsstaðir.",
       "timeNeeded": "1.5–3 hours",
       "bestTime": "Afternoon or evening after a driving day; check opening hours and how to book.",
@@ -913,7 +913,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 39,
+        "rank": 15,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -926,7 +926,7 @@
       "region": "Capital area",
       "nearestCity": "Reykjavík",
       "category": "Landmark",
-      "tier": "worth-it",
+      "tier": "if-you-have-time",
       "whyGo": "Walk the working harbor between Harpa and the Grandi area, where boats, museums and the sea meet.",
       "timeNeeded": "45–75 minutes",
       "bestTime": "Daytime on a dry, calm hour; it is also a good low-effort first-day walk.",
@@ -974,7 +974,7 @@
       "region": "Capital area",
       "nearestCity": "Reykjavík",
       "category": "Landmark",
-      "tier": "if-you-have-time",
+      "tier": "worth-it",
       "whyGo": "Stroll Reykjavík's main shopping street and the rainbow-painted street that climbs to Hallgrímskirkja.",
       "timeNeeded": "30–60 minutes",
       "bestTime": "Early evening for a short, light walk, or any dry daytime hour.",
@@ -1003,7 +1003,7 @@
       ],
       "score": {
         "stars": 4.5,
-        "rank": 48,
+        "rank": 49,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1016,7 +1016,7 @@
       "region": "Capital area",
       "nearestCity": "Reykjavík",
       "category": "Experience",
-      "tier": "if-you-have-time",
+      "tier": "worth-it",
       "whyGo": "Step into a bar carved from ice, with sculptures of Viking-age scenes, on Laugavegur.",
       "timeNeeded": "45–60 minutes",
       "bestTime": "Evening or any rainy hour; timed tickets are usual, so check availability.",
@@ -1060,7 +1060,7 @@
       },
       "score": {
         "stars": 3.9,
-        "rank": 60,
+        "rank": 24,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1108,7 +1108,7 @@
       },
       "score": {
         "stars": 4.4,
-        "rank": 49,
+        "rank": 50,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1121,7 +1121,7 @@
       "region": "Snæfellsnes",
       "nearestCity": "Búðir",
       "category": "Landmark",
-      "tier": "worth-it",
+      "tier": "if-you-have-time",
       "whyGo": "See a small black wooden church standing alone on the edge of a lava field.",
       "timeNeeded": "20–30 minutes",
       "bestTime": "Daylight; the setting is the point, so clear or dramatic skies help.",
@@ -1165,7 +1165,7 @@
       },
       "score": {
         "stars": 4.4,
-        "rank": 50,
+        "rank": 51,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1222,7 +1222,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 10,
+        "rank": 16,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1270,7 +1270,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 30,
+        "rank": 34,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1318,7 +1318,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 31,
+        "rank": 35,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1375,7 +1375,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 47,
+        "rank": 48,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1432,7 +1432,7 @@
       },
       "score": {
         "stars": 4.3,
-        "rank": 53,
+        "rank": 54,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1445,7 +1445,7 @@
       "region": "North",
       "nearestCity": "Varmahlíð",
       "category": "Museum",
-      "tier": "worth-it",
+      "tier": "must-see",
       "whyGo": "Walk through a cluster of turf-roofed houses that show how Icelanders lived for centuries.",
       "timeNeeded": "1–1.5 hours",
       "bestTime": "Daytime in the open season; the museum and café keep seasonal hours.",
@@ -1489,7 +1489,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 19,
+        "rank": 14,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1537,7 +1537,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 43,
+        "rank": 44,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1585,7 +1585,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 37,
+        "rank": 40,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1643,7 +1643,7 @@
       },
       "score": {
         "stars": 4.1,
-        "rank": 57,
+        "rank": 58,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1700,7 +1700,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 13,
+        "rank": 6,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1757,7 +1757,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 32,
+        "rank": 36,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1805,7 +1805,7 @@
       },
       "score": {
         "stars": 3.7,
-        "rank": 61,
+        "rank": 60,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1818,7 +1818,7 @@
       "region": "Southeast",
       "nearestCity": "Jökulsárlón",
       "category": "Nature",
-      "tier": "must-see",
+      "tier": "if-you-have-time",
       "whyGo": "See blocks of glacier ice washed up on a black-sand beach, glittering in the light.",
       "timeNeeded": "30–60 minutes",
       "bestTime": "Daylight; the ice changes with each tide, so no two visits match.",
@@ -1853,7 +1853,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 6,
+        "rank": 33,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1910,7 +1910,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 14,
+        "rank": 10,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1958,7 +1958,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 18,
+        "rank": 26,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2015,7 +2015,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 33,
+        "rank": 37,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2028,7 +2028,7 @@
       "region": "Southeast",
       "nearestCity": "Kirkjubæjarklaustur",
       "category": "Nature",
-      "tier": "if-you-have-time",
+      "tier": "worth-it",
       "whyGo": "Stop beside the Ring Road to see a cliff of basalt columns that looks like a stack of stone pencils.",
       "timeNeeded": "20–30 minutes",
       "bestTime": "Any daylight hour; it is directly off Route 1.",
@@ -2063,7 +2063,7 @@
       },
       "score": {
         "stars": 4.2,
-        "rank": 56,
+        "rank": 57,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2111,7 +2111,7 @@
       },
       "score": {
         "stars": 4.4,
-        "rank": 52,
+        "rank": 53,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2124,7 +2124,7 @@
       "region": "South Coast",
       "nearestCity": "Vík",
       "category": "Experience",
-      "tier": "if-you-have-time",
+      "tier": "must-see",
       "whyGo": "Watch real molten lava poured in front of you in a small indoor theater.",
       "timeNeeded": "1 hour",
       "bestTime": "Any time of day; timed bookings are usual, so check availability.",
@@ -2168,7 +2168,7 @@
       },
       "score": {
         "stars": 4.9,
-        "rank": 2,
+        "rank": 4,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2216,7 +2216,7 @@
       },
       "score": {
         "stars": 4.9,
-        "rank": 3,
+        "rank": 11,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2273,7 +2273,7 @@
       },
       "score": {
         "stars": 4.9,
-        "rank": 5,
+        "rank": 12,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2321,7 +2321,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 23,
+        "rank": 25,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2334,7 +2334,7 @@
       "region": "South Coast",
       "nearestCity": "Selfoss",
       "category": "Nature",
-      "tier": "if-you-have-time",
+      "tier": "worth-it",
       "whyGo": "Watch the most voluminous waterfall in Iceland, on the longest river, a short detour from the Ring Road.",
       "timeNeeded": "20–30 minutes",
       "bestTime": "Daylight; the viewing area is a short, easy walk.",
@@ -2369,7 +2369,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 34,
+        "rank": 38,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2382,7 +2382,7 @@
       "region": "Golden Circle",
       "nearestCity": "Laugarvatn",
       "category": "Nature",
-      "tier": "worth-it",
+      "tier": "must-see",
       "whyGo": "See a river squeeze through a rock channel in an intense turquoise blue, near the Golden Circle.",
       "timeNeeded": "40–60 minutes",
       "bestTime": "Daylight; the viewpoint is a short walk from the paid lot.",
@@ -2426,7 +2426,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 7,
+        "rank": 2,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2483,7 +2483,7 @@
       },
       "score": {
         "stars": 4.3,
-        "rank": 54,
+        "rank": 55,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2540,7 +2540,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 16,
+        "rank": 19,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2597,7 +2597,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 35,
+        "rank": 9,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2654,7 +2654,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 44,
+        "rank": 45,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2711,7 +2711,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 15,
+        "rank": 18,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2724,7 +2724,7 @@
       "region": "South Iceland",
       "nearestCity": "Hveragerði",
       "category": "Experience",
-      "tier": "worth-it",
+      "tier": "if-you-have-time",
       "whyGo": "Hike to a naturally warm river in a steaming valley and bathe in it, for free.",
       "timeNeeded": "3–4 hours",
       "bestTime": "Dry weather in the warmer months; in winter the path can be icy and changing is cold.",
@@ -2753,7 +2753,7 @@
       ],
       "score": {
         "stars": 4.7,
-        "rank": 22,
+        "rank": 29,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2810,7 +2810,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 46,
+        "rank": 47,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2823,7 +2823,7 @@
       "region": "Golden Circle",
       "nearestCity": "Flúðir",
       "category": "Experience",
-      "tier": "worth-it",
+      "tier": "if-you-have-time",
       "whyGo": "Bathe in Iceland's oldest swimming pool, beside a small geyser, with a natural rather than polished feel.",
       "timeNeeded": "1.5–2.5 hours",
       "bestTime": "Afternoon or evening; pre-booking is strongly encouraged.",
@@ -2867,7 +2867,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 27,
+        "rank": 32,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2924,7 +2924,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 38,
+        "rank": 41,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2981,7 +2981,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 28,
+        "rank": 61,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -3038,7 +3038,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 24,
+        "rank": 30,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -3095,7 +3095,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 20,
+        "rank": 27,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
