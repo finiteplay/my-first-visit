@@ -8,6 +8,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,san
 header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 16px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 header h1{font-size:1.1rem;margin:0;flex:1}
 button{font:inherit;padding:7px 12px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer}
+button.alt{background:transparent;color:var(--ink);border-color:var(--line)}
 .layout{display:grid;grid-template-columns:290px 1fr;gap:18px;max-width:1700px;margin:auto;padding:0 16px}
 nav#toc{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;padding:12px 4px 12px 0;font-size:.85rem}
 nav#toc h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:10px 0 6px}
@@ -41,7 +42,7 @@ select{font:inherit;font-size:.75rem}
 dialog{max-width:95vw;padding:0;border:0;background:#000} dialog img{max-width:95vw;max-height:90vh;display:block}
 </style></head><body>
 <header><h1>Photo shortlist: choose 3–5 per attraction (1–2 = partial)</h1>
-<span id="total"></span><button id="export">Download selection</button></header>
+<span id="total"></span><span id="filestate" class="sub"></span><button id="open" type="button" title="Load picks from selection.json">Open selection.json</button><button id="save" type="button" title="Save into the same selection.json each time">Save to selection.json</button><button id="export" type="button" class="alt">Download copy</button></header>
 <div class="layout"><nav id="toc" aria-label="Places"></nav><main id="m"></main></div>
 <dialog id="dlg"><img id="dlgimg" alt=""></dialog>
 <script>
@@ -132,15 +133,55 @@ function renderToc() {
   toc.querySelectorAll("[data-f]").forEach(b => b.onclick = () => { filter = b.dataset.f; render(); });
 }
 document.getElementById("dlg").onclick = e => e.currentTarget.close();
-document.getElementById("export").onclick = () => {
+const selectionDoc = () => {
   const out = { schemaVersion: 1, selectedAt: new Date().toISOString().slice(0,10), selections: {} };
   for (const [sid, picks] of Object.entries(sel)) {
     const ids = Object.keys(picks); if (!ids.length) continue;
     out.selections[sid] = ids.map(id => ({ id, objectPosition: picks[id].objectPosition }));
   }
+  return out;
+};
+document.getElementById("export").onclick = () => {
   const a = document.createElement("a");
-  a.href = URL.createObjectURL(new Blob([JSON.stringify(out, null, 1)], { type: "application/json" }));
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(selectionDoc(), null, 1)], { type: "application/json" }));
   a.download = "selection.json"; a.click();
 };
+// Chrome and Edge can keep a handle to one file: pick selection.json once, then every save overwrites it.
+const state = msg => { document.getElementById("filestate").textContent = msg; };
+const hasPicker = "showSaveFilePicker" in window;
+const idb = () => new Promise((res, rej) => { const r = indexedDB.open("fda-review", 1); r.onupgradeneeded = () => r.result.createObjectStore("h"); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+const putHandle = async h => { try { const db = await idb(); db.transaction("h", "readwrite").objectStore("h").put(h, "selection"); } catch (e) {} };
+const getHandle = async () => { try { const db = await idb(); return await new Promise(res => { const q = db.transaction("h").objectStore("h").get("selection"); q.onsuccess = () => res(q.result); q.onerror = () => res(null); }); } catch (e) { return null; } };
+const FILE_TYPES = [{ description: "Selection JSON", accept: { "application/json": [".json"] } }];
+async function writable(handle) { return (await handle.queryPermission({ mode: "readwrite" })) === "granted" || (await handle.requestPermission({ mode: "readwrite" })) === "granted"; }
+document.getElementById("save").onclick = async () => {
+  if (!hasPicker) { document.getElementById("export").click(); state("This browser cannot save into a file; downloaded a copy instead."); return; }
+  try {
+    let handle = await getHandle();
+    if (!handle || !(await writable(handle))) {
+      handle = await window.showSaveFilePicker({ suggestedName: "selection.json", types: FILE_TYPES });
+      await putHandle(handle);
+    }
+    const w = await handle.createWritable();
+    await w.write(JSON.stringify(selectionDoc(), null, 1));
+    await w.close();
+    state(`Saved into ${handle.name} at ${new Date().toLocaleTimeString()}`);
+  } catch (e) { if (e.name !== "AbortError") state("Could not save: " + e.message); }
+};
+document.getElementById("open").onclick = async () => {
+  if (!("showOpenFilePicker" in window)) { state("This browser cannot open a file here; your picks are kept in the browser anyway."); return; }
+  try {
+    const [handle] = await window.showOpenFilePicker({ types: FILE_TYPES });
+    const doc = JSON.parse(await (await handle.getFile()).text());
+    for (const [sid, picks] of Object.entries(doc.selections || {})) {
+      sel[sid] = sel[sid] || {};
+      for (const p of picks) if (Object.keys(sel[sid]).length < 5) sel[sid][p.id] = { objectPosition: p.objectPosition || "center" };
+    }
+    await putHandle(handle);
+    save();
+    state(`Loaded ${handle.name}; saving will overwrite it`);
+  } catch (e) { if (e.name !== "AbortError") state("Could not open: " + e.message); }
+};
+if (!hasPicker) document.getElementById("save").textContent = "Download selection";
 render();
 </script></body></html>
