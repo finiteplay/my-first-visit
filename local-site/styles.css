@@ -403,12 +403,15 @@ body.night .minimap-label { fill: #e8f1f2; stroke: #26363a; }
 .check-card span { color: var(--muted); font-size: .86rem; }
 @media (max-width: 760px) { .check-grid { grid-template-columns: 1fr; } }
 
-/* Place rating and category filters */
-.rating { display: inline-flex; align-items: center; gap: 6px; margin: 4px 0 0; font-size: .78rem; font-weight: 700; color: var(--ink); }
-.rating .stars { color: #d99a1e; letter-spacing: .08em; font-size: .95rem; }
-.rating .stars-off { color: #d9d4c4; }
-body.night .rating .stars-off { color: #4a5a5d; }
-.place-card .rating { display: flex; }
+/* Place priority label and category filters */
+.priority { display: inline-block; margin: 6px 0 0; padding: 3px 11px; border-radius: 999px; font-size: .74rem; font-weight: 800; letter-spacing: .02em; }
+.priority-1 { background: #f2d58a; color: #3b2a00; }
+.priority-2 { background: #d9e6cf; color: #25401b; }
+.priority-3 { background: #e4e7e6; color: #34484a; }
+body.night .priority-1 { background: #8a6a1c; color: #fff4d4; }
+body.night .priority-2 { background: #34523a; color: #e3f0d8; }
+body.night .priority-3 { background: #3a4a4d; color: #dce6e6; }
+.place-card .priority { display: table; }
 .place-rating { margin: 6px 0 14px; }
 #place-filters { margin: 0 0 8px; flex-wrap: wrap; }
 .filter-count { margin-left: 4px; font-size: .72rem; opacity: .7; }

@@ -264,13 +264,14 @@ morning", `dailyChecks`), the weather section, the top of every route, and every
 with roads only for places outside the capital area and the safety link only for nature stops). A playbook or
 route `liveChecks` entry with a real URL is shown as a link. A new country needs the equivalent three services.
 
-### Place rating and category filters
+### Place priority and category filters
 
-Every place shows our editorial rating, derived from its `tier` in `sights.yaml`: three stars for `must-see`,
-two for `worth-it`, one for `if-you-have-time`. It is our judgment of a first-time visitor's value, not a
-traveler or review-site score, and it needs the reviewer's sign-off like any other draft claim. The place grid is
-ordered by rating, then by the original starter-list rank, then by name. The category buttons are built from the
-places' `category` values with counts; no hand-maintained list is needed for a new category.
+Every place shows a priority label for a first visit, derived from its `tier` in `sights.yaml`: "Don't miss"
+(`must-see`), "Worth a stop" (`worth-it`) and "If you have time" (`if-you-have-time`). Use words, not stars or
+scores: every label is a positive recommendation, so a lower priority never reads as a bad review. It is our
+judgment, not a traveler or review-site score, and needs the reviewer's sign-off. The place grid is ordered by
+priority, then by the original starter-list rank, then by name. The category buttons are built from the places'
+`category` values with counts; no hand-maintained list is needed for a new category.
 
 ### Country map and number tiles
 

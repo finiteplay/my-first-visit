@@ -79,16 +79,17 @@
       </button>`).join("");
   }
 
-  // Our editorial rating comes from each place's `tier`: three stars is a must-see, one star is for spare time.
-  const RATINGS = {
-    "must-see": { stars: 3, label: "Must-see" },
-    "worth-it": { stars: 2, label: "Worth it" },
-    "if-you-have-time": { stars: 1, label: "If you have time" }
+  // Priority for a first visit comes from each place's `tier`. Words, not stars: every label is a positive
+  // recommendation, and the lowest one means "good when you have spare time", not "poor".
+  const PRIORITIES = {
+    "must-see": { level: 1, label: "Don't miss" },
+    "worth-it": { level: 2, label: "Worth a stop" },
+    "if-you-have-time": { level: 3, label: "If you have time" }
   };
-  const ratingOf = item => RATINGS[item.tier] || RATINGS["if-you-have-time"];
-  const ratingHtml = item => {
-    const rating = ratingOf(item);
-    return `<span class="rating" role="img" aria-label="Our rating: ${rating.stars} out of 3, ${rating.label}"><span class="stars" aria-hidden="true">${"★".repeat(rating.stars)}<span class="stars-off">${"★".repeat(3 - rating.stars)}</span></span> <span class="rating-label">${rating.label}</span></span>`;
+  const priorityOf = item => PRIORITIES[item.tier] || PRIORITIES["if-you-have-time"];
+  const priorityHtml = item => {
+    const priority = priorityOf(item);
+    return `<span class="priority priority-${priority.level}" aria-label="Priority for a first visit: ${priority.label}">${priority.label}</span>`;
   };
   let placeCategory = "all";
 
@@ -112,7 +113,7 @@
       <article class="place-card" data-open="place:${escapeHtml(item.id)}" tabindex="0" role="button" aria-label="Open place card for ${escapeHtml(item.name)}">
         ${selectedPhotos[item.id]?.length ? `<img class="place-card-image" src="${escapeHtml(selectedPhotos[item.id][0].file)}" alt="${escapeHtml(photoAlt(item, 0))}" style="${escapeHtml(photoStyle(selectedPhotos[item.id][0]))}" width="480" height="320" loading="lazy">` : ""}
         <span class="region">${escapeHtml(item.region)} · ${escapeHtml(item.category)}</span>
-        ${ratingHtml(item)}
+        ${priorityHtml(item)}
         <h3>${escapeHtml(item.name)}</h3>
         <p>${escapeHtml(item.whyGo)}</p>
         <span class="time">${escapeHtml(item.timeNeeded)}</span>
@@ -261,7 +262,7 @@
         <div><span class="name-label">Say it like this for now</span><strong>${escapeHtml(item.respelling)}</strong></div>
         ${audioControls(item.local)}
       </div>
-      <p class="place-rating"><strong>Our rating:</strong> ${ratingHtml(item)}</p>
+      <p class="place-rating"><strong>Priority for a first visit:</strong> ${priorityHtml(item)}</p>
       ${placeRank[item.id] ? `<p class="place-rank"><strong>Suggested order:</strong> #${placeRank[item.id]} in this starter list</p>` : ""}
       ${detailParagraphs}
       <p class="place-time"><strong>Time to allow:</strong> ${escapeHtml(item.timeNeeded)}</p>
