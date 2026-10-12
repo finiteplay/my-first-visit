@@ -267,8 +267,8 @@ route `liveChecks` entry with a real URL is shown as a link. A new country needs
 ### Place priority and category filters
 
 Every place shows a priority label for a first visit, derived from its `tier` in `sights.yaml`: "Don't miss"
-(`must-see`), "Worth a stop" (`worth-it`) and "If you have time" (`if-you-have-time`). Use words, not stars or
-scores: every label is a positive recommendation, so a lower priority never reads as a bad review. It is our
+(`must-see`), "Worth a stop" (`worth-it`) and "If you have time" (`if-you-have-time`). Each label has a small icon (pin, compass, hourglass; hidden from screen readers). Use words and icons, not
+stars or scores: every label is a positive recommendation, so a lower priority never reads as a bad review. It is our
 judgment, not a traveler or review-site score, and needs the reviewer's sign-off. The place grid is ordered by
 priority, then by the original starter-list rank, then by name. The category buttons are built from the places'
 `category` values with counts; no hand-maintained list is needed for a new category.

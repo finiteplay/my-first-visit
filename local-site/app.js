@@ -82,14 +82,14 @@
   // Priority for a first visit comes from each place's `tier`. Words, not stars: every label is a positive
   // recommendation, and the lowest one means "good when you have spare time", not "poor".
   const PRIORITIES = {
-    "must-see": { level: 1, label: "Don't miss" },
-    "worth-it": { level: 2, label: "Worth a stop" },
-    "if-you-have-time": { level: 3, label: "If you have time" }
+    "must-see": { level: 1, label: "Don't miss", icon: "📌" },
+    "worth-it": { level: 2, label: "Worth a stop", icon: "🧭" },
+    "if-you-have-time": { level: 3, label: "If you have time", icon: "⏳" }
   };
   const priorityOf = item => PRIORITIES[item.tier] || PRIORITIES["if-you-have-time"];
   const priorityHtml = item => {
     const priority = priorityOf(item);
-    return `<span class="priority priority-${priority.level}" aria-label="Priority for a first visit: ${priority.label}">${priority.label}</span>`;
+    return `<span class="priority priority-${priority.level}" aria-label="Priority for a first visit: ${priority.label}"><span class="priority-icon" aria-hidden="true">${priority.icon}</span>${priority.label}</span>`;
   };
   let placeCategory = "all";
 

@@ -416,3 +416,5 @@ body.night .priority-3 { background: #3a4a4d; color: #dce6e6; }
 #place-filters { margin: 0 0 8px; flex-wrap: wrap; }
 .filter-count { margin-left: 4px; font-size: .72rem; opacity: .7; }
 .place-count { margin: 0 0 18px; color: var(--muted); font-size: .85rem; }
+
+.priority-icon { margin-right: 5px; font-size: .9em; }
