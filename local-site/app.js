@@ -79,15 +79,15 @@
       </button>`).join("");
   }
 
-  // Our own traveler score (tools/content/build_score.py): a blend of public ratings from several large sites. Only the
-  // blended number is shown; no site's own rating, review count, rank or link is published.
+  // Our own rating (aggregate stars, out of 5) and place in our single ranking list (tools/content/edit_ratings.py).
+  // No other site's rating, review count, rank or link is published.
   const scoreBadge = item => {
     const score = item.score;
     if (!score) return "";
-    return `<span class="score" aria-label="Traveler score ${score.value.toFixed(1)} out of 10"><span class="score-num" aria-hidden="true">${score.value.toFixed(1)}</span><span class="score-text" aria-hidden="true">traveler score</span></span>`;
+    return `<span class="score" aria-label="Aggregate rating ${score.stars.toFixed(1)} out of 5, number ${score.rank} in our ranking"><span class="score-num" aria-hidden="true">${score.stars.toFixed(1)}</span><span class="score-text" aria-hidden="true">aggregate rating</span></span>`;
   };
   let placeSort = "top";
-  const byScore = (a, b) => (b.score?.value ?? -1) - (a.score?.value ?? -1);
+  const byRank = (a, b) => (a.score?.rank ?? 999) - (b.score?.rank ?? 999);
 
   // Priority for a first visit comes from each place's `tier`. Words, not stars: every label is a positive
   // recommendation, and the lowest one means "good when you have spare time", not "poor".
@@ -128,7 +128,7 @@
       .filter(item => placeCategory === "all" || item.category === placeCategory)
       .filter(item => placeArea === "all" || areaOf(item)?.id === placeArea)
       .filter(item => !term || [item.name, item.region, item.category, item.whyGo].join(" ").toLocaleLowerCase().includes(term))
-      .sort((a, b) => (placeSort === "top" ? byScore(a, b) : 0)
+      .sort((a, b) => (placeSort === "top" ? byRank(a, b) : 0)
         || (tierOrder[a.tier] ?? 3) - (tierOrder[b.tier] ?? 3) || (placeRank[a.id] || 999) - (placeRank[b.id] || 999) || a.name.localeCompare(b.name));
     placeGrid.innerHTML = items.map(item => `
       <article class="place-card" data-open="place:${escapeHtml(item.id)}" tabindex="0" role="button" aria-label="Open place card for ${escapeHtml(item.name)}">
@@ -426,7 +426,7 @@
         <figcaption>${escapeHtml(areaName)}. Approximate position, not for navigation. ${escapeHtml(credit)}</figcaption>
       </figure>
       <p class="place-links"><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a>${item.website ? `<a class="maps-link" href="${escapeHtml(item.website.url)}" target="_blank" rel="noopener">${escapeHtml(item.website.label)} <span aria-hidden="true">↗</span></a>` : ""}</p>
-      ${item.score ? `<p class="score-note">${scoreBadge(item)} Our own score, blended from what travelers rate this place on several large travel and map sites. The sites' own numbers are not republished here. Checked ${escapeHtml(item.score.asOf)}; scores change.</p>` : ""}
+      ${item.score ? `<p class="score-note">${scoreBadge(item)} Number ${item.score.rank} of ${data.places.length} places in our ranking. The stars are our own aggregate of what travelers say about this place on several large travel and map sites; the sites' own numbers are not republished here. Checked ${escapeHtml(item.score.asOf)}; ratings change.</p>` : ""}
     </div>`;
   }
 

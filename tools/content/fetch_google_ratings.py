@@ -7,7 +7,7 @@ Google Cloud project with billing and the "Places API (New)" enabled (about 60 r
 Results go to the inputs file OUTSIDE the repository (~/.finiteplay/score-inputs/<cc>.json, or MFV_SCORE_INPUTS) next to
 the other sources; nothing from Google is written into the repo. Each result is checked against our coordinates and a
 mismatch (more than 3 km, or a different-looking name) is listed for review instead of being used.
-Then run build_score.py.
+Then reopen the editor (edit_ratings.py) to see the new suggestions, and run build_score.py after editing.
 """
 from __future__ import annotations
 
@@ -20,7 +20,7 @@ import urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_score import ROOT, inputs_path, read  # noqa: E402
+from build_score import ROOT, inputs_path, load_inputs, read  # noqa: E402
 
 ENDPOINT = "https://places.googleapis.com/v1/places:searchText"
 FIELDS = "places.id,places.displayName,places.rating,places.userRatingCount,places.location"
@@ -57,10 +57,10 @@ def main() -> int:
     if not key and not args.dry_run:
         print("Set GOOGLE_PLACES_API_KEY (Places API (New) enabled).", file=sys.stderr)
         return 2
-    items = read(ROOT / "content" / args.country / "sights.yaml")["items"]
-    items = [i for i in items if i.get("location") and (not args.only or i["id"] in args.only)]
+    all_items = read(ROOT / "content" / args.country / "sights.yaml")["items"]
+    items = [i for i in all_items if i.get("location") and (not args.only or i["id"] in args.only)]
     path = inputs_path(args.country)
-    inputs = read(path) if path.exists() else {"asOf": "", "places": {}}
+    inputs = load_inputs(path, [i["id"] for i in all_items])
     review, found = [], 0
     for item in items:
         if args.dry_run:
@@ -74,7 +74,7 @@ def main() -> int:
         if not hit:
             review.append((item["id"], "no rated place within 3 km"))
             continue
-        inputs["places"].setdefault(item["id"], {})["google"] = {
+        inputs["places"].setdefault(item["id"], {"sources": {}}).setdefault("sources", {})["google"] = {
             "rating": hit["rating"], "reviews": hit["userRatingCount"],
             "name": hit.get("displayName", {}).get("text", ""), "placeId": hit["id"]}
         found += 1

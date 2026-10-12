@@ -296,26 +296,31 @@ card and into a schematic map of the trip: one dot per stop, colored by day, joi
 between days with a dashed line), cropped to the stops
 (a trip entirely inside the capital area uses the local outline). `audit_guide.py` fails on an id that does not exist.
 
-### Traveler score (our own)
+### Our rating and ranking (aggregate stars)
 
-Each place can carry `score` ({value, sources, method, asOf}): our own score out of 10, blended from what travelers rate
-the place on several large travel and map sites. The site shows only this number. It must not publish any other site's
-rating, review count, rank, logo or link: those sites' terms forbid copying and deep-linking, and `audit_guide.py` fails if
-`tripadvisor`, `google`, `reviews` or `rating` appears on a place. The grid sorts by score first (places without one go last),
-then by our own priority; "Our priority" is the other sort.
+Each place can carry `score` ({stars, rank, method, asOf}): `stars` is our own aggregate rating out of 5, informed by what
+travelers say about the place on several large travel and map sites, and `rank` is the place's number in ONE ranking list
+for the whole country (1..N, only meaningful on this website). The site shows the stars on cards and place pages, sorts
+the grid by `rank` ("Our ranking") or by our own priority tier, and the filters simply narrow that single list. It must not
+publish any other site's rating, review count, rank, logo or link (their terms forbid copying and deep-linking);
+`audit_guide.py` fails if `tripadvisor`, `google`, `reviews` or `rating` appears on a place or if `score` is malformed.
 
-The raw per-site inputs (stars, number of reviews, place in the site's ranking) live OUTSIDE the repository, in
-`~/.finiteplay/score-inputs/<cc>.json` (or `MFV_SCORE_INPUTS`), never in git. Workflow:
+The inputs are NOT in git. They live in `~/.finiteplay/score-inputs/<cc>.json` (or `MFV_SCORE_INPUTS`): per place the
+`stars` and an optional private `note`, the single `order` list, and the raw per-site numbers under `sources` that feed the
+suggestions. Stars start as a `placeholder` copied from a source (TripAdvisor today) and stop being one when you edit them.
+Workflow:
 
-1. `python tools/content/fetch_google_ratings.py is` (needs `GOOGLE_PLACES_API_KEY`) fills the Google inputs, or type them in step 2.
-2. `python tools/content/edit_ratings.py is --open` writes an HTML editor (like the photo review page): edit stars, review
-   counts and place in the ranking per place and source, watch the score preview, "Save to is.json".
-3. `python tools/content/build_score.py is` writes `score` into `sights.yaml`; then `python local-site/build.py`.
+1. `python tools/content/edit_ratings.py is --open` writes and opens an HTML editor. One list: drag a row by its handle (or
+   type a new number, or use the arrows) to set its place; edit "Aggregate stars"; a grey "suggest" value shows what the
+   sources blend to, with "use" buttons; "Sort list by stars" re-orders everything; "Save to is.json" overwrites the same file.
+2. `python tools/content/build_score.py is` writes `score` into `sights.yaml`; then `python local-site/build.py`.
+3. Optional: `python tools/content/fetch_google_ratings.py is` (needs `GOOGLE_PLACES_API_KEY`) adds Google numbers to the
+   sources so the suggestions use them.
 
-Method v1: each source's rating is shrunk toward that source's mean by how few reviews it has
-(`(n*rating + 50*mean) / (n + 50)`), the sources are blended weighted by `log10(1 + n)`, and the result is multiplied by 2.
-A place with no usable input is unscored. Ranks are kept for reference only. Read the sources' terms before collecting
-data from them; collecting by script from sites that ban it is a risk the team accepts or avoids.
+Suggestion formula: each source's rating is shrunk toward that source's mean by how few reviews it has,
+`(n*rating + 50*mean) / (n + 50)`, and the sources are blended weighted by `log10(1 + n)`. Review counts stay in the private
+inputs only. Read each source's terms before collecting data from it; collecting by script from sites that ban it is a
+risk the team accepts or avoids.
 
 ### Placeholder feature images
 

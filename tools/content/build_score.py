@@ -1,22 +1,24 @@
-"""Compute each place's own "traveler score" from public rating aggregates.
+"""Write each place's own rating (aggregate stars) and place in our ranking into content/<cc>/sights.yaml.
 
-Why: the site must not republish any other site's rating, review count, rank or link (their terms forbid it). It
-publishes one number that we compute: a confidence-weighted blend of the ratings travelers gave a place on several large
-sites. The raw per-site inputs stay OUTSIDE the repository, in ~/.finiteplay/score-inputs/<cc>.json (override with
-MFV_SCORE_INPUTS); only the blended result is written to content/<cc>/sights.yaml as `score`.
+Why: the site must not republish any other site's rating, review count, rank or link (their terms forbid it). It shows
+two things we own: "aggregate stars" (our rating, edited by us, informed by what travelers say on several large sites)
+and our own place in the ranking, a plain 1..N order for this website only. Both are decided in the HTML editor
+(tools/content/edit_ratings.py) and kept in ~/.finiteplay/score-inputs/<cc>.json (override: MFV_SCORE_INPUTS), which
+also holds the raw per-site numbers used for suggestions and is NEVER committed. Only the result goes into sights.yaml:
 
-    python tools/content/build_score.py is                      # recompute scores from the inputs file
-    python tools/content/build_score.py is --import-tripadvisor # one-off: move old `tripadvisor` fields out of sights.yaml
+    "score": {"stars": 4.6, "rank": 3, "method": "aggregate-v2", "asOf": "2026-10"}
 
-Inputs file: {"asOf": "2026-10", "places": {"<place id>": {"tripadvisor": {"rating": 4.6, "reviews": 1187},
-                                                              "google":      {"rating": 4.7, "reviews": 9021}}}}
+    python tools/content/build_score.py is         # inputs file -> sights.yaml `score` for every place that has stars
 
-Method (v1), per place:
-  1. Shrink each source's rating toward that source's mean over all places, by how few reviews it has:
-         adjusted = (n * rating + M * source_mean) / (n + M)        with M = 50
-  2. Blend the sources, weighting each by log10(1 + n), so a source with many reviews counts for more.
-  3. Publish blended * 2, rounded to one decimal, as a score out of 10 (stored with two decimals for sorting).
-`score.sources` is how many sources fed it. A place with no usable input gets no score and sorts after scored places.
+Inputs file (schemaVersion 2):
+    {"schemaVersion": 2, "asOf": "2026-10", "order": ["sight-a", "sight-b", ...],
+     "places": {"sight-a": {"stars": 4.6, "placeholder": true, "note": "...",
+                            "sources": {"tripadvisor": {"rating": 4.6, "reviews": 1187, "rank": 5, "of": "..."},
+                                        "google": {"rating": 4.7, "reviews": 9021}}}}}
+`placeholder: true` means the stars are still a copy of a source number that has not been reviewed; editing clears it.
+
+Suggestion (shown in the editor, never applied silently): each source's rating is shrunk toward that source's mean by how
+few reviews it has, (n*rating + 50*mean)/(n + 50), and the sources are blended weighted by log10(1 + n).
 """
 from __future__ import annotations
 
@@ -29,7 +31,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 SHRINK = 50
-METHOD = "v1"
+METHOD = "aggregate-v2"
 
 
 def inputs_path(cc: str) -> Path:
@@ -45,69 +47,79 @@ def write_sights(path: Path, data: dict) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2).replace("\n", "\r\n"), encoding="utf-8", newline="")
 
 
-def blend(places: dict[str, dict]) -> dict[str, dict]:
-    sources = sorted({s for p in places.values() for s in p})
+def suggest(places: dict[str, dict]) -> dict[str, float]:
+    """Blend each place's per-source ratings into one suggested star value (see module docstring)."""
+    sources = sorted({s for p in places.values() for s in p.get("sources", {})})
     mean = {}
     for s in sources:
-        ratings = [p[s]["rating"] for p in places.values() if p.get(s, {}).get("rating") is not None]
+        ratings = [p["sources"][s]["rating"] for p in places.values() if p.get("sources", {}).get(s, {}).get("rating") is not None]
         mean[s] = sum(ratings) / len(ratings)
     out = {}
     for pid, p in places.items():
         total = weight = 0.0
-        used = 0
         for s in sources:
-            entry = p.get(s) or {}
+            entry = p.get("sources", {}).get(s) or {}
             r, n = entry.get("rating"), entry.get("reviews")
             if r is None or not n:
                 continue
-            adjusted = (n * r + SHRINK * mean[s]) / (n + SHRINK)
-            w = math.log10(1 + n)
-            total += w * adjusted
-            weight += w
-            used += 1
-        if used:
-            out[pid] = {"value": round(total / weight * 2, 2), "sources": used}
+            total += math.log10(1 + n) * (n * r + SHRINK * mean[s]) / (n + SHRINK)
+            weight += math.log10(1 + n)
+        if weight:
+            out[pid] = round(total / weight, 2)
     return out
+
+
+def load_inputs(path: Path, item_ids: list[str]) -> dict:
+    """Read the inputs file, upgrading the old per-source layout (schemaVersion 1) and filling in a starting order."""
+    raw = read(path) if path.exists() else {"places": {}}
+    places = raw.get("places", {})
+    if raw.get("schemaVersion") != 2:
+        upgraded = {}
+        for pid, p in places.items():
+            sources = {s: v for s, v in p.items() if isinstance(v, dict)}
+            entry = {"sources": sources}
+            ta = sources.get("tripadvisor", {})
+            if ta.get("rating") is not None:  # TripAdvisor values are the placeholders until the author edits them
+                entry["stars"], entry["placeholder"] = ta["rating"], True
+            if ta.get("note"):
+                entry["note"] = ta["note"]
+            upgraded[pid] = entry
+        places = upgraded
+    for pid in item_ids:
+        places.setdefault(pid, {"sources": {}})
+    guess = suggest(places)
+    order = [pid for pid in raw.get("order", []) if pid in places]
+    rest = [pid for pid in item_ids if pid not in order]
+    rest.sort(key=lambda pid: (-(guess.get(pid) or places[pid].get("stars") or 0), item_ids.index(pid)))
+    return {"schemaVersion": 2, "asOf": raw.get("asOf") or "2026-10", "order": order + rest, "places": places}
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("country")
-    ap.add_argument("--import-tripadvisor", action="store_true",
-                    help="move legacy `tripadvisor` fields out of sights.yaml into the inputs file (one-off)")
     args = ap.parse_args()
     sights_path = ROOT / "content" / args.country / "sights.yaml"
     sights = read(sights_path)
+    ids = [item["id"] for item in sights["items"]]
     path = inputs_path(args.country)
-    inputs = read(path) if path.exists() else {"asOf": "", "places": {}}
+    inputs = load_inputs(path, ids)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(inputs, indent=1, ensure_ascii=False), encoding="utf-8")
 
-    if args.import_tripadvisor:
-        moved = 0
-        for item in sights["items"]:
-            ta = item.pop("tripadvisor", None)
-            if ta and ta.get("rating") is not None and ta.get("reviews"):
-                inputs["places"].setdefault(item["id"], {})["tripadvisor"] = {"rating": ta["rating"], "reviews": ta["reviews"]}
-                moved += 1
-        inputs["asOf"] = inputs.get("asOf") or "2026-10"
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(json.dumps(inputs, indent=1), encoding="utf-8")
-        print(f"moved {moved} Tripadvisor inputs to {path} and removed the field from sights.yaml")
-
-    scores = blend({pid: p for pid, p in inputs["places"].items() if p})
-    asof = inputs.get("asOf", "")
-    missing = []
+    rank = {pid: i + 1 for i, pid in enumerate(inputs["order"])}
+    scored, missing = 0, []
     for item in sights["items"]:
-        score = scores.get(item["id"])
-        if score:
-            item["score"] = {"value": score["value"], "sources": score["sources"], "method": METHOD, "asOf": asof}
-        else:
+        stars = inputs["places"][item["id"]].get("stars")
+        if stars is None:
             item.pop("score", None)
             missing.append(item["id"])
+            continue
+        item["score"] = {"stars": round(float(stars), 1), "rank": rank[item["id"]], "method": METHOD, "asOf": inputs["asOf"]}
+        scored += 1
     write_sights(sights_path, sights)
-    vals = sorted(s["value"] for s in scores.values())
-    print(f"scored {len(scores)} of {len(sights['items'])} places"
-          + (f"; range {vals[0]}-{vals[-1]}, median {vals[len(vals) // 2]}" if vals else "")
-          + (f"; unscored: {', '.join(missing[:6])}{'...' if len(missing) > 6 else ''}" if missing else ""))
+    placeholders = sum(1 for p in inputs["places"].values() if p.get("placeholder"))
+    print(f"scored {scored} of {len(ids)} places; {placeholders} still use a placeholder (source number not yet reviewed)"
+          + (f"; no stars: {', '.join(missing[:6])}" if missing else ""))
     return 0
 
 

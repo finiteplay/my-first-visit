@@ -144,16 +144,16 @@ class GuideAuditTest(unittest.TestCase):
         self.assertTrue(any("after" in e for e in errors))
 
 class ScoreAuditTest(unittest.TestCase):
-    def test_only_our_blended_score_is_allowed(self):
+    def test_only_our_own_rating_and_rank_are_allowed(self):
         from audit_guide import score_errors
-        good = {"id": "p", "score": {"value": 9.1, "sources": 2, "method": "v1", "asOf": "2026-10"}}
+        good = {"id": "p", "score": {"stars": 4.6, "rank": 3, "method": "aggregate-v2", "asOf": "2026-10"}}
         self.assertEqual(score_errors(good), [])
         self.assertEqual(score_errors({"id": "p"}), [])
         for field in ("tripadvisor", "google", "reviews", "rating"):
             self.assertTrue(score_errors({"id": "p", field: {}}), field)
-        self.assertTrue(score_errors({"id": "p", "score": {"value": 12, "sources": 1, "method": "v1", "asOf": "x"}}))
-        self.assertTrue(score_errors({"id": "p", "score": {"value": 9, "sources": 1}}))
-
+        self.assertTrue(score_errors({"id": "p", "score": {"stars": 6, "rank": 1, "method": "m", "asOf": "x"}}))
+        self.assertTrue(score_errors({"id": "p", "score": {"stars": 4, "rank": 0, "method": "m", "asOf": "x"}}))
+        self.assertTrue(score_errors({"id": "p", "score": {"stars": 4, "rank": 1}}))
 
 
 if __name__ == "__main__":

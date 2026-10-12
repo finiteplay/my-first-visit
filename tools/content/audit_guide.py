@@ -103,11 +103,14 @@ def score_errors(item):
             errors.append(f"sights.yaml {item.get('id')}: `{banned}` must not be in the content; publish only the blended `score`.")
     score = item.get("score")
     if score is not None:
-        value = score.get("value")
-        if not isinstance(value, (int, float)) or isinstance(value, bool) or not (0 <= value <= 10):
-            errors.append(f"sights.yaml {item.get('id')}: score.value must be a number from 0 to 10.")
-        if not score.get("sources") or not score.get("method") or not score.get("asOf"):
-            errors.append(f"sights.yaml {item.get('id')}: score needs sources, method and asOf.")
+        stars = score.get("stars")
+        if not isinstance(stars, (int, float)) or isinstance(stars, bool) or not (1 <= stars <= 5):
+            errors.append(f"sights.yaml {item.get('id')}: score.stars must be a number from 1 to 5.")
+        rank = score.get("rank")
+        if not isinstance(rank, int) or isinstance(rank, bool) or rank < 1:
+            errors.append(f"sights.yaml {item.get('id')}: score.rank must be a whole number from 1.")
+        if not score.get("method") or not score.get("asOf"):
+            errors.append(f"sights.yaml {item.get('id')}: score needs method and asOf.")
     return errors
 
 
