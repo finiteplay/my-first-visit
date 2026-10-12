@@ -8,3 +8,24 @@ content/is/media-candidates/pd/
 *.key
 *.onnx
 *.bin
+
+# Secrets and local environment (never commit)
+.env
+.env.*
+*.pem
+secrets*
+credentials*
+.venv/
+venv/
+node_modules/
+
+# Editor, OS and tool noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.part
+tmp/
+shots/
+*.backup.json
