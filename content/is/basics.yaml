@@ -9,7 +9,9 @@
       "respelling": "EES-lahnd",
       "meaning": "\"Ice land\" in Icelandic.",
       "story": "The saga tradition says a Norse explorer nicknamed Raven-Flóki (Hrafna-Flóki) wintered here, lost his livestock to a hard winter and gave the island the name Ísland, which stuck.",
-      "sourceIds": ["e005"]
+      "sourceIds": [
+        "e005"
+      ]
     },
     {
       "english": "Reykjavík",
@@ -17,96 +19,246 @@
       "respelling": "RAYK-yah-veek",
       "meaning": "Often translated \"Smoky Bay\".",
       "story": "By tradition the first permanent settler, Ingólfur Arnarson, settled here in 874 and named the bay for the steam rising from hot springs. The final syllable sounds like the English word \"week\", not \"vick\".",
-      "sourceIds": ["e005"]
+      "sourceIds": [
+        "e005"
+      ]
     }
   ],
   "pronunciationNote": "These respellings are drafts written for an American reader and have not had native-speaker review. The audio is a synthetic draft voice.",
   "numbers": [
-    {"label": "People", "value": "about 394,000", "detail": "Statistics Iceland counted 394,324 on 1 January 2026. About two thirds live in the capital area.", "sourceIds": ["o019"]},
-    {"label": "Size", "value": "about 103,600 km²", "detail": "Roughly the size of the US state of Kentucky, but with the population of a mid-size city.", "sourceIds": ["o019"]},
-    {"label": "Reykjavík", "value": "about 140,000", "detail": "In the city itself; about 250,000 across the wider capital area.", "sourceIds": ["o019"]},
-    {"label": "Horses", "value": "roughly 80,000-90,000", "detail": "Sources count differently, so treat it as a range. All belong to one breed.", "sourceIds": ["e004", "p012"]},
-    {"label": "Sheep", "value": "about half a million", "detail": "Around 476,000 were registered with the food and veterinary authority; many roam freely in summer, so watch the road.", "sourceIds": ["e004"]},
-    {"label": "Emergency", "value": "112", "detail": "The single emergency number for police, ambulance and rescue. Save it before you drive.", "sourceIds": ["o006"]}
+    {
+      "label": "People",
+      "value": "about 394,000",
+      "detail": "Statistics Iceland counted 394,324 on 1 January 2026. About two thirds live in the capital area.",
+      "sourceIds": [
+        "o019"
+      ],
+      "icon": "👥"
+    },
+    {
+      "label": "Size",
+      "value": "about 103,600 km²",
+      "detail": "Roughly the size of the US state of Kentucky, but with the population of a mid-size city.",
+      "sourceIds": [
+        "o019"
+      ],
+      "icon": "🗺️"
+    },
+    {
+      "label": "Reykjavík",
+      "value": "about 140,000",
+      "detail": "In the city itself; about 250,000 across the wider capital area.",
+      "sourceIds": [
+        "o019"
+      ],
+      "icon": "🏙️"
+    },
+    {
+      "label": "Horses",
+      "value": "roughly 80,000-90,000",
+      "detail": "Sources count differently, so treat it as a range. All belong to one breed.",
+      "sourceIds": [
+        "e004",
+        "p012"
+      ],
+      "icon": "🐴"
+    },
+    {
+      "label": "Sheep",
+      "value": "about half a million",
+      "detail": "Around 476,000 were registered with the food and veterinary authority; many roam freely in summer, so watch the road.",
+      "sourceIds": [
+        "e004"
+      ],
+      "icon": "🐑"
+    },
+    {
+      "label": "Emergency",
+      "value": "112",
+      "detail": "The single emergency number for police, ambulance and rescue. Save it before you drive.",
+      "sourceIds": [
+        "o006"
+      ],
+      "icon": "🚨"
+    }
   ],
   "tips": [
     {
       "title": "The wind is the real weather story",
       "text": "What most places call a strong wind is ordinary here, and it can make a mild day feel cold. Travelers also report car doors being ripped from hands, which is why rental-car coverage questions come up at the counter. Park nose into the wind, hold the door with both hands, and let the first person out help the others.",
       "label": "Traveler pattern",
-      "links": [{"label": "What the weather feels like and what to pack", "open": "playbook:pack-for-exposure"}, {"label": "Rental car insurance", "open": "playbook:rental-counter-before-counter"}],
-      "sourceIds": ["r001", "t001", "o012"]
+      "links": [
+        {
+          "label": "What the weather feels like and what to pack",
+          "open": "playbook:pack-for-exposure"
+        },
+        {
+          "label": "Rental car insurance",
+          "open": "playbook:rental-counter-before-counter"
+        }
+      ],
+      "sourceIds": [
+        "r001",
+        "t001",
+        "o012"
+      ]
     },
     {
       "title": "Gravel is normal; F-roads are a separate decision",
       "text": "Expect gravel stretches even on main routes. F-roads are rough highland tracks that need an authorized vehicle and a current conditions check, and a first trip has plenty to see without them. Check the rental agreement before assuming a 4x4 badge covers them.",
       "label": "Official guidance",
-      "links": [{"label": "Photos, stopping and road safety", "open": "playbook:drive-without-performing"}],
-      "sourceIds": ["o001", "o002"]
+      "links": [
+        {
+          "label": "Photos, stopping and road safety",
+          "open": "playbook:drive-without-performing"
+        }
+      ],
+      "sourceIds": [
+        "o001",
+        "o002"
+      ]
     },
     {
       "title": "Do not stop in the road for a photo",
       "text": "There are few places to pull over, and a stopped car on a curve is a real danger. Slow down and use a designated pullout, even if it means missing the shot.",
       "label": "Official guidance",
-      "links": [{"label": "Photos, stopping and road safety", "open": "playbook:drive-without-performing"}],
-      "sourceIds": ["o014"]
+      "links": [
+        {
+          "label": "Photos, stopping and road safety",
+          "open": "playbook:drive-without-performing"
+        }
+      ],
+      "sourceIds": [
+        "o014"
+      ]
     },
     {
       "title": "Budget for the trip, not just the headline",
       "text": "Rental cars, fuel, lodging and food all cost more than many visitors expect. Groceries, tap water and a neighborhood pool help without making the trip feel cheap.",
       "label": "Our take",
-      "links": [{"label": "Planning a budget", "open": "playbook:spend-on-purpose"}],
-      "sourceIds": ["r005", "b003", "p010"]
+      "links": [
+        {
+          "label": "Planning a budget",
+          "open": "playbook:spend-on-purpose"
+        }
+      ],
+      "sourceIds": [
+        "r005",
+        "b003",
+        "p010"
+      ]
     },
     {
       "title": "Cards everywhere, tipping not expected",
       "text": "Iceland is largely cashless and service is included in prices. Check that your card does not add heavy foreign-transaction fees.",
       "label": "Official guidance + our take",
       "links": [],
-      "sourceIds": ["o015"]
+      "sourceIds": [
+        "o015"
+      ]
     },
     {
       "title": "Hot water is a national habit",
       "text": "Public pools and lagoons are a highlight and a different experience from each other. At pools you shower thoroughly without a swimsuit first. Some lagoons need a reservation.",
       "label": "Official guidance + traveler pattern",
-      "links": [{"label": "Pool or lagoon", "open": "playbook:pool-or-lagoon"}],
-      "sourceIds": ["o007", "r006", "r008"]
+      "links": [
+        {
+          "label": "Pool or lagoon",
+          "open": "playbook:pool-or-lagoon"
+        }
+      ],
+      "sourceIds": [
+        "o007",
+        "r006",
+        "r008"
+      ]
     },
     {
       "title": "A little Icelandic goes a long way",
       "text": "Travelers report getting by in English, and a few polite words are still welcome. Place names are easier with one pattern: foss means waterfall, and you will meet it everywhere (Gullfoss, Skógafoss).",
       "label": "Our take",
       "links": [],
-      "sourceIds": ["k005"]
+      "sourceIds": [
+        "k005"
+      ]
     },
     {
       "title": "Parking in Reykjavík is zoned",
       "text": "Downtown has four paid zones, P1 to P4, and the closer to the center, the higher the fee. You can pay at a meter or in the Parka or EasyPark apps; set up payment before you need it and read the sign for hours, because some zones charge on Sundays.",
       "label": "Official guidance",
       "links": [],
-      "sourceIds": ["o020"]
+      "sourceIds": [
+        "o020"
+      ]
     },
     {
       "title": "Reykjavík is worth a purposeful day",
       "text": "Perlan, the whale and aurora museums and the harbor area make an easy day, and the two main walking streets have shops, cafes and small squares.",
       "label": "Our take",
-      "links": [{"label": "How much time to spend in Reykjavík", "open": "playbook:reykjavik-purpose"}],
-      "sourceIds": ["k001", "t004", "o016"]
+      "links": [
+        {
+          "label": "How much time to spend in Reykjavík",
+          "open": "playbook:reykjavik-purpose"
+        }
+      ],
+      "sourceIds": [
+        "k001",
+        "t004",
+        "o016"
+      ]
     },
     {
       "title": "Aurora is hard to plan around",
       "text": "It needs darkness, activity and a clear sky, and no forecast can promise it. Keep a few evenings open and check the cloud map, not just the activity number.",
       "label": "Official guidance + traveler pattern",
-      "links": [{"label": "Northern lights without the regret", "open": "playbook:aurora-without-regret"}],
-      "sourceIds": ["o004", "r011", "r015"]
+      "links": [
+        {
+          "label": "Northern lights without the regret",
+          "open": "playbook:aurora-without-regret"
+        }
+      ],
+      "sourceIds": [
+        "o004",
+        "r011",
+        "r015"
+      ]
     },
     {
       "title": "Horses, not ponies",
       "text": "Icelanders are proud of their horse and many dislike the word pony, even though the animals are small.",
       "label": "Traveler pattern",
       "links": [],
-      "sourceIds": ["p012"]
+      "sourceIds": [
+        "p012"
+      ]
     }
   ],
-  "sourceIds": ["e005", "o019", "e004", "p012", "o006", "r001", "t001", "o012", "o001", "o002", "o014", "r005", "b003", "p010", "o015", "o007", "r006", "r008", "k005", "o020", "k001", "t004", "o016", "o004", "r011", "r015"]
+  "sourceIds": [
+    "e005",
+    "o019",
+    "e004",
+    "p012",
+    "o006",
+    "r001",
+    "t001",
+    "o012",
+    "o001",
+    "o002",
+    "o014",
+    "r005",
+    "b003",
+    "p010",
+    "o015",
+    "o007",
+    "r006",
+    "r008",
+    "k005",
+    "o020",
+    "k001",
+    "t004",
+    "o016",
+    "o004",
+    "r011",
+    "r015"
+  ]
 }

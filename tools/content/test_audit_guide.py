@@ -109,5 +109,19 @@ class GuideAuditTest(unittest.TestCase):
         self.assertTrue(any("keep the word page simple" in e for e in errors))
 
 
+    def test_map_points_must_fall_on_the_map(self):
+        temp, root = self.make_guide()
+        self.addCleanup(temp.cleanup)
+        outline = [[-24.0 + i * 0.1, 63.0 + (i % 7) * 0.2] for i in range(80)]
+        bad = {"outline": outline, "credit": "x", "sourceIds": ["r1"],
+               "points": [{"id": "a", "kind": "town", "lon": -21.9, "lat": 63.5},
+                          {"id": "b", "kind": "town", "lon": 5.0, "lat": 52.0}],
+               "lines": []}
+        (root / "map.yaml").write_text(json.dumps(bad), encoding="utf-8")
+        errors = audit(root)
+        self.assertTrue(any("point b: outside" in e for e in errors))
+        self.assertFalse(any("point a" in e for e in errors))
+
+
 if __name__ == "__main__":
     unittest.main()

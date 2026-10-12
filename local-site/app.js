@@ -202,6 +202,53 @@
   document.querySelectorAll("#primary-nav a").forEach(link => link.addEventListener("click", () => document.querySelector("#primary-nav").classList.remove("open")));
   addEventListener("scroll", () => document.querySelector(".site-header").classList.toggle("scrolled", scrollY > 30), { passive: true });
 
+  function renderMap() {
+    const map = data.map;
+    const host = document.querySelector("#basics-map");
+    if (!map?.outline || !host) return;
+    const K = Math.cos(65 * Math.PI / 180), W = 1000, PAD = 28;
+    const lons = map.outline.map(p => p[0]), lats = map.outline.map(p => p[1]);
+    const lonMin = Math.min(...lons), lonMax = Math.max(...lons), latMin = Math.min(...lats), latMax = Math.max(...lats);
+    const scale = (W - 2 * PAD) / ((lonMax - lonMin) * K);
+    const H = Math.round((latMax - latMin) * scale + 2 * PAD);
+    const x = lon => ((lon - lonMin) * K * scale + PAD).toFixed(1);
+    const y = lat => ((latMax - lat) * scale + PAD).toFixed(1);
+    const path = points => points.map((p, i) => `${i ? "L" : "M"}${x(p[0])} ${y(p[1])}`).join(" ");
+    const marker = point => {
+      const cx = x(point.lon), cy = y(point.lat);
+      const shape = {
+        town: `<circle class="mk-town" cx="${cx}" cy="${cy}" r="7"/>`,
+        gc: `<circle class="mk-gc" cx="${cx}" cy="${cy}" r="5.5"/>`,
+        glacier: `<circle class="mk-glacier" cx="${cx}" cy="${cy}" r="9"/><path class="mk-glacier-x" d="M${cx - 4.5} ${cy}h9M${cx} ${cy - 4.5}v9M${cx - 3.2} ${cy - 3.2}l6.4 6.4M${cx + 3.2} ${cy - 3.2}l-6.4 6.4"/>`,
+        "glacier-lagoon": `<rect class="mk-lagoon" x="${cx - 6}" y="${cy - 6}" width="12" height="12" rx="2"/>`,
+        volcano: `<path class="mk-volcano" d="M${cx} ${cy - 10} L${cx + 9} ${cy + 7} L${cx - 9} ${cy + 7} Z"/>`
+      }[point.kind] || "";
+      const label = `<text class="map-label ${point.kind}" x="${(+cx + point.dx).toFixed(1)}" y="${(+cy + point.dy).toFixed(1)}" text-anchor="${point.anchor}">${escapeHtml(point.label)}</text>`;
+      return shape + label;
+    };
+    const line = item => `<path class="map-line ${escapeHtml(item.style)}" d="${path(item.points)}"/>`;
+    const legend = map.legend.map(entry => `<li><span class="lg lg-${escapeHtml(entry.kind)}" aria-hidden="true"></span>${escapeHtml(entry.label)}</li>`).join("");
+    const byKind = kind => map.points.filter(p => p.kind === kind).map(p => p.label).join(", ");
+    host.innerHTML = `
+      <svg viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="map-title map-desc">
+        <title id="map-title">${escapeHtml(map.title)}</title>
+        <desc id="map-desc">Schematic map of Iceland showing the Ring Road, the Golden Circle, main towns, glaciers, a glacier lagoon and the volcano Eyjafjallajökull.</desc>
+        <path class="map-land" d="${path(map.outline)}Z"/>
+        ${map.lines.filter(l => l.style === "ring").map(line).join("")}
+        ${map.lines.filter(l => l.style === "golden").map(line).join("")}
+        ${map.points.map(marker).join("")}
+      </svg>
+      <ul class="map-legend" aria-label="Map legend">${legend}</ul>
+      <figcaption id="map-caption">${escapeHtml(map.intro)}</figcaption>
+      <details class="map-text">
+        <summary>Map as text</summary>
+        <p><strong>Ring Road:</strong> ${escapeHtml(map.lines[0].label)}, circling the island through ${escapeHtml(byKind("town"))}.</p>
+        <p><strong>Golden Circle:</strong> ${escapeHtml(map.lines[1].label)}, from Reykjavík to ${escapeHtml(byKind("gc"))} and back.</p>
+        <p><strong>Glaciers:</strong> ${escapeHtml(byKind("glacier"))}. <strong>Glacier lagoon:</strong> ${escapeHtml(byKind("glacier-lagoon"))}. <strong>Volcano:</strong> ${escapeHtml(byKind("volcano"))}.</p>
+        <p class="map-credit">${escapeHtml(map.credit)}</p>
+      </details>`;
+  }
+
   function renderBasics() {
     const basics = data.basics;
     if (!basics) return;
@@ -217,7 +264,7 @@
         <p>${escapeHtml(name.story)}</p>
       </article>`).join("");
     document.querySelector("#basics-numbers").innerHTML = basics.numbers.map(item => `
-      <div class="number-tile"><span class="name-label">${escapeHtml(item.label)}</span><strong>${escapeHtml(item.value)}</strong><p>${escapeHtml(item.detail)}</p></div>`).join("");
+      <div class="number-tile"><span class="number-icon" aria-hidden="true">${item.icon || ""}</span><span class="name-label">${escapeHtml(item.label)}</span><strong>${escapeHtml(item.value)}</strong><p>${escapeHtml(item.detail)}</p></div>`).join("");
     document.querySelector("#basics-tips").innerHTML = basics.tips.map(tip => `
       <article class="tip-card">
         <p class="tip-label">${escapeHtml(tip.label)}</p>
@@ -228,6 +275,7 @@
   }
 
   renderBasics();
+  renderMap();
   renderPlaybooks();
   renderRoutes();
   renderPlaces();

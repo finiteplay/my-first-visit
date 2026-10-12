@@ -107,6 +107,9 @@ def basics_audit(basics, evidence_ids):
                 errors.append(f"basics.yaml name {label}: {field} is required.")
     if len(basics.get("numbers", [])) < 4:
         errors.append("basics.yaml: needs 4+ numbers.")
+    for number in basics.get("numbers", []):
+        if not str(number.get("icon", "")).strip():
+            errors.append(f"basics.yaml number {number.get('label')}: an icon is required.")
     if len(basics.get("tips", [])) < 5:
         errors.append("basics.yaml: needs 5+ tips.")
     groups = [("name", names), ("number", basics.get("numbers", [])), ("tip", basics.get("tips", []))]
@@ -133,7 +136,7 @@ def vocabulary_audit(vocab, evidence_ids):
             errors.append(f"vocabulary.yaml: a {required} group is required.")
         elif not groups[required].get("alwaysShow"):
             errors.append(f"vocabulary.yaml: the {required} group must always be shown, with or without audio.")
-    for word in vocab.get("extraWords", []):
+    for word in vocab.get("extraWords", []) + vocab.get("placeWords", []):
         label = word.get("local", "<missing>")
         for field in ("local", "respelling", "meaning"):
             if not str(word.get(field, "")).strip():
@@ -146,6 +149,38 @@ def vocabulary_audit(vocab, evidence_ids):
         unknown = set(word.get("sourceIds", [])) - evidence_ids
         if unknown:
             errors.append(f"vocabulary.yaml word {label}: unknown source IDs {sorted(unknown)}.")
+    return errors
+
+
+def map_audit(map_data, evidence_ids):
+    """The small country map: an outline, route lines and points that all fall on the outline."""
+    errors = []
+    outline = map_data.get("outline", [])
+    if len(outline) < 50:
+        errors.append("map.yaml: the outline needs 50+ points (the map would look like a blob).")
+        return errors
+    lons, lats = [p[0] for p in outline], [p[1] for p in outline]
+    box = (min(lons), max(lons), min(lats), max(lats))
+
+    def inside(lon, lat):
+        return box[0] <= lon <= box[1] and box[2] <= lat <= box[3]
+
+    kinds = {"town", "gc", "glacier", "glacier-lagoon", "volcano"}
+    for point in map_data.get("points", []):
+        if point.get("kind") not in kinds:
+            errors.append(f"map.yaml point {point.get('id')}: unknown kind {point.get('kind')!r}.")
+        if not inside(point.get("lon", 999), point.get("lat", 999)):
+            errors.append(f"map.yaml point {point.get('id')}: outside the country's bounding box.")
+    for line in map_data.get("lines", []):
+        for lon, lat in line.get("points", []):
+            if not inside(lon, lat):
+                errors.append(f"map.yaml line {line.get('id')}: a waypoint is outside the bounding box.")
+                break
+    unknown = set(map_data.get("sourceIds", [])) - evidence_ids
+    if unknown:
+        errors.append(f"map.yaml: unknown source IDs {sorted(unknown)}.")
+    if not str(map_data.get("credit", "")).strip():
+        errors.append("map.yaml: a data credit is required (outline source and license).")
     return errors
 
 
@@ -198,6 +233,9 @@ def audit(root):
                 errors += [f"{filename} {item_id}: depth: {e}" for e in playbook_depth(item, roles)]
             if filename == "routes.yaml":
                 errors += [f"{filename} {item_id}: depth: {e}" for e in route_depth(item, roles)]
+    map_path = root / "map.yaml"
+    if map_path.exists():
+        errors += map_audit(read_json(map_path), evidence_ids)
     vocabulary_path = root / "vocabulary.yaml"
     if vocabulary_path.exists():
         errors += vocabulary_audit(read_json(vocabulary_path), evidence_ids)

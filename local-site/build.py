@@ -52,6 +52,10 @@ def build_vocabulary():
         if source.get("kind") == "place":
             candidates += [{"local": e["local"], "respelling": e["respelling"], "meaning": e["meaning"], "when": ""}
                            for e in audio.values() if e.get("kind") == "place"]
+        if source.get("placeWords"):
+            candidates = [{"local": w["local"], "respelling": w["respelling"], "meaning": w["meaning"],
+                           "when": w.get("when", ""), "force": w.get("alwaysShow", False)}
+                          for w in config.get("placeWords", [])] + candidates
         items = []
         for item in candidates:
             if item["local"] in seen:
@@ -59,9 +63,10 @@ def build_vocabulary():
             if not is_simple(item["local"], group, config):
                 continue
             clip = audio.get(item["local"])
-            if not clip and not group.get("alwaysShow"):
+            if not clip and not group.get("alwaysShow") and not item.get("force"):
                 continue
             seen.add(item["local"])
+            item.pop("force", None)
             items.append({**item, "hasAudio": bool(clip)})
         if items:
             groups.append({"id": group["id"], "title": group["title"], "intro": group["intro"],
@@ -77,6 +82,7 @@ content = {
     "places": read_json("sights.yaml")["items"],
     "basics": read_json("basics.yaml"),
     "vocabulary": build_vocabulary(),
+    "map": read_json("map.yaml") if (PACK / "map.yaml").exists() else {},
     # Author-selected photos only (tools/media/apply_selection.py); others stay pending.
     "photos": read_json("photos.json")["attractions"] if (PACK / "photos.json").exists() else {},
     # Draft synthetic pronunciation (tools/audio/generate_place_audio.py); only clips approved

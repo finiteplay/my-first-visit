@@ -72,8 +72,11 @@ def collect_names(pack: Path) -> dict[str, dict]:
             add(sign["local"], sign["respelling"], "sign", sign["meaning"])
     vocab = pack / "vocabulary.yaml"
     if vocab.exists():
-        for word in json.loads(vocab.read_text(encoding="utf-8")).get("extraWords", []):
+        config = json.loads(vocab.read_text(encoding="utf-8"))
+        for word in config.get("extraWords", []):
             add(word["local"], word["respelling"], "word", word["meaning"])
+        for word in config.get("placeWords", []):
+            add(word["local"], word["respelling"], "place", word["meaning"])
     return items
 
 

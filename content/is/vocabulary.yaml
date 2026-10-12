@@ -61,7 +61,8 @@
       "title": "Place names",
       "intro": "Names you will hear and want to say. Foss means waterfall, which explains a lot of them.",
       "from": {
-        "kind": "place"
+        "kind": "place",
+        "placeWords": true
       }
     }
   ],
@@ -137,5 +138,19 @@
     "exemptKinds": [
       "place"
     ]
-  }
+  },
+  "placeWords": [
+    {
+      "id": "place-eyjafjallajokull",
+      "local": "Eyjafjallajökull",
+      "respelling": "AY-ya-fyaht-la-yur-kutl",
+      "meaning": "Volcano under a glacier, Iceland's most famous",
+      "when": "Its small 2010 eruption sent ash over Europe and grounded about 100,000 flights. Visitors often joke that its name is the hardest to say.",
+      "alwaysShow": true,
+      "sourceIds": [
+        "e006"
+      ],
+      "review": "pending-native"
+    }
+  ]
 }

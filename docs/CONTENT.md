@@ -246,6 +246,21 @@ is derived from the playbook models rather than from an approved route example:
 Drive times and opening periods are planning estimates; label them and send the reader to a
 live source for the actual day.
 
+### Country map and number tiles
+
+Status: **built for the Iceland draft; the map is checked by `audit_guide.py`.**
+
+The basics section carries a small schematic map drawn as inline SVG (no network, light and dark
+themes, a text alternative under "Map as text"). Source: `content/<cc>/map.yaml`: a simplified
+coastline, route lines (the main circular road and one famous short loop), towns, glacier points,
+a glacier lagoon and one famous volcano, each with a label offset. The coastline comes from Natural
+Earth (public domain); positions and lines are simplified by hand and labelled "not for navigation".
+Every point and waypoint must fall inside the outline's bounding box. The famous volcano is also in
+the word page with a respelling and audio, so the name can be said before the trip.
+
+Each "Iceland in numbers" tile has an `icon` (an emoji, hidden from screen readers) so the facts are
+easy to scan.
+
 ### Word page ("Say it in Icelandic")
 
 Status: **built for the Iceland draft as its own page, `local-site/words.html`; checked by

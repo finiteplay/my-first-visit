@@ -268,3 +268,53 @@ body.night .reader-bar { background: rgba(21,48,53,.95); }
 @media (max-width: 760px) { .word-row { grid-template-columns: 1fr; } }
 
 .word-group h2 { margin: 0 0 6px; font: 500 1.6rem Georgia, serif; }
+
+.number-tile { position: relative; }
+.number-icon { display: grid; place-items: center; width: 46px; height: 46px; margin-bottom: 6px; border-radius: 14px; background: var(--paper-2, #e9e7df); font-size: 1.6rem; line-height: 1; transition: transform .2s; }
+.number-tile:hover .number-icon { transform: rotate(-6deg) scale(1.08); }
+@media (prefers-reduced-motion: reduce) { .number-tile:hover .number-icon { transform: none; } }
+
+/* Iceland map */
+.iceland-map { margin: 0; display: grid; gap: 10px; }
+.iceland-map svg { width: 100%; height: auto; max-height: 560px; border: 1px solid var(--line); border-radius: 14px; background: linear-gradient(180deg, #dbe9ea, #cfe0e3); }
+body.night .iceland-map svg { background: linear-gradient(180deg, #14323a, #0f272e); }
+.map-land { fill: #f4f1e8; stroke: #8fa3a1; stroke-width: 2; stroke-linejoin: round; }
+body.night .map-land { fill: #26363a; stroke: #5d777a; }
+.map-line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.map-line.ring { stroke: #1d4a53; stroke-width: 4; stroke-dasharray: 2 9; }
+.map-line.golden { stroke: #d99a1e; stroke-width: 6; opacity: .9; }
+body.night .map-line.ring { stroke: #9fd3dc; }
+.mk-town { fill: #102b31; stroke: #fff; stroke-width: 2.5; }
+body.night .mk-town { fill: #e8f1f2; stroke: #102b31; }
+.mk-gc { fill: #d99a1e; stroke: #fff; stroke-width: 2; }
+.mk-glacier { fill: #e8f6ff; stroke: #4a8fb8; stroke-width: 2.5; }
+.mk-glacier-x { fill: none; stroke: #4a8fb8; stroke-width: 2; stroke-linecap: round; }
+.mk-lagoon { fill: #3aa6a0; stroke: #fff; stroke-width: 2; }
+.mk-volcano { fill: #d8552b; stroke: #fff; stroke-width: 2; stroke-linejoin: round; }
+.map-label { font: 700 19px system-ui, sans-serif; fill: #102b31; paint-order: stroke; stroke: #f4f1e8; stroke-width: 5px; stroke-linejoin: round; }
+body.night .map-label { fill: #e8f1f2; stroke: #26363a; }
+.map-label.glacier, .map-label.glacier-lagoon { fill: #1f5f86; }
+.map-label.volcano { fill: #a93a18; }
+.map-label.gc { fill: #8a5d00; font-size: 17px; }
+body.night .map-label.glacier, body.night .map-label.glacier-lagoon { fill: #9fd0ee; }
+body.night .map-label.volcano { fill: #ff9a73; }
+body.night .map-label.gc { fill: #f2c561; }
+.map-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0; padding: 0; list-style: none; color: var(--muted); font-size: .85rem; }
+.map-legend li { display: inline-flex; align-items: center; gap: 7px; }
+.lg { display: inline-block; width: 18px; height: 12px; }
+.lg-ring { border-top: 4px dotted #1d4a53; height: 0; }
+.lg-golden { border-top: 6px solid #d99a1e; height: 0; border-radius: 3px; }
+.lg-town { width: 12px; border-radius: 50%; background: #102b31; }
+.lg-glacier { width: 14px; height: 14px; border-radius: 50%; background: #e8f6ff; border: 2px solid #4a8fb8; }
+.lg-glacier-lagoon { width: 12px; background: #3aa6a0; border-radius: 2px; }
+.lg-volcano { width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 12px solid #d8552b; }
+.iceland-map figcaption { color: var(--muted); font-size: .85rem; }
+.map-text summary { cursor: pointer; font-weight: 700; color: var(--moss); }
+.map-text p { margin: 8px 0 0; color: var(--muted); font-size: .92rem; }
+.map-credit { font-size: .78rem !important; }
+@media (max-width: 760px) {
+  .map-label { font-size: 31px; stroke-width: 8px; }
+  .map-label.gc { display: none; }
+  .mk-town { r: 10px; }
+  .mk-gc { r: 8px; }
+}
