@@ -394,6 +394,12 @@ def main() -> int:
 
 
 def write_review(out_dir: Path, doc: dict) -> None:
+    """Write review.html. `applied` records how many author-selected photos each place already has in photos.json."""
+    photos_path = out_dir.parent / "photos.json"
+    applied = {}
+    if photos_path.exists():
+        applied = {k: len(v) for k, v in json.loads(photos_path.read_text(encoding="utf-8")).get("attractions", {}).items() if v}
+    doc = dict(doc, applied=applied)
     data = json.dumps(doc, ensure_ascii=False).replace("</", "<\\/")
     (out_dir / "review.html").write_text(REVIEW_HTML.replace("__DATA__", data), encoding="utf-8")
 
@@ -408,7 +414,19 @@ body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,san
 header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 16px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 header h1{font-size:1.1rem;margin:0;flex:1}
 button{font:inherit;padding:7px 12px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer}
-main{padding:16px;max-width:1400px;margin:auto}
+.layout{display:grid;grid-template-columns:290px 1fr;gap:18px;max-width:1700px;margin:auto;padding:0 16px}
+nav#toc{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;padding:12px 4px 12px 0;font-size:.85rem}
+nav#toc h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:10px 0 6px}
+nav#toc a{display:flex;justify-content:space-between;gap:8px;padding:5px 8px;border-radius:8px;color:var(--ink);text-decoration:none;border:1px solid transparent}
+nav#toc a:hover{border-color:var(--line);background:var(--card)}
+nav#toc .badge{white-space:nowrap;font-weight:700;color:var(--muted)}
+nav#toc .badge.ok{color:var(--accent)} nav#toc .badge.part{color:var(--warn)}
+nav#toc .tools{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 8px}
+nav#toc .tools button{background:transparent;color:var(--ink);border-color:var(--line);padding:4px 10px;font-size:.78rem}
+nav#toc .tools button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+@media (max-width:900px){.layout{grid-template-columns:1fr}nav#toc{position:static;max-height:240px;border-bottom:1px solid var(--line)}}
+main{padding:16px 0;min-width:0}
+section{scroll-margin-top:70px}
 section{margin:0 0 40px}
 h2{margin:0 0 4px;font-size:1.25rem} .sub{color:var(--muted);margin:0 0 12px;font-size:.9rem}
 .count{font-weight:700} .count.ok{color:var(--accent)} .count.bad{color:var(--warn)}
@@ -430,12 +448,13 @@ dialog{max-width:95vw;padding:0;border:0;background:#000} dialog img{max-width:9
 </style></head><body>
 <header><h1>Photo shortlist: choose 3–5 per attraction (1–2 = partial)</h1>
 <span id="total"></span><button id="export">Download selection</button></header>
-<main id="m"></main>
+<div class="layout"><nav id="toc" aria-label="Places"></nav><main id="m"></main></div>
 <dialog id="dlg"><img id="dlgimg" alt=""></dialog>
 <script>
 const DOC = __DATA__;
 const KEY = "fda-photo-selection";
 let sel = {};
+let filter = "all";
 try { sel = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) {}
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(sel)); } catch (e) {} render(); };
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -448,9 +467,12 @@ function render() {
     const picks = sel[sid] || {};
     const n = Object.keys(picks).length;
     if (n >= 1) done++;
+    const inSite = (DOC.applied || {})[sid] || 0;
+    if ((filter === "needs" && (inSite || n)) || (filter === "selected" && !n)) continue;
     const s = document.createElement("section");
+    s.id = "p-" + sid;
     s.innerHTML = `<h2>${esc(a.name)} <span class="sub">(${esc(a.local)})</span></h2>
-      <p class="sub"><span class="count ${n>=3?"ok":"bad"}">${n} selected${n>=1&&n<3?" (partial, can add more later)":""}</span> · ${a.candidates.length} verified candidates
+      <p class="sub"><span class="count ${n>=3?"ok":"bad"}">${n} selected${n>=1&&n<3?" (partial, can add more later)":""}</span>${inSite ? ` · <b>${inSite} already in the site</b>` : ""} · ${a.candidates.length} verified candidates
       ${a.shortfall ? `· <span class="warn">${esc(a.shortfall)}</span>` : ""}
       · rejected: ${esc(Object.entries(a.rejectedCounts||{}).map(([k,v])=>k+" "+v).join(", ") || "none")}</p>
       <div class="grid"></div>`;
@@ -493,7 +515,27 @@ function render() {
     }
     m.appendChild(s);
   }
-  document.getElementById("total").textContent = `${done}/${total} attractions have photos (3–5 complete, 1–2 partial)`;
+  const pickedTotal = Object.values(sel).reduce((acc, p) => acc + Object.keys(p).length, 0);
+  document.getElementById("total").textContent = `${pickedTotal} selected in ${done}/${total} places (3–5 complete, 1–2 partial)`;
+  renderToc();
+}
+function renderToc() {
+  const toc = document.getElementById("toc");
+  const rows = Object.entries(DOC.attractions).map(([sid, a]) => {
+    const n = Object.keys(sel[sid] || {}).length, inSite = (DOC.applied || {})[sid] || 0;
+    return { sid, a, n, inSite };
+  });
+  const link = r => `<a href="#p-${esc(r.sid)}" title="${r.a.candidates.length} candidates"><span>${esc(r.a.name)}</span>
+      <span class="badge ${r.n >= 3 ? "ok" : r.n ? "part" : ""}">${r.n}${r.inSite ? ` <small>(+${r.inSite} in site)</small>` : ""}${r.a.candidates.length ? "" : " <small>none found</small>"}</span></a>`;
+  const needs = rows.filter(r => !r.inSite);
+  const have = rows.filter(r => r.inSite);
+  const btn = (v, t) => `<button type="button" data-f="${v}" class="${filter === v ? "on" : ""}">${t}</button>`;
+  const keep = toc.scrollTop;
+  toc.innerHTML = `<div class="tools">${btn("all", "All")}${btn("needs", "Needs photos")}${btn("selected", "Selected")}</div>
+    <h2>Needs photos (${needs.length})</h2>${needs.map(link).join("")}
+    <h2>Already have photos (${have.length})</h2>${have.map(link).join("")}`;
+  toc.scrollTop = keep;
+  toc.querySelectorAll("[data-f]").forEach(b => b.onclick = () => { filter = b.dataset.f; render(); });
 }
 document.getElementById("dlg").onclick = e => e.currentTarget.close();
 document.getElementById("export").onclick = () => {
