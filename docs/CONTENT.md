@@ -312,7 +312,8 @@ Workflow:
 
 1. `python tools/content/edit_ratings.py is --open` writes and opens an HTML editor. One list: drag a row by its handle (or
    type a new number, or use the arrows) to set its place; edit "Aggregate stars"; a grey "average" value shows the plain average
-   of the sources, with "use" buttons; "Sort list by stars" re-orders everything; "Save to is.json" overwrites the same file.
+   of the sources, with "use" buttons; radio buttons set the priority for a first visit (Must see, Worth a stop, If you
+   have time), which `build_score.py` writes back to the place's `tier`; "Sort list by stars" re-orders everything; "Save to is.json" overwrites the same file.
 2. `python tools/content/build_score.py is` writes `score` into `sights.yaml`; then `python local-site/build.py`.
 3. Optional: `python tools/content/fetch_google_ratings.py is` (needs `GOOGLE_PLACES_API_KEY`) adds Google numbers to the
    sources so the suggestions use them.

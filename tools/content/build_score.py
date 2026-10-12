@@ -15,6 +15,8 @@ Inputs file (schemaVersion 2):
      "places": {"sight-a": {"stars": 4.6, "placeholder": true, "note": "...",
                             "sources": {"tripadvisor": {"rating": 4.6, "reviews": 1187, "rank": 5, "of": "..."},
                                         "google": {"rating": 4.7, "reviews": 9021}}}}}
+`tier` ("must-see", "worth-it" or "if-you-have-time") is the priority for a first visit, edited with radio buttons in the
+editor and written back to sights.yaml.
 `placeholder: true` means the stars are still a copy of a source number that has not been reviewed; editing clears it.
 
 Suggestion (shown in the editor, applied with --use-suggestions): the plain average of the place's ratings across the
@@ -33,6 +35,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 METHOD = "aggregate-v3"
+TIERS = ("must-see", "worth-it", "if-you-have-time")
 
 
 def inputs_path(cc: str) -> Path:
@@ -114,8 +117,12 @@ def main() -> int:
     path.write_text(json.dumps(inputs, indent=1, ensure_ascii=False), encoding="utf-8")
 
     rank = {pid: i + 1 for i, pid in enumerate(inputs["order"])}
-    scored, missing = 0, []
+    scored, missing, tier_changes = 0, [], 0
     for item in sights["items"]:
+        tier = inputs["places"][item["id"]].get("tier")
+        if tier in TIERS and tier != item.get("tier"):
+            item["tier"] = tier
+            tier_changes += 1
         stars = inputs["places"][item["id"]].get("stars")
         if stars is None:
             item.pop("score", None)
@@ -125,6 +132,8 @@ def main() -> int:
         scored += 1
     write_sights(sights_path, sights)
     placeholders = sum(1 for p in inputs["places"].values() if p.get("placeholder"))
+    if tier_changes:
+        print(f"priority changed on {tier_changes} places")
     print(f"scored {scored} of {len(ids)} places; {placeholders} still use a placeholder (source number not yet reviewed)"
           + (f"; no stars: {', '.join(missing[:6])}" if missing else ""))
     return 0

@@ -8,6 +8,7 @@ prints its path. In the page:
     place. The numbers are always 1..N and only mean something for this website.
   * "Aggregate stars" is our own rating out of 5. It starts as a placeholder copied from a source site (marked "placeholder");
     editing it makes it yours. The grey "average" value is the plain average of the sources' ratings, as build_score.py computes it.
+  * the radio buttons set each place's priority for a first visit (Must see, Worth a stop, If you have time).
   * "Save to is.json" overwrites the same file every time (Chrome and Edge keep the file handle).
 Then run `python tools/content/build_score.py is` and `python local-site/build.py`.
 """
@@ -46,7 +47,8 @@ td.h{width:34px;text-align:center;cursor:grab;color:var(--muted);font-size:1.2re
 td.pos input{width:58px;padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:transparent;font-weight:700;text-align:center}
 td input.stars{width:70px;padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:transparent;font-weight:700}
 td input.stars.bad{border-color:var(--bad);background:rgba(179,38,30,.08)}
-td input.note{width:100%;min-width:160px;padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:transparent}
+.tiers{display:flex;gap:12px;flex-wrap:nowrap}.tiers label{display:inline-flex;align-items:center;gap:4px;white-space:nowrap;cursor:pointer}
+.tiers input{accent-color:var(--accent)}
 .name{font-weight:600}.region{color:var(--muted);font-size:.78rem}
 .tag{display:inline-block;margin-left:6px;padding:0 7px;border-radius:999px;border:1px solid var(--warn);color:var(--warn);font-size:.68rem;font-weight:600}
 .sug{color:var(--muted);font-size:.78rem;white-space:nowrap}.sug button{margin-left:4px}
@@ -64,11 +66,12 @@ tr.ph td:first-child{box-shadow:inset 3px 0 var(--warn)}
 <button class="alt" id="useall" type="button" title="Replace every placeholder with its suggested value">Use suggestions for placeholders</button>
 <span id="count" class="sub" style="margin-left:auto"></span></div>
 <div class="hint" id="hint">Drag the ⠿ handle to move a place, type a new number in the # box, or use ▲ ▼. Dragging works in the full list (filters off).</div>
-<main><table><thead><tr><th></th><th>#</th><th>Place</th><th>Aggregate stars</th><th>Average of sources</th><th>Note</th><th>Move</th></tr></thead><tbody id="rows"></tbody></table></main>
+<main><table><thead><tr><th></th><th>#</th><th>Place</th><th>Aggregate stars</th><th>Average of sources</th><th>Priority for a first visit</th><th>Move</th></tr></thead><tbody id="rows"></tbody></table></main>
 <script>
 const DATA = __DATA__;
 let inputs = DATA.inputs, filter = "all", dragId = null;
 const names = Object.fromEntries(DATA.places.map(p => [p.id, p]));
+const TIERS = [["must-see", "Must see"], ["worth-it", "Worth a stop"], ["if-you-have-time", "If you have time"]];
 const num = v => (v === "" || v == null || isNaN(Number(v))) ? null : Number(v);
 const okStars = v => { const n = num(v); return n != null && n >= 1 && n <= 5; };
 const q = () => document.getElementById("q").value.trim().toLowerCase();
@@ -99,11 +102,10 @@ function render() {
       <td><span class="name">${esc(pl.name)}</span>${p.placeholder ? '<span class="tag" title="Copied from a source site, not yet reviewed by you">placeholder</span>' : ""}<div class="region">${esc(pl.region)}</div></td>
       <td><input class="stars ${p.stars != null && !okStars(p.stars) ? "bad" : ""}" data-stars="${r.id}" value="${p.stars == null ? "" : p.stars}" inputmode="decimal" placeholder="1–5"></td>
       <td class="sug">${sg != null ? sg.toFixed(2) + ` <button class="alt mini" data-use="${r.id}" type="button" title="Use this value">use</button>` : "–"}</td>
-      <td><input class="note" data-note="${r.id}" value="${esc(p.note || "")}" placeholder="note (not published)"></td>
+      <td><div class="tiers" role="radiogroup" aria-label="Priority for ${esc(pl.name)}">${TIERS.map(([v, label]) => `<label><input type="radio" name="tier-${r.id}" data-tier="${r.id}" value="${v}" ${p.tier === v ? "checked" : ""}>${label}</label>`).join("")}</div></td>
       <td class="moves"><button class="alt mini" data-up="${r.id}" type="button" aria-label="Move up">▲</button> <button class="alt mini" data-down="${r.id}" type="button" aria-label="Move down">▼</button></td></tr>`;
   }).join("");
-  const ph = Object.values(inputs.places).filter(p => p.placeholder).length;
-  document.getElementById("count").textContent = `${rows.length} shown of ${inputs.order.length} · ${ph} placeholders`;
+  document.getElementById("count").textContent = countText(rows.length);
   document.getElementById("hint").style.opacity = canDrag() ? 1 : .6;
 }
 
@@ -123,13 +125,17 @@ rows.addEventListener("input", ev => {
     delete p.placeholder; t.classList.toggle("bad", v !== "" && !okStars(v));
     const tr = t.closest("tr"); tr.classList.remove("ph"); const tag = tr.querySelector(".tag"); if (tag) tag.remove();
     dirty(); updateCount();
-  } else if (t.dataset.note) {
-    const p = inputs.places[t.dataset.note]; if (t.value.trim()) p.note = t.value; else delete p.note; dirty();
   }
 });
-function updateCount() { const ph = Object.values(inputs.places).filter(p => p.placeholder).length; const c = document.getElementById("count"); c.textContent = c.textContent.replace(/\d+ placeholders/, ph + " placeholders"); }
+function countText(shown) {
+  const tc = Object.fromEntries(TIERS.map(([v]) => [v, 0]));
+  Object.values(inputs.places).forEach(p => { if (tc[p.tier] != null) tc[p.tier]++; });
+  return `${shown} shown of ${inputs.order.length} · ` + TIERS.map(([v, l]) => `${l} ${tc[v]}`).join(" · ");
+}
+function updateCount() { const n = document.querySelectorAll("#rows tr").length; document.getElementById("count").textContent = countText(n); }
 rows.addEventListener("change", ev => {
   const t = ev.target;
+  if (t.dataset.tier) { inputs.places[t.dataset.tier].tier = t.value; dirty(); updateCount(); return; }
   if (t.dataset.pos) { const n = parseInt(t.value, 10); if (Number.isInteger(n)) move(t.dataset.pos, n - 1); else render(); }
 });
 rows.addEventListener("click", ev => {
@@ -219,6 +225,8 @@ def main() -> int:
     ids = [it["id"] for it in sights["items"]]
     path = inputs_path(args.country)
     inputs = load_inputs(path, ids)
+    for it in sights["items"]:  # the priority starts as the one already in sights.yaml
+        inputs["places"][it["id"]].setdefault("tier", it.get("tier", "if-you-have-time"))
     places = [{"id": it["id"], "name": it["name"], "region": it.get("region", "")} for it in sights["items"]]
     data = {"places": places, "inputs": inputs}
     html = (PAGE.replace("__CC__", args.country)
