@@ -140,6 +140,11 @@
         <div><p class="eyebrow dark">Worth it for whom?</p><h2 id="places-title">Places with a reason, rated for a first visit</h2></div>
         <label class="search-label">Search places <input id="place-search" type="search" placeholder="Try pool, waterfall, museum…"></label>
       </div>
+      <div class="filter-row" id="place-sort" role="group" aria-label="Sort places">
+        <span class="filter-label">Sort by</span>
+        <button class="filter active" type="button" data-sort="rating" aria-pressed="true">TripAdvisor rating</button>
+        <button class="filter" type="button" data-sort="priority" aria-pressed="false">Our priority</button>
+      </div>
       <div class="filter-row" id="place-areas" role="group" aria-label="Filter places by area"></div>
       <div class="filter-row" id="place-filters" role="group" aria-label="Filter places by category"></div>
       <p class="place-count" id="place-count" aria-live="polite"></p>

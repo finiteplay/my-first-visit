@@ -250,6 +250,16 @@ def audit(root):
     sights_path = root / "sights.yaml"
     if sights_path.exists():
         sights = read_json(sights_path)
+        for item in sights.get("items", []):
+            ta = item.get("tripadvisor")
+            if ta is None:
+                continue
+            if not str(ta.get("url", "")).startswith("https://www.tripadvisor.com/"):
+                errors.append(f"sights.yaml {item.get('id')}: tripadvisor.url must be an https://www.tripadvisor.com/ link.")
+            if ta.get("rating") is not None and not (1.0 <= float(ta["rating"]) <= 5.0):
+                errors.append(f"sights.yaml {item.get('id')}: tripadvisor.rating must be between 1 and 5.")
+            if not ta.get("checkedAt"):
+                errors.append(f"sights.yaml {item.get('id')}: tripadvisor.checkedAt is required (ratings change).")
         areas = sights.get("areas")
         if areas:
             owner = {}

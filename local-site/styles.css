@@ -441,3 +441,12 @@ body.night .rm-day { fill: #e8f1f2; stroke: #26363a; }
 .route-map-legend li { display: inline-flex; align-items: center; gap: 6px; }
 .lg-dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
 .route-map figcaption { margin-top: 6px; color: var(--muted); font-size: .75rem; }
+
+/* TripAdvisor rating and sort row */
+.ta { display: inline-flex; align-items: center; gap: 6px; margin: 6px 0 0 6px; font-size: .74rem; color: var(--muted); vertical-align: middle; }
+.ta-score { display: inline-grid; place-items: center; min-width: 30px; padding: 2px 8px; border-radius: 999px; background: #34e0a1; color: #0b2b1f; font-weight: 800; font-size: .76rem; }
+.ta-none { margin-left: 0; font-style: italic; }
+.place-card .ta { display: flex; margin: 6px 0 0; }
+.place-card .priority + .ta { margin-top: 8px; }
+.ta-note { margin: 4px 0 0; color: var(--muted); font-size: .78rem; }
+#place-sort { margin: 0 0 8px; flex-wrap: wrap; }

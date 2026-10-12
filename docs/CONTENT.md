@@ -296,6 +296,16 @@ card and into a schematic map of the trip: one dot per stop, colored by day, joi
 between days with a dashed line), cropped to the stops
 (a trip entirely inside the capital area uses the local outline). `audit_guide.py` fails on an id that does not exist.
 
+### TripAdvisor link and rating
+
+Each place can carry `tripadvisor` ({url, rating, reviews, checkedAt, note}): a link to the place's TripAdvisor page, the
+overall rating out of 5 and the review count, shown on the card and the place page. The grid can be sorted by that
+rating (highest first, ties by review count) or by our own priority. Ratings change constantly and are TripAdvisor's
+numbers, so `checkedAt` is required and the page tells the reader the date. TripAdvisor blocks automated page reads,
+so the Iceland values came from search-result summaries: confirm each on the page before release. Places that are
+villages or areas have no rating of their own (`rating: null`) and sort last. Before a public release, check
+TripAdvisor's terms for showing ratings, or switch to link-only or their official content API.
+
 ### Country map and number tiles
 
 Status: **built for the Iceland draft; the map is checked by `audit_guide.py`.**

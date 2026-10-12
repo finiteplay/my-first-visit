@@ -79,6 +79,17 @@
       </button>`).join("");
   }
 
+  // TripAdvisor rating, shown with its review count. The score is theirs, read on the date recorded in the data.
+  const taBadge = item => {
+    const ta = item.tripadvisor;
+    if (!ta) return "";
+    if (ta.rating == null) return `<span class="ta ta-none">TripAdvisor: no rating for the place itself</span>`;
+    const count = ta.reviews == null ? "" : ` · ${Number(ta.reviews).toLocaleString("en-US")} reviews`;
+    return `<span class="ta" aria-label="TripAdvisor rating ${ta.rating} out of 5${ta.reviews == null ? "" : `, ${Number(ta.reviews).toLocaleString("en-US")} reviews`}"><span class="ta-score" aria-hidden="true">${ta.rating.toFixed(1)}</span><span class="ta-text" aria-hidden="true">TripAdvisor${count}</span></span>`;
+  };
+  let placeSort = "rating";
+  const byTripadvisor = (a, b) => (b.tripadvisor?.rating ?? -1) - (a.tripadvisor?.rating ?? -1) || (b.tripadvisor?.reviews ?? 0) - (a.tripadvisor?.reviews ?? 0);
+
   // Priority for a first visit comes from each place's `tier`. Words, not stars: every label is a positive
   // recommendation, and the lowest one means "good when you have spare time", not "poor".
   const PRIORITIES = {
@@ -118,12 +129,13 @@
       .filter(item => placeCategory === "all" || item.category === placeCategory)
       .filter(item => placeArea === "all" || areaOf(item)?.id === placeArea)
       .filter(item => !term || [item.name, item.region, item.category, item.whyGo].join(" ").toLocaleLowerCase().includes(term))
-      .sort((a, b) => (tierOrder[a.tier] ?? 3) - (tierOrder[b.tier] ?? 3) || (placeRank[a.id] || 999) - (placeRank[b.id] || 999) || a.name.localeCompare(b.name));
+      .sort((a, b) => (placeSort === "rating" ? byTripadvisor(a, b) : 0)
+        || (tierOrder[a.tier] ?? 3) - (tierOrder[b.tier] ?? 3) || (placeRank[a.id] || 999) - (placeRank[b.id] || 999) || a.name.localeCompare(b.name));
     placeGrid.innerHTML = items.map(item => `
       <article class="place-card" data-open="place:${escapeHtml(item.id)}" tabindex="0" role="button" aria-label="Open place card for ${escapeHtml(item.name)}">
         ${selectedPhotos[item.id]?.length ? `<img class="place-card-image" src="${escapeHtml(selectedPhotos[item.id][0].file)}" alt="${escapeHtml(photoAlt(item, 0))}" style="${escapeHtml(photoStyle(selectedPhotos[item.id][0]))}" width="480" height="320" loading="lazy">` : ""}
         <span class="region">${escapeHtml(item.region)} · ${escapeHtml(item.category)}</span>
-        ${priorityHtml(item)}
+        ${priorityHtml(item)}${taBadge(item)}
         <h3>${escapeHtml(item.name)}</h3>
         <p>${escapeHtml(item.whyGo)}</p>
         <span class="time">${escapeHtml(item.timeNeeded)}</span>
@@ -161,7 +173,7 @@
     if (!item.placeGroups?.length) return "";
     const card = place => `<div class="option place-entry">
         <strong><button type="button" class="link-button" data-open="place:${escapeHtml(place.id)}">${escapeHtml(place.name)}</button></strong>
-        <p>${priorityHtml(place)} <span class="place-time-inline">${escapeHtml(place.timeNeeded)}</span></p>
+        <p>${priorityHtml(place)}${taBadge(place)} <span class="place-time-inline">${escapeHtml(place.timeNeeded)}</span></p>
         <p>${escapeHtml(place.whyGo)}</p>
         <p class="place-links">${place.website ? `<a class="maps-link" href="${escapeHtml(place.website.url)}" target="_blank" rel="noopener">${escapeHtml(place.website.label)} <span aria-hidden="true">↗</span></a>` : ""}${place.location ? `<a class="maps-link" href="${escapeHtml(mapsUrl(place))}" target="_blank" rel="noopener">Google Maps <span aria-hidden="true">↗</span></a>` : ""}</p>
       </div>`;
@@ -352,7 +364,8 @@
         </svg>
         <figcaption>${escapeHtml(areaName)}. Approximate position, not for navigation. ${escapeHtml(credit)}</figcaption>
       </figure>
-      <p class="place-links"><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a>${item.website ? `<a class="maps-link" href="${escapeHtml(item.website.url)}" target="_blank" rel="noopener">${escapeHtml(item.website.label)} <span aria-hidden="true">↗</span></a>` : ""}</p>
+      <p class="place-links"><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a>${item.website ? `<a class="maps-link" href="${escapeHtml(item.website.url)}" target="_blank" rel="noopener">${escapeHtml(item.website.label)} <span aria-hidden="true">↗</span></a>` : ""}${item.tripadvisor ? `<a class="maps-link" href="${escapeHtml(item.tripadvisor.url)}" target="_blank" rel="noopener">TripAdvisor reviews <span aria-hidden="true">↗</span></a>` : ""}</p>
+      ${item.tripadvisor ? `<p class="ta-note">${taBadge(item)} Rating read on ${escapeHtml(item.tripadvisor.checkedAt)} from a search-result summary; ratings change, so confirm on TripAdvisor.${item.tripadvisor.note ? ` Note: ${escapeHtml(item.tripadvisor.note)}.` : ""}</p>` : ""}
     </div>`;
   }
 
@@ -425,6 +438,13 @@
     renderPlaybooks(button.dataset.filter);
   }));
   document.querySelector("#place-search").addEventListener("input", event => renderPlaces(event.target.value));
+  document.querySelector("#place-sort")?.addEventListener("click", event => {
+    const button = event.target.closest("[data-sort]");
+    if (!button) return;
+    placeSort = button.dataset.sort;
+    document.querySelectorAll("#place-sort [data-sort]").forEach(item => { item.classList.toggle("active", item === button); item.setAttribute("aria-pressed", String(item === button)); });
+    renderPlaces(document.querySelector("#place-search").value);
+  });
   const onPlaceFilter = event => {
     const category = event.target.closest("[data-category]");
     const area = event.target.closest("[data-area]");
