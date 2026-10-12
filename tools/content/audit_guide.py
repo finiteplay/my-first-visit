@@ -94,7 +94,7 @@ def route_depth(item, roles):
     return gaps
 
 
-def basics_audit(basics, evidence_ids):
+def basics_audit(basics, evidence_ids, root_dir=Path('.')):
     """The 'Iceland at a glance' section: pronounced names, sourced and iconned numbers."""
     errors = []
     names = basics.get("names", [])
@@ -105,6 +105,17 @@ def basics_audit(basics, evidence_ids):
         for field in ("english", "local", "respelling", "meaning"):
             if not str(name.get(field, "")).strip():
                 errors.append(f"basics.yaml name {label}: {field} is required.")
+    image = (basics.get("volcano") or {}).get("image")
+    if basics.get("volcano") and not image:
+        errors.append("basics.yaml volcano: an image is required.")
+    if image:
+        for field in ("file", "alt", "author", "license", "sourceUrl", "downloadedAt", "status"):
+            if not str(image.get(field, "")).strip():
+                errors.append(f"basics.yaml volcano image: {field} is required (author, license and source must be recorded).")
+        if "nc" in str(image.get("license", "")).lower().split() or "nd" in str(image.get("license", "")).lower().split():
+            errors.append("basics.yaml volcano image: NC/ND licenses are not allowed.")
+        if not (root_dir / str(image.get("file", ""))).exists():
+            errors.append("basics.yaml volcano image: file is missing on disk.")
     if len(basics.get("numbers", [])) < 4:
         errors.append("basics.yaml: needs 4+ numbers.")
     for number in basics.get("numbers", []):
@@ -236,7 +247,7 @@ def audit(root):
         errors += vocabulary_audit(read_json(vocabulary_path), evidence_ids)
     basics_path = root / "basics.yaml"
     if basics_path.exists():
-        errors += basics_audit(read_json(basics_path), evidence_ids)
+        errors += basics_audit(read_json(basics_path), evidence_ids, root.parent.parent / "local-site")
     if len(all_ids) != len(set(all_ids)):
         errors.append("Reader-content IDs must be unique across briefing, playbook and route files.")
     return errors

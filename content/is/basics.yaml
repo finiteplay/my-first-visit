@@ -85,8 +85,43 @@
   "sourceIds": [
     "e004",
     "e005",
+    "e006",
+    "e007",
     "o006",
     "o019",
     "p012"
-  ]
+  ],
+  "volcano": {
+    "title": "The volcano everyone has heard of",
+    "english": "Eyjafjallajökull",
+    "local": "Eyjafjallajökull",
+    "respelling": "AY-ya-fyaht-la-yur-kutl",
+    "meaning": "Roughly \"glacier of the island mountains\".",
+    "summary": "A volcano buried under an ice cap in South Iceland. Its modest eruption in spring 2010 became world news because the ash cloud grounded flights across Europe.",
+    "facts": [
+      "It began with a fissure eruption on 20 March 2010, with lava fountains about 100 meters high.",
+      "On 14 April a new vent under the ice cap blew ash several kilometers into the sky for days.",
+      "About 100,000 flights were cancelled between 14 and 21 April, the largest disruption of air travel since the Second World War."
+    ],
+    "visit": "You can see the ice-capped mountain from the Ring Road in South Iceland. A family-run visitor centre, Eyjafjallajökull Erupts, sits right on Route 1 at the Þorvaldseyri farm, about 140 km east of Reykjavík, with photos, exhibits and a short documentary. Check opening hours before you go.",
+    "pronunciationNote": "Visitors joke that this is the hardest name in the country; the syllables are Eyja (islands), fjalla (mountains) and jökull (glacier). The respelling is a draft.",
+    "image": {
+      "file": "assets/volcano/eyjafjallajokull-2010-04-17.jpg",
+      "alt": "Satellite view of Iceland in April 2010: a gray ash plume streams south from the Eyjafjallajökull volcano over the dark Atlantic, beside the white ice caps and bands of cloud.",
+      "caption": "The ash plume from Eyjafjallajökull streaming south over the Atlantic, 17 April 2010.",
+      "author": "NASA",
+      "license": "Public domain",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eruption_of_Eyjafjallaj%C3%B6kull_Volcano,_Iceland_April_17.jpg",
+      "originalUrl": "https://www.flickr.com/photos/gsfc/4530571145/",
+      "downloadedAt": "2026-10-11",
+      "width": 3200,
+      "height": 2400,
+      "status": "public-domain (NASA); agent-selected from public-domain candidates, content author review pending; accuracy: exact event"
+    },
+    "sourceIds": [
+      "e006",
+      "e007"
+    ]
+  }
 }

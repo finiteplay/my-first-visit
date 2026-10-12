@@ -312,3 +312,20 @@ body.night .map-label.gc { fill: #f2c561; }
   .mk-town { r: 10px; }
   .mk-gc { r: 8px; }
 }
+
+/* Volcano card */
+.volcano-card { display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px; align-items: start; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); }
+.volcano-photo { margin: 0; display: grid; gap: 8px; }
+.volcano-photo img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; background: #0f272e; }
+.volcano-photo figcaption { color: var(--muted); font-size: .8rem; }
+.photo-credit-inline { display: block; margin-top: 2px; font-size: .74rem; }
+.volcano-body { display: grid; gap: 8px; }
+.volcano-body p { margin: 0; }
+.volcano-facts { margin: 4px 0 0; padding-left: 20px; color: var(--muted); display: grid; gap: 6px; }
+.volcano-visit { color: var(--muted); }
+.volcano-visit strong { color: var(--ink); }
+.volcano-body .audio-controls { display: inline-flex; align-items: center; gap: 8px; }
+.volcano-body .audio-play { padding: 5px 14px; border: 1px solid var(--moss); border-radius: 999px; color: var(--moss); background: var(--white); font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; }
+.volcano-body .audio-play:hover, .volcano-body .audio-play:focus-visible { background: var(--moss); color: var(--white); }
+.volcano-body .audio-note { color: var(--muted); font-size: .72rem; }
+@media (max-width: 760px) { .volcano-card { grid-template-columns: 1fr; padding: 16px; } }

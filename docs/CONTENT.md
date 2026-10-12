@@ -258,6 +258,12 @@ Earth (public domain); positions and lines are simplified by hand and labelled "
 Every point and waypoint must fall inside the outline's bounding box. The famous volcano is also in
 the word page with a respelling and audio, so the name can be said before the trip.
 
+The basics section also has a **volcano card** for the country's best-known volcano: name with respelling and
+audio, a short summary, sourced facts, a "see it" tip and one image. The image block in `basics.yaml` must record
+author, license (public domain, CC0, CC BY or CC BY-SA), source URL, download date, alt text and review status, and
+the file must exist; the audit checks this. Prefer public-domain agency imagery (for example NASA) for events
+that no free photograph covers.
+
 Each "Iceland in numbers" tile has an `icon` (an emoji, hidden from screen readers) so the facts are
 easy to scan.
 

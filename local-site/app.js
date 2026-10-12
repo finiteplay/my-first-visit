@@ -249,6 +249,29 @@
       </details>`;
   }
 
+  function renderVolcano() {
+    const v = data.basics?.volcano;
+    const host = document.querySelector("#basics-volcano");
+    if (!v || !host) return;
+    const image = v.image;
+    host.innerHTML = `
+      <figure class="volcano-photo">
+        <img src="${escapeHtml(image.file)}" alt="${escapeHtml(image.alt)}" width="${image.width}" height="${image.height}" loading="lazy">
+        <figcaption>${escapeHtml(image.caption)} <span class="photo-credit-inline">${escapeHtml(image.author)} · ${escapeHtml(image.license)} · <a href="${escapeHtml(image.sourceUrl)}" rel="noopener">${escapeHtml(image.source)}</a></span></figcaption>
+      </figure>
+      <div class="volcano-body">
+        <p class="name-english">Famous volcano</p>
+        <p class="name-local">${escapeHtml(v.local)}</p>
+        <p class="name-say"><span class="name-label">Say it like this for now</span><strong>${escapeHtml(v.respelling)}</strong></p>
+        <div class="name-audio">${audioControls(v.local)}</div>
+        <p class="name-meaning">${escapeHtml(v.meaning)}</p>
+        <p>${escapeHtml(v.summary)}</p>
+        <ul class="volcano-facts">${v.facts.map(fact => `<li>${escapeHtml(fact)}</li>`).join("")}</ul>
+        <p class="volcano-visit"><strong>See it:</strong> ${escapeHtml(v.visit)}</p>
+        <p class="basics-note">${escapeHtml(v.pronunciationNote)}</p>
+      </div>`;
+  }
+
   function renderBasics() {
     const basics = data.basics;
     if (!basics) return;
@@ -269,6 +292,7 @@
 
   renderBasics();
   renderMap();
+  renderVolcano();
   renderPlaybooks();
   renderRoutes();
   renderPlaces();
