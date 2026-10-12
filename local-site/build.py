@@ -74,6 +74,47 @@ def build_vocabulary():
     return {"title": config["title"], "intro": config["intro"], "note": config["note"], "groups": groups}
 
 
+# Media (photos, audio, the basics image) is not in git: content/<cc>/media-manifest.json maps each logical path to a
+# content-hashed key, and the site reads the files from MFV_MEDIA_BASE (default "media/", filled by
+# tools/media/media_store.py sync-local; in production the public bucket URL, for example
+# https://media.finiteplay.org/myfirstvisit/).
+import os
+
+MEDIA_BASE = os.environ.get("MFV_MEDIA_BASE", "media/")
+if not MEDIA_BASE.endswith("/"):
+    MEDIA_BASE += "/"
+MANIFEST = read_json("media-manifest.json")["items"] if (PACK / "media-manifest.json").exists() else {}
+
+
+def media(entry):
+    """Rewrite a {"file": logical path} record to the manifest's URL (and a card-size URL for photos)."""
+    item = MANIFEST.get(entry.get("file"))
+    if not item:
+        return entry
+    out = dict(entry, file=MEDIA_BASE + item["key"])
+    if "card" in item:
+        out["card"] = MEDIA_BASE + item["card"]["key"]
+    return out
+
+
+def media_photos(photos):
+    return {sid: [media(p) for p in items] for sid, items in photos.items()}
+
+
+def media_audio(audio):
+    out = json.loads(json.dumps(audio))
+    for entry in out.get("items", {}).values():
+        entry["files"] = {take: media(f) for take, f in entry.get("files", {}).items()}
+    return out
+
+
+def media_basics(basics):
+    out = json.loads(json.dumps(basics))
+    if (out.get("volcano") or {}).get("image"):
+        out["volcano"]["image"] = media(out["volcano"]["image"])
+    return out
+
+
 content = {
     "pack": read_json("pack.yaml"),
     "briefings": read_json("briefings.yaml")["briefings"],
@@ -81,14 +122,14 @@ content = {
     "routes": read_json("routes.yaml")["routes"],
     "places": read_json("sights.yaml")["items"],
     "placeAreas": read_json("sights.yaml").get("areas", []),
-    "basics": read_json("basics.yaml"),
+    "basics": media_basics(read_json("basics.yaml")),
     "vocabulary": build_vocabulary(),
     "map": read_json("map.yaml") if (PACK / "map.yaml").exists() else {},
     # Author-selected photos only (tools/media/apply_selection.py); others stay pending.
-    "photos": read_json("photos.json")["attractions"] if (PACK / "photos.json").exists() else {},
+    "photos": media_photos(read_json("photos.json")["attractions"]) if (PACK / "photos.json").exists() else {},
     # Draft synthetic pronunciation (tools/audio/generate_place_audio.py); only clips approved
     # for preview are shown. Replace with native-speaker recordings before release.
-    "placeAudio": read_json("place-audio.json") if (PACK / "place-audio.json").exists() else {},
+    "placeAudio": media_audio(read_json("place-audio.json")) if (PACK / "place-audio.json").exists() else {},
 }
 
 OUTPUT.write_text(

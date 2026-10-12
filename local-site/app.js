@@ -138,7 +138,7 @@
         || (tierOrder[a.tier] ?? 3) - (tierOrder[b.tier] ?? 3) || (placeRank[a.id] || 999) - (placeRank[b.id] || 999) || a.name.localeCompare(b.name));
     placeGrid.innerHTML = items.map(item => `
       <article class="place-card" data-open="place:${escapeHtml(item.id)}" tabindex="0" role="button" aria-label="Open place card for ${escapeHtml(item.name)}">
-        ${selectedPhotos[item.id]?.length ? `<img class="place-card-image" src="${escapeHtml(selectedPhotos[item.id][0].file)}" alt="${escapeHtml(photoAlt(item, 0))}" style="${escapeHtml(photoStyle(selectedPhotos[item.id][0]))}" width="480" height="320" loading="lazy">` : ""}
+        ${selectedPhotos[item.id]?.length ? `<img class="place-card-image" src="${escapeHtml(selectedPhotos[item.id][0].card || selectedPhotos[item.id][0].file)}" alt="${escapeHtml(photoAlt(item, 0))}" style="${escapeHtml(photoStyle(selectedPhotos[item.id][0]))}" width="480" height="320" loading="lazy">` : ""}
         ${!selectedPhotos[item.id]?.length && item.featureImage ? `<img class="place-card-image placeholder-image" src="${escapeHtml(item.featureImage.url)}" alt="${escapeHtml(item.name)}" referrerpolicy="no-referrer" width="480" height="320" loading="lazy">` : ""}
         <span class="region">${escapeHtml(item.region)} · ${escapeHtml(item.category)}</span>
         ${priorityHtml(item)}${taBadge(item)}
@@ -492,11 +492,6 @@
       const current = images.findIndex(image => image.classList.contains("active"));
       const next = (current + (arrow.classList.contains("next") ? 1 : -1) + images.length) % images.length;
       images.forEach((image, index) => image.classList.toggle("active", index === next));
-      if (images[0].getAttribute("src") === "assets/perlan-building-1.jpg") {
-        const author = next === 2 ? "Tony Hisgett · CC BY 2.0" : "Ray Swi-hymn · CC BY-SA 2.0";
-        const source = next === 2 ? "Perlan_Reykjavik_2_(25474770205).jpg" : next === 1 ? "20190623_Perlan_8867_(48469993062).jpg" : "20190623_Perlan_8866_(48469844986).jpg";
-        carousel.parentElement.querySelector("figcaption").innerHTML = `${author} · <a href="https://commons.wikimedia.org/wiki/File:${source}" target="_blank" rel="noopener">Source</a> · <a href="https://creativecommons.org/licenses/${next === 2 ? "by" : "by-sa"}/2.0/" target="_blank" rel="noopener">License</a> · resized; display cropped`;
-      }
       return;
     }
     const opener = event.target.closest("[data-open]");

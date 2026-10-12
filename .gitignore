@@ -29,3 +29,9 @@ Thumbs.db
 tmp/
 shots/
 *.backup.json
+
+# Media bytes live in the media store / bucket, not in git (see content/is/media-manifest.json)
+local-site/media/
+local-site/assets/places/
+local-site/assets/audio/
+local-site/assets/volcano/
