@@ -79,12 +79,13 @@
       </button>`).join("");
   }
 
-  // Our own rating (aggregate stars, out of 5) and place in our single ranking list (tools/content/edit_ratings.py).
+  // Our own rating (average reviews, out of 5) and place in our single ranking list (tools/content/edit_ratings.py).
   // No other site's rating, review count, rank or link is published.
   const scoreBadge = item => {
     const score = item.score;
     if (!score) return "";
-    return `<span class="score" aria-label="Aggregate rating ${score.stars.toFixed(1)} out of 5, number ${score.rank} in our ranking"><span class="score-num" aria-hidden="true">${score.stars.toFixed(1)}</span><span class="score-text" aria-hidden="true">aggregate rating</span></span>`;
+    const total = data.places.length;
+    return `<span class="score" aria-label="Average reviews ${score.stars.toFixed(1)} out of 5. Ranked number ${score.rank} of ${total}"><span class="score-num" aria-hidden="true">${score.stars.toFixed(1)}</span><span class="score-text" aria-hidden="true">average reviews</span><span class="score-rank" aria-hidden="true" title="Our own ranking of all ${total} places">Ranked #${score.rank} of ${total}</span></span>`;
   };
   let placeSort = "top";
   const byRank = (a, b) => (a.score?.rank ?? 999) - (b.score?.rank ?? 999);
@@ -426,7 +427,7 @@
         <figcaption>${escapeHtml(areaName)}. Approximate position, not for navigation. ${escapeHtml(credit)}</figcaption>
       </figure>
       <p class="place-links"><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a>${item.website ? `<a class="maps-link" href="${escapeHtml(item.website.url)}" target="_blank" rel="noopener">${escapeHtml(item.website.label)} <span aria-hidden="true">↗</span></a>` : ""}</p>
-      ${item.score ? `<p class="score-note">${scoreBadge(item)} Number ${item.score.rank} of ${data.places.length} places in our ranking. The stars are our own aggregate of what travelers say about this place on several large travel and map sites; the sites' own numbers are not republished here. Checked ${escapeHtml(item.score.asOf)}; ratings change.</p>` : ""}
+      ${item.score ? `<p class="score-note">${scoreBadge(item)} Ranked number ${item.score.rank} of ${data.places.length} places in our own ranking. The stars are the average of what travelers say about this place on several large travel and map sites; the sites' own numbers are not republished here. Checked ${escapeHtml(item.score.asOf)}; ratings change.</p>` : ""}
     </div>`;
   }
 

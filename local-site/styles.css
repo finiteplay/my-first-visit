@@ -438,7 +438,8 @@ body.night .rm-day { fill: #e8f1f2; stroke: #26363a; }
 /* Traveler score and sort row */
 .score { display: inline-flex; align-items: center; gap: 7px; margin: 6px 0 0 6px; font-size: .74rem; color: var(--muted); vertical-align: middle; }
 .score-num { display: inline-grid; place-items: center; min-width: 34px; padding: 2px 9px; border-radius: 999px; background: var(--deep); color: var(--gold); font-weight: 800; font-size: .78rem; }
-.place-card .score { display: flex; margin: 6px 0 0; }
+.score-rank { padding: 1px 8px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-weight: 700; font-size: .7rem; white-space: nowrap; }
+.place-card .score { display: flex; flex-wrap: wrap; margin: 6px 0 0; }
 .place-card .priority + .score { margin-top: 8px; }
 .score-note { margin: 4px 0 0; color: var(--muted); font-size: .78rem; }
 #place-sort { margin: 0 0 8px; flex-wrap: wrap; }
