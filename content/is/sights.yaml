@@ -2141,6 +2141,420 @@
         "kind": "official",
         "checkedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "sight-sky-lagoon",
+      "name": "Sky Lagoon",
+      "local": "Sky Lagoon",
+      "respelling": "SKY luh-GOON",
+      "region": "Capital area",
+      "nearestCity": "Kópavogur",
+      "category": "Experience",
+      "tier": "worth-it",
+      "whyGo": "Soak in a spa-style lagoon with an infinity edge over the ocean, a short ride from central Reykjavík.",
+      "timeNeeded": "2–3 hours",
+      "bestTime": "Late afternoon or evening; book a timed slot and leave time for the ritual.",
+      "tip": "Every ticket includes the seven-step Skjól ritual, so allow the full circuit. Pick a changing-room pass (shared or private) when you book, and check the closing time, because guests must leave the lagoon before closing.",
+      "linkedItem": "p34",
+      "location": {
+        "latitude": 64.11647,
+        "longitude": -21.94644,
+        "label": "Sky Lagoon",
+        "status": "draft-pin from OpenStreetMap geocoding or the operator's coordinates; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-sky-lagoon"
+      ],
+      "photo": {
+        "id": "photo-sky-lagoon",
+        "status": "missing",
+        "brief": "The lagoon or pools in their landscape from a public or licensed viewpoint; no identifiable bathers without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Sky Lagoon is a spa-style lagoon at Kársnes in Kópavogur, just outside central Reykjavík, with a 70-meter infinity edge facing the ocean. Every ticket includes the Skjól ritual of seven steps: the warm lagoon, a cold plunge, a sauna, cold mist, a sea-salt scrub, steam and a crowberry drink. Operators offer a shared-changing-room pass and a private one.",
+        "It is the easiest big lagoon to fit into a Reykjavík stay, and travelers often rate the ritual as what sets it apart from simply sitting in warm water. Book a timed slot, check what your pass includes, and remember that bars and food are extra. Parking is on site."
+      ],
+      "website": {
+        "url": "https://www.skylagoon.com/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-blue-lagoon",
+      "name": "Blue Lagoon",
+      "local": "Bláa lónið",
+      "respelling": "BLOW-ah LOH-nidh",
+      "region": "Reykjanes",
+      "nearestCity": "Grindavík",
+      "category": "Experience",
+      "tier": "worth-it",
+      "whyGo": "Float in Iceland's best-known geothermal spa, with milky-blue water and silica masks, near the airport.",
+      "timeNeeded": "2–4 hours",
+      "bestTime": "Early morning or late afternoon to avoid the crowds; often used on an arrival or departure day.",
+      "tip": "Pre-book a timed ticket well ahead. The lagoon has closed temporarily during volcanic activity on the Reykjanes peninsula, so check its status and your tour terms before you plan around it. The operator's site blocked our automated check, so confirm tiers, age rules and luggage storage there.",
+      "linkedItem": "p35",
+      "location": {
+        "latitude": 63.88005,
+        "longitude": -22.44935,
+        "label": "Blue Lagoon",
+        "status": "draft-pin from OpenStreetMap geocoding or the operator's coordinates; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-blue-lagoon"
+      ],
+      "photo": {
+        "id": "photo-blue-lagoon",
+        "status": "missing",
+        "brief": "The lagoon or pools in their landscape from a public or licensed viewpoint; no identifiable bathers without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "The Blue Lagoon is a large geothermal spa on the Reykjanes peninsula, between Keflavík airport and Reykjavík, known for milky blue water, silica masks and a big, polished facility. It is the most famous soak in Iceland and the one most travelers have already heard of.",
+        "Reports describe the best amenities and also the biggest crowds, with mixed opinions on value. It works as a splurge on an arrival or departure day, when the airport is close. Tickets are widely reported as required in advance, and the lagoon has closed for periods of volcanic activity nearby, so check the current status."
+      ],
+      "website": {
+        "url": "https://www.bluelagoon.com/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-hvammsvik",
+      "name": "Hvammsvík Hot Springs",
+      "local": "Hvammsvík",
+      "respelling": "KVAHMS-veek",
+      "region": "Capital area",
+      "nearestCity": "Reykjavík",
+      "category": "Experience",
+      "tier": "worth-it",
+      "whyGo": "Soak in hot springs set right on the shore of Hvalfjörður, quieter than the big lagoons.",
+      "timeNeeded": "2–3 hours",
+      "bestTime": "Daylight in good weather, for the fjord views; book a slot.",
+      "tip": "Check the booking rules and the weather, because the pools are outdoors on the shore. Prices and packages vary; skip the extras if you only want to soak.",
+      "linkedItem": "p35",
+      "location": {
+        "latitude": 64.37362,
+        "longitude": -21.56465,
+        "label": "Hvammsvík Hot Springs",
+        "status": "draft-pin from OpenStreetMap geocoding or the operator's coordinates; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-hvammsvik"
+      ],
+      "photo": {
+        "id": "photo-hvammsvik",
+        "status": "missing",
+        "brief": "The lagoon or pools in their landscape from a public or licensed viewpoint; no identifiable bathers without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Hvammsvík Hot Springs is a set of hot springs along the shore of Hvalfjörður, about 45 minutes from Reykjavík, with eight springs and a steam room set among rocks and ocean views. Travelers describe it as quieter and less crowded than the Blue Lagoon or Sky Lagoon.",
+        "It suits a half-day outside the city for people who prefer a natural feel to a polished spa. A bar and a small bistro are on site. Hours, booking rules and prices change, so confirm them with the operator."
+      ],
+      "website": {
+        "url": "https://hvammsvik.com/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-reykjadalur",
+      "name": "Reykjadalur hot river",
+      "local": "Reykjadalur",
+      "respelling": "RAYK-ya-dah-lur",
+      "region": "South Iceland",
+      "nearestCity": "Hveragerði",
+      "category": "Experience",
+      "tier": "worth-it",
+      "whyGo": "Hike to a naturally warm river in a steaming valley and bathe in it, for free.",
+      "timeNeeded": "3–4 hours",
+      "bestTime": "Dry weather in the warmer months; in winter the path can be icy and changing is cold.",
+      "tip": "The pin is the trailhead car park, not the hot river: the soaking spot is about a 3 km walk and 300 m of climb away. There are no facilities or changing rooms, so bring a towel, water and a swimsuit you can put on outdoors.",
+      "linkedItem": "p26",
+      "location": {
+        "latitude": 64.0229,
+        "longitude": -21.2116,
+        "label": "Reykjadalur hot river",
+        "status": "draft-pin from OpenStreetMap geocoding or the operator's coordinates; verify entrance before release"
+      },
+      "sourceIds": [
+        "pool-guide"
+      ],
+      "photo": {
+        "id": "photo-reykjadalur",
+        "status": "missing",
+        "brief": "The lagoon or pools in their landscape from a public or licensed viewpoint; no identifiable bathers without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Reykjadalur is a geothermal valley above Hveragerði where steam vents and boiling springs feed a naturally warm river. The walk is about 3 km each way with roughly 300 m of climb, passing steaming ground and bubbling mud, and the warmest water is higher up the valley.",
+        "It is not a commercial spa. Bathing and the hike are free, but there are no shops, no changing rooms and little privacy, and it can be crowded. Wooden boards mark the usual spots. It suits people who want a soak that is also a hike."
+      ]
+    },
+    {
+      "id": "sight-earth-lagoon-myvatn",
+      "name": "Earth Lagoon Mývatn (Mývatn Nature Baths)",
+      "local": "Jarðböðin",
+      "respelling": "YARDH-boh-dhin",
+      "region": "North",
+      "nearestCity": "Reykjahlíð",
+      "category": "Experience",
+      "tier": "if-you-have-time",
+      "whyGo": "Soak in a warm mineral lagoon beside the Ring Road at Mývatn, a quieter alternative to the Blue Lagoon.",
+      "timeNeeded": "1.5–2.5 hours",
+      "bestTime": "A relaxed late afternoon after sightseeing at Mývatn; check opening hours.",
+      "tip": "The facility was renamed from Mývatn Nature Baths and had renovations planned, so check the current name, hours and what is open. Towels are charged extra at many facilities; ask.",
+      "linkedItem": "p35",
+      "location": {
+        "latitude": 65.63046,
+        "longitude": -16.8476,
+        "label": "Earth Lagoon Mývatn (Mývatn Nature Baths)",
+        "status": "draft-pin from OpenStreetMap geocoding or the operator's coordinates; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-earth-lagoon-myvatn"
+      ],
+      "photo": {
+        "id": "photo-earth-lagoon-myvatn",
+        "status": "missing",
+        "brief": "The lagoon or pools in their landscape from a public or licensed viewpoint; no identifiable bathers without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Earth Lagoon Mývatn, formerly known as the Mývatn Nature Baths, is a geothermal lagoon right by the Ring Road near Lake Mývatn. The operator says the water is drawn from depths of up to 2,500 meters, ranges from about 36 to 40 °C and is alkaline, and the site also has a steam cave and a swim-up bar.",
+        "Travelers call it a good, less crowded counterpart to the Blue Lagoon in the north, with a faint sulphur smell. It fits naturally after Hverir and Skútustaðagígar on a Mývatn day."
+      ],
+      "website": {
+        "url": "https://www.earthlagoon.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-secret-lagoon",
+      "name": "Secret Lagoon (Gamla laugin)",
+      "local": "Gamla laugin",
+      "respelling": "GAHM-la LUR-gin",
+      "region": "Golden Circle",
+      "nearestCity": "Flúðir",
+      "category": "Experience",
+      "tier": "worth-it",
+      "whyGo": "Bathe in Iceland's oldest swimming pool, beside a small geyser, with a natural rather than polished feel.",
+      "timeNeeded": "1.5–2.5 hours",
+      "bestTime": "Afternoon or evening; pre-booking is strongly encouraged.",
+      "tip": "Shower before entering as in any Icelandic pool; rental swimsuits and towels are available if you did not bring them. Book ahead in busy seasons.",
+      "linkedItem": "p35",
+      "location": {
+        "latitude": 64.13719,
+        "longitude": -20.30902,
+        "label": "Secret Lagoon (Gamla laugin)",
+        "status": "draft-pin from OpenStreetMap geocoding or the operator's coordinates; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-secret-lagoon"
+      ],
+      "photo": {
+        "id": "photo-secret-lagoon",
+        "status": "missing",
+        "brief": "The lagoon or pools in their landscape from a public or licensed viewpoint; no identifiable bathers without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "The Secret Lagoon, Gamla laugin, is a restored pool at Hverahólmi near Flúðir, established in 1891 and described by the operator as Iceland's oldest swimming pool. It fell out of use and reopened in 2014 after restoration. Three hot springs feed it, including the small geyser Litli Geysir, which erupts every few minutes, and the water stays about 38 to 40 °C.",
+        "It is less developed and cheaper than the newer lagoons, and it sits a short detour from the Golden Circle. A walking path circles the springs, and a bistro serves snacks and drinks."
+      ],
+      "website": {
+        "url": "https://secretlagoon.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-forest-lagoon",
+      "name": "Forest Lagoon",
+      "local": "Skógarböðin",
+      "respelling": "SKOH-gar-bur-dhin",
+      "region": "North",
+      "nearestCity": "Akureyri",
+      "category": "Experience",
+      "tier": "if-you-have-time",
+      "whyGo": "Soak in forest-edged pools above the Eyjafjörður fjord, across the water from Akureyri.",
+      "timeNeeded": "2–3 hours",
+      "bestTime": "Evening or any time you want calm after a driving day; check the closing time.",
+      "tip": "Check hours and whether you need a booking, and ask about towels. Follow the pool rules: shower first, and wear a swimsuit in the sauna.",
+      "linkedItem": "p35",
+      "location": {
+        "latitude": 65.66992,
+        "longitude": -18.0418,
+        "label": "Forest Lagoon",
+        "status": "draft-pin from OpenStreetMap geocoding or the operator's coordinates; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-forest-lagoon"
+      ],
+      "photo": {
+        "id": "photo-forest-lagoon",
+        "status": "missing",
+        "brief": "The lagoon or pools in their landscape from a public or licensed viewpoint; no identifiable bathers without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Forest Lagoon is a geothermal spa in Vaðlaskógur forest, across Eyjafjörður from Akureyri, with two pools at about 37 °C, swim-up bars, a Finnish sauna with fjord views and a cold pool. The operator describes birch and pine around the pools and a view over one of Iceland's longest fjords.",
+        "It is a convenient soak at the end of an Akureyri day. Travelers praise the setting and the uncrowded pools, and some wish the water were hotter."
+      ],
+      "website": {
+        "url": "https://www.forestlagoon.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-fontana",
+      "name": "Laugarvatn Fontana",
+      "local": "Fontana",
+      "respelling": "FON-ta-na",
+      "region": "Golden Circle",
+      "nearestCity": "Laugarvatn",
+      "category": "Experience",
+      "tier": "if-you-have-time",
+      "whyGo": "Combine geothermal pools, steam rooms and a lake swim with a bread-baking demonstration, on the Golden Circle.",
+      "timeNeeded": "1.5–3 hours",
+      "bestTime": "After Geysir or Þingvellir, in the afternoon; book the bread tour ahead.",
+      "tip": "Advance booking is strongly recommended, especially for the bread tour. The operator says the facility reopened after a full renovation, so check the current layout and hours.",
+      "linkedItem": "p35",
+      "location": {
+        "latitude": 64.21481,
+        "longitude": -20.73022,
+        "label": "Laugarvatn Fontana",
+        "status": "draft-pin from OpenStreetMap geocoding or the operator's coordinates; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-fontana"
+      ],
+      "photo": {
+        "id": "photo-fontana",
+        "status": "missing",
+        "brief": "The lagoon or pools in their landscape from a public or licensed viewpoint; no identifiable bathers without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Laugarvatn Fontana is a bathing and steam complex on the shore of Lake Laugarvatn, with geothermal pools, steam rooms that use natural geothermal steam, a sauna and access to the lake itself. It also runs a geothermal bakery where visitors watch rye bread baked in the ground and taste it warm.",
+        "It sits right on the Golden Circle, so it is the easiest lagoon to add to a sightseeing day. Travelers like the views and the lower crowds compared with the Blue Lagoon."
+      ],
+      "website": {
+        "url": "https://fontana.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-geosea",
+      "name": "GeoSea",
+      "local": "Sjóböðin",
+      "respelling": "SYOH-bur-dhin",
+      "region": "North",
+      "nearestCity": "Húsavík",
+      "category": "Experience",
+      "tier": "if-you-have-time",
+      "whyGo": "Soak in warm seawater on a cliff above Skjálfandi Bay, with whale-watching views.",
+      "timeNeeded": "1.5–2.5 hours",
+      "bestTime": "Evening or after a whale tour; in winter the pools can give a view of the northern lights.",
+      "tip": "Check hours and booking before you go, and ask about robe and towel rental. The pools are on a cliff, so wind can matter.",
+      "linkedItem": "p35",
+      "location": {
+        "latitude": 66.05262,
+        "longitude": -17.36129,
+        "label": "GeoSea",
+        "status": "draft-pin from OpenStreetMap geocoding or the operator's coordinates; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-geosea"
+      ],
+      "photo": {
+        "id": "photo-geosea",
+        "status": "missing",
+        "brief": "The lagoon or pools in their landscape from a public or licensed viewpoint; no identifiable bathers without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "GeoSea is a geothermal seawater spa in Húsavík, perched on a cliff above Skjálfandi Bay. The operator says the pools combine mineral-rich ocean water with geothermal heat at about 38 to 39 °C, with a swim-up bar and a steam room, and that you can sometimes see whales from the water.",
+        "Húsavík is the starting point for whale watching and the gateway to the Diamond Circle, so GeoSea works as a reward after a boat tour. Travelers praise the views and the lack of crowds."
+      ],
+      "website": {
+        "url": "https://www.geosea.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "sight-krauma",
+      "name": "Krauma",
+      "local": "Krauma",
+      "respelling": "KROY-ma",
+      "region": "Borgarfjörður",
+      "nearestCity": "Reykholt",
+      "category": "Experience",
+      "tier": "if-you-have-time",
+      "whyGo": "Soak in baths fed by Deildartunguhver, Europe's most water-abundant hot spring, in West Iceland.",
+      "timeNeeded": "1.5–2.5 hours",
+      "bestTime": "Late afternoon or evening on a West Iceland day trip; check hours.",
+      "tip": "Look at the hot spring itself, Deildartunguhver, next door before or after the baths. Check hours and booking, and ask what the entry includes.",
+      "linkedItem": "p35",
+      "location": {
+        "latitude": 64.664,
+        "longitude": -21.41,
+        "label": "Krauma",
+        "status": "draft-pin from OpenStreetMap geocoding or the operator's coordinates; verify entrance before release"
+      },
+      "sourceIds": [
+        "s-krauma"
+      ],
+      "photo": {
+        "id": "photo-krauma",
+        "status": "missing",
+        "brief": "The lagoon or pools in their landscape from a public or licensed viewpoint; no identifiable bathers without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "description": [
+        "Krauma is a geothermal bath complex beside Deildartunguhver in Borgarfjörður, about 97 km from Reykjavík. Hot water from the spring, which the operator says discharges roughly 180 liters of 100 °C water per second, is cooled with heat exchangers and fed into six pools, five warm and one cold, plus saunas and a relaxation room with a fireplace. The operator says no disinfectant chemicals are used and that a high water flow keeps the baths clean.",
+        "It is a calmer and cheaper-feeling alternative to the big lagoons, and an easy add-on to a West Iceland day. A restaurant is on site."
+      ],
+      "website": {
+        "url": "https://www.krauma.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     }
   ],
   "areas": [
@@ -2148,7 +2562,8 @@
       "id": "reykjavik",
       "label": "Reykjavík area",
       "regions": [
-        "Capital area"
+        "Capital area",
+        "Reykjanes"
       ]
     },
     {
@@ -2163,7 +2578,8 @@
       "label": "South",
       "regions": [
         "South Coast",
-        "Southeast"
+        "Southeast",
+        "South Iceland"
       ]
     },
     {
@@ -2182,9 +2598,10 @@
     },
     {
       "id": "west",
-      "label": "Snæfellsnes",
+      "label": "West",
       "regions": [
-        "Snæfellsnes"
+        "Snæfellsnes",
+        "Borgarfjörður"
       ]
     }
   ]

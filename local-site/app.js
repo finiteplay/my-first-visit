@@ -182,7 +182,7 @@
         <p>${escapeHtml(place.whyGo)}</p>
         <p class="place-links">${place.website ? `<a class="maps-link" href="${escapeHtml(place.website.url)}" target="_blank" rel="noopener">${escapeHtml(place.website.label)} <span aria-hidden="true">↗</span></a>` : ""}${place.location ? `<a class="maps-link" href="${escapeHtml(mapsUrl(place))}" target="_blank" rel="noopener">Google Maps <span aria-hidden="true">↗</span></a>` : ""}</p>
       </div>`;
-    return `<h2>Places to see in Reykjavík</h2>${item.placeGroups.map(group => `<h3>${escapeHtml(group.group)}</h3>${group.intro ? `<p>${escapeHtml(group.intro)}</p>` : ""}<div class="option-grid">${group.placeIds.map(id => data.places.find(place => place.id === id)).filter(Boolean).map(card).join("")}</div>`).join("")}${item.placeGroupsNote ? `<p>${escapeHtml(item.placeGroupsNote)} <button type="button" class="link-button" data-open="playbook:pool-or-lagoon">Open the pool and lagoon guide</button></p>` : ""}`;
+    return `<h2>${escapeHtml(item.placeGroupsTitle || "Places to see in Reykjavík")}</h2>${item.placeGroups.map(group => `<h3>${escapeHtml(group.group)}</h3>${group.intro ? `<p>${escapeHtml(group.intro)}</p>` : ""}<div class="option-grid">${group.placeIds.map(id => data.places.find(place => place.id === id)).filter(Boolean).map(card).join("")}</div>`).join("")}${item.placeGroupsNote ? `<p>${escapeHtml(item.placeGroupsNote)} <button type="button" class="link-button" data-open="playbook:pool-or-lagoon">Open the pool and lagoon guide</button></p>` : ""}`;
   }
 
   function playbookHtml(item) {

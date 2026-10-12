@@ -600,6 +600,38 @@
             }
           ]
         }
+      ],
+      "placeGroupsTitle": "Top lagoons and hot springs, with links",
+      "placeGroups": [
+        {
+          "group": "Within about an hour of Reykjavík",
+          "intro": "The lagoons most visitors choose between. Prices, timed entry and age rules are set by each operator.",
+          "placeIds": [
+            "sight-sky-lagoon",
+            "sight-blue-lagoon",
+            "sight-hvammsvik",
+            "sight-reykjadalur"
+          ]
+        },
+        {
+          "group": "On the Golden Circle and in West Iceland",
+          "intro": "Easy to add to a sightseeing day outside the city.",
+          "placeIds": [
+            "sight-secret-lagoon",
+            "sight-fontana",
+            "sight-krauma"
+          ]
+        },
+        {
+          "group": "In the north and east",
+          "intro": "Natural rewards after a long driving day on the Ring Road.",
+          "placeIds": [
+            "sight-earth-lagoon-myvatn",
+            "sight-forest-lagoon",
+            "sight-geosea",
+            "sight-vok-baths"
+          ]
+        }
       ]
     },
     {
@@ -1037,10 +1069,11 @@
         },
         {
           "group": "A short bus or taxi ride out",
-          "intro": "Worth the extra step when you have the time and the weather asks for an indoor stop or a soak.",
+          "intro": "Worth the extra step when you have the time and the weather asks for an indoor stop or a soak. Sky Lagoon is the big lagoon closest to the city.",
           "placeIds": [
             "sight-perlan",
-            "sight-laugardalslaug"
+            "sight-laugardalslaug",
+            "sight-sky-lagoon"
           ]
         }
       ],

@@ -2305,6 +2305,132 @@
       "whisperHeard": "raufarhólshellir",
       "whisperMatch": 1.0,
       "showInApp": true
+    },
+    "sky-lagoon": {
+      "local": "Sky Lagoon",
+      "respelling": "SKY luh-GOON",
+      "kind": "place",
+      "meaning": "Sky Lagoon",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/sky-lagoon_normal.wav",
+          "seconds": 1.32
+        }
+      },
+      "whisperHeard": "ský lagon",
+      "whisperMatch": 0.84,
+      "showInApp": false
+    },
+    "jardbodin": {
+      "local": "Jarðböðin",
+      "respelling": "YARDH-boh-dhin",
+      "kind": "place",
+      "meaning": "Earth Lagoon Mývatn (Mývatn Nature Baths)",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/jardbodin_normal.wav",
+          "seconds": 1.02
+        }
+      },
+      "whisperHeard": "jarðböðin",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "gamla-laugin": {
+      "local": "Gamla laugin",
+      "respelling": "GAHM-la LUR-gin",
+      "kind": "place",
+      "meaning": "Secret Lagoon (Gamla laugin)",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/gamla-laugin_normal.wav",
+          "seconds": 0.89
+        }
+      },
+      "whisperHeard": "gamla lögin",
+      "whisperMatch": 0.87,
+      "showInApp": true
+    },
+    "skogarbodin": {
+      "local": "Skógarböðin",
+      "respelling": "SKOH-gar-bur-dhin",
+      "kind": "place",
+      "meaning": "Forest Lagoon",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/skogarbodin_normal.wav",
+          "seconds": 1.04
+        }
+      },
+      "whisperHeard": "skógarböðin",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "fontana": {
+      "local": "Fontana",
+      "respelling": "FON-ta-na",
+      "kind": "place",
+      "meaning": "Laugarvatn Fontana",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/fontana_normal.wav",
+          "seconds": 0.8
+        }
+      },
+      "whisperHeard": "fontana",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "sjobodin": {
+      "local": "Sjóböðin",
+      "respelling": "SYOH-bur-dhin",
+      "kind": "place",
+      "meaning": "GeoSea",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/sjobodin_normal.wav",
+          "seconds": 0.85
+        }
+      },
+      "whisperHeard": "sjóböðin",
+      "whisperMatch": 1.0,
+      "showInApp": true
+    },
+    "krauma": {
+      "local": "Krauma",
+      "respelling": "KROY-ma",
+      "kind": "place",
+      "meaning": "Krauma",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/krauma_normal.wav",
+          "seconds": 0.68
+        }
+      },
+      "whisperHeard": "krauma",
+      "whisperMatch": 1.0,
+      "showInApp": true
     }
   },
   "credit": "Synthetic voice: Piper Icelandic voice trained on Talrómur 1, Reykjavík University and SÍM, CC BY 4.0",

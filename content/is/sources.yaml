@@ -540,6 +540,96 @@
       "accessed": "2026-10-11",
       "kind": "primary",
       "review": "author-supplied; native editorial review pending"
+    },
+    {
+      "id": "s-sky-lagoon",
+      "title": "Official website: Sky Lagoon",
+      "url": "https://www.skylagoon.com/",
+      "scope": "What the place is, its setting and features as the operator describes them; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "operator",
+      "review": "operator claims; source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-blue-lagoon",
+      "title": "Official website: Blue Lagoon",
+      "url": "https://www.bluelagoon.com/",
+      "scope": "What the place is, its setting and features as the operator describes them; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "operator",
+      "review": "operator claims; source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-hvammsvik",
+      "title": "Official website: Hvammsvík Hot Springs",
+      "url": "https://hvammsvik.com/",
+      "scope": "What the place is, its setting and features as the operator describes them; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "operator",
+      "review": "operator claims; source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-earth-lagoon-myvatn",
+      "title": "Official website: Earth Lagoon Mývatn (Mývatn Nature Baths)",
+      "url": "https://www.earthlagoon.is/",
+      "scope": "What the place is, its setting and features as the operator describes them; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "operator",
+      "review": "operator claims; source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-secret-lagoon",
+      "title": "Official website: Secret Lagoon (Gamla laugin)",
+      "url": "https://secretlagoon.is/",
+      "scope": "What the place is, its setting and features as the operator describes them; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "operator",
+      "review": "operator claims; source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-forest-lagoon",
+      "title": "Official website: Forest Lagoon",
+      "url": "https://www.forestlagoon.is/",
+      "scope": "What the place is, its setting and features as the operator describes them; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "operator",
+      "review": "operator claims; source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-fontana",
+      "title": "Official website: Laugarvatn Fontana",
+      "url": "https://fontana.is/",
+      "scope": "What the place is, its setting and features as the operator describes them; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "operator",
+      "review": "operator claims; source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-geosea",
+      "title": "Official website: GeoSea",
+      "url": "https://www.geosea.is/",
+      "scope": "What the place is, its setting and features as the operator describes them; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "operator",
+      "review": "operator claims; source-screened; native editorial review pending"
+    },
+    {
+      "id": "s-krauma",
+      "title": "Official website: Krauma",
+      "url": "https://www.krauma.is/",
+      "scope": "What the place is, its setting and features as the operator describes them; hours, prices and booking rules are not taught as fixed.",
+      "accessed": "2026-10-11",
+      "kind": "operator",
+      "review": "operator claims; source-screened; native editorial review pending"
+    },
+    {
+      "id": "pool-guide",
+      "title": "Pool and lagoon guide (this pack)",
+      "url": "https://visitreykjavik.is/reykjavik-residents-guide-wellness-and-geothermal-pools",
+      "scope": "Public pools and lagoons overview; facts taught here are limited to what the guide and the operator pages state.",
+      "accessed": "2026-10-11",
+      "kind": "primary",
+      "review": "source-screened; native editorial review pending"
     }
   ]
 }

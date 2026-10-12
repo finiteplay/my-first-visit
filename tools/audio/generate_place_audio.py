@@ -27,7 +27,7 @@ MODELS = Path.home() / ".finiteplay" / "models" / "piper-is"
 CREDIT = ("Synthetic voice: Piper Icelandic voice trained on Talrómur 1, "
           "Reykjavík University and SÍM, CC BY 4.0")
 # English-language brand names are not Icelandic names, so no Icelandic voice is offered.
-ENGLISH_BRANDS = {"Aurora Reykjavík", "FlyOver Iceland", "Mink Viking Portrait", "Magic Ice Reykjavík", "Lava Show"}
+ENGLISH_BRANDS = {"Aurora Reykjavík", "FlyOver Iceland", "Mink Viking Portrait", "Magic Ice Reykjavík", "Lava Show", "Sky Lagoon"}
 ATTEMPTS = 8  # takes tried per clip (variants alternate)
 GOOD_ENOUGH = 0.95
 SHOW_THRESHOLD = 0.75  # Whisper match on the normal take; below this a native listener must decide
