@@ -93,9 +93,10 @@ nav a { text-decoration: none; }
 .route-row strong { font: 500 clamp(1.3rem, 2.3vw, 2.1rem) Georgia, serif; }
 .route-row span:nth-child(3) { color: var(--muted); }
 .route-row .arrow { font-size: 1.5rem; }
-.landscape-break { width: min(1480px, calc(100% - 44px)); margin: 0 auto; }
-.landscape-break img { width: 100%; max-height: 780px; object-fit: cover; }
-.landscape-break figcaption { display: flex; gap: 12px; justify-content: space-between; padding: 15px 0; color: var(--muted); font-size: .85rem; }
+.landscape-break { width: min(1220px, calc(100% - 44px)); margin: 0 auto; }
+.landscape-break img { width: 100%; height: auto; aspect-ratio: 2 / 1; max-height: 520px; object-fit: cover; border-radius: 16px; }
+.landscape-break figcaption { display: flex; flex-wrap: wrap; gap: 4px 12px; justify-content: flex-start; padding: 12px 2px 0; color: var(--muted); font-size: .85rem; }
+@media (max-width: 560px) { .landscape-break img { aspect-ratio: 4 / 3; max-height: none; } }
 
 .search-label { display: grid; gap: 7px; color: var(--muted); font-size: .74rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
 .search-label input { width: min(330px, 70vw); padding: 12px 0; border: 0; border-bottom: 1px solid var(--ink); outline: none; color: var(--ink); background: transparent; }
