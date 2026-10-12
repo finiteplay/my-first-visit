@@ -2,7 +2,9 @@
 
 Opens the site served from the project root, at phone and desktop widths, opens the given
 cards, and reports console errors, failed requests, broken images, horizontal overflow and
-cards that show an image whose displayed crop hides most of the picture.
+cards that show an image whose displayed crop hides most of the picture. Layout rules learned from review: every
+top-level block on the home page (and the hero text) lines up with the one content column, nothing is wider than
+MAX_BLOCK, and no place card is much taller than its neighbours.
 
     python -m http.server 4173      # from the project root, in another terminal
     ~/.finiteplay/venv/Scripts/python tools/qa/check_site.py --out shots
@@ -20,7 +22,9 @@ CARDS = ["playbook:pool-or-lagoon", "playbook:aurora-without-regret", "route:sou
          "route:ring-road-clockwise-10-nights", "place:sight-gullfoss", "place:sight-perlan",
          "place:sight-laugardalslaug", "place:sight-whales"]
 WORDS_URL = "http://localhost:4173/local-site/words.html"
-VIEWPORTS = {"phone": (390, 844), "desktop": (1280, 900)}
+VIEWPORTS = {"phone": (390, 844), "tablet": (800, 1000), "desktop": (1440, 900)}
+MAX_BLOCK = 1400      # px: wider blocks dominate the page (a 1480 px figure was flagged in review)
+ALIGN_TOLERANCE = 90  # px: a block may be a little wider than the column, but must stay centred on it
 
 
 def main() -> int:
@@ -39,14 +43,41 @@ def main() -> int:
         browser = p.chromium.launch(channel="chrome", headless=True)
         for name, (w, h) in VIEWPORTS.items():
             page = browser.new_page(viewport={"width": w, "height": h})
+            # The local server has no /favicon.ico (finiteplay.org does); answer it so the browser's own request is not noise.
+            page.route("**/favicon.ico", lambda route: route.fulfill(status=204, body=""))
             errors: list[str] = []
             page.on("console", lambda m, e=errors: e.append(m.text) if m.type == "error" else None)
             page.on("pageerror", lambda x, e=errors: e.append(str(x)))
             page.on("requestfailed", lambda r, e=errors: e.append(f"request failed: {r.url}"))
+            page.on("response", lambda r, e=errors: e.append(f"HTTP {r.status}: {r.url}") if r.status >= 400 else None)
             page.goto(args.url, wait_until="networkidle")
             page.screenshot(path=str(out / f"{name}-home.png"), full_page=False)
             if page.evaluate("document.documentElement.scrollWidth > innerWidth + 1"):
                 problems.append(f"{name}: home page scrolls horizontally")
+            # Column alignment: the hero text and every section/figure share the content column (centred).
+            layout = page.evaluate("""() => {
+              const col = document.querySelector('#places') || document.querySelector('.section-shell');
+              const c = col.getBoundingClientRect();
+              const out = [];
+              const blocks = [...document.querySelectorAll('main > section, main > figure')].filter(b => !b.classList.contains('hero'));
+              const hero = document.querySelector('.hero-copy');
+              if (hero) blocks.push(hero);
+              for (const b of blocks) {
+                const r = b.getBoundingClientRect(); if (!r.width) continue;
+                const label = (b.id || b.className || b.tagName).toString().slice(0, 40);
+                out.push({label, left: Math.round(r.left), right: Math.round(r.right), width: Math.round(r.width),
+                          colLeft: Math.round(c.left), colRight: Math.round(c.right), center: Math.round((r.left + r.right) / 2),
+                          colCenter: Math.round((c.left + c.right) / 2)});
+              }
+              return out;
+            }""")
+            for b in layout:
+                if abs(b["center"] - b["colCenter"]) > 2 and b["width"] < w - 10:
+                    problems.append(f"{name}: block '{b['label']}' is not centred on the content column ({b['left']}-{b['right']} vs {b['colLeft']}-{b['colRight']})")
+                if b["width"] > MAX_BLOCK:
+                    problems.append(f"{name}: block '{b['label']}' is {b['width']} px wide (max {MAX_BLOCK})")
+                if b["label"].startswith("hero-copy") and abs(b["left"] - b["colLeft"]) > ALIGN_TOLERANCE:
+                    problems.append(f"{name}: hero text starts at {b['left']} px, the content column at {b['colLeft']} px")
             page.evaluate("document.querySelector('#place-grid').scrollIntoView()")
             for _ in range(12):
                 page.mouse.wheel(0, 700)
@@ -60,6 +91,11 @@ def main() -> int:
             blank = page.evaluate("""() => [...document.querySelectorAll('#place-grid img')]
                 .filter(i => !i.complete || i.naturalWidth === 0).map(i => i.getAttribute('src'))""")
             problems += [f"{name}: place-grid image did not load: {b}" for b in blank]
+            # Card height outliers (a stray class once made a few cards 600 px taller than the rest).
+            heights = page.evaluate("[...document.querySelectorAll('#place-grid .place-card')].map(c => [c.querySelector('h3')?.textContent || '', c.getBoundingClientRect().height])")
+            if heights:
+                med = sorted(h for _, h in heights)[len(heights) // 2]
+                problems += [f"{name}: place card '{t}' is {round(hh)} px tall (median {round(med)})" for t, hh in heights if hh > med * 1.6]
             page.evaluate("document.querySelector('#place-grid').scrollIntoView()")
             page.screenshot(path=str(out / f"{name}-place-grid.png"))
             for card in args.cards:

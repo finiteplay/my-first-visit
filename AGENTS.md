@@ -35,6 +35,15 @@ For research or destination-content work, read and follow
 `.agents/skills/author-country-pack/SKILL.md`. Before calling a research dossier or country
 draft complete, also follow `.agents/skills/verify-country-pack/SKILL.md`.
 
+Task skills (procedures with the tools to run and the points where the author decides):
+
+- `.agents/skills/add-places/SKILL.md`: add, replace or remove places end to end
+- `.agents/skills/qa-site/SKILL.md`: browser checks after any page, style, image or data change
+- `.agents/skills/publish-site/SKILL.md`: media upload, safe commit, deploy, live check, leak cleanup
+
+Subagents in `.claude/agents/` (`place-researcher`, `media-scout`, `rights-reviewer`, `site-qa`)
+research, scout or review and return reports; they never select for the author or publish.
+
 `content/is/README.md` records the first pack's earlier language-first authoring conventions.
 Run `python tools/content/validate.py --preview` after edits to its canonical CSV/YAML files;
 never edit the generated preview. That validator proves only the legacy Iceland text shape.
@@ -68,10 +77,12 @@ decision-useful. `--release` must continue to fail while reviews or media are mi
   departure, rent locally, and buy locally. Compare availability, sizing, pickup/return effort,
   price, expected reuse, quality and authenticity. Do not turn a reputable local product into
   a claim that every locally sold item has the same origin or quality.
-- Every place entry exposed as a popup must carry the English display name, local name,
-  approved respelling/transcription, pronunciation-audio status and media status. A
-  placeholder is honest draft state; it must not masquerade as a cleared photo or finished
-  native recording. Media provenance and rights review remain separate from place facts.
+- Every place entry exposed as a popup carries the English display name and, when its own name
+  is in the local language, the local name, approved respelling and pronunciation audio. A place
+  whose own name is English or a brand (`pronounce: false`) shows no transcription or play button.
+  Draft synthetic audio stays labeled at the play button and the voice's license credit stays on
+  the page. A placeholder image is honest draft state; it must not masquerade as a cleared photo.
+  Media provenance and rights review remain separate from place facts.
 - Prefer real, locally bundled photos from Wikimedia Commons or Flickr Creative Commons for
   destination-specific imagery. Approved sources for attraction photos are Wikimedia Commons
   and Flickr; add another source only by updating this rule. Select only files whose
@@ -147,6 +158,62 @@ decision-useful. `--release` must continue to fail while reviews or media are mi
 - Every country draft goes through research, synthesis, writing, evidence review, editorial
   review and traveler-task testing. Record unresolved weaknesses and repeat the loop; do not
   silently promote a draft.
+
+## Rules learned from author review (apply to every country)
+
+Each rule below came from a correction on the Iceland draft and is generalized; the procedures
+that apply them are in the task skills above.
+
+**Choosing places**
+- No restaurants, cafés, hotels, guesthouses or shops as places or route stops. A town with
+  nothing to see in itself is not a place; card the sight beside it. A town may be a route base.
+- When the author shares a trip plan, extract every sight and stop, give each a card, put it in
+  the trip's `placeIds`, and report what was skipped. Nothing disappears silently.
+- Every place belongs to exactly one traveler-facing area and one category; filters are built
+  from the data, never hand-maintained lists.
+
+**Other sites' data**
+- Never publish another site's rating, review count, rank, logo or a deep link to its listing,
+  and never cite them in prose ("ranked #3 on …"). Plain hyperlinks to a site's search page are
+  still links into its service; read its terms first.
+- What we publish is ours: aggregate stars (average of sources, edited by the author) and one
+  ranking list 1..N for the whole country, plus the priority tier. Raw source numbers live only in
+  `~/.finiteplay/score-inputs/<cc>.json`, never in the public repo or its history.
+- Before collecting from any new source, read its terms on scraping, storage period, caching,
+  attribution and linking, and tell the author what is allowed. Google Maps links are fine;
+  Google Places coordinates and ratings may not be stored. OpenStreetMap data may be stored
+  with "© OpenStreetMap contributors (ODbL)" credit.
+- API keys live in `~/.finiteplay/secrets/` or environment variables, restricted to one API.
+
+**Places on the map**
+- The map pin is the sight. For walk-in nature sights the Google Maps link opens the parking lot
+  (OpenStreetMap, `find_parking.py`), with author overrides for wrong lots or river sides.
+- Weather links are place-specific (forecast and wind map from the coordinates); the national
+  warnings, road and safety links stay beside them.
+
+**Media and repository**
+- Photo and audio bytes never go into git: content-addressed store, `media-manifest.json` in git,
+  public bucket for the site. Re-encode for the web (1440 px sRGB WebP + 640 px card; trimmed,
+  normalized AAC). Keep originals and back them up; the store is the only copy.
+- The repo is public. Review staged files before every commit; tool caches (`.wrangler/`),
+  inputs files and keys must never be committed. A leak is fixed by rewriting history and, for
+  secrets or personal data, recreating the repository (old commits stay reachable by hash).
+
+**Pages**
+- One centred content column: hero text, sections, feature blocks and figures align to it; no
+  block dominates the screen. Guide cards and their article heroes use the same image, and no
+  two guides share one. Two-column blocks stack on narrow screens.
+- Render and look at desktop, tablet and phone widths before reporting a visual change;
+  `tools/qa/check_site.py` must pass. Asset references carry content hashes so browsers
+  never show stale data.
+
+**Working with the author**
+- Decisions that are taste or judgement (photos, ranking, stars, priority, parking overrides)
+  are made by the author in a local HTML review page that saves back to the same file
+  (File System Access API, with a download fallback). Agents prepare candidates and suggestions;
+  they never decide.
+- After every change, report what changed, what was checked (and how), what was skipped and
+  why, and the decisions waiting for the author.
 
 ## Invariants worth restating
 

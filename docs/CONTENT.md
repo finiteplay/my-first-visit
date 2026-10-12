@@ -261,16 +261,19 @@ season changes for a traveler; leave price and weather figures to the live check
 The same three official services (national weather service, road administration, the safety association's
 travel conditions) are linked wherever a traveler decides to go somewhere: the basics section ("Check every
 morning", `dailyChecks`), the weather section, the top of every route, and every place card ("Check today",
-with roads only for places outside the capital area and the safety link only for nature stops). A playbook or
-route `liveChecks` entry with a real URL is shown as a link. A new country needs the equivalent three services.
+with roads only for places outside the capital area and the safety link only for nature stops). Every place page
+also has a "Weather here" line built from the place's coordinates: a point forecast (yr.no) and a wind and rain map
+(Windy); nothing is stored per place. A playbook or route `liveChecks` entry with a real URL is shown as a link. A new
+country needs the equivalent three services.
 
 ### Place priority and category filters
 
 Every place shows a priority label for a first visit, derived from its `tier` in `sights.yaml`: "Don't miss"
-(`must-see`), "Worth a stop" (`worth-it`) and "If you have time" (`if-you-have-time`). Each label has a small icon (pin, compass, hourglass; hidden from screen readers). Use words and icons, not
-stars or scores: every label is a positive recommendation, so a lower priority never reads as a bad review. It is our
-judgment, not a traveler or review-site score, and needs the reviewer's sign-off. The place grid is ordered by
-priority, then by the original starter-list rank, then by name. The category buttons are built from the places'
+(`must-see`), "Worth a stop" (`worth-it`) and "If you have time" (`if-you-have-time`). Each label has a small icon (pin, compass, hourglass; hidden from screen readers). The priority is words and icons,
+never stars: every label is a positive recommendation, so a lower priority never reads as a bad review. It is our
+judgment and is set by the author with the radio buttons in the rating editor (see "Our rating and ranking"). On
+cards, the priority label, our aggregate stars (the number only) and "Ranked #N of M" sit on one line. The grid is
+ordered by our ranking ("Our ranking") or by priority ("Our priority"). The category buttons are built from the places'
 `category` values with counts; no hand-maintained list is needed for a new category. The area buttons come from
 `areas` in `sights.yaml` ({id, label, regions}): group fine regions into the few areas travelers think in
 (Reykjavík area, Golden Circle, South, North, East, Snæfellsnes). Every place's `region` must belong to exactly
@@ -392,6 +395,14 @@ The same two links (`location` pin and `website`) go on every entry of a `whereT
 lagoons, hot springs). If the pin is a trailhead or car park instead of the place itself, say so in
 `location.mapNote`; leave `website` out when no official or authority page exists.
 
+**Parking.** For walk-in sights (category Nature) the pin is the sight, which may be a river or a cliff. Such places
+carry `parking` ({latitude, longitude, label, source, distanceMeters}) and their Google Maps link opens the lot
+("Parking for … in Google Maps"); the minimap still shows the sight. `tools/content/find_parking.py <cc>` proposes
+lots from OpenStreetMap (Nominatim; ODbL, so coordinates may be stored) and `--apply` writes them: a lot named
+after the place wins, otherwise the nearest public lot 80 m–2.5 km away. Wrong matches (the far bank of a river,
+an unrelated lot) are corrected or skipped in `content/<cc>/parking-overrides.json` (`null` skips). Never store
+coordinates from Google Places.
+
 A playbook can also carry `trackers` ({name, url, shows, useItFor}), a short list of live-data websites with what each
 shows and its limits (the aurora guide uses it for forecast and cloud sites). `liveChecks` entries with a real URL are
 shown as links; `provider-specific` ones are shown as plain text. Each card in the advice list needs its own card
@@ -479,7 +490,7 @@ realistic day.
 
 | Field | Rule |
 |---|---|
-| Name | English name, local name (with audio), respelling |
+| Name | English name; local name, respelling and audio only when the local name is in the local language (`pronounce: false` otherwise) |
 | Where | Region and nearest city |
 | Category | Nature · Landmark · Museum · Sacred place · Neighborhood · Experience |
 | Editorial fit | `signature`, `worth-it-for`, `skip-if`, with the audience or trip profile made explicit |
@@ -488,8 +499,9 @@ realistic day.
 | Best time | Season or time of day ("early morning, before the tour buses") |
 | Tip | ≤ 200 characters, practical |
 | Phrase here | Optional: a phrase slot or a custom line useful at this place |
-| Location | Latitude and longitude, for *Open in Maps* |
-| Photo | 1280×720 WebP, ≤ 250 KB, plus a 480×270 thumbnail; credit and licence |
+| Location | Latitude and longitude of the sight; `parking` for walk-in sights |
+| Score | Our aggregate stars and rank (`build_score.py`); never another site's numbers |
+| Photo | Author-selected, served as 1440 px sRGB WebP plus a 640 px card copy from the media store; credit and licence |
 
 Photos must be owned, CC0, CC BY or CC BY-SA. The credit line is shown on the photo in the app,
 and the licence is listed in Settings › About › Acknowledgements, beside the code licences.

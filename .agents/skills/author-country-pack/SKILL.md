@@ -81,6 +81,12 @@ Author new or migrated briefing, playbook and route prose as semantic HTML under
 rights metadata and pack metadata in their sidecar files; do not turn HTML into an unstructured
 substitute for those records.
 
+## Places
+
+Add, replace or remove places with `.agents/skills/add-places/SKILL.md`: what belongs (no food, lodging or
+empty towns), the place entry, area and category, pin and parking, pronunciation, photos, our own rating and
+ranking, generated links and checks. Never publish another site's ratings or listing links.
+
 ## Attraction photos (author in the loop)
 
 Follow the image rules in `AGENTS.md`. For each attraction:

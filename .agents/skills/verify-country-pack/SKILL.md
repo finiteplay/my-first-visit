@@ -42,7 +42,7 @@ attention, the advice reflects the target traveler, opinion is labeled, changing
 handoff, and prose is original. Remove compulsory or trivial questions; optional practice is
 reviewed separately.
 
-**Presentation review:** Open the compiled HTML in a normal browser and in the Android WebView
+**Presentation review:** Run `.agents/skills/qa-site/SKILL.md` first (`tools/qa/check_site.py` must pass). Then open the compiled HTML in a normal browser and in the Android WebView
 at phone width, large text and both themes. Check heading order, reading flow, image purpose,
 alternative text, captions, credits, link behavior, layout stability and the useful no-image
 fallback. For attraction photos, confirm the following for each one:
