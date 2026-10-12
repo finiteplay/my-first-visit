@@ -500,6 +500,50 @@
       "whisperHeard": "reykjatalur",
       "whisperMatch": 0.91,
       "showInApp": true
+    },
+    "island": {
+      "local": "Ísland",
+      "respelling": "EES-lahnd",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/island_normal.wav",
+          "seconds": 1.53
+        },
+        "slow": {
+          "file": "assets/audio/island_slow.wav",
+          "seconds": 2.84
+        }
+      },
+      "whisperHeard": "ísland",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "ísland",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
+    },
+    "reykjavik": {
+      "local": "Reykjavík",
+      "respelling": "RAYK-yah-veek",
+      "voice": "piper is_IS-ugla-medium",
+      "generated": "2026-10-11",
+      "status": "draft-synthetic",
+      "files": {
+        "normal": {
+          "file": "assets/audio/reykjavik_normal.wav",
+          "seconds": 0.92
+        },
+        "slow": {
+          "file": "assets/audio/reykjavik_slow.wav",
+          "seconds": 1.81
+        }
+      },
+      "whisperHeard": "reykjavík",
+      "whisperMatch": 1.0,
+      "whisperHeardSlow": "reykjavík",
+      "whisperMatchSlow": 1.0,
+      "showInApp": true
     }
   },
   "credit": "Synthetic voice: Piper Icelandic voice trained on Talrómur 1, Reykjavík University and SÍM, CC BY 4.0",

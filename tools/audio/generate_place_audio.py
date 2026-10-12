@@ -32,6 +32,8 @@ CREDIT = ("Synthetic voice: Piper Icelandic voice trained on Talrómur 1, "
 SLOW_SCALE = 2.0  # 0.5x speed
 # English-language brand names are not Icelandic names, so no Icelandic voice is offered.
 ENGLISH_BRANDS = {"Aurora Reykjavík", "FlyOver Iceland", "Mink Viking Portrait"}
+ATTEMPTS = 5  # takes tried per clip
+GOOD_ENOUGH = 0.95
 SHOW_THRESHOLD = 0.75  # Whisper match on the normal take; below this a native listener must decide
 
 
@@ -47,6 +49,10 @@ def collect_names(pack: Path) -> dict[str, str]:
     names: dict[str, str] = {}
     for item in json.loads((pack / "sights.yaml").read_text(encoding="utf-8"))["items"]:
         names.setdefault(item["local"], item.get("respelling", ""))
+    basics = pack / "basics.yaml"
+    if basics.exists():
+        for name in json.loads(basics.read_text(encoding="utf-8")).get("names", []):
+            names.setdefault(name["local"], name.get("respelling", ""))
     for playbook in json.loads((pack / "playbooks.yaml").read_text(encoding="utf-8"))["playbooks"]:
         for group in playbook.get("whereToSoak", []):
             for place in group["places"]:
@@ -101,14 +107,31 @@ def main() -> int:
                  "generated": time.strftime("%Y-%m-%d"), "status": "draft-synthetic", "files": {}}
         for take, scale in (("normal", 1.0), ("slow", SLOW_SCALE)):
             path = out_dir / f"{key}_{take}.wav"
-            seconds = synth(voice, local, path, scale)
-            entry["files"][take] = {"file": f"assets/audio/{path.name}", "seconds": round(seconds, 2)}
-        if checker:
-            cr, model_w = checker
-            heard = cr.transcribe(model_w, out_dir / f"{key}_normal.wav")
-            entry["whisperHeard"] = heard
-            entry["whisperMatch"] = round(cr.similarity(heard, local), 2)
-        entry["showInApp"] = bool(checker) and entry.get("whisperMatch", 0) >= SHOW_THRESHOLD             and local not in ENGLISH_BRANDS
+            best = None  # Piper sampling is random: keep the take Whisper hears best
+            for _ in range(ATTEMPTS if checker else 1):
+                seconds = synth(voice, local, path, scale)
+                if not checker:
+                    best = (0.0, path.read_bytes(), seconds, "")
+                    break
+                cr, model_w = checker
+                heard = cr.transcribe(model_w, path)
+                score = cr.similarity(heard, local)
+                if take == "slow":  # a "0.5x" take should be about 1.5-2.6x as long as the normal one
+                    ratio = seconds / entry["files"]["normal"]["seconds"]
+                    if not 1.5 <= ratio <= 2.6:
+                        score *= 0.5
+                if best is None or score > best[0]:
+                    best = (score, path.read_bytes(), seconds, heard)
+                if score >= GOOD_ENOUGH:
+                    break
+            path.write_bytes(best[1])
+            entry["files"][take] = {"file": f"assets/audio/{path.name}", "seconds": round(best[2], 2)}
+            if checker:
+                suffix = "" if take == "normal" else "Slow"
+                entry["whisperHeard" + suffix] = best[3]
+                entry["whisperMatch" + suffix] = round(best[0], 2)
+        match = min(entry.get("whisperMatch", 0), entry.get("whisperMatchSlow", 0))
+        entry["showInApp"] = bool(checker) and match >= SHOW_THRESHOLD and local not in ENGLISH_BRANDS
         manifest["items"][key] = entry
         extra = f" heard {entry.get('whisperHeard')!r} ({entry.get('whisperMatch')})" if checker else ""
         print(f"{local}: normal {entry['files']['normal']['seconds']}s, slow {entry['files']['slow']['seconds']}s{extra}")

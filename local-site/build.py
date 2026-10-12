@@ -21,6 +21,7 @@ content = {
     "playbooks": read_json("playbooks.yaml")["playbooks"],
     "routes": read_json("routes.yaml")["routes"],
     "places": read_json("sights.yaml")["items"],
+    "basics": read_json("basics.yaml"),
     # Author-selected photos only (tools/media/apply_selection.py); others stay pending.
     "photos": read_json("photos.json")["attractions"] if (PACK / "photos.json").exists() else {},
     # Draft synthetic pronunciation (tools/audio/generate_place_audio.py); only clips approved

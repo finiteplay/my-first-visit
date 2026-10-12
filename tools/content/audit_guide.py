@@ -94,6 +94,36 @@ def route_depth(item, roles):
     return gaps
 
 
+def basics_audit(basics, evidence_ids):
+    """The 'Iceland at a glance' section: pronounced names, sourced numbers, labelled tips."""
+    errors = []
+    names = basics.get("names", [])
+    if len(names) < 2:
+        errors.append("basics.yaml: needs the country name and the capital (2+ names).")
+    for name in names:
+        label = name.get("local", "<missing>")
+        for field in ("english", "local", "respelling", "meaning"):
+            if not str(name.get(field, "")).strip():
+                errors.append(f"basics.yaml name {label}: {field} is required.")
+    if len(basics.get("numbers", [])) < 4:
+        errors.append("basics.yaml: needs 4+ numbers.")
+    if len(basics.get("tips", [])) < 5:
+        errors.append("basics.yaml: needs 5+ tips.")
+    groups = [("name", names), ("number", basics.get("numbers", [])), ("tip", basics.get("tips", []))]
+    for kind, items in groups:
+        for item in items:
+            title = item.get("title") or item.get("label") or item.get("local") or "<item>"
+            if not item.get("sourceIds"):
+                errors.append(f"basics.yaml {kind} {title}: sourceIds are required.")
+            unknown = set(item.get("sourceIds", [])) - evidence_ids
+            if unknown:
+                errors.append(f"basics.yaml {kind} {title}: unknown source IDs {sorted(unknown)}.")
+    for tip in basics.get("tips", []):
+        if not str(tip.get("label", "")).strip():
+            errors.append(f"basics.yaml tip {tip.get('title')}: an evidence label is required.")
+    return errors
+
+
 def audit(root):
     errors = []
     research = root / "research"
@@ -143,6 +173,9 @@ def audit(root):
                 errors += [f"{filename} {item_id}: depth: {e}" for e in playbook_depth(item, roles)]
             if filename == "routes.yaml":
                 errors += [f"{filename} {item_id}: depth: {e}" for e in route_depth(item, roles)]
+    basics_path = root / "basics.yaml"
+    if basics_path.exists():
+        errors += basics_audit(read_json(basics_path), evidence_ids)
     if len(all_ids) != len(set(all_ids)):
         errors.append("Reader-content IDs must be unique across briefing, playbook and route files.")
     return errors

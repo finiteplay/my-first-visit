@@ -246,6 +246,23 @@ is derived from the playbook models rather than from an approved route example:
 Drive times and opening periods are planning estimates; label them and send the reader to a
 live source for the actual day.
 
+### Basic information ("Iceland at a glance")
+
+Status: **built for the Iceland draft; checked by `audit_guide.py`.**
+
+A short orientation section shown early on the home page, before the playbooks. It is written
+in the friendly, practical voice of someone who has been, and it sends readers to the full
+playbooks instead of repeating them. Source: `content/<cc>/basics.yaml`.
+
+| Part | Rule |
+|---|---|
+| Names | The country and capital: English name, local name, American respelling (see "American respelling"), meaning, a short story, and audio. Respelling and audio are drafts until a native reviewer approves them |
+| Numbers | 4+ facts (people, size, capital, wildlife counts, emergency number). Each has `sourceIds`. Where sources disagree, give a range and say so; never pick the figure that looks neatest |
+| Tips | 5+ short tips, each with an evidence label (`Official guidance`, `Traveler pattern`, `Our take`), `sourceIds`, and links to the playbook that covers it in depth |
+
+Counts and populations change; state the date or year they were measured. Keep the section short:
+anything that needs more than a paragraph belongs in a playbook.
+
 ## Short practical cards
 
 Short cards may support a briefing or playbook. They are true, useful and kind; they do not

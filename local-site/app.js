@@ -202,6 +202,32 @@
   document.querySelectorAll("#primary-nav a").forEach(link => link.addEventListener("click", () => document.querySelector("#primary-nav").classList.remove("open")));
   addEventListener("scroll", () => document.querySelector(".site-header").classList.toggle("scrolled", scrollY > 30), { passive: true });
 
+  function renderBasics() {
+    const basics = data.basics;
+    if (!basics) return;
+    document.querySelector("#basics-intro").textContent = basics.intro;
+    document.querySelector("#basics-note").textContent = basics.pronunciationNote;
+    document.querySelector("#basics-names").innerHTML = basics.names.map(name => `
+      <article class="name-card">
+        <p class="name-english">${escapeHtml(name.english)}</p>
+        <p class="name-local">${escapeHtml(name.local)}</p>
+        <p class="name-say"><span class="name-label">Say it like this for now</span><strong>${escapeHtml(name.respelling)}</strong></p>
+        <div class="name-audio">${audioControls(name.local)}</div>
+        <p class="name-meaning">${escapeHtml(name.meaning)}</p>
+        <p>${escapeHtml(name.story)}</p>
+      </article>`).join("");
+    document.querySelector("#basics-numbers").innerHTML = basics.numbers.map(item => `
+      <div class="number-tile"><span class="name-label">${escapeHtml(item.label)}</span><strong>${escapeHtml(item.value)}</strong><p>${escapeHtml(item.detail)}</p></div>`).join("");
+    document.querySelector("#basics-tips").innerHTML = basics.tips.map(tip => `
+      <article class="tip-card">
+        <p class="tip-label">${escapeHtml(tip.label)}</p>
+        <h4>${escapeHtml(tip.title)}</h4>
+        <p>${escapeHtml(tip.text)}</p>
+        ${tip.links.length ? `<p class="tip-links">${tip.links.map(link => `<button class="text-button" type="button" data-open="${escapeHtml(link.open)}">${escapeHtml(link.label)} <span aria-hidden="true">→</span></button>`).join("")}</p>` : ""}
+      </article>`).join("");
+  }
+
+  renderBasics();
   renderPlaybooks();
   renderRoutes();
   renderPlaces();
