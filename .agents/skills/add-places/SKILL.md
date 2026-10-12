@@ -68,9 +68,14 @@ what it is, why a first-time visitor goes, what to know), `timeNeeded`, `bestTim
 3. `python tools/media/apply_selection.py <cc>` downloads and records full attribution; then
    `python tools/media/media_store.py ingest <cc>` (1440 px sRGB WebP + 640 px card, metadata stripped) and
    `sync-local <cc>` for the preview. Bytes never go into git.
-4. No cleared photo yet: a hotlinked `featureImage` from the place's own website may stand in (landscape 4:3–2.2:1,
+4. The author's own trip photos: `python tools/media/sort_personal_photos.py sort <folder> <scratch> --pack <cc>` copies
+   them into one folder per place by EXIF GPS (originals untouched), and `portraits <scratch> --apply` sets aside
+   portraits of specific people with local face models (close-ups, and recurring travel companions), into `!deleted/`
+   with a review page. Measure first without `--apply`, look at `people.jpg` and sample sheets, then apply. These photos
+   are the author's own: they still go through the selection tool and carry their own credit before use.
+5. No cleared photo yet: a hotlinked `featureImage` from the place's own website may stand in (landscape 4:3–2.2:1,
    shows the place, labeled "not licensed for reuse"); otherwise an honest pending slot. Never a generic image.
-5. Advice guides need their own card image each; the article hero uses the same image as the main-page card.
+6. Advice guides need their own card image each; the article hero uses the same image as the main-page card.
 
 ## 5. Data from other sites (ratings) — private inputs only
 
