@@ -19,6 +19,7 @@ URL = "http://localhost:4173/local-site/"
 CARDS = ["playbook:pool-or-lagoon", "playbook:aurora-without-regret", "route:south-coast-six-nights",
          "route:ring-road-unhurried", "place:sight-gullfoss", "place:sight-perlan",
          "place:sight-laugardalslaug", "place:sight-whales"]
+WORDS_URL = "http://localhost:4173/local-site/words.html"
 VIEWPORTS = {"phone": (390, 844), "desktop": (1280, 900)}
 
 
@@ -86,6 +87,12 @@ def main() -> int:
                     problems.append(f"{name} {card}: horizontal overflow")
                 page.keyboard.press("Escape")
                 page.wait_for_timeout(200)
+            page.goto(WORDS_URL, wait_until="networkidle")
+            if page.evaluate("document.querySelectorAll('.word-row').length") == 0:
+                problems.append(f"{name}: word page shows no words")
+            if page.evaluate("document.documentElement.scrollWidth > innerWidth + 1"):
+                problems.append(f"{name}: word page scrolls horizontally")
+            page.screenshot(path=str(out / f"{name}-words-page.png"))
             problems += [f"{name}: {e}" for e in errors]
             page.close()
         browser.close()

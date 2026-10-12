@@ -266,3 +266,5 @@ body.night .reader-bar { background: rgba(21,48,53,.95); }
 .words .audio-note { display: none; }
 .words .audio-placeholder { padding: 4px 12px; border: 1px dashed var(--line); border-radius: 999px; color: var(--muted); background: transparent; font-size: .75rem; }
 @media (max-width: 760px) { .word-row { grid-template-columns: 1fr; } }
+
+.word-group h2 { margin: 0 0 6px; font: 500 1.6rem Georgia, serif; }

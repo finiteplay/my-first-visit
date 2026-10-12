@@ -8,14 +8,19 @@
       "id": "courtesy",
       "title": "Courtesy",
       "intro": "The words that open doors: hello, thank you, sorry, and \"do you speak English?\".",
-      "from": {"phraseCategory": "courtesy"},
+      "from": {
+        "phraseCategory": "courtesy"
+      },
       "alwaysShow": true
     },
     {
       "id": "emergency",
       "title": "Emergency and help",
       "intro": "In an emergency call 112, the single number for police, ambulance and rescue. These words help you ask for help or recognize it.",
-      "from": {"phraseCategory": "help", "extraWords": true},
+      "from": {
+        "phraseCategory": "help",
+        "extraWords": true
+      },
       "alwaysShow": true,
       "callout": "Emergency number: 112"
     },
@@ -23,41 +28,114 @@
       "id": "getting-around",
       "title": "Getting around",
       "intro": "Directions, transport and where things are.",
-      "from": {"phraseCategory": "getting-around"}
+      "from": {
+        "phraseCategory": "getting-around"
+      }
     },
     {
       "id": "food-and-drink",
       "title": "Food and drink",
       "intro": "Ordering, paying and being polite at the table.",
-      "from": {"phraseCategory": "food-and-drink"}
+      "from": {
+        "phraseCategory": "food-and-drink"
+      }
     },
     {
       "id": "money-and-numbers",
       "title": "Money, opening hours and numbers",
       "intro": "Prices, cards, open and closed, and counting to ten.",
-      "from": {"phraseCategory": "money-and-numbers"}
+      "from": {
+        "phraseCategory": "money-and-numbers"
+      }
     },
     {
       "id": "signs",
       "title": "Signs",
       "intro": "Words you will see on doors, toilets and warnings.",
-      "from": {"kind": "sign"}
+      "from": {
+        "kind": "sign"
+      }
     },
     {
       "id": "places",
       "title": "Place names",
       "intro": "Names you will hear and want to say. Foss means waterfall, which explains a lot of them.",
-      "from": {"kind": "place"}
+      "from": {
+        "kind": "place"
+      }
     }
   ],
   "extraWords": [
-    {"id": "word-emergency-line", "local": "Neyðarlínan", "respelling": "NAY-dhar-lee-nan", "meaning": "The emergency line (112)", "when": "The Icelandic name of the 112 service. You dial 112; this is the name you may hear or see.", "category": "help", "sourceIds": ["emergency"], "review": "pending-native"},
-    {"id": "word-one-twelve", "local": "Hundrað og tólf", "respelling": "HUUN-dhradh awg TOHLV", "meaning": "One hundred twelve (112)", "when": "The emergency number said aloud.", "category": "help", "sourceIds": ["emergency"], "review": "pending-native"},
-    {"id": "word-police", "local": "Lögregla", "respelling": "LUR-g-rehg-la", "meaning": "Police", "when": "Pair it with Hjálp! (help) or point to it on a map.", "category": "help", "sourceIds": ["dictionary"], "review": "pending-native"},
-    {"id": "word-ambulance", "local": "Sjúkrabíll", "respelling": "SYOO-kra-bee-tl", "meaning": "Ambulance", "when": "When you need medical help urgently.", "category": "help", "sourceIds": ["dictionary"], "review": "pending-native"},
-    {"id": "word-hospital", "local": "Sjúkrahús", "respelling": "SYOO-kra-hoos", "meaning": "Hospital", "when": "Signs and directions to a hospital.", "category": "help", "sourceIds": ["dictionary"], "review": "pending-native"},
-    {"id": "word-doctor", "local": "Læknir", "respelling": "LEYE-knihr", "meaning": "Doctor", "when": "Asking for a doctor.", "category": "help", "sourceIds": ["dictionary"], "review": "pending-native"},
-    {"id": "word-accident", "local": "Slys", "respelling": "SLIHS", "meaning": "Accident", "when": "Reporting an accident.", "category": "help", "sourceIds": ["dictionary"], "review": "pending-native"}
+    {
+      "id": "word-police",
+      "local": "Lögregla",
+      "respelling": "LUR-g-rehg-la",
+      "meaning": "Police",
+      "when": "Pair it with Hjálp! (help) or point to it on a map.",
+      "category": "help",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "word-ambulance",
+      "local": "Sjúkrabíll",
+      "respelling": "SYOO-kra-bee-tl",
+      "meaning": "Ambulance",
+      "when": "When you need medical help urgently.",
+      "category": "help",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "word-hospital",
+      "local": "Sjúkrahús",
+      "respelling": "SYOO-kra-hoos",
+      "meaning": "Hospital",
+      "when": "Signs and directions to a hospital.",
+      "category": "help",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "word-doctor",
+      "local": "Læknir",
+      "respelling": "LEYE-knihr",
+      "meaning": "Doctor",
+      "when": "Asking for a doctor.",
+      "category": "help",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    },
+    {
+      "id": "word-accident",
+      "local": "Slys",
+      "respelling": "SLIHS",
+      "meaning": "Accident",
+      "when": "Reporting an accident.",
+      "category": "help",
+      "sourceIds": [
+        "dictionary"
+      ],
+      "review": "pending-native"
+    }
   ],
-  "sourceIds": ["dictionary", "emergency"]
+  "sourceIds": [
+    "dictionary",
+    "emergency"
+  ],
+  "rules": {
+    "maxWords": 2,
+    "note": "Single words and short two-word expressions only. Sentences, requests with a blank to fill in, and anything longer stay in the phrase toolkit, not on the word page. Place names are exempt.",
+    "exemptKinds": [
+      "place"
+    ]
+  }
 }

@@ -8,13 +8,13 @@ p06,6,courtesy,Takk kærlega,,TAHK KEYER-leh-ga,,Thank you very much,A warmer th
 p07,7,courtesy,Ekkert að þakka,,EH-kehrt adh THAH-ka,,You're welcome,A reply when someone thanks you; a smile is fine too.,neutral
 p08,8,courtesy,Afsakið,,AHF-sa-kihdh,,Excuse me,Get attention or ask to pass; say it before your question.,polite
 p09,9,courtesy,Fyrirgefðu,,FIH-rihr-gehv-dhuu,,Sorry,A personal apology if you bump into someone.,neutral
-p10,10,courtesy,Já,,YOW,,Yes,A simple yes; listen to the native audio.,neutral
+p10,10,courtesy,Já,,YOW,,Yes,A simple yes; it is said with a rising 'ow' sound.,neutral
 p11,11,courtesy,Nei,,NAY,,No,A simple no; add takk when declining an offer.,neutral
 p12,12,courtesy,Ég skil ekki,,YEHG skihl EH-kih,,I don't understand,Use it when a reply is more Icelandic than you can follow.,neutral
 p13,13,courtesy,Talarðu ensku?,,TAH-lar-dhuu EHN-skuu,,Do you speak English?,Ask before switching to English; no need to struggle through an emergency.,polite
 p14,14,courtesy,Ég heiti …,,YEHG HAY-tih …,,My name is …,Add your own name; names do not need translating.,neutral
 p15,15,getting-around,Hvar er …?,,KVAHR ehr …,,Where is …?,Choose a complete saved question; noun endings can change.,neutral
-p16,16,getting-around,Klósett,,KLOH-seht,,Toilet / restroom,Recognize the word; use c15-toilet for the complete question.,neutral
+p16,16,getting-around,Klósett,,KLOH-seht,,Toilet / restroom,Recognize the word on signs and doors.,neutral
 p17,17,getting-around,Strætó,,STREYE-toh,,Bus,City bus; Iceland has no passenger train network.,neutral
 p18,18,getting-around,Flugvöllur,,FLUUG-vurt-luur,,Airport,"A word to recognize on a sign or map, not a complete taxi instruction.",neutral
 p19,19,getting-around,Hótel,,HOH-tehl,,Hotel,Use your saved hotel address when speaking to a driver.,neutral
@@ -24,9 +24,9 @@ p22,22,getting-around,Beint áfram,,BAYNT OW-frahm,,Straight ahead,A direction; 
 p23,23,getting-around,"Á þetta heimilisfang, takk",,OW THEH-ta HAY-mih-lihs-fahng TAHK,,"This address, please",Show the exact hotel address underneath this line.,polite
 p24,24,food-and-drink,"Borð fyrir tvo, takk",,BURDH FIH-rihr tvoh TAHK,,"A table for two, please",At a restaurant; tvo is the form used in this particular request.,polite
 p25,25,food-and-drink,"Matseðilinn, takk",,MAHT-seh-dhih-lihn TAHK,,"The menu, please",A short request when you have been seated.,polite
-p26,26,food-and-drink,Vatn,,VAHTN,,Water,Order with c29-water; ordinary cold tap water is a good choice.,neutral
-p27,27,food-and-drink,Kaffi,,KAH-fih,,Coffee,Order with c29-coffee; ask in English for milk or other changes.,neutral
-p28,28,food-and-drink,Bjór,,BYOHR,,Beer,Order with c29-beer; optional practice if you do not drink.,neutral
+p26,26,food-and-drink,Vatn,,VAHTN,,Water,"Ask for vatn, takk; ordinary cold tap water is a good choice.",neutral
+p27,27,food-and-drink,Kaffi,,KAH-fih,,Coffee,"Ask for kaffi, takk; ask in English for milk or other changes.",neutral
+p28,28,food-and-drink,Bjór,,BYOHR,,Beer,"Ask for bjór, takk; skip it if you do not drink.",neutral
 p29,29,food-and-drink,Ég ætla að fá …,,YEHG EYE-tla adh fow …,,I'd like …,Use a saved order; the words after fá may change form.,polite
 p30,30,food-and-drink,Ég er með ofnæmi fyrir …,,YEHG ehr mehdh AWV-neye-mih FIH-rihr …,,I'm allergic to …,Use a complete allergy card and confirm staff understand it.,neutral
 p31,31,food-and-drink,Mjög gott,,MYUR-g goht,,Delicious / very good,A simple way to compliment the food.,neutral
@@ -39,7 +39,7 @@ p37,37,money-and-numbers,"Þetta, takk",,THEH-ta TAHK,,"This one, please",Point 
 p38,38,money-and-numbers,Opið,,OH-pihdh,,Open,Recognize a shop or entrance sign.,neutral
 p39,39,money-and-numbers,Lokað,,LOH-kadh,,Closed,Respect a closure; the sign does not say when it reopens.,neutral
 p40,40,money-and-numbers,Einn,,AY-tn,,One,Counting form; a noun may require a different form.,neutral
-p41,41,money-and-numbers,Tveir,,TVAY-r,,Two,Counting form; p24 uses tvo for a table for two.,neutral
+p41,41,money-and-numbers,Tveir,,TVAY-r,,Two,Counting form; a table for two uses tvo.,neutral
 p42,42,money-and-numbers,Þrír,,THREE-r,,Three,Counting form; learn recognition before trying full price replies.,neutral
 p43,43,money-and-numbers,Fjórir,,FYOH-rihr,,Four,"Counting form, not a universal word to place before every noun.",neutral
 p44,44,money-and-numbers,Fimm,,FIHM,,Five,Practice listening as well as saying it.,neutral
@@ -48,4 +48,4 @@ p46,46,help,Hjálp,,HYOWLP,,Help!,Get immediate attention; contact 112 for an em
 p47,47,help,Hringdu í lögregluna,,HRIHNG-duu ee LUR-g-rehg-luu-na,,Call the police,Ask a person to call; 112 connects emergency responders.,neutral
 p48,48,help,Ég þarf lækni,,YEHG thahrv LEYE-knih,,I need a doctor,Show this line if speaking is difficult; use 112 in an emergency.,neutral
 p49,49,help,Ég rata ekki,,YEHG RAH-ta EH-kih,,I'm lost / I can't find my way,Works without choosing a gendered adjective; show your destination.,neutral
-p50,50,help,Apótek,,AH-poh-tehk,,Pharmacy,Recognize the sign or ask the complete question c15-pharmacy.,neutral
+p50,50,help,Apótek,,AH-poh-tehk,,Pharmacy,Recognize the sign on a pharmacy.,neutral

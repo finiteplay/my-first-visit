@@ -246,24 +246,32 @@ is derived from the playbook models rather than from an approved route example:
 Drive times and opening periods are planning estimates; label them and send the reader to a
 live source for the actual day.
 
-### Vocabulary section ("Say it in Icelandic")
+### Word page ("Say it in Icelandic")
 
-Status: **built for the Iceland draft; checked by `audit_guide.py`.**
+Status: **built for the Iceland draft as its own page, `local-site/words.html`; checked by
+`audit_guide.py`.**
 
-A browsable word list assembled at build time from the language toolkit, so words are authored
-once. Source: `content/<cc>/vocabulary.yaml` (group order, introductions and extra words) plus
-`phrases.csv`, the primer's signs and the place-audio manifest.
+A separate, browsable list of simple words, assembled at build time from the language toolkit so
+words are authored once. Source: `content/<cc>/vocabulary.yaml` (group order, introductions, extra
+words and the simplicity rule) plus `phrases.csv`, the primer's signs and the audio manifest.
+
+**Keep it simple.** The page lists single words and short two-word expressions only. Sentences,
+requests with a blank to fill in and anything longer stay in the phrase toolkit and practice, not
+on this page, so "Hringdu í lögregluna" (call the police) is represented by *Lögregla* (police).
+The rule is `rules.maxWords` in `vocabulary.yaml`; place names are exempt.
 
 | Group | Contents | Shown |
 |---|---|---|
 | Courtesy | Phrases in the `courtesy` category | Always, with or without audio |
-| Emergency and help | Phrases in the `help` category plus extra words (emergency line, police, ambulance, hospital, doctor, accident) | Always; carries the local emergency number |
+| Emergency and help | Phrases in the `help` category plus extra words (police, ambulance, hospital, doctor, accident) | Always; carries the local emergency number |
 | Getting around, Food and drink, Money and numbers, Signs, Place names | Remaining phrase categories, signs and place names | Only words with approved audio |
 
-Every extra word needs a respelling, a meaning and `sourceIds`. A word appears once, in the
-first group that claims it. Audio comes from `tools/audio/generate_place_audio.py`: a draft
-synthetic voice with the best of several takes, checked with Whisper. A slow take was tried and
-dropped because its quality was poor. Draft audio and respellings stay labeled until a native reviewer approves them.
+Every extra word needs a respelling, a meaning, `sourceIds` and at most `maxWords` words. A word
+appears once, in the first group that claims it. Audio comes from
+`tools/audio/generate_place_audio.py`: a draft synthetic voice with the best of several takes,
+checked with Whisper. A slow take was tried and dropped because its quality was poor. Draft audio
+and respellings stay labeled until a native reviewer approves them. Notes must be plain language
+and never refer to internal ids.
 
 ### Basic information ("Iceland at a glance")
 

@@ -138,6 +138,9 @@ def vocabulary_audit(vocab, evidence_ids):
         for field in ("local", "respelling", "meaning"):
             if not str(word.get(field, "")).strip():
                 errors.append(f"vocabulary.yaml word {label}: {field} is required.")
+        limit = vocab.get("rules", {}).get("maxWords")
+        if limit and len(str(word.get("local", "")).split()) > limit:
+            errors.append(f"vocabulary.yaml word {label}: more than {limit} words; keep the word page simple.")
         if not word.get("sourceIds"):
             errors.append(f"vocabulary.yaml word {label}: sourceIds are required.")
         unknown = set(word.get("sourceIds", [])) - evidence_ids

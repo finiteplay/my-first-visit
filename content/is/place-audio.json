@@ -1567,42 +1567,6 @@
       "whisperMatch": 0.88,
       "showInApp": true
     },
-    "neydarlinan": {
-      "local": "Neyðarlínan",
-      "respelling": "NAY-dhar-lee-nan",
-      "kind": "word",
-      "meaning": "The emergency line (112)",
-      "voice": "piper is_IS-ugla-medium",
-      "generated": "2026-10-11",
-      "status": "draft-synthetic",
-      "files": {
-        "normal": {
-          "file": "assets/audio/neydarlinan_normal.wav",
-          "seconds": 0.94
-        }
-      },
-      "whisperHeard": "neyðalínan",
-      "whisperMatch": 0.95,
-      "showInApp": true
-    },
-    "hundrad-og-tolf": {
-      "local": "Hundrað og tólf",
-      "respelling": "HUUN-dhradh awg TOHLV",
-      "kind": "word",
-      "meaning": "One hundred twelve (112)",
-      "voice": "piper is_IS-ugla-medium",
-      "generated": "2026-10-11",
-      "status": "draft-synthetic",
-      "files": {
-        "normal": {
-          "file": "assets/audio/hundrad-og-tolf_normal.wav",
-          "seconds": 1.21
-        }
-      },
-      "whisperHeard": "hundrað og tólf",
-      "whisperMatch": 1.0,
-      "showInApp": true
-    },
     "logregla": {
       "local": "Lögregla",
       "respelling": "LUR-g-rehg-la",

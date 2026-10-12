@@ -15,6 +15,16 @@ def read_json(name: str):
     return json.loads((PACK / name).read_text(encoding="utf-8"))
 
 
+def is_simple(local, group, config):
+    """Word page rule: single words and two-word expressions; no blanks. Place names are exempt."""
+    rules = config.get("rules", {})
+    if group["from"].get("kind") in rules.get("exemptKinds", []):
+        return True
+    if "…" in local or "..." in local:
+        return False
+    return len(local.replace("?", "").split()) <= rules.get("maxWords", 99)
+
+
 def build_vocabulary():
     """Courtesy and emergency words always; every other word only if it has approved audio."""
     import csv
@@ -45,6 +55,8 @@ def build_vocabulary():
         items = []
         for item in candidates:
             if item["local"] in seen:
+                continue
+            if not is_simple(item["local"], group, config):
                 continue
             clip = audio.get(item["local"])
             if not clip and not group.get("alwaysShow"):
