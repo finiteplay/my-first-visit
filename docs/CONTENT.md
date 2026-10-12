@@ -328,6 +328,12 @@ traveler stories as separate cards, and checklists you can tick (kept on the dev
 section a plain-language title, and do not use a picture that is not about the place named in its caption. The briefing uses
 the same pieces with `heroPlaceId` for its top picture. `audit_guide.py` checks the fields.
 
+### Local site cache busting
+
+`local-site/build.py` tags every script and stylesheet reference in `index.html` and `words.html` with a short hash of the
+file (`content.js?v=ab12cd34`), so a browser that cached an older copy loads the new one after each build. Run the build
+after changing any of those files.
+
 ### Country map and number tiles
 
 Status: **built for the Iceland draft; the map is checked by `audit_guide.py`.**

@@ -99,3 +99,24 @@ OUTPUT.write_text(
 )
 print(f"Built {OUTPUT.relative_to(ROOT)}")
 
+
+
+# Cache busting: tag each script and stylesheet reference with a short hash of its content, so a browser that has an old
+# copy (for example an old content.js without the newest photos) fetches the new one after every build.
+import hashlib
+import re
+
+SITE = OUTPUT.parent
+for page in ("index.html", "words.html"):
+    path = SITE / page
+    if not path.exists():
+        continue
+    html = path.read_text(encoding="utf-8")
+    for asset in ("content.js", "app.js", "words.js", "styles.css"):
+        file = SITE / asset
+        if not file.exists():
+            continue
+        digest = hashlib.sha1(file.read_bytes()).hexdigest()[:8]
+        html = re.sub(rf'((?:src|href)="{re.escape(asset)})(?:\?v=[^"]*)?"', rf'\1?v={digest}"', html)
+    path.write_text(html, encoding="utf-8")
+print("Tagged asset references with content hashes")
