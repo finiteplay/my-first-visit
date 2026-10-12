@@ -428,3 +428,16 @@ body.night .priority-3 { background: #3a4a4d; color: #dce6e6; }
 /* Area and type filter rows */
 .filter-label { align-self: center; margin-right: 4px; color: var(--muted); font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 #place-areas { margin: 0 0 8px; flex-wrap: wrap; }
+
+/* Trip map */
+.route-map { margin: 0 0 20px; max-width: 760px; }
+.route-map svg { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; }
+.rm-line { stroke-linecap: round; opacity: .85; }
+.rm-dot { stroke: #fff; }
+.rm-day { font-weight: 800; fill: #102b31; paint-order: stroke; stroke: #f4f1e8; stroke-linejoin: round; font-family: system-ui, sans-serif; }
+body.night .rm-dot { stroke: #26363a; }
+body.night .rm-day { fill: #e8f1f2; stroke: #26363a; }
+.route-map-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 8px 0 0; padding: 0; list-style: none; font-size: .8rem; }
+.route-map-legend li { display: inline-flex; align-items: center; gap: 6px; }
+.lg-dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+.route-map figcaption { margin-top: 6px; color: var(--muted); font-size: .75rem; }

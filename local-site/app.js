@@ -189,14 +189,106 @@
       ${item.limits ? `<h2>What this evidence cannot tell you</h2><p>${escapeHtml(item.limits)}</p>` : ""}`;
   }
 
+  // Trip stops: an id is a place card ("sight-...") or a soak entry in the pool guide ("soak:<slug of its name>").
+  const slugName = name => name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  function findStop(id) {
+    if (id.startsWith("soak:")) {
+      for (const guide of data.playbooks) for (const group of guide.whereToSoak || []) for (const place of group.places) {
+        if (slugName(place.name) === id.slice(5)) return { name: place.name, location: place.location, open: `playbook:${guide.id}` };
+      }
+      return null;
+    }
+    const place = data.places.find(item => item.id === id);
+    return place ? { name: place.name, location: place.location, open: `place:${place.id}` } : null;
+  }
+
+  // A schematic map of a trip: one dot per stop, colored by day, joined in order. A trip whose stops all sit in the
+  // capital area uses the local outline; any other trip uses the country outline, cropped to its stops.
+  function routeMapHtml(item) {
+    const map = data.map;
+    if (!map?.outline) return "";
+    const stops = [];
+    (item.days || []).forEach((day, index) => (day.placeIds || []).forEach(id => {
+      const stop = findStop(id);
+      if (stop?.location) stops.push({ ...stop, day: index + 1 });
+    }));
+    if (stops.length < 2) return "";
+    const inside = (loc, box) => loc.longitude >= box[0] && loc.longitude <= box[2] && loc.latitude >= box[1] && loc.latitude <= box[3];
+    const region = (map.regions || []).find(r => stops.every(stop => inside(stop.location, r.bbox)));
+    let west, south, east, north, rings, K, W, credit;
+    if (region) {
+      [west, south, east, north] = region.bbox;
+      rings = region.land; K = Math.cos(region.center[1] * Math.PI / 180); W = 640; credit = region.credit;
+    } else {
+      const lons = map.outline.map(p => p[0]), lats = map.outline.map(p => p[1]);
+      west = Math.min(...lons); east = Math.max(...lons); south = Math.min(...lats); north = Math.max(...lats);
+      rings = [map.outline]; K = Math.cos(65 * Math.PI / 180); W = 1000; credit = map.credit;
+    }
+    const scale = W / ((east - west) * K);
+    const x = lon => (lon - west) * K * scale, y = lat => (north - lat) * scale;
+    const fullH = (north - south) * scale;
+    let view = { x: 0, y: 0, w: W, h: fullH };
+    if (!region) {
+      const xs = stops.map(stop => x(stop.location.longitude)), ys = stops.map(stop => y(stop.location.latitude));
+      let [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+      let w = Math.max(x1 - x0, 140), h = Math.max(y1 - y0, 100);
+      w *= 1.28; h *= 1.28;
+      const aspect = 1.45;  // keep the crop a comfortable landscape shape
+      if (w / h < aspect) w = h * aspect; else h = w / aspect;
+      const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+      view = { x: cx - w / 2, y: cy - h / 2, w, h };
+    } else {
+      view.h = fullH;
+    }
+    const unit = view.w / 100;  // everything scales with the view so crops stay readable
+    const PALETTE = ["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02", "#1f78b4", "#a6761d", "#b2182b", "#17becf", "#7f3c8d"];
+    const color = day => PALETTE[(day - 1) % PALETTE.length];
+    const path = points => points.map((p, i) => `${i ? "L" : "M"}${x(p[0]).toFixed(1)} ${y(p[1]).toFixed(1)}`).join(" ");
+    const px = stop => x(stop.location.longitude).toFixed(1), py = stop => y(stop.location.latitude).toFixed(1);
+    // Lines join stops within a day. Between days they are drawn (dashed) only when the trip moves on each night.
+    const segments = stops.slice(1).map((stop, index) => {
+      const from = stops[index], sameDay = from.day === stop.day;
+      if (!sameDay && !item.mapConnectDays) return "";
+      const dash = sameDay ? "" : ` stroke-dasharray="${(unit * 1.3).toFixed(2)} ${(unit * 1.3).toFixed(2)}"`;
+      return `<line class="rm-line" x1="${px(from)}" y1="${py(from)}" x2="${px(stop)}" y2="${py(stop)}" stroke="${color(stop.day)}" stroke-width="${(unit * 0.55).toFixed(2)}"${dash}/>`;
+    }).join("");
+    const firstOfDay = new Set();
+    const labelled = [];  // day numbers that land on the same spot are stacked so none is hidden
+    const dots = stops.map(stop => {
+      const first = !firstOfDay.has(stop.day);
+      firstOfDay.add(stop.day);
+      let stack = 0;
+      if (first) {
+        stack = labelled.filter(other => Math.hypot(other[0] - +px(stop), other[1] - +py(stop)) < unit * 3).length;
+        labelled.push([+px(stop), +py(stop)]);
+      }
+      return `<circle class="rm-dot" cx="${px(stop)}" cy="${py(stop)}" r="${(unit * 1.1).toFixed(2)}" fill="${color(stop.day)}" stroke-width="${(unit * 0.32).toFixed(2)}"/>` +
+        (first ? `<text class="rm-day" x="${(+px(stop) + unit * 1.7 + stack * unit * 2.6).toFixed(1)}" y="${(+py(stop) - unit * 1.5).toFixed(1)}" font-size="${(unit * 3.4).toFixed(2)}" stroke-width="${(unit * 1).toFixed(2)}">${stop.day}</text>` : "");
+    }).join("");
+    const days = [...new Set(stops.map(stop => stop.day))];
+    const legend = days.map(day => `<li><span class="lg-dot" style="background:${color(day)}" aria-hidden="true"></span>Day ${day} · ${escapeHtml(item.days[day - 1].base)}</li>`).join("");
+    const label = `Map of ${item.title}: ${stops.length} stops over ${days.length} days, in order`;
+    return `<h2>Map of the stops</h2>
+      <figure class="route-map">
+        <svg viewBox="${view.x.toFixed(1)} ${view.y.toFixed(1)} ${view.w.toFixed(1)} ${view.h.toFixed(1)}" role="img" aria-label="${escapeHtml(label)}">
+          <rect class="minimap-sea" x="${(view.x - 5).toFixed(1)}" y="${(view.y - 5).toFixed(1)}" width="${(view.w + 10).toFixed(1)}" height="${(view.h + 10).toFixed(1)}"/>
+          <path class="minimap-land" d="${rings.map(ring => path(ring) + "Z").join(" ")}" style="stroke-width:${(unit * 0.25).toFixed(2)}px"/>
+          ${segments}${dots}
+        </svg>
+        <ul class="route-map-legend" aria-label="Days">${legend}</ul>
+        <figcaption>Schematic: straight lines join the stops in order and are not roads. Positions are draft pins. ${escapeHtml(credit)}</figcaption>
+      </figure>`;
+  }
+
   function routeHtml(item) {
     return `<p class="article-meta">Practical route · ${escapeHtml(item.duration)}</p>
       <h1 id="reader-title">${escapeHtml(item.title)}</h1>
       <p class="hook">${escapeHtml(item.pace)}</p>
       ${liveStrip(["weather", "roads", "safetravel"])}
+      ${routeMapHtml(item)}
       ${item.whoFor ? `<p><strong>Who it suits:</strong> ${escapeHtml(item.whoFor)}</p>` : ""}
       ${item.whyItWorks ? `<h2>Why it works</h2><p>${escapeHtml(item.whyItWorks)}</p>` : ""}
-      ${item.days?.length ? `<h2>Day by day</h2><div class="option-grid">${item.days.map((day, index) => `<div class="option route-day"><strong>Day ${index + 1}${day.flexible ? " · flexible" : ""}</strong><p class="where">Sleep: ${escapeHtml(day.base)}</p><p><em>Getting around:</em> ${escapeHtml(day.travel)}</p>${list(day.highlights)}${day.placeIds?.length ? `<p class="route-places">${day.placeIds.map(id => { const place = data.places.find(p => p.id === id); return place ? `<button type="button" class="place-chip" data-open="place:${escapeHtml(id)}">${escapeHtml(place.name)}</button>` : ""; }).join("")}</p>` : ""}${day.weatherSwap ? `<p><em>If the weather turns:</em> ${escapeHtml(day.weatherSwap)}</p>` : ""}${day.ifTired ? `<p><em>If you are tired:</em> ${escapeHtml(day.ifTired)}</p>` : ""}</div>`).join("")}</div><p class="article-meta">Drive times are planning estimates unless marked official; confirm them on a live map.</p>` : ""}
+      ${item.days?.length ? `<h2>Day by day</h2><div class="option-grid">${item.days.map((day, index) => `<div class="option route-day"><strong>Day ${index + 1}${day.flexible ? " · flexible" : ""}</strong><p class="where">Sleep: ${escapeHtml(day.base)}</p><p><em>Getting around:</em> ${escapeHtml(day.travel)}</p>${list(day.highlights)}${day.placeIds?.length ? `<p class="route-places">${day.placeIds.map(id => { const stop = findStop(id); return stop ? `<button type="button" class="place-chip" data-open="${escapeHtml(stop.open)}">${escapeHtml(stop.name)}</button>` : ""; }).join("")}</p>` : ""}${day.weatherSwap ? `<p><em>If the weather turns:</em> ${escapeHtml(day.weatherSwap)}</p>` : ""}${day.ifTired ? `<p><em>If you are tired:</em> ${escapeHtml(day.ifTired)}</p>` : ""}</div>`).join("")}</div><p class="article-meta">Drive times are planning estimates unless marked official; confirm them on a live map.</p>` : ""}
       ${item.seasonNotes ? `<h2>How the season changes it</h2><p>${escapeHtml(item.seasonNotes)}</p>` : ""}
       ${item.tradeoff ? `<h2>The trade-off</h2><p>${escapeHtml(item.tradeoff)}</p>` : ""}
       ${item.skipIf ? `<div class="callout"><strong>Skip it if</strong><p>${escapeHtml(item.skipIf)}</p></div>` : ""}

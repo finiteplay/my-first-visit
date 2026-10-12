@@ -17,7 +17,7 @@ from pathlib import Path
 
 URL = "http://localhost:4173/local-site/"
 CARDS = ["playbook:pool-or-lagoon", "playbook:aurora-without-regret", "route:south-coast-six-nights",
-         "route:ring-road-unhurried", "place:sight-gullfoss", "place:sight-perlan",
+         "route:ring-road-clockwise-10-nights", "place:sight-gullfoss", "place:sight-perlan",
          "place:sight-laugardalslaug", "place:sight-whales"]
 WORDS_URL = "http://localhost:4173/local-site/words.html"
 VIEWPORTS = {"phone": (390, 844), "desktop": (1280, 900)}

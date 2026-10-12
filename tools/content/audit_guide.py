@@ -219,6 +219,24 @@ def map_audit(map_data, evidence_ids):
     return errors
 
 
+def route_place_errors(route, sight_ids, soak_slugs):
+    """Every place a trip day links to must exist: a place card, or a soak entry written as soak:<slug>."""
+    errors = []
+    for number, day in enumerate(route.get("days", []), 1):
+        for place_id in day.get("placeIds", []):
+            known = (place_id[5:] in soak_slugs) if place_id.startswith("soak:") else (place_id in sight_ids)
+            if not known:
+                errors.append(f"routes.yaml {route.get('id')} day {number}: unknown place {place_id!r}.")
+    return errors
+
+
+def _slug(name):
+    import re
+    import unicodedata
+    folded = "".join(c for c in unicodedata.normalize("NFD", name) if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", "-", folded.lower()).strip("-")
+
+
 def audit(root):
     errors = []
     research = root / "research"
@@ -242,6 +260,16 @@ def audit(root):
                 found = owner.get(item.get("region"), [])
                 if len(found) != 1:
                     errors.append(f"sights.yaml {item.get('id')}: region {item.get('region')!r} must belong to exactly one area (has {found}).")
+
+    sight_ids = set()
+    if sights_path.exists():
+        sight_ids = {item.get("id") for item in read_json(sights_path).get("items", [])}
+    soak_slugs = set()
+    playbooks_path = root / "playbooks.yaml"
+    if playbooks_path.exists():
+        for guide in read_json(playbooks_path).get("playbooks", []):
+            for group in guide.get("whereToSoak", []):
+                soak_slugs |= {_slug(place["name"]) for place in group.get("places", [])}
 
     specs = [
         ("briefings.yaml", "briefings", 1),
@@ -282,6 +310,7 @@ def audit(root):
                 errors += [f"{filename} {item_id}: depth: {e}" for e in playbook_depth(item, roles)]
             if filename == "routes.yaml":
                 errors += [f"{filename} {item_id}: depth: {e}" for e in route_depth(item, roles)]
+                errors += route_place_errors(item, sight_ids, soak_slugs)
     map_path = root / "map.yaml"
     if map_path.exists():
         errors += map_audit(read_json(map_path), evidence_ids)

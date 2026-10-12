@@ -10,8 +10,8 @@
         "all-seasons"
       ],
       "duration": "Half to one easy day",
-      "pace": "Hallgrímskirkja and the center → coffee or food stop → Harpa and waterfront → neighborhood pool",
-      "whyItWorks": "Everything can shrink if the flight was rough. The pool warms the day without requiring another scenic transfer.",
+      "pace": "Hallgrímskirkja and the center → a coffee or meal stop → Harpa and the Old Harbour → a neighborhood pool",
+      "whyItWorks": "Everything can shrink if the flight was rough. The day is a loop of short, flat walks, and the pool warms it without another scenic transfer.",
       "skipIf": "You slept well, have safe onward transport and deliberately chose the countryside as day one.",
       "liveChecks": [
         {
@@ -23,7 +23,7 @@
           "url": "https://visitreykjavik.is/reykjavik-residents-guide-wellness-and-geothermal-pools"
         },
         {
-          "label": "Official weather",
+          "label": "Official weather and warnings",
           "url": "https://en.vedur.is/"
         }
       ],
@@ -37,20 +37,30 @@
       "whoFor": "Travelers who arrive on an overnight flight and want a gentle first day on foot, in any season, with or without a car.",
       "days": [
         {
-          "base": "Reykjavík (your hotel or apartment)",
-          "travel": "Walking and short bus rides inside the center; Hallgrímskirkja to Harpa is roughly a 15-20 minute walk (planning estimate).",
+          "base": "Reykjavík",
+          "flexible": true,
+          "travel": "Walking and short bus rides inside the center. Each stop on this list is a short walk from the next.",
           "highlights": [
             "Late morning: Hallgrímskirkja and the streets below it",
-            "Lunch or coffee on Laugavegur or near the Old Harbour",
-            "Afternoon: Harpa and the waterfront walk to the Sun Voyager",
-            "Evening: a neighborhood pool, ending with a hot pot"
+            "Laugavegur and Skólavörðustígur, with a coffee or an early meal",
+            "Afternoon: Harpa and the Old Harbour on the waterfront",
+            "Evening: a neighborhood pool, ending with a hot pot (Sundhöllin is central)"
           ],
-          "weatherSwap": "In rain or wind, replace the waterfront with the National Museum or Perlan and keep the pool for the evening.",
-          "flexible": true,
-          "ifTired": "Do just the pool and an early dinner; the center will still be there tomorrow."
+          "ifTired": "Do just the pool and an early meal; the center will still be there tomorrow.",
+          "weatherSwap": "In rain or wind, swap the waterfront for the National Museum or Perlan and keep the pool for the evening.",
+          "placeIds": [
+            "sight-hallgrimskirkja",
+            "sight-laugavegur",
+            "sight-harpa",
+            "sight-old-harbour",
+            "soak:sundhollin"
+          ]
         }
       ],
-      "seasonNotes": "In winter, daylight is short, so put the walking in the middle of the day and the pool in the dark evening. In summer the light lasts late, which tempts you to keep going; stop when you are tired. Dress in layers in every season, because wind changes how the same temperature feels."
+      "seasonNotes": "In winter, daylight is short, so put the walking in the middle of the day and the pool in the dark evening. In summer the light lasts late, which tempts you to keep going; stop when you are tired. Dress in layers in every season, because wind changes how the same temperature feels.",
+      "tradeoff": "You see the center and one soak, not the city's depth. The museums and the harbor attractions are saved for another day.",
+      "safety": "Pavements and steps can be icy in winter, and wind off the sea is strong on the waterfront. Follow the pool's shower rules; they are not optional.",
+      "limits": "Built from traveler accounts of jet-lagged first days and the city's own visitor pages, not from a timed itinerary. Opening hours change, so check each stop on the day."
     },
     {
       "id": "short-trip-no-car",
@@ -62,8 +72,8 @@
         "short-trip"
       ],
       "duration": "4 nights",
-      "pace": "Arrival Reykjavík → Golden Circle tour → one long South Coast day or an overnight tour → slow city and pool day",
-      "whyItWorks": "It concentrates the fixed-schedule cost into two meaningful landscape days and protects a recovery/weather-fallback day.",
+      "pace": "Arrival in Reykjavík → Golden Circle tour → a South Coast tour day (or an overnight) → a slow city and pool day → departure",
+      "whyItWorks": "It concentrates the fixed-schedule cost into two meaningful landscape days and protects a recovery and weather-fallback day.",
       "tradeoff": "A Jökulsárlón day trip from Reykjavík is very long. An overnight version costs more but gives the glacier coast room to breathe.",
       "sourceIds": [
         "r007",
@@ -78,44 +88,80 @@
       "days": [
         {
           "base": "Reykjavík",
-          "travel": "Airport to Reykjavík by transfer or bus, roughly 45-60 minutes (planning estimate).",
+          "travel": "Airport to the city by transfer or bus; no driving needed.",
           "highlights": [
-            "Arrive and rest",
-            "A gentle walk and an early dinner",
-            "Optional neighborhood pool"
+            "Arrive, then rest first",
+            "A short harbor walk when you feel awake: Harpa and the Old Harbour",
+            "An early night"
           ],
-          "ifTired": "Sleep first; nothing on this day is fixed."
+          "ifTired": "Sleep first; nothing on this day is fixed.",
+          "placeIds": [
+            "sight-harpa",
+            "sight-old-harbour"
+          ]
         },
         {
           "base": "Reykjavík",
-          "travel": "Full-day Golden Circle tour with hotel-area pickup. The loop is about 250 km (official), so expect most of the day.",
+          "travel": "A full-day Golden Circle tour with pickup near your lodging, so most of the day is spent on the coach. Check which stops your tour includes.",
           "highlights": [
             "Þingvellir",
-            "Geysir geothermal area",
-            "Gullfoss"
+            "Geysir and Strokkur",
+            "Gullfoss",
+            "Some tours add a stop such as Kerið; read the stop list before you book"
           ],
-          "weatherSwap": "If wind or ice cancels it, move it to the flexible day."
+          "weatherSwap": "If wind or ice cancels it, move it to the flexible day.",
+          "placeIds": [
+            "sight-thingvellir",
+            "sight-geysir",
+            "sight-gullfoss"
+          ]
         },
         {
           "base": "Reykjavík, or an overnight in Vík",
-          "travel": "South Coast day tour. Reykjavík to Vík is about 200 km and 2 h 15 min without stops (provider figure), so the tour day is long.",
+          "travel": "A South Coast day tour: long, but with the main stops close together.",
           "highlights": [
-            "Seljalandsfoss and Skógafoss",
+            "Seljalandsfoss, and Gljúfrabúi if your stop is long enough",
+            "Skógafoss",
             "Reynisfjara black-sand beach with its safety rules",
             "Vík"
           ],
-          "ifTired": "Choose the overnight version if you want Jökulsárlón; a same-day trip there is very long."
+          "ifTired": "Choose the overnight version if you want Jökulsárlón; a same-day trip there is very long.",
+          "placeIds": [
+            "sight-seljalandsfoss",
+            "sight-gljufrabui",
+            "sight-skogafoss",
+            "sight-reynisfjara",
+            "sight-vik"
+          ]
         },
         {
           "base": "Reykjavík",
+          "flexible": true,
           "travel": "Walking and short buses.",
           "highlights": [
-            "Slow city morning",
-            "Museum or food stop",
-            "Pool or whale-watching if the weather allows"
+            "A slow city morning",
+            "Perlan, the National Museum or Whales of Iceland, whichever the weather suits",
+            "A neighborhood pool"
           ],
-          "flexible": true,
-          "weatherSwap": "Use this day to catch a canceled tour or to rest."
+          "weatherSwap": "Use this day to catch a canceled tour or to rest.",
+          "placeIds": [
+            "sight-perlan",
+            "sight-national-museum",
+            "sight-whales",
+            "sight-laugardalslaug"
+          ]
+        },
+        {
+          "base": "Reykjavík, then the airport",
+          "travel": "Leave a generous buffer for the transfer to the airport.",
+          "highlights": [
+            "A slow last morning: coffee, Hallgrímskirkja or the harbor",
+            "Collect your bags and go"
+          ],
+          "ifTired": "Skip the morning walk and rest.",
+          "placeIds": [
+            "sight-hallgrimskirkja"
+          ]
         }
       ],
       "seasonNotes": "In winter, tours can cancel for wind, ice or road conditions, so the open day is essential, not a luxury. Daylight is short, so tours start and finish in the dark more often. In summer, tours sell out earlier; book the fixed ones first.",
@@ -126,18 +172,24 @@
           "url": "provider-specific"
         },
         {
-          "label": "Official road conditions and warnings",
+          "label": "Official road conditions",
           "url": "https://umferdin.is/en"
         },
         {
-          "label": "SafeTravel alerts",
+          "label": "Safetravel alerts",
           "url": "https://safetravel.is/travel-conditions/"
+        },
+        {
+          "label": "Official weather and warnings",
+          "url": "https://en.vedur.is/"
         },
         {
           "label": "Reykjavík City Card and bus coverage",
           "url": "https://visitreykjavik.is/reykjavik-city-card"
         }
-      ]
+      ],
+      "skipIf": "You want to drive yourself, or you dislike fixed departure times and group tours.",
+      "limits": "Built from traveler accounts of tour-based trips and operator pages. Stops, pickup times and cancellation terms differ by operator and season, so check them before you book."
     },
     {
       "id": "south-coast-six-nights",
@@ -149,9 +201,9 @@
         "shoulder-season"
       ],
       "duration": "6 nights",
-      "pace": "Reykjavík arrival → Golden Circle or Reykjadalur area → Vík with waterfalls → glacier-lagoon region → flexible return night → Reykjavík/airport",
-      "whyItWorks": "It reaches waterfalls, black-sand coast and glacier landscapes without claiming the whole country. The flexible return night can absorb weather, fatigue or a longer stop.",
-      "tradeoff": "In darker or stormier months, shorten the eastern reach or use a guided overnight tour.",
+      "pace": "Reykjavík → Golden Circle or Reykjadalur → Vík and the waterfalls → the glacier-lagoon coast → a flexible day → back to Reykjavík → departure",
+      "whyItWorks": "It reaches waterfalls, a black-sand coast and glacier landscapes without claiming the whole country. The flexible day can absorb weather, fatigue or a longer stop.",
+      "tradeoff": "The eastern reach is the long part. In darker or stormier months, shorten it or use a guided overnight tour.",
       "safety": "Reynisfjara, glacier access and roads require current official conditions and on-site instructions; this route is not a safety clearance. Never step onto floating ice at the lagoon.",
       "sourceIds": [
         "r010",
@@ -168,62 +220,107 @@
           "base": "Reykjavík",
           "travel": "Airport to the city, then no driving.",
           "highlights": [
-            "Rest and a walk",
+            "Rest and a short walk: Harpa and the Old Harbour",
             "Collect the rental car the next morning, not in the dark after a flight"
           ],
-          "ifTired": "Take the city slowly; nothing is booked."
+          "ifTired": "Take the city slowly; nothing is booked.",
+          "placeIds": [
+            "sight-harpa",
+            "sight-old-harbour"
+          ]
         },
         {
-          "base": "South Iceland near Selfoss or Hveragerði",
-          "travel": "Þingvellir is about 45 km from Reykjavík; the Golden Circle loop is about 250 km (official). Reykjadalur is about 45 minutes away, then a hike.",
+          "base": "South Iceland (Selfoss or Hveragerði area)",
+          "travel": "Collect the car and head out of the city. Pick one big outing, not both.",
           "highlights": [
-            "Golden Circle (Þingvellir, Geysir, Gullfoss), or",
-            "Reykjadalur hot-river hike for a softer day"
+            "The Golden Circle: Þingvellir, Geysir and Gullfoss (add Kerið if there is time), or",
+            "The Reykjadalur hot-river hike for a softer day"
           ],
-          "weatherSwap": "Pick the hike or the Circle by the forecast; do not do both."
+          "weatherSwap": "Pick the hike or the Circle by the forecast; do not do both.",
+          "placeIds": [
+            "sight-thingvellir",
+            "sight-geysir",
+            "sight-gullfoss",
+            "sight-kerid",
+            "soak:reykjadalur-hot-spring-river"
+          ]
         },
         {
           "base": "Vík area",
-          "travel": "Hveragerði to Vík is a bit over 2 hours without stops (planning estimate; Reykjavík to Vík is 2 h 15 min, provider figure).",
+          "travel": "Paved Route 1, with waterfalls first and the beach last.",
           "highlights": [
-            "Seljalandsfoss",
-            "Skógafoss",
+            "Seljalandsfoss and Gljúfrabúi",
+            "Skógafoss, and Kvernufoss if there is time",
             "Reynisfjara, well back from the surf",
-            "Vík"
+            "Vík, and the Lava Show if it rains"
           ],
-          "ifTired": "Drop Skógafoss's upper trail; the base viewpoints are enough."
+          "ifTired": "Drop Skógafoss's upper trail and Kvernufoss; the base viewpoints are enough.",
+          "placeIds": [
+            "sight-seljalandsfoss",
+            "sight-gljufrabui",
+            "sight-skogafoss",
+            "sight-kvernufoss",
+            "sight-reynisfjara",
+            "sight-vik",
+            "sight-lava-show"
+          ]
         },
         {
-          "base": "Near Jökulsárlón (for example around Höfn or Skaftafell)",
-          "travel": "Vík to Jökulsárlón is roughly 2.5-3 hours of driving (planning estimate); the lagoon is beside Road 1.",
+          "base": "Near Jökulsárlón (around Skaftafell or Höfn)",
+          "travel": "The longest day. Keep the early stops short and the lagoon for the best light you can get.",
           "highlights": [
-            "Jökulsárlón and the beach where ice washes ashore",
-            "Optional boat tour",
-            "A short glacier walk only with a guide"
+            "Foss á Síðu and the Eldhraun moss, from signed pullouts",
+            "Dverghamrar",
+            "Jökulsárlón from the shore, and Diamond Beach",
+            "An optional boat tour, or a glacier walk only with a guide"
           ],
-          "weatherSwap": "In storm weather, stay near Vík rather than driving east."
+          "weatherSwap": "In storm weather, stay near Vík rather than driving east.",
+          "placeIds": [
+            "sight-foss-a-sidu",
+            "sight-dverghamrar",
+            "sight-jokulsarlon",
+            "sight-diamond-beach"
+          ]
         },
         {
-          "base": "Flexible: stay near the glacier coast, or return to the Vík area",
-          "travel": "Choose between a short return day and a free day; either keeps the last drive shorter.",
+          "base": "Flexible: stay on the glacier coast, or head back toward Vík",
+          "flexible": true,
+          "travel": "Choose between a short day and a free day; either keeps the last drive shorter.",
           "highlights": [
-            "Catch up on any skipped stop",
-            "Rest or a local pool",
-            "Add the Westman Islands only if you have an extra day"
+            "Skaftafell and the Svartifoss hike, or a shorter walk",
+            "Fjallsárlón, if the access surface is fine",
+            "Rest, or catch up on a stop you skipped"
           ],
-          "flexible": true
+          "ifTired": "Skip the hike and rest.",
+          "placeIds": [
+            "sight-skaftafell",
+            "sight-svartifoss",
+            "sight-fjallsarlon"
+          ]
         },
         {
           "base": "Reykjavík",
-          "travel": "Return to Reykjavík, roughly 4.5-5 hours from Jökulsárlón (planning estimate), or break it at Vík.",
+          "travel": "Return to Reykjavík, breaking the drive at a stop you skipped on the way east.",
           "highlights": [
+            "Seljalandsfoss or Skógafoss again, if the first visit was rushed",
             "Return the car",
-            "Last pool or dinner",
-            "Airport the next morning"
+            "A last pool or a final meal"
+          ],
+          "ifTired": "Go straight back and keep the evening empty.",
+          "placeIds": [
+            "soak:sundhollin"
           ]
+        },
+        {
+          "base": "Keflavík airport (departure)",
+          "travel": "Leave a generous buffer for the airport.",
+          "highlights": [
+            "A last slow morning in Reykjavík"
+          ],
+          "ifTired": "Go straight to the airport."
         }
       ],
-      "seasonNotes": "In darker or stormier months, shorten the eastern reach or use a guided overnight tour; daylight for the long Jökulsárlón leg can be limited and wind can close stretches. Summer needs earlier booking, especially for lodging on the South Coast. Spring and autumn bring variable weather, so check the forecast each morning.",
+      "seasonNotes": "In darker or stormier months, shorten the eastern reach or use a guided overnight tour. Daylight for the long Jökulsárlón leg can be limited and wind can close stretches. Summer needs earlier booking, especially for lodging on the South Coast. Spring and autumn bring variable weather, so check the forecast each morning.",
       "liveChecks": [
         {
           "label": "Official road conditions",
@@ -234,158 +331,17 @@
           "url": "https://en.vedur.is/"
         },
         {
-          "label": "SafeTravel alerts",
+          "label": "Safetravel alerts",
           "url": "https://safetravel.is/travel-conditions/"
         },
         {
           "label": "Lodging availability and booking terms",
           "url": "provider-specific"
         }
-      ]
-    },
-    {
-      "id": "ring-road-unhurried",
-      "title": "Ring Road without racing the clock",
-      "fits": [
-        "self-drive",
-        "summer",
-        "two-drivers"
       ],
-      "duration": "10–12 nights",
-      "pace": "Reykjavík/bookend → South Coast → southeast glaciers → Eastfjords → Mývatn/Akureyri → northwest or Snæfellsnes → Reykjavík",
-      "whyItWorks": "Most driving days stay compatible with real stops, food and recovery. A movable night helps when weather or a favorite region asks for more time.",
-      "skipIf": "You have fewer than about nine nights, only one reluctant driver, or winter conditions outside your experience. Choose South/West or a guided circuit instead.",
-      "sourceIds": [
-        "t001",
-        "t002",
-        "b001",
-        "b002",
-        "b004",
-        "r014",
-        "o017",
-        "o001"
-      ],
-      "whoFor": "Two drivers with 10-12 nights in summer who want the whole country without racing, and who are comfortable with long driving days.",
-      "days": [
-        {
-          "base": "Reykjavík",
-          "travel": "Airport to the city.",
-          "highlights": [
-            "Arrive, rest, get the car"
-          ],
-          "ifTired": "Keep it empty."
-        },
-        {
-          "base": "South Coast (Hvolsvöllur, Vík or similar)",
-          "travel": "About 200 km to Vík and about 2 h 15 min without stops (provider figure).",
-          "highlights": [
-            "Seljalandsfoss",
-            "Skógafoss",
-            "Reynisfjara with caution"
-          ]
-        },
-        {
-          "base": "Near Jökulsárlón / Skaftafell / Höfn",
-          "travel": "Roughly 190 km from Vík (planning estimate).",
-          "highlights": [
-            "Jökulsárlón",
-            "A guided glacier walk if the weather allows"
-          ]
-        },
-        {
-          "base": "Eastfjords (Djúpivogur or Egilsstaðir)",
-          "travel": "Jökulsárlón to Egilsstaðir is a long day along the coast; the Öxi pass saves 68 km but is a mountain road (official).",
-          "highlights": [
-            "Fjord towns and short stops",
-            "Stuðlagil canyon for a longer day"
-          ]
-        },
-        {
-          "base": "Egilsstaðir area",
-          "travel": "A short local day.",
-          "highlights": [
-            "Rest day or short hikes"
-          ],
-          "flexible": true
-        },
-        {
-          "base": "Mývatn",
-          "travel": "Egilsstaðir to Mývatn is roughly 165 km (planning estimate); Möðrudalsöræfi can close in storms (official).",
-          "highlights": [
-            "Mývatn geothermal fields",
-            "Lake and birdlife",
-            "Dettifoss for a longer day"
-          ]
-        },
-        {
-          "base": "Akureyri",
-          "travel": "Mývatn to Akureyri is roughly 95 km (planning estimate).",
-          "highlights": [
-            "Akureyri town",
-            "Optional whale-watching from Húsavík"
-          ],
-          "weatherSwap": "If Öxnadalsheiði is closed, wait or reroute."
-        },
-        {
-          "base": "Northwest (Skagafjörður or Hvammstangi area)",
-          "travel": "Akureyri to the Hvammstangi area is roughly 2.5 hours (planning estimate); stopping here avoids one very long day.",
-          "highlights": [
-            "Turf houses, horses and small towns on the way west"
-          ],
-          "weatherSwap": "If Öxnadalsheiði is closed, wait in Akureyri rather than forcing the pass."
-        },
-        {
-          "base": "Northwest or Snæfellsnes",
-          "travel": "A long day; the Reykjavík-Akureyri stretch is busy in July (official).",
-          "highlights": [
-            "Snæfellsnes peninsula, or the western approach"
-          ]
-        },
-        {
-          "base": "Snæfellsnes or Borgarnes",
-          "travel": "Shorter local driving.",
-          "highlights": [
-            "Coast, lava fields and small towns"
-          ],
-          "flexible": true
-        },
-        {
-          "base": "Reykjavík",
-          "travel": "Borgarnes to Reykjavík is roughly 75 km (planning estimate).",
-          "highlights": [
-            "Return the car",
-            "Last pool",
-            "A final dinner"
-          ]
-        },
-        {
-          "base": "Reykjavík or airport hotel",
-          "travel": "Short transfer to the airport.",
-          "highlights": [
-            "Departure"
-          ]
-        }
-      ],
-      "seasonNotes": "The Ring Road is paved and open year-round (official), but passes are prone to closures from September to May, so winter or shoulder-season trips need slack and a willingness to wait or reroute. In peak summer, lodging between Selfoss and Höfn is hard to find, so book early. Daylight is long in summer; do not let it tempt you into longer driving days than you can handle.",
-      "safety": "Mountain passes, wind and gravel stretches change quickly. Check the road and weather services each morning and be willing to stop.",
-      "liveChecks": [
-        {
-          "label": "Official road conditions and pass closures",
-          "url": "https://umferdin.is/en"
-        },
-        {
-          "label": "Official weather and warnings",
-          "url": "https://en.vedur.is/"
-        },
-        {
-          "label": "SafeTravel alerts",
-          "url": "https://safetravel.is/travel-conditions/"
-        },
-        {
-          "label": "Lodging availability, especially Selfoss to Höfn in summer",
-          "url": "provider-specific"
-        }
-      ]
+      "skipIf": "You are not a confident driver, you want more than one night in a place, or you are traveling in winter without winter-driving experience.",
+      "limits": "Built from traveler accounts and official overviews of the South Coast, not from a timed itinerary. It shows a sensible order and optional stops, not proof that the days fit your pace. Add time for weather, parking and photos.",
+      "mapConnectDays": true
     },
     {
       "id": "ring-road-clockwise-10-nights",
@@ -589,8 +545,9 @@
           "placeIds": [
             "sight-perlan",
             "sight-hallgrimskirkja",
+            "sight-laugavegur",
             "sight-mink",
-            "sight-laugavegur"
+            "soak:sky-lagoon"
           ]
         },
         {
@@ -600,7 +557,10 @@
             "Blue Lagoon on the way to the airport (pre-booked)",
             "A last slow morning in Reykjavík"
           ],
-          "ifTired": "Skip the last morning walk and go straight to the lagoon."
+          "ifTired": "Skip the last morning walk and go straight to the lagoon.",
+          "placeIds": [
+            "soak:blue-lagoon"
+          ]
         }
       ],
       "seasonNotes": "Planned for early September. Daylight is shorter than in midsummer, some small museums, cafés and campsites keep seasonal hours, and highland roads begin to close (this route avoids them anyway). Autumn storms can arrive from early September, so keep the weather swap days in mind. In winter this route would be a different trip, with short days and mountain-pass closures.",
@@ -631,7 +591,8 @@
         "o017",
         "o001",
         "o003"
-      ]
+      ],
+      "mapConnectDays": true
     }
   ]
 }

@@ -283,6 +283,19 @@ builds each entry from the place data (name opening the place card, priority lab
 Google Maps links), so there is nothing to keep in sync by hand. The Reykjavík time guide uses it for the city's
 sights; list only places that already have a card.
 
+### Trip detail level and the stop map
+
+Every trip is written to the same depth: who it is for, why it works, the trade-off and when to skip it, one entry
+per day (a base town, a qualitative `travel` note, highlights, an "if tired" cut, a weather swap where one makes
+sense, a flexible day when the trip is four nights or more), season notes, a safety boundary, what the evidence
+cannot tell you, and live checks. Leave out restaurants, hotels and driving times; say only how hard the day is.
+
+Each day lists `placeIds`: place cards (`sight-...`) or soak entries from the pool guide (`soak:` plus the slug of the
+entry's name, such as `soak:blue-lagoon`), in the order they are visited. The app turns them into chips that open the
+card and into a schematic map of the trip: one dot per stop, colored by day, joined in order within each day (and, for a trip with `mapConnectDays: true` that changes base most nights,
+between days with a dashed line), cropped to the stops
+(a trip entirely inside the capital area uses the local outline). `audit_guide.py` fails on an id that does not exist.
+
 ### Country map and number tiles
 
 Status: **built for the Iceland draft; the map is checked by `audit_guide.py`.**

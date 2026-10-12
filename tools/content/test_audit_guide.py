@@ -122,5 +122,14 @@ class GuideAuditTest(unittest.TestCase):
         self.assertFalse(any("point a" in e for e in errors))
 
 
+    def test_route_places_must_exist(self):
+        from audit_guide import route_place_errors
+        route = {"id": "r", "days": [{"placeIds": ["sight-a", "soak:blue-lagoon", "sight-missing", "soak:nowhere"]}]}
+        errors = route_place_errors(route, {"sight-a"}, {"blue-lagoon"})
+        self.assertEqual(len(errors), 2)
+        self.assertTrue(any("sight-missing" in e for e in errors))
+        self.assertTrue(any("soak:nowhere" in e for e in errors))
+
+
 if __name__ == "__main__":
     unittest.main()
