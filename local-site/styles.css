@@ -404,7 +404,6 @@ body.night .minimap-label { fill: #e8f1f2; stroke: #26363a; }
 body.night .priority-1 { background: #8a6a1c; color: #fff4d4; }
 body.night .priority-2 { background: #34523a; color: #e3f0d8; }
 body.night .priority-3 { background: #3a4a4d; color: #dce6e6; }
-.place-card .priority { display: table; }
 .place-rating { margin: 6px 0 14px; }
 #place-filters { margin: 0 0 8px; flex-wrap: wrap; }
 .filter-count { margin-left: 4px; font-size: .72rem; opacity: .7; }
@@ -439,8 +438,10 @@ body.night .rm-day { fill: #e8f1f2; stroke: #26363a; }
 .score { display: inline-flex; align-items: center; gap: 7px; margin: 6px 0 0 6px; font-size: .74rem; color: var(--muted); vertical-align: middle; }
 .score-num { display: inline-grid; place-items: center; min-width: 34px; padding: 2px 9px; border-radius: 999px; background: var(--deep); color: var(--gold); font-weight: 800; font-size: .78rem; }
 .score-rank { padding: 1px 8px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-weight: 700; font-size: .7rem; white-space: nowrap; }
-.place-card .score { display: flex; flex-wrap: wrap; margin: 6px 0 0; }
-.place-card .priority + .score { margin-top: 8px; }
+.place-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: 6px 0 0; }
+.place-meta .priority, .place-meta .score { margin: 0; }
+.place-card .priority { display: inline-block; }
+.place-card .score { display: inline-flex; margin: 0; }
 .score-note { margin: 4px 0 0; color: var(--muted); font-size: .78rem; }
 #place-sort { margin: 0 0 8px; flex-wrap: wrap; }
 

@@ -85,7 +85,7 @@
     const score = item.score;
     if (!score) return "";
     const total = data.places.length;
-    return `<span class="score" aria-label="Average reviews ${score.stars.toFixed(1)} out of 5. Ranked number ${score.rank} of ${total}"><span class="score-num" aria-hidden="true">${score.stars.toFixed(1)}</span><span class="score-text" aria-hidden="true">average reviews</span><span class="score-rank" aria-hidden="true" title="Our own ranking of all ${total} places">Ranked #${score.rank} of ${total}</span></span>`;
+    return `<span class="score" aria-label="Average reviews ${score.stars.toFixed(1)} out of 5. Ranked number ${score.rank} of ${total}"><span class="score-num" aria-hidden="true" title="Average of traveler reviews, out of 5">${score.stars.toFixed(1)}</span><span class="score-rank" aria-hidden="true" title="Our own ranking of all ${total} places">Ranked #${score.rank} of ${total}</span></span>`;
   };
   let placeSort = "top";
   const byRank = (a, b) => (a.score?.rank ?? 999) - (b.score?.rank ?? 999);
@@ -136,7 +136,7 @@
         ${selectedPhotos[item.id]?.length ? `<img class="place-card-image" src="${escapeHtml(selectedPhotos[item.id][0].card || selectedPhotos[item.id][0].file)}" alt="${escapeHtml(photoAlt(item, 0))}" style="${escapeHtml(photoStyle(selectedPhotos[item.id][0]))}" width="480" height="320" loading="lazy">` : ""}
         ${!selectedPhotos[item.id]?.length && item.featureImage ? `<img class="place-card-image placeholder-image" src="${escapeHtml(item.featureImage.url)}" alt="${escapeHtml(item.name)}" referrerpolicy="no-referrer" width="480" height="320" loading="lazy">` : ""}
         <span class="region">${escapeHtml(item.region)} · ${escapeHtml(item.category)}</span>
-        ${priorityHtml(item)}${scoreBadge(item)}
+        <div class="place-meta">${priorityHtml(item)}${scoreBadge(item)}</div>
         <h3>${escapeHtml(item.name)}</h3>
         <p>${escapeHtml(item.whyGo)}</p>
         <span class="time">${escapeHtml(item.timeNeeded)}</span>
