@@ -10,6 +10,7 @@ keep working and the files can be cached forever.
     python tools/media/media_store.py sync-local is  # mirror the store into local-site/media/ for the local preview (git-ignored)
     python tools/media/media_store.py upload is      # dry run: what the bucket is missing
     python tools/media/media_store.py upload is --apply   # upload it (needs the R2_* variables below and boto3)
+    python tools/media/media_store.py upload is --via-wrangler BUCKET --apply   # same, using `wrangler login` instead of S3 keys
 
 Store location: MFV_MEDIA_STORE (default ~/.finiteplay/media-store). Bucket upload variables: R2_ACCOUNT_ID,
 R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET. The site reads media from MFV_MEDIA_BASE (default "media/").
@@ -317,11 +318,45 @@ def upload(cc: str, apply: bool) -> int:
     return 0
 
 
+def upload_wrangler(cc: str, bucket: str, apply: bool, jobs: int = 8) -> int:
+    """Upload through `wrangler r2 object put` (needs only `wrangler login`; no S3 keys). Slower than boto3 but always works."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    manifest = read_json(ROOT / "content" / cc / "media-manifest.json")
+    store = store_dir()
+    keys = all_keys(manifest)
+    print(f"{len(keys)} files to put into bucket {bucket}" + ("" if apply else " (dry run; use --apply)"))
+    if not apply:
+        return 0
+    wrangler = shutil.which("wrangler")
+    cmd = [wrangler] if wrangler else [shutil.which("npx") or "npx", "--yes", "wrangler@4"]
+
+    def put_one(item):
+        key, entry = item
+        r = subprocess.run(cmd + ["r2", "object", "put", f"{bucket}/myfirstvisit/{key}", "--file", str(store / key), "--remote",
+                                  "--content-type", entry["type"], "--cache-control", CACHE],
+                           capture_output=True, text=True, encoding="utf-8", errors="replace")
+        return key, r.returncode, (r.stderr or r.stdout or "")[-300:]
+
+    failed = []
+    with ThreadPoolExecutor(jobs) as pool:
+        for i, (key, code, out) in enumerate(pool.map(put_one, keys), 1):
+            if code:
+                failed.append((key, out))
+            if i % 50 == 0:
+                print(f"  {i}/{len(keys)}", flush=True)
+    print(f"uploaded {len(keys) - len(failed)}, failed {len(failed)}")
+    for key, out in failed[:5]:
+        print("FAILED", key, out)
+    return 1 if failed else 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("command", choices=["ingest", "verify", "sync-local", "prune-store", "upload"])
     ap.add_argument("country")
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--via-wrangler", metavar="BUCKET", help="upload with wrangler (after `wrangler login`) into this bucket instead of S3 keys")
     args = ap.parse_args()
     if args.command == "ingest":
         return ingest(args.country)
@@ -331,6 +366,8 @@ def main() -> int:
         return sync_local(args.country)
     if args.command == "prune-store":
         return prune_store(args.country, args.apply)
+    if args.via_wrangler:
+        return upload_wrangler(args.country, args.via_wrangler, args.apply)
     return upload(args.country, args.apply)
 
 

@@ -38,3 +38,6 @@ local-site/assets/volcano/
 
 # Generated deployable site
 dist/
+
+# wrangler caches (hold Cloudflare account details)
+.wrangler/
