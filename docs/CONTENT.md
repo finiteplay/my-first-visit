@@ -302,8 +302,9 @@ Each place can carry `tripadvisor` ({url, rating, reviews, checkedAt, note}): a 
 overall rating out of 5 and the review count, shown on the card and the place page. The grid sorts by TripAdvisor's own
 ordering first: `icelandRank`, a place's position in TripAdvisor's list of top things to do in the country (only the
 places on that list have one), then everything else by rating and review count. Two other sorts are offered: stars alone
-and our own priority. `localRank` records the place's rank inside its own TripAdvisor destination (for example
-"#1 of 22 things to do in Selfoss") and is shown on the place page. Ratings change constantly and are TripAdvisor's
+and our own priority. `localRank` ({rank, of, destination, category, text}) records the place's rank inside its own TripAdvisor
+destination (for example "#1 of 22 things to do in Selfoss"). A place without an Iceland position shows it on the card
+instead ("#5 in Reykjavík"; a category rank reads "#1 Fun & Games in Reykjavík") and the full wording on the place page. Ratings change constantly and are TripAdvisor's
 numbers, so `checkedAt` is required and the page tells the reader the date. TripAdvisor blocks automated page reads,
 so the Iceland values came from search-result summaries: confirm each on the page before release. Places that are
 villages or areas have no rating of their own (`rating: null`) and sort last. Before a public release, check

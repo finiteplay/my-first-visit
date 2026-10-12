@@ -83,7 +83,10 @@
   const taBadge = item => {
     const ta = item.tripadvisor;
     if (!ta) return "";
-    const top = ta.icelandRank ? `<span class="ta-top" title="Position in TripAdvisor's list of top things to do in Iceland">#${ta.icelandRank} in Iceland</span>` : "";
+    const local = ta.localRank;
+    const top = ta.icelandRank
+      ? `<span class="ta-top" title="Position in TripAdvisor's list of top things to do in Iceland">#${ta.icelandRank} in Iceland</span>`
+      : local ? `<span class="ta-top" title="TripAdvisor ranks it ${escapeHtml(local.text)}">#${local.rank} ${local.category ? `${escapeHtml(local.category)} in ` : "in "}${escapeHtml(local.destination)}</span>` : "";
     if (ta.rating == null) return `<span class="ta ta-none">TripAdvisor: no rating for the place itself</span>`;
     const count = ta.reviews == null ? "" : ` · ${Number(ta.reviews).toLocaleString("en-US")} reviews`;
     return `<span class="ta" aria-label="TripAdvisor rating ${ta.rating} out of 5${ta.reviews == null ? "" : `, ${Number(ta.reviews).toLocaleString("en-US")} reviews`}"><span class="ta-score" aria-hidden="true">${ta.rating.toFixed(1)}</span><span class="ta-text" aria-hidden="true">TripAdvisor${count}</span>${top}</span>`;
@@ -367,7 +370,7 @@
         <figcaption>${escapeHtml(areaName)}. Approximate position, not for navigation. ${escapeHtml(credit)}</figcaption>
       </figure>
       <p class="place-links"><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a>${item.website ? `<a class="maps-link" href="${escapeHtml(item.website.url)}" target="_blank" rel="noopener">${escapeHtml(item.website.label)} <span aria-hidden="true">↗</span></a>` : ""}${item.tripadvisor ? `<a class="maps-link" href="${escapeHtml(item.tripadvisor.url)}" target="_blank" rel="noopener">TripAdvisor reviews <span aria-hidden="true">↗</span></a>` : ""}</p>
-      ${item.tripadvisor ? `<p class="ta-note">${taBadge(item)} ${item.tripadvisor.icelandRank ? `TripAdvisor puts it at #${item.tripadvisor.icelandRank} of its top things to do in Iceland. ` : ""}${item.tripadvisor.localRank ? `On its own page it is ranked ${escapeHtml(item.tripadvisor.localRank)}. ` : ""}Read on ${escapeHtml(item.tripadvisor.checkedAt)} from a search-result summary; ratings change, so confirm on TripAdvisor.${item.tripadvisor.note ? ` Note: ${escapeHtml(item.tripadvisor.note)}.` : ""}</p>` : ""}
+      ${item.tripadvisor ? `<p class="ta-note">${taBadge(item)} ${item.tripadvisor.icelandRank ? `TripAdvisor puts it at #${item.tripadvisor.icelandRank} of its top things to do in Iceland. ` : ""}${item.tripadvisor.localRank ? `On its own page it is ranked ${escapeHtml(item.tripadvisor.localRank.text)}. ` : ""}Read on ${escapeHtml(item.tripadvisor.checkedAt)} from a search-result summary; ratings change, so confirm on TripAdvisor.${item.tripadvisor.note ? ` Note: ${escapeHtml(item.tripadvisor.note)}.` : ""}</p>` : ""}
     </div>`;
   }
 
