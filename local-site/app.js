@@ -210,7 +210,7 @@
 
   function briefingHtml(item) {
     const entries = item.sections.map(section => [`b-${section.id}`, section.title]);
-    return `${item.heroPlaceId ? placeFigure(item.heroPlaceId, item.heroCaption || "", "article-hero") : ""}
+    return `${articleHero({ cardImage: item.heroImage })}
       <p class="article-meta">Destination briefing · ${item.readingMinutes} minutes · ${escapeHtml(item.researchedAsOf)}</p>
       <h1 id="reader-title">${escapeHtml(item.title)}</h1>
       <p class="hook">${escapeHtml(item.hook)}</p>

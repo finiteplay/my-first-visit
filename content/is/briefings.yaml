@@ -179,8 +179,6 @@
         "Weather decides the day, so pack layers, stay flexible and check the official forecasts every morning.",
         "Plan the expensive parts and enjoy the rest; English carries the trip, and a few Icelandic words change its tone."
       ],
-      "heroPlaceId": "sight-jokulsarlon",
-      "heroCaption": "Jökulsárlón, where icebergs drift toward the sea.",
       "figures": [
         {
           "after": 0,
@@ -196,8 +194,17 @@
           "after": 2,
           "placeId": "sight-skogafoss",
           "caption": "Skógafoss: waterfall spray adds water even on a clear day."
+        },
+        {
+          "after": 3,
+          "placeId": "sight-jokulsarlon",
+          "caption": "Jökulsárlón: one of the stops worth planning a day around."
         }
-      ]
+      ],
+      "heroImage": {
+        "src": "assets/iceland-road-weather.webp",
+        "alt": "An empty coastal road crosses moss-covered volcanic land beneath rain clouds and a break of sunlight."
+      }
     }
   ]
 }
