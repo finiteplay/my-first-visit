@@ -139,7 +139,7 @@
     placeGrid.innerHTML = items.map(item => `
       <article class="place-card" data-open="place:${escapeHtml(item.id)}" tabindex="0" role="button" aria-label="Open place card for ${escapeHtml(item.name)}">
         ${selectedPhotos[item.id]?.length ? `<img class="place-card-image" src="${escapeHtml(selectedPhotos[item.id][0].file)}" alt="${escapeHtml(photoAlt(item, 0))}" style="${escapeHtml(photoStyle(selectedPhotos[item.id][0]))}" width="480" height="320" loading="lazy">` : ""}
-        ${!selectedPhotos[item.id]?.length && item.featureImage ? `<img class="place-card-image feature-image" src="${escapeHtml(item.featureImage.url)}" alt="${escapeHtml(item.name)}" referrerpolicy="no-referrer" width="480" height="320" loading="lazy">` : ""}
+        ${!selectedPhotos[item.id]?.length && item.featureImage ? `<img class="place-card-image placeholder-image" src="${escapeHtml(item.featureImage.url)}" alt="${escapeHtml(item.name)}" referrerpolicy="no-referrer" width="480" height="320" loading="lazy">` : ""}
         <span class="region">${escapeHtml(item.region)} · ${escapeHtml(item.category)}</span>
         ${priorityHtml(item)}${taBadge(item)}
         <h3>${escapeHtml(item.name)}</h3>
