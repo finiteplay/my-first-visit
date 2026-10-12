@@ -3,7 +3,7 @@
   "playbooks": [
     {
       "id": "campervan-or-room",
-      "title": "Campervan, motorhome, or a room each night?",
+      "title": "Campervan, a rental car with a room each night, or tour bus?",
       "fits": [
         "camper",
         "self-drive",
