@@ -20,7 +20,7 @@
       "sourceIds": ["e005"]
     }
   ],
-  "pronunciationNote": "These respellings are drafts written for an American reader and have not had native-speaker review. The audio is a synthetic draft voice; the slow button plays at about half speed.",
+  "pronunciationNote": "These respellings are drafts written for an American reader and have not had native-speaker review. The audio is a synthetic draft voice.",
   "numbers": [
     {"label": "People", "value": "about 394,000", "detail": "Statistics Iceland counted 394,324 on 1 January 2026. About two thirds live in the capital area.", "sourceIds": ["o019"]},
     {"label": "Size", "value": "about 103,600 km²", "detail": "Roughly the size of the US state of Kentucky, but with the population of a mid-size city.", "sourceIds": ["o019"]},

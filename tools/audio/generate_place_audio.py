@@ -1,4 +1,4 @@
-"""Generate DRAFT synthetic pronunciation audio for Icelandic place names (normal and 0.5x slow).
+"""Generate DRAFT synthetic pronunciation audio for Icelandic place names and words.
 
 Voices: Piper Icelandic voices trained on Talrómur 1 (Reykjavík University and SÍM),
 CC BY 4.0, https://creativecommons.org/licenses/by/4.0/ . Credit is required.
@@ -10,9 +10,6 @@ back with the Icelandic Whisper model as a sanity check (not a pronunciation rev
 
     ~/.finiteplay/venv/Scripts/python tools/audio/generate_place_audio.py is --voice ugla
     ~/.finiteplay/venv/Scripts/python tools/audio/generate_place_audio.py is --only "Þingvellir" --voice bui --no-check
-
-Slow take: `length_scale=2.0`, i.e. phonemes stretched to twice the duration (0.5x speed)
-while keeping the pitch natural, which sounds better than resampling.
 """
 from __future__ import annotations
 
@@ -29,7 +26,6 @@ ROOT = Path(__file__).resolve().parents[2]
 MODELS = Path.home() / ".finiteplay" / "models" / "piper-is"
 CREDIT = ("Synthetic voice: Piper Icelandic voice trained on Talrómur 1, "
           "Reykjavík University and SÍM, CC BY 4.0")
-SLOW_SCALE = 2.0  # 0.5x speed
 # English-language brand names are not Icelandic names, so no Icelandic voice is offered.
 ENGLISH_BRANDS = {"Aurora Reykjavík", "FlyOver Iceland", "Mink Viking Portrait"}
 ATTEMPTS = 8  # takes tried per clip (variants alternate)
@@ -136,38 +132,32 @@ def main() -> int:
         entry = {"local": local, "respelling": info["respelling"], "kind": info["kind"], "meaning": info["meaning"],
                  "voice": f"piper is_IS-{args.voice}-medium",
                  "generated": time.strftime("%Y-%m-%d"), "status": "draft-synthetic", "files": {}}
-        for take, scale in (("normal", 1.0), ("slow", SLOW_SCALE)):
-            path = out_dir / f"{key}_{take}.wav"
-            best = None  # Piper sampling is random: keep the take Whisper hears best
-            # Very short words are said more reliably with a closing period: alternate the variants.
-            variants = [said] if said[-1:] in "?!.," else [said, said + "."]
-            for attempt in range(ATTEMPTS if checker else 1):
-                seconds = synth(voice, variants[attempt % len(variants)], path, scale)
-                if not checker:
-                    best = (0.0, path.read_bytes(), seconds, "")
-                    break
-                cr, model_w = checker
-                heard = cr.transcribe(model_w, path)
-                score = cr.similarity(heard, said)
-                if take == "slow":  # a "0.5x" take should be about 1.5-2.6x as long as the normal one
-                    ratio = seconds / entry["files"]["normal"]["seconds"]
-                    if not 1.5 <= ratio <= 2.6:
-                        score *= 0.5
-                if best is None or score > best[0]:
-                    best = (score, path.read_bytes(), seconds, heard)
-                if score >= GOOD_ENOUGH:
-                    break
-            path.write_bytes(best[1])
-            entry["files"][take] = {"file": f"assets/audio/{path.name}", "seconds": round(best[2], 2)}
-            if checker:
-                suffix = "" if take == "normal" else "Slow"
-                entry["whisperHeard" + suffix] = best[3]
-                entry["whisperMatch" + suffix] = round(best[0], 2)
-        match = min(entry.get("whisperMatch", 0), entry.get("whisperMatchSlow", 0))
-        entry["showInApp"] = bool(checker) and match >= SHOW_THRESHOLD and local not in ENGLISH_BRANDS
+        path = out_dir / f"{key}_normal.wav"
+        best = None  # Piper sampling is random: keep the take Whisper hears best
+        # Very short words are said more reliably with a closing period: alternate the variants.
+        variants = [said] if said[-1:] in "?!.," else [said, said + "."]
+        for attempt in range(ATTEMPTS if checker else 1):
+            seconds = synth(voice, variants[attempt % len(variants)], path, 1.0)
+            if not checker:
+                best = (0.0, path.read_bytes(), seconds, "")
+                break
+            cr, model_w = checker
+            heard = cr.transcribe(model_w, path)
+            score = cr.similarity(heard, said)
+            if best is None or score > best[0]:
+                best = (score, path.read_bytes(), seconds, heard)
+            if score >= GOOD_ENOUGH:
+                break
+        path.write_bytes(best[1])
+        entry["files"]["normal"] = {"file": f"assets/audio/{path.name}", "seconds": round(best[2], 2)}
+        if checker:
+            entry["whisperHeard"] = best[3]
+            entry["whisperMatch"] = round(best[0], 2)
+        entry["showInApp"] = bool(checker) and entry.get("whisperMatch", 0) >= SHOW_THRESHOLD \
+            and local not in ENGLISH_BRANDS
         manifest["items"][key] = entry
         extra = f" heard {entry.get('whisperHeard')!r} ({entry.get('whisperMatch')})" if checker else ""
-        print(f"{local}: normal {entry['files']['normal']['seconds']}s, slow {entry['files']['slow']['seconds']}s{extra}")
+        print(f"{local}: {entry['files']['normal']['seconds']}s{extra}")
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     return 0
 

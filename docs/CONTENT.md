@@ -262,8 +262,8 @@ once. Source: `content/<cc>/vocabulary.yaml` (group order, introductions and ext
 
 Every extra word needs a respelling, a meaning and `sourceIds`. A word appears once, in the
 first group that claims it. Audio comes from `tools/audio/generate_place_audio.py`: a draft
-synthetic voice with the best of several takes, checked with Whisper, and a slow take at about
-half speed. Draft audio and respellings stay labeled until a native reviewer approves them.
+synthetic voice with the best of several takes, checked with Whisper. A slow take was tried and
+dropped because its quality was poor. Draft audio and respellings stay labeled until a native reviewer approves them.
 
 ### Basic information ("Iceland at a glance")
 

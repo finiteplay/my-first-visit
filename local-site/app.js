@@ -10,7 +10,7 @@
     const clip = placeAudio[local];
     if (!clip) return `<button class="audio-placeholder" type="button" disabled aria-label="Play ${escapeHtml(local)}">▶ <span>audio placeholder</span></button>`;
     const button = (take, label) => `<button class="audio-play" type="button" data-audio="${escapeHtml(clip.files[take].file)}" aria-label="${label} pronunciation of ${escapeHtml(local)}">▶ ${label}</button>`;
-    return `<span class="audio-controls">${button("slow", "Slow (0.5×)")}${button("normal", "Normal")}<span class="audio-note">draft synthetic voice</span></span>`;
+    return `<span class="audio-controls">${button("normal", "Play")}<span class="audio-note">draft synthetic voice</span></span>`;
   };
   const photoAlt = (item, index) => `${item.name}${index ? `, photo ${index + 1}` : ""}`;
   const photoCredit = photo => `${photo.author} · ${photo.license} · ${photo.source}`;
