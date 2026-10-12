@@ -380,15 +380,6 @@
       "review": "source-screened; native editorial review pending"
     },
     {
-      "id": "s-faskrudsfjordur",
-      "title": "Visit Austurland page: Fáskrúðsfjörður",
-      "url": "https://www.east.is/en/communities/visit-fjardabyggd/visit-faskrudsfjordur",
-      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
-      "accessed": "2026-10-11",
-      "kind": "primary",
-      "review": "source-screened; native editorial review pending"
-    },
-    {
       "id": "s-djupivogur",
       "title": "Visit Austurland guide: Djúpivogur and the Eggs of Merry Bay",
       "url": "https://www.east.is/en/blog/things-to-do-in-djupivogur-a-complete-guide-to-east-icelands-hidden-gem",
@@ -446,15 +437,6 @@
       "id": "s-foss-a-sidu",
       "title": "Vatnajökull National Park: Lakagígar (the eruption behind Eldhraun): Foss á Síðu and Eldhraun",
       "url": "https://www.vatnajokulsthjodgardur.is/en/areas/lakagigar",
-      "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
-      "accessed": "2026-10-11",
-      "kind": "primary",
-      "review": "source-screened; native editorial review pending"
-    },
-    {
-      "id": "s-vik",
-      "title": "Visit South Iceland page: Vík",
-      "url": "https://www.south.is/en/destinations/towns/vik",
       "scope": "Place name, location and what the place is; hours, prices and booking rules are not taught as fixed.",
       "accessed": "2026-10-11",
       "kind": "primary",

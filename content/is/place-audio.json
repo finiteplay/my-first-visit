@@ -2000,24 +2000,6 @@
       "whisperMatch": 0.84,
       "showInApp": true
     },
-    "faskrudsfjordur": {
-      "local": "Fáskrúðsfjörður",
-      "respelling": "FOWS-kroodhs-fyur-dhur",
-      "kind": "place",
-      "meaning": "Fáskrúðsfjörður",
-      "voice": "piper is_IS-ugla-medium",
-      "generated": "2026-10-11",
-      "status": "draft-synthetic",
-      "files": {
-        "normal": {
-          "file": "assets/audio/faskrudsfjordur_normal.wav",
-          "seconds": 1.24
-        }
-      },
-      "whisperHeard": "fáskrússfjörður",
-      "whisperMatch": 0.93,
-      "showInApp": true
-    },
     "djupivogur": {
       "local": "Djúpivogur",
       "respelling": "DYOO-pih-voh-gur",
@@ -2141,24 +2123,6 @@
         }
       },
       "whisperHeard": "eldhraun",
-      "whisperMatch": 1.0,
-      "showInApp": true
-    },
-    "vik": {
-      "local": "Vík",
-      "respelling": "VEEK",
-      "kind": "place",
-      "meaning": "Vík",
-      "voice": "piper is_IS-ugla-medium",
-      "generated": "2026-10-11",
-      "status": "draft-synthetic",
-      "files": {
-        "normal": {
-          "file": "assets/audio/vik_normal.wav",
-          "seconds": 0.36
-        }
-      },
-      "whisperHeard": "vík",
       "whisperMatch": 1.0,
       "showInApp": true
     },

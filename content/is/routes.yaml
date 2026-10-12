@@ -122,16 +122,14 @@
           "highlights": [
             "Seljalandsfoss, and Gljúfrabúi if your stop is long enough",
             "Skógafoss",
-            "Reynisfjara black-sand beach with its safety rules",
-            "Vík"
+            "Reynisfjara black-sand beach with its safety rules"
           ],
           "ifTired": "Choose the overnight version if you want Jökulsárlón; a same-day trip there is very long.",
           "placeIds": [
             "sight-seljalandsfoss",
             "sight-gljufrabui",
             "sight-skogafoss",
-            "sight-reynisfjara",
-            "sight-vik"
+            "sight-reynisfjara"
           ]
         },
         {
@@ -252,7 +250,7 @@
             "Seljalandsfoss and Gljúfrabúi",
             "Skógafoss, and Kvernufoss if there is time",
             "Reynisfjara, well back from the surf",
-            "Vík, and the Lava Show if it rains"
+            "The Lava Show in Vík if it rains"
           ],
           "ifTired": "Drop Skógafoss's upper trail and Kvernufoss; the base viewpoints are enough.",
           "placeIds": [
@@ -261,7 +259,6 @@
             "sight-skogafoss",
             "sight-kvernufoss",
             "sight-reynisfjara",
-            "sight-vik",
             "sight-lava-show"
           ]
         },
@@ -440,14 +437,12 @@
           "highlights": [
             "Hengifoss and Litlanesfoss hike",
             "Petra's Stone Collection in Stöðvarfjörður, if you want a longer stop",
-            "Fáskrúðsfjörður harbor",
             "Djúpivogur and the Eggs of Merry Bay"
           ],
           "ifTired": "Do the waterfall hike in the morning, then keep the rest to short photo stops.",
           "placeIds": [
             "sight-hengifoss",
             "sight-petras-stone-collection",
-            "sight-faskrudsfjordur",
             "sight-djupivogur"
           ]
         },
@@ -477,7 +472,6 @@
             "Dverghamrar",
             "Foss á Síðu and the Eldhraun moss",
             "Reynisfjara, well back from the surf",
-            "A break in Vík",
             "Lava Show (timed booking)"
           ],
           "ifTired": "Shorten the Svartifoss loop or skip Dverghamrar.",
@@ -486,7 +480,6 @@
             "sight-dverghamrar",
             "sight-foss-a-sidu",
             "sight-reynisfjara",
-            "sight-vik",
             "sight-lava-show"
           ]
         },

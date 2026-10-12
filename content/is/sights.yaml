@@ -1429,48 +1429,6 @@
       }
     },
     {
-      "id": "sight-faskrudsfjordur",
-      "name": "Fáskrúðsfjörður",
-      "local": "Fáskrúðsfjörður",
-      "respelling": "FOWS-kroodhs-fyur-dhur",
-      "region": "East",
-      "nearestCity": "Fáskrúðsfjörður",
-      "category": "Landmark",
-      "tier": "if-you-have-time",
-      "whyGo": "Stop in a small Eastfjords village with a French fishing history and a harbor to stroll.",
-      "timeNeeded": "20–30 minutes",
-      "bestTime": "Daylight; it is an easy stop on the Ring Road.",
-      "tip": "It is a short town walk, so use it as a break rather than a destination.",
-      "linkedItem": "p15",
-      "location": {
-        "latitude": 64.92997,
-        "longitude": -14.00845,
-        "label": "Fáskrúðsfjörður",
-        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
-      },
-      "sourceIds": [
-        "s-faskrudsfjordur"
-      ],
-      "photo": {
-        "id": "photo-faskrudsfjordur",
-        "status": "missing",
-        "brief": "The harbor and fjord from the waterfront; no identifiable people.",
-        "credit": null,
-        "license": null
-      },
-      "reviewedBy": null,
-      "description": [
-        "Fáskrúðsfjörður is a small fishing village on the Eastfjords stretch of the Ring Road, known for the French fishermen who worked these waters in the past. The harbor is a short, flat walk and a good place to stretch your legs.",
-        "It is an easy photo stop, not a day plan. Pair it with Djúpivogur further south, and keep your attention on the fjord road rather than the clock."
-      ],
-      "website": {
-        "url": "https://www.east.is/en/communities/visit-fjardabyggd/visit-faskrudsfjordur",
-        "label": "Visit Austurland page",
-        "kind": "regional",
-        "checkedAt": "2026-10-11"
-      }
-    },
-    {
       "id": "sight-djupivogur",
       "name": "Djúpivogur and the Eggs of Merry Bay",
       "local": "Djúpivogur",
@@ -1761,48 +1719,6 @@
         "url": "https://www.vatnajokulsthjodgardur.is/en/areas/lakagigar",
         "label": "Vatnajökull National Park: Lakagígar (the eruption behind Eldhraun)",
         "kind": "official",
-        "checkedAt": "2026-10-11"
-      }
-    },
-    {
-      "id": "sight-vik",
-      "name": "Vík",
-      "local": "Vík",
-      "respelling": "VEEK",
-      "region": "South Coast",
-      "nearestCity": "Vík",
-      "category": "Landmark",
-      "tier": "worth-it",
-      "whyGo": "Take a short break in the southernmost village in Iceland's mainland, beside Reynisfjara.",
-      "timeNeeded": "30–60 minutes",
-      "bestTime": "Daytime; it is a good base for the south coast.",
-      "tip": "Use Vík as a base or break, not a sight in itself.",
-      "linkedItem": "p15",
-      "location": {
-        "latitude": 63.41882,
-        "longitude": -19.00547,
-        "label": "Vík",
-        "status": "draft-pin from OpenStreetMap geocoding; verify entrance before release"
-      },
-      "sourceIds": [
-        "s-vik"
-      ],
-      "photo": {
-        "id": "photo-vik",
-        "status": "missing",
-        "brief": "The village and church from a viewpoint; no identifiable people.",
-        "credit": null,
-        "license": null
-      },
-      "reviewedBy": null,
-      "description": [
-        "Vík í Mýrdal is a small village on the south coast, close to Reynisfjara and the Reynisdrangar sea stacks. It has a gas station, shops, a church on the hill and indoor attractions such as the Lava Show.",
-        "It is more useful than it is spectacular: a place to stop, restock and check the weather before the next stretch of the Ring Road."
-      ],
-      "website": {
-        "url": "https://www.south.is/en/destinations/towns/vik",
-        "label": "Visit South Iceland page",
-        "kind": "regional",
         "checkedAt": "2026-10-11"
       }
     },
