@@ -481,9 +481,10 @@ body.night .minimap-roads { stroke: #4b5c60; }
 .checklist input:checked + span { opacity: .55; text-decoration: line-through; }
 @media (max-width: 640px) { .article-hero img { max-height: 280px; } .key-points { padding: 14px 16px; } }
 
-/* Pool feature: a contained, two-column block like the weather feature, copy first */
-.pool-feature { grid-template-columns: .95fr 1.05fr; padding-top: 10px; padding-bottom: 20px; }
+/* Pool feature: a contained, centred two-column block like the weather feature, copy first, image filling the row */
+.pool-feature { grid-template-columns: .95fr 1.05fr; margin-inline: auto; padding: 20px 0 70px; align-items: stretch; }
 .pool-feature .feature-image { min-height: 440px; order: 2; }
-.pool-feature .feature-image img { min-height: 440px; max-height: 520px; border-radius: 16px; }
-.pool-feature .feature-copy { order: 1; }
-@media (max-width: 900px) { .pool-feature .feature-image { order: 1; min-height: 300px; } .pool-feature .feature-image img { min-height: 300px; } .pool-feature .feature-copy { order: 2; } }
+.pool-feature .feature-image img { position: absolute; inset: 0; height: 100%; min-height: 0; max-height: none; border-radius: 0 16px 16px 0; }
+.pool-feature .feature-copy { order: 1; display: flex; flex-direction: column; justify-content: center; padding: clamp(32px, 5vw, 72px); }
+.pool-feature h2 { font-size: clamp(2rem, 3.4vw, 3.2rem); line-height: 1.1; }
+@media (max-width: 900px) { .pool-feature { grid-template-columns: 1fr; padding-bottom: 50px; } .pool-feature .feature-image { order: 1; min-height: 300px; } .pool-feature .feature-image img { border-radius: 16px; } .pool-feature .feature-copy { order: 2; } }
