@@ -135,6 +135,65 @@
       ${item.liveChecks ? `<h2>Check live</h2>${list(item.liveChecks)}` : ""}`;
   }
 
+  // Where a place is: a Google Maps link plus a small map with one dot. Places near the capital use
+  // the local outline from map.yaml `regions`; everything else uses the country outline.
+  const mapsUrl = item => `https://www.google.com/maps/search/?api=1&query=${item.location.latitude},${item.location.longitude}`;
+  const kmBetween = (lon1, lat1, lon2, lat2) => {
+    const rad = Math.PI / 180, dLat = (lat2 - lat1) * rad, dLon = (lon2 - lon1) * rad;
+    const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat1 * rad) * Math.cos(lat2 * rad) * Math.sin(dLon / 2) ** 2;
+    return 12742 * Math.asin(Math.sqrt(a));
+  };
+
+  function placeMinimap(item) {
+    const map = data.map, loc = item.location;
+    if (!map?.outline || !loc) return "";
+    const region = (map.regions || []).find(r => kmBetween(loc.longitude, loc.latitude, r.center[0], r.center[1]) <= r.radiusKm);
+    const W = region ? 520 : 400, PAD = region ? 0 : 20;
+    let west, south, east, north, rings, K, context = "", areaName;
+    if (region) {
+      [west, south, east, north] = region.bbox;
+      rings = region.land;
+      K = Math.cos(region.center[1] * Math.PI / 180);
+      areaName = region.title;
+    } else {
+      const lons = map.outline.map(p => p[0]), lats = map.outline.map(p => p[1]);
+      west = Math.min(...lons); east = Math.max(...lons); south = Math.min(...lats); north = Math.max(...lats);
+      rings = [map.outline];
+      K = Math.cos(65 * Math.PI / 180);
+      areaName = "Iceland";
+    }
+    const scale = (W - 2 * PAD) / ((east - west) * K);
+    const H = Math.round((north - south) * scale + 2 * PAD);
+    const x = lon => (lon - west) * K * scale + PAD, y = lat => (north - lat) * scale + PAD;
+    const path = points => points.map((p, i) => `${i ? "L" : "M"}${x(p[0]).toFixed(1)} ${y(p[1]).toFixed(1)}`).join(" ");
+    if (region) {
+      context = data.places.filter(p => p.id !== item.id && p.location && p.location.longitude >= west && p.location.longitude <= east && p.location.latitude >= south && p.location.latitude <= north)
+        .map(p => `<circle class="minimap-other" cx="${x(p.location.longitude).toFixed(1)}" cy="${y(p.location.latitude).toFixed(1)}" r="4.5"/>`).join("");
+    } else {
+      const ring = (map.lines || []).find(l => l.style === "ring");
+      if (ring) context = `<path class="minimap-road" d="${path(ring.points)}"/>`;
+    }
+    const cx = x(loc.longitude), cy = y(loc.latitude);
+    const anchor = cx > W * 0.6 ? "end" : "start";
+    const lx = cx + (anchor === "end" ? -14 : 14), ly = Math.min(Math.max(cy + 5, 18), H - 8);
+    const credit = region ? region.credit : map.credit;
+    return `<div class="place-where">
+      <h2>Where it is</h2>
+      <figure class="minimap">
+        <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${escapeHtml(item.name)} on a small map of ${escapeHtml(areaName)}">
+          <rect class="minimap-sea" width="${W}" height="${H}"/>
+          <path class="minimap-land" d="${rings.map(r => path(r) + "Z").join(" ")}"/>
+          ${context}
+          <circle class="minimap-halo" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="15"/>
+          <circle class="minimap-dot" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="7.5"/>
+          <text class="minimap-label" x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="${anchor}">${escapeHtml(item.local)}</text>
+        </svg>
+        <figcaption>${escapeHtml(areaName)}. Approximate position, not for navigation. ${escapeHtml(credit)}</figcaption>
+      </figure>
+      <p><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a></p>
+    </div>`;
+  }
+
   function placeHtml(item) {
     const gallery = selectedPhotos[item.id] || [];
     const photo = gallery[0];
@@ -151,6 +210,7 @@
       ${placeRank[item.id] ? `<p class="place-rank"><strong>Suggested order:</strong> #${placeRank[item.id]} in this starter list</p>` : ""}
       ${detailParagraphs}
       <p class="place-time"><strong>Time to allow:</strong> ${escapeHtml(item.timeNeeded)}</p>
+      ${placeMinimap(item)}
       <div class="callout"><strong>Photo and audio status</strong><p>${photo ? "This destination-specific photo is a licensing candidate and still needs final rights, accuracy and accessibility review." : "No destination-specific photo is bundled yet. This card intentionally remains an explicit pending state rather than showing an unrelated image."}${placeAudio[item.local] ? ` Pronunciation audio is a draft synthetic voice, not a native-speaker recording, and has not had native review. ${escapeHtml(data.placeAudio.credit)}.` : " Pronunciation audio is not available yet; the control is a placeholder until a native recording or approved voice is added."}</p></div>`;
   }
 
@@ -215,7 +275,7 @@
     const y = lat => ((latMax - lat) * scale + PAD).toFixed(1);
     const path = points => points.map((p, i) => `${i ? "L" : "M"}${x(p[0])} ${y(p[1])}`).join(" ");
     const marker = point => {
-      const cx = x(point.lon), cy = y(point.lat);
+      const cx = +x(point.lon), cy = +y(point.lat);
       const shape = {
         town: `<circle class="mk-town" cx="${cx}" cy="${cy}" r="7"/>`,
         gc: `<circle class="mk-gc" cx="${cx}" cy="${cy}" r="5.5"/>`,

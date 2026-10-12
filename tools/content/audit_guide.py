@@ -182,6 +182,12 @@ def map_audit(map_data, evidence_ids):
             if not inside(lon, lat):
                 errors.append(f"map.yaml line {line.get('id')}: a waypoint is outside the bounding box.")
                 break
+    for region in map_data.get("regions", []):
+        west, south, east, north = region.get("bbox", [0, 0, 0, 0])
+        if not region.get("land") or not str(region.get("credit", "")).strip():
+            errors.append(f"map.yaml region {region.get('id')}: land rings and a data credit are required.")
+        if not (west < region.get("center", [999, 999])[0] < east and south < region.get("center", [999, 999])[1] < north):
+            errors.append(f"map.yaml region {region.get('id')}: center is outside its bbox.")
     unknown = set(map_data.get("sourceIds", [])) - evidence_ids
     if unknown:
         errors.append(f"map.yaml: unknown source IDs {sorted(unknown)}.")

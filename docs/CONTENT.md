@@ -267,6 +267,19 @@ that no free photograph covers.
 Each "Iceland in numbers" tile has an `icon` (an emoji, hidden from screen readers) so the facts are
 easy to scan.
 
+### Place location: Google Maps link and minimap
+
+Status: **built for the Iceland draft.**
+
+Every place card ends with "Where it is": a small SVG map with one highlighted dot and an "Open in
+Google Maps" link built from the place's `location` pin (`sights.yaml`). No network is needed for the
+map. Places within `radiusKm` of a region centre in `map.yaml` `regions` (Iceland: the Reykjavik area,
+15 km) get that local outline, with the other places in the area as grey dots; every other place gets
+the country outline and the main road. Pins are still "draft-pin" until someone verifies the entrance
+and accessibility. A new country needs its own `regions` entry only if it has a main city with sights
+close by; build it with `tools/maps/build_region_outline.py` from OSM coastline ways (ODbL, credit
+shown under the map; needs `shapely` in the tooling venv).
+
 ### Word page ("Say it in Icelandic")
 
 Status: **built for the Iceland draft as its own page, `local-site/words.html`; checked by

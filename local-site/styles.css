@@ -329,3 +329,29 @@ body.night .map-label.gc { fill: #f2c561; }
 .volcano-body .audio-play:hover, .volcano-body .audio-play:focus-visible { background: var(--moss); color: var(--white); }
 .volcano-body .audio-note { color: var(--muted); font-size: .72rem; }
 @media (max-width: 760px) { .volcano-card { grid-template-columns: 1fr; padding: 16px; } }
+
+/* Place minimap and Google Maps link */
+.place-where { margin: 28px 0; }
+#reader-article .place-where h2 { font-size: 1.25rem; margin: 0 0 10px; }
+.minimap { margin: 0 0 12px; max-width: 520px; }
+.minimap svg { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; }
+.minimap figcaption { margin-top: 6px; color: var(--muted); font-size: .75rem; }
+.minimap-sea { fill: #dbe8ea; }
+.minimap-land { fill: #f4f1e8; stroke: #8fa3a1; stroke-width: 1.5; stroke-linejoin: round; fill-rule: evenodd; }
+.minimap-road { fill: none; stroke: #1d4a53; stroke-width: 3; stroke-dasharray: 2 8; stroke-linecap: round; opacity: .6; }
+.minimap-other { fill: #9aa9a8; stroke: #fff; stroke-width: 1.5; }
+.minimap-halo { fill: rgba(217, 79, 40, .22); }
+.minimap-dot { fill: #d94f28; stroke: #fff; stroke-width: 3; }
+.minimap-label { font: 700 17px system-ui, sans-serif; fill: #102b31; paint-order: stroke; stroke: #f4f1e8; stroke-width: 5px; stroke-linejoin: round; }
+body.night .minimap-sea { fill: #14262a; }
+body.night .minimap-land { fill: #26363a; stroke: #5d777a; }
+body.night .minimap-road { stroke: #9fd3dc; }
+body.night .minimap-other { fill: #6f8789; stroke: #26363a; }
+body.night .minimap-label { fill: #e8f1f2; stroke: #26363a; }
+.maps-link { display: inline-block; padding: 8px 16px; border: 1px solid var(--moss); border-radius: 999px; color: var(--moss); font-weight: 700; text-decoration: none; }
+.maps-link:hover, .maps-link:focus-visible { background: var(--moss); color: var(--white); }
+
+/* Tighter gap between the intro and the basics section */
+.orientation { padding-bottom: 36px; }
+.basics { padding-top: 36px; scroll-margin-top: 70px; }
+@media (max-width: 760px) { .orientation { padding-bottom: 24px; } .basics { padding-top: 24px; } }
