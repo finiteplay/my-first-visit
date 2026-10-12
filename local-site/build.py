@@ -6,9 +6,21 @@ import json
 from pathlib import Path
 
 
+import os
+import shutil
+
 ROOT = Path(__file__).resolve().parents[1]
 PACK = ROOT / "content" / "is"
-OUTPUT = Path(__file__).resolve().parent / "content.js"
+SOURCE = Path(__file__).resolve().parent
+# MFV_SITE_OUT builds a complete copy of the site (pages, scripts, styles, assets, content.js) into another folder, for
+# deployment (tools/site/build_site.py); without it the build updates local-site in place for the local preview.
+OUT_DIR = Path(os.environ["MFV_SITE_OUT"]).resolve() if os.environ.get("MFV_SITE_OUT") else SOURCE
+if OUT_DIR != SOURCE:
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    for name in ("index.html", "words.html", "app.js", "words.js", "styles.css"):
+        shutil.copyfile(SOURCE / name, OUT_DIR / name)
+    shutil.copytree(SOURCE / "assets", OUT_DIR / "assets", dirs_exist_ok=True)
+OUTPUT = OUT_DIR / "content.js"
 
 
 def read_json(name: str):
@@ -78,8 +90,6 @@ def build_vocabulary():
 # content-hashed key, and the site reads the files from MFV_MEDIA_BASE (default "media/", filled by
 # tools/media/media_store.py sync-local; in production the public bucket URL, for example
 # https://media.finiteplay.org/myfirstvisit/).
-import os
-
 MEDIA_BASE = os.environ.get("MFV_MEDIA_BASE", "media/")
 if not MEDIA_BASE.endswith("/"):
     MEDIA_BASE += "/"
@@ -138,7 +148,7 @@ OUTPUT.write_text(
     + ";\n",
     encoding="utf-8",
 )
-print(f"Built {OUTPUT.relative_to(ROOT)}")
+print(f"Built {OUTPUT}")
 
 
 

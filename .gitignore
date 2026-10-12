@@ -35,3 +35,6 @@ local-site/media/
 local-site/assets/places/
 local-site/assets/audio/
 local-site/assets/volcano/
+
+# Generated deployable site
+dist/
