@@ -280,6 +280,11 @@ and accessibility. A new country needs its own `regions` entry only if it has a 
 close by; build it with `tools/maps/build_region_outline.py` from OSM coastline ways (ODbL, credit
 shown under the map; needs `shapely` in the tooling venv).
 
+Each place also has a `website` ({url, label, kind, checkedAt}) shown beside the map link: the operator's own site
+when there is one, otherwise the managing authority (national park, Environment Agency, Safetravel) or the
+regional tourism board, with the label saying which. Do not link a booking marketplace or a review site, and
+re-check each URL (HTTP 200, right page) before release.
+
 ### Word page ("Say it in Icelandic")
 
 Status: **built for the Iceland draft as its own page, `local-site/words.html`; checked by

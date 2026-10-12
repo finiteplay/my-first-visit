@@ -355,3 +355,5 @@ body.night .minimap-label { fill: #e8f1f2; stroke: #26363a; }
 .orientation { padding-bottom: 36px; }
 .basics { padding-top: 36px; scroll-margin-top: 70px; }
 @media (max-width: 760px) { .orientation { padding-bottom: 24px; } .basics { padding-top: 24px; } }
+
+.place-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; }

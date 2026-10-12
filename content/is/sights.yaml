@@ -31,13 +31,19 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://reykjavik.is/en/laugardalslaug-pool",
+        "label": "City of Reykjavík page",
+        "kind": "operator",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-thingvellir",
       "name": "Þingvellir National Park",
       "local": "Þingvellir",
-    "respelling": "THIHNK-veht-lihr",
+      "respelling": "THIHNK-veht-lihr",
       "region": "Golden Circle",
       "nearestCity": "Selfoss",
       "category": "Nature",
@@ -63,7 +69,13 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.thingvellir.is/en",
+        "label": "Official park website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-gullfoss",
@@ -95,7 +107,13 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.umhverfisstofnun.is/english/visiting-iceland/protected-areas/south/gullfoss/",
+        "label": "Environment Agency of Iceland page",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-geysir",
@@ -127,7 +145,13 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.umhverfisstofnun.is/english/visiting-iceland/protected-areas/south/geysir-area/",
+        "label": "Environment Agency of Iceland page",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-hallgrimskirkja",
@@ -159,7 +183,13 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.hallgrimskirkja.is/",
+        "label": "Official church website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-harpa",
@@ -191,7 +221,13 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.harpa.is/en",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-national-museum",
@@ -223,7 +259,13 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.thjodminjasafn.is/en",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-seljalandsfoss",
@@ -255,7 +297,13 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.south.is/en/destinations/nature/waterfalls/seljalandsfoss-waterfall",
+        "label": "Visit South Iceland page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-skogafoss",
@@ -287,7 +335,13 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.south.is/en/destinations/nature/nature/skogafoss-waterfall",
+        "label": "Visit South Iceland page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-reynisfjara",
@@ -319,7 +373,13 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://safetravel.is/travel-conditions/blackbeach-safety/",
+        "label": "Safetravel: black beach safety",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-jokulsarlon",
@@ -351,7 +411,13 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.vatnajokulsthjodgardur.is/en",
+        "label": "Vatnajökull National Park website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-godafoss",
@@ -383,7 +449,13 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.umhverfisstofnun.is/english/visiting-iceland/protected-areas/north-east/godafoss-in-thingeyjarsveit",
+        "label": "Environment Agency of Iceland page",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-myvatn",
@@ -415,7 +487,13 @@
         "credit": null,
         "license": null
       },
-      "reviewedBy": null
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.northiceland.is/en/destinations/towns/myvatn",
+        "label": "Visit North Iceland page",
+        "kind": "regional",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-perlan",
@@ -431,10 +509,29 @@
       "bestTime": "A strong rainy-day or arrival-day choice; check current opening times.",
       "tip": "Treat it as context for the real landscape, not a replacement for getting outside.",
       "linkedItem": "museum",
-      "location": {"latitude": 64.1296, "longitude": -21.9195, "label": "Öskjuhlíð entrance area", "status": "draft-pin; verify entrance before release"},
-      "sourceIds": ["tripadvisor-perlan"],
-      "photo": {"id": "photo-perlan", "status": "missing", "brief": "Authorized exterior or observation-deck image.", "credit": null, "license": null},
-      "reviewedBy": null
+      "location": {
+        "latitude": 64.1296,
+        "longitude": -21.9195,
+        "label": "Öskjuhlíð entrance area",
+        "status": "draft-pin; verify entrance before release"
+      },
+      "sourceIds": [
+        "tripadvisor-perlan"
+      ],
+      "photo": {
+        "id": "photo-perlan",
+        "status": "missing",
+        "brief": "Authorized exterior or observation-deck image.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "website": {
+        "url": "https://perlan.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-whales",
@@ -450,10 +547,29 @@
       "bestTime": "A useful wet-weather stop; check current hours and admission.",
       "tip": "Combine with Harpa, Aurora Reykjavík and FlyOver Iceland if their schedules line up.",
       "linkedItem": "museum",
-      "location": {"latitude": 64.1519, "longitude": -21.9488, "label": "Fiskislóð harbor area", "status": "draft-pin; verify entrance before release"},
-      "sourceIds": ["tripadvisor-whales"],
-      "photo": {"id": "photo-whales", "status": "missing", "brief": "Licensed exterior or model display image; avoid reproducing museum materials without permission.", "credit": null, "license": null},
-      "reviewedBy": null
+      "location": {
+        "latitude": 64.1519,
+        "longitude": -21.9488,
+        "label": "Fiskislóð harbor area",
+        "status": "draft-pin; verify entrance before release"
+      },
+      "sourceIds": [
+        "tripadvisor-whales"
+      ],
+      "photo": {
+        "id": "photo-whales",
+        "status": "missing",
+        "brief": "Licensed exterior or model display image; avoid reproducing museum materials without permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.whalesoficeland.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-aurora-reykjavik",
@@ -469,10 +585,29 @@
       "bestTime": "Before an aurora tour or on a cloudy evening; check current hours.",
       "tip": "It explains the lights but cannot guarantee that you will see them outdoors.",
       "linkedItem": "aurora",
-      "location": {"latitude": 64.1521, "longitude": -21.9476, "label": "Harbor district entrance area", "status": "draft-pin; verify entrance before release"},
-      "sourceIds": ["tripadvisor-aurora"],
-      "photo": {"id": "photo-aurora-reykjavik", "status": "missing", "brief": "Authorized exterior or exhibition image.", "credit": null, "license": null},
-      "reviewedBy": null
+      "location": {
+        "latitude": 64.1521,
+        "longitude": -21.9476,
+        "label": "Harbor district entrance area",
+        "status": "draft-pin; verify entrance before release"
+      },
+      "sourceIds": [
+        "tripadvisor-aurora"
+      ],
+      "photo": {
+        "id": "photo-aurora-reykjavik",
+        "status": "missing",
+        "brief": "Authorized exterior or exhibition image.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "website": {
+        "url": "https://aurorareykjavik.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-flyover",
@@ -488,10 +623,29 @@
       "bestTime": "A convenient harbor stop when outdoor weather is poor; reserve a time.",
       "tip": "Choose it for theatrical immersion, not as a substitute for an actual viewpoint.",
       "linkedItem": "harpa",
-      "location": {"latitude": 64.1538, "longitude": -21.9553, "label": "Grandi harbor district", "status": "draft-pin; verify entrance before release"},
-      "sourceIds": ["tripadvisor-flyover"],
-      "photo": {"id": "photo-flyover", "status": "missing", "brief": "Authorized exterior only; ride imagery may be restricted.", "credit": null, "license": null},
-      "reviewedBy": null
+      "location": {
+        "latitude": 64.1538,
+        "longitude": -21.9553,
+        "label": "Grandi harbor district",
+        "status": "draft-pin; verify entrance before release"
+      },
+      "sourceIds": [
+        "tripadvisor-flyover"
+      ],
+      "photo": {
+        "id": "photo-flyover",
+        "status": "missing",
+        "brief": "Authorized exterior only; ride imagery may be restricted.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "website": {
+        "url": "https://www.flyovericeland.com/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     },
     {
       "id": "sight-mink",
@@ -507,10 +661,29 @@
       "bestTime": "Book ahead; this is a timed small-group experience.",
       "tip": "Confirm what the session includes, including image delivery and total price, before booking.",
       "linkedItem": "capital",
-      "location": {"latitude": 64.1466, "longitude": -21.9272, "label": "Laugavegur studio area", "status": "draft-pin; verify entrance before release"},
-      "sourceIds": ["tripadvisor-mink"],
-      "photo": {"id": "photo-mink", "status": "missing", "brief": "Only use authorized studio imagery with participant permission.", "credit": null, "license": null},
-      "reviewedBy": null
+      "location": {
+        "latitude": 64.1466,
+        "longitude": -21.9272,
+        "label": "Laugavegur studio area",
+        "status": "draft-pin; verify entrance before release"
+      },
+      "sourceIds": [
+        "tripadvisor-mink"
+      ],
+      "photo": {
+        "id": "photo-mink",
+        "status": "missing",
+        "brief": "Only use authorized studio imagery with participant permission.",
+        "credit": null,
+        "license": null
+      },
+      "reviewedBy": null,
+      "website": {
+        "url": "https://mink.is/",
+        "label": "Official website",
+        "kind": "official",
+        "checkedAt": "2026-10-11"
+      }
     }
   ]
 }

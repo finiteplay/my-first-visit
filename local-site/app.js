@@ -190,7 +190,7 @@
         </svg>
         <figcaption>${escapeHtml(areaName)}. Approximate position, not for navigation. ${escapeHtml(credit)}</figcaption>
       </figure>
-      <p><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a></p>
+      <p class="place-links"><a class="maps-link" href="${escapeHtml(mapsUrl(item))}" target="_blank" rel="noopener">Open ${escapeHtml(item.local)} in Google Maps <span aria-hidden="true">↗</span></a>${item.website ? `<a class="maps-link" href="${escapeHtml(item.website.url)}" target="_blank" rel="noopener">${escapeHtml(item.website.label)} <span aria-hidden="true">↗</span></a>` : ""}</p>
     </div>`;
   }
 
