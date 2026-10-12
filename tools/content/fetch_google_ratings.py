@@ -19,6 +19,7 @@ import json
 import math
 import os
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -36,18 +37,31 @@ def km(a, b) -> float:
     return 6371 * 2 * math.asin(math.sqrt(h))
 
 
-def search(key: str, item: dict) -> dict | None:
+BUSINESS_WORDS = ("restaurant", "campground", "camping", "hotel", "hostel", "cafe", "café", "bar ", "guesthouse", "apartment")
+
+
+def query(key: str, text: str, item: dict) -> list[dict]:
     loc = item["location"]
-    body = {"textQuery": f"{item['local']} {item.get('nearestCity', '')} Iceland".strip(), "maxResultCount": 3,
+    body = {"textQuery": text, "maxResultCount": 5,
             "locationBias": {"circle": {"center": {"latitude": loc["latitude"], "longitude": loc["longitude"]}, "radius": 2000.0}}}
     req = urllib.request.Request(ENDPOINT, data=json.dumps(body).encode(), method="POST",
                                  headers={"Content-Type": "application/json", "X-Goog-Api-Key": key, "X-Goog-FieldMask": FIELDS})
     with urllib.request.urlopen(req, timeout=30) as r:
-        places = json.load(r).get("places", [])
-    here = (loc["latitude"], loc["longitude"])
-    near = [p for p in places if "location" in p and km(here, (p["location"]["latitude"], p["location"]["longitude"])) <= MAX_KM]
-    rated = [p for p in near if p.get("rating") is not None and p.get("userRatingCount")]
-    return max(rated, key=lambda p: p["userRatingCount"]) if rated else None
+        return json.load(r).get("places", [])
+
+
+def search(key: str, item: dict) -> dict | None:
+    """Best rated-and-reviewed match near our coordinates; tries the local name, then the English name."""
+    here = (item["location"]["latitude"], item["location"]["longitude"])
+    ours = (item["name"] + " " + item["local"]).lower()
+    for text in (f"{item['local']} {item.get('nearestCity', '')} Iceland".strip(), f"{item['name']} Iceland"):
+        near = [p for p in query(key, text, item) if "location" in p
+                and km(here, (p["location"]["latitude"], p["location"]["longitude"])) <= MAX_KM]
+        near = [p for p in near if not any(w in p.get("displayName", {}).get("text", "").lower() and w not in ours for w in BUSINESS_WORDS)]
+        rated = [p for p in near if p.get("rating") is not None and p.get("userRatingCount")]
+        if rated:
+            return max(rated, key=lambda p: p["userRatingCount"])
+    return None
 
 
 def main() -> int:
@@ -74,7 +88,15 @@ def main() -> int:
             continue
         try:
             hit = search(key, item)
-        except Exception as e:  # network or quota problems: report and continue
+        except urllib.error.HTTPError as e:  # Google explains key, billing and API-enablement problems in the body
+            detail = ""
+            try:
+                detail = json.load(e).get("error", {}).get("message", "")
+            except Exception:
+                pass
+            review.append((item["id"], f"HTTP {e.code}: {detail}"))
+            continue
+        except Exception as e:  # network problems: report and continue
             review.append((item["id"], f"error {e}"))
             continue
         if not hit:
