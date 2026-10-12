@@ -264,6 +264,14 @@ morning", `dailyChecks`), the weather section, the top of every route, and every
 with roads only for places outside the capital area and the safety link only for nature stops). A playbook or
 route `liveChecks` entry with a real URL is shown as a link. A new country needs the equivalent three services.
 
+### Place rating and category filters
+
+Every place shows our editorial rating, derived from its `tier` in `sights.yaml`: three stars for `must-see`,
+two for `worth-it`, one for `if-you-have-time`. It is our judgment of a first-time visitor's value, not a
+traveler or review-site score, and it needs the reviewer's sign-off like any other draft claim. The place grid is
+ordered by rating, then by the original starter-list rank, then by name. The category buttons are built from the
+places' `category` values with counts; no hand-maintained list is needed for a new category.
+
 ### Country map and number tiles
 
 Status: **built for the Iceland draft; the map is checked by `audit_guide.py`.**

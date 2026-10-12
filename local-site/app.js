@@ -79,17 +79,46 @@
       </button>`).join("");
   }
 
+  // Our editorial rating comes from each place's `tier`: three stars is a must-see, one star is for spare time.
+  const RATINGS = {
+    "must-see": { stars: 3, label: "Must-see" },
+    "worth-it": { stars: 2, label: "Worth it" },
+    "if-you-have-time": { stars: 1, label: "If you have time" }
+  };
+  const ratingOf = item => RATINGS[item.tier] || RATINGS["if-you-have-time"];
+  const ratingHtml = item => {
+    const rating = ratingOf(item);
+    return `<span class="rating" role="img" aria-label="Our rating: ${rating.stars} out of 3, ${rating.label}"><span class="stars" aria-hidden="true">${"★".repeat(rating.stars)}<span class="stars-off">${"★".repeat(3 - rating.stars)}</span></span> <span class="rating-label">${rating.label}</span></span>`;
+  };
+  let placeCategory = "all";
+
+  function renderPlaceFilters() {
+    const host = document.querySelector("#place-filters");
+    if (!host) return;
+    const counts = data.places.reduce((map, item) => map.set(item.category, (map.get(item.category) || 0) + 1), new Map());
+    const categories = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    host.innerHTML = [["all", "All", data.places.length], ...categories.map(([name, count]) => [name, name, count])].map(([value, label, count]) =>
+      `<button class="filter${value === placeCategory ? " active" : ""}" type="button" data-category="${escapeHtml(value)}" aria-pressed="${value === placeCategory}">${escapeHtml(label)} <span class="filter-count">${count}</span></button>`).join("");
+  }
+
   function renderPlaces(query = "") {
     const term = query.trim().toLocaleLowerCase();
-    const items = data.places.filter(item => !term || [item.name, item.region, item.category, item.whyGo].join(" ").toLocaleLowerCase().includes(term)).sort((a, b) => (placeRank[a.id] || 999) - (placeRank[b.id] || 999));
+    const tierOrder = { "must-see": 0, "worth-it": 1, "if-you-have-time": 2 };
+    const items = data.places
+      .filter(item => placeCategory === "all" || item.category === placeCategory)
+      .filter(item => !term || [item.name, item.region, item.category, item.whyGo].join(" ").toLocaleLowerCase().includes(term))
+      .sort((a, b) => (tierOrder[a.tier] ?? 3) - (tierOrder[b.tier] ?? 3) || (placeRank[a.id] || 999) - (placeRank[b.id] || 999) || a.name.localeCompare(b.name));
     placeGrid.innerHTML = items.map(item => `
       <article class="place-card" data-open="place:${escapeHtml(item.id)}" tabindex="0" role="button" aria-label="Open place card for ${escapeHtml(item.name)}">
         ${selectedPhotos[item.id]?.length ? `<img class="place-card-image" src="${escapeHtml(selectedPhotos[item.id][0].file)}" alt="${escapeHtml(photoAlt(item, 0))}" style="${escapeHtml(photoStyle(selectedPhotos[item.id][0]))}" width="480" height="320" loading="lazy">` : ""}
-        <span class="region">${placeRank[item.id] ? `#${placeRank[item.id]} suggested · ` : ""}${escapeHtml(item.region)} · ${escapeHtml(item.category)}</span>
+        <span class="region">${escapeHtml(item.region)} · ${escapeHtml(item.category)}</span>
+        ${ratingHtml(item)}
         <h3>${escapeHtml(item.name)}</h3>
         <p>${escapeHtml(item.whyGo)}</p>
         <span class="time">${escapeHtml(item.timeNeeded)}</span>
-      </article>`).join("") || `<p class="place-card">No places match that search.</p>`;
+      </article>`).join("") || `<p class="place-card">No places match that filter or search.</p>`;
+    const count = document.querySelector("#place-count");
+    if (count) count.textContent = `${items.length} of ${data.places.length} places`;
   }
 
   const list = (items, className = "") => items?.length ? `<ul class="${className}">${items.map(value => `<li>${escapeHtml(typeof value === "string" ? value : value.label || value.name)}</li>`).join("")}</ul>` : "";
@@ -232,6 +261,7 @@
         <div><span class="name-label">Say it like this for now</span><strong>${escapeHtml(item.respelling)}</strong></div>
         ${audioControls(item.local)}
       </div>
+      <p class="place-rating"><strong>Our rating:</strong> ${ratingHtml(item)}</p>
       ${placeRank[item.id] ? `<p class="place-rank"><strong>Suggested order:</strong> #${placeRank[item.id]} in this starter list</p>` : ""}
       ${detailParagraphs}
       <p class="place-time"><strong>Time to allow:</strong> ${escapeHtml(item.timeNeeded)}</p>
@@ -279,6 +309,13 @@
     renderPlaybooks(button.dataset.filter);
   }));
   document.querySelector("#place-search").addEventListener("input", event => renderPlaces(event.target.value));
+  document.querySelector("#place-filters")?.addEventListener("click", event => {
+    const button = event.target.closest("[data-category]");
+    if (!button) return;
+    placeCategory = button.dataset.category;
+    renderPlaceFilters();
+    renderPlaces(document.querySelector("#place-search").value);
+  });
   document.querySelector(".theme-button").addEventListener("click", () => document.body.classList.toggle("night"));
   document.querySelector(".menu-button").addEventListener("click", event => {
     const nav = document.querySelector("#primary-nav");
@@ -409,6 +446,7 @@
   renderVolcano();
   renderPlaybooks();
   renderRoutes();
+  renderPlaceFilters();
   renderPlaces();
 
   let currentAudio = null;
