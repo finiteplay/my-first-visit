@@ -42,6 +42,10 @@ that mirrors the public bucket. Use `tools/media/media_store.py`: `ingest` after
 to fill the git-ignored `local-site/media/` for the preview, `upload --apply` to publish to the bucket. The site reads
 media from `MFV_MEDIA_BASE` (default `media/`) when it is built.
 
+The tool re-encodes everything it serves: photos to 1440 px WebP (q80, sRGB, metadata stripped) plus a 640 px card copy,
+audio to trimmed, peak-normalised AAC mono 48 kbit/s `.m4a`. Originals stay in the store under `<cc>/originals/`. After
+a successful `ingest`, `prune-store is --apply` removes superseded served files.
+
 ## Publisher
 
 [FinitePlay](https://finiteplay.org)
