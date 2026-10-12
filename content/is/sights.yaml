@@ -40,7 +40,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 31,
+        "rank": 38,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -84,7 +84,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 20,
+        "rank": 12,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -172,7 +172,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 21,
+        "rank": 20,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -216,7 +216,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 43,
+        "rank": 47,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -260,7 +260,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 39,
+        "rank": 42,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -304,7 +304,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 46,
+        "rank": 58,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -348,7 +348,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 17,
+        "rank": 16,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -392,7 +392,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 13,
+        "rank": 9,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -436,7 +436,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 23,
+        "rank": 31,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -568,7 +568,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 42,
+        "rank": 46,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -710,7 +710,7 @@
       },
       "score": {
         "stars": 4.4,
-        "rank": 52,
+        "rank": 55,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -763,7 +763,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 28,
+        "rank": 27,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -860,7 +860,7 @@
       },
       "score": {
         "stars": 4.3,
-        "rank": 56,
+        "rank": 43,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -913,7 +913,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 15,
+        "rank": 14,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1003,7 +1003,7 @@
       ],
       "score": {
         "stars": 4.5,
-        "rank": 49,
+        "rank": 50,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1060,7 +1060,7 @@
       },
       "score": {
         "stars": 3.9,
-        "rank": 24,
+        "rank": 23,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1073,7 +1073,7 @@
       "region": "Snæfellsnes",
       "nearestCity": "Búðir",
       "category": "Nature",
-      "tier": "if-you-have-time",
+      "tier": "worth-it",
       "whyGo": "Look for seals resting on the rocks of a golden-sand beach on the south Snæfellsnes coast.",
       "timeNeeded": "30–45 minutes",
       "bestTime": "Calm weather and daylight; seals are more often seen at some tides.",
@@ -1108,7 +1108,7 @@
       },
       "score": {
         "stars": 4.4,
-        "rank": 50,
+        "rank": 34,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1165,7 +1165,7 @@
       },
       "score": {
         "stars": 4.4,
-        "rank": 51,
+        "rank": 52,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1222,7 +1222,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 16,
+        "rank": 15,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1270,7 +1270,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 34,
+        "rank": 21,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1318,7 +1318,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 35,
+        "rank": 41,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1331,7 +1331,7 @@
       "region": "Snæfellsnes",
       "nearestCity": "Grundarfjörður",
       "category": "Nature",
-      "tier": "worth-it",
+      "tier": "must-see",
       "whyGo": "See a small waterfall in front of Kirkjufell, a mountain shaped like a church steeple.",
       "timeNeeded": "25–40 minutes",
       "bestTime": "Daylight with good visibility; it is a classic view, so it can be busy.",
@@ -1375,7 +1375,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 48,
+        "rank": 17,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1432,7 +1432,7 @@
       },
       "score": {
         "stars": 4.3,
-        "rank": 54,
+        "rank": 53,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1489,7 +1489,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 14,
+        "rank": 13,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1537,7 +1537,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 44,
+        "rank": 48,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1585,7 +1585,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 40,
+        "rank": 30,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1643,7 +1643,7 @@
       },
       "score": {
         "stars": 4.1,
-        "rank": 58,
+        "rank": 54,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1656,7 +1656,7 @@
       "region": "North",
       "nearestCity": "Mývatn",
       "category": "Nature",
-      "tier": "if-you-have-time",
+      "tier": "must-see",
       "whyGo": "Stand beside one of the most powerful waterfalls in Europe in the Jökulsárgljúfur canyon.",
       "timeNeeded": "1 hour",
       "bestTime": "Daylight, only when the road is open and conditions are safe.",
@@ -1757,7 +1757,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 36,
+        "rank": 29,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1853,7 +1853,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 33,
+        "rank": 40,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1910,7 +1910,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 10,
+        "rank": 11,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -1958,7 +1958,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 26,
+        "rank": 32,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2015,7 +2015,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 37,
+        "rank": 28,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2063,7 +2063,7 @@
       },
       "score": {
         "stars": 4.2,
-        "rank": 57,
+        "rank": 51,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2111,7 +2111,7 @@
       },
       "score": {
         "stars": 4.4,
-        "rank": 53,
+        "rank": 56,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2216,7 +2216,7 @@
       },
       "score": {
         "stars": 4.9,
-        "rank": 11,
+        "rank": 18,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2273,7 +2273,7 @@
       },
       "score": {
         "stars": 4.9,
-        "rank": 12,
+        "rank": 19,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2321,7 +2321,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 25,
+        "rank": 26,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2369,7 +2369,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 38,
+        "rank": 33,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2483,7 +2483,7 @@
       },
       "score": {
         "stars": 4.3,
-        "rank": 55,
+        "rank": 57,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2540,7 +2540,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 19,
+        "rank": 25,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2553,7 +2553,7 @@
       "region": "Capital area",
       "nearestCity": "Kópavogur",
       "category": "Experience",
-      "tier": "worth-it",
+      "tier": "must-see",
       "whyGo": "Soak in a spa-style lagoon with an infinity edge over the ocean, a short ride from central Reykjavík.",
       "timeNeeded": "2–3 hours",
       "bestTime": "Late afternoon or evening; book a timed slot and leave time for the ritual.",
@@ -2597,7 +2597,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 9,
+        "rank": 10,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2654,7 +2654,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 45,
+        "rank": 44,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2711,7 +2711,7 @@
       },
       "score": {
         "stars": 4.8,
-        "rank": 18,
+        "rank": 24,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2753,7 +2753,7 @@
       ],
       "score": {
         "stars": 4.7,
-        "rank": 29,
+        "rank": 36,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2810,7 +2810,7 @@
       },
       "score": {
         "stars": 4.5,
-        "rank": 47,
+        "rank": 49,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2867,7 +2867,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 32,
+        "rank": 39,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -2924,7 +2924,7 @@
       },
       "score": {
         "stars": 4.6,
-        "rank": 41,
+        "rank": 45,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -3038,7 +3038,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 30,
+        "rank": 37,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
@@ -3095,7 +3095,7 @@
       },
       "score": {
         "stars": 4.7,
-        "rank": 27,
+        "rank": 35,
         "method": "aggregate-v3",
         "asOf": "2026-10"
       }
