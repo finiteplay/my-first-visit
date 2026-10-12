@@ -161,20 +161,68 @@
     safetravel: { label: "Safetravel alerts", url: "https://safetravel.is/travel-conditions/" }
   };
   const liveStrip = keys => `<p class="live-strip"><strong>Check today:</strong> ${keys.map(key => `<a href="${escapeHtml(LIVE[key].url)}" target="_blank" rel="noopener">${escapeHtml(LIVE[key].label)}</a>`).join(" · ")}</p>`;
-  const liveCheckList = checks => checks?.length ? `<h2>Check live</h2><ul>${checks.map(check => /^https?:/.test(check.url || "")
+  const liveCheckBody = checks => checks?.length ? `<ul>${checks.map(check => /^https?:/.test(check.url || "")
     ? `<li><a href="${escapeHtml(check.url)}" target="_blank" rel="noopener">${escapeHtml(check.label)} <span aria-hidden="true">↗</span></a></li>`
     : `<li>${escapeHtml(check.label)} <span class="muted">(ask the provider)</span></li>`).join("")}</ul>` : "";
+  const liveCheckList = checks => checks?.length ? `<h2>Check live</h2>${liveCheckBody(checks)}` : "";
+
+  // ---- Article layout: hero image, key points, a jump list, titled sections with inline figures, tick-off checklists ----
+  const articleHero = item => item.cardImage ? `<figure class="article-hero"><img src="${escapeHtml(item.cardImage.src)}" alt="${escapeHtml(item.cardImage.alt)}" width="1440" height="960"><figcaption>AI-generated editorial illustration · illustrative</figcaption></figure>` : "";
+
+  // A picture of a named place: the author-selected photo when there is one, otherwise the website placeholder, labeled.
+  function placeFigure(placeId, caption, className = "article-figure") {
+    const place = data.places.find(p => p.id === placeId);
+    if (!place) return "";
+    const photo = selectedPhotos[placeId]?.[0];
+    let img, credit;
+    if (photo) {
+      img = `<img src="${escapeHtml(photo.file)}" alt="${escapeHtml(place.name)}" loading="lazy">`;
+      credit = escapeHtml(photoCredit(photo));
+    } else if (place.featureImage) {
+      img = `<img src="${escapeHtml(place.featureImage.url)}" alt="${escapeHtml(place.name)}" referrerpolicy="no-referrer" loading="lazy">`;
+      credit = `Image from ${escapeHtml(place.featureImage.source)}, a placeholder not licensed for reuse`;
+    } else return "";
+    return `<figure class="${className}">${img}<figcaption>${escapeHtml(caption)} <span class="figure-credit">${credit}</span> <button type="button" class="link-button" data-open="place:${escapeHtml(placeId)}">Open the place card</button></figcaption></figure>`;
+  }
+
+  const keyPointsHtml = points => points?.length ? `<div class="key-points"><strong>In short</strong><ul>${points.map(point => `<li>${escapeHtml(point)}</li>`).join("")}</ul></div>` : "";
+  const jumpNav = entries => entries.length > 2 ? `<nav class="jump" aria-label="In this guide"><strong>In this guide</strong>${entries.map(([id, title]) => `<a href="#${id}" data-jump="${id}">${escapeHtml(title)}</a>`).join("")}</nav>` : "";
+  const titled = (id, title, body) => `<section id="${id}" class="article-section"><h2>${escapeHtml(title)}</h2>${body}</section>`;
+
+  const CHECK_KEY = "mfv-checked";
+  const readChecks = () => { try { return JSON.parse(localStorage.getItem(CHECK_KEY) || "{}"); } catch (e) { return {}; } };
+  const checkList = (guideId, items) => `<ul class="checklist">${items.map((text, index) => `<li><label><input type="checkbox" data-check="${escapeHtml(guideId)}:${index}"> <span>${escapeHtml(typeof text === "string" ? text : text.label)}</span></label></li>`).join("")}</ul>`;
+  const restoreChecks = () => { const saved = readChecks(); article.querySelectorAll("[data-check]").forEach(box => { box.checked = !!saved[box.dataset.check]; }); };
+
+  // The body paragraphs are cut into titled sections by `sectionBreaks`; `figures` drop a picture after a section.
+  function sectionedBody(item) {
+    const breaks = item.sectionBreaks?.length ? item.sectionBreaks : [{ at: 0, title: null }];
+    const toc = [];
+    const html = breaks.map((br, index) => {
+      const end = index + 1 < breaks.length ? breaks[index + 1].at : item.body.length;
+      const id = `sec-${index}`;
+      if (br.title) toc.push([id, br.title]);
+      const pictures = (item.figures || []).filter(figure => figure.after === index).map(figure => placeFigure(figure.placeId, figure.caption)).join("");
+      return `<section id="${id}" class="article-section">${br.title ? `<h2>${escapeHtml(br.title)}</h2>` : ""}${paragraphs(item.body.slice(br.at, end))}${pictures}</section>`;
+    }).join("");
+    return { html, toc };
+  }
 
   function briefingHtml(item) {
-    return `<p class="article-meta">Destination briefing · ${item.readingMinutes} minutes · ${escapeHtml(item.researchedAsOf)}</p>
+    const entries = item.sections.map(section => [`b-${section.id}`, section.title]);
+    return `${item.heroPlaceId ? placeFigure(item.heroPlaceId, item.heroCaption || "", "article-hero") : ""}
+      <p class="article-meta">Destination briefing · ${item.readingMinutes} minutes · ${escapeHtml(item.researchedAsOf)}</p>
       <h1 id="reader-title">${escapeHtml(item.title)}</h1>
       <p class="hook">${escapeHtml(item.hook)}</p>
       <p>${escapeHtml(item.lede)}</p>
-      ${item.sections.map(section => `<section><h2>${escapeHtml(section.title)}</h2><p class="article-meta">${escapeHtml(section.evidenceLabel)}</p>${paragraphs(section.body)}${practiceLink(section.practiceLink)}${section.doBeforeDeparture ? `<div class="callout"><strong>Do before departure</strong>${list(section.doBeforeDeparture)}</div>` : ""}${section.liveChecks ? `<div class="callout"><strong>Check live</strong>${list(section.liveChecks)}</div>` : ""}</section>`).join("")}
+      ${keyPointsHtml(item.keyPoints)}
+      ${jumpNav(entries)}
+      ${item.sections.map((section, index) => `<section id="b-${escapeHtml(section.id)}" class="article-section"><h2>${escapeHtml(section.title)}</h2><p class="article-meta">${escapeHtml(section.evidenceLabel)}</p>${paragraphs(section.body)}${(item.figures || []).filter(figure => figure.after === index).map(figure => placeFigure(figure.placeId, figure.caption)).join("")}${practiceLink(section.practiceLink)}${section.doBeforeDeparture ? `<div class="callout"><strong>Do before departure</strong>${checkList(`${item.id}-${section.id}`, section.doBeforeDeparture)}</div>` : ""}${section.liveChecks ? `<div class="callout"><strong>Check live</strong>${list(section.liveChecks)}</div>` : ""}</section>`).join("")}
       <p class="callout"><strong>Keep this:</strong> ${escapeHtml(item.closing)}</p>`;
   }
 
   // A list of places for a guide: the priority label, time, one line, and website and map links, all from the place data.
+  const placeGroupsTitle = item => item.placeGroupsTitle || "Places to see in Reykjavík";
   function placeGroupsHtml(item) {
     if (!item.placeGroups?.length) return "";
     const card = place => `<div class="option place-entry">
@@ -183,28 +231,35 @@
         <p>${escapeHtml(place.whyGo)}</p>
         <p class="place-links">${place.website ? `<a class="maps-link" href="${escapeHtml(place.website.url)}" target="_blank" rel="noopener">${escapeHtml(place.website.label)} <span aria-hidden="true">↗</span></a>` : ""}${place.location ? `<a class="maps-link" href="${escapeHtml(mapsUrl(place))}" target="_blank" rel="noopener">Google Maps <span aria-hidden="true">↗</span></a>` : ""}</p>
       </div>`;
-    return `<h2>${escapeHtml(item.placeGroupsTitle || "Places to see in Reykjavík")}</h2>${item.placeGroups.map(group => `<h3>${escapeHtml(group.group)}</h3>${group.intro ? `<p>${escapeHtml(group.intro)}</p>` : ""}<div class="option-grid">${group.placeIds.map(id => data.places.find(place => place.id === id)).filter(Boolean).map(card).join("")}</div>`).join("")}${item.placeGroupsNote ? `<p>${escapeHtml(item.placeGroupsNote)} <button type="button" class="link-button" data-open="playbook:pool-or-lagoon">Open the pool and lagoon guide</button></p>` : ""}`;
+    return `${item.placeGroups.map(group => `<h3>${escapeHtml(group.group)}</h3>${group.intro ? `<p>${escapeHtml(group.intro)}</p>` : ""}<div class="option-grid">${group.placeIds.map(id => data.places.find(place => place.id === id)).filter(Boolean).map(card).join("")}</div>`).join("")}${item.placeGroupsNote ? `<p>${escapeHtml(item.placeGroupsNote)} <button type="button" class="link-button" data-open="playbook:pool-or-lagoon">Open the pool and lagoon guide</button></p>` : ""}`;
   }
 
   function playbookHtml(item) {
     const decisions = item.decision ? Object.entries(item.decision).map(([key, value]) => `<div class="option"><strong>${escapeHtml(key.replace(/([A-Z])/g, " $1"))}</strong><p>${escapeHtml(value)}</p></div>`).join("") : "";
     const options = item.options ? item.options.map(value => `<div class="option"><strong>${escapeHtml(value.name)}</strong><p>${escapeHtml(value.bestFor)}</p><p><em>Trade-off:</em> ${escapeHtml(value.tradeoff)}</p></div>`).join("") : "";
-    return `<p class="article-meta">Decision guide · ${item.readingMinutes} minutes · ${escapeHtml(item.evidenceLabel)}</p>
+    const { html: bodyHtml, toc } = sectionedBody(item);
+    const sections = [];  // [id, title, body html]
+    if (item.travelerStories?.length) sections.push(["stories", "What travelers experienced", `<div class="story-grid">${item.travelerStories.map(story => `<blockquote class="story">${escapeHtml(story)}</blockquote>`).join("")}</div>`]);
+    if (decisions || options) sections.push(["options", "Your options", `<div class="option-grid">${decisions}${options}</div>`]);
+    if (item.trackers?.length) sections.push(["trackers", "Websites that track conditions", `${item.trackersIntro ? `<p>${escapeHtml(item.trackersIntro)}</p>` : ""}<div class="option-grid">${item.trackers.map(site => `<div class="option tracker"><strong><a href="${escapeHtml(site.url)}" target="_blank" rel="noopener">${escapeHtml(site.name)} <span aria-hidden="true">↗</span></a></strong><p><em>Shows:</em> ${escapeHtml(site.shows)}</p><p><em>Use it for:</em> ${escapeHtml(site.useItFor)}</p></div>`).join("")}</div>`]);
+    if (item.placeGroups?.length) sections.push(["places", placeGroupsTitle(item), placeGroupsHtml(item)]);
+    (item.whereToSoak || []).forEach((group, index) => sections.push([`soak-${index}`, group.group, `<p>${escapeHtml(group.intro)}</p><div class="option-grid">${group.places.map(place => `<div class="option place-entry"><strong>${escapeHtml(place.name)}</strong>${place.local ? `<div class="say-it">${place.local !== place.name ? `<span class="local-name">${escapeHtml(place.local)}</span>` : ""}<span class="respelling" title="Draft respelling; native review pending">${escapeHtml(place.respelling)}</span>${audioControls(place.local)}</div>` : ""}<p class="where">${escapeHtml(place.where)}</p><p>${escapeHtml(place.character)}</p><p><em>Best for:</em> ${escapeHtml(place.bestFor)}</p><p><em>Heads-up:</em> ${escapeHtml(place.headsUp)}</p>${placeLinks(place)}</div>`).join("")}</div>`]));
+    if (item.whatToExpect) sections.push(["expect", "What to expect", `<p>${escapeHtml(item.whatToExpect)}</p>`]);
+    if (item.checklist) sections.push(["checklist", "Before you go", `<p class="muted">Tick things off as you go; your ticks stay on this device.</p>${checkList(item.id, item.checklist)}`]);
+    if (item.avoid) sections.push(["avoid", "Avoid", list(item.avoid)]);
+    if (item.liveChecks?.length) sections.push(["live", "Check live", liveCheckBody(item.liveChecks)]);
+    const jump = [...toc, ...sections.filter(([id]) => ["options", "places", "trackers", "checklist", "live"].includes(id) || id.startsWith("soak")).map(([id, title]) => [id, title])];
+    return `${articleHero(item)}
+      <p class="article-meta">Decision guide · ${item.readingMinutes} minutes · ${escapeHtml(item.evidenceLabel)}</p>
       <h1 id="reader-title">${escapeHtml(item.title)}</h1>
       ${item.hook ? `<p class="hook">${escapeHtml(item.hook)}</p>` : ""}
-      ${paragraphs(item.body)}
-      ${item.travelerStories?.length ? `<h2>What travelers experienced</h2>${item.travelerStories.map(story => `<blockquote class="story">${escapeHtml(story)}</blockquote>`).join("")}` : ""}
-      ${decisions || options ? `<h2>Your options</h2><div class="option-grid">${decisions}${options}</div>` : ""}
-      ${item.trackers?.length ? `<h2>Websites that track conditions</h2>${item.trackersIntro ? `<p>${escapeHtml(item.trackersIntro)}</p>` : ""}<div class="option-grid">${item.trackers.map(site => `<div class="option tracker"><strong><a href="${escapeHtml(site.url)}" target="_blank" rel="noopener">${escapeHtml(site.name)} <span aria-hidden="true">↗</span></a></strong><p><em>Shows:</em> ${escapeHtml(site.shows)}</p><p><em>Use it for:</em> ${escapeHtml(site.useItFor)}</p></div>`).join("")}</div>` : ""}
-      ${placeGroupsHtml(item)}
-      ${item.whereToSoak?.map(group => `<h2>${escapeHtml(group.group)}</h2><p>${escapeHtml(group.intro)}</p><div class="option-grid">${group.places.map(place => `<div class="option place-entry"><strong>${escapeHtml(place.name)}</strong>${place.local ? `<div class="say-it">${place.local !== place.name ? `<span class="local-name">${escapeHtml(place.local)}</span>` : ""}<span class="respelling" title="Draft respelling; native review pending">${escapeHtml(place.respelling)}</span>${audioControls(place.local)}</div>` : ""}<p class="where">${escapeHtml(place.where)}</p><p>${escapeHtml(place.character)}</p><p><em>Best for:</em> ${escapeHtml(place.bestFor)}</p><p><em>Heads-up:</em> ${escapeHtml(place.headsUp)}</p>${placeLinks(place)}</div>`).join("")}</div>`).join("") || ""}
-      ${item.whatToExpect ? `<h2>What to expect</h2><p>${escapeHtml(item.whatToExpect)}</p>` : ""}
-      ${item.checklist ? `<h2>Before you go</h2>${list(item.checklist)}` : ""}
-      ${item.avoid ? `<h2>Avoid</h2>${list(item.avoid)}` : ""}
-      ${liveCheckList(item.liveChecks)}
+      ${keyPointsHtml(item.keyPoints)}
+      ${jumpNav(jump)}
+      ${bodyHtml}
+      ${sections.map(([id, title, body]) => titled(id, title, body)).join("")}
       ${item.ourTake ? `<div class="callout"><strong>Our take</strong><p>${escapeHtml(item.ourTake)}</p></div>` : ""}
       ${item.warning ? `<div class="callout"><strong>Keep in mind</strong><p>${escapeHtml(item.warning)}</p></div>` : ""}
-      ${item.limits ? `<h2>What this evidence cannot tell you</h2><p>${escapeHtml(item.limits)}</p>` : ""}`;
+      ${item.limits ? titled("limits", "What this evidence cannot tell you", `<p>${escapeHtml(item.limits)}</p>`) : ""}`;
   }
 
   // Trip stops: an id is a place card ("sight-...") or a soak entry in the pool guide ("soak:<slug of its name>").
@@ -417,12 +472,19 @@
     const item = groups[type]?.find(value => value.id === id);
     if (!item) return;
     article.innerHTML = type === "briefing" ? briefingHtml(item) : type === "playbook" ? playbookHtml(item) : type === "route" ? routeHtml(item) : placeHtml(item);
+    restoreChecks();
     reader.showModal();
     article.scrollTop = 0;
     reader.scrollTop = 0;
   }
 
   document.addEventListener("click", event => {
+    const jump = event.target.closest("[data-jump]");
+    if (jump) {
+      event.preventDefault();
+      document.getElementById(jump.dataset.jump)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
     const arrow = event.target.closest("[data-carousel] .carousel-arrow");
     if (arrow) {
       const carousel = arrow.closest("[data-carousel]");
@@ -439,6 +501,13 @@
     }
     const opener = event.target.closest("[data-open]");
     if (opener) openReader(...opener.dataset.open.split(":"));
+  });
+  document.addEventListener("change", event => {
+    const box = event.target.closest?.("[data-check]");
+    if (!box) return;
+    const saved = readChecks();
+    if (box.checked) saved[box.dataset.check] = 1; else delete saved[box.dataset.check];
+    try { localStorage.setItem(CHECK_KEY, JSON.stringify(saved)); } catch (e) { /* ticks just stay for this visit */ }
   });
   document.addEventListener("keydown", event => {
     const place = event.target.closest(".place-card");

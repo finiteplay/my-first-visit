@@ -318,6 +318,16 @@ place (not a logo, a café, another site or a letterboxed graphic); never downlo
 that it is not licensed for reuse; remove it when a cleared photo is selected or if the owner objects. It is a development
 convenience, not a release asset: get permission or replace it before publishing.
 
+### Article layout (guides and the briefing)
+
+Long articles are laid out to be skimmed, not just read: the guide's picture at the top (labeled when it is an illustration), a
+short "In short" box (`keyPoints`, 2 to 4 points), a "In this guide" jump list, body paragraphs cut into titled sections
+(`sectionBreaks`: where each section starts and its title), a picture of a named place after a section (`figures`: the section
+index, a place id and a caption; an author-selected photo is used when there is one, otherwise the labeled website placeholder),
+traveler stories as separate cards, and checklists you can tick (kept on the device). Keep paragraphs short, give every
+section a plain-language title, and do not use a picture that is not about the place named in its caption. The briefing uses
+the same pieces with `heroPlaceId` for its top picture. `audit_guide.py` checks the fields.
+
 ### Country map and number tiles
 
 Status: **built for the Iceland draft; the map is checked by `audit_guide.py`.**

@@ -86,12 +86,6 @@ nav a { text-decoration: none; }
 .guide-card button { margin-top: 24px; }
 .guide-card .card-image { width: 100%; height: 210px; margin-bottom: 22px; object-fit: cover; border-radius: 14px; box-shadow: 0 12px 32px rgba(15, 35, 38, .10); }
 
-.pool-break { position: relative; min-height: 680px; display: grid; align-items: end; overflow: hidden; color: white; background: var(--deep); }
-.pool-break::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(9,29,34,.88), rgba(9,29,34,.08) 75%); }
-.pool-break > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.pool-copy { position: relative; z-index: 2; width: min(1220px, calc(100% - 44px)); margin: 0 auto; padding: 70px 0; }
-.pool-copy h2 { max-width: 900px; }
-.pool-copy button { margin-top: 30px; }
 
 .route-list { border-top: 1px solid var(--line); }
 .route-row { display: grid; grid-template-columns: 55px 1.2fr .8fr 34px; gap: 22px; align-items: center; width: 100%; padding: 25px 0; border: 0; border-bottom: 1px solid var(--line); color: var(--ink); background: transparent; cursor: pointer; text-align: left; }
@@ -181,8 +175,7 @@ body.night .reader-bar { background: rgba(21,48,53,.95); }
   .feature-image, .feature-image img { min-height: 420px; }
   .card-grid, .place-grid { grid-template-columns: 1fr; }
   .guide-card, .guide-card:nth-child(even) { min-height: 0; padding: 28px 0; border-left: 0; }
-  .pool-break { min-height: 620px; }
-  .landscape-break figcaption, footer { flex-direction: column; }
+    .landscape-break figcaption, footer { flex-direction: column; }
   dialog { width: 100%; }
 }
 
@@ -464,3 +457,33 @@ body.night .minimap-roads { stroke: #4b5c60; }
 .feature-photo { margin: 0 0 28px; }
 .feature-photo img { display: block; width: 100%; height: auto; border-radius: 12px; background: #e9e7df; }
 .feature-photo figcaption { margin-top: 6px; color: var(--muted); font-size: .76rem; }
+
+/* Article layout: hero, key points, jump list, sections, figures, stories, checklists */
+.article-hero { margin: 0 0 26px; }
+.article-hero img { display: block; width: 100%; height: auto; max-height: 460px; object-fit: cover; border-radius: 16px; background: #e9e7df; }
+.article-hero figcaption, .article-figure figcaption { margin-top: 7px; color: var(--muted); font-size: .78rem; }
+.article-figure { margin: 30px 0 6px; }
+.article-figure img { display: block; width: 100%; height: auto; max-height: 440px; object-fit: contain; border-radius: 12px; background: #e9e7df; }
+.figure-credit { opacity: .8; }
+.key-points { margin: 26px 0 8px; padding: 18px 22px; border-radius: 14px; background: var(--paper); border-left: 5px solid var(--gold); }
+.key-points ul { margin: 8px 0 0; padding-left: 20px; display: grid; gap: 7px; }
+.jump { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 18px 0 8px; }
+.jump strong { margin-right: 4px; color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; }
+.jump a { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: var(--paper); font-size: .82rem; text-decoration: none; }
+.jump a:hover, .jump a:focus-visible { border-color: var(--moss); color: var(--moss); }
+.article-section { scroll-margin-top: 80px; }
+#reader-article .article-section h2 { margin: 52px 0 14px; font-size: clamp(1.45rem, 3vw, 2.05rem); }
+.story-grid { display: grid; gap: 14px; }
+.story-grid .story { margin: 0; }
+.checklist { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; }
+.checklist label { display: flex; gap: 10px; align-items: flex-start; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); cursor: pointer; }
+.checklist input { margin-top: 4px; accent-color: var(--moss); }
+.checklist input:checked + span { opacity: .55; text-decoration: line-through; }
+@media (max-width: 640px) { .article-hero img { max-height: 280px; } .key-points { padding: 14px 16px; } }
+
+/* Pool feature: a contained, two-column block like the weather feature, copy first */
+.pool-feature { grid-template-columns: .95fr 1.05fr; padding-top: 10px; padding-bottom: 20px; }
+.pool-feature .feature-image { min-height: 440px; order: 2; }
+.pool-feature .feature-image img { min-height: 440px; max-height: 520px; border-radius: 16px; }
+.pool-feature .feature-copy { order: 1; }
+@media (max-width: 900px) { .pool-feature .feature-image { order: 1; min-height: 300px; } .pool-feature .feature-image img { min-height: 300px; } .pool-feature .feature-copy { order: 2; } }

@@ -237,6 +237,30 @@ def _slug(name):
     return re.sub(r"[^a-z0-9]+", "-", folded.lower()).strip("-")
 
 
+def layout_errors(item, kind, place_ids):
+    """Article layout fields: key points, section breaks and figures must be well formed."""
+    errors = []
+    points = item.get("keyPoints")
+    if points is not None and not 2 <= len(points) <= 4:
+        errors.append(f"{kind} {item.get('id')}: keyPoints needs 2 to 4 short points.")
+    breaks = item.get("sectionBreaks")
+    if breaks:
+        starts = [b.get("at") for b in breaks]
+        if starts[0] != 0 or starts != sorted(set(starts)) or starts[-1] >= len(item.get("body", [])):
+            errors.append(f"{kind} {item.get('id')}: sectionBreaks must start at 0, ascend and stay inside the body.")
+        if any(not str(b.get("title", "")).strip() for b in breaks):
+            errors.append(f"{kind} {item.get('id')}: every section break needs a title.")
+    limit = len(breaks) if breaks else len(item.get("sections", [])) or 1
+    for figure in item.get("figures", []):
+        if figure.get("placeId") not in place_ids:
+            errors.append(f"{kind} {item.get('id')}: figure place {figure.get('placeId')!r} does not exist.")
+        if not str(figure.get("caption", "")).strip():
+            errors.append(f"{kind} {item.get('id')}: every figure needs a caption.")
+        if not 0 <= figure.get("after", -1) < limit:
+            errors.append(f"{kind} {item.get('id')}: figure 'after' must point at an existing section.")
+    return errors
+
+
 def audit(root):
     errors = []
     research = root / "research"
@@ -330,6 +354,8 @@ def audit(root):
             if filename == "routes.yaml":
                 errors += [f"{filename} {item_id}: depth: {e}" for e in route_depth(item, roles)]
                 errors += route_place_errors(item, sight_ids, soak_slugs)
+            if filename in ("playbooks.yaml", "briefings.yaml"):
+                errors += layout_errors(item, filename, sight_ids)
     map_path = root / "map.yaml"
     if map_path.exists():
         errors += map_audit(read_json(map_path), evidence_ids)

@@ -131,6 +131,44 @@
           "bestFor": "Seeing much of the country without driving or planning, ideally in a small group",
           "tradeoff": "Fixed itinerary and pace, a higher total price, and less time at each place than a self-drive trip."
         }
+      ],
+      "keyPoints": [
+        "A campervan gives you route freedom but adds daily chores: the bed, heating, cooking and finding a campsite.",
+        "A rental car with a room each night is the lower-effort choice for most travelers who are happy to drive.",
+        "Tours remove the driving but fix the stops and the timing, so keep one open day for a cancellation."
+      ],
+      "sectionBreaks": [
+        {
+          "at": 0,
+          "title": "The short version"
+        },
+        {
+          "at": 1,
+          "title": "Campervan: freedom with chores"
+        },
+        {
+          "at": 5,
+          "title": "A rental car and a room each night"
+        },
+        {
+          "at": 6,
+          "title": "Tours and buses"
+        },
+        {
+          "at": 10,
+          "title": "Mixing the options"
+        },
+        {
+          "at": 11,
+          "title": "Price the whole trip"
+        }
+      ],
+      "figures": [
+        {
+          "after": 3,
+          "placeId": "sight-skogafoss",
+          "caption": "Skógafoss, a standard stop on South Coast day tours."
+        }
       ]
     },
     {
@@ -208,7 +246,39 @@
         "o001",
         "o002",
         "o003"
-      ]
+      ],
+      "keyPoints": [
+        "Iceland adds coverage choices beyond basic collision cover, because loose stones, wind and unusual roads cause damage most drivers never meet.",
+        "A credit-card benefit can work, but get the exact terms in writing and expect to pay first and claim back.",
+        "Decline optional cover only if you can afford the maximum charge."
+      ],
+      "sectionBreaks": [
+        {
+          "at": 0,
+          "title": "What the counter may ask"
+        },
+        {
+          "at": 1,
+          "title": "Why Iceland's roads change the question"
+        },
+        {
+          "at": 2,
+          "title": "Option 1: the simplest return"
+        },
+        {
+          "at": 3,
+          "title": "Option 2: use a credit card carefully"
+        },
+        {
+          "at": 4,
+          "title": "A warning from travelers"
+        },
+        {
+          "at": 5,
+          "title": "Option 3: accept more risk on purpose"
+        }
+      ],
+      "figures": []
     },
     {
       "id": "drive-without-performing",
@@ -277,7 +347,45 @@
           "url": "https://www.112.is/en"
         }
       ],
-      "warning": "This is travel-planning information, not safety certification. Conditions change fast; follow current official road and weather information and posted signs, and never trade safety for a photograph."
+      "warning": "This is travel-planning information, not safety certification. Conditions change fast; follow current official road and weather information and posted signs, and never trade safety for a photograph.",
+      "keyPoints": [
+        "Many roads have narrow shoulders or no safe place to stop, so photograph only from designated pullouts and car parks.",
+        "Split the roles: one person drives, the other navigates and takes the pictures.",
+        "Animals, weather and darkness raise the stakes; turn around when conditions pass your comfort."
+      ],
+      "sectionBreaks": [
+        {
+          "at": 0,
+          "title": "Why photos are the risk"
+        },
+        {
+          "at": 1,
+          "title": "Where it goes wrong"
+        },
+        {
+          "at": 2,
+          "title": "What to do instead"
+        },
+        {
+          "at": 3,
+          "title": "Animals on the road"
+        },
+        {
+          "at": 4,
+          "title": "Weather and your limits"
+        },
+        {
+          "at": 5,
+          "title": "After dark"
+        }
+      ],
+      "figures": [
+        {
+          "after": 2,
+          "placeId": "sight-dettifoss",
+          "caption": "Dettifoss: the marked viewpoints are the place to take the picture, not the road."
+        }
+      ]
     },
     {
       "id": "pool-or-lagoon",
@@ -632,6 +740,49 @@
             "sight-vok-baths"
           ]
         }
+      ],
+      "keyPoints": [
+        "A neighborhood pool costs a fraction of a lagoon, needs no booking and is part of everyday Icelandic life.",
+        "A destination lagoon is worth the price when you choose it on purpose and book ahead.",
+        "Shower thoroughly without a swimsuit before you enter; it is the one rule everyone follows."
+      ],
+      "sectionBreaks": [
+        {
+          "at": 0,
+          "title": "Two ways Iceland soaks"
+        },
+        {
+          "at": 1,
+          "title": "What it costs"
+        },
+        {
+          "at": 2,
+          "title": "Why lagoon fans pay"
+        },
+        {
+          "at": 3,
+          "title": "Why the local pool is loved"
+        },
+        {
+          "at": 4,
+          "title": "The pool rules in plain words"
+        },
+        {
+          "at": 5,
+          "title": "Booking a lagoon"
+        }
+      ],
+      "figures": [
+        {
+          "after": 1,
+          "placeId": "sight-sky-lagoon",
+          "caption": "Sky Lagoon: a spa-style lagoon with a ritual built into the ticket."
+        },
+        {
+          "after": 3,
+          "placeId": "sight-laugardalslaug",
+          "caption": "Laugardalslaug, Reykjavík's largest public pool."
+        }
       ]
     },
     {
@@ -772,6 +923,49 @@
           "shows": "The Icelandic road administration's traffic map with current conditions.",
           "useItFor": "Before any drive out of town, however good the sky looks."
         }
+      ],
+      "keyPoints": [
+        "Three things must line up: darkness, activity and a clear sky. Read the cloud map before the activity number.",
+        "Keep several evenings free and book any tour early so you can retry.",
+        "No forecast or tour can promise a display, so plan a trip that is good on the dark nights too."
+      ],
+      "sectionBreaks": [
+        {
+          "at": 0,
+          "title": "What has to line up"
+        },
+        {
+          "at": 1,
+          "title": "Reading the forecast"
+        },
+        {
+          "at": 2,
+          "title": "What travelers actually got"
+        },
+        {
+          "at": 3,
+          "title": "A tour or doing it yourself"
+        },
+        {
+          "at": 4,
+          "title": "An indoor plan B"
+        },
+        {
+          "at": 5,
+          "title": "Staying safe at night"
+        }
+      ],
+      "figures": [
+        {
+          "after": 1,
+          "placeId": "sight-kirkjufellsfoss",
+          "caption": "A good night: the aurora over Kirkjufell, from the West Iceland tourism site."
+        },
+        {
+          "after": 4,
+          "placeId": "sight-aurora-reykjavik",
+          "caption": "Inside Aurora Reykjavík, the indoor aurora museum."
+        }
       ]
     },
     {
@@ -846,7 +1040,41 @@
         "p006",
         "o013"
       ],
-      "hook": "Iceland's weather is less about extreme cold than about wind, rain and spray arriving together, so the clothing that works is the layer you can add or shed in seconds."
+      "hook": "Iceland's weather is less about extreme cold than about wind, rain and spray arriving together, so the clothing that works is the layer you can add or shed in seconds.",
+      "keyPoints": [
+        "Wind, rain and spray arrive together, so pack layers you can add or shed in seconds.",
+        "A genuinely windproof, waterproof outer layer matters more than one heavy coat.",
+        "You can rent technical clothing instead of buying a whole cold-weather wardrobe."
+      ],
+      "sectionBreaks": [
+        {
+          "at": 0,
+          "title": "Why the weather surprises"
+        },
+        {
+          "at": 1,
+          "title": "Layers that work"
+        },
+        {
+          "at": 2,
+          "title": "Keeping a dry layer"
+        },
+        {
+          "at": 3,
+          "title": "Renting instead of buying"
+        },
+        {
+          "at": 4,
+          "title": "Wool and local clothing"
+        }
+      ],
+      "figures": [
+        {
+          "after": 1,
+          "placeId": "sight-seljalandsfoss",
+          "caption": "Spray at Seljalandsfoss: you get wet here even when the sky is clear."
+        }
+      ]
     },
     {
       "id": "spend-on-purpose",
@@ -946,7 +1174,45 @@
           "url": "https://www.costco.is/"
         }
       ],
-      "limits": "Trip reports use different currencies, party sizes and comfort standards, so they show levers, not a typical budget. Operator and tour-company guides have a commercial interest, and their cost estimates are dated."
+      "limits": "Trip reports use different currencies, party sizes and comfort standards, so they show levers, not a typical budget. Operator and tour-company guides have a commercial interest, and their cost estimates are dated.",
+      "keyPoints": [
+        "Iceland is expensive in small decisions: choose the two or three experiences you came for and pay for them on purpose.",
+        "Groceries, tap water and a neighborhood pool are the cheap wins; Costco helps only if you have a membership.",
+        "Price the whole trip (transport, coverage, lodging, fuel, parking, activities and food) before you commit."
+      ],
+      "sectionBreaks": [
+        {
+          "at": 0,
+          "title": "Where the surprise comes from"
+        },
+        {
+          "at": 1,
+          "title": "Spend on purpose"
+        },
+        {
+          "at": 2,
+          "title": "Price the whole trip"
+        },
+        {
+          "at": 3,
+          "title": "The cheap wins"
+        },
+        {
+          "at": 4,
+          "title": "Costco, for some travelers"
+        },
+        {
+          "at": 5,
+          "title": "Two traps"
+        }
+      ],
+      "figures": [
+        {
+          "after": 1,
+          "placeId": "sight-lava-show",
+          "caption": "A splurge to plan on purpose: the Lava Show in Vík is a timed, bookable hour."
+        }
+      ]
     },
     {
       "id": "reykjavik-purpose",
@@ -1077,7 +1343,50 @@
           ]
         }
       ],
-      "placeGroupsNote": "Looking for more soaks? The pool and lagoon guide lists the city's public pools and the lagoons within about an hour."
+      "placeGroupsNote": "Looking for more soaks? The pool and lagoon guide lists the city's public pools and the lagoons within about an hour.",
+      "keyPoints": [
+        "For most first-time visitors a purposeful half-day to a day around arrival or departure is enough.",
+        "Stay longer when you choose the city for the food, museums, pools or a car-free trip.",
+        "Learn the downtown parking zones before you drive in."
+      ],
+      "sectionBreaks": [
+        {
+          "at": 0,
+          "title": "A small city with range"
+        },
+        {
+          "at": 1,
+          "title": "Four ways to use it"
+        },
+        {
+          "at": 2,
+          "title": "How long to stay"
+        },
+        {
+          "at": 3,
+          "title": "A good day shape"
+        },
+        {
+          "at": 4,
+          "title": "Parking"
+        },
+        {
+          "at": 5,
+          "title": "The City Card"
+        }
+      ],
+      "figures": [
+        {
+          "after": 0,
+          "placeId": "sight-hallgrimskirkja",
+          "caption": "Hallgrímskirkja, the landmark most visitors start with."
+        },
+        {
+          "after": 3,
+          "placeId": "sight-harpa",
+          "caption": "Harpa and the waterfront, an easy walk from the center."
+        }
+      ]
     }
   ]
 }

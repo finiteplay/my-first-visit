@@ -131,5 +131,18 @@ class GuideAuditTest(unittest.TestCase):
         self.assertTrue(any("soak:nowhere" in e for e in errors))
 
 
+    def test_article_layout_fields_are_checked(self):
+        from audit_guide import layout_errors
+        item = {"id": "g", "body": ["a", "b", "c"], "keyPoints": ["one"],
+                "sectionBreaks": [{"at": 1, "title": "x"}, {"at": 1, "title": "y"}],
+                "figures": [{"after": 5, "placeId": "sight-nowhere", "caption": ""}]}
+        errors = layout_errors(item, "playbooks.yaml", {"sight-a"})
+        self.assertTrue(any("keyPoints" in e for e in errors))
+        self.assertTrue(any("sectionBreaks" in e for e in errors))
+        self.assertTrue(any("does not exist" in e for e in errors))
+        self.assertTrue(any("caption" in e for e in errors))
+        self.assertTrue(any("after" in e for e in errors))
+
+
 if __name__ == "__main__":
     unittest.main()

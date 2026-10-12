@@ -4,7 +4,9 @@
     {
       "id": "is-first-day",
       "title": "Why Iceland is worth the trip",
-      "audience": ["en-US:first-time"],
+      "audience": [
+        "en-US:first-time"
+      ],
       "readingMinutes": 15,
       "researchedAsOf": "2026-10-11",
       "hook": "Travelers remember Iceland as a place where the landscape keeps changing before they have finished talking about the last view.",
@@ -32,7 +34,20 @@
             "Give every three or four active days one slower or movable block.",
             "Save tour cancellation terms or the rental provider's assistance number offline."
           ],
-          "sourceIds": ["r007", "r010", "r014", "r017", "r024", "r025", "t006", "t011", "t012", "o001", "o002", "o008"]
+          "sourceIds": [
+            "r007",
+            "r010",
+            "r014",
+            "r017",
+            "r024",
+            "r025",
+            "t006",
+            "t011",
+            "t012",
+            "o001",
+            "o002",
+            "o008"
+          ]
         },
         {
           "id": "choose-season",
@@ -52,11 +67,33 @@
             "Treat aurora, puffins, Highlands access and a full Ring Road as different seasonal goals; no month optimizes all four."
           ],
           "liveChecks": [
-            {"label": "Official weather and warnings", "url": "https://en.vedur.is/"},
-            {"label": "Official road conditions", "url": "https://umferdin.is/en"},
-            {"label": "SafeTravel conditions", "url": "https://safetravel.is/travel-conditions/"}
+            {
+              "label": "Official weather and warnings",
+              "url": "https://en.vedur.is/"
+            },
+            {
+              "label": "Official road conditions",
+              "url": "https://umferdin.is/en"
+            },
+            {
+              "label": "SafeTravel conditions",
+              "url": "https://safetravel.is/travel-conditions/"
+            }
           ],
-          "sourceIds": ["r001", "r005", "r009", "r011", "r014", "t008", "k004", "o002", "o003", "o005", "o009", "o010"]
+          "sourceIds": [
+            "r001",
+            "r005",
+            "r009",
+            "r011",
+            "r014",
+            "t008",
+            "k004",
+            "o002",
+            "o003",
+            "o005",
+            "o009",
+            "o010"
+          ]
         },
         {
           "id": "weather",
@@ -69,10 +106,26 @@
             "Check the Icelandic Met Office and road conditions every morning and again before a meaningful route change. Dress for the exposed stop or hike, not only for the walk from a Reykjavík restaurant to the hotel. If an official warning says to delay the drive, a saved itinerary is not a reason to continue."
           ],
           "liveChecks": [
-            {"label": "Icelandic Met Office", "url": "https://en.vedur.is/"},
-            {"label": "SafeTravel conditions", "url": "https://safetravel.is/travel-conditions/"}
+            {
+              "label": "Icelandic Met Office",
+              "url": "https://en.vedur.is/"
+            },
+            {
+              "label": "SafeTravel conditions",
+              "url": "https://safetravel.is/travel-conditions/"
+            }
           ],
-          "sourceIds": ["t001", "r011", "r001", "o003", "o005", "o009", "o010", "o011", "o012"]
+          "sourceIds": [
+            "t001",
+            "r011",
+            "r001",
+            "o003",
+            "o005",
+            "o009",
+            "o010",
+            "o011",
+            "o012"
+          ]
         },
         {
           "id": "cost",
@@ -83,7 +136,12 @@
             "The useful approach is not to make every day cheap. One solo traveler deliberately visited several premium lagoons and felt the five-day trip was worth the money. A Nashville couple packed simple lunches so they could keep the geology, art and meals they cared about. Camper travelers combined transport, lodging and a kitchen in one expensive item, then saved elsewhere.",
             "Before booking, estimate the whole trip: vehicle or tours, coverage, lodging, fuel, parking, activities and a believable mixture of groceries and restaurants. Choose two or three experiences you want to enjoy without doing currency conversion at the door. Grocery breakfasts, road lunches, tap water and neighborhood pools can protect those choices without turning the vacation into a deprivation contest."
           ],
-          "sourceIds": ["r006", "k002", "r017", "b003"]
+          "sourceIds": [
+            "r006",
+            "k002",
+            "r017",
+            "b003"
+          ]
         },
         {
           "id": "language",
@@ -98,11 +156,48 @@
             "label": "Try the greetings lesson",
             "status": "Optional practice · app lesson placeholder"
           },
-          "relatedLanguageIds": ["p01", "p05", "p08", "p13", "p16", "p46", "p50"],
-          "sourceIds": ["language-course", "dictionary", "o006"]
+          "relatedLanguageIds": [
+            "p01",
+            "p05",
+            "p08",
+            "p13",
+            "p16",
+            "p46",
+            "p50"
+          ],
+          "sourceIds": [
+            "language-course",
+            "dictionary",
+            "o006"
+          ]
         }
       ],
-      "closing": "The best first trip is not the one that proves you covered Iceland. It is the one that gives you time to stop safely, change direction, warm up and remember where you were."
+      "closing": "The best first trip is not the one that proves you covered Iceland. It is the one that gives you time to stop safely, change direction, warm up and remember where you were.",
+      "keyPoints": [
+        "Choose how you travel first: a rental car, a camper, a tour, or a base with day trips.",
+        "Pick the month for the trip you want: long light, the northern lights, or fewer people.",
+        "Weather decides the day, so pack layers, stay flexible and check the official forecasts every morning.",
+        "Plan the expensive parts and enjoy the rest; English carries the trip, and a few Icelandic words change its tone."
+      ],
+      "heroPlaceId": "sight-jokulsarlon",
+      "heroCaption": "Jökulsárlón, where icebergs drift toward the sea.",
+      "figures": [
+        {
+          "after": 0,
+          "placeId": "sight-thingvellir",
+          "caption": "Þingvellir, an easy first stop on a Golden Circle day."
+        },
+        {
+          "after": 1,
+          "placeId": "sight-reynisfjara",
+          "caption": "Reynisfjara: the same coast looks different in every season."
+        },
+        {
+          "after": 2,
+          "placeId": "sight-skogafoss",
+          "caption": "Skógafoss: waterfall spray adds water even on a clear day."
+        }
+      ]
     }
   ]
 }
