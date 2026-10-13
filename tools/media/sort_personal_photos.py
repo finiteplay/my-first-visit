@@ -174,6 +174,11 @@ def cmd_sort(args) -> int:
             target = target_dir / p.name
             if target.exists() and target.stat().st_size != p.stat().st_size:
                 target = target_dir / f"{p.parent.name}__{p.name}"   # same file name from another folder
+            aside = dest / "!deleted" / folder / p.name   # already set aside as a portrait: do not bring it back
+            if aside.exists() and aside.stat().st_size == p.stat().st_size:
+                counts["(already set aside)"] = counts.get("(already set aside)", 0) + 1
+                rows.append([str(p), str(aside.relative_to(dest)), lat, lon, taken, folder, note + " [already set aside]"])
+                continue
             if not target.exists():
                 shutil.copy2(p, target)
             counts[folder] = counts.get(folder, 0) + 1
@@ -181,7 +186,8 @@ def cmd_sort(args) -> int:
             if i % 100 == 0:
                 print(f"  {i}/{len(files)}", flush=True)
     dest.mkdir(parents=True, exist_ok=True)
-    with (dest / "manifest.csv").open("w", encoding="utf-8", newline="") as f:
+    manifest = dest / f"manifest-{slug(src.name) or 'photos'}.csv"   # one per source folder, so several folders combine
+    with manifest.open("w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(["source", "copy", "lat", "lon", "taken", "folder", "nearest place"])
         w.writerows(rows)
