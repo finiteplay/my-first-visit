@@ -397,10 +397,12 @@ def main() -> int:
 def write_review(out_dir: Path, doc: dict) -> None:
     """Write review.html. `applied` records how many author-selected photos each place already has in photos.json."""
     photos_path = out_dir.parent / "photos.json"
-    applied = {}
+    applied, applied_photos = {}, {}
     if photos_path.exists():
-        applied = {k: len(v) for k, v in json.loads(photos_path.read_text(encoding="utf-8")).get("attractions", {}).items() if v}
-    doc = dict(doc, applied=applied)
+        site = json.loads(photos_path.read_text(encoding="utf-8")).get("attractions", {})
+        applied = {k: len(v) for k, v in site.items() if v}
+        applied_photos = {k: [{"id": x["id"], "objectPosition": x.get("objectPosition", "center")} for x in v] for k, v in site.items() if v}
+    doc = dict(doc, applied=applied, appliedPhotos=applied_photos)
     data = json.dumps(doc, ensure_ascii=False).replace("</", "<\\/")
     (out_dir / "review.html").write_text(REVIEW_HTML.replace("__DATA__", data), encoding="utf-8")
 
@@ -444,11 +446,23 @@ h2{margin:0 0 4px;font-size:1.25rem} .sub{color:var(--muted);margin:0 0 12px;fon
 .cover img{object-fit:cover}.contain img{object-fit:contain}
 label.pick{display:flex;gap:6px;align-items:center;font-weight:700;font-size:.9rem;margin-bottom:6px}
 .meta{color:var(--muted);word-break:break-word} .meta a{color:var(--accent)}
+.insite{margin-left:6px;padding:1px 8px;border-radius:999px;background:var(--accent);color:#fff;font-size:.7rem;font-weight:700}
+.c.insite-card{outline:2px solid var(--accent)}
+.order{margin:8px 0 12px;padding:8px;border:1px dashed var(--line);border-radius:10px;background:var(--card)}
+.order h3{margin:0 0 6px;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.order .row{display:flex;gap:10px;flex-wrap:wrap;min-height:48px}
+.oi{position:relative;width:150px;border:1px solid var(--line);border-radius:8px;background:var(--bg);padding:4px;cursor:grab}
+.oi.dragging{opacity:.4} .oi.over{outline:3px solid var(--accent)}
+.oi img{display:block;width:100%;height:90px;object-fit:cover;border-radius:5px}
+.oi .n{position:absolute;top:6px;left:6px;min-width:22px;height:22px;border-radius:999px;background:var(--accent);color:#fff;font-weight:800;font-size:.8rem;display:grid;place-items:center}
+.oi .tools{display:flex;gap:4px;justify-content:space-between;margin-top:4px}
+.oi button{padding:1px 8px;font-size:.8rem;background:transparent;color:var(--ink);border:1px solid var(--line)}
+.order .empty{color:var(--muted);font-size:.85rem;align-self:center}
 .warn{color:var(--warn);font-weight:600}
 select{font:inherit;font-size:.75rem}
 dialog{max-width:95vw;padding:0;border:0;background:#000} dialog img{max-width:95vw;max-height:90vh;display:block}
 </style></head><body>
-<header><h1>Photo shortlist: choose 3–5 per attraction (1–2 = partial)</h1>
+<header><h1>Photo shortlist: choose 3–5 per attraction (1–2 = partial); set their order</h1>
 <span id="total"></span><span id="filestate" class="sub"></span><button id="open" type="button" title="Load picks from selection.json">Open selection.json</button><button id="save" type="button" title="Save into the same selection.json each time">Save to selection.json</button><button id="export" type="button" class="alt">Download copy</button></header>
 <div class="layout"><nav id="toc" aria-label="Places"></nav><main id="m"></main></div>
 <dialog id="dlg"><img id="dlgimg" alt=""></dialog>
@@ -458,6 +472,11 @@ const KEY = "fda-photo-selection";
 let sel = {};
 let filter = "all";
 try { sel = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) {}
+// Places with no pick of their own start from what the site shows now, in its order, so you can deselect and re-order them.
+for (const [sid, list] of Object.entries(DOC.appliedPhotos || {})) {
+  if (sel[sid] === undefined) sel[sid] = Object.fromEntries(list.map(p => [p.id, { objectPosition: p.objectPosition }]));
+}
+const siteIds = sid => new Set(((DOC.appliedPhotos || {})[sid] || []).map(p => p.id));
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(sel)); } catch (e) {} render(); };
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const POS = ["center","top","bottom","left","right"];
@@ -477,14 +496,15 @@ function render() {
       <p class="sub"><span class="count ${n>=3?"ok":"bad"}">${n} selected${n>=1&&n<3?" (partial, can add more later)":""}</span>${inSite ? ` · <b>${inSite} already in the site</b>` : ""} · ${a.candidates.length} verified candidates
       ${a.shortfall ? `· <span class="warn">${esc(a.shortfall)}</span>` : ""}
       · rejected: ${esc(Object.entries(a.rejectedCounts||{}).map(([k,v])=>k+" "+v).join(", ") || "none")}</p>
-      <div class="grid"></div>`;
+      <div class="order"></div><div class="grid"></div>`;
+    renderOrder(s.querySelector(".order"), sid, a);
     const g = s.querySelector(".grid");
     for (const c of a.candidates) {
       const p = picks[c.id];
       const pos = p?.objectPosition || "center";
       const d = document.createElement("div");
-      d.className = "c" + (p ? " sel" : "");
-      d.innerHTML = `<label class="pick"><input type="checkbox" ${p?"checked":""}> Select ${esc(c.id)}</label>
+      d.className = "c" + (p ? " sel" : "") + (siteIds(sid).has(c.id) ? " insite-card" : "");
+      d.innerHTML = `<label class="pick"><input type="checkbox" ${p?"checked":""}> Select ${esc(c.id)}${siteIds(sid).has(c.id) ? '<span class="insite">in site now</span>' : ""}</label>
         <img class="full" src="${esc(c.thumb)}" alt="${esc(c.title)}" loading="lazy">
         <div class="prev">
           <div><div class="frame r32 cover"><img src="${esc(c.thumb)}" alt="" style="object-position:${pos}"></div>card 3:2 crop</div>
@@ -521,6 +541,44 @@ function render() {
   document.getElementById("total").textContent = `${pickedTotal} selected in ${done}/${total} places (3–5 complete, 1–2 partial)`;
   renderToc();
 }
+function reorder(sid, ids) {
+  const old = sel[sid] || {};
+  sel[sid] = Object.fromEntries(ids.filter(id => old[id]).map(id => [id, old[id]]));
+  save();
+}
+function renderOrder(box, sid, a) {
+  const ids = Object.keys(sel[sid] || {});
+  const byId = Object.fromEntries(a.candidates.map(c => [c.id, c]));
+  const inSite = siteIds(sid);
+  box.innerHTML = `<h3>Gallery order (the first photo is the card picture) · drag, or use ◀ ▶ · ✕ removes</h3><div class="row">${
+    ids.length ? ids.map((id, i) => `<div class="oi" draggable="true" data-id="${esc(id)}">
+        <span class="n">${i + 1}</span><img src="${esc(byId[id]?.thumb || "")}" alt="">
+        <div class="tools"><button type="button" data-act="left" ${i === 0 ? "disabled" : ""} aria-label="Earlier">◀</button>
+        <button type="button" data-act="rm" aria-label="Remove">✕</button>
+        <button type="button" data-act="right" ${i === ids.length - 1 ? "disabled" : ""} aria-label="Later">▶</button></div>
+        <small>${esc(id.replace(sid + "-", ""))}${inSite.has(id) ? " · in site" : ""}</small></div>`).join("")
+    : '<span class="empty">Nothing selected' + (inSite.size ? " — saving this clears the photos the site shows now." : ".") + "</span>"}</div>`;
+  let drag = null;
+  box.querySelectorAll(".oi").forEach(el => {
+    const id = el.dataset.id;
+    el.ondragstart = e => { drag = id; el.classList.add("dragging"); e.dataTransfer.effectAllowed = "move"; e.dataTransfer.setData("text/plain", id); };
+    el.ondragend = () => { drag = null; box.querySelectorAll(".over,.dragging").forEach(x => x.classList.remove("over", "dragging")); };
+    el.ondragover = e => { if (drag && drag !== id) { e.preventDefault(); el.classList.add("over"); } };
+    el.ondragleave = () => el.classList.remove("over");
+    el.ondrop = e => {
+      e.preventDefault(); if (!drag || drag === id) return;
+      const rest = ids.filter(x => x !== drag), at = rest.indexOf(id);
+      const r = el.getBoundingClientRect(), after = e.clientX > r.left + r.width / 2;
+      rest.splice(at + (after ? 1 : 0), 0, drag); reorder(sid, rest);
+    };
+    el.querySelectorAll("button").forEach(b => b.onclick = () => {
+      const i = ids.indexOf(id), next = ids.slice();
+      if (b.dataset.act === "left" && i > 0) { [next[i - 1], next[i]] = [next[i], next[i - 1]]; reorder(sid, next); }
+      if (b.dataset.act === "right" && i < ids.length - 1) { [next[i + 1], next[i]] = [next[i], next[i + 1]]; reorder(sid, next); }
+      if (b.dataset.act === "rm") { next.splice(i, 1); reorder(sid, next); }
+    });
+  });
+}
 function renderToc() {
   const toc = document.getElementById("toc");
   const rows = Object.entries(DOC.attractions).map(([sid, a]) => {
@@ -543,7 +601,8 @@ document.getElementById("dlg").onclick = e => e.currentTarget.close();
 const selectionDoc = () => {
   const out = { schemaVersion: 1, selectedAt: new Date().toISOString().slice(0,10), selections: {} };
   for (const [sid, picks] of Object.entries(sel)) {
-    const ids = Object.keys(picks); if (!ids.length) continue;
+    const ids = Object.keys(picks);                       // insertion order is the gallery order
+    if (!ids.length) { if ((DOC.applied || {})[sid]) out.selections[sid] = []; continue; }   // [] = clear the site gallery
     out.selections[sid] = ids.map(id => ({ id, objectPosition: picks[id].objectPosition }));
   }
   return out;

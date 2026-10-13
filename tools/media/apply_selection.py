@@ -1,7 +1,7 @@
 """Apply the content author's photo selection from review.html.
 
 Reads `content/<cc>/media-candidates/selection.json` (downloaded from review.html) and
-`candidates.json`, accepts 1-5 picks per attraction (fewer than 3 is a "partial" gallery that can be extended
+`candidates.json`, accepts 1-5 picks per attraction (in the order chosen; an empty list clears that place's gallery) (fewer than 3 is a "partial" gallery that can be extended
 later), refuses anything not in the verified shortlist,
 downloads 1440px copies (or, for the author's own photos from add_personal_candidates.py, resizes them) into `local-site/assets/places/`, and writes the selected-photo
 manifest `content/<cc>/photos.json` with full attribution and per-image framing.
@@ -116,6 +116,10 @@ def main() -> int:
     errors = []
     for sid, picks in selection["selections"].items():
         pool = {c["id"]: c for c in candidates.get(sid, {}).get("candidates", [])}
+        if len(picks) == 0:                      # the author deselected everything: remove the gallery from the site
+            if manifest.pop(sid, None) is not None:
+                print(f"{sid}: gallery cleared")
+            continue
         if not 1 <= len(picks) <= 5:
             errors.append(f"{sid}: {len(picks)} picks (need 1-5); skipped")
             continue
