@@ -195,6 +195,9 @@ that apply them are in the task skills above.
 - Photo and audio bytes never go into git: content-addressed store, `media-manifest.json` in git,
   public bucket for the site. Re-encode for the web (1440 px sRGB WebP + 640 px card; trimmed,
   normalized AAC). Keep originals and back them up; the store is the only copy.
+- Nothing in the repo, its content files or its history may contain this machine's absolute paths, the user name,
+  OneDrive or scratch-folder names (`_temp`, trip-folder names). Personal photo folders are referenced only by place
+  folder and file name; their location lives in `~/.finiteplay/`. `audit_guide.py` fails on such text.
 - The repo is public. Review staged files before every commit; tool caches (`.wrangler/`),
   inputs files and keys must never be committed. A leak is fixed by rewriting history and, for
   secrets or personal data, recreating the repository (old commits stay reachable by hash).

@@ -156,5 +156,19 @@ class ScoreAuditTest(unittest.TestCase):
         self.assertTrue(score_errors({"id": "p", "score": {"stars": 4, "rank": 1}}))
 
 
+class LocalPathAuditTest(unittest.TestCase):
+    def test_machine_paths_and_user_names_are_rejected(self):
+        from audit_guide import local_path_errors
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "ok.json").write_text('{"personal": {"folder": "kvernufoss", "file": "PXL_1.jpg"}}', encoding="utf-8")
+            self.assertEqual(local_path_errors(root), [])
+            (root / "bad.json").write_text('{"src": "C:\\Users\\someone\\Photos\\a.jpg"}', encoding="utf-8")
+            self.assertTrue(local_path_errors(root))
+            (root / "bad.json").write_text('{"src": "/Users/someone/a.jpg"}', encoding="utf-8")
+            self.assertTrue(local_path_errors(root))
+
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -292,7 +292,7 @@
   ],
   "sight-whales": [
    {
-    "id": "sight-whales-c01",
+    "id": "sight-whales-p002",
     "objectPosition": "center"
    },
    {
@@ -975,6 +975,20 @@
    },
    {
     "id": "sight-krauma-c12",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-lava-show": [
+   {
+    "id": "sight-lava-show-p017",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-lava-show-p016",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-lava-show-p019",
     "objectPosition": "center"
    }
   ]

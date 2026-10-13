@@ -1467,48 +1467,6 @@
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2"
   },
-  "assets/places/sight-akureyri-botanical-garden-c01.jpg": {
-   "key": "is/photos/f29c21750eb51093.webp",
-   "sha256": "f29c21750eb5109327b58a624115ab2a7ae76ddad6a12987b7ba04ff32e9d925",
-   "bytes": 434800,
-   "type": "image/webp",
-   "width": 1440,
-   "height": 1037,
-   "source": {
-    "sha256": "ff7790131d1662384f8c8c8e773ff564f1874f02b4aa1d30f6ed2567b979eb5c",
-    "bytes": 1115845
-   },
-   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
-   "card": {
-    "key": "is/photos/f2beb8ff78ba409d-640.webp",
-    "sha256": "f2beb8ff78ba409d56b3fc45a9734ca48e673192a977ef6974dcb12d4a1ed11a",
-    "bytes": 65460,
-    "type": "image/webp",
-    "width": 640,
-    "height": 461
-   }
-  },
-  "assets/places/sight-akureyri-botanical-garden-c04.jpg": {
-   "key": "is/photos/0d12d60a8a91f4d6.webp",
-   "sha256": "0d12d60a8a91f4d6a588df4778886b654082800a0219b3bc1d61eae0d708cdb8",
-   "bytes": 539314,
-   "type": "image/webp",
-   "width": 1440,
-   "height": 956,
-   "source": {
-    "sha256": "f7458ce3f6f3f81b9f10ee8db6c9b7bbff9a2ec8f7ec2e13a3bc85d64c26b89e",
-    "bytes": 1228177
-   },
-   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
-   "card": {
-    "key": "is/photos/3657a0da13bcdd34-640.webp",
-    "sha256": "3657a0da13bcdd347a7c0e7504e170ab24f83a7cd71c543ae16a8738bee7934d",
-    "bytes": 104062,
-    "type": "image/webp",
-    "width": 640,
-    "height": 425
-   }
-  },
   "assets/places/sight-akureyri-botanical-garden-c05.jpg": {
    "key": "is/photos/765029d2476ca77a.webp",
    "sha256": "765029d2476ca77afe04b48de920117ab5ee70331eb5f2b981a751b6b539202f",
@@ -1572,6 +1530,48 @@
     "height": 425
    }
   },
+  "assets/places/sight-akureyri-botanical-garden-c17.jpg": {
+   "key": "is/photos/8e3523c55d90a7c8.webp",
+   "sha256": "8e3523c55d90a7c8ad709972945d6c7652da9d65d851c25278112426264496fc",
+   "bytes": 629682,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1080,
+   "source": {
+    "sha256": "a1c951e554e085aa4c60c955af1935b9e0c11a3610e12edb72c66f03da4020f7",
+    "bytes": 1388642
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/9a1c04c75714c3fa-640.webp",
+    "sha256": "9a1c04c75714c3fa46ae48a3c57c7224f0a5501fcaed4c5cb18335539889005d",
+    "bytes": 118288,
+    "type": "image/webp",
+    "width": 640,
+    "height": 480
+   }
+  },
+  "assets/places/sight-akureyri-botanical-garden-p001.jpg": {
+   "key": "is/photos/aad4032a5d90a123.webp",
+   "sha256": "aad4032a5d90a1231f2157435567cd7a27b4eb37145d910a5c029f7edd5a2289",
+   "bytes": 360126,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "40c5edee44a9b0816474200472c351f73a5bd3b7b6c4aca5542cafb177150271",
+    "bytes": 597440
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/fd464abedf5217bb-640.webp",
+    "sha256": "fd464abedf5217bb0323cb46e592f7904fe61086324d3a7d7ad9454f65374957",
+    "bytes": 75970,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
   "assets/places/sight-arnarstapi-hellnar-c03.jpg": {
    "key": "is/photos/f9a22008584b29d9.webp",
    "sha256": "f9a22008584b29d967aef68084a1d1b700769164d58d2cb91ff0fb562a67aefe",
@@ -1614,27 +1614,6 @@
     "height": 428
    }
   },
-  "assets/places/sight-arnarstapi-hellnar-c12.jpg": {
-   "key": "is/photos/0618c5b0a5f8ee86.webp",
-   "sha256": "0618c5b0a5f8ee86c997149ac8b3375e950c095f5a4cc353636ca77978c89c78",
-   "bytes": 242386,
-   "type": "image/webp",
-   "width": 1440,
-   "height": 964,
-   "source": {
-    "sha256": "1bdd417c386db71cc8950f189d69a70bfcb9b84fd062ce8ed7c92303b63f9e4d",
-    "bytes": 665105
-   },
-   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
-   "card": {
-    "key": "is/photos/723432b59efe5f3f-640.webp",
-    "sha256": "723432b59efe5f3f2fe62c51c5300b1f9f8085d54fdd414039d6a7273f0e36af",
-    "bytes": 38536,
-    "type": "image/webp",
-    "width": 640,
-    "height": 428
-   }
-  },
   "assets/places/sight-arnarstapi-hellnar-c20.jpg": {
    "key": "is/photos/f0804605572e2400.webp",
    "sha256": "f0804605572e2400c80b6346221ab76b3fb0496554e8a59a960a4e398c23fab0",
@@ -1656,25 +1635,46 @@
     "height": 428
    }
   },
-  "assets/places/sight-bjarnarhofn-c02.jpg": {
-   "key": "is/photos/fb69b0b42634b8bb.webp",
-   "sha256": "fb69b0b42634b8bb1d9539d5ddb638fcbca40008984ed143fb57ed258c87cc5e",
-   "bytes": 264484,
+  "assets/places/sight-arnarstapi-hellnar-p011.jpg": {
+   "key": "is/photos/64e11614b5c02c5e.webp",
+   "sha256": "64e11614b5c02c5e618109faa598f1b53d0408ce238f1f63c3a42ab214f4c0fa",
+   "bytes": 263220,
    "type": "image/webp",
    "width": 1440,
-   "height": 1031,
+   "height": 1084,
    "source": {
-    "sha256": "4ab48426e45c74158ad2eb38ceb1af4600b5c883af3b4cd389ab8b8364e172af",
-    "bytes": 580323
+    "sha256": "3136085f43ac1d95aaddcc346bec06e6b954e47b385df4e504633d59838b79ca",
+    "bytes": 468442
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/6496f3df61d28640-640.webp",
-    "sha256": "6496f3df61d286406f8e08a5ceb10c53f8dcbb46752a905158ae581333250424",
-    "bytes": 43004,
+    "key": "is/photos/b193bb152bbc858c-640.webp",
+    "sha256": "b193bb152bbc858c1038f5677ef3914567a42dc36d8c2299edc549e0367deb1b",
+    "bytes": 45058,
     "type": "image/webp",
     "width": 640,
-    "height": 458
+    "height": 482
+   }
+  },
+  "assets/places/sight-arnarstapi-hellnar-p014.jpg": {
+   "key": "is/photos/3163e6cdbf782652.webp",
+   "sha256": "3163e6cdbf782652ac76d9c5c81d17a314af2a3de3cf6adc21767cd55566f031",
+   "bytes": 180928,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "ae84d68d3cd594d760f4c9c85f2d3f9f04d13586fc0ae1253a1df99c350d65e0",
+    "bytes": 374037
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/069f1ae3d112d561-640.webp",
+    "sha256": "069f1ae3d112d561445ad14c74c76ad98fb39af086eb3b0abd8eccca495c75a0",
+    "bytes": 40274,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
    }
   },
   "assets/places/sight-bjarnarhofn-c03.jpg": {
@@ -1717,6 +1717,69 @@
     "type": "image/webp",
     "width": 640,
     "height": 480
+   }
+  },
+  "assets/places/sight-bjarnarhofn-p002.jpg": {
+   "key": "is/photos/0806dd7f1dad72e5.webp",
+   "sha256": "0806dd7f1dad72e55a1e995b3756bd9433dd8097fd29be3166498badb25aa4ce",
+   "bytes": 213970,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "766f457c29433e1311c1b551d827191f35d09e222207f1a0f8750eeb46d40649",
+    "bytes": 434646
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/28e9091bfef24f2b-640.webp",
+    "sha256": "28e9091bfef24f2b3ae8e11b22278ac95ff32bde9b689fb47729f21415eabc3e",
+    "bytes": 47184,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-bjarnarhofn-p005.jpg": {
+   "key": "is/photos/6732e08e349c93fc.webp",
+   "sha256": "6732e08e349c93fc763cc2f60d222e3512da8528cbefa7dd1597e3544eceb4ef",
+   "bytes": 220180,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "ebbc3b6fb49b6efcd69b0c5337f0a734d51853b3ee809f4edd9157f98ba2a29a",
+    "bytes": 458830
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/ca057560477e68fb-640.webp",
+    "sha256": "ca057560477e68fbfb536263a8de65d8ada46f2fd656ea631f7074a8d26e029d",
+    "bytes": 57356,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-bjarnarhofn-p006.jpg": {
+   "key": "is/photos/0de3d9815acefeee.webp",
+   "sha256": "0de3d9815acefeeec00f612378be8fbc00e63f1873a0dd3e43b7256a041ae91a",
+   "bytes": 433178,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "225b1f0d3252491d1ecaf0854be81ea21873d607a57de05b85d0acc968e51976",
+    "bytes": 668379
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/4c318bf491d617ce-640.webp",
+    "sha256": "4c318bf491d617ceff80cdda083af87f4f573134b86970aec1ac57478b05533e",
+    "bytes": 75574,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
    }
   },
   "assets/places/sight-blue-lagoon-c01.jpg": {
@@ -1782,6 +1845,48 @@
     "height": 480
    }
   },
+  "assets/places/sight-blue-lagoon-p001.jpg": {
+   "key": "is/photos/70e4992453b11c6a.webp",
+   "sha256": "70e4992453b11c6a6f0659b3ee06dd6d31140d6529a6c7d9b8a57d751906172c",
+   "bytes": 130150,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "99778d911f267932013a2e105175d26b2d6e98757ed65af864a0b211ac6bd39c",
+    "bytes": 284238
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/09e330bc3c0e15a9-640.webp",
+    "sha256": "09e330bc3c0e15a9292071c36b63ff26e8aaebb5fc841d72723a8067398c2959",
+    "bytes": 24824,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-blue-lagoon-p002.jpg": {
+   "key": "is/photos/2561214597c2f945.webp",
+   "sha256": "2561214597c2f9453f15d8dc33548f797f159ee1e0c74a94d1005f86cf0d2b24",
+   "bytes": 65534,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "1598d2c71ac9bcc0f6f57250893423f225106d7277391b920a6f978accee261e",
+    "bytes": 194033
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/2af73f023d24e6f8-640.webp",
+    "sha256": "2af73f023d24e6f8a6e8852cca49a265685957db549f66b16f9ab77d82c78115",
+    "bytes": 15962,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
   "assets/places/sight-bruarfoss-c01.jpg": {
    "key": "is/photos/93ea7dcc46a458c2.webp",
    "sha256": "93ea7dcc46a458c2b617f9faf217543e5847290c08ba384e57418f7ee844109e",
@@ -1845,25 +1950,25 @@
     "height": 427
    }
   },
-  "assets/places/sight-bruarfoss-c15.jpg": {
-   "key": "is/photos/cb3e0456f528a0cf.webp",
-   "sha256": "cb3e0456f528a0cf793e7b9468eb47c3e5553402ecda5edc105b427f20a74c48",
-   "bytes": 384396,
+  "assets/places/sight-bruarfoss-p007.jpg": {
+   "key": "is/photos/a40cb8e154207538.webp",
+   "sha256": "a40cb8e1542075388e354b8536d17d7c45862838446bdfe50b64c7564decfd6b",
+   "bytes": 368972,
    "type": "image/webp",
    "width": 1440,
-   "height": 896,
+   "height": 1084,
    "source": {
-    "sha256": "7e3afc2bca0cabb69b840ca1aa84aeafb4d9713b0a0fe9bde8ba751bfb5de6b1",
-    "bytes": 1001833
+    "sha256": "2f2f58bf08d2b2f72774708c9647f92ffc1252ce7500b2cf8ab17fa4697c26cb",
+    "bytes": 603890
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/5fcf65fbe738af54-640.webp",
-    "sha256": "5fcf65fbe738af543e96037ec0790be81a087939b76809ed83c907ee8d336919",
-    "bytes": 73100,
+    "key": "is/photos/d8c9fc50d2f54b67-640.webp",
+    "sha256": "d8c9fc50d2f54b67b98896d89887f7a5e82973266a8124e9f34a60d993d6afd5",
+    "bytes": 63096,
     "type": "image/webp",
     "width": 640,
-    "height": 398
+    "height": 482
    }
   },
   "assets/places/sight-budakirkja-c02.jpg": {
@@ -1992,25 +2097,46 @@
     "height": 426
    }
   },
-  "assets/places/sight-dettifoss-c01.jpg": {
-   "key": "is/photos/110e593c72de1c8a.webp",
-   "sha256": "110e593c72de1c8aaad38098f05f70c7bda952a209a96c70e5c38a1bfb3b7bc1",
-   "bytes": 478298,
+  "assets/places/sight-caves-of-hella-p001.jpg": {
+   "key": "is/photos/f0dcb26621e4df38.webp",
+   "sha256": "f0dcb26621e4df381a082e41086a95bce27d55992b2d8c829c71d0c77c096146",
+   "bytes": 238708,
    "type": "image/webp",
    "width": 1440,
-   "height": 961,
+   "height": 1080,
    "source": {
-    "sha256": "72a429408449544f9f779a87bb6e87275c3baffa00d3beb1d32df5ae56ed4144",
-    "bytes": 1169989
+    "sha256": "b29b4d2e9080a61c0bbb9ee47847bd071a32ea8508772f4439e593c2c94b631d",
+    "bytes": 471708
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/61163641c676ac67-640.webp",
-    "sha256": "61163641c676ac67ad0332135532b76a5c404f0aa1542627afc43c29c556ddf8",
-    "bytes": 82284,
+    "key": "is/photos/0616b9972b065990-640.webp",
+    "sha256": "0616b9972b0659905da20d0016a76186b82d48e8439c337d5fdccab8269d21e5",
+    "bytes": 54858,
     "type": "image/webp",
     "width": 640,
-    "height": 427
+    "height": 480
+   }
+  },
+  "assets/places/sight-caves-of-hella-p004.jpg": {
+   "key": "is/photos/9c39e06bde133715.webp",
+   "sha256": "9c39e06bde13371522b82f2a1f23737e294e4aefbda3c95f33e8d0cc9b6db007",
+   "bytes": 291012,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "85d137a9010696975c7aef590008ade79c5a54f506b5c771e9bad20111651085",
+    "bytes": 521850
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/6c8a42303cb6098a-640.webp",
+    "sha256": "6c8a42303cb6098a07b6809ec3707c3bba8a3acdeab5a9092b1f9642bff79b36",
+    "bytes": 60668,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
    }
   },
   "assets/places/sight-dettifoss-c08.jpg": {
@@ -2053,6 +2179,69 @@
     "type": "image/webp",
     "width": 640,
     "height": 322
+   }
+  },
+  "assets/places/sight-dettifoss-p010.jpg": {
+   "key": "is/photos/36c381e38c2eb8eb.webp",
+   "sha256": "36c381e38c2eb8ebfbe068044a8c729acc19720c0d0c6f57376292ce5b97761e",
+   "bytes": 225268,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "3351cb947bb69069f71cde5d256c5b90f25ebe322ca125eddd257926cec31963",
+    "bytes": 411365
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/0890f043b55f0d52-640.webp",
+    "sha256": "0890f043b55f0d5227cc0462665947a43bd34b17301c89572423fc7f6cba6f50",
+    "bytes": 37386,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-dettifoss-p020.jpg": {
+   "key": "is/photos/4c63d8dd041fa694.webp",
+   "sha256": "4c63d8dd041fa69453920efcb2e17a04151aa21369676b9e2f5f7ce8d9154725",
+   "bytes": 151228,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "3b96663841ef0b2c65698b1e04665b245a1ecfbc3f5ec2f8849fab2c2ed41c6c",
+    "bytes": 322547
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/857b682a16b2b915-640.webp",
+    "sha256": "857b682a16b2b9152cfd5b1c952478dec09e103922f9d9eca6b0f28274cca27b",
+    "bytes": 29278,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-dettifoss-p035.jpg": {
+   "key": "is/photos/3106fdce757ad25f.webp",
+   "sha256": "3106fdce757ad25febc5ceb516763792ab804f893f70c627e0c8563e61a97e08",
+   "bytes": 160998,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "467c4d819eff8b8811cc5dfcf654009ecec307597f9ea9e02a2b635731bea511",
+    "bytes": 343368
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/f9cf240aa87c3ad1-640.webp",
+    "sha256": "f9cf240aa87c3ad1c5d35fddd05e8ed84ccf639ec92ebc58e33a76aaab091b5e",
+    "bytes": 36424,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
    }
   },
   "assets/places/sight-diamond-beach-c03.jpg": {
@@ -2181,27 +2370,6 @@
     "height": 360
    }
   },
-  "assets/places/sight-djupalonssandur-c05.jpg": {
-   "key": "is/photos/0ec1d1b48d870700.webp",
-   "sha256": "0ec1d1b48d8707008a8cb805772e64535cae96cbe5aee18265cbe9efbebc3a4e",
-   "bytes": 250076,
-   "type": "image/webp",
-   "width": 1440,
-   "height": 960,
-   "source": {
-    "sha256": "524cc31e06df9465cc3e95e68f973cdef665b435babe61c56f2e09ebf267800c",
-    "bytes": 656307
-   },
-   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
-   "card": {
-    "key": "is/photos/3e719c212875b032-640.webp",
-    "sha256": "3e719c212875b032496558e950f7e0a5d684704f14931206427b1c29af93fb9e",
-    "bytes": 56270,
-    "type": "image/webp",
-    "width": 640,
-    "height": 427
-   }
-  },
   "assets/places/sight-djupalonssandur-c07.jpg": {
    "key": "is/photos/fad87b1bbf7f986e.webp",
    "sha256": "fad87b1bbf7f986e0ff6de194b07feb358f0d22dcbf449f7f5cefa140a995bde",
@@ -2263,6 +2431,27 @@
     "type": "image/webp",
     "width": 640,
     "height": 424
+   }
+  },
+  "assets/places/sight-djupalonssandur-p006.jpg": {
+   "key": "is/photos/9479a700acd9a139.webp",
+   "sha256": "9479a700acd9a139c7a7b61175bfabfa3c4035387e4596209311576604c39280",
+   "bytes": 201908,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "69828c42a1b57ca54ff32e1219cab11fadba6c39031debe2c7002f4203c77c2f",
+    "bytes": 379778
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/897adde280d36200-640.webp",
+    "sha256": "897adde280d36200c50ed16cee10d1d5b4808a7c91c12e9884dbc92a070a3679",
+    "bytes": 41288,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
    }
   },
   "assets/places/sight-djupivogur-c02.jpg": {
@@ -2328,25 +2517,25 @@
     "height": 427
    }
   },
-  "assets/places/sight-dverghamrar-c01.jpg": {
-   "key": "is/photos/152875735358b99c.webp",
-   "sha256": "152875735358b99c514aa67ebab1614023e8176f9547f14df5b658029947dc71",
-   "bytes": 137250,
+  "assets/places/sight-djupivogur-p004.jpg": {
+   "key": "is/photos/239c43ce398c6bce.webp",
+   "sha256": "239c43ce398c6bcedd458a92ab09cf6519ceb3d54bccd5e71f3b51e0a9b5415b",
+   "bytes": 77312,
    "type": "image/webp",
    "width": 1440,
-   "height": 1080,
+   "height": 1084,
    "source": {
-    "sha256": "6d26ebe800ca5fa1d0550ce6ba3a014868709579091d421a779cf2d29cd4d6ae",
-    "bytes": 514037
+    "sha256": "4b9619a5ef41a88a578a0a3581459233c8483ea9d3bb43330cd0b916c1bf7448",
+    "bytes": 206808
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/d1ba1cbbfb686634-640.webp",
-    "sha256": "d1ba1cbbfb68663429577fcf49c952acd430e1c8d2143ed536e5ffc95e4bfd4e",
-    "bytes": 31278,
+    "key": "is/photos/c6476e43b7f7ab15-640.webp",
+    "sha256": "c6476e43b7f7ab15da32a19d247dba532c390c218d1692cc550b0db0c9f84080",
+    "bytes": 14694,
     "type": "image/webp",
     "width": 640,
-    "height": 480
+    "height": 482
    }
   },
   "assets/places/sight-dverghamrar-c02.jpg": {
@@ -2391,25 +2580,25 @@
     "height": 480
    }
   },
-  "assets/places/sight-dverghamrar-c20.jpg": {
-   "key": "is/photos/d821071cc2b300c3.webp",
-   "sha256": "d821071cc2b300c33b93aaa54c7a55b89849b3aec9fe92f52e6a7b22b8249a86",
-   "bytes": 253454,
+  "assets/places/sight-dverghamrar-p003.jpg": {
+   "key": "is/photos/a4b94233b1e89395.webp",
+   "sha256": "a4b94233b1e89395052daddb2d7989ebc1b5b26ce68e9f862ef25cd449f26730",
+   "bytes": 265928,
    "type": "image/webp",
    "width": 1440,
-   "height": 959,
+   "height": 1084,
    "source": {
-    "sha256": "fec6ad7dd39129913bb94ae2a3e769c6e08411409b30d7030c44bdb4915ff484",
-    "bytes": 693804
+    "sha256": "ccea5cb4294ab42ce9fa9d4c21d9347b5ff8b70af24c3d7ca67554d6e71d36bb",
+    "bytes": 465048
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/95d16625919c8156-640.webp",
-    "sha256": "95d16625919c8156351870fa0c83752bc782be91cfb031b2575c151e66ca4943",
-    "bytes": 46666,
+    "key": "is/photos/ea8fe46fc2e1e59f-640.webp",
+    "sha256": "ea8fe46fc2e1e59f620d1be56ac8a9d98ccd97d187e6aaf04d158485235defea",
+    "bytes": 46696,
     "type": "image/webp",
     "width": 640,
-    "height": 426
+    "height": 482
    }
   },
   "assets/places/sight-earth-lagoon-myvatn-c01.jpg": {
@@ -2559,25 +2748,25 @@
     "height": 427
    }
   },
-  "assets/places/sight-fjallsarlon-c18.jpg": {
-   "key": "is/photos/f991a07e6382aa94.webp",
-   "sha256": "f991a07e6382aa94f765702ef641d56abf521d10c74655d862e27539e3737b19",
-   "bytes": 132340,
+  "assets/places/sight-fjallsarlon-p003.jpg": {
+   "key": "is/photos/dd892295df62c09f.webp",
+   "sha256": "dd892295df62c09f0cf86b13550daf234c73ea2ecee9b5d13b8f79d625db59c6",
+   "bytes": 120408,
    "type": "image/webp",
    "width": 1440,
-   "height": 815,
+   "height": 1084,
    "source": {
-    "sha256": "8ac882b89a92f25afa5206e110b309dbe15bc6d889bc08173f05f333cc05ce47",
-    "bytes": 463864
+    "sha256": "2912e88b88fea6f50d0f11eb8b4f924b3048ac475b9de2d1a75722a8f256ddea",
+    "bytes": 284030
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/08dd7e634b77b15e-640.webp",
-    "sha256": "08dd7e634b77b15efe24773296fd5bc8b68585d3de5296e1ccc5e67746fc4d9a",
-    "bytes": 24124,
+    "key": "is/photos/98ac6fccdf5201a1-640.webp",
+    "sha256": "98ac6fccdf5201a1d71044d9bfda69199618b698e5d43b296088ae78173b92f4",
+    "bytes": 26354,
     "type": "image/webp",
     "width": 640,
-    "height": 362
+    "height": 482
    }
   },
   "assets/places/sight-fontana-c01.jpg": {
@@ -2748,6 +2937,48 @@
     "height": 368
    }
   },
+  "assets/places/sight-geysir-c20.jpg": {
+   "key": "is/photos/22da3e3c87045f60.webp",
+   "sha256": "22da3e3c87045f609957b3d8480eda472d02bbac22cc8c4feaad776202a02d48",
+   "bytes": 372626,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1080,
+   "source": {
+    "sha256": "a727d372faf0e63d3634de208f75cbcb9c6ab1ee29949cb51acfb948406007ba",
+    "bytes": 937913
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/52855d6d8c4df144-640.webp",
+    "sha256": "52855d6d8c4df14456ef5492a90e8504ebfeabfaf48e26eb6d3f04a100c630b0",
+    "bytes": 61620,
+    "type": "image/webp",
+    "width": 640,
+    "height": 480
+   }
+  },
+  "assets/places/sight-geysir-p004.jpg": {
+   "key": "is/photos/383836c0966210e6.webp",
+   "sha256": "383836c0966210e691303fc5e5bb1bcf3006d4812bdb6ad3a8b8004a97abd2ca",
+   "bytes": 270936,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "872451393cc2f82921bf657a8ffae982c53bad5915e48808159e0d909765cd35",
+    "bytes": 471213
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/26df536f51582fe1-640.webp",
+    "sha256": "26df536f51582fe1690c4cfef0b0d74edf1b4523d114ea0e3581e05bdc221780",
+    "bytes": 40416,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
   "assets/places/sight-glaumbaer-c04.jpg": {
    "key": "is/photos/02eca2e7e0daa3b2.webp",
    "sha256": "02eca2e7e0daa3b2c2a1cad0ec9f5596593b7d21aeeb9c9dcde209f89e1be430",
@@ -2832,25 +3063,25 @@
     "height": 424
    }
   },
-  "assets/places/sight-glaumbaer-c13.jpg": {
-   "key": "is/photos/6e140d4ec12cc1e2.webp",
-   "sha256": "6e140d4ec12cc1e28b385db3b0a9ddc6d4ed4a7f6462ef487c86e953fc96c238",
-   "bytes": 173524,
+  "assets/places/sight-glaumbaer-p013.jpg": {
+   "key": "is/photos/ed07249576ca6146.webp",
+   "sha256": "ed07249576ca61468ffc869fdbb1f0e4a2c4a67faaa5ba08561e04a2e36bba1f",
+   "bytes": 110146,
    "type": "image/webp",
    "width": 1440,
-   "height": 718,
+   "height": 1084,
    "source": {
-    "sha256": "fb2a86f539ae24f0fd8671933dc86fca14d79363ed457041d598f37a834cc845",
-    "bytes": 520405
+    "sha256": "b542a386c3ebdc8a404ab48a6efc20a42559c86ed7088200b0e6c2bd5d9649db",
+    "bytes": 250433
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/ac22b9ecc0df0441-640.webp",
-    "sha256": "ac22b9ecc0df0441c0095e0b85b44898ea8575cb8ef4b61f77fcbdc361d68f2b",
-    "bytes": 25950,
+    "key": "is/photos/6658cfe34e1b17f9-640.webp",
+    "sha256": "6658cfe34e1b17f98484a52321f81ab488ab451dd4b0b60da9759ba2a5d22936",
+    "bytes": 21362,
     "type": "image/webp",
     "width": 640,
-    "height": 319
+    "height": 482
    }
   },
   "assets/places/sight-gljufrabui-c01.jpg": {
@@ -2979,6 +3210,48 @@
     "height": 424
    }
   },
+  "assets/places/sight-godafoss-p001.jpg": {
+   "key": "is/photos/f44c37cbed7a5b67.webp",
+   "sha256": "f44c37cbed7a5b6783568d89364e33cb6803f290bc46eee87e2e092144c5b767",
+   "bytes": 113598,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "c7302deee14c38a0d4a863a29eb4e10aa5043266c4024ec68825c244c8cfb7e7",
+    "bytes": 272156
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/04b253e2766ae142-640.webp",
+    "sha256": "04b253e2766ae1425bddde43a5e31c87bd22e970721fe3441478e97866190cd6",
+    "bytes": 21396,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-godafoss-p005.jpg": {
+   "key": "is/photos/9c2a9d4c4e868afd.webp",
+   "sha256": "9c2a9d4c4e868afde4c8ab4b9a731896b43426612c8d0def190142844540efaa",
+   "bytes": 145244,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "d385188b589412ade0eee1d9b5d383e76ee57e12ed82ef8b1126b98069b76bc1",
+    "bytes": 316708
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/bf618c5b55b9cfdb-640.webp",
+    "sha256": "bf618c5b55b9cfdb533557780cfd4247aa038d6dce391adf9f411eacdba029f9",
+    "bytes": 26278,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
   "assets/places/sight-gullfoss-c03.jpg": {
    "key": "is/photos/438eae2491787134.webp",
    "sha256": "438eae2491787134344312175059cc0d603f015553640d4c3ae858cc2ca2d292",
@@ -3042,25 +3315,46 @@
     "height": 427
    }
   },
-  "assets/places/sight-gullfoss-c10.jpg": {
-   "key": "is/photos/c31ca56f0185af48.webp",
-   "sha256": "c31ca56f0185af48bfe38ea685b254edbf5e825defc07cf2b1e7492f35004007",
-   "bytes": 416724,
+  "assets/places/sight-gullfoss-p010.jpg": {
+   "key": "is/photos/1587a3d1587d7855.webp",
+   "sha256": "1587a3d1587d78550b00cf4d387acd6d9f5a25acd9ab223c4fbc6a2705d1a11e",
+   "bytes": 185642,
    "type": "image/webp",
    "width": 1440,
-   "height": 923,
+   "height": 1084,
    "source": {
-    "sha256": "f8f671acdfc49ce2d54902f4cf7ca4997ab5067f380ce1273908b4c3ea573bf8",
-    "bytes": 1005113
+    "sha256": "13df9a93cc31580709642829d58a04a82337ac2a2dafafa512420fab72ae020c",
+    "bytes": 370379
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/791dbe71e5d3ab85-640.webp",
-    "sha256": "791dbe71e5d3ab85bc550478e9643fea13f79010be1d66a7522f16a456b4e85f",
-    "bytes": 82432,
+    "key": "is/photos/9f3094d30c60103d-640.webp",
+    "sha256": "9f3094d30c60103dc12e68784f8db2c7ade92112a1eca4f7b6c6be3b8330b9f0",
+    "bytes": 31194,
     "type": "image/webp",
     "width": 640,
-    "height": 410
+    "height": 482
+   }
+  },
+  "assets/places/sight-gullfoss-p011.jpg": {
+   "key": "is/photos/2ee299116813135d.webp",
+   "sha256": "2ee299116813135d7694117be3ea458db79731d8a6c62aee75a30bb4995ba071",
+   "bytes": 279462,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "dc097ddd8cc58a778c1526364aad9478f3dad23637096a7f5869b5a58d37a2a8",
+    "bytes": 491288
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/bf683a49a6f9ed1d-640.webp",
+    "sha256": "bf683a49a6f9ed1dff8c6f6233a943878eb808b1c065655b32c7aedcc6fe2866",
+    "bytes": 43686,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
    }
   },
   "assets/places/sight-hallgrimskirkja-c02.jpg": {
@@ -3126,27 +3420,6 @@
     "height": 448
    }
   },
-  "assets/places/sight-harpa-c09.jpg": {
-   "key": "is/photos/018a2b2fd271477e.webp",
-   "sha256": "018a2b2fd271477e7813fdbb037e3574631fe697307bda4e0aec75544d17231f",
-   "bytes": 195916,
-   "type": "image/webp",
-   "width": 1440,
-   "height": 677,
-   "source": {
-    "sha256": "c467f214d97a00f739858691b1b660f062551c016a00e05c7b97da3cb4bf5ced",
-    "bytes": 556042
-   },
-   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
-   "card": {
-    "key": "is/photos/ab6044bea638aafb-640.webp",
-    "sha256": "ab6044bea638aafb1cc98f04306fd66a651b498e86c5a6fe89e8727ad3dc896a",
-    "bytes": 39884,
-    "type": "image/webp",
-    "width": 640,
-    "height": 301
-   }
-  },
   "assets/places/sight-harpa-c11.jpg": {
    "key": "is/photos/06062973390d4e31.webp",
    "sha256": "06062973390d4e31779682ab3a204845bb2f9e54bfce046241b641b24dab4f85",
@@ -3168,25 +3441,67 @@
     "height": 370
    }
   },
-  "assets/places/sight-harpa-c18.jpg": {
-   "key": "is/photos/0a5e6ebffe720a8f.webp",
-   "sha256": "0a5e6ebffe720a8fba2916dabc50de7d3dd761f9a8a8e33e7083f44276753504",
-   "bytes": 85358,
+  "assets/places/sight-harpa-p004.jpg": {
+   "key": "is/photos/8e165c4513a2c4bf.webp",
+   "sha256": "8e165c4513a2c4bf8e43e2362b06b14b19aff041ae612960fd37cf99f87c33da",
+   "bytes": 131084,
    "type": "image/webp",
    "width": 1440,
-   "height": 1080,
+   "height": 1084,
    "source": {
-    "sha256": "67aa50693d0b8398b2788a644bf3d2743e8abea47dd8e5cda9e6fa4ded76ebc0",
-    "bytes": 329298
+    "sha256": "5e3fc244b04d74946e2d3c4b8bcc0b75eb9bfdeef86c4cab02483c6da9562395",
+    "bytes": 306824
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/713f81088cf5ecd6-640.webp",
-    "sha256": "713f81088cf5ecd6e87024e23077cd9445d217138929a91c6e8a3f3aa6f5c469",
-    "bytes": 22150,
+    "key": "is/photos/936d870cce142127-640.webp",
+    "sha256": "936d870cce14212767b54953daeb92cdc41cbabfcc7fb24675c814ef35e71934",
+    "bytes": 29020,
     "type": "image/webp",
     "width": 640,
-    "height": 480
+    "height": 482
+   }
+  },
+  "assets/places/sight-harpa-p006.jpg": {
+   "key": "is/photos/db7761ce9aec1c6e.webp",
+   "sha256": "db7761ce9aec1c6e5ab155cb8b02bf9eb2d1ab464133a45b53e17412fdba33bb",
+   "bytes": 200506,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "b3e905f5b6ad7c86088f112c083435de549a05a6febfcc8171df049835579f75",
+    "bytes": 399919
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/f035980d9cdb24e6-640.webp",
+    "sha256": "f035980d9cdb24e60d8effe3e651cbbdf1c58cf4449b7052718a95454f066ff5",
+    "bytes": 41442,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-harpa-p007.jpg": {
+   "key": "is/photos/477c6b9dbafe875c.webp",
+   "sha256": "477c6b9dbafe875cff7dc0503f5bc38fd6ebce43631bbe3e28d427849d0d9052",
+   "bytes": 168418,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "15f1374fe694dba9ce725dba9a723891bf64fb85a144850957e606cc2eb31fa1",
+    "bytes": 365899
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/785d64e68611ee69-640.webp",
+    "sha256": "785d64e68611ee691fb55943a841586f3971631de1ac3781c101f846276d617b",
+    "bytes": 37216,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
    }
   },
   "assets/places/sight-hengifoss-c01.jpg": {
@@ -3205,27 +3520,6 @@
     "key": "is/photos/5ac6c8dd92f10a37-640.webp",
     "sha256": "5ac6c8dd92f10a375f276dfbdd4675c3ff5ecdfb023ba1bff919a2713a97d7b6",
     "bytes": 48038,
-    "type": "image/webp",
-    "width": 640,
-    "height": 427
-   }
-  },
-  "assets/places/sight-hengifoss-c05.jpg": {
-   "key": "is/photos/1296aac2befff9a1.webp",
-   "sha256": "1296aac2befff9a1e7cf74b6f5929b633e04959854f48b42e170967862ca6b56",
-   "bytes": 352626,
-   "type": "image/webp",
-   "width": 1440,
-   "height": 960,
-   "source": {
-    "sha256": "d4d517cb1b42fcc812f913e6b34c84be00a890ab0f6854dc8852677cbf2e135b",
-    "bytes": 823061
-   },
-   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
-   "card": {
-    "key": "is/photos/5d09d90c3e773cf6-640.webp",
-    "sha256": "5d09d90c3e773cf6c5576fb4aa2bf2c8b453fdd32e5029c3faafeb54a6f84f52",
-    "bytes": 80084,
     "type": "image/webp",
     "width": 640,
     "height": 427
@@ -3273,6 +3567,48 @@
     "height": 360
    }
   },
+  "assets/places/sight-hengifoss-p023.jpg": {
+   "key": "is/photos/7a53f297db0163b8.webp",
+   "sha256": "7a53f297db0163b8c467d7cb252d9c3c34b4d8a3fcd10729ec75b9f6746a2262",
+   "bytes": 363146,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "e3b277f9965e208b497d0212cb75127f619ee7e3538ad239b0535a21938dea81",
+    "bytes": 596110
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/7552372cdc121e54-640.webp",
+    "sha256": "7552372cdc121e5406d8befc8424d81333a2859fe64f2bfb673bef4d152c15ad",
+    "bytes": 71508,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-hengifoss-p027.jpg": {
+   "key": "is/photos/027f5ccb06b0dc31.webp",
+   "sha256": "027f5ccb06b0dc31a792da9925d512d6c4a0654dd56df5c329d730246b205b01",
+   "bytes": 416732,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "5bb3a315b8cd94c32b50cfb79a80fb89bbfad7c8b3675fc05aadf67192ee8e7f",
+    "bytes": 656919
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/dc546cc6c535e9df-640.webp",
+    "sha256": "dc546cc6c535e9df6314187ae9fd750066c33c6480c6e34742c8539ab48b37be",
+    "bytes": 74266,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
   "assets/places/sight-hverir-c01.jpg": {
    "key": "is/photos/6f1b57e6e5ef9725.webp",
    "sha256": "6f1b57e6e5ef9725982bce03bf4878f721ca7d3ec59172680df66bb208851d0f",
@@ -3315,67 +3651,67 @@
     "height": 396
    }
   },
-  "assets/places/sight-hverir-c06.jpg": {
-   "key": "is/photos/4c35e786dca350ae.webp",
-   "sha256": "4c35e786dca350ae330c2a3b2146bffec36e467968c6737d3ea9db70383e3af8",
-   "bytes": 121496,
+  "assets/places/sight-hverir-p011.jpg": {
+   "key": "is/photos/76d7f3136cee897a.webp",
+   "sha256": "76d7f3136cee897a8d90d86701550bbab5dff4266a8501b1b7f8d0886b9013f7",
+   "bytes": 137028,
    "type": "image/webp",
    "width": 1440,
-   "height": 960,
+   "height": 1084,
    "source": {
-    "sha256": "bb0fd82210936449a0cd735b1ae961935c8acf197d5e94ce01fca0e381ab8374",
-    "bytes": 383017
+    "sha256": "55c071ee8fc055f7adba332458ce754cf3c7ce03f1a0fde683a2e6a342346235",
+    "bytes": 324938
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/4490857ebed8d6ad-640.webp",
-    "sha256": "4490857ebed8d6ad3dde652d4c0fc8d110e11f1e107e63e401c527c78946109e",
-    "bytes": 25728,
+    "key": "is/photos/6e05ad7d481d7026-640.webp",
+    "sha256": "6e05ad7d481d7026c98b917b9bd16631334f96748223ddc79932c7a39b3a5901",
+    "bytes": 31030,
     "type": "image/webp",
     "width": 640,
-    "height": 427
+    "height": 482
    }
   },
-  "assets/places/sight-hverir-c08.jpg": {
-   "key": "is/photos/b8c65ceff7f8417a.webp",
-   "sha256": "b8c65ceff7f8417a464e7cc72a39f6c31009e68cdc6bd6480bfe722d8d547d5d",
-   "bytes": 181386,
+  "assets/places/sight-hverir-p015.jpg": {
+   "key": "is/photos/277cc512108d031b.webp",
+   "sha256": "277cc512108d031b6e85daad3f51bb49aa3d6a5ca765378c8becd0a69c874afb",
+   "bytes": 261062,
    "type": "image/webp",
    "width": 1440,
-   "height": 960,
+   "height": 1084,
    "source": {
-    "sha256": "b82665a54207626e8be2151b5350b23505890ba05e9e649cd2e0a93f94bef01d",
-    "bytes": 515041
+    "sha256": "0402798ee63d8964030b7b0f9260d46357eb20d5859e0615215ba9cfab66f77e",
+    "bytes": 470598
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/6291566030f93de4-640.webp",
-    "sha256": "6291566030f93de43c9d31a64af9dbf461d50823bb2d42481708fd7a8a4de7b1",
-    "bytes": 42012,
+    "key": "is/photos/92bbeeba33efb978-640.webp",
+    "sha256": "92bbeeba33efb978d84f8546b92b04ad9221486eaebbf9cb4d1d36cef53e5e67",
+    "bytes": 42920,
     "type": "image/webp",
     "width": 640,
-    "height": 427
+    "height": 482
    }
   },
-  "assets/places/sight-hverir-c16.jpg": {
-   "key": "is/photos/26939fd341ebe0f7.webp",
-   "sha256": "26939fd341ebe0f7359011efd84c83249502582ee48a804bd0b68d0c5ddd9409",
-   "bytes": 195212,
+  "assets/places/sight-hverir-p042.jpg": {
+   "key": "is/photos/334abd6069e8267d.webp",
+   "sha256": "334abd6069e8267dcf854c788f551c2f546837bdeb46bd935c0fdcfdec989ddb",
+   "bytes": 89086,
    "type": "image/webp",
    "width": 1440,
-   "height": 660,
+   "height": 1084,
    "source": {
-    "sha256": "f7bf31236fe7eaf9b12a9561b69e4140ce11bdd20a64b3b2919854a9fbc415c9",
-    "bytes": 472178
+    "sha256": "22e159e69f0b15798109e1ee6f4655ef617c3cf845ceb8eb12423976e9f53f5e",
+    "bytes": 237321
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/050b3b19e7ec6ec2-640.webp",
-    "sha256": "050b3b19e7ec6ec29a253ecb979a60bd3f69cf256bef30ee97815d07589c4b18",
-    "bytes": 37826,
+    "key": "is/photos/4a4213f07b2e3919-640.webp",
+    "sha256": "4a4213f07b2e391967c0389063a91780287cca69ec6c43cc9cf7d14ef674d4c0",
+    "bytes": 17752,
     "type": "image/webp",
     "width": 640,
-    "height": 293
+    "height": 482
    }
   },
   "assets/places/sight-jokulsarlon-c03.jpg": {
@@ -3462,25 +3798,25 @@
     "height": 333
    }
   },
-  "assets/places/sight-jokulsarlon-c19.jpg": {
-   "key": "is/photos/53729f90cf02f557.webp",
-   "sha256": "53729f90cf02f5575143c8bb1b64ad3098e6469b03b03129b832f2a9e4fef125",
-   "bytes": 140956,
+  "assets/places/sight-jokulsarlon-p011.jpg": {
+   "key": "is/photos/3db84425dc2214b6.webp",
+   "sha256": "3db84425dc2214b67088a1c44d92bbf54c1c54f596f1103ab9282089011f4a80",
+   "bytes": 70938,
    "type": "image/webp",
    "width": 1440,
-   "height": 962,
+   "height": 1080,
    "source": {
-    "sha256": "2c1ae539a954d712898ba515ba70f89db0b0171b5eebb727948459d2c2bb567b",
-    "bytes": 443150
+    "sha256": "4bae04bbd13f4a81a0588435aa110969f7fbca93a240c37d22bcf5f248846c07",
+    "bytes": 224504
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/bf454cb333f2caff-640.webp",
-    "sha256": "bf454cb333f2caffd647d930319c412daa1ab8cf44618ff6d8a5775339dfe6cd",
-    "bytes": 21302,
+    "key": "is/photos/d3e7a0beed93f63a-640.webp",
+    "sha256": "d3e7a0beed93f63a86eed538c492f21d038879df99033a9555fff1e27ea1d504",
+    "bytes": 18994,
     "type": "image/webp",
     "width": 640,
-    "height": 427
+    "height": 480
    }
   },
   "assets/places/sight-kerid-c02.jpg": {
@@ -3546,25 +3882,46 @@
     "height": 425
    }
   },
-  "assets/places/sight-kerid-c15.jpg": {
-   "key": "is/photos/a82a8d00f91aee27.webp",
-   "sha256": "a82a8d00f91aee2796372b28110a4ab998e1a00002f1d185e657e29caa44f9bc",
-   "bytes": 486214,
+  "assets/places/sight-kerid-p007.jpg": {
+   "key": "is/photos/b42f1ccbbb2c4c19.webp",
+   "sha256": "b42f1ccbbb2c4c1900008ccd7aeed37f0d078f8b0ca3d408b488ad147271401f",
+   "bytes": 258752,
    "type": "image/webp",
    "width": 1440,
-   "height": 976,
+   "height": 1084,
    "source": {
-    "sha256": "db750657ed47a566a8897e62eb41410ccec12a90ae2b37fa4ff29bff697acc42",
-    "bytes": 1150549
+    "sha256": "3298a218c8275bb4cf4969b5079d48e0cc74ec1ca6534c4a8a3be80871ebc92c",
+    "bytes": 466308
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/58d9906472ec9620-640.webp",
-    "sha256": "58d9906472ec962013ea86ddd93c9df19d951571f57fe08e89f53105f4dd3f7a",
-    "bytes": 75968,
+    "key": "is/photos/50489e446c9d083b-640.webp",
+    "sha256": "50489e446c9d083b9e17566838a21680037d59d7b7744b6ff7b1b7e25335d321",
+    "bytes": 47062,
     "type": "image/webp",
     "width": 640,
-    "height": 434
+    "height": 482
+   }
+  },
+  "assets/places/sight-kerid-p012.jpg": {
+   "key": "is/photos/2daab482973d4050.webp",
+   "sha256": "2daab482973d4050004097f5da27c3e56a74dc2ea54a0b4d39e31ef44a6432c7",
+   "bytes": 239740,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "3eaced48e171acbb600d46431e96fad7edcc90ff1b8bea9a7eb476cbe9017d04",
+    "bytes": 430319
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/235e99ba9d0fd801-640.webp",
+    "sha256": "235e99ba9d0fd8012be7771879a4a6a0af3db1946ec2bec12de3fcafb7b6e82e",
+    "bytes": 39248,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
    }
   },
   "assets/places/sight-kirkjufellsfoss-c05.jpg": {
@@ -3651,25 +4008,25 @@
     "height": 427
    }
   },
-  "assets/places/sight-kirkjufellsfoss-c19.jpg": {
-   "key": "is/photos/ea2fed02c9581a61.webp",
-   "sha256": "ea2fed02c9581a613cbecd1c7d7ecd0ed4ca7985bd14400d101c788ed0ad5d47",
-   "bytes": 233328,
+  "assets/places/sight-kirkjufellsfoss-p001.jpg": {
+   "key": "is/photos/577a9c6a005af326.webp",
+   "sha256": "577a9c6a005af326d71aeeb74e02f46f290dc84d2b7eb0a165e6b6a9b62b0354",
+   "bytes": 239600,
    "type": "image/webp",
    "width": 1440,
-   "height": 956,
+   "height": 1084,
    "source": {
-    "sha256": "58334e94fc42ce942e08beaf884e0977f1db3ae43a300e734bf9b93b48bdd7b9",
-    "bytes": 702564
+    "sha256": "255639bc2222519c5b3985505c80275517b16d7b6b02a8accd5851f349ce3e1d",
+    "bytes": 434455
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/15e72cb0aaf3cb6f-640.webp",
-    "sha256": "15e72cb0aaf3cb6f870b4c66944dec63cbd4ebe8fdc5c134677a7b6ebfe8d1ee",
-    "bytes": 46594,
+    "key": "is/photos/6f883a779e5740b5-640.webp",
+    "sha256": "6f883a779e5740b571f04e0151115aef80c40132b35e8fdf426482028515c5dd",
+    "bytes": 37708,
     "type": "image/webp",
     "width": 640,
-    "height": 425
+    "height": 482
    }
   },
   "assets/places/sight-krauma-c01.jpg": {
@@ -3903,6 +4260,69 @@
     "height": 405
    }
   },
+  "assets/places/sight-lava-show-p016.jpg": {
+   "key": "is/photos/70bdd88dc2124717.webp",
+   "sha256": "70bdd88dc2124717d27058ae0c0c7357c61f805a17aa9e19b92ef58d61958bc1",
+   "bytes": 72842,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1080,
+   "source": {
+    "sha256": "e0b6621ca2c939d14387654477a4bcdc9abd1f5b8bfad7d18ab05bc91f561b81",
+    "bytes": 223952
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/d0579fc0068d2f2a-640.webp",
+    "sha256": "d0579fc0068d2f2a0ba181e7ead590e3779c7179474af21f9756699312966f9f",
+    "bytes": 23938,
+    "type": "image/webp",
+    "width": 640,
+    "height": 480
+   }
+  },
+  "assets/places/sight-lava-show-p017.jpg": {
+   "key": "is/photos/40e8f1cc407b032d.webp",
+   "sha256": "40e8f1cc407b032d432e5202bd81eec98d758f4e34cd658fdc95e2c6a0f2e3d5",
+   "bytes": 85320,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1080,
+   "source": {
+    "sha256": "35cf135fde74540de0266a344013515270509de41554a119daf729851d6b1079",
+    "bytes": 250969
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/c4e3c4b68ebfcbde-640.webp",
+    "sha256": "c4e3c4b68ebfcbdeaea5ee2e5c863ea1ac0bd3651dd67f76d101166b54e5e8aa",
+    "bytes": 24898,
+    "type": "image/webp",
+    "width": 640,
+    "height": 480
+   }
+  },
+  "assets/places/sight-lava-show-p019.jpg": {
+   "key": "is/photos/23b9f5291bc27d3b.webp",
+   "sha256": "23b9f5291bc27d3be7ee57bf1d2a010fb8eb06fb6e7b2341a0d42d2013e5cfd5",
+   "bytes": 65778,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1080,
+   "source": {
+    "sha256": "024b89a27fb23c2f4f96de44444fcf43b635aa504df235b03fdfaf2f25482e5a",
+    "bytes": 208567
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/1f95e7469ded0513-640.webp",
+    "sha256": "1f95e7469ded051371cae1b7aaab92c28b7fabb325c37d19d82e2fc2acaa3c65",
+    "bytes": 20334,
+    "type": "image/webp",
+    "width": 640,
+    "height": 480
+   }
+  },
   "assets/places/sight-londrangar-c01.jpg": {
    "key": "is/photos/220999be09d13745.webp",
    "sha256": "220999be09d13745f5ef16aaace28cebcacdcce764d680822c58f181e289d36a",
@@ -3964,6 +4384,90 @@
     "type": "image/webp",
     "width": 640,
     "height": 427
+   }
+  },
+  "assets/places/sight-londrangar-p003.jpg": {
+   "key": "is/photos/b0a7abaa0e0dfb03.webp",
+   "sha256": "b0a7abaa0e0dfb039c7997760b58f4449f27524eca85624fe96c0ac114fdcc2c",
+   "bytes": 242910,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "8c6d243599ecde9db53866d3e7c00efb5cf6b930256bfc627d290aea70a137f9",
+    "bytes": 439564
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/fed75b9c380770d2-640.webp",
+    "sha256": "fed75b9c380770d2e13ee554d154193229462f59308d239c38a94fd0640704c2",
+    "bytes": 43894,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-magic-ice-p001.jpg": {
+   "key": "is/photos/2a514af1e8fa5947.webp",
+   "sha256": "2a514af1e8fa594751987f5c75d82f95f85e083e002f2c42f150bd382226d026",
+   "bytes": 163220,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "1187ec266cd90ff4c4172d6fc168768b2d6ae9b7e9705995ae87c94e73dbb35e",
+    "bytes": 388849
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/16a27fd596046c29-640.webp",
+    "sha256": "16a27fd596046c2998194fdd5133ad1586c3888a4f03722ad7f10e7bc4a2eb54",
+    "bytes": 45856,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-magic-ice-p002.jpg": {
+   "key": "is/photos/3eb536f78df9a5b9.webp",
+   "sha256": "3eb536f78df9a5b9e1160b067c8ba23f227672691d347670c28d91535069ea54",
+   "bytes": 185982,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "ce27c1559f43a3865ac3c746e74b1ea639d9331f12065533dd2fbc017689d2fe",
+    "bytes": 405988
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/0b12197b57f1e33d-640.webp",
+    "sha256": "0b12197b57f1e33d15cf8289b8e37b9cf16ac3eaa2dda1cfaa436ef1c58c5011",
+    "bytes": 48804,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-magic-ice-p003.jpg": {
+   "key": "is/photos/d1352b4b24f10275.webp",
+   "sha256": "d1352b4b24f1027572809c710e3bf7184ebbe86bcbf2dd03cb994d1cb3d1c9ff",
+   "bytes": 190362,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "e0a09998da8a633616ff511e25298d0e73999b295ce6c88980deed76b0f90abf",
+    "bytes": 399298
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/8fb5c0afecbb4c32-640.webp",
+    "sha256": "8fb5c0afecbb4c32652771ff03749898811e7bffe511eaf4d98f143200025f59",
+    "bytes": 44094,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
    }
   },
   "assets/places/sight-myvatn-c03.jpg": {
@@ -4239,6 +4743,90 @@
     "height": 427
    }
   },
+  "assets/places/sight-perlan-m01.jpg": {
+   "key": "is/photos/9a6f0b936b10b9cf.webp",
+   "sha256": "9a6f0b936b10b9cf7bcc6bba87bd72c94bb141ed2ebece35875f34efd2679c18",
+   "bytes": 97320,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 959,
+   "source": {
+    "sha256": "6088b4446f78e6cb3b62ecd62b25cb8c27ebb37562146577c84859470b6b42e1",
+    "bytes": 407578
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/6aae49e5629f5e61-640.webp",
+    "sha256": "6aae49e5629f5e6102d5336d8ccd8d8d5310e32c400dd2b6f63f54514106bb4b",
+    "bytes": 29870,
+    "type": "image/webp",
+    "width": 640,
+    "height": 426
+   }
+  },
+  "assets/places/sight-perlan-m02.jpg": {
+   "key": "is/photos/0756f643ad2ca124.webp",
+   "sha256": "0756f643ad2ca124eda1c10941e4f06c60e1636d62834b7f252d09242ba2e2d7",
+   "bytes": 174064,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 960,
+   "source": {
+    "sha256": "6d93ceb34e217e5364992df6f1333b314c45cff95da1454df98680800eaa3aed",
+    "bytes": 501823
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/7fea72d8cd031523-640.webp",
+    "sha256": "7fea72d8cd0315230f7fc6932ff90d8cbc91b4c2a8d70bf8faea7b008421fe21",
+    "bytes": 43684,
+    "type": "image/webp",
+    "width": 640,
+    "height": 427
+   }
+  },
+  "assets/places/sight-perlan-m04.jpg": {
+   "key": "is/photos/771b21bd6ae0110f.webp",
+   "sha256": "771b21bd6ae0110fa301e34ddeee30e5266f5a2495ff1a48244a83f328f753f3",
+   "bytes": 65556,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 960,
+   "source": {
+    "sha256": "572c49d9d6c8456ab519ffc95ff44853d3d2f6757ba3b0cbf06805cff306ad7d",
+    "bytes": 398992
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/5461d3726877e301-640.webp",
+    "sha256": "5461d3726877e3019d848ff52c788df97613a180b12d015d960c6df7f0bc82af",
+    "bytes": 16026,
+    "type": "image/webp",
+    "width": 640,
+    "height": 427
+   }
+  },
+  "assets/places/sight-perlan-p005.jpg": {
+   "key": "is/photos/da221603427bae76.webp",
+   "sha256": "da221603427bae76e23c43f4c7e10dd51f1b8b8914757ae303a8c2c27c199c17",
+   "bytes": 202484,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "74b9228fecac2298e87651292edfca05b9613911ea6e161844c8f67cf5c55c1e",
+    "bytes": 441497
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/150c182de1505271-640.webp",
+    "sha256": "150c182de1505271a6d37629f7afad210cdbf7d50e636473443cb359ddfc627d",
+    "bytes": 53746,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
   "assets/places/sight-petras-stone-collection-c01.jpg": {
    "key": "is/photos/32a664e66d32ca47.webp",
    "sha256": "32a664e66d32ca4764e333759c655816e856f23ee5433b62ead330fa88d06fb3",
@@ -4260,88 +4848,88 @@
     "height": 480
    }
   },
-  "assets/places/sight-petras-stone-collection-c04.jpg": {
-   "key": "is/photos/0954773efbe1aee2.webp",
-   "sha256": "0954773efbe1aee22a08afad9e73d486479a4db4399429962263e3dc80d1f745",
-   "bytes": 345222,
+  "assets/places/sight-petras-stone-collection-p003.jpg": {
+   "key": "is/photos/507fb295484b2176.webp",
+   "sha256": "507fb295484b21760429f5d479c1c02700f5769ed13294550b90e6ab31dba4e8",
+   "bytes": 431200,
    "type": "image/webp",
    "width": 1440,
-   "height": 960,
+   "height": 1084,
    "source": {
-    "sha256": "0997e4173a3337bb1203148668baf86fb7fd15e34ddecaf0ef50866c3e5a4728",
-    "bytes": 979723
+    "sha256": "ccb4c122437fdfee34afd19893a5dba26df32dc1ff1a15ca7e971d8f9e4eca55",
+    "bytes": 692435
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/34ffdcdfc9ffc145-640.webp",
-    "sha256": "34ffdcdfc9ffc1454cd9ff38748ec43c65bd0073d33a59577cfcb87e3de98d7b",
-    "bytes": 37932,
+    "key": "is/photos/2ece9067eab3b1bc-640.webp",
+    "sha256": "2ece9067eab3b1bcbc524914e16ef0c088520d7aeea05a5515fba83aabe00471",
+    "bytes": 87112,
     "type": "image/webp",
     "width": 640,
-    "height": 427
+    "height": 482
    }
   },
-  "assets/places/sight-petras-stone-collection-c05.jpg": {
-   "key": "is/photos/132332ed70c001de.webp",
-   "sha256": "132332ed70c001de76c862f20590113a9b19f93973da61ab71cb2d5e666d60f6",
-   "bytes": 204010,
+  "assets/places/sight-petras-stone-collection-p007.jpg": {
+   "key": "is/photos/ca4f08b00f78dde7.webp",
+   "sha256": "ca4f08b00f78dde73822e00efde324858fba0da76e9ad1b05c2972134825f1b9",
+   "bytes": 425878,
    "type": "image/webp",
    "width": 1440,
-   "height": 818,
+   "height": 1084,
    "source": {
-    "sha256": "22c53de90f58909f668e6841e7ca8e96b47df8ee336dabba8c776d5c57b94be7",
-    "bytes": 621417
+    "sha256": "474a2f91d251d524da40ad7c6848f8891985d34bd42bcdaf40e2f3feaacf3856",
+    "bytes": 686598
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/724f49b6299b1e38-640.webp",
-    "sha256": "724f49b6299b1e38fa514321013f89cd99eaf5b9c344de3dac1ef8f8cbfb99c5",
-    "bytes": 49056,
+    "key": "is/photos/ef6dccdc77118eae-640.webp",
+    "sha256": "ef6dccdc77118eae6c9c075cb04e856fb368423898d609f80775889550eb2070",
+    "bytes": 85844,
     "type": "image/webp",
     "width": 640,
-    "height": 364
+    "height": 482
    }
   },
-  "assets/places/sight-petras-stone-collection-c13.jpg": {
-   "key": "is/photos/3bf3903d977429af.webp",
-   "sha256": "3bf3903d977429af09805a9487191a417556e0d0047bbc31daf56274f2e2794f",
-   "bytes": 127008,
+  "assets/places/sight-petras-stone-collection-p014.jpg": {
+   "key": "is/photos/0d625832e6e89296.webp",
+   "sha256": "0d625832e6e8929641b076e3bd141e0b63f0bc0b3c89e548bc03cf9ec420a571",
+   "bytes": 76358,
    "type": "image/webp",
    "width": 1440,
-   "height": 959,
+   "height": 1084,
    "source": {
-    "sha256": "0e93881f1cb4d644e11e27268c1139df4ed96698e84b3754c7528395beb048a0",
-    "bytes": 442816
+    "sha256": "e20eb77f7a0374365d6ea4ab12578c710b97bbd11c7b34e746d98be961cfe47a",
+    "bytes": 237056
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/ecfa9250a3f0d3fa-640.webp",
-    "sha256": "ecfa9250a3f0d3fad57f17217a35ce3337e22e6facd355e2fd3e739f9da605cb",
-    "bytes": 37976,
+    "key": "is/photos/146d87dbc181d418-640.webp",
+    "sha256": "146d87dbc181d4187cb05d6c1cf0f271ae1f5659f9b02fc64e4784e041ad3b95",
+    "bytes": 20094,
     "type": "image/webp",
     "width": 640,
-    "height": 426
+    "height": 482
    }
   },
-  "assets/places/sight-petras-stone-collection-c14.jpg": {
-   "key": "is/photos/2d3ba43bde854026.webp",
-   "sha256": "2d3ba43bde854026050ff059beccf3d5a81f85a4547ed0b5e31c196224dbcf44",
-   "bytes": 315316,
+  "assets/places/sight-petras-stone-collection-p015.jpg": {
+   "key": "is/photos/84a475d00eee36d9.webp",
+   "sha256": "84a475d00eee36d9c195eb487abd917c1b0284b6f6a713006295a7d126d9b979",
+   "bytes": 121278,
    "type": "image/webp",
    "width": 1440,
-   "height": 1080,
+   "height": 1084,
    "source": {
-    "sha256": "1137637a0a6046fd4ecfe99146352124276730bde8b7c98d9b0fb3301b07426c",
-    "bytes": 701707
+    "sha256": "b9fb267faf02ddb8b67e480a32e600aec864e97eb8b0249efd9e7539e010196c",
+    "bytes": 299423
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/06a3ce1f08ab0042-640.webp",
-    "sha256": "06a3ce1f08ab00424155e1b248986a0ca1dc9ebeb3cc19535dacb198dbff1c69",
-    "bytes": 59554,
+    "key": "is/photos/2d8d3af637aed246-640.webp",
+    "sha256": "2d8d3af637aed2460fc5bb226d6c84cd639c185947cb5857416a57c541a0e2b9",
+    "bytes": 27622,
     "type": "image/webp",
     "width": 640,
-    "height": 480
+    "height": 482
    }
   },
   "assets/places/sight-raufarholshellir-c03.jpg": {
@@ -4407,22 +4995,43 @@
     "height": 427
    }
   },
-  "assets/places/sight-raufarholshellir-c14.jpg": {
-   "key": "is/photos/a244e369bc91a6c6.webp",
-   "sha256": "a244e369bc91a6c6b252b8100eb03b35ada3536b51e95ab9d973a6c025458493",
-   "bytes": 103674,
+  "assets/places/sight-raufarholshellir-p003.jpg": {
+   "key": "is/photos/9b13fde6a49fe0b7.webp",
+   "sha256": "9b13fde6a49fe0b7dd98ea2dde95eb644e9cbe9eb6d539349d876912bf5752c0",
+   "bytes": 281312,
    "type": "image/webp",
    "width": 1440,
    "height": 1080,
    "source": {
-    "sha256": "a0fe18f036a24b4e00a0f6efaa65226f8209cc467ae614e6d86c767def9106b0",
-    "bytes": 522222
+    "sha256": "a585c2f54ac6502e66f10790022b04253da303f13f8f0c9a0df61de0bd3e338e",
+    "bytes": 522676
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/432c3b99e0bc5766-640.webp",
-    "sha256": "432c3b99e0bc57663455beefd52023b05a1d1d4404d3db23f2bc512da9832920",
-    "bytes": 25296,
+    "key": "is/photos/9db9d69311d847ab-640.webp",
+    "sha256": "9db9d69311d847ab75c6858686c4c89a12ad2e501199a2e5c5d446729527ea0e",
+    "bytes": 52164,
+    "type": "image/webp",
+    "width": 640,
+    "height": 480
+   }
+  },
+  "assets/places/sight-raufarholshellir-p007.jpg": {
+   "key": "is/photos/6c970a3a2ed28b0c.webp",
+   "sha256": "6c970a3a2ed28b0c80bd90f6ffdda931ab98c9e728045bf9386280a2349a36a8",
+   "bytes": 315650,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1080,
+   "source": {
+    "sha256": "e5b968963a43dfc9265c5eed078910babd59912a0318ddb58d37ceb47e061b67",
+    "bytes": 551021
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/cad51268b58e71d6-640.webp",
+    "sha256": "cad51268b58e71d667649d5de20b54e765639bc02d7e72ffb00709fbef07ccd4",
+    "bytes": 57400,
     "type": "image/webp",
     "width": 640,
     "height": 480
@@ -4680,27 +5289,6 @@
     "height": 425
    }
   },
-  "assets/places/sight-skaftafell-c05.jpg": {
-   "key": "is/photos/67a15c5c556b77e9.webp",
-   "sha256": "67a15c5c556b77e9da7559b2f6ffe8d284a3a4519ac041f202d8f0e395338300",
-   "bytes": 546570,
-   "type": "image/webp",
-   "width": 1440,
-   "height": 956,
-   "source": {
-    "sha256": "f8d6b018c8f536fc654fbe9495a880a6c8bde135216ac611cc161539ca0aec3b",
-    "bytes": 1290067
-   },
-   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
-   "card": {
-    "key": "is/photos/3ecec0e8f28ae3fd-640.webp",
-    "sha256": "3ecec0e8f28ae3fde74d7bbeca8c7b1372dc1b3a162c0c1380ce8a81c54b984c",
-    "bytes": 89146,
-    "type": "image/webp",
-    "width": 640,
-    "height": 425
-   }
-  },
   "assets/places/sight-skaftafell-c06.jpg": {
    "key": "is/photos/4715409380accb35.webp",
    "sha256": "4715409380accb359079708f4465593ef7127c3be0efa201922634ef695b472f",
@@ -4722,27 +5310,6 @@
     "height": 360
    }
   },
-  "assets/places/sight-skaftafell-c10.jpg": {
-   "key": "is/photos/79e10175eb283c48.webp",
-   "sha256": "79e10175eb283c489828549fb274596dbc7dc9f251c3f32896a697bde5e57e8d",
-   "bytes": 274664,
-   "type": "image/webp",
-   "width": 1440,
-   "height": 957,
-   "source": {
-    "sha256": "0c1b9f60d6bdb5ac22671427ffb5b7748468e1c5616203394b0f0a30d8d95c1e",
-    "bytes": 813717
-   },
-   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
-   "card": {
-    "key": "is/photos/ae6a6f4237697ca2-640.webp",
-    "sha256": "ae6a6f4237697ca22a921c23eaebd1108ab75b30a9c6c57e2dd8d2c251cc4fa9",
-    "bytes": 41348,
-    "type": "image/webp",
-    "width": 640,
-    "height": 425
-   }
-  },
   "assets/places/sight-skaftafell-c20.jpg": {
    "key": "is/photos/cf9d0ab711b08a57.webp",
    "sha256": "cf9d0ab711b08a5781b22282fc8d2f4c3e2feb2dab0cb3000bf6bd437a2b38e3",
@@ -4762,6 +5329,48 @@
     "type": "image/webp",
     "width": 640,
     "height": 384
+   }
+  },
+  "assets/places/sight-skaftafell-p013.jpg": {
+   "key": "is/photos/3f5c9aa9e86e7327.webp",
+   "sha256": "3f5c9aa9e86e7327e0b47417f63998433263393e3bce0f1c32ddf80076b9430b",
+   "bytes": 316476,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "5c5184fa0c02003b71c3d35b9b4adb9776acbf49b0cf72afba2aad750a6607ff",
+    "bytes": 522010
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/0c9cbc86a5fb4f95-640.webp",
+    "sha256": "0c9cbc86a5fb4f95ba0f2f228f77276422edbaa4e6cb4a0f42ae7d04229248e8",
+    "bytes": 52116,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-skaftafell-p015.jpg": {
+   "key": "is/photos/6dfcfd4ab165325e.webp",
+   "sha256": "6dfcfd4ab165325e6429692d3dcd802e1673f4abe7d8a850b474784bfe27bd9f",
+   "bytes": 144608,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "bd06e08185e7e164b47811435ce6994902eaa7661142745bb3e465dfdee75739",
+    "bytes": 314040
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/17225b0c7bf4456a-640.webp",
+    "sha256": "17225b0c7bf4456a09d0341d369ba98b11d91fce5c94633e7445d1a9fbda99c7",
+    "bytes": 30470,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
    }
   },
   "assets/places/sight-skogafoss-c03.jpg": {
@@ -4974,6 +5583,48 @@
     "height": 480
    }
   },
+  "assets/places/sight-sky-lagoon-p002.jpg": {
+   "key": "is/photos/31fab083403b2861.webp",
+   "sha256": "31fab083403b2861d0e5706a66c07f72c0635912a3ef69f30b7458c983147894",
+   "bytes": 105088,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "a97608ab401b5d171367162e2d5098f8ae993ef0cd6cb2b26c5b6e6396d58972",
+    "bytes": 243296
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/3125ede1c7ee66e2-640.webp",
+    "sha256": "3125ede1c7ee66e21b7de0a458ce6ce1ba94742fa2357b1371d90e432124c22f",
+    "bytes": 23870,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-sky-lagoon-p005.jpg": {
+   "key": "is/photos/657e4e4f749fc422.webp",
+   "sha256": "657e4e4f749fc422a435a462b18a5fa1c44b709f30b29f1256007d7619dede6b",
+   "bytes": 35352,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "54a86afb29d37938486d745e652c8e6934bb8bbc32da8e6475e7f584f9b2160f",
+    "bytes": 139173
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/2e5c0d6782341737-640.webp",
+    "sha256": "2e5c0d6782341737a38c4f0ee679583c5ee431be8a3ece3a5c7d09076a8a6a72",
+    "bytes": 9700,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
   "assets/places/sight-svartifoss-c01.jpg": {
    "key": "is/photos/253df976ea4734fd.webp",
    "sha256": "253df976ea4734fd1d37b88e31decf97069d368fa2388bae76fe0f6a6a101b21",
@@ -5037,109 +5688,109 @@
     "height": 480
    }
   },
-  "assets/places/sight-thingvellir-c01.jpg": {
-   "key": "is/photos/813280b34072a291.webp",
-   "sha256": "813280b34072a2914df5753f4e165029b3de9fed9f4b30851e13062fe74b9925",
-   "bytes": 404292,
-   "type": "image/webp",
-   "width": 1440,
-   "height": 960,
-   "source": {
-    "sha256": "d88b3e4b747fe6a5cc2761169931764a3b4615ba8c99595db4bd360450ee9668",
-    "bytes": 1032119
-   },
-   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
-   "card": {
-    "key": "is/photos/52f32cdd590bd975-640.webp",
-    "sha256": "52f32cdd590bd9758cb764f0b092bc82d94c25c1d613675502bfdae262f12468",
-    "bytes": 68050,
-    "type": "image/webp",
-    "width": 640,
-    "height": 427
-   }
-  },
-  "assets/places/sight-thingvellir-c04.jpg": {
-   "key": "is/photos/8eaa63010c82496e.webp",
-   "sha256": "8eaa63010c82496e30124c195630dad7295a7f88a74619f318647e42117c5818",
-   "bytes": 253416,
-   "type": "image/webp",
-   "width": 1440,
-   "height": 887,
-   "source": {
-    "sha256": "acdd914c3548072132bac453ed2808189dba08a4d205b1c5d15ee18368e04751",
-    "bytes": 708022
-   },
-   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
-   "card": {
-    "key": "is/photos/92ec0d6243012310-640.webp",
-    "sha256": "92ec0d6243012310b59d6f446478d452ef92235b73cbc8bfd1235edee4fa2c2e",
-    "bytes": 44464,
-    "type": "image/webp",
-    "width": 640,
-    "height": 394
-   }
-  },
-  "assets/places/sight-thingvellir-c09.jpg": {
-   "key": "is/photos/9d5c4fe1d3003d1f.webp",
-   "sha256": "9d5c4fe1d3003d1f7029afca0a5310b1fb511d6daa5e15306bcb5ca3ce74dd55",
-   "bytes": 218036,
+  "assets/places/sight-thingvellir-c03.jpg": {
+   "key": "is/photos/66b0de2cc5ede56b.webp",
+   "sha256": "66b0de2cc5ede56bcb597f39ecd032d4fa64763b2ff72e2c45cf4a17baa0b166",
+   "bytes": 297820,
    "type": "image/webp",
    "width": 1440,
    "height": 962,
    "source": {
-    "sha256": "2c9195d57465b78a83a9b22824fb7e514db1b211f4085686752c06895cca0210",
-    "bytes": 653223
+    "sha256": "ed3b507f6f603e6b55b23fc89c959eaac0adf17d3a555d45b9c61a91e32d634b",
+    "bytes": 814424
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/2f66480ce8e153f1-640.webp",
-    "sha256": "2f66480ce8e153f134e41292f4544c0c0d23776e753c89e947da460040d0345a",
-    "bytes": 36704,
+    "key": "is/photos/ff943432ec9a6ca9-640.webp",
+    "sha256": "ff943432ec9a6ca91e72ee3df8bb9891780bf4717953765c38a1da79217bb792",
+    "bytes": 49078,
     "type": "image/webp",
     "width": 640,
     "height": 427
    }
   },
-  "assets/places/sight-thingvellir-c13.jpg": {
-   "key": "is/photos/5d4e1b5a1f8e2217.webp",
-   "sha256": "5d4e1b5a1f8e22176071f8b27359f148c2f41358de263b20553938fbbb850489",
-   "bytes": 170380,
+  "assets/places/sight-thingvellir-c17.jpg": {
+   "key": "is/photos/ba15b096b0d0fa34.webp",
+   "sha256": "ba15b096b0d0fa34f7eae476b7f671af0fd540f227edfe1208eb7bb96f6ca53e",
+   "bytes": 161590,
    "type": "image/webp",
    "width": 1440,
-   "height": 954,
+   "height": 960,
    "source": {
-    "sha256": "50bb3ff31b83ea9c1855f089a10d73fdcf91698d6aa278f9367e5b505ade41e5",
-    "bytes": 508976
+    "sha256": "679fbe5cf4b92ce60d642db694e8af6436ec3817a657e6827138f249836fa94a",
+    "bytes": 492591
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/608a80daa440467c-640.webp",
-    "sha256": "608a80daa440467ce31141ab299fffb76da82097521d5b00957a41be0eb9dbef",
-    "bytes": 31058,
+    "key": "is/photos/bd8e555f5457c29b-640.webp",
+    "sha256": "bd8e555f5457c29b0e9973e41540b62610e1041c0feeb6e1a1a7d5f9d1cfc19f",
+    "bytes": 32652,
     "type": "image/webp",
     "width": 640,
-    "height": 424
+    "height": 427
    }
   },
-  "assets/places/sight-thingvellir-c14.jpg": {
-   "key": "is/photos/14f801191a7fe20d.webp",
-   "sha256": "14f801191a7fe20d3f4da336c51539cac145ba16162b670db34ca7bb4ed6c5d6",
-   "bytes": 104574,
+  "assets/places/sight-thingvellir-p002.jpg": {
+   "key": "is/photos/8d73cf669ccea763.webp",
+   "sha256": "8d73cf669ccea763c05d9a1a4b58b891ba2d5ac74c447624e965df5124a46570",
+   "bytes": 200568,
    "type": "image/webp",
    "width": 1440,
-   "height": 986,
+   "height": 1084,
    "source": {
-    "sha256": "ea3febeee4668eeb48a67098ecba0169b35ab068d2005fc8c69cef50cbe1fd5b",
-    "bytes": 424073
+    "sha256": "66975453bce487b3dd227f5bdacd95bd7e3aaf098dbdf90d43cc45d235b3443d",
+    "bytes": 373281
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/b08cb44ca1aa481d-640.webp",
-    "sha256": "b08cb44ca1aa481d0f1bdf17aaa4fd0fdd90c2fe3030b362b150720375b722d9",
-    "bytes": 14918,
+    "key": "is/photos/6061c4aa85064372-640.webp",
+    "sha256": "6061c4aa850643720c30270f49e8db0f4df95ac01dcb2a05f525b2cdb299a78f",
+    "bytes": 34378,
     "type": "image/webp",
     "width": 640,
-    "height": 438
+    "height": 482
+   }
+  },
+  "assets/places/sight-thingvellir-p004.jpg": {
+   "key": "is/photos/1fd8d0b46dc2893e.webp",
+   "sha256": "1fd8d0b46dc2893ebe56cbf1b12d2e2e8a29e19a0208355be7d170cfead28b04",
+   "bytes": 247632,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "778307a952026eb0b08ba0d0c9e8fd3f8b1d7a084df0a0d4b0343245667f3105",
+    "bytes": 449259
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/46b3107b051eaf3f-640.webp",
+    "sha256": "46b3107b051eaf3f6838e6dc144601cce67b95e8f47ce073feb40dc9d83b8c68",
+    "bytes": 47518,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
+  "assets/places/sight-thingvellir-p005.jpg": {
+   "key": "is/photos/defb6bd4573d169c.webp",
+   "sha256": "defb6bd4573d169c27c9d360071d3d766bac0eb6cd854e0aa93c9acd4e509f50",
+   "bytes": 272842,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "b561411a85798f661c1499a305a40a60a1fdc19c9c21ba3169bf23c78b23d476",
+    "bytes": 494448
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/2a07b4a63afdec82-640.webp",
+    "sha256": "2a07b4a63afdec825443a04cb2154ded2700d16dc0d16eff0c39fb9988270b3f",
+    "bytes": 56040,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
    }
   },
   "assets/places/sight-urridafoss-c01.jpg": {
@@ -5226,25 +5877,25 @@
     "height": 416
    }
   },
-  "assets/places/sight-whales-c01.jpg": {
-   "key": "is/photos/d61c80fc32566fea.webp",
-   "sha256": "d61c80fc32566fea81a52255bacb1b2e13adbd8b59aeb772cbb2afe5abe93072",
-   "bytes": 101234,
+  "assets/places/sight-urridafoss-p004.jpg": {
+   "key": "is/photos/0bb54d2b08480c90.webp",
+   "sha256": "0bb54d2b08480c908edd99ce546c5ddff74d22fe98c638b4288df641d04c3db9",
+   "bytes": 270764,
    "type": "image/webp",
    "width": 1440,
-   "height": 792,
+   "height": 1084,
    "source": {
-    "sha256": "06032d3dd64214cff24cfbae17bab103f64ec3984e9e461f317f4a0c1ca337c6",
-    "bytes": 452481
+    "sha256": "9bc2029f388e9da12d92f0090f6529b4b3d6b5c13c7dd22a30eb7a9fe3637914",
+    "bytes": 481283
    },
    "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
    "card": {
-    "key": "is/photos/6f18ab1b735cccee-640.webp",
-    "sha256": "6f18ab1b735ccceeff6c6cdfbf2a335b7ae253c51a9ec42b7f666bfe19db3533",
-    "bytes": 28938,
+    "key": "is/photos/6b1bf099cf622052-640.webp",
+    "sha256": "6b1bf099cf6220524aab845eef9ab3e8136741e8fd78d23f7376c3eea371c0c1",
+    "bytes": 48996,
     "type": "image/webp",
     "width": 640,
-    "height": 352
+    "height": 482
    }
   },
   "assets/places/sight-whales-c04.jpg": {
@@ -5331,6 +5982,27 @@
     "height": 427
    }
   },
+  "assets/places/sight-whales-p002.jpg": {
+   "key": "is/photos/048a6e1ad7759f5c.webp",
+   "sha256": "048a6e1ad7759f5cb75ff1a7b39e071cc698405162fda0a5c54b9a34ef17e9eb",
+   "bytes": 128918,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "59592bd328213deabf769a433406d92ea717585745c83429165f42468cd71956",
+    "bytes": 324696
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/2edb00188bcbd240-640.webp",
+    "sha256": "2edb00188bcbd240e5b934187111c68ea84a224f6acacb8d29df58538d7c973e",
+    "bytes": 33800,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
+   }
+  },
   "assets/places/sight-ytri-tunga-c01.jpg": {
    "key": "is/photos/e0b1b0df488fc12c.webp",
    "sha256": "e0b1b0df488fc12c719a6ae31a4cc79030a2ebab0e6f6cd0deb441a247acad48",
@@ -5413,6 +6085,27 @@
     "type": "image/webp",
     "width": 640,
     "height": 427
+   }
+  },
+  "assets/places/sight-ytri-tunga-p013.jpg": {
+   "key": "is/photos/de5df08302fa1d0e.webp",
+   "sha256": "de5df08302fa1d0e6a28102566a925211f5f8515842951e4914ebdfdb685fdf3",
+   "bytes": 219832,
+   "type": "image/webp",
+   "width": 1440,
+   "height": 1084,
+   "source": {
+    "sha256": "2ffb5da94084bc58fde7de3feb2a636e422570859f2f0125092fc2c5ceea587c",
+    "bytes": 405783
+   },
+   "encoder": "photo=webp1440q80+card640q78;audio=aac48k-mono-trim60/150-peak-1.5;v2",
+   "card": {
+    "key": "is/photos/af56bfd01b43c3cc-640.webp",
+    "sha256": "af56bfd01b43c3cc9989532c7648c2b7809463d21adfb65526cbf2d1853f99d9",
+    "bytes": 37630,
+    "type": "image/webp",
+    "width": 640,
+    "height": 482
    }
   },
   "assets/volcano/eyjafjallajokull-2010-04-17.jpg": {

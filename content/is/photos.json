@@ -3,45 +3,11 @@
  "attractions": {
   "sight-thingvellir": [
    {
-    "id": "sight-thingvellir-c01",
-    "file": "assets/places/sight-thingvellir-c01.jpg",
+    "id": "sight-thingvellir-c03",
+    "file": "assets/places/sight-thingvellir-c03.jpg",
     "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roca_de_la_Ley,_Parque_Nacional_de_%C3%9Eingvellir,_Su%C3%B0urland,_Islandia,_2014-08-16,_DD_022.JPG",
-    "title": "File:Roca de la Ley, Parque Nacional de Þingvellir, Suðurland, Islandia, 2014-08-16, DD 022.JPG",
-    "author": "Diego Delso",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "width": 5368,
-    "height": 3579,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
-   {
-    "id": "sight-thingvellir-c04",
-    "file": "assets/places/sight-thingvellir-c04.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C3%96xar%C3%A1rfoss,_Parque_Nacional_de_%C3%9Eingvellir,_Su%C3%B0urland,_Islandia,_2014-08-16,_DD_029.JPG",
-    "title": "File:Öxarárfoss, Parque Nacional de Þingvellir, Suðurland, Islandia, 2014-08-16, DD 029.JPG",
-    "author": "Diego Delso",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "width": 5502,
-    "height": 3386,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
-   {
-    "id": "sight-thingvellir-c09",
-    "file": "assets/places/sight-thingvellir-c09.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C3%9Eingvellir_National_Park,_Iceland,_20230502_0853_4081.jpg",
-    "title": "File:Þingvellir National Park, Iceland, 20230502 0853 4081.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%C3%B6gberg,_%C3%9Eingvellir_National_Park,_Iceland,_20230502_0928_4122.jpg",
+    "title": "File:Lögberg, Þingvellir National Park, Iceland, 20230502 0928 4122.jpg",
     "author": "Jakub Hałun",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -50,41 +16,75 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
-    "id": "sight-thingvellir-c14",
-    "file": "assets/places/sight-thingvellir-c14.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thorarinn_thingvellir.jpg",
-    "title": "File:Thorarinn thingvellir.jpg",
-    "author": "Þórarinn B. Þorláksson",
-    "license": "Public domain",
+    "id": "sight-thingvellir-p004",
+    "file": "assets/places/sight-thingvellir-p004.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260909_092121125.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
     "licenseUrl": "",
-    "width": 3252,
-    "height": 2228,
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    },
    {
-    "id": "sight-thingvellir-c13",
-    "file": "assets/places/sight-thingvellir-c13.jpg",
+    "id": "sight-thingvellir-p005",
+    "file": "assets/places/sight-thingvellir-p005.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260909_093506810.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-thingvellir-p002",
+    "file": "assets/places/sight-thingvellir-p002.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260909_090447839.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-thingvellir-c17",
+    "file": "assets/places/sight-thingvellir-c17.jpg",
     "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IS-thingvellir-01.jpg",
-    "title": "File:IS-thingvellir-01.jpg",
-    "author": "Balou46",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C3%9Eingvellir_01.jpg",
+    "title": "File:Þingvellir 01.jpg",
+    "author": "Syrio",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "width": 4928,
-    "height": 3264,
+    "width": 6000,
+    "height": 4000,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -103,7 +103,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -120,8 +120,25 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-gullfoss-p010",
+    "file": "assets/places/sight-gullfoss-p010.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260909_124534764.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    },
    {
     "id": "sight-gullfoss-c09",
@@ -137,25 +154,25 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
-    "id": "sight-gullfoss-c10",
-    "file": "assets/places/sight-gullfoss-c10.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22Goldene_Wasserf%C3%A4lle%22_-_Der_Gullfoss._03.jpg",
-    "title": "File:\"Goldene Wasserfälle\" - Der Gullfoss. 03.jpg",
-    "author": "Holger Uwe Schmitt",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "width": 5906,
-    "height": 3788,
+    "id": "sight-gullfoss-p011",
+    "file": "assets/places/sight-gullfoss-p011.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260909_125628893.MP.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-geysir": [
@@ -173,7 +190,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -190,7 +207,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -207,8 +224,42 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-geysir-c20",
+    "file": "assets/places/sight-geysir-c20.jpg",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strokkur_Geysir_Iceland_2005-1.JPG",
+    "title": "File:Strokkur Geysir Iceland 2005-1.JPG",
+    "author": "Chris 73",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "width": 2592,
+    "height": 1944,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-geysir-p004",
+    "file": "assets/places/sight-geysir-p004.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260909_120554505.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-hallgrimskirkja": [
@@ -226,7 +277,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -243,7 +294,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -260,27 +311,61 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
   "sight-harpa": [
    {
-    "id": "sight-harpa-c09",
-    "file": "assets/places/sight-harpa-c09.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:*Das_Opern-_und_Konzerthaus_in_Reykjavik._04.jpg",
-    "title": "File:*Das Opern- und Konzerthaus in Reykjavik. 04.jpg",
-    "author": "Holger Uwe Schmitt",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "width": 5906,
-    "height": 2778,
+    "id": "sight-harpa-p007",
+    "file": "assets/places/sight-harpa-p007.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260901_173045413.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-harpa-p006",
+    "file": "assets/places/sight-harpa-p006.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260901_173043802.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-harpa-p004",
+    "file": "assets/places/sight-harpa-p004.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260901_172911537.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    },
    {
     "id": "sight-harpa-c11",
@@ -296,24 +381,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
-   {
-    "id": "sight-harpa-c18",
-    "file": "assets/places/sight-harpa-c18.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harpa_Iceland.jpg",
-    "title": "File:Harpa Iceland.jpg",
-    "author": "Quant8",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "width": 1600,
-    "height": 1200,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -332,7 +400,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -349,7 +417,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -366,7 +434,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -385,7 +453,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -402,7 +470,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -419,7 +487,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -436,7 +504,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -455,7 +523,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -472,7 +540,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -489,7 +557,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -506,7 +574,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -523,7 +591,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -542,7 +610,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -559,7 +627,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -576,7 +644,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -593,7 +661,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -612,7 +680,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -629,7 +697,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -646,7 +714,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -663,25 +731,25 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
-    "id": "sight-jokulsarlon-c19",
-    "file": "assets/places/sight-jokulsarlon-c19.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:J%C3%B6kuls%C3%A1rl%C3%B3n_glacier_lagoon,_Iceland,_20240718_1554_2255.jpg",
-    "title": "File:Jökulsárlón glacier lagoon, Iceland, 20240718 1554 2255.jpg",
-    "author": "Jakub Hałun",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "width": 4004,
-    "height": 2674,
+    "id": "sight-jokulsarlon-p011",
+    "file": "assets/places/sight-jokulsarlon-p011.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "DJI_20260906_110342_611.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4032,
+    "height": 3024,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-godafoss": [
@@ -699,7 +767,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -716,7 +784,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -733,8 +801,42 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-godafoss-p005",
+    "file": "assets/places/sight-godafoss-p005.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260904_092753100.MP.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-godafoss-p001",
+    "file": "assets/places/sight-godafoss-p001.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260904_092615826.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-myvatn": [
@@ -752,7 +854,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -769,7 +871,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -786,7 +888,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -803,7 +905,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -822,7 +924,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -839,7 +941,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -858,27 +960,95 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-perlan-m01",
+    "file": "assets/places/sight-perlan-m01.jpg",
+    "source": "Flickr",
+    "sourceUrl": "https://www.flickr.com/photos/chauhanv/10908321885/",
+    "title": "Perlan",
+    "author": "chauhanv",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "width": 4608,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-perlan-m02",
+    "file": "assets/places/sight-perlan-m02.jpg",
+    "source": "Flickr",
+    "sourceUrl": "https://www.flickr.com/photos/swi-hymn/48469805531/",
+    "title": "20190623_Perlan_8916",
+    "author": "Ray Swi-hymn",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "width": 7952,
+    "height": 5304,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-perlan-m04",
+    "file": "assets/places/sight-perlan-m04.jpg",
+    "source": "Flickr",
+    "sourceUrl": "https://www.flickr.com/photos/tompagenet/48733747236/",
+    "title": "_DSC7172",
+    "author": "Tom Page",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "width": 6000,
+    "height": 4000,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-perlan-p005",
+    "file": "assets/places/sight-perlan-p005.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260910_115004900.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-whales": [
    {
-    "id": "sight-whales-c01",
-    "file": "assets/places/sight-whales-c01.jpg",
-    "source": "Flickr",
-    "sourceUrl": "https://www.flickr.com/photos/48292765@N02/20434432050/",
-    "title": "whales of Iceland (Reykjavik museum)",
-    "author": "Milan Nykodym",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "width": 4414,
-    "height": 2427,
+    "id": "sight-whales-p002",
+    "file": "assets/places/sight-whales-p002.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260901_123833158.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    },
    {
     "id": "sight-whales-c04",
@@ -894,7 +1064,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -911,7 +1081,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -928,7 +1098,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -945,11 +1115,28 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
   "sight-petras-stone-collection": [
+   {
+    "id": "sight-petras-stone-collection-p007",
+    "file": "assets/places/sight-petras-stone-collection-p007.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260905_150632939.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
    {
     "id": "sight-petras-stone-collection-c01",
     "file": "assets/places/sight-petras-stone-collection-c01.jpg",
@@ -964,76 +1151,59 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
-    "id": "sight-petras-stone-collection-c04",
-    "file": "assets/places/sight-petras-stone-collection-c04.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:St%C3%B6%C3%B0varfj%C3%B6r%C3%B0ur,_Steinemuseum_Petra_Sveinsd%C3%B3ttir_6483.JPG",
-    "title": "File:Stöðvarfjörður, Steinemuseum Petra Sveinsdóttir 6483.JPG",
-    "author": "Hedwig Storch",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "width": 3888,
-    "height": 2592,
+    "id": "sight-petras-stone-collection-p003",
+    "file": "assets/places/sight-petras-stone-collection-p003.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260905_145633553.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    },
    {
-    "id": "sight-petras-stone-collection-c05",
-    "file": "assets/places/sight-petras-stone-collection-c05.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:St%C3%B6%C3%B0varfj%C3%B6r%C3%B0ur,_Steinemuseum_Petra_Sveinsd%C3%B3ttir_6486.JPG",
-    "title": "File:Stöðvarfjörður, Steinemuseum Petra Sveinsdóttir 6486.JPG",
-    "author": "Hedwig Storch",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "width": 3807,
-    "height": 2163,
+    "id": "sight-petras-stone-collection-p014",
+    "file": "assets/places/sight-petras-stone-collection-p014.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260905_152238334.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    },
    {
-    "id": "sight-petras-stone-collection-c13",
-    "file": "assets/places/sight-petras-stone-collection-c13.jpg",
-    "source": "Flickr",
-    "sourceUrl": "https://www.flickr.com/photos/50849089@N06/7837984762/",
-    "title": "Inside view",
-    "author": "Music Nature",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "width": 5184,
-    "height": 3456,
+    "id": "sight-petras-stone-collection-p015",
+    "file": "assets/places/sight-petras-stone-collection-p015.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260905_152427932.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
-   {
-    "id": "sight-petras-stone-collection-c14",
-    "file": "assets/places/sight-petras-stone-collection-c14.jpg",
-    "source": "Flickr",
-    "sourceUrl": "https://www.flickr.com/photos/16894927@N08/43128705552/",
-    "title": "Petra's Stone Collection, Stöðvarfjörður",
-    "author": "todd.vision",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "width": 4048,
-    "height": 3036,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-old-harbour": [
@@ -1051,7 +1221,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1068,7 +1238,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1085,7 +1255,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1102,7 +1272,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1119,7 +1289,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -1138,7 +1308,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1155,7 +1325,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -1174,7 +1344,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1191,7 +1361,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1208,7 +1378,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1225,8 +1395,25 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-ytri-tunga-p013",
+    "file": "assets/places/sight-ytri-tunga-p013.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260902_112535839.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-budakirkja": [
@@ -1244,7 +1431,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1261,7 +1448,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1278,7 +1465,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1295,7 +1482,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -1314,7 +1501,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1331,24 +1518,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
-   {
-    "id": "sight-arnarstapi-hellnar-c12",
-    "file": "assets/places/sight-arnarstapi-hellnar-c12.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arnarstapi_(4).jpg",
-    "title": "File:Arnarstapi (4).jpg",
-    "author": "Chmee2/Valtameri",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "width": 3872,
-    "height": 2592,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1365,8 +1535,42 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-arnarstapi-hellnar-p011",
+    "file": "assets/places/sight-arnarstapi-hellnar-p011.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260902_124900294.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-arnarstapi-hellnar-p014",
+    "file": "assets/places/sight-arnarstapi-hellnar-p014.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260902_125857247.MP.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-londrangar": [
@@ -1384,7 +1588,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1401,7 +1605,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1418,8 +1622,25 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-londrangar-p003",
+    "file": "assets/places/sight-londrangar-p003.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260902_133104093.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-djupalonssandur": [
@@ -1437,24 +1658,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
-   {
-    "id": "sight-djupalonssandur-c05",
-    "file": "assets/places/sight-djupalonssandur-c05.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Djupalonssandur_Beach_Iceland_Travel_Photography_(212306465).jpeg",
-    "title": "File:Djupalonssandur Beach Iceland Travel Photography (212306465).jpeg",
-    "author": "Giuseppe Milo",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "width": 2000,
-    "height": 1333,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1471,7 +1675,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1488,7 +1692,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1505,8 +1709,25 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-djupalonssandur-p006",
+    "file": "assets/places/sight-djupalonssandur-p006.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260902_141530679.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-kirkjufellsfoss": [
@@ -1524,7 +1745,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1541,7 +1762,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1558,7 +1779,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1575,45 +1796,28 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
-    "id": "sight-kirkjufellsfoss-c19",
-    "file": "assets/places/sight-kirkjufellsfoss-c19.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kirkjufell_Mountain_(120826649).jpeg",
-    "title": "File:Kirkjufell Mountain (120826649).jpeg",
-    "author": "Enrico Ghiberto",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "width": 2048,
-    "height": 1360,
+    "id": "sight-kirkjufellsfoss-p001",
+    "file": "assets/places/sight-kirkjufellsfoss-p001.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260902_153635733.MP.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-bjarnarhofn": [
-   {
-    "id": "sight-bjarnarhofn-c03",
-    "file": "assets/places/sight-bjarnarhofn-c03.jpg",
-    "source": "Flickr",
-    "sourceUrl": "https://www.flickr.com/photos/74001418@N00/55402344663/",
-    "title": "Drying House at Bjarnarhöfn Shark museum",
-    "author": "dlovins99",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "width": 5712,
-    "height": 4284,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
    {
     "id": "sight-bjarnarhofn-c08",
     "file": "assets/places/sight-bjarnarhofn-c08.jpg",
@@ -1628,25 +1832,76 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
-    "id": "sight-bjarnarhofn-c02",
-    "file": "assets/places/sight-bjarnarhofn-c02.jpg",
+    "id": "sight-bjarnarhofn-p005",
+    "file": "assets/places/sight-bjarnarhofn-p005.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260902_164403671.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-bjarnarhofn-p002",
+    "file": "assets/places/sight-bjarnarhofn-p002.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260902_162528404.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-bjarnarhofn-c03",
+    "file": "assets/places/sight-bjarnarhofn-c03.jpg",
     "source": "Flickr",
-    "sourceUrl": "https://www.flickr.com/photos/74001418@N00/55402344528/",
+    "sourceUrl": "https://www.flickr.com/photos/74001418@N00/55402344663/",
     "title": "Drying House at Bjarnarhöfn Shark museum",
     "author": "dlovins99",
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "width": 3195,
-    "height": 2287,
+    "width": 5712,
+    "height": 4284,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-bjarnarhofn-p006",
+    "file": "assets/places/sight-bjarnarhofn-p006.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260902_165005112.MP.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-glaumbaer": [
@@ -1664,7 +1919,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1681,7 +1936,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1698,7 +1953,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1715,60 +1970,43 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
-    "id": "sight-glaumbaer-c13",
-    "file": "assets/places/sight-glaumbaer-c13.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glaumbaer-59-Museum-2018-gje.jpg",
-    "title": "File:Glaumbaer-59-Museum-2018-gje.jpg",
-    "author": "Gerd Eichmann",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "width": 5184,
-    "height": 2584,
+    "id": "sight-glaumbaer-p013",
+    "file": "assets/places/sight-glaumbaer-p013.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260903_144143334.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-akureyri-botanical-garden": [
    {
-    "id": "sight-akureyri-botanical-garden-c04",
-    "file": "assets/places/sight-akureyri-botanical-garden-c04.jpg",
+    "id": "sight-akureyri-botanical-garden-c17",
+    "file": "assets/places/sight-akureyri-botanical-garden-c17.jpg",
     "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flowers_at_Akureyri_Botanical_Gardens.jpg",
-    "title": "File:Flowers at Akureyri Botanical Gardens.jpg",
-    "author": "Alexander Grebenkov",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "width": 3568,
-    "height": 2368,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
-   {
-    "id": "sight-akureyri-botanical-garden-c01",
-    "file": "assets/places/sight-akureyri-botanical-garden-c01.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akureyri_Botanical_Garden_Fountain_01.jpg",
-    "title": "File:Akureyri Botanical Garden Fountain 01.jpg",
-    "author": "Spike",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akureyrar_BG_06.jpg",
+    "title": "File:Akureyrar BG 06.jpg",
+    "author": "LubovGorshkova",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "width": 9858,
-    "height": 7102,
+    "width": 3488,
+    "height": 2616,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1785,7 +2023,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1802,7 +2040,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1819,8 +2057,25 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-akureyri-botanical-garden-p001",
+    "file": "assets/places/sight-akureyri-botanical-garden-p001.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260904_083236569.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-hverir": [
@@ -1838,7 +2093,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1855,59 +2110,59 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
-    "id": "sight-hverir-c06",
-    "file": "assets/places/sight-hverir-c06.jpg",
-    "source": "Flickr",
-    "sourceUrl": "https://www.flickr.com/photos/23597588@N00/24986010481/",
-    "title": "Hverir",
-    "author": "Navin75",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "width": 5184,
-    "height": 3456,
+    "id": "sight-hverir-p011",
+    "file": "assets/places/sight-hverir-p011.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260904_110745081.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    },
    {
-    "id": "sight-hverir-c08",
-    "file": "assets/places/sight-hverir-c08.jpg",
-    "source": "Flickr",
-    "sourceUrl": "https://www.flickr.com/photos/23597588@N00/24985988201/",
-    "title": "Hverir",
-    "author": "Navin75",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "width": 5184,
-    "height": 3456,
+    "id": "sight-hverir-p015",
+    "file": "assets/places/sight-hverir-p015.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260904_110844867.MP.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    },
    {
-    "id": "sight-hverir-c16",
-    "file": "assets/places/sight-hverir-c16.jpg",
-    "source": "Flickr",
-    "sourceUrl": "https://www.flickr.com/photos/35902401@N02/23606106195/",
-    "title": "Hverir",
-    "author": "Richard Whitaker",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "width": 4928,
-    "height": 2259,
+    "id": "sight-hverir-p042",
+    "file": "assets/places/sight-hverir-p042.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260904_112217156.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-skutustadagigar": [
@@ -1925,7 +2180,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1942,7 +2197,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1959,7 +2214,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1976,7 +2231,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -1993,27 +2248,44 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
   "sight-dettifoss": [
    {
-    "id": "sight-dettifoss-c01",
-    "file": "assets/places/sight-dettifoss-c01.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dettifoss,_Iceland,_20240716_1500_1531.jpg",
-    "title": "File:Dettifoss, Iceland, 20240716 1500 1531.jpg",
-    "author": "Jakub Hałun",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "width": 5757,
-    "height": 3842,
+    "id": "sight-dettifoss-p010",
+    "file": "assets/places/sight-dettifoss-p010.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260904_122831673.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-dettifoss-p020",
+    "file": "assets/places/sight-dettifoss-p020.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260904_123251421.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    },
    {
     "id": "sight-dettifoss-c08",
@@ -2029,7 +2301,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2046,8 +2318,25 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-dettifoss-p035",
+    "file": "assets/places/sight-dettifoss-p035.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260904_125448834.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-hengifoss": [
@@ -2065,24 +2354,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
-   {
-    "id": "sight-hengifoss-c05",
-    "file": "assets/places/sight-hengifoss-c05.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hengifoss_Waterfall.jpg",
-    "title": "File:Hengifoss Waterfall.jpg",
-    "author": "Sidetrips",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "width": 2000,
-    "height": 1333,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2099,7 +2371,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2116,11 +2388,62 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-hengifoss-p023",
+    "file": "assets/places/sight-hengifoss-p023.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260905_092122791.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-hengifoss-p027",
+    "file": "assets/places/sight-hengifoss-p027.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260905_094529668.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-djupivogur": [
+   {
+    "id": "sight-djupivogur-p004",
+    "file": "assets/places/sight-djupivogur-p004.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260905_163644647.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
    {
     "id": "sight-djupivogur-c02",
     "file": "assets/places/sight-djupivogur-c02.jpg",
@@ -2135,7 +2458,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2152,7 +2475,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2169,7 +2492,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -2188,7 +2511,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2205,7 +2528,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2222,7 +2545,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2239,7 +2562,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2256,7 +2579,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -2275,7 +2598,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2292,25 +2615,25 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
-    "id": "sight-fjallsarlon-c18",
-    "file": "assets/places/sight-fjallsarlon-c18.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fjalls%C3%A1rl%C3%B3n01(ms).jpg",
-    "title": "File:Fjallsárlón01(ms).jpg",
-    "author": "Michał Strzelecki",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "width": 6924,
-    "height": 3918,
+    "id": "sight-fjallsarlon-p003",
+    "file": "assets/places/sight-fjallsarlon-p003.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260906_122207151.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-skaftafell": [
@@ -2328,7 +2651,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2345,41 +2668,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
-   {
-    "id": "sight-skaftafell-c05",
-    "file": "assets/places/sight-skaftafell-c05.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_and_green_lake_near_the_bottom_of_Skaftafellsj%C3%B6kull,_July_2019.jpg",
-    "title": "File:Blue and green lake near the bottom of Skaftafellsjökull, July 2019.jpg",
-    "author": "Alexander Grebenkov",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "width": 3568,
-    "height": 2368,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
-   {
-    "id": "sight-skaftafell-c10",
-    "file": "assets/places/sight-skaftafell-c10.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skaftafellsj%C3%B6kull_-_panoramio.jpg",
-    "title": "File:Skaftafellsjökull - panoramio.jpg",
-    "author": "Denis DespaiR",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "width": 1920,
-    "height": 1276,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2396,8 +2685,42 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-skaftafell-p013",
+    "file": "assets/places/sight-skaftafell-p013.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260906_143420490.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-skaftafell-p015",
+    "file": "assets/places/sight-skaftafell-p015.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260906_143428893.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-svartifoss": [
@@ -2415,7 +2738,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2432,7 +2755,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2449,26 +2772,43 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
   "sight-dverghamrar": [
    {
-    "id": "sight-dverghamrar-c01",
-    "file": "assets/places/sight-dverghamrar-c01.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dverghamrar.jpg",
-    "title": "File:Dverghamrar.jpg",
-    "author": "JD554",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "width": 3456,
-    "height": 2592,
+    "id": "sight-dverghamrar-p003",
+    "file": "assets/places/sight-dverghamrar-p003.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260907_104959917.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-dverghamrar-c06",
+    "file": "assets/places/sight-dverghamrar-c06.jpg",
+    "source": "Flickr",
+    "sourceUrl": "https://www.flickr.com/photos/9186726@N08/8116900847/",
+    "title": "Dverghamrar",
+    "author": "irankfou",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "width": 4608,
+    "height": 3456,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2485,41 +2825,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
-   {
-    "id": "sight-dverghamrar-c06",
-    "file": "assets/places/sight-dverghamrar-c06.jpg",
-    "source": "Flickr",
-    "sourceUrl": "https://www.flickr.com/photos/9186726@N08/8116900847/",
-    "title": "Dverghamrar",
-    "author": "irankfou",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "width": 4608,
-    "height": 3456,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
-   },
-   {
-    "id": "sight-dverghamrar-c20",
-    "file": "assets/places/sight-dverghamrar-c20.jpg",
-    "source": "Flickr",
-    "sourceUrl": "https://www.flickr.com/photos/142245834@N03/29061336861/",
-    "title": "Jason At Dverghamrar",
-    "author": "jwdotjs",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "width": 4608,
-    "height": 3072,
-    "objectPosition": "center",
-    "downloadedAt": "2026-10-12",
-    "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -2538,7 +2844,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2555,7 +2861,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2572,7 +2878,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -2591,7 +2897,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2608,7 +2914,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2625,7 +2931,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -2644,7 +2950,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2661,7 +2967,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2678,7 +2984,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -2697,7 +3003,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2714,8 +3020,42 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-caves-of-hella-p001",
+    "file": "assets/places/sight-caves-of-hella-p001.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260908_141021547.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 3648,
+    "height": 2736,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-caves-of-hella-p004",
+    "file": "assets/places/sight-caves-of-hella-p004.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260908_142511264.MP.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-urridafoss": [
@@ -2733,7 +3073,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2750,7 +3090,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2767,7 +3107,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2784,8 +3124,25 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-urridafoss-p004",
+    "file": "assets/places/sight-urridafoss-p004.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260908_153441253.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-bruarfoss": [
@@ -2803,7 +3160,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2820,7 +3177,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2837,25 +3194,25 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
-    "id": "sight-bruarfoss-c15",
-    "file": "assets/places/sight-bruarfoss-c15.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iceland_(14110663928).jpg",
-    "title": "File:Iceland (14110663928).jpg",
-    "author": "Moyan Brenn from Italy",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "width": 3840,
-    "height": 2391,
+    "id": "sight-bruarfoss-p007",
+    "file": "assets/places/sight-bruarfoss-p007.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260909_111202503.MP.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-kerid": [
@@ -2873,7 +3230,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2890,7 +3247,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2907,25 +3264,42 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
-    "id": "sight-kerid-c15",
-    "file": "assets/places/sight-kerid-c15.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Keri%C3%B0_-_volcanic_crater_(19993788868).jpg",
-    "title": "File:Kerið - volcanic crater (19993788868).jpg",
-    "author": "Milan Nykodym from Kutna Hora, Czech Republic",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "width": 4234,
-    "height": 2870,
+    "id": "sight-kerid-p007",
+    "file": "assets/places/sight-kerid-p007.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260909_144828735.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-kerid-p012",
+    "file": "assets/places/sight-kerid-p012.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260909_145500581.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-raufarholshellir": [
@@ -2943,7 +3317,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2960,7 +3334,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -2977,25 +3351,42 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
-    "id": "sight-raufarholshellir-c14",
-    "file": "assets/places/sight-raufarholshellir-c14.jpg",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raufarh%C3%B3lshellir_icicles_2018b.jpg",
-    "title": "File:Raufarhólshellir icicles 2018b.jpg",
-    "author": "Antony-22",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "width": 4608,
-    "height": 3456,
+    "id": "sight-raufarholshellir-p003",
+    "file": "assets/places/sight-raufarholshellir-p003.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "DJI_20260909_162028_636.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4032,
+    "height": 3024,
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
-    "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-raufarholshellir-p007",
+    "file": "assets/places/sight-raufarholshellir-p007.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "DJI_20260909_164951_645.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4032,
+    "height": 3024,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-blue-lagoon": [
@@ -3013,7 +3404,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -3030,7 +3421,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -3047,8 +3438,42 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   },
+   {
+    "id": "sight-blue-lagoon-p002",
+    "file": "assets/places/sight-blue-lagoon-p002.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260911_124852686.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-blue-lagoon-p001",
+    "file": "assets/places/sight-blue-lagoon-p001.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260911_122507593.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ],
   "sight-reykjadalur": [
@@ -3066,7 +3491,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -3083,7 +3508,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -3100,7 +3525,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -3119,7 +3544,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -3136,7 +3561,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -3153,7 +3578,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -3170,7 +3595,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -3187,7 +3612,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -3206,7 +3631,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -3223,7 +3648,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    }
   ],
@@ -3242,7 +3667,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -3259,7 +3684,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -3276,7 +3701,7 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
    },
    {
@@ -3293,16 +3718,157 @@
     "objectPosition": "center",
     "downloadedAt": "2026-10-12",
     "selectedBy": "content author",
-    "selectedAt": "2026-10-12",
+    "selectedAt": "2026-10-13",
     "releaseStatus": "author-selected; alt text, people/property and final rights review pending"
+   }
+  ],
+  "sight-magic-ice": [
+   {
+    "id": "sight-magic-ice-p001",
+    "file": "assets/places/sight-magic-ice-p001.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260901_201044680.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-magic-ice-p002",
+    "file": "assets/places/sight-magic-ice-p002.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260901_201245028.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-magic-ice-p003",
+    "file": "assets/places/sight-magic-ice-p003.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260901_201322987.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   }
+  ],
+  "sight-sky-lagoon": [
+   {
+    "id": "sight-sky-lagoon-p002",
+    "file": "assets/places/sight-sky-lagoon-p002.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260910_192636552.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-sky-lagoon-p005",
+    "file": "assets/places/sight-sky-lagoon-p005.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260910_193140077.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 4080,
+    "height": 3072,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   }
+  ],
+  "sight-lava-show": [
+   {
+    "id": "sight-lava-show-p017",
+    "file": "assets/places/sight-lava-show-p017.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260907_192828471.MP_h.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 3072,
+    "height": 2304,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-lava-show-p016",
+    "file": "assets/places/sight-lava-show-p016.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260907_192744614.MP_h.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 3072,
+    "height": 2304,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
+   },
+   {
+    "id": "sight-lava-show-p019",
+    "file": "assets/places/sight-lava-show-p019.jpg",
+    "source": "Own photo (author)",
+    "sourceUrl": "",
+    "title": "PXL_20260907_193013889.MP_h.jpg",
+    "author": "FinitePlay",
+    "license": "Own work",
+    "licenseUrl": "",
+    "width": 3072,
+    "height": 2304,
+    "objectPosition": "center",
+    "downloadedAt": "2026-10-12",
+    "selectedBy": "content author",
+    "selectedAt": "2026-10-13",
+    "releaseStatus": "author's own photo; people, property and alt text review pending"
    }
   ]
  },
  "partial": [
-  "sight-caves-of-hella",
   "sight-fontana",
   "sight-laugardalslaug",
   "sight-laugavegur",
-  "sight-perlan"
+  "sight-sky-lagoon"
  ]
 }

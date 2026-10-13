@@ -114,6 +114,31 @@ def score_errors(item):
     return errors
 
 
+def local_path_errors(pack_dir):
+    """Content must never carry this machine's paths, user name or scratch folders (the repository is public)."""
+    import getpass
+    import re
+
+    user = re.escape(getpass.getuser())
+    sep = chr(92) + chr(92) + '/'   # regex class matching a backslash or a slash
+    word = '[A-Za-z0-9_]'
+    pattern = re.compile(
+        f'[A-Za-z]:[{sep}]+(?:Users|Documents and Settings)|/Users/{word}|/home/{word}|OneDrive|[{sep}]_temp[{sep}]'
+        f'|(?<!{word}){user}(?!{word})', re.I)
+    errors = []
+    for path in sorted(Path(pack_dir).rglob("*")):
+        if not path.is_file() or path.suffix.lower() not in {".json", ".yaml", ".yml", ".csv", ".md", ".html", ".txt"}:
+            continue
+        if "thumbs" in path.parts:
+            continue
+        for number, line in enumerate(path.read_text(encoding="utf-8", errors="ignore").splitlines(), 1):
+            match = pattern.search(line)
+            if match:
+                errors.append(f"{path.name}:{number}: local path or user name in content ({match.group(0)!r}); keep machine paths out of the repo.")
+                break
+    return errors
+
+
 def basics_audit(basics, evidence_ids, root_dir=Path('.'), media_items=None):
     """The 'Iceland at a glance' section: pronounced names, sourced and iconned numbers."""
     errors = []
@@ -380,6 +405,7 @@ def audit(root):
         manifest_path = root / "media-manifest.json"
         media_items = read_json(manifest_path).get("items", {}) if manifest_path.exists() else {}
         errors += basics_audit(read_json(basics_path), evidence_ids, root.parent.parent / "local-site", media_items)
+    errors += local_path_errors(root)
     if len(all_ids) != len(set(all_ids)):
         errors.append("Reader-content IDs must be unique across briefing, playbook and route files.")
     return errors
