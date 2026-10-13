@@ -7005,18 +7005,7 @@
      "ratio": 1.5,
      "id": "sight-whales-c15",
      "thumb": "thumbs/sight-whales-c15.jpg"
-    }
-   ],
-   "rejectedCounts": {
-    "not a photo format": 1,
-    "place not named": 54
-   },
-   "shortfall": null
-  },
-  "sight-aurora-reykjavik": {
-   "name": "Aurora Reykjavík",
-   "local": "Aurora Reykjavík",
-   "candidates": [
+    },
     {
      "source": "Own photo (author)",
      "title": "PXL_20260901_123741642.jpg",
@@ -7032,10 +7021,10 @@
      "licenseUrl": "",
      "description": "Own trip photo, 2026-09-01",
      "restrictions": "",
-     "id": "sight-aurora-reykjavik-p001",
-     "thumb": "thumbs/sight-aurora-reykjavik-p001.jpg",
+     "id": "sight-whales-p001",
+     "thumb": "thumbs/sight-whales-p001.jpg",
      "personal": {
-      "folder": "aurora-reykjavik",
+      "folder": "whales-of-iceland",
       "file": "PXL_20260901_123741642.jpg"
      }
     },
@@ -7054,14 +7043,24 @@
      "licenseUrl": "",
      "description": "Own trip photo, 2026-09-01",
      "restrictions": "",
-     "id": "sight-aurora-reykjavik-p002",
-     "thumb": "thumbs/sight-aurora-reykjavik-p002.jpg",
+     "id": "sight-whales-p002",
+     "thumb": "thumbs/sight-whales-p002.jpg",
      "personal": {
-      "folder": "aurora-reykjavik",
+      "folder": "whales-of-iceland",
       "file": "PXL_20260901_123833158.jpg"
      }
     }
    ],
+   "rejectedCounts": {
+    "not a photo format": 1,
+    "place not named": 54
+   },
+   "shortfall": null
+  },
+  "sight-aurora-reykjavik": {
+   "name": "Aurora Reykjavík",
+   "local": "Aurora Reykjavík",
+   "candidates": [],
    "rejectedCounts": {
     "place not named": 1
    },
@@ -7080,74 +7079,7 @@
   "sight-mink": {
    "name": "Mink Viking Portrait Studio",
    "local": "Mink Viking Portrait",
-   "candidates": [
-    {
-     "source": "Own photo (author)",
-     "title": "PXL_20260901_173947157.jpg",
-     "sourceUrl": "",
-     "fileUrl": "",
-     "thumbUrl": "",
-     "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
-     "ratio": 1.33,
-     "author": "FinitePlay",
-     "license": "Own work",
-     "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-01",
-     "restrictions": "",
-     "id": "sight-mink-p001",
-     "thumb": "thumbs/sight-mink-p001.jpg",
-     "personal": {
-      "folder": "mink-viking-portrait-studio",
-      "file": "PXL_20260901_173947157.jpg"
-     }
-    },
-    {
-     "source": "Own photo (author)",
-     "title": "PXL_20260901_174018520.jpg",
-     "sourceUrl": "",
-     "fileUrl": "",
-     "thumbUrl": "",
-     "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
-     "ratio": 1.33,
-     "author": "FinitePlay",
-     "license": "Own work",
-     "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-01",
-     "restrictions": "",
-     "id": "sight-mink-p002",
-     "thumb": "thumbs/sight-mink-p002.jpg",
-     "personal": {
-      "folder": "mink-viking-portrait-studio",
-      "file": "PXL_20260901_174018520.jpg"
-     }
-    },
-    {
-     "source": "Own photo (author)",
-     "title": "PXL_20260901_174127726.jpg",
-     "sourceUrl": "",
-     "fileUrl": "",
-     "thumbUrl": "",
-     "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
-     "ratio": 1.33,
-     "author": "FinitePlay",
-     "license": "Own work",
-     "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-01",
-     "restrictions": "",
-     "id": "sight-mink-p003",
-     "thumb": "thumbs/sight-mink-p003.jpg",
-     "personal": {
-      "folder": "mink-viking-portrait-studio",
-      "file": "PXL_20260901_174127726.jpg"
-     }
-    }
-   ],
+   "candidates": [],
    "rejectedCounts": {
     "own photos: portrait or square": 4
    },
@@ -23104,315 +23036,117 @@
    "candidates": [
     {
      "source": "Own photo (author)",
-     "title": "PXL_20260907_140348576.MP.jpg",
+     "title": "PXL_20260907_192721905_h.jpg",
      "sourceUrl": "",
      "fileUrl": "",
      "thumbUrl": "",
      "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
+     "width": 3072,
+     "height": 2304,
      "ratio": 1.33,
      "author": "FinitePlay",
      "license": "Own work",
      "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
+     "description": "Own trip photo",
      "restrictions": "",
-     "id": "sight-lava-show-p002",
-     "thumb": "thumbs/sight-lava-show-p002.jpg",
+     "id": "sight-lava-show-p015",
+     "thumb": "thumbs/sight-lava-show-p015.jpg",
      "personal": {
       "folder": "lava-show-vik",
-      "file": "PXL_20260907_140348576.MP.jpg"
+      "file": "PXL_20260907_192721905_h.jpg"
      }
     },
     {
      "source": "Own photo (author)",
-     "title": "PXL_20260907_140358561.MP.jpg",
+     "title": "PXL_20260907_192744614.MP_h.jpg",
      "sourceUrl": "",
      "fileUrl": "",
      "thumbUrl": "",
      "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
+     "width": 3072,
+     "height": 2304,
      "ratio": 1.33,
      "author": "FinitePlay",
      "license": "Own work",
      "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
+     "description": "Own trip photo",
      "restrictions": "",
-     "id": "sight-lava-show-p003",
-     "thumb": "thumbs/sight-lava-show-p003.jpg",
+     "id": "sight-lava-show-p016",
+     "thumb": "thumbs/sight-lava-show-p016.jpg",
      "personal": {
       "folder": "lava-show-vik",
-      "file": "PXL_20260907_140358561.MP.jpg"
+      "file": "PXL_20260907_192744614.MP_h.jpg"
      }
     },
     {
      "source": "Own photo (author)",
-     "title": "PXL_20260907_140414622.jpg",
+     "title": "PXL_20260907_192828471.MP_h.jpg",
      "sourceUrl": "",
      "fileUrl": "",
      "thumbUrl": "",
      "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
+     "width": 3072,
+     "height": 2304,
      "ratio": 1.33,
      "author": "FinitePlay",
      "license": "Own work",
      "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
+     "description": "Own trip photo",
      "restrictions": "",
-     "id": "sight-lava-show-p004",
-     "thumb": "thumbs/sight-lava-show-p004.jpg",
+     "id": "sight-lava-show-p017",
+     "thumb": "thumbs/sight-lava-show-p017.jpg",
      "personal": {
       "folder": "lava-show-vik",
-      "file": "PXL_20260907_140414622.jpg"
+      "file": "PXL_20260907_192828471.MP_h.jpg"
      }
     },
     {
      "source": "Own photo (author)",
-     "title": "PXL_20260907_140431934.jpg",
+     "title": "PXL_20260907_192833524.MP_h.jpg",
      "sourceUrl": "",
      "fileUrl": "",
      "thumbUrl": "",
      "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
+     "width": 3072,
+     "height": 2304,
      "ratio": 1.33,
      "author": "FinitePlay",
      "license": "Own work",
      "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
+     "description": "Own trip photo",
      "restrictions": "",
-     "id": "sight-lava-show-p005",
-     "thumb": "thumbs/sight-lava-show-p005.jpg",
+     "id": "sight-lava-show-p018",
+     "thumb": "thumbs/sight-lava-show-p018.jpg",
      "personal": {
       "folder": "lava-show-vik",
-      "file": "PXL_20260907_140431934.jpg"
+      "file": "PXL_20260907_192833524.MP_h.jpg"
      }
     },
     {
      "source": "Own photo (author)",
-     "title": "PXL_20260907_140439254.PANO.jpg",
+     "title": "PXL_20260907_193013889.MP_h.jpg",
      "sourceUrl": "",
      "fileUrl": "",
      "thumbUrl": "",
      "mime": "image/jpeg",
-     "width": 6528,
-     "height": 3104,
-     "ratio": 2.1,
-     "author": "FinitePlay",
-     "license": "Own work",
-     "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
-     "restrictions": "",
-     "id": "sight-lava-show-p001",
-     "thumb": "thumbs/sight-lava-show-p001.jpg",
-     "personal": {
-      "folder": "lava-show-vik",
-      "file": "PXL_20260907_140439254.PANO.jpg"
-     }
-    },
-    {
-     "source": "Own photo (author)",
-     "title": "PXL_20260907_140444374.jpg",
-     "sourceUrl": "",
-     "fileUrl": "",
-     "thumbUrl": "",
-     "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
+     "width": 3072,
+     "height": 2304,
      "ratio": 1.33,
      "author": "FinitePlay",
      "license": "Own work",
      "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
+     "description": "Own trip photo",
      "restrictions": "",
-     "id": "sight-lava-show-p006",
-     "thumb": "thumbs/sight-lava-show-p006.jpg",
+     "id": "sight-lava-show-p019",
+     "thumb": "thumbs/sight-lava-show-p019.jpg",
      "personal": {
       "folder": "lava-show-vik",
-      "file": "PXL_20260907_140444374.jpg"
-     }
-    },
-    {
-     "source": "Own photo (author)",
-     "title": "PXL_20260907_145838075.jpg",
-     "sourceUrl": "",
-     "fileUrl": "",
-     "thumbUrl": "",
-     "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
-     "ratio": 1.33,
-     "author": "FinitePlay",
-     "license": "Own work",
-     "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
-     "restrictions": "",
-     "id": "sight-lava-show-p007",
-     "thumb": "thumbs/sight-lava-show-p007.jpg",
-     "personal": {
-      "folder": "lava-show-vik",
-      "file": "PXL_20260907_145838075.jpg"
-     }
-    },
-    {
-     "source": "Own photo (author)",
-     "title": "PXL_20260907_145839018.jpg",
-     "sourceUrl": "",
-     "fileUrl": "",
-     "thumbUrl": "",
-     "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
-     "ratio": 1.33,
-     "author": "FinitePlay",
-     "license": "Own work",
-     "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
-     "restrictions": "",
-     "id": "sight-lava-show-p008",
-     "thumb": "thumbs/sight-lava-show-p008.jpg",
-     "personal": {
-      "folder": "lava-show-vik",
-      "file": "PXL_20260907_145839018.jpg"
-     }
-    },
-    {
-     "source": "Own photo (author)",
-     "title": "PXL_20260907_145842373.jpg",
-     "sourceUrl": "",
-     "fileUrl": "",
-     "thumbUrl": "",
-     "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
-     "ratio": 1.33,
-     "author": "FinitePlay",
-     "license": "Own work",
-     "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
-     "restrictions": "",
-     "id": "sight-lava-show-p009",
-     "thumb": "thumbs/sight-lava-show-p009.jpg",
-     "personal": {
-      "folder": "lava-show-vik",
-      "file": "PXL_20260907_145842373.jpg"
-     }
-    },
-    {
-     "source": "Own photo (author)",
-     "title": "PXL_20260907_145852867.jpg",
-     "sourceUrl": "",
-     "fileUrl": "",
-     "thumbUrl": "",
-     "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
-     "ratio": 1.33,
-     "author": "FinitePlay",
-     "license": "Own work",
-     "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
-     "restrictions": "",
-     "id": "sight-lava-show-p010",
-     "thumb": "thumbs/sight-lava-show-p010.jpg",
-     "personal": {
-      "folder": "lava-show-vik",
-      "file": "PXL_20260907_145852867.jpg"
-     }
-    },
-    {
-     "source": "Own photo (author)",
-     "title": "PXL_20260907_150317164.jpg",
-     "sourceUrl": "",
-     "fileUrl": "",
-     "thumbUrl": "",
-     "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
-     "ratio": 1.33,
-     "author": "FinitePlay",
-     "license": "Own work",
-     "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
-     "restrictions": "",
-     "id": "sight-lava-show-p011",
-     "thumb": "thumbs/sight-lava-show-p011.jpg",
-     "personal": {
-      "folder": "lava-show-vik",
-      "file": "PXL_20260907_150317164.jpg"
-     }
-    },
-    {
-     "source": "Own photo (author)",
-     "title": "PXL_20260907_150322800.jpg",
-     "sourceUrl": "",
-     "fileUrl": "",
-     "thumbUrl": "",
-     "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
-     "ratio": 1.33,
-     "author": "FinitePlay",
-     "license": "Own work",
-     "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
-     "restrictions": "",
-     "id": "sight-lava-show-p012",
-     "thumb": "thumbs/sight-lava-show-p012.jpg",
-     "personal": {
-      "folder": "lava-show-vik",
-      "file": "PXL_20260907_150322800.jpg"
-     }
-    },
-    {
-     "source": "Own photo (author)",
-     "title": "PXL_20260907_150538052.jpg",
-     "sourceUrl": "",
-     "fileUrl": "",
-     "thumbUrl": "",
-     "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
-     "ratio": 1.33,
-     "author": "FinitePlay",
-     "license": "Own work",
-     "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
-     "restrictions": "",
-     "id": "sight-lava-show-p013",
-     "thumb": "thumbs/sight-lava-show-p013.jpg",
-     "personal": {
-      "folder": "lava-show-vik",
-      "file": "PXL_20260907_150538052.jpg"
-     }
-    },
-    {
-     "source": "Own photo (author)",
-     "title": "PXL_20260907_150543201.jpg",
-     "sourceUrl": "",
-     "fileUrl": "",
-     "thumbUrl": "",
-     "mime": "image/jpeg",
-     "width": 4080,
-     "height": 3072,
-     "ratio": 1.33,
-     "author": "FinitePlay",
-     "license": "Own work",
-     "licenseUrl": "",
-     "description": "Own trip photo, 2026-09-07",
-     "restrictions": "",
-     "id": "sight-lava-show-p014",
-     "thumb": "thumbs/sight-lava-show-p014.jpg",
-     "personal": {
-      "folder": "lava-show-vik",
-      "file": "PXL_20260907_150543201.jpg"
+      "file": "PXL_20260907_193013889.MP_h.jpg"
      }
     }
    ],
    "rejectedCounts": {
-    "own photos: portrait or square": 6
+    "own photos: portrait or square": 5
    },
    "shortfall": null
   },

@@ -1,36 +1,50 @@
 {
  "schemaVersion": 1,
- "selectedAt": "2026-10-12",
+ "selectedAt": "2026-10-13",
  "selections": {
-  "sight-laugardalslaug": [
+  "sight-magic-ice": [
    {
-    "id": "sight-laugardalslaug-c01",
+    "id": "sight-magic-ice-p001",
     "objectPosition": "center"
    },
    {
-    "id": "sight-laugardalslaug-c05",
+    "id": "sight-magic-ice-p002",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-magic-ice-p003",
+    "objectPosition": "center"
+   }
+  ],
+  "sight-sky-lagoon": [
+   {
+    "id": "sight-sky-lagoon-p002",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-sky-lagoon-p005",
     "objectPosition": "center"
    }
   ],
   "sight-thingvellir": [
    {
-    "id": "sight-thingvellir-c01",
+    "id": "sight-thingvellir-c03",
     "objectPosition": "center"
    },
    {
-    "id": "sight-thingvellir-c04",
+    "id": "sight-thingvellir-p004",
     "objectPosition": "center"
    },
    {
-    "id": "sight-thingvellir-c09",
+    "id": "sight-thingvellir-p005",
     "objectPosition": "center"
    },
    {
-    "id": "sight-thingvellir-c14",
+    "id": "sight-thingvellir-p002",
     "objectPosition": "center"
    },
    {
-    "id": "sight-thingvellir-c13",
+    "id": "sight-thingvellir-c17",
     "objectPosition": "center"
    }
   ],
@@ -44,11 +58,15 @@
     "objectPosition": "center"
    },
    {
+    "id": "sight-gullfoss-p010",
+    "objectPosition": "center"
+   },
+   {
     "id": "sight-gullfoss-c09",
     "objectPosition": "center"
    },
    {
-    "id": "sight-gullfoss-c10",
+    "id": "sight-gullfoss-p011",
     "objectPosition": "center"
    }
   ],
@@ -63,6 +81,14 @@
    },
    {
     "id": "sight-geysir-c15",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-geysir-c20",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-geysir-p004",
     "objectPosition": "center"
    }
   ],
@@ -82,15 +108,19 @@
   ],
   "sight-harpa": [
    {
-    "id": "sight-harpa-c09",
+    "id": "sight-harpa-p007",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-harpa-p006",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-harpa-p004",
     "objectPosition": "center"
    },
    {
     "id": "sight-harpa-c11",
-    "objectPosition": "center"
-   },
-   {
-    "id": "sight-harpa-c18",
     "objectPosition": "center"
    }
   ],
@@ -184,7 +214,7 @@
     "objectPosition": "center"
    },
    {
-    "id": "sight-jokulsarlon-c19",
+    "id": "sight-jokulsarlon-p011",
     "objectPosition": "center"
    }
   ],
@@ -199,6 +229,14 @@
    },
    {
     "id": "sight-godafoss-c10",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-godafoss-p005",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-godafoss-p001",
     "objectPosition": "center"
    }
   ],
@@ -220,9 +258,35 @@
     "objectPosition": "center"
    }
   ],
+  "sight-laugardalslaug": [
+   {
+    "id": "sight-laugardalslaug-c01",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-laugardalslaug-c05",
+    "objectPosition": "center"
+   }
+  ],
   "sight-perlan": [
    {
     "id": "sight-perlan-c05",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-perlan-m01",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-perlan-m02",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-perlan-m04",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-perlan-p005",
     "objectPosition": "center"
    }
   ],
@@ -250,23 +314,23 @@
   ],
   "sight-petras-stone-collection": [
    {
+    "id": "sight-petras-stone-collection-p007",
+    "objectPosition": "center"
+   },
+   {
     "id": "sight-petras-stone-collection-c01",
     "objectPosition": "center"
    },
    {
-    "id": "sight-petras-stone-collection-c04",
+    "id": "sight-petras-stone-collection-p003",
     "objectPosition": "center"
    },
    {
-    "id": "sight-petras-stone-collection-c05",
+    "id": "sight-petras-stone-collection-p014",
     "objectPosition": "center"
    },
    {
-    "id": "sight-petras-stone-collection-c13",
-    "objectPosition": "center"
-   },
-   {
-    "id": "sight-petras-stone-collection-c14",
+    "id": "sight-petras-stone-collection-p015",
     "objectPosition": "center"
    }
   ],
@@ -318,6 +382,10 @@
    {
     "id": "sight-ytri-tunga-c13",
     "objectPosition": "center"
+   },
+   {
+    "id": "sight-ytri-tunga-p013",
+    "objectPosition": "center"
    }
   ],
   "sight-budakirkja": [
@@ -348,11 +416,15 @@
     "objectPosition": "center"
    },
    {
-    "id": "sight-arnarstapi-hellnar-c12",
+    "id": "sight-arnarstapi-hellnar-c20",
     "objectPosition": "center"
    },
    {
-    "id": "sight-arnarstapi-hellnar-c20",
+    "id": "sight-arnarstapi-hellnar-p011",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-arnarstapi-hellnar-p014",
     "objectPosition": "center"
    }
   ],
@@ -368,15 +440,15 @@
    {
     "id": "sight-londrangar-c08",
     "objectPosition": "center"
+   },
+   {
+    "id": "sight-londrangar-p003",
+    "objectPosition": "center"
    }
   ],
   "sight-djupalonssandur": [
    {
     "id": "sight-djupalonssandur-c01",
-    "objectPosition": "center"
-   },
-   {
-    "id": "sight-djupalonssandur-c05",
     "objectPosition": "center"
    },
    {
@@ -389,6 +461,10 @@
    },
    {
     "id": "sight-djupalonssandur-c17",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-djupalonssandur-p006",
     "objectPosition": "center"
    }
   ],
@@ -410,21 +486,29 @@
     "objectPosition": "center"
    },
    {
-    "id": "sight-kirkjufellsfoss-c19",
+    "id": "sight-kirkjufellsfoss-p001",
     "objectPosition": "center"
    }
   ],
   "sight-bjarnarhofn": [
    {
-    "id": "sight-bjarnarhofn-c03",
-    "objectPosition": "center"
-   },
-   {
     "id": "sight-bjarnarhofn-c08",
     "objectPosition": "center"
    },
    {
-    "id": "sight-bjarnarhofn-c02",
+    "id": "sight-bjarnarhofn-p005",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-bjarnarhofn-p002",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-bjarnarhofn-c03",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-bjarnarhofn-p006",
     "objectPosition": "center"
    }
   ],
@@ -446,17 +530,13 @@
     "objectPosition": "center"
    },
    {
-    "id": "sight-glaumbaer-c13",
+    "id": "sight-glaumbaer-p013",
     "objectPosition": "center"
    }
   ],
   "sight-akureyri-botanical-garden": [
    {
-    "id": "sight-akureyri-botanical-garden-c04",
-    "objectPosition": "center"
-   },
-   {
-    "id": "sight-akureyri-botanical-garden-c01",
+    "id": "sight-akureyri-botanical-garden-c17",
     "objectPosition": "center"
    },
    {
@@ -470,6 +550,10 @@
    {
     "id": "sight-akureyri-botanical-garden-c12",
     "objectPosition": "center"
+   },
+   {
+    "id": "sight-akureyri-botanical-garden-p001",
+    "objectPosition": "center"
    }
   ],
   "sight-hverir": [
@@ -482,15 +566,15 @@
     "objectPosition": "center"
    },
    {
-    "id": "sight-hverir-c06",
+    "id": "sight-hverir-p011",
     "objectPosition": "center"
    },
    {
-    "id": "sight-hverir-c08",
+    "id": "sight-hverir-p015",
     "objectPosition": "center"
    },
    {
-    "id": "sight-hverir-c16",
+    "id": "sight-hverir-p042",
     "objectPosition": "center"
    }
   ],
@@ -518,7 +602,11 @@
   ],
   "sight-dettifoss": [
    {
-    "id": "sight-dettifoss-c01",
+    "id": "sight-dettifoss-p010",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-dettifoss-p020",
     "objectPosition": "center"
    },
    {
@@ -528,15 +616,15 @@
    {
     "id": "sight-dettifoss-c20",
     "objectPosition": "center"
+   },
+   {
+    "id": "sight-dettifoss-p035",
+    "objectPosition": "center"
    }
   ],
   "sight-hengifoss": [
    {
     "id": "sight-hengifoss-c01",
-    "objectPosition": "center"
-   },
-   {
-    "id": "sight-hengifoss-c05",
     "objectPosition": "center"
    },
    {
@@ -546,9 +634,21 @@
    {
     "id": "sight-hengifoss-c17",
     "objectPosition": "center"
+   },
+   {
+    "id": "sight-hengifoss-p023",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-hengifoss-p027",
+    "objectPosition": "center"
    }
   ],
   "sight-djupivogur": [
+   {
+    "id": "sight-djupivogur-p004",
+    "objectPosition": "center"
+   },
    {
     "id": "sight-djupivogur-c02",
     "objectPosition": "center"
@@ -594,7 +694,7 @@
     "objectPosition": "center"
    },
    {
-    "id": "sight-fjallsarlon-c18",
+    "id": "sight-fjallsarlon-p003",
     "objectPosition": "center"
    }
   ],
@@ -608,15 +708,15 @@
     "objectPosition": "center"
    },
    {
-    "id": "sight-skaftafell-c05",
-    "objectPosition": "center"
-   },
-   {
-    "id": "sight-skaftafell-c10",
-    "objectPosition": "center"
-   },
-   {
     "id": "sight-skaftafell-c20",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-skaftafell-p013",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-skaftafell-p015",
     "objectPosition": "center"
    }
   ],
@@ -636,11 +736,7 @@
   ],
   "sight-dverghamrar": [
    {
-    "id": "sight-dverghamrar-c01",
-    "objectPosition": "center"
-   },
-   {
-    "id": "sight-dverghamrar-c02",
+    "id": "sight-dverghamrar-p003",
     "objectPosition": "center"
    },
    {
@@ -648,7 +744,7 @@
     "objectPosition": "center"
    },
    {
-    "id": "sight-dverghamrar-c20",
+    "id": "sight-dverghamrar-c02",
     "objectPosition": "center"
    }
   ],
@@ -702,6 +798,14 @@
    {
     "id": "sight-caves-of-hella-c02",
     "objectPosition": "center"
+   },
+   {
+    "id": "sight-caves-of-hella-p001",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-caves-of-hella-p004",
+    "objectPosition": "center"
    }
   ],
   "sight-urridafoss": [
@@ -720,6 +824,10 @@
    {
     "id": "sight-urridafoss-c20",
     "objectPosition": "center"
+   },
+   {
+    "id": "sight-urridafoss-p004",
+    "objectPosition": "center"
    }
   ],
   "sight-bruarfoss": [
@@ -736,7 +844,7 @@
     "objectPosition": "center"
    },
    {
-    "id": "sight-bruarfoss-c15",
+    "id": "sight-bruarfoss-p007",
     "objectPosition": "center"
    }
   ],
@@ -754,7 +862,11 @@
     "objectPosition": "center"
    },
    {
-    "id": "sight-kerid-c15",
+    "id": "sight-kerid-p007",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-kerid-p012",
     "objectPosition": "center"
    }
   ],
@@ -772,7 +884,11 @@
     "objectPosition": "center"
    },
    {
-    "id": "sight-raufarholshellir-c14",
+    "id": "sight-raufarholshellir-p003",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-raufarholshellir-p007",
     "objectPosition": "center"
    }
   ],
@@ -787,6 +903,14 @@
    },
    {
     "id": "sight-blue-lagoon-c20",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-blue-lagoon-p002",
+    "objectPosition": "center"
+   },
+   {
+    "id": "sight-blue-lagoon-p001",
     "objectPosition": "center"
    }
   ],

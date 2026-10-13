@@ -386,6 +386,74 @@ def cmd_restore(args) -> int:
     return 0
 
 
+def cmd_reassign(args) -> int:
+    """Move photos from one place folder to another after fixing a wrong GPS match.
+
+        list     <dest> lava-show-vik                                      # numbered file list
+        reassign <dest> lava-show-vik vik-black-sand-beach --index 1-6     # only those numbers (kept photos)
+        reassign <dest> mink-viking-portrait-studio sun-voyager            # the whole folder, set-aside photos too
+    """
+    dest = Path(args.dest)
+    src = dest / args.source
+    files = sorted(p for p in src.iterdir() if p.is_file() and p.suffix.lower() in PHOTO_EXT) if src.exists() else []
+    if args.index:
+        wanted: set[int] = set()
+        for part in args.index.split(","):
+            lo, _, hi = part.partition("-")
+            wanted |= set(range(int(lo), int(hi or lo) + 1))
+        files = [f for i, f in enumerate(files) if i in wanted]
+    batches = [(files, dest / args.target)]
+    aside = dest / "!deleted" / args.source
+    if not args.index and aside.exists():
+        batches.append(([p for p in aside.iterdir() if p.is_file() and p.suffix.lower() in PHOTO_EXT], dest / "!deleted" / args.target))
+    moved = 0
+    for batch, target in batches:
+        target.mkdir(parents=True, exist_ok=True)
+        for f in batch:
+            shutil.move(str(f), str(target / f.name))
+            moved += 1
+    print(f"moved {moved} photos from {args.source} to {args.target}; run `refresh` to update the metadata")
+    return 0
+
+
+def cmd_landscape(args) -> int:
+    """Make a horizontal (4:3) copy of every vertical photo in a folder, cropped around the brightest part of the frame
+    (the lava, the sun, the lit subject). The original stays; the copy is named <name>_h.jpg."""
+    import numpy as np
+    from PIL import Image, ImageFilter, ImageOps
+
+    folder = Path(args.dest) / args.folder
+    made = 0
+    for f in sorted(folder.glob("*")):
+        if f.suffix.lower() not in {".jpg", ".jpeg"} or f.stem.endswith("_h"):
+            continue
+        out = f.with_name(f.stem + "_h.jpg")
+        with Image.open(f) as im:
+            im = ImageOps.exif_transpose(im).convert("RGB")
+            w, h = im.size
+            if w >= h or out.exists():
+                continue
+            crop_h = round(w * 3 / 4)
+            luma = np.asarray(im.convert("L").resize((64, 64 * h // w)).filter(ImageFilter.GaussianBlur(2)), dtype=np.float32)
+            rows = (luma ** 2).sum(axis=1)                       # bright rows count more than dark ones
+            win = max(1, round(crop_h / h * len(rows)))
+            sums = np.convolve(rows, np.ones(win), mode="valid")
+            top = round(int(sums.argmax()) / len(rows) * h)
+            top = min(max(0, top), h - crop_h)
+            im.crop((0, top, w, top + crop_h)).save(out, quality=92)
+        made += 1
+        print(f"  {out.name}: rows {top}-{top + crop_h} of {h}")
+    print(f"made {made} horizontal copies in {folder}; run `refresh`, then add_personal_candidates.py")
+    return 0
+
+
+def cmd_list(args) -> int:
+    folder = Path(args.dest) / args.folder
+    for i, p in enumerate(sorted(p for p in folder.iterdir() if p.is_file() and p.suffix.lower() in PHOTO_EXT)):
+        print(f"{i:3d}  {p.name}")
+    return 0
+
+
 def previous_reasons(deleted: Path) -> dict[str, str]:
     """Photos the tool set aside earlier, with their reasons, read back from review.html or set-aside.json."""
     saved = deleted / "set-aside.json"
@@ -530,6 +598,20 @@ def main() -> int:
     r = sub.add_parser("restore")
     r.add_argument("dest")
     r.set_defaults(fn=cmd_restore)
+    g = sub.add_parser("reassign", help="move photos to another place folder (whole folder, or --index numbers)")
+    g.add_argument("dest")
+    g.add_argument("source")
+    g.add_argument("target")
+    g.add_argument("--index", help="numbers from `list`, e.g. 1-6,9")
+    g.set_defaults(fn=cmd_reassign)
+    l = sub.add_parser("landscape", help="make a 4:3 horizontal copy of each vertical photo in a place folder")
+    l.add_argument("dest")
+    l.add_argument("folder")
+    l.set_defaults(fn=cmd_landscape)
+    n = sub.add_parser("list", help="numbered list of the photos in a place folder")
+    n.add_argument("dest")
+    n.add_argument("folder")
+    n.set_defaults(fn=cmd_list)
     f = sub.add_parser("refresh", help="update index.csv, manifests, features and review.html after moving photos by hand")
     f.add_argument("dest")
     f.add_argument("--threshold", type=float, default=DEFAULT_THRESHOLD)
