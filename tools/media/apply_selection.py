@@ -3,7 +3,7 @@
 Reads `content/<cc>/media-candidates/selection.json` (downloaded from review.html) and
 `candidates.json`, accepts 1-5 picks per attraction (fewer than 3 is a "partial" gallery that can be extended
 later), refuses anything not in the verified shortlist,
-downloads 1440px copies into `local-site/assets/places/`, and writes the selected-photo
+downloads 1440px copies (or, for the author's own photos from add_personal_candidates.py, resizes them) into `local-site/assets/places/`, and writes the selected-photo
 manifest `content/<cc>/photos.json` with full attribution and per-image framing.
 
     python tools/media/apply_selection.py is [path/to/selection.json]
@@ -68,6 +68,30 @@ def flickr_display_url(c: dict) -> str:
                default=big)["source"]
 
 
+def personal_root() -> Path:
+    """Where the author's own photos live: MFV_PERSONAL_PHOTOS, else the folder add_personal_candidates.py recorded."""
+    import os
+    env = os.environ.get("MFV_PERSONAL_PHOTOS")
+    note = Path.home() / ".finiteplay" / "personal-photos-root.txt"
+    root = Path(env) if env else Path(note.read_text(encoding="utf-8").strip()) if note.exists() else None
+    if not root or not root.exists():
+        raise SystemExit("own photos folder not found: set MFV_PERSONAL_PHOTOS or run add_personal_candidates.py again")
+    return root
+
+
+def copy_personal(c: dict, dest: Path) -> None:
+    """A 1440 px working copy of the author's own photo (the media store re-encodes it and strips EXIF/GPS)."""
+    if dest.exists():
+        return
+    from PIL import Image, ImageOps
+
+    src = personal_root() / c["personal"]["folder"] / c["personal"]["file"]
+    with Image.open(src) as im:
+        im = ImageOps.exif_transpose(im).convert("RGB")
+        im.thumbnail((WIDTH, WIDTH))
+        im.save(dest, "JPEG", quality=90)
+
+
 def display_url(c: dict) -> str:
     if c["source"] == "Wikimedia Commons":
         name = c["title"].removeprefix("File:")
@@ -102,7 +126,10 @@ def main() -> int:
                 errors.append(f"{sid}: {pick['id']} is not in the verified shortlist")
                 continue
             dest = assets / f"{pick['id']}.jpg"
-            fetch(display_url(c), dest)
+            if c.get("personal"):
+                copy_personal(c, dest)
+            else:
+                fetch(display_url(c), dest)
             photos.append({
                 "id": pick["id"],
                 "file": f"assets/places/{dest.name}",
@@ -117,7 +144,8 @@ def main() -> int:
                 "downloadedAt": time.strftime("%Y-%m-%d"),
                 "selectedBy": "content author",
                 "selectedAt": selection.get("selectedAt"),
-                "releaseStatus": "author-selected; alt text, people/property and final rights review pending",
+                "releaseStatus": ("author's own photo; people, property and alt text review pending" if c.get("personal")
+                                  else "author-selected; alt text, people/property and final rights review pending"),
             })
         if photos:
             manifest[sid] = photos

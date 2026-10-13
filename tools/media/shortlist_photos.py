@@ -367,8 +367,9 @@ def main() -> int:
             if len(kept) >= args.max:
                 break
         # Keep manually added candidates (tools/media/add_candidate.py).
+        # ... and the author's own photos (tools/media/add_personal_candidates.py).
         kept += [x for x in existing.get("attractions", {}).get(sid, {}).get("candidates", [])
-                 if "-m" in x["id"] and x["sourceUrl"] not in {k["sourceUrl"] for k in kept}]
+                 if x.get("personal") or ("-m" in x["id"] and x["sourceUrl"] not in {k["sourceUrl"] for k in kept})]
         result[sid] = {
             "name": s["name"], "local": s["local"],
             "candidates": kept,
@@ -493,7 +494,7 @@ function render() {
         <div class="meta">Focus <select>${POS.map(x=>`<option ${x===pos?"selected":""}>${x}</option>`).join("")}<option value="contain" ${pos==="contain"?"selected":""}>contain (no crop)</option></select><br>
         ${esc(c.width)}×${esc(c.height)} (${esc(c.ratio)}) · ${esc(c.source)}<br>
         <b>${esc(c.license)}</b> · ${esc(c.author)}<br>
-        <a href="${esc(c.sourceUrl)}" target="_blank" rel="noopener">file page</a> · ${esc(c.title)}
+        ${c.sourceUrl ? `<a href="${esc(c.sourceUrl)}" target="_blank" rel="noopener">file page</a> · ` : ""}${esc(c.title)}
         ${c.description ? `<br>${esc(c.description)}` : ""}
         ${c.restrictions ? `<br><span class="warn">Restrictions: ${esc(c.restrictions)}</span>` : ""}
         ${c.note ? `<br><span class="warn">${esc(c.note)}</span>` : ""}</div>`;
