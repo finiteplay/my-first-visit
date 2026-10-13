@@ -386,6 +386,130 @@ def cmd_restore(args) -> int:
     return 0
 
 
+def previous_reasons(deleted: Path) -> dict[str, str]:
+    """Photos the tool set aside earlier, with their reasons, read back from review.html or set-aside.json."""
+    saved = deleted / "set-aside.json"
+    if saved.exists():
+        return json.loads(saved.read_text(encoding="utf-8"))
+    page = deleted / "review.html"
+    if not page.exists():
+        return {}
+    found = re.findall(r"<figcaption>(.*?)<br><b>(.*?)</b>", page.read_text(encoding="utf-8"))
+    return {rel.replace("\\", "/"): why for rel, why in found}
+
+
+def cmd_refresh(args) -> int:
+    """Bring the metadata in line with the folders after the author moved photos by hand.
+
+    Writes <dest>/index.csv (one row per photo: where it is now, whether it is kept or set aside, GPS, the place the tool
+    chose, what the author changed), re-points features.json and the manifests' `copy` column at the current paths, and
+    rewrites !deleted/review.html and set-aside.json from what is actually in !deleted.
+    """
+    dest = Path(args.dest)
+    deleted = dest / "!deleted"
+    on_disk: dict[str, list[str]] = {}
+    for p in dest.rglob("*"):
+        if p.is_file() and p.suffix.lower() in PHOTO_EXT and p.name != "people.jpg":
+            on_disk.setdefault(p.name, []).append(p.relative_to(dest).as_posix())
+    features = json.loads((dest / "features.json").read_text(encoding="utf-8")) if (dest / "features.json").exists() else {}
+    by_name_features = {Path(k).name: (k, v) for k, v in features.items()}
+    # What the tool itself would set aside is a pure function of the measurements, so recompute it (review.html only
+    # ever lists the last batch). Photos are matched by file name, which is unique in the destination.
+    ns = argparse.Namespace(threshold=args.threshold, known_size=args.known_size, min_photos=args.min_photos)
+    tool_reasons = {Path(k).name: why for k, why in flagged(features, ns)[0].items()}
+    before = {name: why for name, why in tool_reasons.items()}
+
+    rows, seen, problems = [], set(), []
+    for manifest in sorted(dest.glob("manifest-*.csv")):
+        with manifest.open(encoding="utf-8", newline="") as f:
+            records = list(csv.DictReader(f))
+        for r in records:
+            tool_rel = r["copy"].replace("\\", "/")
+            name = Path(tool_rel).name
+            now = on_disk.get(name, [])
+            if not now:
+                problems.append(f"missing: {tool_rel}")
+                continue
+            if len(now) > 1:
+                problems.append(f"same name in several folders: {name}: {', '.join(now)}")
+            current = now[0]
+            seen.add(current)
+            was_aside = name in before
+            is_aside = current.startswith("!deleted/")
+            place_now = current[len("!deleted/"):] if is_aside else current
+            tool_place = tool_rel[len("!deleted/"):] if tool_rel.startswith("!deleted/") else tool_rel
+            change = []
+            if Path(place_now).parent != Path(tool_place).parent:
+                change.append(f"moved to {Path(place_now).parent.as_posix()}")
+            if is_aside and not was_aside:
+                change.append("set aside by author")
+            if was_aside and not is_aside:
+                change.append("kept by author")
+            old_key = tool_place
+            feat_entry = features.get(old_key) or features.get(place_now) or by_name_features.get(name, (None, {}))[1]
+            rows.append({"file": current, "folder": Path(place_now).parent.as_posix(), "status": "set aside" if is_aside else "kept",
+                         "source": r["source"], "lat": r["lat"], "lon": r["lon"], "taken": r["taken"],
+                         "tool_folder": r["folder"], "nearest place": r["nearest place"],
+                         "faces": feat_entry.get("faces", ""), "largest face": feat_entry.get("largest", ""),
+                         "author change": "; ".join(change)})
+            r["copy"] = place_now
+    for manifest in sorted(dest.glob("manifest-*.csv")):    # second pass writes the corrected copy paths
+        with manifest.open(encoding="utf-8", newline="") as f:
+            records = list(csv.DictReader(f))
+        for r in records:
+            name = Path(r["copy"]).name
+            now = on_disk.get(name)
+            if now:
+                cur = now[0]
+                r["copy"] = cur[len("!deleted/"):] if cur.startswith("!deleted/") else cur
+        with manifest.open("w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=list(records[0].keys()) if records else ["copy"])
+            w.writeheader()
+            w.writerows(records)
+    extra = sorted(set(p for ps in on_disk.values() for p in ps) - seen)
+    for rel in extra:
+        problems.append(f"in a folder but in no manifest (added by hand?): {rel}")
+        is_aside = rel.startswith("!deleted/")
+        rows.append({"file": rel, "folder": Path(rel[len("!deleted/"):] if is_aside else rel).parent.as_posix(),
+                     "status": "set aside" if is_aside else "kept", "source": "", "lat": "", "lon": "", "taken": "",
+                     "tool_folder": "", "nearest place": "", "faces": "", "largest face": "", "author change": "added by author"})
+
+    # features.json: key by the photo's current place-folder path so later runs find it
+    new_features = {}
+    for k, v in features.items():
+        cur = on_disk.get(Path(k).name)
+        if cur:
+            c = cur[0]
+            new_features[c[len("!deleted/"):] if c.startswith("!deleted/") else c] = v
+    (dest / "features.json").write_text(json.dumps(new_features), encoding="utf-8")
+
+    asides = {r["file"][len("!deleted/"):]: before.get(Path(r["file"]).name, "set aside by author")
+              for r in rows if r["status"] == "set aside"}
+    if asides or deleted.exists():
+        deleted.mkdir(parents=True, exist_ok=True)
+        (deleted / "set-aside.json").write_text(json.dumps(asides, ensure_ascii=False, indent=1), encoding="utf-8")
+        write_review(deleted, asides)
+    with (dest / "index.csv").open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        w.writeheader()
+        w.writerows(sorted(rows, key=lambda r: (r["status"], r["folder"], r["file"])))
+    changed = [r for r in rows if r["author change"]]
+    kept = sum(1 for r in rows if r["status"] == "kept")
+    print(f"{len(rows)} photos indexed: {kept} kept, {len(rows) - kept} set aside -> {dest / 'index.csv'}")
+    print(f"changes made by hand since the last run: {len(changed)}")
+    summary: dict[str, int] = {}
+    for r in changed:
+        for c in r["author change"].split("; "):
+            summary[c] = summary.get(c, 0) + 1
+    for c, n in sorted(summary.items(), key=lambda kv: -kv[1]):
+        print(f"  {n:4d}  {c}")
+    for pr in problems[:15]:
+        print("  note:", pr)
+    if len(problems) > 15:
+        print(f"  ... and {len(problems) - 15} more notes")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -406,6 +530,12 @@ def main() -> int:
     r = sub.add_parser("restore")
     r.add_argument("dest")
     r.set_defaults(fn=cmd_restore)
+    f = sub.add_parser("refresh", help="update index.csv, manifests, features and review.html after moving photos by hand")
+    f.add_argument("dest")
+    f.add_argument("--threshold", type=float, default=DEFAULT_THRESHOLD)
+    f.add_argument("--known-size", type=float, default=DEFAULT_KNOWN_SIZE)
+    f.add_argument("--min-photos", type=int, default=DEFAULT_MIN_PHOTOS)
+    f.set_defaults(fn=cmd_refresh)
     args = ap.parse_args()
     return args.fn(args)
 
